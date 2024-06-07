@@ -1,0 +1,10 @@
+block-trades:
+  # Enabled microblock trades appearing in Wandering Traders' trades.
+  enabled: true
+  min: 5
+  max: 7
+hermit-head-trades:
+  # Enables hermit player head trades appearning in Wandering Trader's trades.
+  enabled: true
+  min: 1
+  max: 3

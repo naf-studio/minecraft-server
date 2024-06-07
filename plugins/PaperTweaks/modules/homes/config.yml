@@ -1,0 +1,8 @@
+# The maximum number of homes allowed per player
+default-sethome-limit: 5
+# Allow teleporting to homes across dimensions
+allow-across-dimension: true
+# The cooldown in seconds for using the /home command
+home-command-cooldown-seconds: 0
+# The delay in seconds after using the /home command before teleportation
+home-command-delay-seconds: 0

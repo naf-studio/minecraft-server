@@ -1,0 +1,136 @@
+# ═══════════════
+# Have Fun!
+# ═══════════════
+#
+# ColorCodes can be used as normal. (&a,&1, .....)
+#
+# !!! If you insert values with special characters then you have to check if quotes exists! If not then you can add ' manually before and after the value.
+# exampleQUOTES: ':, {, }, [, ], ,, &, *, #, ?, |, -, <, >, =, !, %, @, \, all others'
+#
+# Linebreaks can be done if you quote the value with " and use \n where you want a linebreak.
+# exampleLinebreak: "Some stuff here. \nSome stuff there"
+#
+
+# You should not disable this if you have no problems with it. It keeps the config up to date!
+# If you have any problems with it then contact Cerexus#1348 on Discord!
+automatic_config_updater: true
+
+use_permissions: false
+home_limit: 54
+command_cooldown_home: 3
+teleport_delay: 3
+teleport_delay_check_movement: false
+updatecheck_daily: true
+updatecheck_operators_notify: true
+updatecheck_entitled_notify: true
+home_tab_complete: true
+deactivate_homes_over_limit: false
+support_essentialsx_command_back: false
+teleport_sound: true
+teleport_particle: true
+
+#If you have more groups with home limits and you want them to sum up then you should enable this.
+count_home_permission_limit_together: false
+
+Database:
+  SQLite: true
+    # Only use MySQL if you want bungeecord support! No migration between SQLite and MySQL possible currently (AND it don`t makes sense to do that)!
+  MySQL_only_for_bungee:
+    enabled: false
+        #Please read the headline if you have special characters here!
+    host: 127.0.0.1
+    port: 3306
+    username: ''
+    password: ''
+    database: ''
+    table_prefix: ''
+
+Commands:
+  command_home: home
+  command_homes: homes
+  command_sethome: sethome
+  command_removehome: removehome
+  command_updatehome: updatehome
+
+Messages:
+  prefix: '&7[&bSetHome&7] '
+  no_primary_home: '&eYou don`t have a primary home.'
+  no_home: '&eYou don`t have a home.'
+  home_not_found: '&eYou don`t have a home with that name.'
+  home_location_changed: '&eYou have successfully changed the location of your home.'
+  home_location_change_not_possible_here: '&eYou can`t change the location of your
+    home to this position.'
+  home_location_set_not_possible_here: '&eYou can`t set a home here.'
+  plugin_disabled_here: '&eYou can`t use UltraSetHome here.'
+  symbol_changed: '&eSymbol successfully changed.'
+  no_valid_name: '&cThis is not a valid name.'
+  home_location_set: '&eYou have successfully set a home.'
+  home_deleted: '&aHome has been deleted.'
+  home_delete_canceled: '&cDelete was canceled.'
+  home_teleported: '&aYou have been teleported.'
+  home_reached_limit: '&cYou have reached the limit.'
+  home_deactivated: '&cThis home is deactivated!'
+  home_set_primary: '&aChanged your primary home.'
+#placeholders: {seconds}
+  cooldown_message: '&eYou have to wait &9{seconds} &eseconds.'
+  corrupted: '&cThis home is corrupted! Try to change the location.'
+  no_permissions: '&cYou don`t have permission to do this!'
+  no_home_other: '&cThis player does not have any homes.'
+  error_fetching_uuid: '&cThere was an error while fetching the uuid of the player.
+    This name does not exist or Minecraft API is currently not available.'
+#placeholders: {seconds}
+  delayed_teleport: '&7Teleport in {seconds}s...!'
+  delayed_teleport_already_in_progress: '&cA teleport is already in progress!'
+  delayed_teleport_cancel_movement: '&cTeleport process canceled! You moved!'
+  no_number: '&cThis is not a valid number.'
+  added_extra_home: '&aExtra home successfully added.'
+  removed_extra_home: '&aExtra home successfully removed.'
+  set_extra_home: '&aExtra home successfully set.'
+#placeholders: {player}, {total_homes}, {extra_homes}
+  info_homes: '&9{player} &ahas actual &9{total_homes} &ahomes and is able to create
+    &9{extra_homes} &aextra homes over the limit(this also applies to permission limits).'
+  dupplicate_name: '&eThere is already a home with that name.'
+  bungeecord_server_offline: '&eThe server of your home is offline.'
+
+Gui:
+  gui_overview: '&eOverview'
+  gui_overview_unnamed: '&7unnamed'
+  gui_overview_named: '&5'
+  gui_overview_placeholder: '&8&l______________________'
+  gui_overview_left_click: '&eLeft click &bto teleport!'
+  gui_overview_corrupted: '&cCorrupted! Change the location.'
+  gui_overview_right_click: '&eRight click &bto adjust!'
+  gui_overview_bedrock_click: '&eClick &bto adjust!'
+  gui_overview_back: '&aback'
+  gui_overview_forth: '&aforth'
+  gui_settings: '&eSettings'
+  gui_settings_location_change: '&eLocation change'
+  gui_settings_location_change_description: '&eChanges the location of your home.'
+  gui_settings_symbol_change: '&eSymbol change'
+  gui_settings_symbol_change_description: '&eChanges the symbol of your home.'
+  gui_settings_home_delete: '&eDelete home'
+  gui_settings_home_delete_description: '&eDeletes your home.'
+  gui_settings_home_delete_confirm: '&aConfirm delete'
+  gui_settings_home_delete_confirm_description: '&cDeletion cannot be undone.'
+  gui_settings_home_delete_cancel: '&cDelete Cancel'
+  gui_settings_home_delete_cancel_description: '&cDeletion will canceled.'
+  gui_settings_set_primary: '&aSet primary'
+  gui_settings_set_primary_description: '&aSet this home as your primary home.'
+  gui_settings_bedrock_click: '&eClick &bto teleport!'
+  gui_overview_primary: '&aYour primary home.'
+  gui_home_deactivated: '&cdeactivated'
+#placeholders: {player}
+  gui_overview_other: '&e{player}'
+  gui_overview_information_title: '&eInformations'
+#placeholders: {total_homes}, {max_homes}, {extra_homes}, {homes_left}
+  gui_overview_information_lore:
+    - '&3total homes: &b{total_homes}'
+    - '&3max. homes: &b{max_homes}'
+    - '&3extra homes: &b{extra_homes}'
+    - '&3homes left: &b{homes_left}'
+  gui_overview_information_player_offline: §cplayer offline
+
+acf-core:
+#placeholders: {command}, {syntax}
+  invalid_syntax: '&7[&aUltra&bSetHome&7] &eUsage: &a{command} {syntax}'
+  unknown_command: '&7[&aUltra&bSetHome&7] &cUnknown Command.'

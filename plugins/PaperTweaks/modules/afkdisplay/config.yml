@@ -1,0 +1,2 @@
+# The time in seconds without moving before a player is considered AFK
+afk-time-in-seconds: 300

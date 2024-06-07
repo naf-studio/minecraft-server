@@ -1,0 +1,10 @@
+defaults:
+  # Default display for new players. Can be one of: HIDDEN, BOSS_BAR, ACTION_BAR, CHAT
+  display: "CHAT"
+# Color of the boss bar for players who have that as their display style. Can be one of: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+boss-bar-color: "WHITE"
+# When enabled, the weather cycle will reset to clear regardless of the current weather. When disabled, default vanilla weather behavior is active.
+always-reset-weather-cycle: false
+# Worlds to count player's from
+included-worlds:
+  - "world"

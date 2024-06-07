@@ -1,0 +1,6 @@
+# Prevents players from getting the Bad Omen effect from killing Patrol Captains
+bad-omen: true
+# Prevents Patrol Leaders from spawning
+patrol-leaders: true
+# Prevents all pillagers part of a patrol from spawning
+patrols: true

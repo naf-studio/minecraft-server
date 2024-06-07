@@ -1,0 +1,6 @@
+# When enabled, death locations will be saved in the back command.
+save-death-location: false
+# The number of seconds required to stand still after running the back command.
+command-delay: 0
+# The number of seconds required to wait between uses of the back command.
+command-cooldown: 0

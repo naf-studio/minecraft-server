@@ -1,0 +1,42 @@
+
+
+
+settings:
+  # Technical options.
+  backpack-size: 54 # Backpack size after purchase (from 1 to 54).
+  cost: 3500 # Purchase price.
+  give-as-item: true # The backpack is also added as an item.
+
+  # Additional backpack options - read the plugin documentation (/backinpack help).
+  flags:
+    - ITEMS_SAVE
+
+
+# Item in inventory
+style-item:
+  NAME: "&bDiamond &l%backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+  CUSTOM_MODEL_DATA: 1004
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_diamond_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"
+
+
+# Item in GUI
+style-gui:
+  NAME: "&bDiamond &l%backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+  CUSTOM_MODEL_DATA: 1114
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_diamond_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"

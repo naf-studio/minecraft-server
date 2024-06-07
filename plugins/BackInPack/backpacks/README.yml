@@ -1,0 +1,14 @@
+# Files in this folder will only be created the first time you run the plugin.
+#
+# If you delete any files in this folder and restart the server/reload it or reload the plugin,
+# the files will not be created.
+#
+# If you need the files in this folder, you can:
+#   1. Download them from github (https://github.com/olios123/HardcoreMode)
+#   2. Delete all plugin files (BackInPack folder) and restart the server
+#
+# If you have any problems, you can get help here https://discord.gg/kE6eptDu3W
+#
+# !WARNING!
+# You can delete this file, but do not rename it. The plugin will recognize it as a backpack.
+# !WARNING!

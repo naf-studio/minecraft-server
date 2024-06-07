@@ -1,0 +1,75 @@
+2024-06-07 04:06:57 [INFO]: Loading Overrides...
+2024-06-07 04:06:57 [INFO]: Loading World Types...
+2024-06-07 04:06:57 [INFO]: - World Type for 'world' set to 'NORMAL'
+2024-06-07 04:06:57 [INFO]: - World Type for 'world_nether' set to 'NETHER'
+2024-06-07 04:06:57 [INFO]: - World Type for 'world_the_end' set to 'NORMAL'
+2024-06-07 04:06:57 [INFO]: Loading Defaults...
+2024-06-07 04:06:57 [INFO]: Loading Custom Worlds...
+2024-06-07 04:06:57 [INFO]: [WARN] - Custom World 'custom_world_1' was not registered because world does NOT exist
+2024-06-07 04:06:57 [INFO]: [WARN] - Custom World 'other_custom_world' was not registered because world does NOT exist
+2024-06-07 04:06:57 [SEVERE]: The particle 'EXPLOSION_NORMAL' created a fatal error when loading particles! Your MC version isn't supported!
+2024-06-07 04:07:27 [INFO]: Database CHUNK_DATA:ChunkData configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database QUEUE:Queue configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database COOLDOWN:world configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database COOLDOWN:world_nether configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database COOLDOWN:world_the_end configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database COOLDOWN:limbo configured and loaded!
+2024-06-07 04:07:27 [INFO]: Database PLAYERS:Players configured and loaded!
+2024-06-07 04:07:30 [INFO]: Attempting to queue up some more safe locations...
+2024-06-07 04:07:36 [WARNING]: Seems like the world `limbo` does not have a `WorldType` declared. Please add/fix this in the config.yml file! This world will be treated as an overworld! If this world is a nether world, configure it to NETHER (example: `- limbo: NETHER`
+2024-06-07 04:12:49 [INFO]: Max attempts to create a Queue reached for default_limbo (amount: 0)
+2024-06-07 04:12:49 [INFO]: Queueing paused, max queue limit reached!
+2024-06-07 07:06:20 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-2027.5,y=62.0,z=1608.5,pitch=-44.419434,yaw=144.30273}
+2024-06-07 07:13:24 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-2856.5,y=67.0,z=-3219.5,pitch=29.162186,yaw=54.941025}
+2024-06-07 07:14:30 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=2238.5,y=80.0,z=-1616.5,pitch=23.459051,yaw=-35.36285}
+2024-06-07 07:33:46 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-2355.5,y=54.0,z=-3173.5,pitch=14.970917,yaw=78.03955}
+2024-06-07 07:36:43 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3747.5,y=64.0,z=2131.5,pitch=81.14993,yaw=156.77472}
+2024-06-07 07:37:10 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-3388.5,y=58.0,z=3220.5,pitch=59.072937,yaw=-131.0971}
+2024-06-07 07:45:10 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=3254.5,y=33.0,z=-1687.5,pitch=46.81671,yaw=2.6065826}
+2024-06-07 07:45:14 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=-1836.5,y=76.0,z=-2687.5,pitch=33.86412,yaw=-65.67706}
+2024-06-07 07:49:43 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3152.5,y=67.0,z=-2617.5,pitch=21.018692,yaw=18.23941}
+2024-06-07 07:53:55 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-1772.5,y=90.0,z=-3695.5,pitch=38.566986,yaw=77.130035}
+2024-06-07 07:55:13 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=2184.5,y=36.0,z=-1610.5,pitch=-74.54984,yaw=-130.63818}
+2024-06-07 07:58:54 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2604.5,y=70.0,z=2295.5,pitch=89.899994,yaw=-95.540184}
+2024-06-07 07:58:55 [INFO]: Attempting to queue up some more safe locations...
+2024-06-07 07:58:57 [INFO]: Queue position generated: id= rtp_world, database_ID= 543, location= x: 1091, y: 71, z: 1832, world: world
+2024-06-07 07:59:00 [INFO]: Queue position generated: id= rtp_world, database_ID= 544, location= x: -1461, y: 76, z: 3559, world: world
+2024-06-07 07:59:01 [INFO]: Queue position generated: id= rtp_world, database_ID= 545, location= x: 2628, y: 71, z: -1770, world: world
+2024-06-07 07:59:02 [INFO]: Queue position generated: id= rtp_world, database_ID= 546, location= x: 2124, y: 85, z: 1503, world: world
+2024-06-07 07:59:03 [INFO]: Queue position generated: id= rtp_world, database_ID= 547, location= x: -1062, y: 65, z: -3467, world: world
+2024-06-07 07:59:05 [INFO]: Queue position generated: id= rtp_world, database_ID= 548, location= x: 2661, y: 69, z: 2974, world: world
+2024-06-07 07:59:06 [INFO]: Queue position generated: id= rtp_world, database_ID= 549, location= x: -1920, y: 66, z: 3854, world: world
+2024-06-07 07:59:07 [INFO]: Queue position generated: id= rtp_world, database_ID= 550, location= x: 3214, y: 84, z: 3391, world: world
+2024-06-07 07:59:08 [INFO]: Queue position generated: id= rtp_world, database_ID= 551, location= x: 2309, y: 67, z: 2401, world: world
+2024-06-07 07:59:09 [INFO]: Queue position generated: id= rtp_world, database_ID= 552, location= x: -1512, y: 63, z: 2210, world: world
+2024-06-07 07:59:10 [INFO]: Queue position generated: id= rtp_world, database_ID= 553, location= x: 2598, y: 86, z: -2427, world: world
+2024-06-07 07:59:11 [INFO]: Queue position generated: id= rtp_world, database_ID= 554, location= x: 3630, y: 80, z: 1240, world: world
+2024-06-07 07:59:12 [INFO]: Queue position generated: id= rtp_world, database_ID= 555, location= x: -3161, y: 121, z: -3072, world: world
+2024-06-07 07:59:14 [INFO]: Queue position generated: id= rtp_world, database_ID= 556, location= x: 2235, y: 83, z: 1313, world: world
+2024-06-07 07:59:18 [INFO]: Queue position generated: id= rtp_world, database_ID= 557, location= x: 3167, y: 100, z: 3967, world: world
+2024-06-07 07:59:19 [INFO]: Queue position generated: id= rtp_world, database_ID= 558, location= x: -2125, y: 71, z: -3560, world: world
+2024-06-07 07:59:23 [INFO]: Queue position generated: id= rtp_world, database_ID= 559, location= x: 3309, y: 69, z: 1360, world: world
+2024-06-07 07:59:25 [INFO]: Queue position generated: id= rtp_world, database_ID= 560, location= x: -2110, y: 71, z: 3882, world: world
+2024-06-07 07:59:26 [INFO]: Queue position generated: id= rtp_world, database_ID= 561, location= x: -2185, y: 63, z: 2319, world: world
+2024-06-07 07:59:28 [INFO]: Queue position generated: id= rtp_world, database_ID= 562, location= x: -2500, y: 80, z: -2838, world: world
+2024-06-07 07:59:30 [INFO]: Queue position generated: id= rtp_world, database_ID= 563, location= x: -3229, y: 83, z: -1262, world: world
+2024-06-07 07:59:32 [INFO]: Queue position generated: id= rtp_world, database_ID= 564, location= x: 2264, y: 73, z: -3235, world: world
+2024-06-07 07:59:34 [INFO]: Queue position generated: id= rtp_world, database_ID= 565, location= x: 3363, y: 66, z: -1142, world: world
+2024-06-07 07:59:37 [INFO]: Queue position generated: id= rtp_world, database_ID= 566, location= x: -1369, y: 74, z: -1586, world: world
+2024-06-07 07:59:38 [INFO]: Queue position generated: id= rtp_world, database_ID= 567, location= x: 1806, y: 83, z: 1528, world: world
+2024-06-07 07:59:39 [INFO]: Queue position generated: id= rtp_world, database_ID= 568, location= x: 2037, y: 68, z: -2959, world: world
+2024-06-07 07:59:41 [INFO]: Queue position generated: id= rtp_world, database_ID= 569, location= x: -3917, y: 92, z: -3901, world: world
+2024-06-07 07:59:42 [INFO]: Queue position generated: id= rtp_world, database_ID= 570, location= x: -3382, y: 148, z: -3373, world: world
+2024-06-07 07:59:50 [INFO]: Queue position generated: id= rtp_world, database_ID= 571, location= x: 1981, y: 71, z: 3962, world: world
+2024-06-07 07:59:50 [INFO]: Max attempts to create a Queue reached for rtp_world (amount: 22)
+2024-06-07 08:01:58 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-1919.5,y=66.0,z=3854.5,pitch=50.922363,yaw=173.85919}
+2024-06-07 08:02:45 [INFO]: -Removed a queue Location{world=CraftWorld{name=world_nether},x=3803.5,y=41.0,z=1486.5,pitch=3.1503205,yaw=-159.68095}
+2024-06-07 08:05:57 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2037.5,y=68.0,z=-2958.5,pitch=33.064743,yaw=0.74432373}
+2024-06-07 08:09:01 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2628.5,y=71.0,z=-1769.5,pitch=14.003555,yaw=-165.06442}
+2024-06-07 08:56:54 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-1368.5,y=74.0,z=-1585.5,pitch=18.143112,yaw=-54.22821}
+2024-06-07 09:28:28 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2309.5,y=67.0,z=2401.5,pitch=-1.3502103,yaw=-86.28552}
+2024-06-07 09:29:49 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=-2184.5,y=63.0,z=2319.5,pitch=23.062897,yaw=-26.067154}
+2024-06-07 13:34:24 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3309.5,y=69.0,z=1360.5,pitch=0.79096985,yaw=-78.40305}
+2024-06-07 13:38:24 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2124.5,y=85.0,z=1503.5,pitch=65.92157,yaw=-35.246323}
+2024-06-07 13:41:39 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=2264.5,y=73.0,z=-3234.5,pitch=-40.781494,yaw=-118.20388}
+2024-06-07 13:45:15 [INFO]: -Removed a queue Location{world=CraftWorld{name=world},x=3167.5,y=100.0,z=3967.5,pitch=19.298492,yaw=-35.128525}

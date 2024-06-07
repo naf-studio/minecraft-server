@@ -1,0 +1,79 @@
+# Reference translation file for English
+# All colour codes can be used, as found here: https://www.spigotmc.org/wiki/textcosmetics-colors-and-formats/
+# We would be very happy if you submit your translations onto the
+# GitHub repository: https://github.com/spnda/BlockProt/pulls
+
+# We use ISO 639-1 or 639-2 codes for internationalization, it
+# is however safer to use the ISO 639-1 codes for backwards compatibility.
+# See this link for a good list of all codes: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes.
+locale: en
+
+enabled: Enabled
+disabled: Disabled
+inventories:
+  back: "Back"
+  last_page: "Last page"
+  next_page: "Next page"
+  block_lock: "Block Lock"
+  user_settings: "User Settings"
+  block_info: "Block Info"
+  lock: "Lock"
+  unlock: "Unlock"
+  lock_on_place: "Lock automatically"
+  copy_configuration: "Copy configuration"
+  paste_configuration: "Paste configuration"
+  set_block_name: "Set block name"
+  inspect_contents: "Inspect contents"
+  redstone:
+    settings: "Redstone Settings"
+    redstone_protection: "Redstone protection"
+    piston_protection: "Piston protection"
+    hopper_protection: "Hopper protection"
+    enable_all: "Enable all"
+    disable_all: "Disable all"
+  friends:
+    manage: "Manage Friends"
+    edit: "Edit Friend"
+    remove: "Remove Friend"
+    search: "Search Players"
+    search_history: "Search history"
+    result: "Players found"
+    the_public: "The public"
+    the_public_desc: "Represents every player on this server."
+    make_public: "Make public"
+    permissions: "Permissions"
+    permission:
+      read: "Read"
+      write: "Write"
+      manager: "Manager"
+  statistics:
+    statistics: "Statistics"
+    player_statistics: "Player statistics"
+    global_statistics: "Server statistics"
+    container_count: "Block count"
+    your_blocks: "Your blocks"
+
+messages:
+  permission_granted: "Permission granted."
+  unlocked: "Unlocked."
+  no_permission: "No permission."
+  friend_added: "Friend added."
+  friend_removed: "Friend removed."
+  friend_already_added: "Friend already added."
+  friend_cant_be_removed: "Friend cannot be removed."
+  redstone_added: "Redstone protection added."
+  redstone_removed: "Redstone protection removed."
+  exceeded_max_block_count: "You have exceeded the maximum lockable block count."
+  lock_hint: >
+    §6[BlockProt] You can protect your blocks by crouching and right-clicking your chests, furnaces, and more!
+    Also, check out /blockprot settings to configure it to your liking.
+    (Click here to disable these hints.)
+  hint_hover_text: "Open a menu from BlockProt or click here to disable hints."
+  disabled_hints: "§6Disabled hints!"
+
+integrations:
+  lands:
+    protect_containers_flag_name: Protect containers (BlockProt)
+    protect_containers_desc: Allows a player to protect chests, furnaces, ...
+    require_protect_for_friends_flag_name: Require "Protect containers" for friends (BlockProt)
+    require_protect_for_friends_desc: Only players that have the "Protect containers" flag are eligible to be added as a friend.

@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# You can use colors in your messages
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# IMPORTANT!
+# Any changes to this file require the server to be reloaded or restarted
+
+
+#   _____                 _      _   _
+#  |_   _| _ __ _ _ _  __| |__ _| |_(_)___ _ _
+#    | || '_/ _` | ' \(_-< / _` |  _| / _ \ ' \
+#    |_||_| \__,_|_||_/__/_\__,_|\__|_\___/_||_|
+#
+#           by olios [plugin author]
+#           using Google Translate
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Plugin status
+enable-plugin: "Plugin BackInPack has been enabled"
+disable-plugin: "Plugin BackInPack has been disabled"
+loaded-language-file: "%backinpack_config_language%.yml language file has been loaded"
+language-file-not-found: "Language file %backinpack_config_language%.yml not found. The en.yml file has been loaded"
+loading-single-backpack: "Loading players' backpacks"
+reload-complete: "Successfully reloaded configuration of BackInPack plugin"
+missing-backpacks: "No backpacks file found in the /backpacks folder"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Database
+database-not-connected: "&cPlugin is not connected to the database. This command cannot be performed"
+database-synchronized: "&aData synchronized with the database"
+# ___________________________________________________________________________
+
+
+#  _______  ___      _______  __   __  _______  ______
+# |       ||   |    |   _   ||  | |  ||       ||    _ |
+# |    _  ||   |    |  |_|  ||  |_|  ||    ___||   | ||
+# |   |_| ||   |    |       ||       ||   |___ |   |_||_
+# |    ___||   |___ |       ||_     _||    ___||    __  |
+# |   |    |       ||   _   |  |   |  |   |___ |   |  | |
+# |___|    |_______||__| |__|  |___|  |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6You died, items in your backpack have been &cremoved!"
+player-death-drop: "&6You died, items in your backpack have been &cthrown away!"
+player-death-save: "&aYou died, but your backpack items are preserved!"
+player-backpack-change-size: "The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
+player-backpack-access-through-command-disabled: "&cCommand access to the backpack is disabled!"
+player-backpack-access-through-item-disabled: "&cAccess to the backpack through the item has been disabled!"
+player-backpack-name-changed: "&aChanged backpack name from &6%old-backpack-name% &ato &f%new-backpack-name%"
+player-backpack-not-owner: "&cYou can't open other players' backpacks!"
+player-backpack-change-name: "&fNow enter a new name for this backpack"
+player-backpack-buy: "&aYou have successfully purchased a new backpack"
+player-max-backpacks: "&cYou already have the maximum number of backpacks!"
+player-backpack-not-exists: "&6The backpack you tried to open does not exist. It was replaced with an unassigned backpack"
+player-backpack-blacklist: "&cSome items cannot be stored in your backpack! They were thrown away"
+player-backpack-remove: "&6Your &f%backinpack_backpack_name% &6backpack has been removed"
+player-backpack-refund: "&aYou were refunded &6%backinpack_config_removing-backpacks_refund%$ &afor removing your backpack"
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6is a plugin that gives you the opportunity to increase your current inventory space through virtual backpacks."
+  - ""
+  - "&6Backpacks can be accessed with the &l&a/backpack &r&6command."
+  - "&6You can use this command in a shorter way: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Backpacks can be obtained by buying or crafting them &c(these options will not be available on all servers, it depends on the administration's arrangements)&6."
+  - ""
+  - "&6For more information, contact the administration or find the information you need."
+  - ""
+  - "&6Made by: &aolios"
+  - "&c❤ Thanks!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    __   __  ___   _______  _______  ___   _______  __    _  _______
+# |       ||       ||    _ |  |  |_|  ||   | |       ||       ||   | |       ||  |  | ||       |
+# |    _  ||    ___||   | ||  |       ||   | |  _____||  _____||   | |   _   ||   |_| ||  _____|
+# |   |_| ||   |___ |   |_||_ |       ||   | | |_____ | |_____ |   | |  | |  ||       || |_____
+# |    ___||    ___||    __  ||       ||   | |_____  ||_____  ||   | |  |_|  ||  _    ||_____  |
+# |   |    |   |___ |   |  | || ||_|| ||   |  _____| | _____| ||   | |       || | |   | _____| |
+# |___|    |_______||___|  |_||_|   |_||___| |_______||_______||___| |_______||_|  |__||_______|
+#
+
+
+# ___________________________________________________________________________
+# Permissions & commands
+no-permission: "&cYou don't have enough permissions to use this command"
+no-permission-backpack-access: "&cYou do not have enough permissions to open this backpack!"
+console-command: "&cYou cannot use this command from console"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _
+# |   _   ||      | |  |_|  ||   | |  |  | |
+# |  |_|  ||  _    ||       ||   | |   |_| |
+# |       || | |   ||       ||   | |       |
+# |       || |_|   ||       ||   | |  _    |
+# |   _   ||       || ||_|| ||   | | | |   |
+# |__| |__||______| |_|   |_||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Players
+player-not-found: "&cPlayer &f&l%player% &cnot found"
+player-backpack-userinfo-offline: "&9This player is offline, his permissions cannot be checked - the size of the visible backpack is &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6This player's backpack size has changed."
+  - "&6There are items in blocked places."
+  - "&6There will be no visible blocked places in the backpack so as not to remove items."
+player-has-max-backpacks: "&cThis player already has the maximum number of backpacks. Can't add more!"
+player-set-backpack-size: "&aPlayer &f&l%backinpack_player_name% &abackpack size set to &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aPlayer &f&l%backinpack_player_name% &aall backpacks size set to &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aBackpack size set to &f%backinpack_backpack_size% &afor all players (&f%backinpack_players%&a)"
+player-reload-complete: "&aSuccessfully reloaded configuration of BackInPack plugin"
+player-database-not-connected: "&cPlugin is not connected to the database. This command cannot be performed!"
+player-database-synchronized: "&aData synchronized with the database"
+player-backpack-add: "&aAdded backpack to &f%backinpack_player_name%"
+player-backpack-give-offline: "&cThe indicated player is offline. The backpack has not been added to his inventory!"
+player-userinfo:
+  - ""
+  - "&6Username: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Backpacks count: &a%backinpack_player_backpacks_count%"
+  - "&6Backpacks list:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ______    ______    _______  ______    _______
+# |       ||    _ |  |    _ |  |       ||    _ |  |       |
+# |    ___||   | ||  |   | ||  |   _   ||   | ||  |  _____|
+# |   |___ |   |_||_ |   |_||_ |  | |  ||   |_||_ | |_____
+# |    ___||    __  ||    __  ||  |_|  ||    __  ||_____  |
+# |   |___ |   |  | ||   |  | ||       ||   |  | | _____| |
+# |_______||___|  |_||___|  |_||_______||___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Arguments
+argument-not-number: "&f%args% &cis not a number"
+argument-invalid-number: "&cThe number cannot be less than 1 and greater than 54"
+argument-missing:
+  - "&cNot all arguments were given."
+  - "&cUsing the command: &f%command%"
+argument-player-missing: "&cNo such player found!"
+argument-backpack-not-found: "&cNo backpack was found with the given name!"
+argument-backpack-name-not-given: "&cNew backpack name not given!"
+argument-need-change-for-all-players:
+  - "&cWhen changing the backpack size for all players, you must change the size of all backpacks"
+  - "&cUse the command like this: &f/backpack-set-size all all <backpack size>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Economy
+economy-not-enough-money: "&cYou don't have enough money to buy a new backpack"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Commands
+command-disabled: "&cThis command is disabled on this server!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  __   __  _______  ______
+# |       ||       ||  | |  ||       ||    _ |
+# |   _   ||_     _||  |_|  ||    ___||   | ||
+# |  | |  |  |   |  |       ||   |___ |   |_||_
+# |  |_|  |  |   |  |       ||    ___||    __  |
+# |       |  |   |  |   _   ||   |___ |   |  | |
+# |_______|  |___|  |__| |__||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Values
+true: "&aYes"
+false: "&cNo"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flags (flag descriptions cannot be a list)
+flag-none: "&7No flags"
+flag-items-drop: "   &c- With death items will fall out"
+flag-backpack-delete: "   &c- With death you lose backpack"
+# Positive
+flag-items-save: "   &a+ After death, items are stored"
+# ___________________________________________________________________________

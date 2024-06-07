@@ -1,0 +1,2 @@
+# Players must kill the mobs in order for heads to drop
+require-player-kill: false

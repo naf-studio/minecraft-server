@@ -1,0 +1,369 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# IMPORTANT!
+# Any changes to this file require the server to be restarted.
+# Removing variables will cause the plugin to malfunction.
+# You can download the original, unmodified files from plugin page.
+# https://www.spigotmc.org/resources/authors/olios123.1116758/
+
+
+# *------------------------------------*
+# :        CHECKING FOR UPDATES        :
+# *------------------------------------*
+# You will get a notification when a newer plugin version is released.
+check-updates: true
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :          PLUGIN LANGUAGE           :
+# *------------------------------------*
+# Plugin language.
+# You can create your own .yml language files or edit existing ones.
+language: en
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :                LOGS                :
+# *------------------------------------*
+# The plugin logs will be displayed in green.
+clearer-logs: false
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :               BACKUP               :
+# *------------------------------------*
+# Plugin will backup all files every 1h.
+# Archives are saved in the /backup folder.
+# WHEN A NEW BACKUP IS CREATED, OVER A WEEK'S BACKUPS ARE DELETED.
+backup: true
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :               MYSQL                :
+# *------------------------------------*
+# Save all data from files to database (MySQL only).
+# Check file database.yml to change connection information.
+# Data in the database is synchronized with each change of plugin files (inventories.yml).
+database: false
+
+# How MySQL works.
+# The database can perform not only the function of storing files, but also synchronizing backpacks between servers.
+#
+# Possible options to choose from:
+# data - sends data to the database and stores it there
+# sync - works the same as "data", but additionally synchronizes backpacks from the database between servers
+database-type: data
+
+# How to use the sync option:
+# * You need two servers with the same version of the plugin.
+# * Connect the plugin to the same database.
+# * In "database-type" type "sync" in both configurations.
+# * Restart the servers.
+# * Ready!
+#
+# IMPORTANT! The "sync" option does not modify the inventories.yml file in any way.
+# The file with this option will not be used.
+# IMPORTANT! The sync option can significantly slow down the performance of the plugin.
+#
+# *------------------------------------*
+
+
+#  _______  _______  __    _  _______  ___   _______  __   __  ______    _______  _______  ___   _______  __    _
+# |       ||       ||  |  | ||       ||   | |       ||  | |  ||    _ |  |   _   ||       ||   | |       ||  |  | |
+# |     __||   _   ||   |_| ||    ___||   | |    ___||  | |  ||   | ||  |  |_|  ||_     _||   | |   _   ||   |_| |
+# |    |   |  | |  ||       ||   |___ |   | |   | __ |  |_|  ||   |_||_ |       |  |   |  |   | |  | |  ||       |
+# |    |   |  |_|  ||  _    ||    ___||   | |   ||  ||       ||    __  ||       |  |   |  |   | |  |_|  ||  _    |
+# |    |__ |       || | |   ||   |    |   | |   |_| ||       ||   |  | ||   _   |  |   |  |   | |       || | |   |
+# |_______||_______||_|  |__||___|    |___| |_______||_______||___|  |_||__| |__|  |___|  |___| |_______||_|  |__|
+#
+
+
+# *------------------------------------*
+# :    MAXIMUM NUMBER OF BACKPACK      :
+# *------------------------------------*
+# The number of maximum number of backpacks can be set from 1 to 36.
+# When a player has the maximum amount of backpacks, he will not be able to buy new ones and they will not be added to him.
+# Reducing this number may result in REMOVAL OF EXCESSIVE backpacks already owned by players.
+max-backpacks: 1
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :           FIRST BACKPACK           :
+# *------------------------------------*
+# Getting a backpack after joining the server.
+# If the player enters the server for the first time, he will receive a backpack.
+default-backpack: default
+# Enter "none" or "null" so that the player does not receive any backpack after entering the server
+
+# The backpack can be added to the player immediately as an item
+default-backpack-give-as-item:
+  enable: false
+  # The slot to which the backpack will be added.
+  # If this slot is occupied or incorrect values are entered, the backpack will be added to the first free slot - if it exists.
+  # Slot numbering - https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b2/Items_slot_number.png/revision/latest?cb=20170708121246
+  slot: 0
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :          BACKPACK ACCESS           :
+# *------------------------------------*
+# Access to backpacks.
+# The content of backpacks can be accessed in several ways.
+# If the value in "item" is changed, backpacks (as items) will not be removed but will stop working.
+# The player will receive a message that they cannot open this backpack when they try to open it.
+backpack-access:
+  gui: true
+  item: true
+
+
+# Require permission for the player to access their backpack.
+# If "true" player must have permission "backinpack.backpack-access".
+backpack-permission: false
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :        BACKPACK AFTER DEATH        :
+# *------------------------------------*
+# This setting determines what happens to the items after the player dies.
+# Player backpacks will NEVER BE DELETED.
+# Select one of the following values:
+# save - items are saved
+# delete - items are removed from the backpack
+# drop - items drop from the player
+player-dead: save # default save
+
+# Keep items with permission.
+# Items will be saved upon player's death regardless of configuration as long as they have the permission listed below.
+# "backinpack.backpack-save"
+
+# Players other than the owner of the backpack cannot access it.
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :       CREATING NEW BACKPACKS       :
+# *------------------------------------*
+# Possibilities to create a backpack.
+# Specifies how a backpack can be created and assigned to a player.
+create-backpack:
+  crafting: true # disabling this option will enable backpack assignment (section below)
+  buy: false # disabling this option will disable the ability to purchase backpacks in the backpack GUI
+
+# IMPORTANT: Assigning backpacks - section below.
+
+# Standard name for new backpacks.
+# The name will also be visible when crafting backpacks.
+default-backpack-name: "New backpack"
+
+# Specify here what backpack will be created after changing an unassigned backpack to create a new one.
+created-backpack: default
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :      PLAYERS OPENING BACKPACKS     :
+# *------------------------------------*
+# This option determines whether other players (than the owner) will be able to open the backpack using the item.
+# To make using this option pointless, it is recommended that backpacks can only be accessed using an item.
+other-players-open-backpack: false
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :         CRAFTING A BACKPACK        :
+# *------------------------------------*
+# The numbers represent the crafting field.
+# Enter the Item ID here.
+# Item ID list https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html#enum-constant-summary
+# Type "null" to set it to empty.
+
+#      Crafting
+# +-----+-----+-----+
+# |  1  |  2  |  3  |
+# +-----+-----+-----+   =======>  +----------+
+# |  4  |  5  |  6  |   =======>  | Backpack |
+# +-----+-----+-----+   =======>  +----------+
+# |  7  |  8  |  9  |
+# +-----+-----+-----+
+
+crafting:
+  enable: true
+  1: LEATHER
+  2: IRON_INGOT
+  3: LEATHER
+  4: LEATHER
+  5: SHULKER_BOX
+  6: LEATHER
+  7: LEATHER
+  8: CHEST
+  9: LEATHER
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :         BUYING A BACKPACK          :
+# *------------------------------------*
+# Purchasing a backpack.
+# The backpack can be purchased in the backpack menu.
+# Sales can be enabled/disabled in line 173 of this file.
+# IMPORTANT! Requires the Vault plugin to work.
+# A backpack can also be added with /backpack give <player>
+# All configuration options are located in files in the /backpacks folder.
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :         REMOVING BACKPACKS         :
+# *------------------------------------*
+# Removing backpacks.
+# This option allows players to remove backpacks.
+# This only applies to the GUI because destroying a backpack as an item does not remove the items in that backpack.
+removing-backpacks:
+  # Enabling the option will cause an additional option to appear in the backpack GUI list.
+  enable: true
+  # Partial refund - enter the amount the player will receive after removing one backpack.
+  # If backpacks cannot be purchased because the option is disabled or the plugin is missing, the player will not receive anything.
+  # Players will NOT receive a refund if the backpack has been crafted.
+  refund: 0
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :        ITEMS (IN INVENTORY)        :
+# *------------------------------------*
+# The appearance of the backpack that will be visible when the backpack needs to be assigned.
+# For more information about this section, see line 186.
+backpack-style-to-assignment:
+  NAME: "&7&lUnassigned backpack"
+  MATERIAL: LEATHER
+  LORE:
+    - "&fClick to assign a backpack"
+    - "&fThe backpack in this condition does not store items"
+
+
+# Item of the inaccessible space in the backpack.
+# You can edit the appearance of this item.
+backpack-inaccessible-place:
+  NAME: "&c&lx"
+  MATERIAL: RED_STAINED_GLASS_PANE # if the plugin doesn't find the material, it will use RED_STAINED_GLASS_PANE
+  LORE: [] # write from dashes on a new line
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :         BLACKLIST OF ITEMS         :
+# *------------------------------------*
+# Prohibited items.
+# Here you can specify what items players cannot store in their backpacks.
+#
+# How to write the names of items correctly using the example:
+# If the item has color variants, e.g. shulker box, enter SHULKER_BOX (or in lower case).
+# Replace spaces with => "_".
+#
+# Blacklist works in a keyword search way.
+# If an item contains one of the names listed below in its id, excludes it.
+# This makes it possible to exclude all colors, e.g. of shulker boxes or wool.
+blacklist-items:
+  #- SHULKER_BOX # added as standard, so as not to increase the space in the backpack
+# *------------------------------------*
+
+
+#  _______  _______  __   __  __   __  _______  __    _  ______   _______
+# |       ||       ||  |_|  ||  |_|  ||   _   ||  |  | ||      | |       |
+# |     __||   _   ||       ||       ||  |_|  ||   |_| ||  _    ||  _____|
+# |    |   |  | |  ||       ||       ||       ||       || | |   || |_____
+# |    |   |  |_|  ||       ||       ||       ||  _    || |_|   ||_____  |
+# |    |__ |       || ||_|| || ||_|| ||   _   || | |   ||       | _____| |
+# |_______||_______||_|   |_||_|   |_||__| |__||_|  |__||______| |_______|
+
+
+# *------------------------------------*
+# :         DISABLED COMMANDS          :
+# *------------------------------------*
+# List of disabled commands.
+# List command names with hyphens.
+# IMPORTANT! Only enter the full command names, NOT their aliases.
+disabled-commands: []
+  #- backpack
+# *------------------------------------*
+
+
+#  _______  ______   __   __  ___   __    _
+# |   _   ||      | |  |_|  ||   | |  |  | |
+# |  |_|  ||  _    ||       ||   | |   |_| |
+# |       || | |   ||       ||   | |       |
+# |       || |_|   ||       ||   | |  _    |
+# |   _   ||       || ||_|| ||   | | | |   |
+# |__| |__||______| |_|   |_||___| |_|  |__|
+
+
+# *------------------------------------*
+# :    ACCESS TO PLAYERS' BACKPACKS    :
+# *------------------------------------*
+# Allow administrators to open other player's backpacks with the command /backpack [player]
+admin-open-player-backpack: true
+
+# For an administrator, to have access to players' backpacks, he must be an op or have the permission: "backinpack.open"
+# *------------------------------------*
+
+
+#  _______  _______  _______  _______  _______  _______  _______
+# |       ||       ||       ||       ||       ||       ||       |
+# |    ___||    ___||    ___||    ___||     __||_     _||  _____|
+# |   |___ |   |___ |   |___ |   |___ |    |     |   |  | |_____
+# |    ___||    ___||    ___||    ___||    |     |   |  |_____  |
+# |   |___ |   |    |   |    |   |___ |    |__   |   |   _____| |
+# |_______||___|    |___|    |_______||_______|  |___|  |_______|
+
+
+# *------------------------------------*
+# :               SOUNDS               :
+# *------------------------------------*
+# When the player open the backpack.
+open-sound:
+  enable: true
+  sound: BLOCK_ENDER_CHEST_OPEN
+
+# When the player closes the backpack.
+close-sound:
+  enable: true
+  sound: BLOCK_ENDER_CHEST_CLOSE
+
+# When a player buys a backpack.
+buy-backpack-sound:
+  enable: true
+  sound: ENTITY_VILLAGER_YES
+
+# When a player tries to buy a backpack but doesn't have enough money.
+no-enough-money-sound:
+  enable: true
+  sound: ENTITY_VILLAGER_NO
+
+# When the player removes the backpack.
+remove-backpack-sound:
+  enable: true
+  sound: ENTITY_GENERIC_EXPLODE
+# *------------------------------------*

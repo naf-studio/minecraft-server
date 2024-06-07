@@ -1,0 +1,13 @@
+# The amount of uses left a piece of equipment should have left before notifying the player
+uses-left: 10
+# Cooldown in seconds between notifications to limit spam
+notification-cooldown-seconds: 10
+defaults:
+  # Default setting for notifying players when their main/off hand tools get low
+  hand-ping: true
+  # Default setting for notifying players when their equipped armor gets low
+  armor-ping: true
+  # Default setting for playing a sound upon a notification
+  play-sound: true
+  # Default setting for displaying the notification to the player. Can be one of: TITLE, SUBTITLE, CHAT, ACTION_BAR, HIDDEN
+  display: "SUBTITLE"

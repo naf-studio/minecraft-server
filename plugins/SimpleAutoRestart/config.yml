@@ -1,0 +1,32 @@
+# The hour and minute when the server should restart (24 hour format)
+restartTime:
+- '17:00'
+# Add multiple times by adding a new line like: - '12:00'
+
+# Configure message and the corresponding pre-warning time in seconds
+messages:
+  '0': '[AutoRestart] Restarting now'
+  '1': '[AutoRestart] Restarting in 1 second'
+  '2': '[AutoRestart] Restarting in 2 seconds'
+  '3': '[AutoRestart] Restarting in 3 seconds'
+  '5': '[AutoRestart] Restarting in 5 seconds'
+  '10': '[AutoRestart] Restarting in 10 seconds'
+  '15': '[AutoRestart] Restarting in 15 seconds'
+  '30': '[AutoRestart] Restarting in 30 seconds'
+  '60': '[AutoRestart] Restarting in 1 minute'
+  '120': '[AutoRestart] Restarting in 2 minutes'
+  '180': '[AutoRestart] Restarting in 3 minutes'
+  '300': '[AutoRestart] Restarting in 5 minutes'
+  '600': '[AutoRestart] Restarting in 10 minutes'
+
+titles: 
+  '600' : '§l§4Warning'
+  '300' : '§l§4Warning'
+  '60' : '§l§4Warning'
+  '5' : '§l§4Warning'
+
+subtitles:
+  '600' : "§6Restarting in 10 minutes"
+  '300' : "§6Restarting in 5 minutes"
+  '60' : "§6Restarting in 1 minutes"
+  '5' : "§6Restarting now..."

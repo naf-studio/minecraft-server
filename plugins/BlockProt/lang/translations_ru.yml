@@ -1,0 +1,64 @@
+---
+locale: ru
+inventories:
+  back: Назад
+  last_page: Последняя страница
+  next_page: Следующая страница
+  block_lock: Block Lock
+  user_settings: Мои настройки
+  block_info: Список хозяев
+  lock: Запереть на замок
+  unlock: Убрать замок
+  lock_on_place: Запирать автоматически
+  copy_configuration: Скопировать настройки
+  paste_configuration: Вставить настройки
+  set_block_name: Установить имя блока
+  inspect_contents: Осмотрить содержимое
+  redstone:
+    settings: Редстоун настройки
+    enable_all: Включить всё
+    disable_all: Отключить всё
+  friends:
+    manage: Добавить друга
+    edit: Настройки доступа
+    remove: Удалить друга
+    search: Поиск игроков
+    search_history: История поиска
+    result: Найденные игроки
+    the_public: Публичный
+    the_public_desc: Представляет каждого игрока на этом сервере.
+    make_public: Сделать публичным
+    permissions: Разрешения
+    permission:
+      read: Только смотреть
+      write: Брать блоки
+      manager: Управлять
+  statistics:
+    statistics: Статистика
+    player_statistics: Моя статистика
+    global_statistics: Статистика сервера
+    container_count: Количество запираемых объектов
+    your_blocks: Количество твоих запираемых объектов
+messages:
+  permission_granted: Доступ разрешён.
+  unlocked: Разблокировано.
+  no_permission: Заперто.
+  friend_added: Друг добавлен.
+  friend_removed: Друг удалён.
+  friend_already_added: Этот друг уже добавлен.
+  friend_cant_be_removed: Этот друг не может быть удалён.
+  redstone_added: Редстоун защита была добавлена.
+  redstone_removed: Редстоун защита была убрана.
+  exceeded_max_block_count: Вы превысили максимальное количество блоков, которые можно
+    запереть.
+  lock_hint: "&6Вы можете запереть свои блоки, приседая  и нажимая одновременно правую
+    кнопку мыши по сундукам, печкам и другим предметам! Кроме того, проверьте настройки
+    /blockprot, чтобы настроить их по своему вкусу."
+integrations:
+  lands:
+    protect_containers_flag_name: Запереть хранилища (BlockProt)
+    protect_containers_desc: Позволяет игроку запереть сундуки, печи, ...
+    require_protect_for_friends_flag_name: Требовать активировать настройку «Защитить
+      контейнеры» от друзей (BlockProt)
+    require_protect_for_friends_desc: Только игроки, у которых есть установлена настройка
+      «Защитить контейнеры», могут быть добавлены в друзья.

@@ -1,0 +1,40 @@
+############################
+#AntiCreeper by iJ0hny.    #
+#Version: 2.8              #
+#Make sure to leave your   #
+#thoughts on a review.     #
+############################
+
+#The message that is shown when player has no permission.
+No-Permission-Message: '&0[&fAntiCreeper&0]&r: &cYou are not permitted to do this!'
+
+#The message that is shown when player executes /ac.
+Ac-Command-Message: '&0[&fAntiCreeper&0]&r: &cType /ac help for more info.'
+
+#Messages that admins receive.
+Reload-Message: '&0[&fAntiCreeper&0]&r: &2Config Reloaded!'
+
+#Cancel TNT and/or creeper explosions.
+Creeper-Cancel-Explosions: true
+TNT-Cancel-Explosions: false
+Wither-Skulls-Cancel-Explosions: true
+Wither-Mob-Cancel-Explosions: true
+Wither-Mob-Cancel-Block-Breaking: false
+
+#Cancel damage caused from explosions of TNT and/or creepers.
+Cancel-Damage-From-Creeper-Explosions: false
+Cancel-Damage-From-TNT-Explosions: false
+Cancel-Damage-From-Wither-Skulls-Explosions: false
+Cancel-Damage-From-Wither-Mob-Explosions: false
+
+#Keep the effect of the explosion if Cancel-Explosions is set to false.
+#NOTE: Keep this to false if you keep explosions enabled!
+Creeper-Keep-Effect: true
+TNT-Keep-Effect: true
+Wither-Skulls-Keep-Effect: true
+
+#Keep the sound of the explosion if Cancel-Explosions is set to false.
+#NOTE: Keep this to false if you keep explosions enabled!
+Creeper-Keep-Sound: true
+TNT-Keep-Sound: true
+Wither-Skulls-Keep-Sound: true
