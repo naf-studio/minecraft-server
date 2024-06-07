@@ -1,0 +1,27 @@
+name: haisann
+description: ''
+open: false
+pvp: false
+home: ''
+color: '6'
+chests: []
+players:
+- 5b4c4ac4-b912-361a-ac26-e41ea2dec3d0,OWNER
+level: 1
+tag: ''
+echest:
+  '0':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: SPRUCE_LOG
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: HAY_BLOCK
+    amount: 25
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: IRON_INGOT
+    amount: 32
+score: 0

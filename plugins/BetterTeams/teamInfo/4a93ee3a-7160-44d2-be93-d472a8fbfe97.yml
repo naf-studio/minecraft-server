@@ -1,0 +1,14 @@
+name: Crow
+description: ''
+open: false
+pvp: false
+home: ''
+color: '0'
+chests: []
+players:
+- 00000000-0000-0000-0009-01f7b41145ef,OWNER
+level: 1
+tag: ''
+warps:
+- 1;world:-6588.637:65.0:-8483.797:2.4045715:22.754013
+score: 0

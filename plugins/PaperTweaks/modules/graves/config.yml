@@ -1,0 +1,13 @@
+# Enable to use crouching on the grave to retrieve it
+legacy-shift-behavior: false
+# When enabled, players can open graves they don't own
+grave-robbing: false
+# When grave-robbing is enabled, this is the number of seconds to prevent grave robbing
+grave-robbing-timer: 0
+# When enabled, players can see the coordinates of their last grave
+grave-locating: true
+# When enabled, graves collect experience dropped on death
+xp-collection: true
+# Worlds listed here will not create graves for players
+disabled-worlds:
+  - "disabled_world_name"

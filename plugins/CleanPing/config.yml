@@ -1,0 +1,39 @@
+#   ___ _                 ___ _
+#  / __| |___ __ _ _ _   | _ (_)_ _  __ _
+# | (__| / -_) _` | ' \  |  _/ | ' \/ _` |
+# \___|_\___\__,_|_||_|  |_| |_|_||_\__, |
+#                                   |___/
+#
+# Configuration file. Made with ❤ by frafol.
+# For support: https://discord.com/invite/sTSwaGBCdC
+
+settings:
+  # Toggle Dynamic Ping, change color when ping is high/low.
+  dynamic_ping: true
+  
+  # Enable others ping command. (/ping {username})
+  others_ping_enabled: true
+  
+  # Enable difference ping command. (/ping {username1} {username2})
+  # NOTE: This feature is not compatible with RedisBungee.
+  difference_ping_enabled: true
+  
+  update_check: true
+  auto_update: true
+  stats: true
+
+dynamic:
+  
+  medium_ms: 120
+  high_ms: 180
+  
+  low_ms_color: '&a'
+  medium_ms_color: '&e'
+  high_ms_color: '&c'
+
+permissions:
+  
+  ping: cleanping.ping
+  others_ping: cleanping.ping.others
+  difference_ping: cleanping.ping.difference
+  reload: cleanping.reload

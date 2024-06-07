@@ -1,0 +1,4 @@
+# Chance a player's head will drop
+head-drop-chance: 1.0
+# Players must kill the player in order for a head to drop
+require-player-kill: true

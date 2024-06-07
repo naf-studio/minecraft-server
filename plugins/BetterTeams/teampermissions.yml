@@ -1,0 +1,100 @@
+create:
+  enabled: true
+leave:
+  enabled: true
+  rank: DEFAULT
+disband:
+  enabled: true
+  rank: OWNER
+description:
+  enabled: true
+  rank: OWNER
+invite:
+  enabled: true
+  rank: ADMIN
+join:
+  enabled: true
+name:
+  enabled: true
+  rank: OWNER
+open:
+  enabled: true
+  rank: OWNER
+info:
+  enabled: true
+kick:
+  enabled: true
+  rank: ADMIN
+promote:
+  enabled: true
+  rank: OWNER
+demote:
+  enabled: true
+  rank: OWNER
+home:
+  enabled: true
+  rank: DEFAULT
+sethome:
+  enabled: true
+  rank: ADMIN
+ban:
+  enabled: true
+  rank: ADMIN
+unban:
+  enabled: true
+  rank: ADMIN
+chat:
+  enabled: true
+  rank: DEFAULT
+color:
+  enabled: true
+  rank: OWNER
+title:
+  enabled: true
+  rank: OWNER
+top:
+  enabled: true
+baltop:
+  enabled: true
+rank:
+  enabled: true
+delhome:
+  enabled: true
+  rank: ADMIN
+ally:
+  enabled: true
+  rank: OWNER
+neutral:
+  enabled: true
+  rank: OWNER
+allychat:
+  enabled: true
+  rank: DEFAULT
+list:
+  enabled: true
+warp:
+  enabled: true
+  rank: DEFAULT
+setwarp:
+  enabled: true
+  rank: ADMIN
+delwarp:
+  enabled: true
+  rank: ADMIN
+warps:
+  enabled: true
+  rank: DEFAULT
+echest:
+  enabled: true
+  rank: DEFAULT
+rankup:
+  enabled: true
+  rank: OWNER
+tag:
+  enabled: true
+  rank: OWNER
+pvp:
+  enabled: true
+  rank: ADMIN
+chest:
+  enabled: true

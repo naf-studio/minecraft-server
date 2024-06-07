@@ -1,0 +1,42 @@
+
+
+
+settings:
+  # Technical options.
+  backpack-size: 36 # Backpack size after purchase (from 1 to 54).
+  cost: 2000 # Purchase price.
+  give-as-item: true # The backpack is also added as an item.
+
+  # Additional backpack options - read the plugin documentation (/backinpack help).
+  flags:
+    - ITEMS_DROP
+
+
+# Item in inventory
+style-item:
+  NAME: "&7Iron &l%backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+  CUSTOM_MODEL_DATA: 1003
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_iron_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"
+
+
+# Item in GUI
+style-gui:
+  NAME: "&7Iron %backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+  CUSTOM_MODEL_DATA: 1113
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_iron_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"

@@ -1,0 +1,4 @@
+# Time in ticks between updates of the HUD in the player's action bar
+hud-update-time-in-ticks: 2
+# Enabling this will set the player's HUD to be on when they join the game for the first time
+enabled-by-default: false

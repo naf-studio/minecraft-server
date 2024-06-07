@@ -1,0 +1,123 @@
+# BlockProt Config
+
+# Load a language file from the plugins/BlockProt/ directory.
+# You can create your own language files and edit existing ones.
+# Translations can be missing from this file and will instead be loaded
+# from an internal version of "translations_en.yml".
+language_file: translations_en.yml
+
+# The fallback translation when the translation was not found in the
+# language_file specified above, and it was also missing from the resources
+# within the .jar file. This should most likely never happen.
+fallback_string: "Unknown translation"
+
+# If this is true, we will copy and replace the translation files on
+# each startup. This is so that when you should update this plugin, any
+# new or updated translations are automatically copied and applied. If
+# you want to modify and included translation file, you will have to make
+# this false, it is however always recommended to make your own, custom file.
+replace_translations: true
+
+# If set to "true", anytime an admin joins the server, they will
+# receive an in-game message if this plugin is outdated.
+# If set to "false", no message will be sent but /blockprot update
+# will still work.
+notify_op_of_updates: false
+
+# If set to "true", redstone will be automatically disallowed on every
+# placed block, if the player has lock on place enabled.
+redstone_disallowed_by_default: false
+
+# A list of world names the plugin should not be usable in.
+# The case of each name is ignored.
+# Useful for a mining-only world where a block should not be
+# owned by anyone. For example:
+#   - world_mining
+#   - world_end
+excluded_worlds: [ ]
+
+# Setting this to 'false' will make every new player have
+# their "lock on place" setting disabled. This will be by
+# default set to 'true'.
+# Note: This does NOT affect players who have previously
+# played on the server.
+lock_on_place_by_default: false
+
+# The maximum amount of blocks a player can lock. If removed
+# or set to any negative value, this is interpreted as setting
+# no limit.
+player_max_locked_block_count: -1
+
+# The cooldown between messages hinting players that they can
+# protect their blocks.
+lock_hint_cooldown_in_seconds: 10
+
+# This defines the minimum similarity percentage that a player name
+# can have to the friend search query at which it still shows up. By
+# default, this is 0.3, meaning only names that are less than 30% similar
+# are shown in the friend search. To determine similarity, the levenshtein
+# algorithm is used.
+friend_search_similarity: 0.3
+
+# Tile entities that should be locked. Tile entities are blocks
+# that can contain items. You can find a detailed list of all
+# possible values at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html.
+lockable_tile_entities:
+  - CHEST
+  - TRAPPED_CHEST
+  - FURNACE
+  - SMOKER
+  - BLAST_FURNACE
+  - HOPPER
+  - BARREL
+  - BREWING_STAND
+  - DISPENSER
+  - DROPPER
+  - LECTERN
+
+# All varieties of shulker boxes that should be lockable.
+lockable_shulker_boxes:
+  - BLACK_SHULKER_BOX
+  - BLUE_SHULKER_BOX
+  - BROWN_SHULKER_BOX
+  - CYAN_SHULKER_BOX
+  - GRAY_SHULKER_BOX
+  - GREEN_SHULKER_BOX
+  - LIGHT_BLUE_SHULKER_BOX
+  - LIGHT_GRAY_SHULKER_BOX
+  - LIME_SHULKER_BOX
+  - MAGENTA_SHULKER_BOX
+  - ORANGE_SHULKER_BOX
+  - PINK_SHULKER_BOX
+  - PURPLE_SHULKER_BOX
+  - RED_SHULKER_BOX
+  - SHULKER_BOX
+  - WHITE_SHULKER_BOX
+  - YELLOW_SHULKER_BOX
+
+# Blocks that should be lockable.
+# This only works with Spigot 1.16.4 or higher.
+lockable_blocks:
+  - ANVIL
+  - CHIPPED_ANVIL
+  - DAMAGED_ANVIL
+  - ACACIA_FENCE_GATE
+  - BIRCH_FENCE_GATE
+  - CRIMSON_FENCE_GATE
+  - DARK_OAK_FENCE_GATE
+  - JUNGLE_FENCE_GATE
+  - OAK_FENCE_GATE
+  - SPRUCE_FENCE_GATE
+  - WARPED_FENCE_GATE
+
+# Doors are two blocks and are therefore handled differently.
+# This only works with Spigot 1.16.4 or higher.
+lockable_doors:
+  - ACACIA_DOOR
+  - BIRCH_DOOR
+  - CRIMSON_DOOR
+  - DARK_OAK_DOOR
+  - JUNGLE_DOOR
+  - OAK_DOOR
+  - SPRUCE_DOOR
+  - WARPED_DOOR

@@ -1,0 +1,11 @@
+# Any material in this list will be considered a portal frame material
+portal-frame-materials:
+  - "minecraft:obsidian"
+  - "minecraft:crying_obsidian"
+size:
+  # Minimum number of portals block spaces required to create a valid portal
+  min-portal-blocks: 6
+  # How wide the portal can be. Larger numbers may cause issues
+  max-portal-width: 23
+  # How tall the portal can be. Larger numbers may cause issues
+  max-portal-height: 23

@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# Vous pouvez utiliser des couleurs dans vos messages
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# IMPORTANT!
+# Toute modification de ce fichier nécessite le rechargement ou le redémarrage du serveur
+
+
+#    _____            _         _   _
+#   |_   _| _ __ _ __| |_  _ __| |_(_)___ _ _
+#     | || '_/ _` / _` | || / _|  _| / _ \ ' \
+#     |_||_| \__,_\__,_|\_,_\__|\__|_\___/_||_|
+#
+#           par olios [auteur du plugin]
+#          en utilisant Google Traduction
+
+
+#
+#  _______  ______    _______  __    _  _______  __   __  _______  ______
+# |  _    ||    _ |  |   _   ||  |  | ||       ||  | |  ||       ||    _ |
+# | |_|   ||   | ||  |  |_|  ||   |_| ||       ||  |_|  ||    ___||   | ||
+# |       ||   |_||_ |       ||       ||       ||       ||   |___ |   |_||_
+# |  _   | |    __  ||       ||  _    ||      _||       ||    ___||    __  |
+# | |_|   ||   |  | ||   _   || | |   ||     |_ |   _   ||   |___ |   |  | |
+# |_______||___|  |_||__| |__||_|  |__||_______||__| |__||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# État du plug-in
+enable-plugin: "Le plugin BackInPack a été activé"
+disable-plugin: "Le plugin BackInPack a été désactivé"
+loaded-language-file: "Le fichier de langue %backinpack_config_language%.yml a été chargé"
+language-file-not-found: "Le fichier de langue %backinpack_config_language%.yml n'a pas été trouvé. Le fichier en.yml a été chargé"
+loading-single-backpack: "Chargement des sacs à dos des joueurs"
+reload-complete: "La configuration du plugin BackInPack a été rechargée avec succès"
+missing-backpacks: "Aucun fichier de sacs à dos trouvé dans le dossier /backpacks"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Base de données
+database-not-connected: "&cLe plugin n'est pas connecté à la base de données. Cette commande ne peut pas être exécutée"
+database-synchronized: "&aDonnées synchronisées avec la base de données"
+# ___________________________________________________________________________
+
+
+#      ___  _______  __   __  _______  __   __  ______
+#     |   ||       ||  | |  ||       ||  | |  ||    _ |
+#     |   ||   _   ||  | |  ||    ___||  | |  ||   | ||
+#     |   ||  | |  ||  |_|  ||   |___ |  |_|  ||   |_||_
+#  ___|   ||  |_|  ||       ||    ___||       ||    __  |
+# |       ||       ||       ||   |___ |       ||   |  | |
+# |_______||_______||_______||_______||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Tu es mort, les objets de ton sac à dos ont été &csupprimés !"
+player-death-drop: "&6Tu es mort, les objets de ton sac à dos ont été &cjettés !"
+player-death-save: "&aTu es mort, mais les objets de ton sac à dos sont préservés !"
+player-backpack-change-size: "La taille de ton sac à dos &9a été modifiée&f, il y avait des objets dans des endroits inaccessibles et &9ils ont été jetés"
+player-backpack-access-through-command-disabled: "&cL'accès au sac à dos via la commande est désactivé !"
+player-backpack-access-through-item-disabled: "&cL'accès au sac à dos via l'objet est désactivé !"
+player-backpack-name-changed: "&aLe nom du sac à dos a été modifié de &6%old-backpack-name% &aà &f%new-backpack-name%"
+player-backpack-not-owner: "&cTu ne peux pas ouvrir les sacs à dos des autres joueurs !"
+player-backpack-change-name: "&fMaintenant, saisis un nouveau nom pour ce sac à dos"
+player-backpack-buy: "&aTu as acheté avec succès un nouveau sac à dos"
+player-max-backpacks: "&cTu as déjà atteint le nombre maximal de sacs à dos !"
+player-backpack-not-exists: "&6Le sac à dos que vous avez essayé d'ouvrir n'existe pas. Il a été remplacé par un sac à dos non assigné."
+player-backpack-blacklist: "&cCertains objets ne peuvent pas être stockés dans ton sac à dos ! Ils ont été jetés"
+player-backpack-remove: "&6Votre sac à dos &f%backinpack_backpack_name% &6a été retiré."
+player-backpack-refund: "&aVous avez été remboursé de &6%backinpack_config_removing-backpacks_refund%$ &apour avoir retiré votre sac à dos."
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6est un plugin qui vous offre la possibilité d'augmenter votre espace d'inventaire actuel grâce à des sacs à dos virtuels."
+  - ""
+  - "&6Les sacs à dos peuvent être accessibles avec la commande &l&a/backpack &r&6."
+  - "&6Vous pouvez utiliser cette commande de manière plus courte : &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Les sacs à dos peuvent être obtenus en les achetant ou en les fabriquant &c(ces options ne seront pas disponibles sur tous les serveurs, cela dépend des arrangements de l'administration)&6."
+  - ""
+  - "&6Pour plus d'informations, contactez l'administration ou trouvez les informations dont vous avez besoin."
+  - ""
+  - "&6Créé par : &aolios"
+  - "&c❤ Merci !"
+# ___________________________________________________________________________
+
+
+#  _______  __   __  _______  _______  ______    ___   _______  _______  _______  ___   _______  __    _  _______
+# |   _   ||  | |  ||       ||       ||    _ |  |   | |       ||   _   ||       ||   | |       ||  |  | ||       |
+# |  |_|  ||  | |  ||_     _||   _   ||   | ||  |   | |  _____||  |_|  ||_     _||   | |   _   ||   |_| ||  _____|
+# |       ||  |_|  |  |   |  |  | |  ||   |_||_ |   | | |_____ |       |  |   |  |   | |  | |  ||       || |_____
+# |       ||       |  |   |  |  |_|  ||    __  ||   | |_____  ||       |  |   |  |   | |  |_|  ||  _    ||_____  |
+# |   _   ||       |  |   |  |       ||   |  | ||   |  _____| ||   _   |  |   |  |   | |       || | |   | _____| |
+# |__| |__||_______|  |___|  |_______||___|  |_||___| |_______||__| |__|  |___|  |___| |_______||_|  |__||_______|
+#
+
+
+# ___________________________________________________________________________
+# Autorisations et commandes
+no-permission: "&cTu n'as pas les permissions nécessaires pour utiliser cette commande"
+no-permission-backpack-access: "&cTu n'as pas les permissions nécessaires pour ouvrir ce sac à dos !"
+console-command: "&cTu ne peux pas utiliser cette commande depuis la console"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _  ___   _______  _______  ______    _______  _______  _______  __   __  ______
+# |   _   ||      | |  |_|  ||   | |  |  | ||   | |       ||       ||    _ |  |   _   ||       ||       ||  | |  ||    _ |
+# |  |_|  ||  _    ||       ||   | |   |_| ||   | |  _____||_     _||   | ||  |  |_|  ||_     _||    ___||  | |  ||   | ||
+# |       || | |   ||       ||   | |       ||   | | |_____   |   |  |   |_||_ |       |  |   |  |   |___ |  |_|  ||   |_||_
+# |       || |_|   ||       ||   | |  _    ||   | |_____  |  |   |  |    __  ||       |  |   |  |    ___||       ||    __  |
+# |   _   ||       || ||_|| ||   | | | |   ||   |  _____| |  |   |  |   |  | ||   _   |  |   |  |   |___ |       ||   |  | |
+# |__| |__||______| |_|   |_||___| |_|  |__||___| |_______|  |___|  |___|  |_||__| |__|  |___|  |_______||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Joueurs
+player-not-found: "&cJoueur &f&l%player% &cintrouvable"
+player-backpack-userinfo-offline: "&9Ce joueur est hors ligne, ses permissions ne peuvent pas être vérifiées - la taille du sac à dos visible est de &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6La taille du sac à dos de ce joueur a changé."
+  - "&6Il y a des objets dans des endroits bloqués."
+  - "&6Il n'y aura pas d'endroits bloqués visibles dans le sac à dos afin de ne pas retirer d'objets."
+player-has-max-backpacks: "&cCe joueur a déjà atteint le nombre maximum de sacs à dos. Impossible d'en ajouter davantage !"
+player-set-backpack-size: "&aLa taille du sac à dos du joueur &f&l%backinpack_player_name% &aa été définie sur &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aLa taille de tous les sacs à dos du joueur &f&l%backinpack_player_name% &aa été définie sur &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aLa taille du sac à dos a été définie sur &f%backinpack_backpack_size% &apour tous les joueurs (&f%backinpack_players%&a)"
+player-reload-complete: "&aConfiguration du plugin BackInPack rechargée avec succès"
+player-database-not-connected: "&cLe plugin n'est pas connecté à la base de données. Cette commande ne peut pas être exécutée !"
+player-database-synchronized: "&aDonnées synchronisées avec la base de données"
+player-backpack-add: "&aSac à dos ajouté au joueur &f%backinpack_player_name%"
+player-backpack-give-offline: "&cLe joueur indiqué est hors ligne. Le sac à dos n'a pas été ajouté à son inventaire !"
+player-userinfo:
+  - ""
+  - "&6Nom d'utilisateur: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Les sacs à dos comptent: &a%backinpack_player_backpacks_count%"
+  - "&6Liste des sacs à dos:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ______    ______    _______  __   __  ______    _______
+# |       ||    _ |  |    _ |  |       ||  | |  ||    _ |  |       |
+# |    ___||   | ||  |   | ||  |    ___||  | |  ||   | ||  |  _____|
+# |   |___ |   |_||_ |   |_||_ |   |___ |  |_|  ||   |_||_ | |_____
+# |    ___||    __  ||    __  ||    ___||       ||    __  ||_____  |
+# |   |___ |   |  | ||   |  | ||   |___ |       ||   |  | | _____| |
+# |_______||___|  |_||___|  |_||_______||_______||___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Arguments
+argument-not-number: "&f%args% &cn'est pas un nombre"
+argument-invalid-number: "&cLe nombre ne peut pas être inférieur à 1 ni supérieur à 54"
+argument-missing:
+  - "&cTous les arguments n'ont pas été fournis."
+  - "&cUtilisation de la commande : &f%command%"
+argument-player-missing: "&cJoueur introuvable !"
+argument-backpack-not-found: "&cAucun sac à dos trouvé avec le nom donné !"
+argument-backpack-name-not-given: "&cNom du nouveau sac à dos non spécifié !"
+argument-need-change-for-all-players:
+  - "&cLorsque vous modifiez la taille du sac à dos pour tous les joueurs, vous devez changer la taille de tous les sacs à dos"
+  - "&cUtilisez la commande comme ceci : &f/backpack-set-size all all <taille du sac à dos>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Économie
+economy-not-enough-money: "&cVous n'avez pas assez d'argent pour acheter un nouveau sac à dos"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Commandes
+command-disabled: "&cCette commande est désactivée sur ce serveur!"
+# ___________________________________________________________________________
+
+
+#  _______  __   __  _______  ______    _______
+# |   _   ||  | |  ||       ||    _ |  |       |
+# |  |_|  ||  | |  ||_     _||   | ||  |    ___|
+# |       ||  |_|  |  |   |  |   |_||_ |   |___
+# |       ||       |  |   |  |    __  ||    ___|
+# |   _   ||       |  |   |  |   |  | ||   |___
+# |__| |__||_______|  |___|  |___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Valeurs
+true: "&aOui"
+false: "&cNon"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Indicateurs (les descriptions des indicateurs ne peuvent pas être une liste)
+flag-none: "&7Pas de drapeaux"
+flag-items-drop: "   &c- Avec la mort, les objets tomberont"
+flag-backpack-delete: "   &c- Avec la mort tu perds ton sac à dos"
+# Positive
+flag-items-save: "   &a+ Après le décès, les objets sont stockés"
+# ___________________________________________________________________________

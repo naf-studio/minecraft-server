@@ -1,0 +1,98 @@
+name: Tin
+description: ''
+open: true
+pvp: false
+home: world:-114.42342032604134:82.0:-789.3978488316376:-63.750977:33.14978
+color: '4'
+chests: []
+players:
+- e4d01f21-c633-30c8-9945-c4dfd286e5b9,OWNER
+- 00000000-0000-0000-0009-01f9eda34924,DEFAULT
+level: 1
+tag: ''
+score: 0
+warps:
+- LangCacTo;world:-98.53922802700322:81.0:-831.0359266266222:27.632355:12.899923
+- ThuyCungCacNho;world:522.2755853894461:48.0:-1794.7771477583333:-133.96893:9.600032
+- HangOCLon;world:-111.41347860603919:0.0:-953.1331739271697:108.44989:-0.30005443
+- HangCacTo;world:122.27264409099116:-6.0:-896.4618441024477:-3.8867188:56.400074
+- Hang2;world:-186.07499998807907:16.0:-1074.587277165072:83.28638:7.4999113
+- LangCuNho;world:-6541.1445513484305:65.0:-8419.512499988079:-101.807495:5.0005403
+- LangCuDai;world:-2356.679885174045:62.9375:1089.9559383050764:-18.199774:17.4
+- Thuyen;world:-2699.2295172371278:65.0:781.9993381121002:173.0618:31.049938
+- LangBigD;world:-2136.77640828369:82.9375:32.90438093500796:-133.43695:23.549915
+- LangSmallD;world:-1122.4529751889186:64.0:-133.21294037452836:175.41286:29.699665
+- LangBuoiBeo;world:2192.078039787143:63.0:2486.3627376512427:-160.64978:15.600024
+- Point1;world:-1860.38749561195:68.0:-244.9370202980911:178.12366:26.69939
+- HangLon;world:-1875.4691641986421:42.0:-392.52400299337825:163.87646:28.199383
+- Cuahanglon;world:-1796.7010847051438:55.0:-489.8196131518152:-95.77634:42.8994
+- Damlay;world:-7452.9591067899355:72.09480761803682:-7439.4969628398985:43.088135:29.549997
+- langdamlay;world:-7405.718124150508:97.54374992847443:-7439.7163166724895:-56.66211:13.35006
+- damlay2;world:-7550.012079269991:65.41874992847443:-7282.808141554807:85.68764:23.400122
+- nhaphuthuy;world:-7658.744430985159:65.69999992847443:-7290.712348065148:106.687836:31.050098
+- point2;world:-8239.947716364344:110.54374992847443:-7222.3017578125:111.49253:23.10004
+- Tuyet;world:-8505.30270610727:91.04374992847443:-7079.067759125786:60.63806:3.9500012
+- Langxin;world:-8777.001434867609:78.44374978542328:-7102.489565216922:132.34314:49.850044
+- hangxin;world:-8877.237168576228:26.0:-7141.232273016956:76.405396:4.0501447
+- warden;world:-8860.793869894203:-32.0:-7153.866833303952:54.482147:26.399992
+- NhaHangTo;world:-6584.736964983156:-14.9375:-8404.924130472704:-72.40967:13.650011
+echest:
+  '1':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: IRON_INGOT
+    amount: 64
+  '2':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: LAPIS_LAZULI
+    amount: 64
+  '5':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: COAL
+    amount: 64
+  '9':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: IRON_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      enchants:
+        KNOCKBACK: 2
+        DAMAGE_ALL: 3
+      repair-cost: 1
+      Damage: 42
+  '12':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: CROSSBOW
+    meta:
+      ==: ItemMeta
+      meta-type: CROSSBOW
+      Damage: 8
+      charged: true
+      charged-projectiles:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3700
+        type: ARROW
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: LAPIS_LAZULI
+    amount: 64
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: LAPIS_LAZULI
+    amount: 64
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3700
+    type: ENCHANTED_BOOK
+    meta:
+      ==: ItemMeta
+      meta-type: ENCHANTED
+      stored-enchants:
+        DIG_SPEED: 2

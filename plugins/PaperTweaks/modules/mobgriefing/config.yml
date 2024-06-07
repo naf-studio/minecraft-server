@@ -1,0 +1,6 @@
+# Prevents enderman from picking up blocks
+anti-enderman-grief: false
+anti-ghast-grief: false
+anti-creeper-grief: false
+# When enabled both block and entity damage will be cancelled for creeper and ghast fireball explosions. Disable to turn on entity damage for those explosions
+disable-entity-damage: true

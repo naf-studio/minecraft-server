@@ -1,0 +1,27 @@
+#
+# CC Creative Commons 2022
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# If the specified database does not exist, it will be created automatically
+# In this case, make sure that the user has all the necessary permissions to create the database
+# The plugin requires permissions from the user:
+# - CREATE
+# - INSERT
+# - SELECT
+# - UPDATE
+
+# Protect this data from unauthorized persons
+
+host: "localhost"
+user: "admin"
+password: "1234"
+database: "backinpack"
+port: 3306
+
+# If the database has already existed and you change the "database" value, a new database will be created
+# Data will not be transferred between these databases
+
+# Documentation on how to save and read data from the database is available here
+# Look for the "Database" section

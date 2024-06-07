@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# Możesz używać kolorów w wiadomościach
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# WAŻNE!
+# Każde zmiany w tym pliku wymagają przeładowania serwera lub jego restartu
+
+
+#   _____ _                                _
+#  |_   _| |_  _ _ __  __ _ __ ______ _ _ (_)___
+#    | | | | || | '  \/ _` / _|_ / -_) ' \| / -_)
+#    |_| |_|\_,_|_|_|_\__,_\__/__\___|_||_|_\___|
+#
+#          przez olios [plugin author]
+#           oryginalny plik językowy
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Stan pluginu
+enable-plugin: "Plugin BackInPack został włączony"
+disable-plugin: "Plugin BackInPack został wyłączony"
+loaded-language-file: "Załadowano plik językowy %backinpack_config_language%.yml"
+language-file-not-found: "Nie znaleziono pliku językowego %backinpack_config_language%.yml. Załadowano plik en.yml"
+loading-single-backpack: "Ładowanie plecaków graczy"
+reload-complete: "Konfiguracja pluginu BackInPack została pomyślnie przeładowana"
+missing-backpacks: "Nie znaleziono plików plecaków w folderze /backpacks"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Baza danych
+database-not-connected: "&cPlugin nie jest podłączony do bazy danych. Nie można wykonać tej komendy"
+database-synchronized: "&aDane zostały zsynchronizowane z bazą danych"
+# ___________________________________________________________________________
+
+
+#  _______  ______    _______  _______  _______
+# |       ||    _ |  |   _   ||       ||       |
+# |    ___||   | ||  |  |_|  ||       ||____   |
+# |   | __ |   |_||_ |       ||       | ____|  |
+# |   ||  ||    __  ||       ||      _|| ______|
+# |   |_| ||   |  | ||   _   ||     |_ | |_____
+# |_______||___|  |_||__| |__||_______||_______|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Zginąłeś, przedmioty z twojego plecaka zostały &cusunięte!"
+player-death-drop: "&6Zginąłeś, przedmioty z twojego plecaka zostały &cwyrzucone!"
+player-death-save: "&aZginąłeś, ale przedmioty w twoim plecaku zostały zachowane!"
+player-backpack-change-size: "Rozmiar twojego plecaka &9został zmieniony&f, niektóre przedmioty były w niedostępnych miejscach i &9zostały z niego wyrzucone"
+player-backpack-access-through-command-disabled: "&cDostęp do plecaka przez komendę jest wyłączony!"
+player-backpack-access-through-item-disabled: "&cDostęp do plecaka przez przedmiot został wyłączony!"
+player-backpack-name-changed: "&aZmieniono nazwę plecaka z &6%old-backpack-name% &ana &f%new-backpack-name%"
+player-backpack-not-owner: "&cNie możesz otwierać plecaka innych graczy!"
+player-backpack-change-name: "&fTeraz wprowadź nową nazwę dla tego plecaka"
+player-backpack-buy: "&aPomyślnie zakupiłeś nowy plecak"
+player-max-backpacks: "&cPosiadasz już maksymalną liczbę plecaków!"
+player-backpack-not-exists: "&6Plecak, który próbowałeś otworzyć, nie istnieje. Został zastąpiony nieprzypisanym plecakiem."
+player-backpack-blacklist: "&cNiektóre przedmioty nie mogą być przechowywane w plecakach! Zostały wyrzucone"
+player-backpack-remove: "&6Twój plecak &f%backinpack_backpack_name% &6został usunięty."
+player-backpack-refund: "&aOtrzymałeś zwrot &6%backinpack_config_removing-backpacks_refund%$ &aza usunięcie plecaka."
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6to plugin, która daje ci możliwość zwiększenia obecnej przestrzeni w twoim ekwipunku za pomocą wirtualnych plecaków."
+  - ""
+  - "&6Plecaki można otwierać za pomocą komendy &l&a/backpack &r&6."
+  - "&6Możesz używać tej komendy w skrócony sposób: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Plecaki można zdobyć, kupując je lub tworząc &c(te opcje nie będą dostępne na wszystkich serwerach, to zależy od ustaleń administracji)&6."
+  - ""
+  - "&6Aby uzyskać więcej informacji, skontaktuj się z administracją lub znajdź potrzebne informacje."
+  - ""
+  - "&6Stworzone przez: &aolios"
+  - "&c❤ Dziękuję!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    __   __  ___   _______      ___  _______
+# |       ||       ||    _ |  |  |_|  ||   | |       |    |   ||       |
+# |    _  ||    ___||   | ||  |       ||   | |  _____|    |   ||    ___|
+# |   |_| ||   |___ |   |_||_ |       ||   | | |_____     |   ||   |___
+# |    ___||    ___||    __  ||       ||   | |_____  | ___|   ||    ___|
+# |   |    |   |___ |   |  | || ||_|| ||   |  _____| ||       ||   |___
+# |___|    |_______||___|  |_||_|   |_||___| |_______||_______||_______|
+#
+
+
+# ___________________________________________________________________________
+# Permisje i komendy
+no-permission: "&cNie masz wystarczających uprawnień do korzystania z tej komendy"
+no-permission-backpack-access: "&cNie masz wystarczających uprawnień, aby otworzyć ten plecak!"
+console-command: "&cNie możesz używać tej komendy z poziomu konsoli"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _  ___   _______  _______  ______    _______  _______  _______  ______
+# |   _   ||      | |  |_|  ||   | |  |  | ||   | |       ||       ||    _ |  |   _   ||       ||       ||    _ |
+# |  |_|  ||  _    ||       ||   | |   |_| ||   | |  _____||_     _||   | ||  |  |_|  ||_     _||   _   ||   | ||
+# |       || | |   ||       ||   | |       ||   | | |_____   |   |  |   |_||_ |       |  |   |  |  | |  ||   |_||_
+# |       || |_|   ||       ||   | |  _    ||   | |_____  |  |   |  |    __  ||       |  |   |  |  |_|  ||    __  |
+# |   _   ||       || ||_|| ||   | | | |   ||   |  _____| |  |   |  |   |  | ||   _   |  |   |  |       ||   |  | |
+# |__| |__||______| |_|   |_||___| |_|  |__||___| |_______|  |___|  |___|  |_||__| |__|  |___|  |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Gracze
+player-not-found: "&cNie znaleziono gracza &f&l%player%"
+player-backpack-userinfo-offline: "&9Ten gracz jest offline, nie można sprawdzić jego uprawnień - rozmiar widocznego plecaka to &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6Zmienił się rozmiar plecaka tego gracza."
+  - "&6W zablokowanych miejscach znajdują się przedmioty."
+  - "&6W plecaku nie będzie widocznych zablokowanych miejsc, aby nie usuwać przedmiotów."
+player-has-max-backpacks: "&cTen gracz osiągnął już maksymalną liczbę plecaków. Nie można dodać więcej!"
+player-set-backpack-size: "&aUstawiono rozmiar plecaka gracza &f&l%backinpack_player_name% &ana &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aUstawiono rozmiar wszystkich plecaków gracza &f&l%backinpack_player_name% &ana &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aUstawiono rozmiar plecaka na &f%backinpack_backpack_size% &adla wszystkich graczy (&f%backinpack_players%&a)"
+player-reload-complete: "&aPomyślnie przeładowano konfigurację pluginu BackInPack"
+player-database-not-connected: "&cPlugin nie jest podłączony do bazy danych. Nie można wykonać tej komendy!"
+player-database-synchronized: "&aDane zostały zsynchronizowane z bazą danych"
+player-backpack-add: "&aDodano plecak graczowi &f%backinpack_player_name%"
+player-backpack-give-offline: "&cWskazany gracz jest offline. Plecak nie został dodany do jego ekwipunku!"
+player-userinfo:
+  - ""
+  - "&6Nick: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Ilość plecaków: &a%backinpack_player_backpacks_count%"
+  - "&6Lista plecaków:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ___      _______  ______   __   __
+# |  _    ||   |    |       ||      | |  | |  |
+# | |_|   ||   |    |    ___||  _    ||  |_|  |
+# |       ||   |    |   |___ | | |   ||       |
+# |  _   | |   |___ |    ___|| |_|   ||_     _|
+# | |_|   ||       ||   |___ |       |  |   |
+# |_______||_______||_______||______|   |___|
+#
+
+
+# ___________________________________________________________________________
+# Argumenty
+argument-not-number: "&f%args% &cnie jest liczbą"
+argument-invalid-number: "&cLiczba nie może być mniejsza niż 1 ani większa niż 54"
+argument-missing:
+  - "&cNie podano wszystkich argumentów"
+  - "&cUżycie komendy: &f%command%"
+argument-player-missing: "&cNie znaleziono takiego gracza!"
+argument-backpack-not-found: "&cNie znaleziono plecaka o podanej nazwie!"
+argument-backpack-name-not-given: "&cNie podano nowej nazwy plecaka!"
+argument-need-change-for-all-players:
+  - "&cPodczas zmiany rozmiaru plecaka dla wszystkich graczy, musisz zmienić rozmiar wszystkich plecaków"
+  - "&cUżyj komendy w ten sposób: &f/backpack-set-size all all <rozmiar plecaka>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Ekonomia
+economy-not-enough-money: "&cNie masz wystarczającej ilości pieniędzy, aby kupić nowy plecak"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Komendy
+command-disabled: "&cTa komenda jest wyłączone na tym serwerze!"
+# ___________________________________________________________________________
+
+
+#  ___   __    _  __    _  _______
+# |   | |  |  | ||  |  | ||       |
+# |   | |   |_| ||   |_| ||    ___|
+# |   | |       ||       ||   |___
+# |   | |  _    ||  _    ||    ___|
+# |   | | | |   || | |   ||   |___
+# |___| |_|  |__||_|  |__||_______|
+#
+
+
+# ___________________________________________________________________________
+# Wartości
+true: "&aTak"
+false: "&cNie"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flagi (opis flagi nie może być listą)
+flag-none: "&7Brak flag"
+flag-items-drop: "   &c- Po śmierci przedmioty wypadną z plecaka"
+flag-backpack-delete: "   &c- Po śmierci stracisz plecak"
+# Pozytywne
+flag-items-save: "   &a+ Po śmierci przedmioty zostaną zachowane"
+# ___________________________________________________________________________

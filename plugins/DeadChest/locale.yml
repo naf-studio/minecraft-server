@@ -1,0 +1,55 @@
+# +--------------------------------------------------------------+
+# PLEASE REMOVE ALL EXISTING DEADCHESTS BEFORE EDITING THIS FILE
+# +--------------------------------------------------------------+
+# You can add colors on texts :
+# Example 'Â§cHello' will print Hello in red
+# Â§4 : DARK_RED
+# Â§c : RED
+# Â§6 : GOLD
+# Â§e : YELLOW
+# Â§2 : DARK_GREEN
+# Â§a : GREEN
+# Â§b : AQUA
+# Â§3 : DARK_AQUA
+# Â§1 : DARK_BLUE
+# Â§9 : BLUE
+# Â§d : LIGHT_PURPLE
+# Â§5 : DARK_PURPLE
+# Â§f : WHITE
+# Â§7 : GRAY
+# Â§8 : DARK_GRAY
+# Â§0 : BLACK
+# +---------------------------------------------------------------+
+# You can also add some styling options :
+# Â§l : Text in bold
+# Â§o : Text in italic
+# Â§n : Underline text
+# Â§m : Strike text
+# Â§k : Magic 
+# +---------------------------------------------------------------+
+# Need help ? Join the discord support :
+# https://discord.com/invite/jCsvJxS
+# +---------------------------------------------------------------+
+
+localisation:
+  loc_doubleDC: §cYou can't put a chest next to a Deadchest
+  loc_noDCG: §cNo deadchest generated.
+  loc_noperm: §cYou need permission
+  loc_dclistall: §aList of all dead chests
+  loc_dclistown: §aList of your dead chests
+  loc_not_owner: §cThis is not your Deadchest !
+  loc_infinityChest: Infinity chest
+  loc_dcgbsuccess: §aThe oldest deadchest content of this player returned to him
+  loc_endtimer: left
+  loc_reload: §6Reload successfull..
+  loc_nodc: §aYou don't have any deadchest
+  loc_prefix: '[DeadChest] '
+  loc_maxHeight: §cYou are dead above the maximum height.
+  loc_givebackInfo: §cThis player is offline or don't have any active deadchest
+  holo_timer: §f%hours%§7h §f%min%§7m §f%sec%§7s left
+  loc_chestPos: §6Your deadchest is at
+  loc_noPermsToGet: §cYou are not allowed to open this chest
+  holo_loading: Loading...
+  loc_gbplayer: §aYou have retrieved the content of your deadchest
+  holo_owner: Deadchest of §6%player%
+  loc_nodcs: §aThere is currently no deadchest

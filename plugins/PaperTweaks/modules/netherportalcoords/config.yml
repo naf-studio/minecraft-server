@@ -1,0 +1,6 @@
+# World's listed here will qualify as overworlds for purposes of calculating coordinates
+overworld-type-worlds:
+  - "world"
+# World's listed here will qualify as nethers for purposes of calculating coordinates
+nether-type-worlds:
+  - "world_nether"

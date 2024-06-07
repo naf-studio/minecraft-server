@@ -1,0 +1,43 @@
+
+
+
+settings:
+  # Technical options.
+  backpack-size: 18 # Backpack size after purchase (from 1 to 54).
+  cost: 750 # Purchase price.
+  give-as-item: false # The backpack is also added as an item.
+
+  # Additional backpack options - read the plugin documentation (/backinpack help).
+  flags:
+    - ITEMS_DROP
+    - BACKPACK_DELETE
+
+
+# Item in inventory
+style-item:
+  NAME: "&6Copper &l%backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+  CUSTOM_MODEL_DATA: 1002
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_copper_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"
+
+
+# Item in GUI
+style-gui:
+  NAME: "&6Copper %backinpack_backpack_name%"
+  MATERIAL: PLAYER_HEAD
+  TEXTURE: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+  CUSTOM_MODEL_DATA: 1112
+  LORE:
+    - "&fSize: &6%backinpack_backpack_size%"
+    - "&fItems: &6%backinpack_backpack_items_count% items"
+    - "&fFlags: %backinpack_config_backpack-config_copper_flags%"
+    - ""
+    - "&7(Click to open)"
+    - "&7(RMB Click to change name)"

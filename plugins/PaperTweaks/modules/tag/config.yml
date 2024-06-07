@@ -1,0 +1,4 @@
+# Shows messages to all online players when a new person becomes "it"
+show-messages: true
+# Cooldown (in seconds) between tags
+tag-cooldown-in-seconds: 0

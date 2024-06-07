@@ -1,0 +1,6 @@
+# Time in seconds between using /spawn
+spawn-cooldown: 0
+# Delay in seconds after using /spawn before teleportation occurs
+delay: 0
+# If set, running the /spawn command without any argument will go to the spawnpoint of the main world
+defaults-to-main-world: false
