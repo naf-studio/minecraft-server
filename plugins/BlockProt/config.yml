@@ -22,7 +22,7 @@ replace_translations: true
 # receive an in-game message if this plugin is outdated.
 # If set to "false", no message will be sent but /blockprot update
 # will still work.
-notify_op_of_updates: false
+notify_op_of_updates: true
 
 # If set to "true", redstone will be automatically disallowed on every
 # placed block, if the player has lock on place enabled.
@@ -101,23 +101,23 @@ lockable_blocks:
   - ANVIL
   - CHIPPED_ANVIL
   - DAMAGED_ANVIL
-  - ACACIA_FENCE_GATE
-  - BIRCH_FENCE_GATE
-  - CRIMSON_FENCE_GATE
-  - DARK_OAK_FENCE_GATE
-  - JUNGLE_FENCE_GATE
-  - OAK_FENCE_GATE
-  - SPRUCE_FENCE_GATE
-  - WARPED_FENCE_GATE
+  # - ACACIA_FENCE_GATE
+  # - BIRCH_FENCE_GATE
+  # - CRIMSON_FENCE_GATE
+  # - DARK_OAK_FENCE_GATE
+  # - JUNGLE_FENCE_GATE
+  # - OAK_FENCE_GATE
+  # - SPRUCE_FENCE_GATE
+  # - WARPED_FENCE_GATE
 
 # Doors are two blocks and are therefore handled differently.
 # This only works with Spigot 1.16.4 or higher.
 lockable_doors:
-  - ACACIA_DOOR
-  - BIRCH_DOOR
-  - CRIMSON_DOOR
-  - DARK_OAK_DOOR
-  - JUNGLE_DOOR
-  - OAK_DOOR
-  - SPRUCE_DOOR
-  - WARPED_DOOR
+  # - ACACIA_DOOR
+  # - BIRCH_DOOR
+  # - CRIMSON_DOOR
+  # - DARK_OAK_DOOR
+  # - JUNGLE_DOOR
+  # - OAK_DOOR
+  # - SPRUCE_DOOR
+  # - WARPED_DOOR
