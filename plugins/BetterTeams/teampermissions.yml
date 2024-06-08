@@ -8,10 +8,10 @@ disband:
   rank: OWNER
 description:
   enabled: true
-  rank: OWNER
+  rank: ADMIN
 invite:
   enabled: true
-  rank: ADMIN
+  rank: DEFAULT
 join:
   enabled: true
 name:
@@ -36,7 +36,7 @@ home:
   rank: DEFAULT
 sethome:
   enabled: true
-  rank: ADMIN
+  rank: DEFAULT
 ban:
   enabled: true
   rank: ADMIN
@@ -48,10 +48,10 @@ chat:
   rank: DEFAULT
 color:
   enabled: true
-  rank: OWNER
+  rank: ADMIN
 title:
   enabled: true
-  rank: OWNER
+  rank: ADMIN
 top:
   enabled: true
 baltop:
@@ -77,7 +77,7 @@ warp:
   rank: DEFAULT
 setwarp:
   enabled: true
-  rank: ADMIN
+  rank: DEFAULT
 delwarp:
   enabled: true
   rank: ADMIN
