@@ -73,13 +73,13 @@ Default:
   # # "Biomes: []" means all biomes are allowed! #
   # # Biomes are optional, more biomes at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/block/Biome.html #
   Biomes: []
-  MaxRadius: 4000
+  MaxRadius: 5000
   MinRadius: 1000
   # # If "UseWorldBorder" is set to true above, Center X and Z will be ignored! #
   CenterX: 0
   CenterZ: 0
   Shape: square
-  MaxY: 320
+  MaxY: 160
   MinY: 0
   RTPOnDeath: false
 
@@ -103,8 +103,8 @@ BlacklistedBlocks:
 
 # # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
 DisabledWorlds:
-- prison
-- creative
+#- prison
+#- creative
 
 # # Worlds you want to have a custom min/max and spawn center in #
 # # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
