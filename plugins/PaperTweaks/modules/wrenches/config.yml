@@ -1,5 +1,0 @@
-wrench:
-  terracotta: true
-  redstone: true
-# Disable to turn off suggesting the wrench resource pack to players.
-suggest-resource-pack: true
