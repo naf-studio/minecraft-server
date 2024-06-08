@@ -30,7 +30,7 @@ BotToken: "MTIzODc0NDk3NDkwMDg1ODkzMg.G4ZAux.PQ44pb6A7fya18ZjtMOxj1TZ-WauRhJV_fO
 Channels: {"global": "1129081325442310315"}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
-DiscordConsoleChannelId: "1137786712785944627"
+DiscordConsoleChannelId: "0000000000000000"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
 DiscordInviteLink: "https://dsc.gg/newsvcc"
@@ -245,7 +245,7 @@ DiscordChatChannelConsoleCommandExpirationDeleteRequest: true
 # DiscordChatChannelListCommandExpirationDeleteRequest: whether to delete the message of the person that originally requested for the player list
 #
 DiscordChatChannelListCommandEnabled: true
-DiscordChatChannelListCommandMessage: "playerlist"
+DiscordChatChannelListCommandMessage: "list"
 DiscordChatChannelListCommandExpiration: 10
 DiscordChatChannelListCommandExpirationDeleteRequest: true
 
@@ -350,6 +350,6 @@ MinecraftDiscordAccountLinkedMessageDeleteSeconds: 0
 #                        the minimum for this value is 10
 # ServerWatchdogMessageCount: the amount of times ServerWatchdogMessage is sent. useful if you *really* want to make sure you know something's up
 #
-ServerWatchdogEnabled: true
+ServerWatchdogEnabled: false
 ServerWatchdogTimeout: 30
 ServerWatchdogMessageCount: 3
