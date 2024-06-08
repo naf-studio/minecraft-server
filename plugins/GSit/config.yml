@@ -47,7 +47,6 @@ Options:
     - '#carpets'
     - '#wool_carpets'
     - moss_carpet
-    - snow
     
     # Allow sitting only on the bottom part of stairs and slabs
     bottom-part-only: true
@@ -128,7 +127,7 @@ Options:
   
   # List of worlds where all features are disabled
   WorldBlacklist:
-  - blocked_world
+  #- blocked_world
   
   # List of worlds where all features are enabled (other worlds are blocked when the list is not empty)
   WorldWhitelist: []
