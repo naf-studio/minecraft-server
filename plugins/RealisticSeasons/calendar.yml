@@ -21,58 +21,58 @@ synced-worlds:
 - none
 worlds-without-events:
 - none
-winter-start: December 4
-spring-start: March 4
-summer-start: June 4
-fall-start: September 4
+winter-start: October 10
+spring-start: January 10
+summer-start: April 10
+fall-start: July 10
 months:
   January:
     days: 31
-    day-length-in-min: 7
-    night-length-in-min: 13
+    day-length-in-min: 12
+    night-length-in-min: 18
   February:
     days: 28
-    day-length-in-min: 8
-    night-length-in-min: 12
+    day-length-in-min: 13
+    night-length-in-min: 17
   March:
     days: 31
-    day-length-in-min: 9
-    night-length-in-min: 11
+    day-length-in-min: 14
+    night-length-in-min: 16
   April:
     days: 30
-    day-length-in-min: 10
-    night-length-in-min: 10
+    day-length-in-min: 15
+    night-length-in-min: 15
   May:
     days: 31
-    day-length-in-min: 11
-    night-length-in-min: 9
+    day-length-in-min: 16
+    night-length-in-min: 14
   June:
     days: 30
-    day-length-in-min: 12
-    night-length-in-min: 8
+    day-length-in-min: 17
+    night-length-in-min: 13
   July:
     days: 31
-    day-length-in-min: 13
-    night-length-in-min: 7
+    day-length-in-min: 18
+    night-length-in-min: 12
   August:
     days: 31
-    day-length-in-min: 12
-    night-length-in-min: 8
+    day-length-in-min: 17
+    night-length-in-min: 13
   September:
     days: 30
-    day-length-in-min: 11
-    night-length-in-min: 9
+    day-length-in-min: 16
+    night-length-in-min: 14
   October:
     days: 31
-    day-length-in-min: 10
-    night-length-in-min: 10
+    day-length-in-min: 15
+    night-length-in-min: 15
   November:
     days: 30
-    day-length-in-min: 9
-    night-length-in-min: 11
+    day-length-in-min: 14
+    night-length-in-min: 16
   December:
     days: 31
-    day-length-in-min: 8
-    night-length-in-min: 12
+    day-length-in-min: 13
+    night-length-in-min: 17
 
 
