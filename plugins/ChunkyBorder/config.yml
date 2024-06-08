@@ -4,7 +4,7 @@
 version: 1
 border-options:
   check-interval: 20
-  message: '&cYou have reached the edge of this world.'
+  message: '&c[Border] You have reached the edge of this world.'
   use-action-bar: true
   effect: ender_signal
   sound: entity_enderman_teleport
