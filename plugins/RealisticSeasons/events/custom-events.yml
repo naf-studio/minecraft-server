@@ -8,17 +8,17 @@
 custom-events:
    dated-events:
       october-event-example:
-         enabled: false
-         name: "&6Spooky October"
+         enabled: true
+         name: "&6Vu-lan Festival"
          display-event: true
          times:
             event-start:
-               date: 1/10
+               date: 1/8
             event-stop:
-               date: 1/11
+               date: 1/9
          commands:
             start:
-               - "&aOctober has started, monsters are becoming stronger and stronger.."
+               - "[Event] &Vu-lan festival has started, monsters are becoming stronger and stronger.."
                - "/difficulty hard"
             stop:
                - "/difficulty normal"
