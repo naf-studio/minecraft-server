@@ -6,13 +6,13 @@
 ############################
 
 #The message that is shown when player has no permission.
-No-Permission-Message: '&0[&fAntiCreeper&0]&r: &cYou are not permitted to do this!'
+No-Permission-Message: '&0[&fAntiCreeper&0]&r &cYou are not permitted to do this!'
 
 #The message that is shown when player executes /ac.
-Ac-Command-Message: '&0[&fAntiCreeper&0]&r: &cType /ac help for more info.'
+Ac-Command-Message: '&0[&fAntiCreeper&0]&r &cType /ac help for more info.'
 
 #Messages that admins receive.
-Reload-Message: '&0[&fAntiCreeper&0]&r: &2Config Reloaded!'
+Reload-Message: '&0[&fAntiCreeper&0]&r &2Config Reloaded!'
 
 #Cancel TNT and/or creeper explosions.
 Creeper-Cancel-Explosions: true
