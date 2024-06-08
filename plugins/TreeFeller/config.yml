@@ -460,7 +460,7 @@ mmocore-emulate-regen: false
 compatibility-mmocore: false
 
 # Toggle compatibility with Jobs Reborn
-compatibility-jobs: false
+compatibility-jobs: true
 
 # Should the mcMMO Double Drops feature apply when cutting down trees?
 mcmmo-double-drops: false
@@ -472,7 +472,7 @@ compatibility-mcmmo: false
 compatibility-mcmmo-classic: false
 
 # Toggle compatibility with CoreProtect
-compatibility-coreprotect: false
+compatibility-coreprotect: true
 
 # Toggle compatibility with WorldGuard
 compatibility-worldguard: false
@@ -537,7 +537,7 @@ compatibility-logblock-legacy: false
 compatibility-logblock: false
 
 # Toggle compatibility with Lands
-compatibility-lands: false
+compatibility-lands: true
 
 # Toggle compatibility with PlaceholderAPI
 compatibility-placeholderapi: true
