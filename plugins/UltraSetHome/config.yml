@@ -49,8 +49,8 @@ Commands:
   command_home: home
   command_homes: homes
   command_sethome: sethome
-  command_removehome: removehome
-  command_updatehome: updatehome
+  command_removehome: delhome
+  command_updatehome: updhome
 
 Messages:
   prefix: '&7[&bSetHome&7] '
