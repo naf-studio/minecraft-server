@@ -11,7 +11,7 @@ Hunger: # Make rtp'ing take up hunger to avoid exploits
 
 CustomWorlds:
   # # Enable custom world charging
-  Enabled: true
+  Enabled: false
   Prices:
   - world: 50
   - world_end: 0
