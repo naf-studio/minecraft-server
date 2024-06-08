@@ -5,7 +5,7 @@ ConfigVersion: 0.8.1
 
 #Wether or not a BloodMoon happens in this world
 #Requires a server restart upon changes
-IsBlacklisted: false
+IsBlacklisted: true
 #Sets a permanent BloodMoon in this world
 #Obviously the interval option is ignored when this is on
 PermanentBloodMoon: false
