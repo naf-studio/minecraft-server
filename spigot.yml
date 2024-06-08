@@ -103,7 +103,7 @@ world-settings:
       villagers-work-immunity-after: 100
       villagers-work-immunity-for: 20
       villagers-active-for-panic: true
-      tick-inactive-villagers: true
+      tick-inactive-villagers: false
       ignore-spectators: false
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
@@ -131,7 +131,7 @@ world-settings:
       cavevines-modifier: 100
       glowberry-modifier: 100
       pitcherplant-modifier: 100
-    mob-spawn-range: 8
+    mob-spawn-range: 4
     simulation-distance: default
     thunder-chance: 100000
     entity-tracking-range:

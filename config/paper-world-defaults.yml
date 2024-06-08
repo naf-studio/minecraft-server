@@ -38,27 +38,27 @@ chunks:
   auto-save-interval: default
   delay-chunk-unloads-by: 10s
   entity-per-chunk-save-limit:
-    area_effect_cloud: 12
-    arrow: 24
-    dragon_fireball: 5
-    egg: 12
-    ender_pearl: 12
-    experience_bottle: 5
-    experience_orb: 24
-    eye_of_ender: 12
-    fireball: 12
-    firework_rocket: 12
-    llama_spit: 5
-    potion: 12
-    shulker_bullet: 12
-    small_fireball: 12
-    snowball: 12
-    spectral_arrow: 24
-    trident: 24
+    area_effect_cloud: 8
+    arrow: 16
+    dragon_fireball: 3
+    egg: 8
+    ender_pearl: 8
+    experience_bottle: 3
+    experience_orb: 16
+    eye_of_ender: 8
+    fireball: 8
+    firework_rocket: 8
+    llama_spit: 3
+    potion: 8
+    shulker_bullet: 8
+    small_fireball: 8
+    snowball: 8
+    spectral_arrow: 16
+    trident: 16
     wither_skull: 7
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 8
+  max-auto-save-chunks-per-tick: 10
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -71,7 +71,7 @@ command-blocks:
   permissions-level: 2
 entities:
   armor-stands:
-    do-collision-entity-lookups: true
+    do-collision-entity-lookups: false
     tick: false
   behavior:
     allow-spider-world-border-climbing: true
@@ -323,14 +323,19 @@ spawn:
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: -1
+      validatenearbypoi: 60
+      acquirepoi: 120
   container-update: 2
   dry-farmland: 1
   grass-spread: 2
   mob-spawner: 2
   sensor:
     villager:
-      secondarypoisensor: 40
+      secondarypoisensor: 80
+      nearestbedsensor: 80
+      villagerbabiessensor: 40
+      playersensor: 40
+      nearestlivingentitysensor: 40
   wet-farmland: 1
 unsupported-settings:
   disable-world-ticking-when-empty: false
