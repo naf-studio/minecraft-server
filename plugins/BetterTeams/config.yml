@@ -107,19 +107,19 @@ allyLimit: -1
 # - If this feature is unwanted, set the teamLimit to -1 and team name lengths will be unlimited
 #
 # Possible values: [-1, any positive whole number]
-maxTeamLength: 12
+maxTeamLength: 16
 
 # This is used to limit the length of the teams tag (If enabled, this will display next to the players nametag above their character)
 # - If this feature is unwanted, set the teamLimit to -1 and team name lengths will be unlimited
 #
 # Possible values: [-1, any positive whole number]
-maxTagLength: 12
+maxTagLength: 16
 
 # This is used with the /team title command, this specifies the limit in characters 
 # If you are using belowNameManagement, any names over 16 characters will be clipped through some handling of the plugin
 #
 # Possible values: [Any whole number]
-maxTitleLength: 12
+maxTitleLength: 16
 
 # This is used to toggle if teams can attack members of their own team
 # - If this is enabled, members of the same team will not be able to damage each other
@@ -153,7 +153,7 @@ bannedChars: ',.!" $%^&*()[]{};:#~\|` '
 # - If this is left blank, all characters (except those in bannedChars or color codes) will be allowed in team name
 #
 # Possible values: [Any characters]
-allowedChars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+allowedChars: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_
 
 # This is a list of all banned chat colors for team names using /team color <color>
 # - List every character, for example to ban gold and red you would do bannedColors: '64' 
@@ -297,7 +297,7 @@ levels:
     # - If this is set to -1 there will be no limit on the number of chests
     #
     # Possible values: [Any positive whole number, 0, -1]
-    maxChests: 5
+    maxChests: -1
     # This is used to determine the maximum number of warps that a team can set 
     # - If this is set to 0 teams will not be allowed any warps (though it is recommended you do that through permissions instead of the config option) 
     # - If this is set to -1 there will be no limit on the number of warps
@@ -397,7 +397,7 @@ titleRemoval: true
 #
 # Possible values: [Any command valid on your server]
 purgeCommands:
-- give @a minecraft:dirt 1
+#- give @a minecraft:dirt 1
 
 # This is used to enable the auto purge configuration below
 # If this is set to true, team scores will be purged in correspondence of the timings below
@@ -552,4 +552,4 @@ checkUpdates: true
 # Set this to true to rebuild the lookup tables in teams.yml for seperatedYamlStorage
 rebuildLookups: false
 blacklist:
-- betterteamsisbad
+#- betterteamsisbad
