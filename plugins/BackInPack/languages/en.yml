@@ -61,21 +61,21 @@ database-synchronized: "&aData synchronized with the database"
 
 
 # ___________________________________________________________________________
-player-death-delete: "&6You died, items in your backpack have been &cremoved!"
-player-death-drop: "&6You died, items in your backpack have been &cthrown away!"
-player-death-save: "&aYou died, but your backpack items are preserved!"
-player-backpack-change-size: "The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
-player-backpack-access-through-command-disabled: "&cCommand access to the backpack is disabled!"
-player-backpack-access-through-item-disabled: "&cAccess to the backpack through the item has been disabled!"
-player-backpack-name-changed: "&aChanged backpack name from &6%old-backpack-name% &ato &f%new-backpack-name%"
-player-backpack-not-owner: "&cYou can't open other players' backpacks!"
-player-backpack-change-name: "&fNow enter a new name for this backpack"
-player-backpack-buy: "&aYou have successfully purchased a new backpack"
-player-max-backpacks: "&cYou already have the maximum number of backpacks!"
-player-backpack-not-exists: "&6The backpack you tried to open does not exist. It was replaced with an unassigned backpack"
-player-backpack-blacklist: "&cSome items cannot be stored in your backpack! They were thrown away"
-player-backpack-remove: "&6Your &f%backinpack_backpack_name% &6backpack has been removed"
-player-backpack-refund: "&aYou were refunded &6%backinpack_config_removing-backpacks_refund%$ &afor removing your backpack"
+player-death-delete: "[BackInPack] &6You died, items in your backpack have been &cremoved!"
+player-death-drop: "[BackInPack] &6You died, items in your backpack have been &cthrown away!"
+player-death-save: "[BackInPack] &aYou died, but your backpack items are preserved!"
+player-backpack-change-size: "[BackInPack] The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
+player-backpack-access-through-command-disabled: "[BackInPack] &cCommand access to the backpack is disabled!"
+player-backpack-access-through-item-disabled: "[BackInPack] &cAccess to the backpack through the item has been disabled!"
+player-backpack-name-changed: "[BackInPack] &aChanged backpack name from &6%old-backpack-name% &ato &f%new-backpack-name%"
+player-backpack-not-owner: "[BackInPack] &cYou can't open other players' backpacks!"
+player-backpack-change-name: "[BackInPack] &fNow enter a new name for this backpack"
+player-backpack-buy: "[BackInPack] &aYou have successfully purchased a new backpack"
+player-max-backpacks: "[BackInPack] &cYou already have the maximum number of backpacks!"
+player-backpack-not-exists: "[BackInPack] &6The backpack you tried to open does not exist. It was replaced with an unassigned backpack"
+player-backpack-blacklist: "[BackInPack] &cSome items cannot be stored in your backpack! They were thrown away"
+player-backpack-remove: "[BackInPack] &6Your &f%backinpack_backpack_name% &6backpack has been removed"
+player-backpack-refund: "[BackInPack] &aYou were refunded &6%backinpack_config_removing-backpacks_refund%$ &afor removing your backpack"
 cmd-about:
   - "&l&6Back&l&9In&l&6Pack &r&6is a plugin that gives you the opportunity to increase your current inventory space through virtual backpacks."
   - ""
@@ -85,9 +85,6 @@ cmd-about:
   - "&6Backpacks can be obtained by buying or crafting them &c(these options will not be available on all servers, it depends on the administration's arrangements)&6."
   - ""
   - "&6For more information, contact the administration or find the information you need."
-  - ""
-  - "&6Made by: &aolios"
-  - "&c❤ Thanks!"
 # ___________________________________________________________________________
 
 
@@ -103,9 +100,9 @@ cmd-about:
 
 # ___________________________________________________________________________
 # Permissions & commands
-no-permission: "&cYou don't have enough permissions to use this command"
-no-permission-backpack-access: "&cYou do not have enough permissions to open this backpack!"
-console-command: "&cYou cannot use this command from console"
+no-permission: "[BackInPack] &cYou don't have enough permissions to use this command"
+no-permission-backpack-access: "[BackInPack] &cYou do not have enough permissions to open this backpack!"
+console-command: "[BackInPack] &cYou cannot use this command from console"
 # ___________________________________________________________________________
 
 
@@ -121,21 +118,21 @@ console-command: "&cYou cannot use this command from console"
 
 # ___________________________________________________________________________
 # Players
-player-not-found: "&cPlayer &f&l%player% &cnot found"
-player-backpack-userinfo-offline: "&9This player is offline, his permissions cannot be checked - the size of the visible backpack is &f54"
+player-not-found: "[BackInPack] &cPlayer &f&l%player% &cnot found"
+player-backpack-userinfo-offline: "[BackInPack] &9This player is offline, his permissions cannot be checked - the size of the visible backpack is &f54"
 player-backpack-size-changed-blocked-spaces:
   - "&6This player's backpack size has changed."
   - "&6There are items in blocked places."
   - "&6There will be no visible blocked places in the backpack so as not to remove items."
-player-has-max-backpacks: "&cThis player already has the maximum number of backpacks. Can't add more!"
-player-set-backpack-size: "&aPlayer &f&l%backinpack_player_name% &abackpack size set to &f%backinpack_backpack_size%"
-player-set-player-all-backpack-size: "&aPlayer &f&l%backinpack_player_name% &aall backpacks size set to &f%backinpack_backpack_size%"
-player-set-all-backpack-size: "&aBackpack size set to &f%backinpack_backpack_size% &afor all players (&f%backinpack_players%&a)"
-player-reload-complete: "&aSuccessfully reloaded configuration of BackInPack plugin"
-player-database-not-connected: "&cPlugin is not connected to the database. This command cannot be performed!"
-player-database-synchronized: "&aData synchronized with the database"
-player-backpack-add: "&aAdded backpack to &f%backinpack_player_name%"
-player-backpack-give-offline: "&cThe indicated player is offline. The backpack has not been added to his inventory!"
+player-has-max-backpacks: "[BackInPack] &cThis player already has the maximum number of backpacks. Can't add more!"
+player-set-backpack-size: "[BackInPack] &aPlayer &f&l%backinpack_player_name% &abackpack size set to &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "[BackInPack] &aPlayer &f&l%backinpack_player_name% &aall backpacks size set to &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "[BackInPack] &aBackpack size set to &f%backinpack_backpack_size% &afor all players (&f%backinpack_players%&a)"
+player-reload-complete: "[BackInPack] &aSuccessfully reloaded configuration of BackInPack plugin"
+player-database-not-connected: "[BackInPack] &cPlugin is not connected to the database. This command cannot be performed!"
+player-database-synchronized: "[BackInPack] &aData synchronized with the database"
+player-backpack-add: "[BackInPack] &aAdded backpack to &f%backinpack_player_name%"
+player-backpack-give-offline: "[BackInPack] &cThe indicated player is offline. The backpack has not been added to his inventory!"
 player-userinfo:
   - ""
   - "&6Username: &a%backinpack_player_username%"
@@ -175,13 +172,13 @@ argument-need-change-for-all-players:
 
 # ___________________________________________________________________________
 # Economy
-economy-not-enough-money: "&cYou don't have enough money to buy a new backpack"
+economy-not-enough-money: "[BackInPack] &cYou don't have enough money to buy a new backpack"
 # ___________________________________________________________________________
 
 
 # ___________________________________________________________________________
 # Commands
-command-disabled: "&cThis command is disabled on this server!"
+command-disabled: "[BackInPack] &cThis command is disabled on this server!"
 # ___________________________________________________________________________
 
 
