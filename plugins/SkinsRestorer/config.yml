@@ -80,7 +80,7 @@ commands:
     # SkinErrorCooldown is used when an error or invalid url occurs.
     # Can be bypassed with 'skinsrestorer.bypasscooldown'.
     skinChangeCooldown: 30
-    skinErrorCooldown: 5
+    skinErrorCooldown: 3
     # When enabled, only websites from the list below is allowed to be set using /skin url <url>
     # [?] this is useful if you host your own image server.
     restrictSkinUrls:
