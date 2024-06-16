@@ -161,6 +161,7 @@ entities:
         sugar_cane: 600
         twisting_vines: 600
         weeping_vines: 600
+        ender_pearl: 600
     count-all-mobs-for-spawning: false
     creative-arrow-despawn-rate: '100'
     despawn-ranges:
@@ -323,19 +324,19 @@ spawn:
 tick-rates:
   behavior:
     villager:
-      validatenearbypoi: 60
       acquirepoi: 120
+      validatenearbypoi: 60
   container-update: 2
   dry-farmland: 1
   grass-spread: 2
   mob-spawner: 2
   sensor:
     villager:
-      secondarypoisensor: 80
       nearestbedsensor: 80
-      villagerbabiessensor: 40
-      playersensor: 40
       nearestlivingentitysensor: 40
+      playersensor: 40
+      secondarypoisensor: 80
+      villagerbabiessensor: 40
   wet-farmland: 1
 unsupported-settings:
   disable-world-ticking-when-empty: false
