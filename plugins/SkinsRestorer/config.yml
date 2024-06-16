@@ -205,6 +205,13 @@ server:
     # Dismounts all passengers mounting a player (such as plugins that let you ride another player), preventing those players from becoming desynced.
     # File override = ./plugins/SkinsRestorer/enableDismountEntities.txt
     dismountPassengersOnSkinUpdate: false
+    sound:
+        # Play a sound when a player runs /skin to change their skin.
+        enabled: true
+        # Sound to play when a player runs /skin to change their skin.
+        # You can find the allowed format and values at
+        # https://javadoc.io/static/com.github.cryptomorin/XSeries/11.0.0/com/cryptomorin/xseries/XSound.html#parse(java.lang.String)
+        value: ENTITY_PLAYER_TELEPORT, 0.7
 login:
     # Stops the process of setting a skin if the LoginEvent was canceled by an AntiBot plugin.
     # [?] Unsure? leave this true for better performance.
