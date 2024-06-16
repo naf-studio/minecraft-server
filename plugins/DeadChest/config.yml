@@ -1,4 +1,4 @@
-# ###############################################################################################################################
+################################################################################################################################
 # Welcome to the DeadChest configuration file!                                                                                 #
 #                                                                                                                              #
 # You can find more information about the plugin and this file on the plugin page:                                             #
@@ -7,7 +7,7 @@
 #   > https://discordapp.com/invite/jCsvJxS                                                                                    #
 #                                                                                                                              #
 # If you make any changes in this file, please run the command '/dc reload' to apply the changes!                              #
-# ###############################################################################################################################
+################################################################################################################################
 
 auto-update: true
 
@@ -110,12 +110,18 @@ item-durability-loss-on-death: 0
 
 # A list of worlds that DeadChests will NOT be generated in...
 ExcludedWorld:
-#- excluded_world_example
-#- another_excluded_world_example
+  - 'excluded_world_example'
+  - 'another_excluded_world_example'
 
 # A list of items that will be excluded from DeadChests...
+# Items on this list will not be kept on die
 ExcludedItems:
-#- EXCLUDED_ITEM_EXAMPLE
-#- HEROBRINE
+  - 'EXCLUDED_ITEM_EXAMPLE'
+  - 'HEROBRINE'
+
+# A list of items that will be ignored from DeadChests...
+# Items on this list will not be processed by Deadchest (not stored, not clear from the inventory)
+# Could be useful to provide support for customs items managed by other plugins
 IgnoredItems:
-#- IGNORED_ITEM_EXAMPLE
+  - 'IGNORED_ITEM_EXAMPLE'
+
