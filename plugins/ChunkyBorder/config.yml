@@ -8,18 +8,18 @@ border-options:
   use-action-bar: true
   effect: ender_signal
   sound: entity_enderman_teleport
-  prevent-mob-spawns: false
-  prevent-enderpearl: false
-  prevent-chorus-fruit: false
+  prevent-mob-spawns: true
+  prevent-enderpearl: true
+  prevent-chorus-fruit: true
   visualizer-enabled: false
   visualizer-range: 8
   visualizer-color: 20A0FF
 map-options:
   enable:
-    bluemap: true
-    dynmap: true
-    pl3xmap: true
-    squaremap: true
+    bluemap: false
+    dynmap: false
+    pl3xmap: false
+    squaremap: false
   label: World Border
   hide-by-default: false
   color: FF0000
