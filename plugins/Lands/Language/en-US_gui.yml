@@ -1,0 +1,3220 @@
+# Here you can edit all GUI menus.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.gg/B4MAJVk
+#
+# Wiki: https://github.com/Angeschossen/General/wiki/GUI-Menus
+
+general:
+  all: '&aAll'
+  previous: '&8previous'
+  nation:
+    role:
+      capital: '&4&lCapital'
+      land: '&2&lLand'
+    managed:
+      nation: '&cManaged by Nation'
+      land: '&cManaged by Lands'
+  inbox-filter:
+    members: '&eMembers ☺'
+    war: '&4War ⚔'
+    economy: '&cEconomy $'
+    relations: '&aRelations'
+    posts: '&7Posts'
+  wYes: '&aYes'
+  war:
+    defenders: '&aDefenders'
+    name:
+      nation: '&9Nation '
+      land: '&2Land '
+    attackers: '&cAttackers'
+  value:
+    none: '&cNone'
+    unlimited: '&aunlimited'
+  enabled: '&aEnabled'
+  offline: '&cOffline'
+  never: Never
+  rentables:
+    cost: '&cCost'
+    price_blocks_ratio: '&aPrice-blocks ratio'
+    size: '&eSize'
+    buy: '&aBuy'
+    rent: '&eRent'
+  top:
+    sorting:
+      balance: Balance
+      ratio-kd: Kills/Deaths
+      level: Level
+      chunks: Chunks
+      members: Members
+      ratio-wl: Won/Lost
+  now: '&aNow'
+  wNo: '&cNo'
+  disabled: '&cDisabled'
+  directions:
+    north: North
+    east: East
+    south: South
+    west: West
+common:
+  items:
+    default:
+      child_failure_message:
+        name: '&4&lFailure'
+        lore:
+        - '{message}'
+      child_success_message:
+        name: '&a&lSuccess'
+        lore:
+        - '{message}'
+      child_failure_player_trusted:
+        lore:
+        - '&7You''re already part of this land.'
+        name: '&4&lAlready trusted'
+      child_failure_land_max-members:
+        lore:
+        - '&cYou can''t become trusted at'
+        - '&cland&4 {object}&c.'
+        - ' &8• &7They reached their maximum'
+        - '   &7amount of members.'
+        name: '&4&lMax Members reached'
+      child_failure_permission:
+        lore:
+        - '&cYou''re missing a permission to'
+        - '&cdo that.'
+        name: '&4&lMissing Permission'
+      child_failure_teleport_enter:
+        lore:
+        - '&cYou''re not allowed to enter the'
+        - '&carea, in which the destination'
+        - '&cis located.'
+        - ' &8• &7The land owner can give your'
+        - '   &7role permission to do so.'
+        name: '&4&lNot Allowed to Enter'
+      child_failure_player_banned:
+        lore:
+        - '&cYou can''t join this land,'
+        - '&csince they''ve banned you.'
+        name: '&4&lYou''re Banned'
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&c&lPrevious Page'
+        material: ARROW
+        slots: 38
+      child_failure_no-item:
+        lore:
+        - '&7You need to drag an item'
+        - '&7from your inventory here.'
+        name: '&4&lNo Item at Cursor'
+      child_failure_spawn_cooldown:
+        lore:
+        - '&cYou must wait another&4 {time}'
+        - '&cbefore you can teleport to any'
+        - '&cland spawn again.'
+        name: '&4&lCooldown'
+      child_failure_teleport_unsafe:
+        name: '&4&lUnsafe'
+        lore:
+        - '&cCouldn''t teleport to this destination,'
+        - '&cbecause it''s not safe.'
+      back:
+        lore:
+        - '&8✖ &7Go back to'
+        - '   &7{back}.'
+        name: '&c&lBack'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore:
+        - '&8✖ &7Current: {current} / {pages}'
+        name: '&a&lNext Page'
+        material: ARROW
+        slots: 44
+      child_failure_cost:
+        lore:
+        - '&7You need&c {cost} &7to do this.'
+        name: '&4&lNot enough Money'
+      child_failure_spawn_cost:
+        lore:
+        - '&7You need&c {cost} &7to pay for'
+        - '&7the teleportation.'
+        name: '&4&lNot enough Money'
+      child_failure_spawn_teleport:
+        lore:
+        - '&cYou''re not allowed to teleport'
+        - '&cto this particular land spawn.'
+        - ' &8• &7The land owner can give your'
+        - '   &7role permission to do so.'
+        name: '&4&lNot Allowed to Teleport'
+      child_failure_spawn_war:
+        lore:
+        - '&cYou currently can''t teleport to'
+        - '&cthis particular land spawn.'
+        - ' &8• &7They''re currently engaged in a war,'
+        - '   &7which will end in&5 {time}&7.'
+        name: '&4&lActive War'
+      child_failure_player_own-land:
+        lore:
+        - '&cYou can''t join another land, while'
+        - '&cbeing the owner of a land.'
+        - ' &8• &7You must delete it first:'
+        - '   &3/lands delete'
+        name: '&4&lYou own a Land'
+      child_failure_current-war:
+        lore:
+        - '&7You can''t do this as long'
+        - '&7as {object}&7 is participating'
+        - '&7in a war.'
+        name: '&4&lCurrently in a War'
+      child_failure_membership-request_not-looking:
+        lore:
+        - '&cThis land isn''t looking for'
+        - '&cnew members.'
+        name: '&4&lNot looking for Members'
+      child_failure_page_previous:
+        name: '&4&lNo Previous Page'
+      child_success_player_trusted:
+        lore:
+        - '&7Land&2 {land} &7automatically'
+        - '&7accepted your request.'
+        - ' &8• &7Leave a land:'
+        - '   &e/lands leave'
+        name: '&aYou''re now trusted'
+      child_failure_page_next:
+        name: '&4&lNo Next Page'
+      child_success_membership-request_revoked:
+        lore:
+        - '&7Successfully revoked your'
+        - '&7membership request.'
+        name: '&cMembership Request Revoked'
+      child_failure_noaccess:
+        lore:
+        - '&cYou''re not allowed to do that.'
+        - ' &8• &7The owner of {object}&7 can give your'
+        - '   &7role permission to do so.'
+        - '   &7Flag: {flag}'
+        name: '&4&lNot allowed'
+      child_success_membership-request_sent:
+        lore:
+        - '&7They can now accept your membership'
+        - '&7request.'
+        name: '&aSent Membership Request'
+      child_failure_spawn_none:
+        lore:
+        - '&cThis land doesn''t have set a spawn yet.'
+        - ' &8• &7Set spawn point:'
+        - '   &e/lands setspawn'
+        name: '&4&lNo Spawnpoint'
+      child_failure_player_max-lands:
+        lore:
+        - '&cYou can''t join any more lands.'
+        - ' &8• &7You reached your maximum amount'
+        - '   &7of lands that you can be trusted'
+        - '   &7at the same time.'
+        name: '&4&lMax Amount of Lands'
+      category:
+        lore:
+        - '&8✖ &7Change the category of the land.'
+        - '  &8• &7Others can filter your land in the'
+        - '    &3/lands list &7menu by this category.'
+        name: '&6&lCategory: {category}'
+        material: BOOKSHELF
+        slots: 40
+      category_members:
+        lore:
+        - '&8✖ &7Change the category of the land.'
+        - '  &8• &7Others can filter your land in the'
+        - '    &3/lands list &7menu by this category.'
+        - ''
+        - '  &8• &7Others can request membership to'
+        - '    &7this land in the &3/lands list'
+        - '    &7menu as long as the category of'
+        - '    &7your land is set to:'
+        - '    &7{looking}'
+        name: '&6&lCategory: {category}'
+        material: BOOKSHELF
+        slots: 40
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        slots: 1-45
+  size: 45
+  entries: 10-36
+  auto-correct: true
+gui:
+  area_various:
+    title: '&8Miscellaneous'
+    items:
+      default:
+        child_no-item:
+          lore:
+          - '&7You need to have an item'
+          - '&7in your main hand.'
+          name: '&4&lNo Item in Hand'
+        name:
+          lore:
+          - '&8✖ &7Rename this area.'
+          - '   &7Current: {name}'
+          name: '&6&lName'
+          material: NAME_TAG
+          slots: 20
+        icon:
+          lore:
+          - '&8✖ &7Drag an item here to change the icon.'
+          - '    &8• &7This helps you to recognize'
+          - '      &7this area in the areas menu.'
+          name: '&6&lIcon'
+          material: INHERIT
+          slots: 26
+        description:
+          lore:
+          - '&8✖ &7Change the description of'
+          - '   &7this area.'
+          - '   &8• &7&lCurrent:'
+          - '     {description}'
+          name: '&6&lDescription'
+          material: OAK_SIGN
+          slots: 23
+  role:
+    title: '&8{role}'
+    items:
+      default:
+        taxes_never:
+          lore:
+          - '&7It can''t be changed for this role.'
+          name: '&6&lThis role doesn''t pay Taxes'
+          material: GOLD_INGOT
+          slots: 15
+        settings:
+          lore:
+          - '&8✖ &7Toggle action flags like block breaking,'
+          - '   &7container opening etc.'
+          name: '&6&lAction Flags'
+          material: IRON_PICKAXE
+          slots: 29
+        apply:
+          lore:
+          - '&8✖ &7Should this role, including'
+          - '   &7its members and flags, be added'
+          - '   &7to new area creations?'
+          name: '&6&lAdd to new Areas: {apply}'
+          material: OAK_FENCE
+          slots: 14
+        members_ally:
+          lore:
+          - '&7All players that aren''t trusted'
+          - '&7and are part of an ally land, have'
+          - '&7this role assigned.'
+          name: '&6&lRole Members'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        icon:
+          lore:
+          - '&8✖ &7Drag an item here to change'
+          - '   &7the role icon.'
+          - '&8✖ &3DROP'
+          - '   &7Reset to default.'
+          name: '&6&lIcon'
+          material: INHERIT
+          slots: 13
+        taxes:
+          lore:
+          - '&8✖ &7Should members of this role'
+          - '   &7pay taxes?'
+          - '   &8• &7The land receives&c {taxes} &7in taxes'
+          - '     &7from this role and area in'
+          - '     &5{time}&7.'
+          name: '&6&lPays Taxes: {current}'
+          material: GOLD_INGOT
+          slots: 15
+        apply_always:
+          lore:
+          - '&7This role, including its members'
+          - '&7and flags, is always added to new'
+          - '&7area creations. That can''t be'
+          - '&7toggled for this role.'
+          name: '&6&lAdds Role to new Areas'
+          material: OAK_FENCE
+          slots: 14
+        members_visitor:
+          lore:
+          - '&7All players that aren''t trusted'
+          - '&7have this role assigned.'
+          name: '&6&lRole Members'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_priority:
+          lore:
+          - '&cYou''re not allowed to edit'
+          - '&csettings of this role.'
+          - ' &8• &7It has a higher priority than'
+          - '   &7yours or you''re a member of'
+          - '   &7this role.'
+          name: '&4&lRole Priority'
+        members_nation:
+          lore:
+          - '&7All players that aren''t trusted'
+          - '&7and are part of your nation, have'
+          - '&7this role assigned.'
+          name: '&6&lRole Members'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to edit'
+          - '&croles in this area.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNot Allowed'
+        management:
+          lore:
+          - '&8✖ &7Toggle administratoral flags like'
+          - '   &7trusting players, claiming etc.'
+          name: '&6&lManagement Flags'
+          material: GOLD_INGOT
+          slots: 30
+        members:
+          lore:
+          - '&8✖ &7View all role members.'
+          name: '&6&lRole Members'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        name:
+          lore:
+          - '&8✖ &7Rename this role.'
+          - '   &7Current: {name}'
+          name: '&6&lRename'
+          material: NAME_TAG
+          slots: 12
+        child_failure_nation:
+          lore:
+          - '&cThis role is partly managed'
+          - '&cby your nation.'
+          - ' &8• &7Only the nations capital can change'
+          - '   &7this setting: &e/nations menu'
+          name: '&4&lRole managed by Nation'
+  list_nation_effects:
+    title: '&8Effects'
+    items:
+      default:
+        child_failure_max:
+          lore:
+          - '&cYour nation reached its maximum'
+          - '&camount of&4 {max} &cconcurrent'
+          - '&cactive effects.'
+          - ' &8• &7You can have more effects'
+          - '   &7active at the same time, by'
+          - '   &7reaching a higher level.'
+          name: '&4&lMax Amount'
+        child_failure_locked:
+          lore:
+          - '&7Your nation needs to reach'
+          - '&7level&3 {level} &7before you''re'
+          - '&7able to activate this effect.'
+          name: '&4&lLevel too low'
+        entry_object:
+          lore:
+          - '&8✖ &7Should this effect be active'
+          - '   &7within your nation''s lands?'
+          name: '&6&l{effect}: {active}'
+          material: POTION
+        entry_object_locked:
+          lore:
+          - '&7Unlocks at level: {level}'
+          name: '&6&l{effect}'
+          material: POTION
+        entry_object_active:
+          lore:
+          - '&8✖ &7Should this effect be active'
+          - '   &7within your nation''s lands?'
+          enchanted: true
+          name: '&6&l{effect}: {active}'
+          material: POTION
+  nation:
+    title: '&8{level} {nation}'
+    items:
+      default:
+        role:
+          lore:
+          - '&8✖ &7Configure what nation members'
+          - '   &7can do in each land that is part'
+          - '   &7of this nation.'
+          name: '&6&lNation Role'
+          material: INHERIT
+          slots: 30
+        level:
+          lore:
+          - '&8✖ &7View level progression and'
+          - '   &7attributes.'
+          name: '&6&lLevel'
+          material: EXPERIENCE_BOTTLE
+          slots: 15
+        war:
+          lore:
+          - '&8✖ &7Get information about'
+          - '   &7the current war.'
+          name: '&c&lCurrent War'
+          material: IRON_SWORD
+          slots: 12
+        taxes:
+          lore:
+          - '&8✖ &7Tax lands that are part of'
+          - '   &7this nation by their size.'
+          name: '&6&lTaxes'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_spawn_teleport:
+          lore:
+          - '&cYou''re not allowed to teleport'
+          - '&cto &nthe &ccapital''s spawn.'
+          - ' &8• &7The capital''s owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNot Allowed to Teleport'
+        effects:
+          lore:
+          - '&8✖ &7Set effects to be active within'
+          - '   &7your nation. Effects can be unlocked'
+          - '   &7through nation level progression.'
+          name: '&6&lEffects'
+          material: POTION
+          slots: 31
+        spawn:
+          lore:
+          - '&8✖ &7Teleport to the capital''s spawn.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        stats:
+          lore:
+          - '&7Total players: {members}'
+          - ''
+          - '&6&lEconomy:'
+          - ' &8• &7Nation'
+          - '   &7Balance: {balance}'
+          - '   &7Nation pays&c {upkeep} &7upkeep'
+          - '   &7in {upkeep_next}.'
+          - ' &8• &4Your land &8({land}&8)'
+          - '   &7Upkeep of&c {upkeep_land} &7to the'
+          - '   &7nation in {upkeep_next_land}.'
+          name: '&6&lStatistics'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        lands:
+          lore:
+          - '&8✖ &7Manage lands that are part'
+          - '   &7of this nation.'
+          name: '&6&lLands'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        no-war:
+          lore:
+          - '&7Your nation isn''t engaged in any'
+          - '&7war. Everything is peaceful.'
+          name: '&a&lPeaceful'
+          material: WOODEN_SWORD
+          slots: 12
+        relations:
+          lore:
+          - '&8✖ &7Manage your relations with other'
+          - '   &7lands and nations.'
+          name: '&6&lRelations'
+          material: LIME_BANNER
+          slots: 14
+        inbox:
+          lore:
+          - '&8✖ &7Open advanced view.'
+          - '&7Received messages:'
+          - '{inbox}'
+          name: '&6&lInbox &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 13
+        child_failure_spawn_none:
+          lore:
+          - '&cThe capital hasn''t set a spawn yet.'
+          - ' &8• &7Set spawn point:'
+          - '   &e/lands setspawn'
+          name: '&4&lNo Spawnpoint'
+  list_area_invites:
+    title: '&8{area} &7> &8Invites'
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&7Sets this player as the new owner'
+          - '&7of land &2{land}&7.'
+          - ''
+          - '&6&lInformation'
+          - '&8• &7Sent:&5 {time}'
+          - '&8• &7Sender: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revoke this invitation.'
+          name: '&e&l{player} &7- &6&lOwnership Invitation'
+          material: INHERIT
+        entry_object_trust_area:
+          lore:
+          - '&7Trusts this player to the area &6{area}&7.'
+          - ''
+          - '&6&lInformation'
+          - '&8• &7Sent:&5 {time}'
+          - '&8• &7Sender: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revoke this invitation.'
+          name: '&e&l{player} &7- &6&lMembership Invitation'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to revoke'
+          - '&cinvites in this area.'
+          - ' &8• &7The land owner can give your role'
+          - '   &7permission to untrust players.'
+          name: '&4&lNot allowed'
+        entry_object_trust_land:
+          lore:
+          - '&7Trusts this player to the whole'
+          - '&7land &2{land}&7.'
+          - ''
+          - '&6&lInformation'
+          - '&8• &7Sent:&5 {time}'
+          - '&8• &7Sender: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Revoke this invitation.'
+          name: '&e&l{player} &7- &6&lMembership Invitation'
+          material: INHERIT
+  land_various:
+    title: '&8Miscellaneous'
+    items:
+      default:
+        name:
+          lore:
+          - '&8✖ &7Set a new name for your land.'
+          - '   &7&lCurrent: &7{name}'
+          name: '&6&lLand Name'
+          material: NAME_TAG
+          slots: 20
+        icon:
+          lore:
+          - '&8✖ &7Drag an item here to change'
+          - '   &7the land icon.'
+          - '&8✖ &3DROP'
+          - '   &7Reset to default.'
+          name: '&6&lIcon'
+          material: INHERIT
+          slots: 26
+        title:
+          lore:
+          - '&8✖ &7Change the message that appears'
+          - '   &7to players, which enter the land.'
+          - '    &8• &7&lCurrent:'
+          - '      {title}'
+          - '    &8• &7&lAvailable placeholders'
+          - '      &8- &3%owner% &8= &7Owner'
+          - '      &8- &3%level% &8= &7Level'
+          - '      &8- &3%nation% &8= &7Nation'
+          - '      &8- &3%player% &8= &7Entering player'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Display title: {show}'
+          name: '&6&lEnter Message'
+          material: OAK_SIGN
+          slots: 22
+      patches:
+        all:
+          category:
+            slots: 24
+          category_members:
+            slots: 24
+  taxes:
+    title: '&8Taxes'
+    items:
+      default:
+        tax_area:
+          lore:
+          - '&7In&5 {time} &7your land'
+          - '&7will receive &a{revenue} &7in total as taxes'
+          - '&7from trusted members of this area.'
+          - ' &8• &7Interval: {interval}'
+          - ' &8• &7Players are only paying taxes'
+          - '   &7for areas, in which they''re trusted.'
+          name: '&7&lTax:&a {tax}'
+          material: GOLD_INGOT
+          slots: 23
+        refresh_minus-1:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: 500
+        refresh_minus-2:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: 50
+        refresh_minus-3:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: 1
+        refresh_plus-3:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 500
+        refresh_plus-1:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 50
+        child_failure_value_max:
+          lore:
+          - '&cYou can''t set taxes'
+          - '&chigher than&4 {max}&c.'
+          name: '&4&lMaximum Value reached'
+        tax_nation:
+          lore:
+          - '&7In&5 {time} &7your nation'
+          - '&7will receive&a {revenue} &7as taxes'
+          - '&7from the lands in this nation.'
+          - ' &8• &7Interval: {interval}'
+          - ' &8• &7This value sets the tax'
+          - '   &7per chunk. So bigger lands'
+          - '   &7will need to pay more.'
+          name: '&7&lTax:&c {tax}'
+          material: GOLD_INGOT
+          slots: 23
+        child_failure_value_min:
+          lore:
+          - '&cYou can''t set taxes'
+          - '&clower than&4 {min}&c.'
+          name: '&4&lMinimum Value reached'
+        child_failure_cooldown:
+          lore:
+          - '&cYou currently can''t change the'
+          - '&ctax value.'
+          - ' &8• &7You need to wait another'
+          - '   &5{time} &7before you can'
+          - '   &7change the it again.'
+          name: '&4&lYou need to wait'
+  main:
+    title: '&8Main Menu'
+    items:
+      default:
+        limitation:
+          lore:
+          - '&8• &7Create&3 {ownlands} &7lands:'
+          - '  &e/lands create'
+          - '&8• &7Claim&3 {chunks} &7chunks per land:'
+          - '  &e/lands claim'
+          - '&8• &7Have&3 {members} &7members per land:'
+          - '  &e/lands trust'
+          - '&8• &7Join&3 {lands} &7lands'
+          - '  &e/lands accept'
+          - '&8• &7Support lands, in which you''re trusted,'
+          - '  &7with &3{support-chunks} &7additional claims.'
+          name: '&6&lYour Limitations'
+          material: INHERIT
+          slots: 17
+        rentable:
+          lore:
+          - '&8✖ &7View areas setup for rental and'
+          - '   &7lands that can be purchased.'
+          name: '&6&lRentable'
+          material: OAK_FENCE
+          slots: 31
+        lands:
+          lore:
+          - '&8✖ &7Manage lands that you''re part of.'
+          - '    &8• &7Own: {own}'
+          - '    &8• &7Trusted: {trusted}'
+          name: '&2&lYour Lands'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        flags:
+          lore:
+          - '&8✖ &7Edit personal settings.'
+          name: '&6&lSettings'
+          material: skin:ec2ff244dfc9dd3a2cef63112e7502dc6367b0d02132950347b2b479a72366dd
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7View your received invites.'
+          - '   &8• &7Amount: {invites}'
+          name: '&6&lInvites'
+          material: WRITABLE_BOOK
+          slots: 13
+        nations:
+          lore:
+          - '&8✖ &7View nations that you''re part of.'
+          - '    &8• &7Own: {own}'
+          - '    &8• &7Trusted: {trusted}'
+          name: '&9&lYour Nations'
+          material: skin:45587da7fe7336e8ab9f791ea5e2cfc8a827ca959567eb9d53a647babf948d5
+          slots: 12
+        all-lands:
+          lore:
+          - '&8✖ &7View all lands of this server.'
+          - '    &8• &7Total amount: {lands}'
+          name: '&2&lAll Lands'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 29
+        all-nations:
+          lore:
+          - '&8✖ &7View all nations of this server.'
+          - '    &8• &7Total amount: {nations}'
+          name: '&9&lAll Nations'
+          material: skin:cf40942f364f6cbceffcf1151796410286a48b1aeba77243e218026c09cd1
+          slots: 30
+        map:
+          name: '&6&lMap'
+          lore:
+          - '&8✖ &7View the claims map.'
+          material: MAP
+          slots: 33
+      patches:
+        basic:
+          lands:
+            slots: 20
+          all-lands:
+            slots: 22
+          flags:
+            slots: 24
+          limitation:
+            slots: 26
+  list_land_claims:
+    title: '&8Claims'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&7Claimed:&5 {time} &7ago'
+          - '&8✖ &7Teleport to this chunk.'
+          name: '&6&lWorld: {world} X: {x} Z: {z}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Click here to toggle'
+          - '   &7the world.'
+          name: '&6&lWorld: {world}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 41
+        child_failure_cooldown:
+          lore:
+          - '&cYou need to wait another&4 {time}'
+          - '&cbefore you can do this again.'
+          name: '&4&lCooldown'
+  list_admin_wilderness_roleflags:
+    title: '&8Player Flags'
+  list_war_lands:
+    title: '&8{team}'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7View information about this land.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_object_ally:
+          lore:
+          - '{title}'
+          - '&8✖ &7View information about this land.'
+          name: '&a&lAlly &2&l{land}'
+          material: INHERIT
+  list_level_progress:
+    title: '&8Level Progress'
+    items:
+      default:
+        next:
+          lore:
+          - '&7{object} &7will reach this'
+          - '&7level, once all requirements'
+          - '&7are met.'
+          - '&7&lAttributes:'
+          - '{attributes}'
+          name: '&6&lNext:&7 {level}'
+          material: BEACON
+          slots: 42
+        current:
+          lore:
+          - '&7Attributes:'
+          - '{attributes}'
+          name: '&6&lCurrent:&7 {level}'
+          material: OAK_SIGN
+          slots: 40
+        entry_done:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&a&l✔ {title}'
+          material: LIME_STAINED_GLASS
+        entry_loading:
+          lore:
+          - '&7The current progress is being'
+          - '&7calculated. The item will update'
+          - '&7once it''s complete.'
+          - '{description}'
+          name: '&7&l? {title}'
+          material: GRAY_STAINED_GLASS
+        entry_progress:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&c&l✘ {title}'
+          material: RED_STAINED_GLASS
+  land:
+    title: '&8{level} {land}'
+    items:
+      default:
+        mainblock_reposition:
+          name: '&c&lEdit Mainblock'
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Remove or reposition the mainblock.'
+          - '    &8• &7Placing it again costs:&c {cost}'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Toggle the hologram: {hologram}'
+          material: BELL
+          slots: 45
+        mainblock_set:
+          name: '&a&lPlace Mainblock'
+          lore:
+          - '&8✖ &7Place the mainblock at your current position.'
+          - '   &7Cost:&c {cost}'
+          material: BELL
+          slots: 45
+        child_failure_mainblock_claim:
+          name: '&4&lNeeds to be placed inside Land'
+          lore:
+          - '&cThe mainblock must be placed inside the land.'
+          - '&7Please make sure you stand in the land&2 {land}&7.'
+        child_failure_mainblock_space:
+          name: '&4&lNot enough Space'
+          lore:
+          - '&cThere''s not enough space to place it at your current location.'
+        level:
+          lore:
+          - '&8✖ &7View level progression and'
+          - '   &7attributes.'
+          name: '&6&lLevel'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        player-management:
+          lore:
+          - '&8✖ &7Manage members, banned players,'
+          - '   &7invites and membership requests.'
+          name: '&6&lPlayer Management'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 12
+        roles:
+          lore:
+          - '&8✖ &7View roles of the'
+          - '   &7area&6 {area}&7.'
+          name: '&6&lRoles'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7View taxes of the'
+          - '   &7area&6 {area}&7.'
+          name: '&6&lTaxes'
+          material: GOLD_INGOT
+          slots: 31
+        areas:
+          lore:
+          - '&8✖ &7View all areas of this land.'
+          - '   &7You also can create new'
+          - '   &7areas in this menu.'
+          name: '&6&lAreas'
+          material: OAK_FENCE
+          slots: 11
+        level_camp:
+          lore:
+          - '&cCamps don''t have any levels.'
+          name: '&6&lLevel'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        land-settings:
+          lore:
+          - '&8✖ &7Edit natural flags'
+          - '   &7of the area&6 {area}&7.'
+          name: '&6&lNatural Flags'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        spawn:
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Teleport to the land spawn.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Set the spawn.'
+          - '&8✖ &9SHIFT + RIGHT CLICK'
+          - '   &7Allow visitors to teleport: {teleport}'
+          - '   &8• This can be edited in the role menu as well.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        child_failure_land:
+          name: '&4&lMust be set inside Land'
+          lore:
+          - '&cThe spawn can''t be set in the'
+          - '&cwilderness or different lands.'
+        stats:
+          lore:
+          - '&7Spawn: {world}, x={x}, z={z}'
+          - '&7Nation: {nation}'
+          - '&7Claims: {chunks} / {chunks_max}'
+          - '&7Members: {members} / {members_max}'
+          - ''
+          - '&6&lEconomy:'
+          - ' &8• &7Land'
+          - '   &7Balance: {balance}'
+          - '   &7Next claim cost: {chunk_cost}'
+          - '   &7Upkeep of&c {upkeep} &7in:'
+          - '   &7{upkeep_next}'
+          - ' &8• &4You'
+          - '   &7Balance: {balance_player}'
+          - '   &7Taxes of&c {taxes} &7in:'
+          - '   &7{taxes_next}'
+          name: '&6&lStatistics'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        various:
+          lore:
+          - '&8✖ &7Edit the land name and'
+          - '   &7enter message.'
+          name: '&6&lMiscellaneous Settings'
+          material: BEACON
+          slots: 32
+        relations_camp:
+          lore:
+          - '&cCamps can''t have any relations.'
+          name: '&6&lRelations'
+          material: LIME_BANNER
+          slots: 13
+        relations:
+          lore:
+          - '&8✖ &7Manage your relations with other'
+          - '   &7lands and nations.'
+          name: '&6&lRelations'
+          material: LIME_BANNER
+          slots: 13
+        inbox:
+          lore:
+          - '&8✖ &7Open the advanced view.'
+          - '&7Received messages:'
+          - '{inbox}'
+          name: '&6&lInbox &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 15
+      patches:
+        basic:
+          stats:
+            name: '&6&lStatistics'
+            lore: '&7Spawn: {world}, x={x}, z={z}[newline]&7Claims: {chunks} / {chunks_max}[newline]&7Members:
+              {members} / {members_max}'
+            material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+            slots: 17
+          members:
+            lore: '&8✖ &7Manage members.'
+            name: '&6&lMembers'
+            material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+            slots: 11
+          roles:
+            slots: 13
+          inbox:
+            slots: 15
+          land-settings:
+            slots: 29
+          various:
+            slots: 31
+  list_area_settings:
+    title: '&8{area} &7> &8Natural Flags'
+    items:
+      default:
+        entry_phantom_spawn:
+          lore:
+          - '&8✖ &7Allow phantoms to spawn by'
+          - '   &7natural reasons.'
+          - '    &8• &7Spawners aren''t influenced'
+          - '      &7by this flag.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPhantom Spawning: {enabled}'
+          material: PHANTOM_SPAWN_EGG
+        child_failure_permission:
+          lore:
+          - '&cYou''re missing permission'
+          - '&cto edit this flag.'
+          name: '&4&lMissing Permission'
+        entry_monster_spawn:
+          lore:
+          - '&8✖ &7Allow monsters to spawn by'
+          - '   &7natural reasons.'
+          - '    &8• &7Affects spawners: {spawners} '
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lMonster Spawning: {enabled}'
+          material: SPAWNER
+        entry_entity_griefing:
+          lore:
+          - '&8✖ &7Allow entities to destroy blocks?'
+          - '    &8• &7&lIf enabled:'
+          - '      &7Creepers will be able to destroy'
+          - '      &7your buildings, lightning strikes'
+          - '      &7do damage etc.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEntity Griefing: {enabled}'
+          material: CREEPER_HEAD
+        entry_wither_attack_animal:
+          name: '&6&lWither attacking Animals: {enabled}'
+          lore:
+          - '&8✖ &7Should withers be able to damage animals?'
+          - '    &8• &7They can always damage other monsters.'
+          - '   &7Unlocked: {unlocked}'
+          material: skin:886dc0cfcaeecfe1ab69146e4d4f1190837076a67dec135fabda6271f375d01f
+        entry_snow_melt:
+          lore:
+          - '&8✖ &7Should snow and ice melt?'
+          - '    &8• &7&lIf disabled:'
+          - '      &7Blizzards and snowmans won''t'
+          - '      &7cover the ground with snow.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lSnow Melt: {enabled}'
+          material: SNOWBALL
+        child_failure_priority:
+          lore:
+          - '&cYou''re not allowed to edit'
+          - '&csettings of this role.'
+          - ' &8• &7It has a higher priority'
+          - '   &7than yours or you''re a'
+          - '   &7member of this role.'
+          name: '&4&lRole Priority'
+        entry_piston_griefing:
+          lore:
+          - '&8✖ &7Allow pistons from wilderness or other'
+          - '   &7lands/areas to push into your land?'
+          - '    &8• &7&lIf enabled:'
+          - '      &7Players will be able to grief your land'
+          - '      &7by using pistons from the wilderness.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPistons from Wilderness: {enabled}'
+          material: PISTON
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to edit'
+          - '&croles in this area.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNot allowed'
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Unlocked: {unlocked}'
+          - '&7Description:'
+          - ' &8• {desc}'
+          - ' &8• &7This is an admin flag. It only applies'
+          - '   &7to admin lands and &e/lands admin wilderness&7.'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_fire_spread:
+          lore:
+          - '&8✖ &7Allow fire to spread inside'
+          - '   &7your land?'
+          - '    &8• &7Fire from the wilderness'
+          - '      &7can''t enter your land.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lFire Spread: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_animal_spawn:
+          lore:
+          - '&8✖ &7Allow animals to spawn?'
+          - '    &8• &7Spawners aren''t influenced'
+          - '      &7by this flag.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lAnimal Spawning: {enabled}'
+          material: skin:bee8514892f3d78a32e8456fcbb8c6081e21b246d82f398bd969fec19d3c27b3
+        entry_plant_growth:
+          lore:
+          - '&8✖ &7Should plants grow?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPlant Growth: {enabled}'
+          material: VINE
+        entry_tnt_griefing:
+          lore:
+          - '&8✖ &7Allow TNT blocks to damage'
+          - '   &7blocks?'
+          - '    &8• &7&lIf enabled:'
+          - '      &7Players will be able to shoot'
+          - '      &7TNT into your land to grief it.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lTNT Block Damage: {enabled}'
+          material: TNT
+        entry_leaf_decay:
+          lore:
+          - '&8✖ &7Should leaves decay inside'
+          - '   &7your land?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lLeaf Decay: {enabled}'
+          material: OAK_LEAVES
+        entry_general_player:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Unlocked: {unlocked}'
+          - '&7Description:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_waterflow_allow:
+          lore:
+          - '&8✖ &7Allow water or lava from the wilderness'
+          - '   &7or other claims to flow into your'
+          - '   &7land?'
+          - '    &8• &7&lIf enabled:'
+          - '      &7Players will be able to grief'
+          - '      &7your land by placing water or lava in'
+          - '      &7the wilderness.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lWater and Lava Flow: {enabled}'
+          material: WATER_BUCKET
+  list_role_settings:
+    title: '&8Flags'
+    items:
+      default:
+        entry_setting_edit_various:
+          lore:
+          - '&8✖ &7Allow this role to edit miscellaneous'
+          - '   &7settings, like the name etc.?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEdit miscellaneous Settings: {enabled}'
+          material: NAME_TAG
+        entry_plant:
+          lore:
+          - '&8✖ &7Allow this role to plant'
+          - '   &7crops, saplings, berries,'
+          - '   &7sugar cane etc.?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPlant: {enabled}'
+          material: IRON_HOE
+        entry_balance_withdraw:
+          lore:
+          - '&8✖ &7Allow this role to withdraw money'
+          - '   &7from the land bank?'
+          - '    &8• &7Command: &e/lands withdraw'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lWithdraw Money: {enabled}'
+          material: GOLD_NUGGET
+        entry_player_untrust:
+          lore:
+          - '&8✖ &7Allow this role to untrust players?'
+          - '    &8• &7They won''t be able to untrust'
+          - '      &7players which have a higher role'
+          - '      &7or are part of the same role.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lUntrust Players: {enabled}'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+        entry_land_enter:
+          lore:
+          - '&8✖ &7Allow this role to enter this area?'
+          - '    &8• &7Regardless of this flag players'
+          - '      &7may be able to enter your claim,'
+          - '      &7if combat tagging is active and'
+          - '      &7you''re in a fight.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEnter this Area: {enabled}'
+          material: OAK_FENCE_GATE
+        entry_land_claim:
+          lore:
+          - '&8✖ &7Allow this role to claim and also'
+          - '   &7unclaim chunks for this land?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lClaim and unclaim: {enabled}'
+          material: IRON_SHOVEL
+        entry_ender_pearl:
+          lore:
+          - '&8✖ &7Allow this role to teleport into'
+          - '   &7this land by using ender pearls'
+          - '   &7and chorus fruits.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lUse Ender Pearls: {enabled}'
+          material: ENDER_PEARL
+        entry_shear:
+          lore:
+          - '&8✖ &7Allow this role to shear'
+          - '   &7sheeps, mushroom cows etc.?'
+          name: '&6&lShear Entities: {enabled}'
+          material: SHEARS
+        entry_attack_monster:
+          lore:
+          - '&8✖ &7Allow this role to attack monsters?'
+          - '    &8• &7&lIf disabled:'
+          - '      &7monsters won''t be able to attack'
+          - '      &7them either.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lAttack Monsters: {enabled}'
+          material: ZOMBIE_HEAD
+        entry_harvest:
+          lore:
+          - '&8✖ &7Allow this role to harvest'
+          - '   &7crops, saplings, berries,'
+          - '   &7sugar cane etc.?'
+          name: '&6&lHarvest: {enabled}'
+          material: WHEAT
+        entry_fly:
+          lore:
+          - '&8✖ &7Allow this role to use &e/fly'
+          - '   &7in this area?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lFly: {enabled}'
+          material: FEATHER
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Unlocked: {unlocked}'
+          - '    &8• &7Description:'
+          - '      {desc}'
+          - ' &8• &7This is an admin flag. It only applies'
+          - '   &7to admin lands and &e/lands admin wilderness&7.'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_player_trust:
+          lore:
+          - '&8✖ &7Allow this role to trust'
+          - '   &7other players?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lTrust Players: {enabled}'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+        entry_block_ignite:
+          lore:
+          - '&8✖ &7Allow this role to ignite blocks?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lIgnite Blocks: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_war_manage:
+          lore:
+          - '&8✖ &7Allow this role to declare'
+          - '   &7and manage the war for your land?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lManage War: {enabled}'
+          material: IRON_SWORD
+        entry_attack_player:
+          lore:
+          - '&8✖ &7Allow this role to attack players?'
+          - '    &8• &7&lCombat tagging:'
+          - '      &7It might still be possible to fight'
+          - '      &7inside your land, if a player attacked'
+          - '      &7another player outside of the land.'
+          - '    &8• &7&lMutual flag:'
+          - '      &7They can only attack players,'
+          - '      &7which can also attack them.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lAttack Players: {enabled}'
+          material: IRON_SWORD
+        entry_trample_farmland:
+          lore:
+          - '&8✖ &7Allow this role to trample farmland?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lTrample Farmland: {enabled}'
+          material: FARMLAND
+        entry_elytra:
+          lore:
+          - '&8✖ &7Allow this role to use elytras'
+          - '   &7in order to fly in this area?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lElytra Usage: {enabled}'
+          material: ELYTRA
+        entry_interact_villager:
+          lore:
+          - '&8✖ &7Allow this role to trade with villagers?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lTrade with Villagers: {enabled}'
+          material: EMERALD
+        child_failure_permission:
+          lore:
+          - '&cYou''re missing permission to'
+          - '&ctoggle this flag in any land.'
+          name: '&4&lMissing Permission'
+        child_failure_allow-edit:
+          name: '&4&lFlag not Toggleable'
+          lore:
+          - '&cThe server configured this flag'
+          - '&cto not be toggleable for this role.'
+        entry_player_setrole:
+          lore:
+          - '&8✖ &7Allow this role to set'
+          - '   &7roles for trusted players?'
+          - '    &8• &7They won''t be able to edit'
+          - '      &7roles, which have a higher'
+          - '      &7priority than theirs.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lSet Roles: {enabled}'
+          material: skin:1e8ffbfd7890dfba8841166d688c93a88b6e8cac4d0260644cac9f3afd57c63e
+        entry_interact_general:
+          lore:
+          - '&8✖ &7Allow this role to interact with blocks'
+          - '   &7that aren''t covered by other flags?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lGeneral Interaction: {enabled}'
+          material: STRING
+        child_failure_blacklist:
+          lore:
+          - '&cThis flag isn''t toggleable by nations.'
+          - ' &8• &7Each land of this nation can configure'
+          - '   &7it individually.'
+          name: '&4&lFlag controleld by Land'
+        child_failure_edit_owner:
+          lore:
+          - '&cYou can''t toggle this flag for your'
+          - '&cown owner role.'
+          - ' &8• &7This prevents you from accidentally'
+          - '   &7depriving yourself of rights.'
+          name: '&4&lOwner Role'
+        entry_interact_mechanism:
+          lore:
+          - '&8✖ &7Allow this role to use redstone'
+          - '   &7mechanisms, like levers etc.?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lUse Redstone: {enabled}'
+          material: REDSTONE
+        entry_land_claim_border:
+          lore:
+          - '&8✖ &7Allow this role to claim chunks'
+          - '   &7for their lands directly at this'
+          - '   &7land''s border.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lClaim Land at Border: {enabled}'
+          material: IRON_BARS
+        entry_spawn_set:
+          lore:
+          - '&8✖ &7Allow this role to change the spawn?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lSet Spawn: {enabled}'
+          material: ENDER_EYE
+        entry_player_ban:
+          lore:
+          - '&8✖ &7Allow this role to ban or'
+          - '   &7unban players?'
+          - '    &8• &7They won''t be able to ban players'
+          - '      &7which have a higher role.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lManage Bans: {enabled}'
+          material: BARRIER
+        entry_item_pickup:
+          lore:
+          - '&8✖ &7Allow this role to pickup'
+          - '   &7items from the ground?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPickup Items: {enabled}'
+          material: HOPPER
+        child_failure_priority:
+          lore:
+          - '&cYou''re not allowed to'
+          - '&cedit settings of this role.'
+          - ' &8• &7It has a higher priority'
+          - '   &7than yours or you''re a'
+          - '   &7member of this role.'
+          name: '&4&lRole Priority'
+        entry_block_place:
+          lore:
+          - '&8✖ &7Allow this role to place blocks?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lPlace Blocks: {enabled}'
+          material: OAK_PLANKS
+        entry_setting_edit_land:
+          lore:
+          - '&8✖ &7Allow this role to edit natural flags?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEdit Natural Flags: {enabled}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        entry_interact_container:
+          lore:
+          - '&8✖ &7Allow this role to open containers?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lOpen Containers: {enabled}'
+          material: CHEST
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to'
+          - '&cedit roles in this area.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNot allowed'
+        entry_block_break:
+          lore:
+          - '&8✖ &7Allow this role to break blocks?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lBreak Blocks: {enabled}'
+          material: IRON_PICKAXE
+        entry_setting_edit_role:
+          lore:
+          - '&8✖ &7Allow this role to edit role'
+          - '   &7settings and create new roles?'
+          - '    &8• &7They won''t be able to edit'
+          - '      &7their own role flags.'
+          - '    &8• &7You should only give this flag'
+          - '      &7very trustworthy players.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEdit Role Settings: {enabled}'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+        entry_interact_trapdoor:
+          lore:
+          - '&8✖ &7Allow this role to open trapdoors?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lOpen Trapdoors: {enabled}'
+          material: OAK_TRAPDOOR
+        entry_setting_edit_taxes:
+          lore:
+          - '&8✖ &7Allow this role to edit taxes?'
+          - '    &8• &7You should only give this permission'
+          - '      &7to very trustworthy players.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEdit Taxes: {enabled}'
+          material: GOLD_INGOT
+        child_failure_nation:
+          lore:
+          - '&cThis role is partly managed by nation&4 {nation}&c.'
+          - ' &8• &7Only the nation can change this flag:'
+          - '   &e/nations menu'
+          name: '&4&lRole managed by Nation'
+        entry_attack_animal:
+          lore:
+          - '&8✖ &7Allow this role to attack animals?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lAttack Animals: {enabled}'
+          material: BOW
+        entry_spawn_teleport:
+          lore:
+          - '&8✖ &7Allow this role to teleport to'
+          - '   &7the spawn.'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lTeleport to Spawn: {enabled}'
+          material: ENDER_EYE
+        entry_vehicle_use:
+          lore:
+          - '&8✖ &7Allow this role to use vehicles?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lUse Vehicles: {enabled}'
+          material: MINECART
+        entry_area_assign:
+          lore:
+          - '&8✖ &7Allow this role to create areas'
+          - '   &7and resize areas?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lAssign Areas: {enabled}'
+          material: OAK_FENCE
+        entry_general_player:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Unlocked: {unlocked}'
+          - '    &8• &7Description:'
+          - '      {desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_interact_door:
+          lore:
+          - '&8✖ &7Allow this role to open doors?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lOpen Doors: {enabled}'
+          material: IRON_DOOR
+  war-declaration_tribute:
+    title: '&8Tribute'
+    items:
+      default:
+        cancel-declaration:
+          lore:
+          - '&8✖ &7Cancel this war declaration.'
+          name: '&c&lCancel War Declaration'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 37
+        send-declaration:
+          lore:
+          - '&8✖ &7Send this war declaration'
+          - '   &7to the enemy.'
+          name: '&a&lSend War Declaration'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 45
+        refresh_minus-1:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: 1000
+        refresh_minus-2:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: 100
+        refresh_minus-3:
+          name: '&c&lRemove {value}'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: 1
+        child_max-tribute:
+          lore:
+          - '&cYou can''t set the tribute'
+          - '&cvalue higher than&c {max}&c.'
+          - ' &8• &7The max tribute depends on the'
+          - '   &7enemies balance.'
+          name: '&4&lMax Value reached'
+        refresh_plus-3:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1000
+        refresh_plus-1:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a&lAdd {value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 100
+        tribute:
+          lore:
+          - '&7The enemy will need to pay this'
+          - '&7in order to surrender.'
+          - ' &8• &7&lMaximum tribute:&c {max}'
+          - '   &7This depends on the enemies'
+          - '   &7balance.'
+          - ' &8• &7&lIf tribute is set to 0:'
+          - '   &7The enemy won''t be able'
+          - '   &7to surrender.'
+          name: '&7&lTribute:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 23
+  area:
+    title: '&8{area}'
+    items:
+      default:
+        land-settings:
+          lore:
+          - '&8✖ &7Edit nature related flags, like'
+          - '   &7mob spawning, plant growth and more.'
+          name: '&6&lNatural Flags'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        child_failure_rented:
+          lore:
+          - '&cYou can''t set taxes for this'
+          - '&carea while it is rented or sold.'
+          - ' &8• &7Current tenant:&3 {player}'
+          name: '&4Rented'
+        child_failure_access:
+          lore:
+          - '&7The area owner can give your'
+          - '&7role permission to do so.'
+          - ' &8• &7Flag: {flag}'
+          name: '&4Not allowed'
+        player-management:
+          lore:
+          - '&8✖ &7Manage members, banned players,'
+          - '   &7invites and membership requests.'
+          name: '&6&lPlayer Management'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        various:
+          lore:
+          - '&8✖ &7Edit the area name and'
+          - '   &7description.'
+          name: '&6&lMiscellaneous Settings'
+          material: BEACON
+          slots: 32
+        spawn:
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Teleport to the spawn of this area.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Set the spawn.'
+          name: '&6&lTeleport'
+          material: ENDER_PEARL
+          slots: 9
+        roles:
+          lore:
+          - '&8✖ &7Manage roles for this area.'
+          - '   &8• &7Roles from the default area'
+          - '     &7are automatically added to'
+          - '     &7this area.'
+          name: '&6&lRoles'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7Manage the taxes of this area.'
+          - '   &7Taxes are collected per area.'
+          name: '&6&lTaxes'
+          material: GOLD_INGOT
+          slots: 31
+        child_failure_spawn_area:
+          name: '&4&lMust be in Area'
+          lore:
+          - '&cThe spawn must be set in the area.'
+          - '&7You''re currently not standing inside it.'
+        child_failure_spawn_none:
+          name: '&4&lNo Spawn set'
+          lore:
+          - '&cThis area doesn''t have a spawn set.'
+        child_success_spawn_set:
+          name: '&aSpawn set'
+          lore:
+          - '&7You set the spawn at your current position.'
+  list_area_players:
+    title: '&8{area} &7> &8Trusted Players'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Trust a player in this area.'
+          - '   &7Available:&3 {players} &8/&c {max}'
+          name: '&a&lTrust Player'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_edit_player_land:
+          lore:
+          - '&cYou can''t edit this player.'
+          - ' &8• &7Their role&6 {role} &7has a higher'
+          - '   &7or equal priority than yours.'
+          name: '&4&lRole Priority'
+        entry_area:
+          lore:
+          - '&7Role: {role}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7More information'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7▲ Promote'
+          - '&8✖ &9SHIFT + RIGHT CLICK'
+          - '   &7▼ Demote'
+          - '&8✖ &3DROP'
+          - '   &7Untrust in this area.'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_edit_player_area:
+          lore:
+          - '&cYou can''t edit this player.'
+          - ' &8• &7Their role&6 {role} &7has a higher'
+          - '   &7or equal priority than yours.'
+          name: '&4&lRole Priority'
+        child_failure_max-players:
+          lore:
+          - '&7This land reached their maximum'
+          - '&7amount of&3 {max} &7members.'
+          name: '&4&lMax trusted Players'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Display only players which are'
+          - '   &7trusted in this area &8(&6{area}&8)&7?'
+          - '    &8• &6&lIf disabled:'
+          - '      &7It displays players of the whole land.'
+          - '      &7Also it allows you to trust or untrust'
+          - '      &7players from the whole land.'
+          name: '&6&lView only Area: {current}'
+          material: HOPPER
+          slots: 41
+        child_failure_priority:
+          lore:
+          - '&cYou''re not allowed to'
+          - '&cedit settings of this role.'
+          - ' &8• &7It has a higher priority'
+          - '   &7than yours or you''re a'
+          - '   &7member of the same role.'
+          name: '&4&lRole Priority'
+        entry_land:
+          lore:
+          - '&7Trusted in these areas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7View more information.'
+          - '&8✖ &3DROP'
+          - '   &7Untrust in the whole land.'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to untrust'
+          - '&cplayers.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNo Access'
+        untrust:
+          lore:
+          - '&8✖ &7Untrust a player from this area.'
+          name: '&c&lUntrust Player'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_owner:
+          lore:
+          - '&cOwners can''t be untrusted.'
+          - ' &8• &7A new owner can be set by'
+          - '   &7executing &e/{cmd}&7.'
+          name: '&4&lOwner'
+        child_failure_tenant:
+          lore:
+          - '&cTenants can''t be untrusted.'
+          - '&cand their roles can''t be changed.'
+          - ' &8• &7Tenants can be removed by'
+          - '   &7executing &e/{cmd}&7.'
+          name: '&4&lTenant'
+        child_failure_setrole:
+          lore:
+          - '&cYou''re not allowed to set roles.'
+          - '&8• &7The land owner can give your'
+          - '  &7role permission to do so.'
+          name: '&4&lNo Access'
+        child_failure_self:
+          lore:
+          - '&7To leave a land use &e/lands leave'
+          - '&7instead.'
+          name: '&4&lCan''t untrust yourself'
+  list_admin_lands:
+    title: '&8Admin Lands'
+    items:
+      default:
+        add:
+          lore:
+          - '&8✖ &7Convert a normal land into'
+          - '   &7a admin land.'
+          name: '&a&lConvert into Admin Land'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7Open the land menu.'
+          name: '&2&l{land}'
+          material: INHERIT
+        convert:
+          lore:
+          - '&8✖ &7Convert a admin land back'
+          - '   &7to a normal land.'
+          name: '&e&lConvert back to Normal'
+          material: skin:1811917c644f04f56b68c9c71b33ac082c2601c24409be78c2063d4df2a86525
+          slots: 41
+        delete:
+          lore:
+          - '&8✖ &7Delete a admin land completely.'
+          name: '&c&lDelete completely'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_player_nations:
+    title: '&8Your Nations'
+    items:
+      default:
+        entry_nation_edit:
+          lore:
+          - '&7This nation is set as your main nation'
+          - '&7through &3/lands edit &8<&3capital&8>&7. Commands will be'
+          - '&7be executed for this nation.'
+          - '&8✖ &7Open the nation''s menu.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this nation.'
+          name: '&9&l{nation}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+        entry_nation_own:
+          lore:
+          - '&7You own this nation.'
+          - ' &8• &7Lands: {lands}'
+          - ' &8• &7Chunks: {chunks}'
+          - ' &8• &7Total members: {members}'
+          - '&8✖ &7Open the nation''s menu.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this nation.'
+          name: '&9&l{nation}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - '&7You''re trusted in this nation.'
+          - ' &8• &7Lands: {lands}'
+          - ' &8• &7Total chunks: {chunks}'
+          - ' &8• &7Total members: {members}'
+          - '&8✖ &7Open the nation''s menu.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this nation.'
+          name: '&9&l{nation}'
+          material: INHERIT
+  player-management:
+    title: '&8Player Management'
+    items:
+      default:
+        members:
+          lore:
+          - '&8✖ &7Manage members.'
+          name: '&6&lMembers'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 20
+        invites:
+          lore:
+          - '&8✖ &7Manage outgoing invites.'
+          name: '&6&lInvites'
+          material: WRITABLE_BOOK
+          slots: 24
+        banned:
+          lore:
+          - '&8✖ &7Manage banned players.'
+          name: '&6&lBanned'
+          material: BARRIER
+          slots: 22
+        membership-requests:
+          lore:
+          - '&8✖ &7Manage incoming membership requests.'
+          name: '&6&lMembership Requests'
+          material: BOOKSHELF
+          slots: 26
+  war:
+    title: '&8War'
+    items:
+      default:
+        child_failure_permission:
+          lore:
+          - '&cYou''re not allowed to do'
+          - '&cthis for &8({object}&8)&c.'
+          - ' &8• &7The owner can give you'
+          - '   &7permission to do so.'
+          - '   &7Flag: {flag}'
+          name: '&4&lNot allowed'
+        child_failure_surrender:
+          lore:
+          - '&cThe enemy does not allow'
+          - '&cyou to surrender.'
+          - ' &8• &7That''s because they didn''t'
+          - '   &7set a tribute. They can do that'
+          - '   &7in their war menu: &e/wars menu'
+          name: '&4&lSurrender rejected'
+        tribute_attacker_mutual:
+          lore:
+          - '&8✖ &7Surrender in this war'
+          - '   &7You''ll need to pay&c {tribute-att}'
+          - '   &7as a tribute to the defenders.'
+          - '    &8• &7If the tribute equals 0:'
+          - '      &7The defenders wont be able'
+          - '      &7to surrender.'
+          - '    &8• &7&lIf the defenders surrender:'
+          - '      &7They need to pay&c {tribute}'
+          - '      &7to you.'
+          name: '&6&lTribute:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        recipe:
+          lore:
+          - '&7Click here to see the recipe'
+          - '&7of the capture flag item.'
+          name: '&6&lCapture flag Recipe'
+          material: BEACON
+          slots: 13
+        tribute_defender:
+          lore:
+          - '&8✖ &7Surrender in this war'
+          - '    &8• &7You''ll need to pay&c {tribute}'
+          - '      &7as a tribute to the attackers.'
+          - '    &8• &7&lIf the tribute equals 0:'
+          - '      &7The attackers don''t accept'
+          - '      &7a surrender.'
+          name: '&6&lSurrender:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_none:
+          lore:
+          - '&cThe enemy {enemy} &chas no claims'
+          - '&cto teleport to.'
+          name: '&4&lNo Claims'
+        attackers:
+          lore:
+          - '&8✖ &7View all attacking lands.'
+          - '&7Players: {players}'
+          - ''
+          - '&6&lProgress'
+          - ' &8• &7Captures: {cap}'
+          - ' &8• &7Kills: {kills}'
+          - '   &3= {points} / {towin} &7points to win'
+          - '   {bar}'
+          name: '&c&lAttacker {object}'
+          material: IRON_SWORD
+          slots: 11
+        child_failure_attacker:
+          lore:
+          - '&7Attackers aren''t allowed to'
+          - '&7surrender in wars at all.'
+          name: '&4&lCan''t surrender'
+        points:
+          lore:
+          - '&7A team needs&3 {points} &7points to win.'
+          - ' &8• &7Kill: &3{p_kill} point(s)'
+          - ' &8• &7Capture: &3{p_cap} point(s)'
+          - '    &8• &7To capture an enemy area, place'
+          - '      &7a capture flag inside it. You'
+          - '      &7can see the crafting recipe'
+          - '      &7for it in this menu.'
+          - ''
+          - '&6&lEnemies can do this in your Land:'
+          - '{settings}'
+          name: '&6&lPoint Distribution'
+          material: IRON_INGOT
+          slots: 14
+        child_failure_cost:
+          lore:
+          - '&cYou &8({object}&8) &chave'
+          - '&cnot enough money to pay the'
+          - '&ctribute of&4 {tribute}&c.'
+          name: '&4&lNot enough Money'
+        spawn:
+          lore:
+          - '&7Teleport to the enemies border.'
+          name: '&6&lSpawn'
+          material: ENDER_PEARL
+          slots: 9
+        defenders:
+          lore:
+          - '&8✖ &7View all defending lands.'
+          - '&7Players: {players}'
+          - ''
+          - '&6&lProgress'
+          - ' &8• &7Captures: {cap}'
+          - ' &8• &7Kills: {kills}'
+          - '   &3= {points} / {towin} &7points to win'
+          - '   {bar}'
+          name: '&a&lDefender {object}'
+          material: SHIELD
+          slots: 12
+        declaration_start:
+          lore:
+          - '&7The war will start in&5 {time}&7.'
+          - '&7Until then each team has time to prepare.'
+          name: '&6&lStart'
+          material: CLOCK
+          slots: 15
+        war_end:
+          lore:
+          - '&7The war will end, if one team reaches'
+          - '&7a total amount of&3 {points} &7points'
+          - '&7or a team surrenders.'
+          - ' &8• &7If no team reaches {points} points:'
+          - '   &7The war will timeout in&5 {end}&7.'
+          name: '&6&lEnd'
+          material: CLOCK
+          slots: 15
+        tribute_attacker:
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Change the tribute value for this war.'
+          - '    &8• &7&lIf the tribute equals 0:'
+          - '      &7The defenders won''t be able'
+          - '      &7to surrender.'
+          - '    &8• &7&lIf the defenders surrender:'
+          - '      &7Defenders need to pay&c {tribute}'
+          - '      &7to you.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7If you, as a attacker, want to'
+          - '   &7surrender you''ll need to pay'
+          - '   &c{tribute-att} &7to the defenders.'
+          name: '&6&lTribute:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+  admin_main:
+    title: '&8Admin Main Menu'
+    items:
+      default:
+        lands:
+          lore:
+          - '&8✖ &7View and manage admin lands.'
+          - '    &8• &7To further edit admin lands, execute'
+          - '      &3/lands edit &8<&3land&8>&7, just like'
+          - '      &7you would do with normal lands.'
+          - '    &8• &7Admin lands don''t pay any upkeep'
+          - '      &7and can''t participate in wars. While'
+          - '      &7their owner is automatically set to'
+          - '      &7"Server", you can still change it by'
+          - '      &7executing &3/lands setowner&7.'
+          name: '&6&lManage Admin Lands'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 25
+        child_failure_world:
+          lore:
+          - '&cThe world you''re currently standing'
+          - '&cin must be a Lands claim world.'
+          - ' &8• &7You can add claim worlds in'
+          - '   &7the config by editing the'
+          - '   &7"claim-worlds_list" option.'
+          name: '&4&lNot a Lands world'
+        wilderness:
+          lore:
+          - '&8✖ &7Toggle role and natural'
+          - '   &7flags in the wilderness.'
+          name: '&6&lWilderness Flags'
+          material: NAME_TAG
+          slots: 21
+  list_membership-requests:
+    title: '&8Membership Requests'
+    items:
+      default:
+        child_failure_player_own-land:
+          lore:
+          - '&cCan''t trust this player, since'
+          - '&cthey have now their own land.'
+          - '&7They must delete their land first.'
+          name: '&4&lHas own Land'
+        child_failure_land_max-members:
+          lore:
+          - '&c{object}&7 reached its maximum'
+          - '&camount of members.'
+          name: '&4&lCan''t trust any more'
+        child_failure_player_banned:
+          lore:
+          - '&cCan''t trust player&4 {player}&c,'
+          - '&csince they''re banned.'
+          - ' &8• &7Unban: &e/lands unban'
+          name: '&4&lBanned'
+        entry_object:
+          lore:
+          - '&7Time: &5{time}&7 ago'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Accept request and trust them.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7More info about them.'
+          - '&8✖ &3DROP'
+          - '   &7Deny request.'
+          name: '&6&l{name}'
+          material: INHERIT
+        membership_accept:
+          lore:
+          - '&8✖ &7Should membership requests'
+          - '   &7automatically be accepted?'
+          - '  &8• &7That means that anyone could'
+          - '    &7join your land.'
+          - '  &8• &7New members get the role'
+          - '    &7{role} &7assigned.'
+          name: '&6&lAuto Accept: {status}'
+          material: REDSTONE
+          slots: 42
+        child_failure_player_max-lands:
+          lore:
+          - '&cThe player reached their maximum'
+          - '&camount of lands, they can be part of'
+          - '&cat the same time.'
+          name: '&4&lCan''t be part of any more Lands'
+      patches:
+        all:
+          category:
+            slots: 40
+          category_members:
+            slots: 40
+  list_player_lands:
+    title: '&8Your Lands'
+    items:
+      default:
+        entry_land_own:
+          lore:
+          - '&7You own this land.'
+          - ' &8• &7Nation:&9 {nation}'
+          - ' &8• &7Chunks:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this land.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this land.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_edit:
+          lore:
+          - '&7You have this camp set as your'
+          - '&e/lands edit &7land. Commands will'
+          - '&7be executed for this land.'
+          - '&7Camps are lands that can''t be'
+          - '&7expanded and don''t pay upkeep.'
+          - '&7&lThis camp expires in:'
+          - '&5~{time}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this camp.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this camp.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_own:
+          lore:
+          - '&7You own this camp. Camps are lands'
+          - '&7that can''t be expanded and don''t'
+          - '&7pay upkeep.'
+          - '&7&lThis camp expires in:'
+          - '&5~{time}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this camp.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this camp.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp:
+          lore:
+          - '&7You''re trusted in this camp.'
+          - '&7Camps are lands that can''t be'
+          - '&7expanded and don''t pay upkeep.'
+          - '&7&lThis camp expires in:'
+          - '&5~{time}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this camp.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this camp.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land:
+          lore:
+          - '&7You''re trusted in this land.'
+          - ' &8• &7Nation:&9 {nation}'
+          - ' &8• &7Chunks:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this land.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this land.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land_edit:
+          lore:
+          - '&7You have this land set as your'
+          - '&e/lands edit &7land. Commands will'
+          - '&7be executed for this land.'
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Manage this land.'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Select as &e/lands edit &7land.'
+          - '   &7Commands will be executed for'
+          - '   &7this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View general information'
+          - '   &7about this land.'
+          name: '&2&l{land}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+  player_invite:
+    title: '&8{land}'
+    items:
+      default:
+        child_failure_banned:
+          lore:
+          - '&cYou can''t join area&4 {area} &cof'
+          - '&cland&4 {land}&c, since they''ve'
+          - '&cbanned you.'
+          name: '&4&lYou''re banned'
+        deny:
+          lore:
+          - '&8✖ &7Deny this invite.'
+          name: '&c&lDeny'
+          material: RED_STAINED_GLASS_PANE
+          slots: 24-27
+        accept_owner:
+          lore:
+          - '&8✖ &7Accept this invite.'
+          - '   &7Taxes:&c {tax}'
+          - '   &7Upkeep:&c {upkeep}'
+          name: '&a&lAccept'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        accept_trust:
+          lore:
+          - '&8✖ &7Accept this invite.'
+          - '   &7Taxes:&c {tax}'
+          name: '&a&lAccept'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        child_failure_inviteOwner:
+          lore:
+          - '&cYou can''t join this land.'
+          - ' &8• &7You aren''t allowed to have'
+          - '   &7your own land and be trusted'
+          - '   &7in another one at the same time.'
+          name: '&4&lInvite Owner'
+        child_failure_lands:
+          lore:
+          - '&cYou can''t join another land.'
+          - ' &8• &7You reached your maximum'
+          - '   &7amount of&3 {max} &7lands you'
+          - '   &7can be trusted in.'
+          name: '&4&lMax Lands'
+        child_failure_members:
+          lore:
+          - '&cCouldn''t trust you in land&4 {land}&c.'
+          - ' &8• &7They reached their maximum'
+          - '   &7amount of&3 {max} &7members.'
+          name: '&4&lMax Members'
+        child_failure_war:
+          lore:
+          - '&cYou currently can''t join land'
+          - '&4{land}&c, since they''re engaged'
+          - '&cin a upcoming or active war.'
+          name: '&4&lEngaged in War'
+        info:
+          lore:
+          - ' &8• &7Area:&6 {area}'
+          - ' &8• &7Land:&2 {land}'
+          - ' &8• &7Received:&5 {time}'
+          - ' &8• &7Sender: {sender}'
+          name: '&6&lInformation'
+          material: OAK_SIGN
+          slots: 23
+  list_rentables:
+    title: '&8Rentable'
+    items:
+      default:
+        refresh_type:
+          lore:
+          - '&8✖ &7Display objects to buy'
+          - '   &7or to rent?'
+          name: '&7&lType: {type}'
+          material: COMPARATOR
+          slots: 42
+        entry_land_buy:
+          lore:
+          - '&8• &7Cost:&c {costs}'
+          - '&8✖ &7Teleport'
+          name: '&a&lBuy Land:&2 {land}'
+          material: INHERIT
+        entry_area_buy:
+          lore:
+          - '&8• &7Size: {size} blocks'
+          - '&8• &7Cost:&c {costs}'
+          - '&8• &7Land: {land}'
+          - '&8✖ &7Teleport'
+          name: '&a&lBuy:&6 {area}'
+          material: INHERIT
+        refresh_sort:
+          lore:
+          - '&8✖ &7Click to toggle the sort mode.'
+          name: '&7&lSort by: {mode}'
+          material: HOPPER
+          slots: 41
+        entry_area_rent:
+          lore:
+          - '&8• &7Size: {size} blocks'
+          - '&8• &7Cost:&c {costs} &7per &5{time}'
+          - '&8• &7Max time: {max}'
+          - '&8• &7Land: {land}'
+          - '&8✖ &7Teleport'
+          name: '&e&lRent:&6 {area}'
+          material: INHERIT
+        child_failure_cooldown:
+          lore:
+          - '&7You need to wait another&5 {time}'
+          - '&7before you can do teleport to a offer again.'
+          name: '&4&lCooldown'
+  action-confirm:
+    title: '&8Confirm this Action'
+    items:
+      default:
+        confirm:
+          name: '&a&lConfirm'
+          material: LIME_STAINED_GLASS_PANE
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+          sound_click: ENTITY_PLAYER_LEVELUP
+        cancel:
+          name: '&c&lCancel'
+          material: RED_STAINED_GLASS_PANE
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+          sound_click: BLOCK_ANVIL_HIT
+        info:
+          lore:
+          - '&7Click &a&lConfirm &7to confirm or'
+          - '&c&lCancel &7to abort this action.'
+          name: '&6&lConfirm this Action'
+          material: OAK_SIGN
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+  admin_wilderness:
+    title: '&8Wilderness Flags'
+    items:
+      default:
+        management:
+          lore:
+          - '&8✖ &7Edit administratoral flags from'
+          - '   &73rd party plugins, that are'
+          - '   &7toggleable in the wilderness.'
+          name: '&6&lManagement Flags'
+          material: GOLD_INGOT
+          slots: 23
+        action:
+          lore:
+          - '&8✖ &7Edit action flags like'
+          - '   &7block breaking etc.'
+          name: '&6&lAction Flags'
+          material: IRON_PICKAXE
+          slots: 20
+        landflags:
+          lore:
+          - '&8✖ &7Toggle natural flags, like'
+          - '   &7mob spawning etc.'
+          name: '&6&lNatural Flags'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 26
+  object_info:
+    title: '&8{object}'
+    items:
+      default:
+        membership-request_not-looking:
+          lore:
+          - '&cThis land isn''t looking for'
+          - '&cnew members.'
+          name: '&6&lRequest Membership'
+          material: BOOKSHELF
+          slots: 33
+        level:
+          lore:
+          - '&8✖ &7Click here to view information'
+          - '   &7about the current and next level.'
+          name: '&6&lLevel'
+          material: BEACON
+          slots: 15
+        created:
+          lore:
+          - '&5{date}'
+          name: '&6&lCreated'
+          material: CLOCK
+          slots: 11
+        players:
+          lore:
+          - '&e{players}'
+          name: '&6&lPlayers &8(&7{amount}&8)'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 13
+        lands:
+          lore:
+          - '&e{lands}'
+          name: '&6&lLands &8(&7{amount}&8)'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 13
+        membership-request:
+          lore:
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Request membership.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7Revoke membership request.'
+          name: '&6&lRequest Membership'
+          material: BOOKSHELF
+          slots: 33
+        war:
+          lore:
+          - ' &8• &7Won: {won}'
+          - ' &8• &7Lost: {lost}'
+          - '   &8= &7WLR:&3 {wlr}'
+          - '&6&lKill Ratio:'
+          - ' &8• &7Kills: {kills}'
+          - ' &8• &7Deaths: {deaths}'
+          - '   &8= &7KDR:&3 {kdr}'
+          - '&8• &7Captures: {captures}'
+          name: '&6&lWin Ratio:'
+          material: IRON_SWORD
+          slots: 31
+        level_camp:
+          lore:
+          - '&cCamps don''t have any levels.'
+          name: '&6&lLevel'
+          material: BEACON
+          slots: 15
+        relations:
+          lore:
+          - '&8✖ &7View relations.'
+          name: '&6&lRelations'
+          material: LIME_BANNER
+          slots: 29
+  list_admin_wilderness_landflags:
+    title: '&8Natural Flags'
+  list_area_roles:
+    title: '&8{area} &7> &8Roles'
+    items:
+      default:
+        child_failure_max-roles:
+          lore:
+          - '&cThis area reached the maximum'
+          - '&camount of&4 {max} &croles.'
+          name: '&4&lMax Roles'
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to edit roles'
+          - '&cin this area.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to do so.'
+          name: '&4&lNot allowed'
+        entry_object:
+          lore:
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Higher priority'
+          - '&8✖ &9SHIFT + RIGHT CLICK'
+          - '   &7Lower priority'
+          - '&8✖ &3DROP'
+          - '   &7Delete this role.'
+          name: '&7&l{role}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Create a new role.'
+          - '   &7Available:&3 {roles} &8/&c {max}'
+          name: '&a&lCreate Role'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_required:
+          lore:
+          - '&cYou can''t delete this role.'
+          - ' &8• &7It is required for player'
+          - '   &7management.'
+          name: '&4&lRole is Required'
+        delete:
+          lore:
+          - '&8✖ &7Delete a role of this area.'
+          name: '&c&lDelete Role'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_priority:
+          lore:
+          - '&cYou''re not allowed to edit settings'
+          - '&cof this role.'
+          - ' &8• &7It has a higher priority than'
+          - '   &7yours or you''re a member of it.'
+          name: '&4&lRole Priority'
+  list_player_map_bedrock:
+    title: Map
+    items:
+      default:
+        entry_chunk_position:
+          name: '&6&lCurrent Position'
+          lore:
+          - '&7This is your current position.'
+          material: NETHER_STAR
+        entry_chunk_wilderness:
+          name: '&2Wilderness'
+          lore:
+          - '&8✖ &7Click to claim this chunk.'
+          material: GREEN_STAINED_GLASS
+        entry_chunk_untrusted:
+          name: '&4{land}'
+          lore:
+          - '&cYou''re not trusted in this chunk.'
+          - '&8✖ &7View info about this land.'
+          material: RED_STAINED_GLASS
+        entry_chunk_owner:
+          name: '&a{land}'
+          lore:
+          - '&7You own this land.'
+          - '&8✖ &7Open the menu of this land.'
+          material: LIME_STAINED_GLASS
+        entry_chunk_trusted:
+          name: '&e{land}'
+          lore:
+          - '&7You''re trusted in this chunk.'
+          - '&8✖ &7Open the menu of this land.'
+          material: YELLOW_STAINED_GLASS
+        refresh_move_up:
+          name: '&6&lNavigate {direction}'
+          material: skin:45c588b9ec0a08a37e01a809ed0903cc34c3e3f176dc92230417da93b948f148
+          slots: 5
+        refresh_move_down:
+          name: '&6&lNavigate {direction}'
+          material: skin:1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+          slots: 41
+        refresh_move_left:
+          name: '&6&lNavigate {direction}'
+          material: skin:76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+          slots: 19
+        refresh_move_right:
+          name: '&6&lNavigate {direction}'
+          material: skin:8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+          slots: 27
+        refresh_reset-pos:
+          name: '&6&lReset Position'
+          lore:
+          - '&8✖ &7Reset the current position.'
+          material: skin:22e4ad83c4938d9e5fc589e60c8010be2480e08d834529cec0da13bdf2538555
+          slots: 45
+        back:
+          slots: 37
+    size: 45
+    entries: 1-45
+  list_player_map:
+    title: Map
+    items:
+      default:
+        entry_chunk_position:
+          name: '&6&lCurrent Position'
+          lore:
+          - '&7This is your current position.'
+          material: NETHER_STAR
+        entry_chunk_wilderness:
+          name: '&2Wilderness'
+          lore:
+          - '&8✖ &7Click to claim this chunk.'
+          material: GREEN_STAINED_GLASS_PANE
+        entry_chunk_untrusted:
+          name: '&4{land}'
+          lore:
+          - '&cYou''re not trusted in this chunk.'
+          - '&8✖ &7View info about this land.'
+          material: RED_STAINED_GLASS_PANE
+        entry_chunk_owner:
+          name: '&a{land}'
+          lore:
+          - '&7You own this land.'
+          - '&8✖ &7Open the menu of this land.'
+          material: LIME_STAINED_GLASS_PANE
+        entry_chunk_trusted:
+          name: '&e{land}'
+          lore:
+          - '&7You''re trusted in this chunk.'
+          - '&8✖ &7Open the menu of this land.'
+          material: YELLOW_STAINED_GLASS_PANE
+        refresh_move_up:
+          name: '&6&lNavigate {direction}'
+          material: skin:45c588b9ec0a08a37e01a809ed0903cc34c3e3f176dc92230417da93b948f148
+          slots: 5
+        refresh_move_down:
+          name: '&6&lNavigate {direction}'
+          material: skin:1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+          slots: 50
+        refresh_move_left:
+          name: '&6&lNavigate {direction}'
+          material: skin:76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+          slots: 19
+        refresh_move_right:
+          name: '&6&lNavigate {direction}'
+          material: skin:8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+          slots: 27
+        refresh_reset-pos:
+          name: '&6&lReset Position'
+          lore:
+          - '&8✖ &7Reset the current position.'
+          material: skin:22e4ad83c4938d9e5fc589e60c8010be2480e08d834529cec0da13bdf2538555
+          slots: 54
+        back:
+          slots: 46
+    size: 54
+    entries: 1-54
+  list_player_invites:
+    title: '&8Received Invites'
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&8✖ &7Respond to this invite and view more information.'
+          name: '&2&l{land} &7- &6&lBecome Owner'
+          material: INHERIT
+        entry_object_trust:
+          lore:
+          - '&8✖ &7Respond to this invite and view more information.'
+          name: '&2&l{land} &7- &6&lMembership Invitation'
+          material: INHERIT
+  list_land_areas:
+    title: '&8Areas'
+    items:
+      default:
+        child_failure_rented:
+          lore:
+          - '&cYou can''t edit this area while'
+          - '&cit''s being rented or sold.'
+          - ' &8• &7Current tenant:&3 {player}'
+          name: '&4&lRented'
+        entry_area_default:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7Open the menu for'
+          - '   &7this area.'
+          name: '&6&l{area}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cYou''re not allowed to delete'
+          - '&careas in this land.'
+          - ' &8• &7The land owner can give your'
+          - '   &7role permission to assign areas.'
+          name: '&4&lNot allowed'
+        entry_area:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7Mange this area.'
+          - '&8✖ &3DROP'
+          - '   &7Delete this area.'
+          name: '&6&l{area}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Create a new area for this land.'
+          - '   &7Available:&3 {areas} &8/&c {max}'
+          name: '&a&lCreate Area'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_area-setup:
+          lore:
+          - '&81. &7Execute &e/lands selection &7and'
+          - '   &7select a lower and upper corner.'
+          - '&82. &7Execute &e/{cmd}'
+          - '  &7to assign the selection to this area.'
+          - '&8✖ &3DROP'
+          - '   &7Delete this area.'
+          name: '&c&lSetup'
+          material: ACACIA_FENCE
+        child_failure_untrusted:
+          lore:
+          - '&cYou''re not allowed to open the'
+          - '&cmenu for this area.'
+          - ' &8• &7You need to be trusted'
+          - '   &7in this area.'
+          name: '&4&lNot trusted'
+        child_failure_default:
+          lore:
+          - '&cYou can''t delete the default area'
+          - '&cof this land.'
+          - ' &8• &7New claims will belong to it.'
+          name: '&4&lDefault Area'
+        child_failure_max-areas:
+          lore:
+          - '&cThis land reached their maximum'
+          - '&camount of&4 {max} &careas.'
+          name: '&4&lMax Areas'
+        delete:
+          lore:
+          - '&8✖ &7Delete an area of'
+          - '   &7this land.'
+          name: '&c&lDelete Area'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_area_banned:
+    title: '&8{area} &7> &8Banned Players'
+    items:
+      default:
+        unban:
+          lore:
+          - '&8✖ &7Unban a player from this area.'
+          name: '&a&lUnban Player'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_all:
+          lore:
+          - '&7Banned in these areas:'
+          - '{areas}'
+          - ''
+          - '&8✖ &7View more information.'
+          name: '&e&l{player}'
+          material: INHERIT
+        entry_area:
+          lore:
+          - '&7This player is banned in this area.'
+          - '&8✖ &7View more information.'
+          name: '&e&l{player}'
+          material: INHERIT
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Display only players which are'
+          - '   &7banned in this area &8(&6{area}&8)&7?'
+          - '    &8• &6&lIf disabled:'
+          - '      &7It displays bans of the whole land.'
+          - '      &7Also it allows you to ban or unban'
+          - '      &7players from the whole land.'
+          name: '&6&lView only Area: {current}'
+          material: HOPPER
+          slots: 41
+        ban:
+          lore:
+          - '&8✖ &7Ban a player from this area.'
+          - ' &8• &7Banned players won''t be able to'
+          - '   &7enter or teleport into it.'
+          name: '&c&lBan Player'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+  war_capture_recipe:
+    title: '&8Capture Flag Recipe'
+  list_role_players:
+    title: '&8Players'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&7This player supports your land'
+          - '&7with &3{support} &7additional claims.'
+          name: '&e&l{player}'
+          material: INHERIT
+          slots: 10-36
+  list_all:
+    title: '&8All'
+    items:
+      default:
+        refresh_toggle-allowed:
+          lore:
+          - '&8✖ &7Show only those which you''re'
+          - '   &7allowed to enter and teleport to'
+          - '   &7the spawn?'
+          name: '&6&lOnly public: {only-allowed}'
+          material: OAK_DOOR
+          slots: 42
+        refresh_toggle-category:
+          lore:
+          - '&8✖ &7Show only lands which are'
+          - '   &7part of this category?'
+          - '   &8• &7Category description:'
+          - '     {description}'
+          name: '&6&lCategory: {category}'
+          material: BOOKSHELF
+          slots: 41
+        entry_land_looking:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Category: {category}'
+          - ' &8• &7Title:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Teleport to the land spawn'
+          - '   &7of this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View more infomation.'
+          - ''
+          - '&6&lMembership Requests'
+          - '&8✖ &bSHIFT + LEFT CLICK'
+          - '   &7Request membership.'
+          - '&8✖ &9SHIFT + RIGHT CLICK'
+          - '   &7Revoke membership request.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Lands: {lands}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Teleport to the capital''s spawn.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View more information.'
+          name: '&6&l#{pos} &2&l{nation}'
+          material: INHERIT
+        refresh_sorting:
+          lore:
+          - '&8✖ &7Toggle the sorting mode.'
+          name: '&6&lSorting: {current}'
+          material: HOPPER
+          slots: 40
+        refresh_search:
+          lore:
+          - '&8✖ &7Search by name.'
+          - '   &8• &7Current search: {search}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Reset search'
+          name: '&6&lSearch'
+          material: SPYGLASS
+          slots: 43
+        entry_land:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Category: {category}'
+          - ' &8• &7Title:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7Teleport to the land spawn'
+          - '   &7of this land.'
+          - '&8✖ &9RIGHT CLICK'
+          - '   &7View more infomation.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+  list_inbox:
+    title: '&8Inbox'
+    items:
+      default:
+        refresh_filter:
+          lore:
+          - '&8✖ &7Cycle through message types.'
+          - '   &7Current:&3 {type}'
+          name: '&6&lFilter by Type'
+          material: HOPPER
+          slots: 40
+        entry_object:
+          lore:
+          - '{message}'
+          - '&8✖ &7Click to remove.'
+          name: '&6&l#{id}&7 {date}'
+          material: PAPER
+          slots: 10-36
+        refresh_clear:
+          lore:
+          - '&8✖ &7Remove all inbox messages.'
+          name: '&6&lClear'
+          material: BARRIER
+          slots: 41
+        child_failure_owner:
+          lore:
+          - '&7Only the land owner can remove'
+          - '&7inbox messages.'
+          name: '&4&lOwner'
+        refresh_post:
+          name: '&a&lCreate Post'
+          lore:
+          - '&8✖ &7Post information for your land members.'
+          - '   &7They will be notified.'
+          material: WRITABLE_BOOK
+          slots: 42
+  list_player_flags:
+    title: '&8Personal Settings'
+    items:
+      default:
+        entry_enter_messages:
+          lore:
+          - '&8✖ &7Show land enter and leave messages?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lEnter and Leave Messages: {enabled}'
+          material: OAK_SIGN
+        entry_receive_invites:
+          lore:
+          - '&8✖ &7Allow other lands to sent you'
+          - '   &7invites in order to join them?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lReceive Invites: {enabled}'
+          material: WRITABLE_BOOK
+        entry_show_inbox:
+          lore:
+          - '&8✖ &7Got notified about important'
+          - '   &7events that happen in your lands?'
+          - '   &7Unlocked: {unlocked}'
+          name: '&6&lShow Inbox: {enabled}'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+        entry_general_player:
+          lore:
+          - '&8✖ &7Click to toggle:'
+          - '   &7Unlocked: {unlocked}'
+          - '&7Description:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+  player_info:
+    title: '&8Player {player}'
+    items:
+      default:
+        max-chunks:
+          lore:
+          - '&7Supports your land with &3{chunks} &7chunks,'
+          - '&7if they''re a member of your land.'
+          name: '&6&lSupport Claims'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 22
+        lands:
+          lore:
+          - '{lands}'
+          name: '&6&lLands &8(&7{amount}&8)'
+          material: OAK_SIGN
+          slots: 24
+        areas:
+          lore:
+          - '&7This player is trusted in these'
+          - '&7areas of land&2 {land}&7:'
+          - '{areas}'
+          name: '&6&lTrusted Areas &8(&7{amount}&8)'
+          material: OAK_FENCE
+          slots: 26
+        time:
+          lore:
+          - '&8• &7Last online: &5{seen}'
+          - '   &7Offline since: &5{offline}'
+          - '&8• &7Playtime: &5{playtime}'
+          name: '&6&lLast seen and Playtime'
+          material: CLOCK
+          slots: 20
+  relations:
+    title: '&8Relations'
+    items:
+      default:
+        offer_received:
+          lore:
+          - '&8✖ &7Manage ingoing offers.'
+          name: '&6&lReceived Offers'
+          material: skin:3b83bbccf4f0c86b12f6f79989d159454bf9281955d7e2411ce98c1b8aa38d8
+          slots: 26
+        offer_sent:
+          lore:
+          - '&8✖ &7Manage outgoing offers.'
+          name: '&6&lSent Offers'
+          material: skin:3e4f2f9698c3f186fe44cc63d2f3c4f9a241223acf0581775d9cecd7075
+          slots: 24
+        enemies:
+          lore:
+          - '&8✖ &7Manage enemies.'
+          name: '&c&lEnemies'
+          material: RED_BANNER
+          slots: 22
+        allies:
+          lore:
+          - '&8✖ &7Manage allies.'
+          name: '&a&lAllies'
+          material: LIME_BANNER
+          slots: 20
+  list_relation:
+    title: '&8Relation'
+    items:
+      default:
+        add:
+          lore:
+          - '   &7Maximum amount: {max}'
+          name: '&8✖ &a&lAdd'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_offer_neutral_sender:
+          lore:
+          - '&7If they accept this offer you''l'
+          - '&7be neutral against them.'
+          - '&8✖ &3DROP'
+          - '   &7Revoke this offer.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_offer_ally_sender:
+          lore:
+          - '&7If they accept this offer, you''ll'
+          - '&7be allies with them.'
+          - '&8✖ &3DROP'
+          - '   &7Revoke this offer.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&c&l{object}'
+          material: INHERIT
+        remove:
+          name: '&8✖ &c&lRemove'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_offer_neutral_receiver:
+          lore:
+          - '&8✖ &7Accept this neutralization.'
+          - '   &7You''ll no longer be enemies.'
+          - '&8✖ &3DROP'
+          - '   &7Deny this offer.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&c&l{object}'
+          material: INHERIT
+        child_failure_war:
+          lore:
+          - '&cYou can''t manage this while {object}'
+          - '&cis enganged in an upcoming or'
+          - '&cactive war against&4 {enemy}&c.'
+          name: '&4&lUpcoming or active War'
+        add_nation:
+          lore:
+          - '&cAll relations are managed by the nation'
+          - '&4{nation}&c, which your land is part of.'
+          name: '&6&lManaged by Nation'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_max_allies:
+          lore:
+          - '&4{object} &creached its maximum'
+          - '&camount of&4 {max} &callies.'
+          name: '&4&lMax Allies reached'
+        entry_offer_ally_receiver:
+          lore:
+          - '&8✖ &7Accept this alliance offer.'
+          - '   &7You''ll be allies.'
+          - '&8✖ &3DROP'
+          - '   &7Deny this offer.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_ally:
+          lore:
+          - '&8✖ &3DROP'
+          - '   &7Remove ally.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&a&lAlly {object}'
+          material: INHERIT
+        remove_nation:
+          lore:
+          - '&cAll relations are managed by the nation'
+          - '&4{nation}&c, which your land is part of.'
+          name: '&6&lManaged by Nation'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_enemy:
+          lore:
+          - '&8✖ &3DROP'
+          - '   &7Send neutralization offer.'
+          - '&7&lInformation'
+          - ' &8• &7Owner: {owner}'
+          - ' &8• &7Level: {level}'
+          - ' &8✖ &bSHIFT + LEFT CLICK'
+          - '    &7Get more information about them.'
+          name: '&c&lEnemy {object}'
+          material: INHERIT
+        child_failure_nation:
+          lore:
+          - '&cAll relations are managed by the nation'
+          - '&4{nation}&c, which your land is part of.'
+          name: '&4&lManaged by Nation'
+        child_war:
+          lore:
+          - '&cYou can''t do this wile {object}'
+          - '&cis engaged in a war.'
+          name: '&4&lCurrent War'
+        child_failure_max_enemies:
+          lore:
+          - '&4{object} &creached its maximum'
+          - '&camount of&4 {max} &cenemies.'
+          name: '&4&lMax Enemies reached'
+  object_info_relations:
+    title: '&8Relations'
+    items:
+      default:
+        enemies:
+          lore:
+          - '&8✖ &7View enemies.'
+          - '   &8• &7Amount: {enemies}'
+          name: '&c&lEnemies'
+          material: RED_BANNER
+          slots: 25
+        allies:
+          lore:
+          - '&8✖ &7View allies.'
+          - '   &8• &7Amount: {allies}'
+          name: '&a&lAllies'
+          material: LIME_BANNER
+          slots: 21
+  list_land_storage:
+    title: '&8Storage'
+  list_nation_lands:
+    title: '&8Nation Members'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Invite a land to join your nation.'
+          - '   &7Available:&3 {lands} &8/&c {max}'
+          name: '&a&lInvite Land'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_object:
+          lore:
+          - '&7Title:'
+          - '&7{title}'
+          - ''
+          - '&8✖ &bLEFT CLICK'
+          - '   &7View information.'
+          - '&8✖ &3DROP'
+          - '   &7Remove land from the nation.'
+          name: '&2&l{prefix}{land}'
+          material: INHERIT
+        untrust:
+          lore:
+          - '&8✖ &7Untrust a land from your nation.'
+          name: '&c&lUntrust Land'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+skull:
+  area:
+    sub: OAK_FENCE
+    default: DARK_OAK_FENCE
+physical:
+  selection:
+    lore:
+    - '&7Use this tool to create a selection.'
+    - '&7Selections can be used for:'
+    - ' &8- &e/claim'
+    - ' &8- &e/unclaim'
+    - ' &8- &e/assign'
+    name: '&2&lSelection Tool'
+    material: GOLDEN_HOE
+  capture_flag:
+    lore:
+    - '&7Place this flag on the enemy land'
+    - '&7during war in order to capture it.'
+    name: '&2&lCapture Flag'
+    material: BEACON
+  currency:
+    name: ''
+    material: GOLD_INGOT
+  claim_block:
+    lore:
+    - '&7You can claim a chunk'
+    - '&7by placing this block'
+    - '&7in the wilderness.'
+    - '&7Owner:&3 {owner}'
+    name: '&2&lClaimblock'
+    material: GRASS_BLOCK
+  info:
+    lore:
+    - '&7Use this tool to get'
+    - '&7information about the claim'
+    - '&7you''re pointing at.'
+    name: '&2&lInfo Tool'
+    material: FEATHER
+  camp:
+    lore:
+    - '&7Place this item to create a temporary'
+    - '&7camp that will be deleted after'
+    - '&5{time}&7.'
+    - '&7Radius:&3 {radius}'
+    - '&7Camps can''t be expanded.'
+    name: '&2&lCamp'
+    material: CAMPFIRE
+common_sounds:
+  # Play a sound when the item is set in the menu.
+  set:
+    # Each item starting with [item_type]_failure_<name> will have this sound set.
+    # You can still override the "sound_set" for any item in their sections.
+    failure: ENTITY_VILLAGER_NO
+    success: ENTITY_PLAYER_LEVELUP
