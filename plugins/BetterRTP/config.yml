@@ -1,6 +1,9 @@
 # BetterRTP plugin by SuperRonanCraft! (Join my Public Server at ronanplugins.com) #
 # Need help? go to https://ronanplugins.com/discord! #
 
+DisabledWorlds:
+- prison
+- creative
 Language-File: en.yml
 
 Settings:
@@ -18,7 +21,7 @@ Settings:
     # # Respect FactionsUUID areas (https://www.spigotmc.org/resources/factionsuuid.1035/)
     FactionsUUID: false
     # # Respect Lands areas (https://www.spigotmc.org/resources/lands.53313/)
-    Lands: false
+    Lands: true
     # # Respect Residence areas (https://www.spigotmc.org/resources/residence.11480/)
     Residence: false
     # # Respect KingdomsX areas (https://www.spigotmc.org/resources/kingdomsx.77670/)
@@ -100,11 +103,8 @@ BlacklistedBlocks:
 - oak_leaves
 - jungle_leaves
 - kelp
-
-# # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
-DisabledWorlds:
-#- prison
-#- creative
+# - prison
+# - creative
 
 # # Worlds you want to have a custom min/max and spawn center in #
 # # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
