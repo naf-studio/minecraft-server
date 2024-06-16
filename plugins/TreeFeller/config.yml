@@ -460,7 +460,7 @@ mmocore-emulate-regen: false
 compatibility-mmocore: false
 
 # Toggle compatibility with Jobs Reborn
-compatibility-jobs: true
+compatibility-jobs: false
 
 # Should the mcMMO Double Drops feature apply when cutting down trees?
 mcmmo-double-drops: false
