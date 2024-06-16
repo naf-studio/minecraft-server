@@ -374,30 +374,7 @@ demoteCommands: {}
 #
 # Possible values: [true, false]
 titleRemoval: true
-
-# ####################################################################
-#                                                                   #
-#  ____                       ____       _   _   _                  #
-# / ___|  ___ ___  _ __ ___  / ___|  ___| |_| |_(_)_ __   __ _ ___  #
-# \___ \ / __/ _ \| '__/ _ \ \___ \ / _ \ __| __| | '_ \ / _` / __| #
-#  ___) | (_| (_) | | |  __/  ___) |  __/ |_| |_| | | | | (_| \__ \ # 
-# |____/ \___\___/|_|  \___| |____/ \___|\__|\__|_|_| |_|\__, |___/ #
-#                                                        |___/      #
-#                                                                   #
-# ####################################################################
-# All settings depending on the score aspect of this plugin
-# For integrations of other plugins with score see the bottom section of the config
-
-
-# This is a list of commands which are run by the console before a purge occurs
-# A purge is where all teams scores are reset to 0
-# If this is left blank, no commands will be run before a purge occurs
-# You can use placeholders from placeholder API, though the player is set to be null (so things like %betterteams_team% will not work) 
-#    the main reason for the placeholders is so you can use %betterteams_score_{rank}% to refrence a player on the leaderboard
-#
-# Possible values: [Any command valid on your server]
-purgeCommands:
-#- give @a minecraft:dirt 1
+# - give @a minecraft:dirt 1
 
 # This is used to enable the auto purge configuration below
 # If this is set to true, team scores will be purged in correspondence of the timings below
@@ -552,4 +529,7 @@ checkUpdates: true
 # Set this to true to rebuild the lookup tables in teams.yml for seperatedYamlStorage
 rebuildLookups: false
 blacklist:
-#- betterteamsisbad
+- betterteamsisbad
+purgeCommands:
+- give @a minecraft:dirt 1
+# - betterteamsisbad
