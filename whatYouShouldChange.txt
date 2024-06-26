@@ -1,0 +1,23 @@
+base file (google it):
+    config\paper-global.yml: line 60
+    bukkit.yml: line 8
+    server.properties: line 31, 37
+    spigot.yml: line 19, 20
+
+geyser (port):
+    plugins\Geyser-Spigot\config.yml: line 20, 54
+
+simple voice chat (port):
+    plugins\voicechat\voicechat-server.properties: line 5
+
+discordsrv (bot token + channel id):
+    plugins\DiscordSRV\config.yml: line 9, 30
+
+voicechat discord bridge (bot token + channel id):
+    plugins\voicechat-discord\config.yml: line 33, 34
+
+auto restart (time):
+    plugins\SimpleAutoRestart\config.yml: line 3
+
+see more (render distance):
+    plugins\SeeMore\config.yml: line 20
