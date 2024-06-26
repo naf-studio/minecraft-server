@@ -6,7 +6,7 @@ ConfigVersion: 1.27.0
 
 # Bot token; don't know what this is? Look at the video on the plugin page for instructions
 # You must restart your server after changing this option
-BotToken: "MTIzODc0NDk3NDkwMDg1ODkzMg.G4ZAux.PQ44pb6A7fya18ZjtMOxj1TZ-WauRhJV_fObZE"
+BotToken: "000000000000000000000000000"
 
 # Channel links from game to Discord
 # syntax is Channels: {"in-game channel name from Minecraft": "numerical channel ID from Discord", "another in-game channel name from Minecraft": "another numerical channel ID from Discord"}
@@ -27,7 +27,7 @@ BotToken: "MTIzODc0NDk3NDkwMDg1ODkzMg.G4ZAux.PQ44pb6A7fya18ZjtMOxj1TZ-WauRhJV_fO
 #
 # The first part of channel pairs is not the Discord channel name!
 # Run "/discord reload" after changing this option to apply
-Channels: {"global": "1129081325442310315"}
+Channels: {"global": "0000000000000000"}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
 DiscordConsoleChannelId: "0000000000000000"
@@ -88,7 +88,7 @@ Experiment_WebhookChatMessageUsernameFilters: {}
 # Alternative embed avatar url for offline servers:
 # https://cravatar.eu/helmavatar/{username}/{size}.png#{texture}
 
-#AvatarUrl: https://crafatar.com/avatars/{uuid-nodashes}.png?size={size}&overlay#{texture}
+#!AvatarUrl: https://crafatar.com/avatars/{uuid-nodashes}.png?size={size}&overlay#{texture}
 #AvatarUrl: https://crafthead.net/helm/{uuid-nodashes}/{size}#{texture}
 #AvatarUrl: https://cravatar.eu/helmavatar/{username}/{size}.png#{texture}
 
