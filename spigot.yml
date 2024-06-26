@@ -1,15 +1,3 @@
-# This is the main configuration file for Spigot.
-# As you can see, there's tons to configure. Some options may impact gameplay, so use
-# with caution, and make sure you know what each option does before configuring.
-# For a reference for any variable inside this file, check out the Spigot wiki at
-# http://www.spigotmc.org/wiki/spigot-configuration/
-#
-# If you need help with the configuration or have any questions related to Spigot,
-# join us at the Discord or drop by our forums and leave a post.
-#
-# Discord: https://www.spigotmc.org/go/discord
-# Forums: http://www.spigotmc.org/
-
 settings:
   debug: false
   bungeecord: false
@@ -26,8 +14,10 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  netty-threads: 4
-  player-shuffle: 0
+  #!netty-threads: 4
+  #!player-shuffle: 0
+  netty-threads: 2
+  player-shuffle: 8
   log-villager-deaths: true
   log-named-deaths: true
   moved-too-quickly-multiplier: 10.0
@@ -37,13 +27,12 @@ advancements:
   disabled:
   - minecraft:story/disabled
 messages:
-  whitelist: You are not whitelisted on this server! Please join our Discord for help
-    "dsc.gg/newsvcc"!
+  whitelist: You are not whitelisted on this server! Please join our Discord for help "dsc.gg/newsvcc"!
   unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full! Please join later!
-  outdated-client: Outdated client! Please use {0}!
-  outdated-server: Outdated server! I'm still on {0}!
-  restart: Server is restarting! Please wait!
+  server-full: The server is full! Please join later! Join our Discord for help "dsc.gg/newsvcc"!
+  outdated-client: Outdated client! Please use {0}! Join our Discord for help "dsc.gg/newsvcc"!
+  outdated-server: Outdated server! I'm still on {0}! Please join our Discord for help "dsc.gg/newsvcc"!
+  restart: Server is restarting! Please join our Discord for help "dsc.gg/newsvcc"!
 commands:
   replace-commands:
   - setblock
@@ -65,7 +54,7 @@ world-settings:
     max-tnt-per-tick: 100
     merge-radius:
       exp: 3.5
-      item: 3.0
+      item: 2.5
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
@@ -84,7 +73,7 @@ world-settings:
       monsters: 32
       raiders: 48
       misc: 10
-      water: 10
+      water: 12
       villagers: 24
       flying-monsters: 32
       wake-up-inactive:
@@ -142,27 +131,27 @@ world-settings:
       display: 128
       other: 64
     nerf-spawner-mobs: false
-    seed-village: 10387312
+    seed-ancientcity: 20083232
+    seed-buriedtreasure: 10387320
     seed-desert: 14357617
+    seed-endcity: 10387313
+    seed-fossil: 14357921
     seed-igloo: 14357618
     seed-jungle: 14357619
-    seed-swamp: 14357620
+    seed-mansion: 10387319
+    seed-mineshaft: default
     seed-monument: 10387313
-    seed-shipwreck: 165745295
+    seed-nether: 30084232
     seed-ocean: 14357621
     seed-outpost: 165745296
-    seed-endcity: 10387313
-    seed-slime: 987234911
-    seed-nether: 30084232
-    seed-mansion: 10387319
-    seed-fossil: 14357921
     seed-portal: 34222645
-    seed-ancientcity: 20083232
-    seed-trailruins: 83469867
-    seed-trialchambers: 94251327
-    seed-buriedtreasure: 10387320
-    seed-mineshaft: default
+    seed-shipwreck: 165745295
+    seed-slime: 987234911
     seed-stronghold: default
+    seed-swamp: 14357620
+    seed-trialchambers: 94251327
+    seed-trailruins: 83469867
+    seed-village: 10387312
     view-distance: default
     wither-spawn-sound-radius: 0
     hanging-tick-frequency: 100

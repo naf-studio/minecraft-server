@@ -1,17 +1,3 @@
-# This is the world defaults configuration file for Paper.
-# As you can see, there's a lot to configure. Some options may impact gameplay, so use
-# with caution, and make sure you know what each option does before configuring.
-# 
-# If you need help with the configuration or have any questions related to Paper,
-# join us in our Discord or check the docs page.
-# 
-# Configuration options here apply to all worlds, unless you specify overrides inside
-# the world-specific config file inside each world folder.
-# 
-# Docs: https://docs.papermc.io/
-# Discord: https://discord.gg/papermc
-# Website: https://papermc.io/
-
 _version: 30
 anticheat:
   anti-xray:
@@ -21,7 +7,6 @@ anticheat:
     - chest
     - diamond_ore
     - deepslate_diamond_ore
-    - ender_chest
     lava-obscures: false
     max-block-height: 30
     replacement-blocks:
