@@ -30,7 +30,7 @@
 # For more information on getting everything setup: https://github.com/naturecodevoid/voicechat-discord#readme
 
 bots:
-- token: MTI0NTM0ODA4MTc2NDAxMjA0NA.GZLnfD.4DOzyMLui2Gr6scTy2XE0W5XJ9GQAy6TRsrdpU
-  vc_id: 1245882816940740739
+- token:
+  vc_id:
 alert_ops_of_updates: true
 debug_level: 0
