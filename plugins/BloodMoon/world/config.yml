@@ -1,8 +1,6 @@
 #Plugin version. Please do not tamper
 ConfigVersion: 0.8.1
 
-#Config file for world world (UUID: e4225354-97a4-40bc-a8f6-c4d5c2f8d6a1)
-
 #Wether or not a BloodMoon happens in this world
 #Requires a server restart upon changes
 IsBlacklisted: false
@@ -16,9 +14,9 @@ ItemDespawnUponDeath: false
 #Does experience despawn upon death?
 ExperienceDespawnsUponDeath: false
 #Maximum item amount to drop per mob death
-ItemDropsMaximum: 1
+ItemDropsMaximum: 2
 #Minimum item amount to drop per mob death
-ItemDropsMinimum: 0
+ItemDropsMinimum: 1
 #Mob experience drop multiplicator. Whole number only
 ExperienceDropMult: 5
 #Mob damage multiplier. Whole number only
@@ -50,7 +48,7 @@ MobsFromSpawnerNoReward: false
 ShieldPreventsEffects: true
 #Mob spawn rate during a BloodMoon.
 #0 means no mob at all, 25 is average, and anything above 100 is honestly insane
-BloodMoonSpawnMobRate: 125
+BloodMoonSpawnMobRate: 150
 #Decides if a zombie boss will spawn each BloodMoon
 EnableZombieBoss: true
 #When in a permanent BloodMoon, how long (in ticks) before respawning zombie boss after death?
@@ -129,7 +127,7 @@ CommandsOnEnd:
 #Are hordes even enabled in this world?
 HordesEnabled: true
 #The baseline spawn rate of hordes in ticks (1/5th of a second)
-BaselineHordeSpawnrate: 800
+BaselineHordeSpawnrate: 400
 #The variation of hordes spawn time in ticks
 HordeSpawnrateVariation: 200
 #Decides which mobs are allowed in hordes
@@ -140,6 +138,6 @@ HordeMobWhitelist:
 #The distance from players in block at which hordes will spawn
 HordeSpawnDistance: 16
 #The minimum number of mobs in a horde
-HordeMinPopulation: 3
+HordeMinPopulation: 5
 #The maximum number of mobs in a horde
-HordeMaxPopulation: 15
+HordeMaxPopulation: 10
