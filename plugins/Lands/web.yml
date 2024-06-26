@@ -47,7 +47,7 @@ map:
         admin_2: '#ffcc00'
 
   dynmap:
-    enabled: true
+    enabled: false
     # Set the spawn icon
     # You can disable this by setting icon to ''
     spawn:
@@ -67,7 +67,7 @@ map:
       thickness: 2
 
   bluemap:
-    enabled_2: true
+    enabled_2: false
     # Set the spawn icon
     # You can disable this by setting icon to ''
     spawn:
@@ -97,7 +97,7 @@ map:
 
 
   squaremap:
-    enabled_3: true
+    enabled_3: false
     # Set the spawn icon
     # You can disable this by setting icon to ''
     spawn:
@@ -121,7 +121,7 @@ map:
       thickness_3: 2
 
   Pl3xMap:
-    enabled_4: true
+    enabled_4: false
     # Set the spawn icon
     # You can disable this by setting icon to ''
     spawn:
