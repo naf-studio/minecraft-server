@@ -43,7 +43,7 @@ logging:
 messages:
   kick:
     authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
-    connection-throttle: Connection throttled! Please wait before reconnecting! Join our Discord for help "dsc.gg/newsvcc"!
+    connection-throttle: Connection throttled! Please wait before reconnecting! Join our Discord for help "dsc.gg/nafdiscord"!
     flying-player: <lang:multiplayer.disconnect.flying>
     flying-vehicle: <lang:multiplayer.disconnect.flying>
   no-permission: <red>I'm sorry, but you do not have permission to perform this command.
@@ -100,7 +100,7 @@ timings:
   - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
-  server-name: Unknown Server! Please join our Discord for help "dsc.gg/newsvcc"!
+  server-name: Unknown Server! Please join our Discord for help "dsc.gg/nafdiscord"!
   server-name-privacy: false
   url: https://timings.aikar.co/
   verbose: true

@@ -8,7 +8,7 @@ settings:
   connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: Server closed! Please join our Discord for help "dsc.gg/newsvcc"!
+  shutdown-message: Server closed! Please join our Discord for help "dsc.gg/nafdiscord"!
   minimum-api: none
   use-map-color-cache: true
 spawn-limits:
