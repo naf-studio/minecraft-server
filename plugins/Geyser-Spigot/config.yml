@@ -16,8 +16,7 @@ bedrock:
   # Generally, you should only uncomment and change this if you want to limit what IPs can connect to your server.
   #address: 0.0.0.0
   # The port that will listen for connections
-  #!port: 25040
-
+  port: 25040
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
   # This option is for the plugin version only.
@@ -50,8 +49,7 @@ remote:
   address: auto
   # The port of the remote (Java Edition) server
   # For plugin versions, if address has been set to "auto", the port will also follow the server's listening port.
-  #!port: 25040
-
+  port: 25040
   # Authentication type. Can be offline, online, or floodgate (see https://github.com/GeyserMC/Geyser/wiki/Floodgate).
   # For plugin versions, it's recommended to keep the `address` field to "auto" so Floodgate support is automatically configured.
   # If Floodgate is installed and `address:` is set to "auto", then "auth-type: floodgate" will automatically be used.
