@@ -1,11 +1,11 @@
 base file (google it):
     config\paper-global.yml: line 60
     bukkit.yml: line 8
-    server.properties: line 31, 37
+    server.properties: line 31, 37, 53, 54
     spigot.yml: line 19, 20
 
 geyser (port):
-    plugins\Geyser-Spigot\config.yml: line 20, 54
+    plugins\Geyser-Spigot\config.yml: line 19, 52
 
 simple voice chat (port):
     plugins\voicechat\voicechat-server.properties: line 5
