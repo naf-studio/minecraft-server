@@ -17,4 +17,4 @@ world-settings:
   default:
     # The maximum view distance a player in this world can have.
     # Set to -1 to use the server's configured view distance for this world.
-    maximum-view-distance: 10
+    maximum-view-distance: 8
