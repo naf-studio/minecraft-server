@@ -17,7 +17,7 @@ replace-spaces: true
 disconnect:
   # The disconnect message Geyser users should get when connecting
   # to the server with an invalid key
-  invalid-key: Please connect through the official Geyser! Join our Discord for help "dsc.gg/newsvcc"!
+  invalid-key: Please connect through the official Geyser! Join our Discord for help "dsc.gg/nafdiscord"!
   # The disconnect message Geyser users should get when connecting
   # to the server with the correct key but not with the correct data format
   invalid-arguments-length: Expected {} arguments, got {}. Is Geyser up-to-date?

@@ -33,7 +33,7 @@ Channels: {"global": "0000000000000000"}
 DiscordConsoleChannelId: "0000000000000000"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
-DiscordInviteLink: "https://dsc.gg/newsvcc"
+DiscordInviteLink: "https://dsc.gg/nafdiscord"
 
 # Debug information
 # Don't enable these unless you're attempting to locate an issue

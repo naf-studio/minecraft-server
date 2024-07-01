@@ -4,7 +4,7 @@
 #Messages containing the placeholder "<prefix>" will have it replaced with the following string
 prefix: '<dark_gray>[<yellow>Maintenance<dark_gray>] '
 noPermission: <red>You do not have the permission to execute that command.
-kickmessage: <red>The server is currently under maintenance!<br>Please join our Discord for help "dsc.gg/newsvcc"!
+kickmessage: <red>The server is currently under maintenance!<br>Join our Discord for help "dsc.gg/nafdiscord"!
 maintenanceActivated: <prefix><gold>Maintenance mode is now activated.
 maintenanceDeactivated: <prefix><gold>Maintenance mode is now deactivated.
 alreadyEnabled: <prefix><red>Maintenance is already enabled!

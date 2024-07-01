@@ -21,11 +21,11 @@ block-versions:
 # List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
 block-protocols: []
 # Change the blocked disconnect message
-block-disconnect-msg: You are using an unsupported Minecraft version! Support minecraft version 1.16.x and higher! Join our Discord for help "dsc.gg/newsvcc"!
+block-disconnect-msg: You are using an unsupported Minecraft version! Support minecraft version 1.16.x and higher! Join our Discord for help "dsc.gg/nafdiscord"!
 # If you use ProtocolLib, we can't reload without kicking the players.
 # (We don't suggest using reload either, use a plugin manager)
 # You can customise the message we kick people with if you use ProtocolLib here.
-reload-disconnect-msg: Server reload, please rejoin again! Join our Discord for help "dsc.gg/newsvcc"!
+reload-disconnect-msg: Server reload, please rejoin again! Join our Discord for help "dsc.gg/nafdiscord"!
 # We warn when there's an error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: false
 #

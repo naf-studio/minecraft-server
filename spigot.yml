@@ -27,12 +27,12 @@ advancements:
   disabled:
   - minecraft:story/disabled
 messages:
-  whitelist: You are not whitelisted on this server! Please join our Discord for help "dsc.gg/newsvcc"!
+  whitelist: You are not whitelisted on this server! Please join our Discord for help "dsc.gg/nafdiscord"!
   unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full! Please join later! Join our Discord for help "dsc.gg/newsvcc"!
-  outdated-client: Outdated client! Please use {0}! Join our Discord for help "dsc.gg/newsvcc"!
-  outdated-server: Outdated server! I'm still on {0}! Please join our Discord for help "dsc.gg/newsvcc"!
-  restart: Server is restarting! Please join our Discord for help "dsc.gg/newsvcc"!
+  server-full: The server is full! Please join later! Join our Discord for help "dsc.gg/nafdiscord"!
+  outdated-client: Outdated client! Please use {0}! Join our Discord for help "dsc.gg/nafdiscord"!
+  outdated-server: Outdated server! I'm still on {0}! Please join our Discord for help "dsc.gg/nafdiscord"!
+  restart: Server is restarting! Please join our Discord for help "dsc.gg/nafdiscord"!
 commands:
   replace-commands:
   - setblock
@@ -94,7 +94,7 @@ world-settings:
       villagers-active-for-panic: true
       tick-inactive-villagers: false
       ignore-spectators: false
-    item-despawn-rate: 6000
+    item-despawn-rate: 3600
     arrow-despawn-rate: 1200
     trident-despawn-rate: 1200
     growth:
