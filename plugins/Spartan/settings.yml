@@ -5,7 +5,7 @@ Logs:
   log_console: true
 Notifications:
   individual_only_notifications: false
-  enable_notifications_on_login: true
+  enable_notifications_on_login: false
   awareness_notifications: true
   message_clickable_command: /teleport {player}
 Chat:
