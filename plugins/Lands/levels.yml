@@ -12,7 +12,7 @@ general:
 
 land:
   # Enable land levels?
-  enabled: true
+  enabled: false
   # Here you can edit existing or add new levels.
   levels:
     1:
@@ -267,7 +267,7 @@ land:
 
 nation:
   # Enable nation levels?
-  enabled: true
+  enabled: false
   # Here you can edit existing or add new nation levels.
   levels:
     1:
