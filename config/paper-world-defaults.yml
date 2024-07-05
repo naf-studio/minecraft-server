@@ -1,4 +1,4 @@
-_version: 30
+_version: 31
 anticheat:
   anti-xray:
     enabled: true
@@ -146,7 +146,6 @@ entities:
         sugar_cane: 600
         twisting_vines: 600
         weeping_vines: 600
-        ender_pearl: 600
     count-all-mobs-for-spawning: false
     creative-arrow-despawn-rate: '100'
     despawn-ranges:

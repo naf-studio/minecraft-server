@@ -47,6 +47,7 @@ commands:
   silent-commandblock-console: false
 world-settings:
   default:
+    unload-frozen-chunks: false
     below-zero-generation-in-existing-chunks: true
     max-tick-time:
       tile: 50
