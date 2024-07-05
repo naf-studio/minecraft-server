@@ -46,7 +46,7 @@ taxes:
 
 # Let a nation pay money to the server in order to keep it up.
 upkeep:
-  enabled_4: true
+  enabled_4: false
   # Set the upkeep costs for a nation per chunk.
   per-chunk: 3.0
   # Should a nation get deleted if it can't pay the upkeep costs?
