@@ -43,7 +43,7 @@ localisation:
   loc_endtimer: left
   loc_reload: §6Reload successfull..
   loc_nodc: §aYou don't have any deadchest
-  loc_prefix: '[DeadChest]'
+  loc_prefix: '[DeadChest] '
   loc_maxHeight: §cYou are dead above the maximum height.
   loc_givebackInfo: §cThis player is offline or don't have any active deadchest
   holo_timer: §f%hours%§7h §f%min%§7m §f%sec%§7s left
