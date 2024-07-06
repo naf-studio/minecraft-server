@@ -53,6 +53,7 @@ clearer-logs: false
 # *------------------------------------*
 # Plugin will backup all files every 1h.
 # Archives are saved in the /backup folder.
+# WHEN A NEW BACKUP IS CREATED, OVER A WEEK'S BACKUPS ARE DELETED.
 backup: true
 # *------------------------------------*
 
@@ -98,16 +99,6 @@ database-type: data
 
 
 # *------------------------------------*
-# :       STANDARD BACKPACK SIZE       :
-# *------------------------------------*
-# Standard backpack size.
-# Minimum size 1 (a value of 0 turns off the backpack), maximum 54.
-# WARNING: Changing this option to a smaller one will cause some items to be thrown from the backpack.
-standard-backpack-size: 54 # default 54
-# *------------------------------------*
-
-
-# *------------------------------------*
 # :    MAXIMUM NUMBER OF BACKPACK      :
 # *------------------------------------*
 # The number of maximum number of backpacks can be set from 1 to 36.
@@ -122,7 +113,16 @@ max-backpacks: 1
 # *------------------------------------*
 # Getting a backpack after joining the server.
 # If the player enters the server for the first time, he will receive a backpack.
-default-backpack: false
+default-backpack: none
+# Enter "none" or "null" so that the player does not receive any backpack after entering the server
+
+# The backpack can be added to the player immediately as an item
+default-backpack-give-as-item:
+  enable: false
+  # The slot to which the backpack will be added.
+  # If this slot is occupied or incorrect values are entered, the backpack will be added to the first free slot - if it exists.
+  # Slot numbering - https://static.wikia.nocookie.net/minecraft_gamepedia/images/b/b2/Items_slot_number.png/revision/latest?cb=20170708121246
+  slot: 0
 # *------------------------------------*
 
 
@@ -177,6 +177,18 @@ create-backpack:
 # Standard name for new backpacks.
 # The name will also be visible when crafting backpacks.
 default-backpack-name: "New backpack"
+
+# Specify here what backpack will be created after changing an unassigned backpack to create a new one.
+created-backpack: default
+# *------------------------------------*
+
+
+# *------------------------------------*
+# :      PLAYERS OPENING BACKPACKS     :
+# *------------------------------------*
+# This option determines whether other players (than the owner) will be able to open the backpack using the item.
+# To make using this option pointless, it is recommended that backpacks can only be accessed using an item.
+other-players-open-backpack: false
 # *------------------------------------*
 
 
@@ -219,10 +231,7 @@ crafting:
 # Sales can be enabled/disabled in line 173 of this file.
 # IMPORTANT! Requires the Vault plugin to work.
 # A backpack can also be added with /backpack give <player>
-backpack-buy:
-  backpack-size: 54 # Backpack size after purchase (from 1 to 54).
-  cost: 500 # Purchase price.
-  give-as-item: true # The backpack is also added as an item.
+# All configuration options are located in files in the /backpacks folder.
 # *------------------------------------*
 
 
@@ -243,24 +252,8 @@ removing-backpacks:
 
 
 # *------------------------------------*
-# :    BACKPACK APPEARANCE (OBJECT)    :
+# :        ITEMS (IN INVENTORY)        :
 # *------------------------------------*
-# Backpack style.
-# Here you can define the name of the backpack and its description.
-backpack-style:
-  # The material will always be a head with a backpack texture.
-  NAME: "&e&l%backinpack_backpack_name%" # Name visible in the backpack GUI and backpacks list GUI.
-  MATERIAL: PLAYER_HEAD
-  TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODM1MWU1MDU5ODk4MzhlMjcyODdlN2FmYmM3Zjk3ZTc5NmNhYjVmMzU5OGE3NjE2MGMxMzFjOTQwZDBjNSJ9fX0="
-  CUSTOM_MODEL_DATA: 1333
-  LORE:
-    - "&fSize: &6%backinpack_backpack_size%"
-    - "&fItems: &6%backinpack_backpack_items_count% items"
-    - ""
-    - "&7(Click to open)"
-    - "&7(RMB Click to change name)"
-
-
 # The appearance of the backpack that will be visible when the backpack needs to be assigned.
 # For more information about this section, see line 186.
 backpack-style-to-assignment:
