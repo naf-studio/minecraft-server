@@ -1,15 +1,15 @@
 # Tree Feller by ThizThizzyDizzy
-# Version 1.23.0
+# Version 1.24.0
 
 
 # If set to false, the tree feller will not list all its settings in the console on startup
-startup-logs: false
+startup-logs: true
 
 # If set to false, the tree feller will be toggled off for each player by default (as with /treefeller toggle)
 default-enabled: true
 
 # How far should the plugin scan for logs? (If a tree is larger, only the part within this distance will be felled)
-scan-distance: 56
+scan-distance: 128
 
 # How far away from logs should leaf blocks be detected?
 leaf-detect-range: 6
@@ -101,6 +101,9 @@ anim-delay: 1
 # Should saplings be replanted?
 replant-saplings: true
 
+# Should saplings dropped by the tree's leaves be used to replant trees?
+use-tree-saplings: true
+
 # Should saplings be taken from the player's inventory to replant trees?
 use-inventory-saplings: false
 
@@ -111,7 +114,7 @@ use-inventory-saplings: false
 spawn-saplings: 0
 
 # The amount of delay a sapling may take to respawn (if spawn saplings is set to 1, saplings will be spawned only after this amount of time, but will still be immediately planted upon dropping from leaves)
-sapling-timeout: 30
+sapling-timeout: 15
 
 # What blocks can saplings be planted on?
 grass: 
@@ -160,7 +163,7 @@ log-behavior: FALL_HURT_BREAK
 # FALL_NATURAL_INVENTORY      blocks will fall as falling blocks, break, and appear in the player's inventory upon reaching the ground. Blocks will attempt to target a position to land as if the tree fell over realistically
 # FALL_NATURAL_HURT_INVENTORY blocks will fall as falling blocks, break, hurt entities they land on, and appear in the player's inventory upon reaching the ground. Blocks will attempt to target a position to land as if the tree fell over realistically
 # Note that falling blocks occasionally drop as items if they land wrong
-leaf-behavior: FALL_HURT_BREAK
+leaf-behavior: FALL_BREAK
 
 # How much damage should falling blocks deal per block fallen? (Only applies to FALL_HURT fell behaviors)
 fall-hurt-amount: 2.0
@@ -475,13 +478,13 @@ compatibility-mcmmo-classic: false
 compatibility-coreprotect: true
 
 # Toggle compatibility with WorldGuard
-compatibility-worldguard: false
+compatibility-worldguard: true
 
 # Toggle compatibility with GriefPrevention
 compatibility-griefprevention: false
 
 # Toggle compatibility with Towny
-compatibility-towny: false
+compatibility-towny: true
 
 # The delay before trees should regenerate
 oreregenerator-regen-delay: 1200
@@ -516,7 +519,7 @@ ecoskills-tree-xp:
    - woodcutting: 0
 
 # Toggle compatibility with EcoSkills
-compatibility-ecoskills: false
+compatibility-ecoskills: true
 
 # How much Job experience should be given per block of trunk felled?
 ecojobs-trunk-xp:
@@ -525,7 +528,7 @@ ecojobs-trunk-xp:
 ecojobs-leaf-xp:
 
 # Should EcoJobs multipliers be applied to experience earned through TreeFeller?
-ecojobs-apply-multipliers: false
+ecojobs-apply-multipliers: true
 
 # Toggle compatibility with EcoJobs
 compatibility-ecojobs: false
@@ -598,6 +601,7 @@ compatibility-prism: false
 # cutting-animation
 # anim-delay
 # replant-saplings
+# use-tree-saplings
 # use-inventory-saplings
 # spawn-saplings
 # sapling-timeout
@@ -714,6 +718,7 @@ tools:
 # cutting-animation
 # anim-delay
 # replant-saplings
+# use-tree-saplings
 # use-inventory-saplings
 # spawn-saplings
 # sapling                            If replant-saplings is enabled, this will replant the tree with this type of sapling
