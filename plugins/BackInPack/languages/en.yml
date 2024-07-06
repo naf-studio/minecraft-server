@@ -39,7 +39,6 @@ loaded-language-file: "%backinpack_config_language%.yml language file has been l
 language-file-not-found: "Language file %backinpack_config_language%.yml not found. The en.yml file has been loaded"
 loading-single-backpack: "Loading players' backpacks"
 reload-complete: "Successfully reloaded configuration of BackInPack plugin"
-missing-backpacks: "No backpacks file found in the /backpacks folder"
 # ___________________________________________________________________________
 
 
@@ -196,14 +195,4 @@ command-disabled: "[BackInPack] &cThis command is disabled on this server!"
 # Values
 true: "&aYes"
 false: "&cNo"
-# ___________________________________________________________________________
-
-
-# ___________________________________________________________________________
-# Flags (flag descriptions cannot be a list)
-flag-none: "&7No flags"
-flag-items-drop: "   &c- With death items will fall out"
-flag-backpack-delete: "   &c- With death you lose backpack"
-# Positive
-flag-items-save: "   &a+ After death, items are stored"
 # ___________________________________________________________________________
