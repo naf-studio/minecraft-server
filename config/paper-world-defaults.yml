@@ -1,4 +1,4 @@
-_version: 31
+_version: 30
 anticheat:
   anti-xray:
     enabled: true
@@ -40,16 +40,16 @@ chunks:
     snowball: 8
     spectral_arrow: 16
     trident: 16
-    wither_skull: 7
+    wither_skull: 5
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 10
+  max-auto-save-chunks-per-tick: 12
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: true
-  max-entity-collisions: 4
+  max-entity-collisions: 2
   only-players-collide: false
 command-blocks:
   force-follow-perm-level: true
@@ -130,6 +130,7 @@ entities:
         dirt: 600
         ender_pearl: 600
         granite: 600
+        grass: 300
         gravel: 600
         jungle_leaves: 600
         kelp: 1200
@@ -147,7 +148,7 @@ entities:
         twisting_vines: 600
         weeping_vines: 600
     count-all-mobs-for-spawning: false
-    creative-arrow-despawn-rate: '100'
+    creative-arrow-despawn-rate: 60
     despawn-ranges:
       ambient:
         hard: 72
@@ -162,8 +163,8 @@ entities:
         hard: 72
         soft: 30
       monster:
-        hard: 80
-        soft: 32
+        hard: 72
+        soft: 30
       underground_water_creature:
         hard: 72
         soft: 30
@@ -186,7 +187,7 @@ entities:
     - SleepingZ
     iron-golems-can-spawn-in-air: false
     monster-spawn-max-light-level: default
-    non-player-arrow-despawn-rate: '100'
+    non-player-arrow-despawn-rate: 60
     per-player-mob-spawns: true
     scan-for-legacy-ender-dragon: true
     skeleton-horse-thunder-spawn-chance: default
@@ -250,9 +251,9 @@ environment:
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
   treasure-maps:
-    enabled: true
+    enabled: false
     find-already-discovered:
-      loot-tables: 'true'
+      loot-tables: true
       villager-trade: true
   water-over-lava-flow-speed: 5
 feature-seeds:
@@ -297,7 +298,7 @@ misc:
   redstone-implementation: ALTERNATE_CURRENT
   shield-blocking-delay: 5
   show-sign-click-command-failure-msgs-to-player: false
-  update-pathfinding-on-block-update: true
+  update-pathfinding-on-block-update: false
 scoreboards:
   allow-non-player-entities-on-scoreboards: true
   use-vanilla-world-scoreboard-name-coloring: false
