@@ -1,7 +1,7 @@
-SEASON-TO-WINTER: '&b[RealisticSeason] &lWinter is starting!'
-SEASON-TO-FALL: '&b[RealisticSeason] &lFall is starting!'
-SEASON-TO-SPRING: '&b[RealisticSeason] &lSpring is starting!'
-SEASON-TO-SUMMER: '&b[RealisticSeason] &lSummer is starting!'
+SEASON-TO-WINTER: '&b&l[RealisticSeason] Winter is starting!'
+SEASON-TO-FALL: '&b&l[RealisticSeason] Fall is starting!'
+SEASON-TO-SPRING: '&b&l[RealisticSeason] Spring is starting!'
+SEASON-TO-SUMMER: '&b&l[RealisticSeason] Summer is starting!'
 NO-PERMISSION-MESSAGE: '&c[RealisticSeason] You don''t have the permission to do that!'
 WINTER-DISPLAY-NAME: Winter
 FALL-DISPLAY-NAME: Fall
@@ -9,24 +9,21 @@ SPRING-DISPLAY-NAME: Spring
 SUMMER-DISPLAY-NAME: Summer
 SEASONCOMMAND-DISABLED: '&c[RealisticSeason] Seasons are disabled in this world'
 SEASONCOMMAND-RESTORING: '&c[RealisticSeason] This world is currently restoring!'
-SEASONCOMMAND-CURRENTDATE: '&a[RealisticSeason] Current date: &2$current_weekday$,
-  $current_month$ $current_day$, year $current_year$'
+SEASONCOMMAND-CURRENTDATE: '&a[RealisticSeason] Current date: &2$current_weekday$, $current_month$ $current_day$,
+  year $current_year$'
 SEASONSCOMMAND-CURRENTSEASON: '&a[RealisticSeason] Current season: &2$current_season$'
 SEASONSCOMMAND-AIRTEMPERATURE: '&a[RealisticSeason] Current air temperature: $air_temperature$'
 SEASONSCOMMAND-DAYSUNTILNEXTSEASON: '&a[RealisticSeason] Days until next season (&2$next_season$&a):
   &7$days_until_next_season$'
 SEASONCOMMAND-TIME: '&a[RealisticSeason] Current time: &2$time$'
 SEASONCOMMAND-EVENTS: '&a[RealisticSeason] Active events: &2$events$'
-TOGGLESEASONSCOMMAND-MESSAGE: '&a[RealisticSeason] Season colors are now &2$status$
-  &afor you'
-TOGGLETEMPERATURECOMMAND-MESSAGE: '&a[RealisticSeason] The temperature system is now
-  &2$status$ &afor you'
-TOGGLEPARTICLESCOMMAND-MESSAGE: '&a[RealisticSeason] The season particles are now
-  &2$status$ &afor you'
-TOGGLEFAHRENHEITCOMMAND-TOFAHRENHEIT: '&a[RealisticSeason] Your temperature will now
-  be displayed in &2Fahrenheit'
-TOGGLEFAHRENHEITCOMMAND-TOCELCIUS: '&[RealisticSeason] aYour temperature will now
-  be displayed in &2Celcius'
+TOGGLESEASONSCOMMAND-MESSAGE: '&a[RealisticSeason] Season colors are now &2$status$ &afor you'
+TOGGLETEMPERATURECOMMAND-MESSAGE: '&a[RealisticSeason] The temperature system is now &2$status$ &afor
+  you'
+TOGGLEPARTICLESCOMMAND-MESSAGE: '&a[RealisticSeason] The season particles are now &2$status$ &afor you'
+TOGGLEFAHRENHEITCOMMAND-TOFAHRENHEIT: '&a[RealisticSeason] Your temperature will now be displayed in
+  &2Fahrenheit'
+TOGGLEFAHRENHEITCOMMAND-TOCELCIUS: '&a[RealisticSeason] Your temperature will now be displayed in &2Celcius'
 ENABLED: enabled
 DISABLED: disabled
 CURRENTBIOME-MESSAGE: '&a[RealisticSeason] Current biome: $biome$'
