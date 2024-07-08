@@ -20,6 +20,9 @@ disable-prefix: false
 prefix: "&c[&6SimpleTpa&c]"
 
 #Messages:
+# To use HEX COLOR CODES - EXAMPLE: #2ecc71
+# Death-Message: "&6To teleport to your death #2ecc71location use &c/back"
+
 # TO DISABLE A MESSAGE - SET IT TO - NONE
 # EXAMPLE:
 # Console-Isnt-Player: "none"
