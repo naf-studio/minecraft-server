@@ -10,10 +10,6 @@ Lang:
 
 Options:
   
-  # List of worlds where all features are disabled
-  WorldBlacklist:
-  - blocked_world
-  
   # Plugin sends update notifications
   check-for-update: true
   
@@ -128,6 +124,10 @@ Options:
   
   # Restrict all features to trusted regions only (for region plugins)
   trusted-region-only: false
+  
+  # List of worlds where all features are disabled
+  WorldBlacklist:
+  - blocked_world
   
   # List of worlds where all features are enabled (other worlds are blocked when the list is not empty)
   WorldWhitelist: []
