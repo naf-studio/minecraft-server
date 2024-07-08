@@ -65,8 +65,8 @@ messages:
   redstone_removed: "[BlockProt] Redstone protection removed."
   exceeded_max_block_count: "[BlockProt] You have exceeded the maximum lockable block count."
   lock_hint: >
-    §6[BlockProt] You can protect your blocks by crouching and right-clicking your chests, furnaces, and more!
-    Also, check out /blockprot settings to configure it to your liking.
+    §6[BlockProt] You can protect your blocks by hold SNEAK + RIGHT click your chests, furnaces, and more!
+    Also, check out /bp settings to configure it to your liking.
     (Click here to disable these hints.)
   hint_hover_text: "[BlockProt] Open a menu from BlockProt or click here to disable hints."
   disabled_hints: "[BlockProt] §6Disabled hints!"
