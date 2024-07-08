@@ -103,8 +103,8 @@ BlacklistedBlocks:
 
 # # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
 DisabledWorlds:
-#- prison
-#- creative
+- world_nether
+- world_the_end
 
 # # Worlds you want to have a custom min/max and spawn center in #
 # # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
