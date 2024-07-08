@@ -50,6 +50,7 @@ sleep:
     exempt-flying: false
     exempt-below-y: -1
     insomnia-chance: 0.0
+    phantom-reset-audience: all
     disable-daylight-cycle-gamerule: true
     non-sleeping-sound: false
     clock-animation: true
