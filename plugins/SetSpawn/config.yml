@@ -26,14 +26,14 @@ Teleport-Message:
 Cooldown-For-Spawn-Cmd:
   Enabled: true
   Enabled-Message: true
-  Message: '&0[&fSetSpawn&0]&r: &cWait %del% more seconds before using /spawn again!'
-  Delay: 3
+  Message: '&0[&fSpawn&0]&r: &cWait %del% more seconds before using /spawn again!'
+  Delay: 5
 
 #The message that a player receives when he moves during a teleport cooldown.
 Cancel-On-Move:
   Enabled: false
   Enabled-Message: true
-  Message: '&0[&fSetSpawn&0]&r: &4Teleportation cancelled!'
+  Message: '&0[&fSpawn&0]&r: &4Teleportation cancelled!'
 
 #The effect that is set off when player arrives at the spawn location.
 Spawn-Effect:
@@ -67,8 +67,8 @@ Force-Spawn:
 Cooldown: 3
 
 #Messages that admin receives.
-Set-Spawn-Message: '&0[&fSetSpawn&0]&r: &eYou have set the spawn!'
-Set-First-Join-Spawn-Message: '&0[&fSetSpawn&0]&r: &eYou have set the first join spawn!'
+Set-Spawn-Message: '&0[&fSpawn&0]&r: &eYou have set the spawn!'
+Set-First-Join-Spawn-Message: '&0[&fSpawn&0]&r: &eYou have set the first join spawn!'
 No-Spawn-Message: '&0[&fSpawn&0]&r: &cThere has no spawn been set yet!'
 Reload-Message: '&0[&fSpawn&0]&r: &2Config Reloaded!'
 
