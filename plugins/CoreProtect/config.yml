@@ -34,7 +34,7 @@ default-radius: 10
 
 # The maximum radius that can be used in a command. Set to "0" to disable.
 # To run a rollback or restore without a radius, you can use "r:#global".
-max-radius: 160
+max-radius: 100
 
 # If enabled, items taken from containers (etc) will be included in rollbacks.
 rollback-items: true
@@ -54,13 +54,13 @@ block-break: true
 # Logs blocks that break off of other blocks; for example, a sign or torch
 # falling off of a dirt block that a player breaks. This is required for
 # beds/doors to properly rollback.
-natural-break: true
+natural-break: false
 
 # Properly track block movement, such as sand or gravel falling.
-block-movement: true
+block-movement: false
 
 # Properly track blocks moved by pistons.
-pistons: true
+pistons: false
 
 # Logs blocks that burn up in a fire.
 block-burn: true
@@ -84,22 +84,22 @@ sign-text: true
 buckets: true
 
 # Logs natural tree leaf decay.
-leaf-decay: true
+leaf-decay: false
 
 # Logs tree growth. Trees are linked to the player who planted the sapling.
-tree-growth: true
+tree-growth: false
 
 # Logs mushroom growth.
-mushroom-growth: true
+mushroom-growth: false
 
 # Logs natural vine growth.
-vine-growth: true
+vine-growth: false
 
 # Logs the spread of sculk blocks from sculk catalysts.
-sculk-spread: true
+sculk-spread: false
 
 # Logs when portals such as Nether portals generate naturally.
-portals: true
+portals: false
 
 # Logs water flow. If water destroys other blocks, such as torches,
 # this allows it to be properly rolled back.
@@ -126,7 +126,7 @@ item-pickups: true
 
 # Track all hopper transactions, such as when a hopper removes items from a
 # chest, furnace, or dispenser.
-hopper-transactions: true
+hopper-transactions: false
 
 # Track player interactions, such as when a player opens a door, presses
 # a button, or opens a chest. Player interactions can't be rolled back.
@@ -145,4 +145,4 @@ player-sessions: true
 username-changes: true
 
 # Logs changes made via the plugin "WorldEdit" if it's in use on your server.
-worldedit: true
+worldedit: false
