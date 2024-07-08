@@ -17,7 +17,7 @@ automatic_config_updater: true
 
 use_permissions: false
 home_limit: 54
-command_cooldown_home: 3
+command_cooldown_home: 5
 teleport_delay: 3
 teleport_delay_check_movement: false
 updatecheck_daily: true
@@ -50,7 +50,7 @@ Commands:
   command_homes: homes
   command_sethome: sethome
   command_removehome: delhome
-  command_updatehome: updhome
+  command_updatehome: updatehome
 
 Messages:
   prefix: '&7[&bSetHome&7] '
