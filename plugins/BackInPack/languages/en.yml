@@ -61,21 +61,21 @@ database-synchronized: "&aData synchronized with the database"
 
 
 # ___________________________________________________________________________
-player-death-delete: "&6[BackInPack] You died, items in your backpack have been &cremoved!"
-player-death-drop: "&6[BackInPack] You died, items in your backpack have been &cthrown away!"
-player-death-save: "&a[BackInPack] You died, but your backpack items are preserved!"
-player-backpack-change-size: "[BackInPack] The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
-player-backpack-access-through-command-disabled: "&c[BackInPack] Command access to the backpack is disabled!"
-player-backpack-access-through-item-disabled: "&c[BackInPack] Access to the backpack through the item has been disabled!"
-player-backpack-name-changed: "&a[BackInPack] Changed backpack name from &6%old-backpack-name% &ato &f%new-backpack-name%"
-player-backpack-not-owner: "&c[BackInPack] You can't open other players' backpacks!"
-player-backpack-change-name: "&f[BackInPack] Now enter a new name for this backpack"
-player-backpack-buy: "&a[BackInPack] You have successfully purchased a new backpack"
-player-max-backpacks: "&c[BackInPack] You already have the maximum number of backpacks!"
-player-backpack-not-exists: "&6[BackInPack] The backpack you tried to open does not exist. It was replaced with an unassigned backpack"
-player-backpack-blacklist: "&c[BackInPack] Some items cannot be stored in your backpack! They were thrown away"
-player-backpack-remove: "&6[BackInPack] Your &f%backinpack_backpack_name% &6backpack has been removed"
-player-backpack-refund: "&a[BackInPack] You were refunded &6%backinpack_config_removing-backpacks_refund%$ &afor removing your backpack"
+player-death-delete: "&6[BackPack] You died, items in your backpack have been &cremoved!"
+player-death-drop: "&6[BackPack] You died, items in your backpack have been &cthrown away!"
+player-death-save: "&a[BackPack] You died, but your backpack items are preserved!"
+player-backpack-change-size: "[BackPack] The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
+player-backpack-access-through-command-disabled: "&c[BackPack] Command access to the backpack is disabled!"
+player-backpack-access-through-item-disabled: "&c[BackPack] Access to the backpack through the item has been disabled!"
+player-backpack-name-changed: "&a[BackPack] Changed backpack name from &6%old-backpack-name% &ato &f%new-backpack-name%"
+player-backpack-not-owner: "&c[BackPack] You can't open other players' backpacks!"
+player-backpack-change-name: "&f[BackPack] Now enter a new name for this backpack"
+player-backpack-buy: "&a[BackPack] You have successfully purchased a new backpack"
+player-max-backpacks: "&c[BackPack] You already have the maximum number of backpacks!"
+player-backpack-not-exists: "&6[BackPack] The backpack you tried to open does not exist. It was replaced with an unassigned backpack"
+player-backpack-blacklist: "&c[BackPack] Some items cannot be stored in your backpack! They were thrown away"
+player-backpack-remove: "&6[BackPack] Your &f%backinpack_backpack_name% &6backpack has been removed"
+player-backpack-refund: "&a[BackPack] You were refunded &6%backinpack_config_removing-backpacks_refund%$ &afor removing your backpack"
 cmd-about:
   - "&l&6Back&l&9In&l&6Pack &r&6is a plugin that gives you the opportunity to increase your current inventory space through virtual backpacks."
   - ""
@@ -103,9 +103,9 @@ cmd-about:
 
 # ___________________________________________________________________________
 # Permissions & commands
-no-permission: "&c[BackInPack] You don't have enough permissions to use this command"
-no-permission-backpack-access: "&c[BackInPack] You do not have enough permissions to open this backpack!"
-console-command: "&c[BackInPack] You cannot use this command from console"
+no-permission: "&c[BackPack] You don't have enough permissions to use this command"
+no-permission-backpack-access: "&c[BackPack] You do not have enough permissions to open this backpack!"
+console-command: "&c[BackPack] You cannot use this command from console"
 # ___________________________________________________________________________
 
 
@@ -121,21 +121,21 @@ console-command: "&c[BackInPack] You cannot use this command from console"
 
 # ___________________________________________________________________________
 # Players
-player-not-found: "&c[BackInPack] Player &f&l%player% &cnot found"
-player-backpack-userinfo-offline: "&9[BackInPack] This player is offline, his permissions cannot be checked - the size of the visible backpack is &f54"
+player-not-found: "&c[BackPack] Player &f&l%player% &cnot found"
+player-backpack-userinfo-offline: "&9[BackPack] This player is offline, his permissions cannot be checked - the size of the visible backpack is &f54"
 player-backpack-size-changed-blocked-spaces:
   - "&6This player's backpack size has changed."
   - "&6There are items in blocked places."
   - "&6There will be no visible blocked places in the backpack so as not to remove items."
-player-has-max-backpacks: "&c[BackInPack] This player already has the maximum number of backpacks. Can't add more!"
-player-set-backpack-size: "&a[BackInPack] Player &f&l%backinpack_player_name% &abackpack size set to &f%backinpack_backpack_size%"
-player-set-player-all-backpack-size: "&a[BackInPack] Player &f&l%backinpack_player_name% &aall backpacks size set to &f%backinpack_backpack_size%"
-player-set-all-backpack-size: "&a[BackInPack] Backpack size set to &f%backinpack_backpack_size% &afor all players (&f%backinpack_players%&a)"
-player-reload-complete: "&a[BackInPack] Successfully reloaded configuration of BackInPack plugin"
-player-database-not-connected: "&c[BackInPack] Plugin is not connected to the database. This command cannot be performed!"
-player-database-synchronized: "&a[BackInPack] Data synchronized with the database"
-player-backpack-add: "&a[BackInPack] Added backpack to &f%backinpack_player_name%"
-player-backpack-give-offline: "&c[BackInPack] The indicated player is offline. The backpack has not been added to his inventory!"
+player-has-max-backpacks: "&c[BackPack] This player already has the maximum number of backpacks. Can't add more!"
+player-set-backpack-size: "&a[BackPack] Player &f&l%backinpack_player_name% &abackpack size set to &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&[BackPack] aPlayer &f&l%backinpack_player_name% &aall backpacks size set to &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&a[BackPack] Backpack size set to &f%backinpack_backpack_size% &afor all players (&f%backinpack_players%&a)"
+player-reload-complete: "&a[BackPack] Successfully reloaded configuration of BackInPack plugin"
+player-database-not-connected: "&c[BackPack] Plugin is not connected to the database. This command cannot be performed!"
+player-database-synchronized: "&a[BackPack] Data synchronized with the database"
+player-backpack-add: "&a[BackPack] Added backpack to &f%backinpack_player_name%"
+player-backpack-give-offline: "&c[BackPack] The indicated player is offline. The backpack has not been added to his inventory!"
 player-userinfo:
   - ""
   - "&6Username: &a%backinpack_player_username%"
@@ -159,14 +159,14 @@ player-userinfo:
 
 # ___________________________________________________________________________
 # Arguments
-argument-not-number: "&f[BackInPack] %args% &cis not a number"
-argument-invalid-number: "&c[BackInPack] The number cannot be less than 1 and greater than 54"
+argument-not-number: "[BackPack] &f%args% &cis not a number"
+argument-invalid-number: "&c[BackPack] The number cannot be less than 1 and greater than 54"
 argument-missing:
   - "&cNot all arguments were given."
   - "&cUsing the command: &f%command%"
-argument-player-missing: "&c[BackInPack] No such player found!"
-argument-backpack-not-found: "&c[BackInPack] No backpack was found with the given name!"
-argument-backpack-name-not-given: "&c[BackInPack] New backpack name not given!"
+argument-player-missing: "&c[BackPack] No such player found!"
+argument-backpack-not-found: "&c[BackPack] No backpack was found with the given name!"
+argument-backpack-name-not-given: "&c[BackPack] New backpack name not given!"
 argument-need-change-for-all-players:
   - "&cWhen changing the backpack size for all players, you must change the size of all backpacks"
   - "&cUse the command like this: &f/backpack-set-size all all <backpack size>"
@@ -175,13 +175,13 @@ argument-need-change-for-all-players:
 
 # ___________________________________________________________________________
 # Economy
-economy-not-enough-money: "&c[BackInPack] You don't have enough money to buy a new backpack"
+economy-not-enough-money: "&c[BackPack] You don't have enough money to buy a new backpack"
 # ___________________________________________________________________________
 
 
 # ___________________________________________________________________________
 # Commands
-command-disabled: "&c[BackInPack] This command is disabled on this server!"
+command-disabled: "&c[BackPack] This command is disabled on this server!"
 # ___________________________________________________________________________
 
 
