@@ -3,7 +3,7 @@
 
 
 # If set to false, the tree feller will not list all its settings in the console on startup
-startup-logs: true
+startup-logs: false
 
 # If set to false, the tree feller will be toggled off for each player by default (as with /treefeller toggle)
 default-enabled: true
