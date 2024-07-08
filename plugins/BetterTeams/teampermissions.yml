@@ -55,9 +55,9 @@ title:
 top:
   enabled: true
 baltop:
-  enabled: true
+  enabled: false
 rank:
-  enabled: true
+  enabled: false
 delhome:
   enabled: true
   rank: ADMIN
@@ -88,7 +88,7 @@ echest:
   enabled: true
   rank: DEFAULT
 rankup:
-  enabled: true
+  enabled: false
   rank: OWNER
 tag:
   enabled: true
