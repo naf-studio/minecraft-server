@@ -61,7 +61,7 @@ database-synchronized: "&aData synchronized with the database"
 
 
 # ___________________________________________________________________________
-player-death-delete: "&[BackInPack] 6You died, items in your backpack have been &cremoved!"
+player-death-delete: "&6[BackInPack] You died, items in your backpack have been &cremoved!"
 player-death-drop: "&6[BackInPack] You died, items in your backpack have been &cthrown away!"
 player-death-save: "&a[BackInPack] You died, but your backpack items are preserved!"
 player-backpack-change-size: "[BackInPack] The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
@@ -159,14 +159,14 @@ player-userinfo:
 
 # ___________________________________________________________________________
 # Arguments
-argument-not-number: "&f%args% &cis not a number"
-argument-invalid-number: "&cThe number cannot be less than 1 and greater than 54"
+argument-not-number: "&f[BackInPack] %args% &cis not a number"
+argument-invalid-number: "&c[BackInPack] The number cannot be less than 1 and greater than 54"
 argument-missing:
   - "&cNot all arguments were given."
   - "&cUsing the command: &f%command%"
-argument-player-missing: "&cNo such player found!"
-argument-backpack-not-found: "&cNo backpack was found with the given name!"
-argument-backpack-name-not-given: "&cNew backpack name not given!"
+argument-player-missing: "&c[BackInPack] No such player found!"
+argument-backpack-not-found: "&c[BackInPack] No backpack was found with the given name!"
+argument-backpack-name-not-given: "&c[BackInPack] New backpack name not given!"
 argument-need-change-for-all-players:
   - "&cWhen changing the backpack size for all players, you must change the size of all backpacks"
   - "&cUse the command like this: &f/backpack-set-size all all <backpack size>"
@@ -175,13 +175,13 @@ argument-need-change-for-all-players:
 
 # ___________________________________________________________________________
 # Economy
-economy-not-enough-money: "&cYou don't have enough money to buy a new backpack"
+economy-not-enough-money: "&c[BackInPack] You don't have enough money to buy a new backpack"
 # ___________________________________________________________________________
 
 
 # ___________________________________________________________________________
 # Commands
-command-disabled: "&cThis command is disabled on this server!"
+command-disabled: "&c[BackInPack] This command is disabled on this server!"
 # ___________________________________________________________________________
 
 
