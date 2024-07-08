@@ -30,8 +30,9 @@ basic-mode: false
 # NOTE: These settings require server reload / restart.
 features:
   # Ukeep can be further configured in the upkeep section (this file).
-  upkeep: true
+  upkeep: false
   # Taxes can be further configured in the taxes section (this file).
+  # For taxes to work, Vault and a economy plugin, that supports Vault, needs to be installed.
   taxes: false
   # Lands and nations can be in relations, such as ally, enemy and neutral.
   # If you disable this option, all existing relations will be deleted.
@@ -284,9 +285,13 @@ land:
     # NOTE: This value can't be higher than your servers view distance.
     claim-radius: 1
 
-  # Set the minimum distance in chunks (16 blocks) between different lands that do not belong to the same owner.
-  # This prevents other landowners claiming directly at your land border.
-  chunk-distance: 1
+  # Set the minimum distance in chunks (16 blocks).
+  # Players can bypass this restriction, if their role has the LAND_CLAIM_BORDER flag in the neighboring land.
+  chunk-distance:
+    # Set the minimum distance in chunks (16 blocks) between two lands that aren't part of any nation.
+    land_2: 1
+    # Set the minimum distance between a land and a nation or two nations.
+    nation: 3
 
   # Force lands to claim near their claims.
   force-near:
@@ -326,11 +331,15 @@ land:
     # Teleportation settings
     teleport:
       # Cost for teleportation to a land spawn, if the player is not trusted in the land.
-      # Players will only pay the cost, if they're not trusted in the land.
       costs:
         value_3: 0.0
-        # Should the cost of teleportation be given to the land?
+        # Should the cost of the teleportation be given to the land?
         give-land: false
+        pay:
+          # Should untrusted players pay the teleport costs?
+          untrusted: false
+          # Should trusted players pay the teleport costs?
+          trusted: false
       # Cooldown for teleportation to a land spawn, if a player is trusted in the land.
       # This cooldown won't apply to players that aren't trusted in the land.
       spawn-cooldown_time: 0s
@@ -625,6 +634,12 @@ camp:
   # Set the default camp name. For spaces to work, the option "spaces" must be enabled in the
   # land creation section in this file.
   default-name: '{player}''s Camp'
+
+
+# Options for /lands relations and /nations relations
+relations:
+  # Broadcast new relations to all players on the server?
+  broadcast: true
 
 
 # Players can toggle personal flags to customize their experience.
@@ -936,6 +951,8 @@ database:
     enabled_6: false
     address_3: "redis://127.0.0.1"
     port_3: 6379
+    # Database index. No other plugin should use the same index. It must be unique number.
+    database-index: 1
     username_3: "default"
     password_3: "password"
     # This should be the name that you configured for this server in your BungeeCord or Velocity config.
@@ -1011,6 +1028,7 @@ integration:
       enabled_15: false
     # Item currency is used when all other economy options are disabled or unavailable.
     # The currency item can be edited in the GUI language file at the "currency" item.
+    # Please note that taxes can't be enabled, if you don't use Vault economy.
     items:
       # If enabled, only items that have the same name, lore etc. will belong to the currency.
       # Not just items of the same type or items with the same model-data.
