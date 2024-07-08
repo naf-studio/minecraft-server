@@ -18,7 +18,7 @@ maintenance-enabled: false
 # If you put in multiple entries, one of them will be chosen randomly on every ping.
 # If running an endtimer, the time left can be displayed by including '%TIMER%' in a pingmessage (also works in playercount(-hover) message).
 pingmessages:
-- <red>Currently under maintenance<br><gradient:#fbffc2:#0fffff>Join our Discord for help "dsc.gg/nafdiscord"!
+- <red>Currently under maintenance<br><reset>Join our Discord for help <gradient:#fbffc2:#0fffff>dsc.gg/nafdiscord<reset>!
 # - "Other entry"
 enable-pingmessages: true
 
@@ -59,6 +59,9 @@ send-join-notification: false
 # ... I don't know why you would want that, but you can disable it. :p
 kick-online-players: true
 
+# When fetched player does not exist then fallback to offline uuid. Only works on proxies like Velocity or BungeeCord
+fallback-to-offline-uuid: false
+
 # Changes the language of command feedback/messages.
 # If you find missing translations or want to contribute a new language file, you are very welcome to message me on Spigot or my Discord server! :)
 # Currently available are: en (English), de (German), fr (French), pt (Portuguese), es (Spanish), ru (Russian), zh (Chinese), it (Italian),
@@ -97,6 +100,3 @@ update-checks: true
 
 # Used for autoupdating the config, do not change this value.
 config-version: 8
-
-# When fetched player does not exist then fallback to offline uuid. Only works on proxies like Velocity or BungeeCord
-fallback-to-offline-uuid: false
