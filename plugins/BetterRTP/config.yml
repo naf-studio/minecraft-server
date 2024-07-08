@@ -1,9 +1,6 @@
 # BetterRTP plugin by SuperRonanCraft! (Join my Public Server at ronanplugins.com) #
 # Need help? go to https://ronanplugins.com/discord! #
 
-DisabledWorlds:
-- prison
-- creative
 Language-File: en.yml
 
 Settings:
@@ -103,8 +100,11 @@ BlacklistedBlocks:
 - oak_leaves
 - jungle_leaves
 - kelp
-# - prison
-# - creative
+
+# # Worlds to NOT allow /rtp in, unless there is an override to another enabled world #
+DisabledWorlds:
+#- prison
+#- creative
 
 # # Worlds you want to have a custom min/max and spawn center in #
 # # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
