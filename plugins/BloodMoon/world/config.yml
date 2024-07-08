@@ -22,7 +22,7 @@ ExperienceDropMult: 5
 #Mob damage multiplier. Whole number only
 MobDamageMultiplicator: 1
 #Mob health multiplier. Whole number only
-MobHealthMultiplicator: 2
+MobHealthMultiplicator: 3
 #Should there be a lightning effect on player death?
 LightningEffectOnPlayerDeath: true
 #Adds a lightning effect when a mob dies
@@ -127,7 +127,7 @@ CommandsOnEnd:
 #Are hordes even enabled in this world?
 HordesEnabled: true
 #The baseline spawn rate of hordes in ticks (1/5th of a second)
-BaselineHordeSpawnrate: 400
+BaselineHordeSpawnrate: 300
 #The variation of hordes spawn time in ticks
 HordeSpawnrateVariation: 200
 #Decides which mobs are allowed in hordes
@@ -136,7 +136,7 @@ HordeMobWhitelist:
  - "SKELETON"
  - "SPIDER"
 #The distance from players in block at which hordes will spawn
-HordeSpawnDistance: 16
+HordeSpawnDistance: 12
 #The minimum number of mobs in a horde
 HordeMinPopulation: 5
 #The maximum number of mobs in a horde
