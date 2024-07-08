@@ -113,7 +113,7 @@ max-backpacks: 1
 # *------------------------------------*
 # Getting a backpack after joining the server.
 # If the player enters the server for the first time, he will receive a backpack.
-default-backpack: none
+default-backpack: default
 # Enter "none" or "null" so that the player does not receive any backpack after entering the server
 
 # The backpack can be added to the player immediately as an item
