@@ -18,7 +18,7 @@ Reload-Message: '&0[&fAntiCreeper&0]&r &2Config Reloaded!'
 Creeper-Cancel-Explosions: true
 TNT-Cancel-Explosions: false
 Wither-Skulls-Cancel-Explosions: true
-Wither-Mob-Cancel-Explosions: true
+Wither-Mob-Cancel-Explosions: false
 Wither-Mob-Cancel-Block-Breaking: false
 
 #Cancel damage caused from explosions of TNT and/or creepers.
