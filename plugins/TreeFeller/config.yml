@@ -478,7 +478,7 @@ compatibility-mcmmo-classic: false
 compatibility-coreprotect: true
 
 # Toggle compatibility with WorldGuard
-compatibility-worldguard: true
+compatibility-worldguard: false
 
 # Toggle compatibility with GriefPrevention
 compatibility-griefprevention: false
