@@ -63,7 +63,7 @@ database-synchronized: "&aData synchronized with the database"
 # ___________________________________________________________________________
 player-death-delete: "&6[BackPack] You died, items in your backpack have been &cremoved!"
 player-death-drop: "&6[BackPack] You died, items in your backpack have been &cthrown away!"
-player-death-save: "&a[BackPack] You died, but your backpack items are preserved!"
+player-death-save: ""
 player-backpack-change-size: "[BackPack] The size of your backpack &9has been changed&f, there were items in inaccessible places and &9they were thrown from it"
 player-backpack-access-through-command-disabled: "&c[BackPack] Command access to the backpack is disabled!"
 player-backpack-access-through-item-disabled: "&c[BackPack] Access to the backpack through the item has been disabled!"
