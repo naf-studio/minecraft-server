@@ -50,7 +50,6 @@ sleep:
     exempt-flying: false
     exempt-below-y: -1
     insomnia-chance: 0.0
-    phantom-reset-audience: all
     disable-daylight-cycle-gamerule: true
     non-sleeping-sound: false
     clock-animation: true
@@ -62,31 +61,14 @@ sleep:
     dynamic-animation-speed: true
     skip-msg-audience: all
   
-  world2:
+  spawn:
     enabled: false
-    calculation-method: percentage
-    percentage-required: 0.5
-    players-required: 5
-    mob-no-target: true
-    use-exempt: false
-    use-afk: false
-    use-bossbar: false
-    use-sound-night-skipped: false
-    use-sound-storm-skipped: false
-    use-title-night-skipped: false
-    use-title-storm-skipped: false
-    exempt-creative: false
-    exempt-spectator: false
-    prevent-sleep: false
-    prevent-phantom: false
-    nightcycle-animation: false
-    storm-sleep: true
-    skip-delay: 0
-    heal: false
-    feed: false
-    skip-night-sound: ui.toast.challenge_complete
-    skip-storm-sound: entity.wither.spawn
-    reset-time-since-rest: true
+
+  world_nether:
+    enabled: false
+
+  world_the_end:
+    enabled: false
 
 # specify the time which the world will be set after reset
 time-after-reset: 0
