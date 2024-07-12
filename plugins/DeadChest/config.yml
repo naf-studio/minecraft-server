@@ -110,8 +110,7 @@ item-durability-loss-on-death: 0
 
 # A list of worlds that DeadChests will NOT be generated in...
 ExcludedWorld:
-  - 'excluded_world_example'
-  - 'another_excluded_world_example'
+  - 'spawn'
 
 # A list of items that will be excluded from DeadChests...
 # Items on this list will not be kept on die
