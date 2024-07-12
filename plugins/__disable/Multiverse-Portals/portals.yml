@@ -2,7 +2,7 @@ portals:
   Overworld:
     entryfee:
       amount: 0.0
-    safeteleport: true
+    safeteleport: false
     teleportnonplayers: false
     handlerscript: ''
     owner: naipret

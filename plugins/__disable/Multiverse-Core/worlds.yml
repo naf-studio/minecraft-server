@@ -7,7 +7,7 @@ worlds:
     style: NORMAL
     pvp: 'false'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: 'spawn'
     allowWeather: 'false'
     difficulty: PEACEFUL
     spawning:
@@ -44,7 +44,7 @@ worlds:
     environment: NORMAL
     generator: VoidGen
     playerLimit: '-1'
-    allowFlight: 'false'
+    allowFlight: 'true'
   world:
     ==: MVWorld
     hidden: 'false'
@@ -53,7 +53,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '1.0'
-    respawnWorld: ''
+    respawnWorld: 'world'
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -73,7 +73,7 @@ worlds:
       amount: '0.0'
     hunger: 'true'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: SURVIVAL
     keepSpawnInMemory: 'false'
@@ -92,7 +92,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '8.0'
-    respawnWorld: ''
+    respawnWorld: 'world'
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -112,7 +112,7 @@ worlds:
       amount: '0.0'
     hunger: 'true'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: SURVIVAL
     keepSpawnInMemory: 'true'
@@ -131,7 +131,7 @@ worlds:
     style: NORMAL
     pvp: 'true'
     scale: '16.0'
-    respawnWorld: ''
+    respawnWorld: 'world'
     allowWeather: 'true'
     difficulty: NORMAL
     spawning:
@@ -151,7 +151,7 @@ worlds:
       amount: '0.0'
     hunger: 'true'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: SURVIVAL
     keepSpawnInMemory: 'true'
