@@ -1,0 +1,11 @@
+portals:
+  Overworld:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: naipret
+    location: 20.0,47.0,-3.0:21.0,54.0,3.0
+    world: spawn
+    destination: world
