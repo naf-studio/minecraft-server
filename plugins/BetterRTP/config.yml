@@ -105,6 +105,7 @@ BlacklistedBlocks:
 DisabledWorlds:
 - world_nether
 - world_the_end
+- spawn
 
 # # Worlds you want to have a custom min/max and spawn center in #
 # # [MaxRadius] and [MinRadius] MUST be positive! These cannot be equal to each other!
