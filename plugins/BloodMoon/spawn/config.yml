@@ -1,0 +1,6 @@
+#Plugin version. Please do not tamper
+ConfigVersion: 0.8.1
+
+#Wether or not a BloodMoon happens in this world
+#Requires a server restart upon changes
+IsBlacklisted: true
