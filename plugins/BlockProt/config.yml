@@ -34,7 +34,7 @@ redstone_disallowed_by_default: false
 # owned by anyone. For example:
 #   - world_mining
 #   - world_end
-excluded_worlds: [ ]
+excluded_worlds: ["spawn"]
 
 # Setting this to 'false' will make every new player have
 # their "lock on place" setting disabled. This will be by
