@@ -1,0 +1,16 @@
+# Use 24hr format for times.
+use-24h-format: true
+
+# Set the text of the TimeBar.
+# {TIME} - The current world time, 7:20 am, etc.
+# {TIME-WORD} - The time to display. Dawn, afternoon, etc.
+# {DAYCOUNT} - How many total days in game have passed.
+# {SEASON} - The current season.
+# {DATE} - The current date.
+# {DAY} - The day of week.
+# {MONTH} - The month.
+# {DAYPERCENT} - Percentage of day completion.
+timebar-title: "{TIME} - {TIME-WORD} ({DATE}) {DAY} - {SEASON} - {MONTH}"
+
+# No touch please :)
+config-version: 3
