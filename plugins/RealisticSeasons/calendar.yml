@@ -1,0 +1,76 @@
+enabled: true
+american-date-format: false
+calendar-is-real-life-days: false
+sync-time-with-real-world: false
+time-sync-offset: 0
+time-sync-timezone: 'system'
+time:
+  format: '$hours$:$minutes$'
+  12-hour-clock:
+    enabled: false
+    add-am-pm: false
+week-days:
+- Monday
+- Tuesday
+- Wednesday
+- Thursday
+- Friday
+- Saturday
+- Sunday
+synced-worlds:
+- none
+worlds-without-events:
+- none
+winter-start: October 7
+spring-start: January 7
+summer-start: April 7
+fall-start: July 7
+months:
+  January:
+    days: 31
+    day-length-in-min: 12
+    night-length-in-min: 18
+  February:
+    days: 28
+    day-length-in-min: 13
+    night-length-in-min: 17
+  March:
+    days: 31
+    day-length-in-min: 14
+    night-length-in-min: 16
+  April:
+    days: 30
+    day-length-in-min: 15
+    night-length-in-min: 15
+  May:
+    days: 31
+    day-length-in-min: 16
+    night-length-in-min: 14
+  June:
+    days: 30
+    day-length-in-min: 17
+    night-length-in-min: 13
+  July:
+    days: 31
+    day-length-in-min: 18
+    night-length-in-min: 12
+  August:
+    days: 31
+    day-length-in-min: 17
+    night-length-in-min: 13
+  September:
+    days: 30
+    day-length-in-min: 16
+    night-length-in-min: 14
+  October:
+    days: 31
+    day-length-in-min: 15
+    night-length-in-min: 15
+  November:
+    days: 30
+    day-length-in-min: 14
+    night-length-in-min: 16
+  December:
+    days: 31
+    day-length-in-min: 13
+    night-length-in-min: 17
