@@ -1,5 +1,5 @@
 # Use 24hr format for times.
-use-24h-format: true
+use-24h-format: false
 
 # Set the text of the TimeBar.
 # {TIME} - The current world time, 7:20 am, etc.
@@ -10,7 +10,135 @@ use-24h-format: true
 # {DAY} - The day of week.
 # {MONTH} - The month.
 # {DAYPERCENT} - Percentage of day completion.
-timebar-title: "{TIME} - {TIME-WORD} ({DATE}) {DAY} - {SEASON} - {MONTH}"
+timebar-title: "{TIME-WORD} ({DATE}) {DAY} - {SEASON}"
+
+# Change the default formatting for dates.
+# See: https://www.digitalocean.com/community/tutorials/java-simpledateformat-java-date-format
+# Example: "dd/MM/yyyy"
+date-format: "dd/M/yyyy"
+
+# Want to change the wording of the time of days?
+times:
+  dawn: "Dawn"
+  morning: "Morning"
+  noon: "Noon"
+  afternoon: "Afternoon"
+  sunset: "Sunset"
+  night: "Night"
+  midnight: "Midnight"
+
+# Set each "time of day" for each month.
+# When the time hits one of these, it will turn that "time of day."
+# Example: January at 7:45 AM. It will be dawn.
+month:
+  january:
+    name: "January"
+    dawn: "06:00"
+    morning: "08:30"
+    noon: "12:00"
+    afternoon: "15:00"
+    sunset: "16:30"
+    night: "18:30"
+    midnight: "00:00"
+  february:
+    name: "February"
+    dawn: "05:25"
+    morning: "08:00"
+    noon: "12:00"
+    afternoon: "15:35"
+    sunset: "17:00"
+    night: "18:50"
+    midnight: "00:00"
+  march:
+    name: "March"
+    dawn: "05:00"
+    morning: "07:30"
+    noon: "12:00"
+    afternoon: "16:00"
+    sunset: "17:45"
+    night: "19:15"
+    midnight: "00:00"
+  april:
+    name: "April"
+    dawn: "04:30"
+    morning: "07:00"
+    noon: "12:00"
+    afternoon: "16:30"
+    sunset: "18:20"
+    night: "19:45"
+    midnight: "00:00"
+  may:
+    name: "May"
+    dawn: "04:00"
+    morning: "06:30"
+    noon: "12:00"
+    afternoon: "17:00"
+    sunset: "18:55"
+    night: "20:05"
+    midnight: "00:00"
+  june:
+    name: "June"
+    dawn: "03:35"
+    morning: "06:00"
+    noon: "12:00"
+    afternoon: "17:30"
+    sunset: "19:30"
+    night: "20:30"
+    midnight: "00:00"
+  july:
+    name: "July"
+    dawn: "03:10"
+    morning: "05:30"
+    noon: "12:00"
+    afternoon: "18:00"
+    sunset: "20:00"
+    night: "21:00"
+    midnight: "00:00"
+  august:
+    name: "August"
+    dawn: "03:35"
+    morning: "06:00"
+    noon: "12:00"
+    afternoon: "17:30"
+    sunset: "19:30"
+    night: "20:30"
+    midnight: "00:00"
+  september:
+    name: "September"
+    dawn: "04:00"
+    morning: "06:30"
+    noon: "12:00"
+    afternoon: "17:00"
+    sunset: "18:55"
+    night: "20:05"
+    midnight: "00:00"
+  october:
+    name: "October"
+    dawn: "04:30"
+    morning: "07:00"
+    noon: "12:00"
+    afternoon: "16:30"
+    sunset: "18:20"
+    night: "19:45"
+    midnight: "00:00"
+  november:
+    name: "November"
+    dawn: "05:00"
+    morning: "07:30"
+    noon: "12:00"
+    afternoon: "16:00"
+    sunset: "17:45"
+    night: "19:15"
+    midnight: "00:00"
+  december:
+    name: "December"
+    dawn: "05:30"
+    morning: "08:00"
+    noon: "12:00"
+    afternoon: "15:35"
+    sunset: "17:00"
+    night: "18:50"
+    midnight: "00:00"
 
 # No touch please :)
 config-version: 3
