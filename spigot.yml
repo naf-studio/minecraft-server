@@ -121,7 +121,7 @@ world-settings:
       cavevines-modifier: 100
       glowberry-modifier: 100
       pitcherplant-modifier: 100
-    mob-spawn-range: 4
+    mob-spawn-range: 3
     simulation-distance: default
     thunder-chance: 100000
     entity-tracking-range:
