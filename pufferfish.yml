@@ -14,7 +14,7 @@ entity_timeouts:
 # Servers that anticipate being a target for duping may want to consider
 # disabling this option.
 # This can be overridden per-player with the permission pufferfish.usebooks
-enable-books: true
+enable-books: false
 # Optimizes the suffocation check by selectively skipping
 # the check in a way that still appears vanilla. This should
 # be left enabled on most servers, but is provided as a
@@ -53,9 +53,11 @@ dab:
   # tick frequency. freq = (distanceToPlayer^2) / (2^value)
   # If you want further away entities to tick less often, use 7.
   # If you want further away entities to tick more often, try 9.
-  activation-dist-mod: 7
+  activation-dist-mod: 8
   # A list of entities to ignore for activation
-  blacklisted-entities: []
+  blacklisted-entities:
+  - villager
+  - hoglin
 # Throttles the AI goal selector in entity inactive ticks.
 # This can improve performance by a few percent, but has minor gameplay implications.
 inactive-goal-selector-throttle: true
