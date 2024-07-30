@@ -1,5 +1,5 @@
 General:
-  Prefix: "&c&l[AdvancedBan] &8&l"
+  Prefix: "&c&l[AdvancedBan]&8&l"
   NoPerms: "&cYou don't have perms for that!"
   LayoutNotFound: "&cThere is no layout called %NAME%"
   # This will be the replacement for the %DURATION% variable
@@ -16,7 +16,7 @@ Ban:
   AlreadyDone: "&c&o%NAME% &7has already been banned!"
   Exempt: "&7You are not able to ban &c&o%NAME%"
   Layout:
-  - '%PREFIX% &7Permanently banned'
+  - '&7Permanently banned'
   - '&7'
   - '&7'
   - "&cReason &8» &7%REASON%"
@@ -31,7 +31,7 @@ Ban:
 Ipban:
   Usage: "&cUsage &8» &7&o/banip (-s) [Name/IP] [Reason/@Layout]"
   Layout:
-  - '%PREFIX% &7Permanently banned'
+  - '&7Permanently banned'
   - '&7'
   - '&7'
   - "&cReason &8» &7%REASON%"
@@ -47,7 +47,7 @@ Tempban:
   Usage: "&cUsage &8» &7&o/tempban (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
   MaxDuration: "&cYou are not able to ban more than %MAX%sec"
   Layout:
-  - '%PREFIX% &7Temporarily banned'
+  - '&7Temporarily banned'
   - '&7'
   - '&7'
   - "&cReason &8» &7%REASON%"
@@ -64,7 +64,7 @@ Tempipban:
   Usage: "&cUsage &8» &7&o/tempipban (-s) [Name/IP] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
   MaxDuration: "&cYou are not able to ban more than %MAX%sec"
   Layout:
-  - '%PREFIX% &7Temporarily banned'
+  - '&7Temporarily banned'
   - '&7'
   - '&7'
   - "&cReason &8» &7%REASON%"
@@ -83,7 +83,7 @@ Mute:
   AlreadyDone: "&c&o%NAME% &7has already been muted!"
   Exempt: "&7You are not able to mute &c&o%NAME%"
   Layout:
-  - '%PREFIX% &7You are permanently muted'
+  - '&7You are permanently muted'
   - "&cReason &8» &7%REASON%"
   Notification:
   - "&c&o%NAME% &7got muted by &e&o%OPERATOR%"
@@ -94,7 +94,7 @@ Tempmute:
   Usage: "&cUsage &8» &7&o/tempmute (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
   MaxDuration: "&cYou are not able to mute more than %MAX%sec"
   Layout:
-  - '%PREFIX% &7You are muted for %DURATION%'
+  - '&7You are muted for %DURATION%'
   - "&cReason &8» &7%REASON%"
   Notification:
   - "&c&o%NAME% &7got muted by &e&o%OPERATOR%"
@@ -106,7 +106,7 @@ Warn:
   Done: "&c&o%NAME% &7was successfully warned!"
   Exempt: "&7You are not able to warn &c&o%NAME%"
   Layout:
-  - '%PREFIX% &cYou received a warning'
+  - '&cYou received a warning'
   - "&cReason &8» &7%REASON%"
   - '&7You have now &c&o%COUNT% &7warning(s) in total!'
   Notification:
@@ -125,7 +125,7 @@ Tempwarn:
   Usage: "&cUsage &8» &7&o/tempwarn (-s) [Name] [Xmo/Xd/Xh/Xm/Xs/#TimeLayout] [Reason/@Layout]"
   MaxDuration: "&cYou are not able to warn more than %MAX%sec"
   Layout:
-  - '%PREFIX% &cYou received a temp-warning'
+  - '&cYou received a temp-warning'
   - "&cReason &8» &7%REASON%"
   - "&cIt will pass in &8» &7%DURATION%"
   - '&7You have now &c&o%COUNT% &7warning(s) in total!'
@@ -140,7 +140,7 @@ Kick:
   NotOnline: "&c&o%NAME% &7is not online!"
   Exempt: "&7You are not able to kick &c&o%NAME%"
   Layout:
-  - '%PREFIX% &7You got kicked'
+  - '&7You got kicked'
   - '&7'
   - "&cReason &8» &7%REASON%"
   - '&7'
@@ -190,7 +190,7 @@ Banlist:
   OutOfIndex: "&cThere is no page %PAGE%!"
   NoEntries: "&c&oThere are no entries"
   Header:
-  - "%PREFIX% &7Banlist:"
+  - "&7Banlist:"
   - "&c&oPlayer/IP &8| &e&oDuration &8| &7&oBanned by"
   - "&c&oType &8> &7&oReason"
   - "&7"
@@ -207,7 +207,7 @@ History:
   OutOfIndex: "&cThere is no page %PAGE%!"
   NoEntries: "&c&oCould not find the history of %NAME% :("
   Header:
-  - "%PREFIX% &7History for %NAME%:"
+  - "&7History for %NAME%:"
   - "&c&oName &8| &e&oDuration &8| &7&oOperator"
   - "&c&oType &8> &7&oReason"
   - "&7"
@@ -224,7 +224,7 @@ Warns:
   OutOfIndex: "&cThere is no page %PAGE%!"
   NoEntries: "&c&o%NAME% has no warnings yet"
   Header:
-  - "%PREFIX% &7Warnings for %NAME%:"
+  - "&7Warnings for %NAME%:"
   - "&c&oName &8| &e&oDuration &8| &7&oWarned by"
   - "&c&o#ID &8> &7&oReason"
   - "&7"
@@ -240,7 +240,7 @@ WarnsOwn:
   OutOfIndex: "&cThere is no page %PAGE%!"
   NoEntries: "&c&oYou have no warnings yet"
   Header:
-    - "%PREFIX% &7Your warnings:"
+    - "&7Your warnings:"
     - "&e&oDuration &8| &7&oWarned by"
     - "&c&o#ID &8> &7&oReason"
     - "&7"
@@ -258,7 +258,7 @@ Notes:
   NoEntries: "&c&o%NAME% has no notes yet"
   Header:
     - "&7"
-    - "%PREFIX% &7Notes for %NAME%:"
+    - "&7Notes for %NAME%:"
     - "&7"
   Entry:
     - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
@@ -272,7 +272,7 @@ NotesOwn:
   NoEntries: "&c&oYou have no notes yet"
   Header:
     - "&7"
-    - "%PREFIX% &7Your notes:"
+    - "&7Your notes:"
     - "&7"
   Entry:
     - "&7%DATE% &8| &7By &o%OPERATOR% &7(&c#%ID%&7)"
