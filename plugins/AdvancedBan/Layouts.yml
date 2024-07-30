@@ -1,0 +1,55 @@
+# The default layouts are in the Message.yml file!
+
+# Message-Layouts can not only be used for bans but also for mutes and warns
+# Currently available variables:
+#   %OPERATOR% - The user who dealt the punishment.
+#   %REASON% - Reason for punishment.
+#   %PREFIX% - Prefix set in Message.yml.
+#   %DURATION% - Amount of time left before a punishment expires (will be -1 for permanent punishments).
+#   %DATE% - Date punishment was issued on.
+#   %ID% - Displays the punishment ID (i.e. first punishment = 0, second punishment = 1, third punishment = 2, etc.)
+#   %HEXID% - Displays the punishment ID in base 16. 
+# For warns you have also the variable %COUNT% which will be
+# replaced with the current amount of warns the player already received
+# Example usage: /ban Leoko @ExampleLayout
+Message:
+  ExampleLayout:
+    - '%PREFIX% &7You have been &cBANNED &7for hacking'
+    - '&c&oBanned by %OPERATOR%'
+    - '&7'
+    - "&cIt seems like you are using a"
+    - "&chacked client please disable it!"
+    - '&7'
+    - "&cUnban in &8» &7%DURATION%"
+    - '&7Sorry for this inconvenience!'
+    - '&7'
+    - '&7Unban application in Discord'
+    - "&eDiscord &8» &9&ndsc.gg/nafdiscord"
+  # ExampleLayout2:
+  #   - '%PREFIX% &7Banned for offensive language'
+  #   - '&7'
+  #   - "&cWe don't tolerate swearing on our server!"
+  #   - "&cYou got banned for the word '%REASON%'" # You can even use reasons in message layouts
+
+# You would use this time-layout for example like this: "/tempban Leoko #ExampleLayout Hacking in FFA"
+# Or with "/tempwarn Leoko #ExampleLayout Advertising" or even "/tempwarn Leoko #ExampleLayout No capslock please"
+# You can also combine this with MessageLayouts like "/tempban Leoko #ExampleLayout @Hacking"
+Time:
+  ExampleLayout:
+    - '1m'
+    - '2m'
+    - '3m'
+    - '5m'
+    - '10m'
+    - '30m'
+    - '1h'
+    - '2h'
+    - '3h'
+    - '5h'
+    - '1d'
+    - '2d'
+    - '3d'
+    - '5d'
+    - '1w'
+    - '1mo'
+    - 'perma'
