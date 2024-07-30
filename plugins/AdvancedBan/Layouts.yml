@@ -14,7 +14,7 @@
 # Example usage: /ban Leoko @ExampleLayout
 Message:
   ExampleLayout:
-    - '%PREFIX% &7You have been &cBANNED &7for hacking'
+    - '&7You have been &cBANNED &7for hacking'
     - '&c&oBanned by %OPERATOR%'
     - '&7'
     - "&cIt seems like you are using a"
