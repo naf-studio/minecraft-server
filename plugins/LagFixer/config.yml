@@ -214,7 +214,7 @@ modules:
       
       # command /lagfixer clearitems
       clearitems:
-        enabled: false
+        enabled: true
         abyss: # abyss is the place where all deleted items go, and players can get them back by typing the /abyss command
           enabled: false
           alerts: true # you can find in lang.yml
