@@ -18,7 +18,7 @@ send-supported-versions: false
 block-versions: ["<1.16"]
 # Block specific Minecraft protocol version numbers.
 # List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
-block-protocols: ["<721"]
+block-protocols: []
 # Change the blocked disconnect message
 block-disconnect-msg: You are using an unsupported Minecraft version! Support minecraft version 1.16.x and higher! Join our Discord for help "dsc.gg/nafdiscord"!
 # If you use ProtocolLib, we can't reload without kicking the players.
