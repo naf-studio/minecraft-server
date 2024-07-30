@@ -1,0 +1,69 @@
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+# ░██╗░░░░░░█████╗░░██████╗░░░███████╗██╗██╗░░██╗███████╗██████╗░░
+# ░██║░░░░░██╔══██╗██╔════╝░░░██╔════╝██║╚██╗██╔╝██╔════╝██╔══██╗░
+# ░██║░░░░░███████║██║░░██╗░░░█████╗░░██║░╚███╔╝░█████╗░░██████╔╝░
+# ░██║░░░░░██╔══██║██║░░╚██╗░░██╔══╝░░██║░██╔██╗░██╔══╝░░██╔══██╗░
+# ░███████╗██║░░██║╚██████╔╝░░██║░░░░░██║██╔╝╚██╗███████╗██║░░██║░
+# ░╚══════╝╚═╝░░╚═╝░╚═════╝░░░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+# -----------------> TUTORIALS <-----------------#
+#
+# Hex colors and gradients usage:
+# - https://docs.advntr.dev/minimessage/format.html
+#
+# (SOON) PlaceholderAPI usage:
+# - Format: <papi:[papi_placeholder]>
+# - Example: <papi:luckperms_prefix>
+#
+# -----------------> TUTORIALS <-----------------#
+
+# soon it will be possible to translate all messages
+messages:
+  Main:
+    no_access: '<color:gray>Missing permission to this module: <color:yellow><permission>'
+    disabled_module: <color:gray>Module <color:yellow><module> <color:gray>is disabled,
+      administration must enable this feature!
+    player_only: <color:gray>Command can be only executed by player!
+  
+  RedstoneLimiter:
+    alert: <color:gray>Blocked <color:yellow><ticks> <color:gray>redstone ticks at
+      chunk in <gradient:#c48d00:#fffb00><location></gradient><color:gray>!
+    cooldown: <color:gray>You can use <material> again in <gradient:#c48d00:#fffb00><cooldown></gradient><color:gray>ms.
+  WorldCleaner:
+    countingdown:
+      # 60: "<gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining> <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x <color:gray>cretaures will be removed!"
+      # 45: "<gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining> <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x <color:gray>cretaures will be removed!"
+      # 30: "<gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining> <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x <color:gray>cretaures will be removed!"
+      '15': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+        <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+        <color:gray>cretaures will be removed!
+      # '10': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+      #   <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+      #   <color:gray>cretaures will be removed!
+      '5': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+        <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+        <color:gray>cretaures will be removed!
+      # '4': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+      #   <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+      #   <color:gray>cretaures will be removed!
+      # '3': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+      #   <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+      #   <color:gray>cretaures will be removed!
+      # '2': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+      #   <color:gray>seconds, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+      #   <color:gray>cretaures will be removed!
+      # '1': <gradient:#ff3c00:#ffff00>Warning!</gradient> <color:gray>In <color:#ff8800><remaining>
+      #   <color:gray>second, <color:#ff8800><items>x <color:gray>items and <color:#ff8800><creatures>x
+      #   <color:gray>cretaures will be removed!
+      '0': <color:gray>Successfully removed <color:#ff8800><items>x <color:gray>items
+        and <color:#ff8800><creatures>x <color:gray>creatures!
+    clearitems:
+      abyss: # abyss is the place where all deleted items go, and players can get them back by typing the /abyss command
+        gui: <color:white>Abyss! <color:dark_gray>(<color:yellow>LagFixer<color:dark_gray>)
+        close: <color:gray>The abyss has been successfully closed!
+        open: '<color:gray>The abyss has been successfully opened, recover your items:
+          <color:yellow>/abyss'
+        closed: <color:gray>The abyss is <color:red>closed<color:gray>, wait until
+          it opens again!
+        opened: <color:gray>The abyss inventory was successfully <color:green>opened<color:gray>!
