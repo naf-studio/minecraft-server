@@ -27,8 +27,8 @@
 Messages:
   NoPermission: '&4[SV] Denied access! You are not allowed to do this.'
   InvalidUsage: '&c[SV] Invalid usage, you can use &6/sv help&c for a list of commands.'
-  VanishMessage: '&e[SV] %p% left the game'
-  ReappearMessage: '&e[SV] %p% joined the game'
+  VanishMessage: '&e%p% left the game'
+  ReappearMessage: '&e%p% joined the game'
   VanishMessageWithPermission: '&a[SV] %p% vanished.'
   ReappearMessageWithPermission: '&a[SV] %p% reappeared.'
   OnVanish: '&a[SV] You are now invisible!'
@@ -67,8 +67,8 @@ Messages:
   BlockPlaceDenied: '&c[SV] You can''t place blocks in vanish!'
   BlockBreakDenied: '&c[SV] You can''t break blocks in vanish!'
   PluginOutdated: '&c[SV] Your current version of SuperVanish is outdated. New version: ''%new%''; Currently: ''%current%'''
-  DynmapFakeJoin: '[SV] %d% joined'
-  DynmapFakeQuit: '[SV] %d% quit'
+  DynmapFakeJoin: '%d% joined'
+  DynmapFakeQuit: '%d% quit'
   HelpHeader: "&a<---------------&e SuperVanish-Help &a--------------->"
   HelpFormat: "&6%usage% &7- &b%description% &c(%permission%)"
   PlaceholderIsVanishedYes: "Yes"
