@@ -27,7 +27,7 @@ BotToken: "BOTTOKEN"
 #
 # The first part of channel pairs is not the Discord channel name!
 # Run "/discord reload" after changing this option to apply
-Channels: {"global": "1129081325442310315"}
+Channels: {"global": "1129081325442310315", "link": "1268169558674636842"}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
 DiscordConsoleChannelId: "000000000000000000"
@@ -102,15 +102,15 @@ Experiment_MCDiscordReserializer_InBroadcast: false
 
 # Other
 CancelConsoleCommandIfLoggingFailed: true
-ForcedLanguage: none
-PrintGuildsAndChannels: true
+ForcedLanguage: EN
+PrintGuildsAndChannels: false
 ForceTLSv12: true
 NoopHostnameVerifier: false
 MaximumAttemptsForSystemDNSBeforeUsingFallbackDNS: 3
 TimestampFormat: EEE, d. MMM yyyy HH:mm:ss z
-DateFormat: yyyy-MM-dd
+DateFormat: dd-MM-yyyy
 # https://docs.discordsrv.com/config/#Timezone
-Timezone: default
+Timezone: Asia/Ho_Chi_Minh
 # MinecraftMentionSound: Whether a sound should be sent to the player in Minecraft when they are mentioned from Discord
 MinecraftMentionSound: true
 
@@ -168,12 +168,12 @@ DiscordChatChannelDiscordToMinecraft: true
 DiscordChatChannelMinecraftToDiscord: true
 DiscordChatChannelTruncateLength: 256
 DiscordChatChannelTranslateMentions: true
-DiscordChatChannelAllowedMentions: [user, channel, emote]
+DiscordChatChannelAllowedMentions: [user, channel, emote, role]
 DiscordChatChannelEmojiBehavior: "name"
 DiscordChatChannelEmoteBehavior: "name"
 DiscordChatChannelPrefixRequiredToProcessMessage: ""
 DiscordChatChannelPrefixActsAsBlacklist: false
-DiscordChatChannelRolesAllowedToUseColorCodesInChat: ["Developer", "Owner", "Admin", "Moderator"]
+DiscordChatChannelRolesAllowedToUseColorCodesInChat: ["Owner", "Admin", "Support"]
 DiscordChatChannelBroadcastDiscordMessagesToConsole: true
 DiscordChatChannelRequireLinkedAccount: false
 DiscordChatChannelBlockBots: false
