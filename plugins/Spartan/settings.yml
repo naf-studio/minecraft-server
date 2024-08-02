@@ -1,5 +1,9 @@
 Punishments:
   broadcast_on_punishment: true
+  Commands:
+    '1': spartan kick {player} {detections}
+    '2': ''
+    '3': ''
 Logs:
   log_file: true
   log_console: true
@@ -23,11 +27,11 @@ Important:
   op_bypass: false
   bedrock_client_permission: false
   enable_developer_api: true
-  bedrock_player_prefix: .
+  bedrock_player_prefix: BE_
   enable_npc: true
   enable_watermark: true
 Cloud:
-  server_name: specify server name
+  server_name: naipret and friends
   synchronise_files: true
 Detections:
   ground_teleport_on_detection: true
