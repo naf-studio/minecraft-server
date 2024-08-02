@@ -150,6 +150,8 @@ playerDamageSelf: true
 blacklist:
    - 'admin'
    - 'owner'
+   - 'Discord'
+   - 'DiscordSRV'
   
 # This is a list of characters wich will not be allowed in team names or tags
 #
