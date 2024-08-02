@@ -1,0 +1,406 @@
+XRay:
+  name: XRay
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  cancelled_event: false
+Exploits:
+  cancelled_event: false
+  name: Exploits
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_movement_spoof: true
+  check_ground_spoof: true
+  check_head_position: true
+  check_movement_delay: true
+  check_chat_messages: true
+  check_elytra: true
+NoSwing:
+  cancelled_event: false
+  name: NoSwing
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_breaking: true
+  check_damage: true
+IrregularMovements:
+  cancelled_event: true
+  name: IrregularMovements
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: false
+    bedrock: false
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  limit_server_flying: false
+  check_sprint: true
+  check_horizontal: true
+  check_jump: true
+  check_step: true
+  check_gravity: true
+ImpossibleActions:
+  cancelled_event: false
+  name: ImpossibleActions
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_actions: true
+ItemDrops:
+  cancelled_event: false
+  name: ItemDrops
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+AutoRespawn:
+  cancelled_event: false
+  name: AutoRespawn
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+InventoryClicks:
+  cancelled_event: false
+  name: InventoryClicks
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+Criticals:
+  cancelled_event: false
+  name: Criticals
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+GhostHand:
+  cancelled_event: false
+  name: GhostHand
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_block_breaking: true
+  check_block_interactions: true
+BlockReach:
+  cancelled_event: false
+  name: BlockReach
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  overall_distance: 7.0
+FastBow:
+  cancelled_event: false
+  name: FastBow
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_bow_shots: true
+  check_bow_force: true
+FastClicks:
+  cancelled_event: false
+  name: FastClicks
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  clicks_per_second_limit: 15
+  check_click_pattern: true
+FastHeal:
+  cancelled_event: false
+  name: FastHeal
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+ImpossibleInventory:
+  cancelled_event: false
+  name: ImpossibleInventory
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_sneaking: true
+  check_sleeping: true
+  check_dead: true
+  check_sprint_jumping: true
+  check_walk_jumping: true
+  check_jumping: true
+HitReach:
+  cancelled_event: false
+  name: HitReach
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+FastBreak:
+  cancelled_event: false
+  name: FastBreak
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_delay: true
+  indirect_surroundings_per_second: 15
+  max_breaks_per_second: 40
+Speed:
+  cancelled_event: false
+  name: Speed
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_simulation_air_direction_basic: true
+  check_landing_end: true
+  check_landing: true
+  check_simulation_ground_direction_profound: true
+  check_simulation_air_limit: true
+  check_simulation_air_physics: true
+  check_simulation_air_direction_profound: true
+  check_flying: true
+  check_simulation_ground: true
+  check_keepsprint_silent: true
+  check_simulation_ground_direction_basic: true
+  check_simulation_ground_direction_blatant: true
+FastPlace:
+  cancelled_event: false
+  name: FastPlace
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_fast: true
+MorePackets:
+  cancelled_event: true
+  name: MorePackets
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: false
+    bedrock: false
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  max_player_latency_until_disconnect: 5000
+NoFall:
+  cancelled_event: false
+  name: NoFall
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+Simulation:
+  cancelled_event: false
+  name: Simulation
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+FastEat:
+  cancelled_event: false
+  name: FastEat
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+Velocity:
+  cancelled_event: false
+  name: Velocity
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+KillAura:
+  cancelled_event: false
+  name: KillAura
+  disabled_worlds: exampleDisabledWorld1, exampleDisabledWorld2
+  silent_worlds: exampleSilentWorld1, exampleSilentWorld2
+  enabled:
+    java: true
+    bedrock: true
+  silent:
+    java: false
+    bedrock: false
+  punish:
+    java: true
+    bedrock: true
+  check_move_direction: true
+  detection:
+    players: true
+  check_irregular: true
+  check_block_raytrace: true
+  check_entity_raytrace: true
+  check_hit_time: true
+  check_hit_direction: true
+  check_hit_direction_machine_learning: true
+  check_response_time: true
+  check_fight_analysis: true
