@@ -37,7 +37,7 @@ Detections:
   ground_teleport_on_detection: true
   fall_damage_on_teleport: false
 Discord:
-  webhook_hex_color: 4caf50
+  webhook_hex_color: ff0000
   checks_webhook_url: ''
-  punishments_webhook_url: ''
-  communication_webhook_url: ''
+  punishments_webhook_url: 'https://discord.com/api/webhooks/1269164538679394385/jLXsr0IPbjaJqNfRNmAn7WsuADv94eRtAPdK6OuF5EQFsiYoGQ1fHyA8xHIOIysiumkd'
+  communication_webhook_url: 'https://discord.com/api/webhooks/1269164538679394385/jLXsr0IPbjaJqNfRNmAn7WsuADv94eRtAPdK6OuF5EQFsiYoGQ1fHyA8xHIOIysiumkd'
