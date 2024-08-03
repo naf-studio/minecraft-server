@@ -32,7 +32,7 @@ warn:
   webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
   webhook-title: "New Warn!"
   webhook-thumbnail: ""
-  webhook-color: "ff0000"
+  webhook-color: "f1c232"
   fields:
     "Banned by": "{executor}"
     "Username": "{player}"
@@ -56,7 +56,7 @@ unban:
   webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
   webhook-title: "Player Unbanned!"
   webhook-thumbnail: ""
-  webhook-color: "ff0000"
+  webhook-color: "00ff00"
   fields:
     "Unbanned by": "{executor}"
     "Username": "{player}"
@@ -67,7 +67,7 @@ unmute:
   webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
   webhook-title: "Player Unmuted!"
   webhook-thumbnail: ""
-  webhook-color: "ff0000"
+  webhook-color: "00ff00"
   fields:
     "Unmuted by": "{executor}"
     "Username": "{player}"
@@ -78,7 +78,7 @@ unwarn:
   webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
   webhook-title: "Player Unwarned!"
   webhook-thumbnail: ""
-  webhook-color: "ff0000"
+  webhook-color: "00ff00"
   fields:
     "Unwarned by": "{executor}"
     "Username": "{player}"
