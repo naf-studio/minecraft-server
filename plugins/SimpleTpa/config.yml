@@ -5,7 +5,7 @@
 # |____/  |_| |_| |_| |_| | .__/  |_|  \___|   |_|   | .__/   \__,_|
 #                         |_|                        |_|
 
-# Place Holders: %time% | %player% | %option%
+# PlaceHolders: %time% | %player% | %option%
 
 
 # !!!!!!!!!!!!!!!!
@@ -29,6 +29,7 @@ prefix: "&c[&6SimpleTpa&c]"
 Console-Isnt-Player: "&6Console can't use &cSimpleTpa&6!"
 Disabled-World-Message: "&6You can't use &cSimpleTpa &6in this World!"
 Teleport-Message: "&6You will be teleported in &c%time% &6seconds!"
+Teleport-Message-TPAUTO: "&6You will be teleported in &c%time% &6seconds! Don't move!"
 Teleport-Message-Back-To-Player: "&6You &caccepted &6the teleport request!"
 Player-Is-Null: "&6The player is not &conline&6!"
 Player-Doesnt-Have-Back-Point: "&6The player doesn't have any back locations!"
@@ -45,8 +46,12 @@ TpaToggle-Deactivated: "&6You &cdisabled&6 the teleportation to you."
 TpaToggle-Activated: "&6You &cenabled&6 the teleportation to you."
 TpaToggled-Player-Message: "&6The player has &cdisabled &6the teleportation to him!"
 Player-Is-Player: "&6You can't teleport to &cyourself&6!"
+Player-Is-Player-tpignore: "&6You can't ignore &cyourself&6!"
+Player-Is-Ignored: "&6The player has been &cignored&6!"
+Player-Is-Already-Ignored: "&6The player was &cunblocked&6! If you want to block him, use the command again!"
 Already-A-TP-Request: "&6You already have &csent &6a teleport request! If you want to cancel it &c/tpcancel player "
 Tpa-Usage-Message: "&6Please use: &c/tpa (player)"
+TpaIgnore-Usage-Message: "&6Please use: &c/tpaignore (player)"
 Timed-Out-Message: "&6Your &cteleport request&6 has timed out!"
 Sending-Teleport-Request: "&6Sending a teleport request to &c%player%&6. If you want to cancel it &c/tpcancel player "
 Accept-Message: "&6To accept the teleport request, type &c/tpaccept"
@@ -61,6 +66,8 @@ No-Teleport-Requests: "&6You don't have any teleport requests!"
 Invalid-Player: "&6It seems the player who was teleporting to you has left the server!"
 Teleport-Message-Back-To-Sender: "&c%player% &6has accepted your teleportation request."
 Teleported-Message: "&6Teleported!"
+#for Teleported-Message-TpAuto  %player% placeholder for player name
+Teleported-Message-TpAuto: "&c%player% &6has teleported to you! You have the /tpauto features turned on!"
 Move-Cancel-Message: "&6You have moved and the teleport request has been removed!"
 Rejected-Sender: "&6The player has rejected your &crequest&6!"
 Rejected-Message: "&6You have rejected the &crequest&6!"
@@ -73,6 +80,9 @@ Time-Left: "&6You have &c%seconds% &6seconds to accept or deny the request"
 Damaged-Cancel-Message: "&6You were damaged and the teleport request has been removed!"
 Different-Gamemode: "&6You can't use any teleportation commands, because you are in &cSPECTATOR &6mode!"
 World-Doesnt-Exists-Or-Unloaded: "&6The world you're trying to teleport to is either unloaded or doesn't exist!"
+Enabled-TpAuto: "&6From now on you will &cautomatically accept &6all /tpa requests!"
+Disabled-TpAuto: "&6From now on you &cwon't automatically accept &6all /tpa requests!"
+Player-Has-Ignored-You: "&6The player has &cignored &6your teleportation requests!"
 ## BUTTONS
 #Here you can find the colors https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/ChatColor.html
 
@@ -106,7 +116,7 @@ Deny-Button-Description: "&6Click here to &cDENY &6the tp request!"
 # If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
 #Disabled Worlds:
 disabled-worlds:
-#  - 'disabledworld'
+  - 'limbo'
 
 # If you set anything to true, you will disable it.
 # B A C K    S E T T I N G S
