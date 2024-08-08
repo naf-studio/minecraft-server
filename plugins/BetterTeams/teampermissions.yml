@@ -36,7 +36,7 @@ home:
   rank: DEFAULT
 sethome:
   enabled: true
-  rank: DEFAULT
+  rank: ADMIN
 ban:
   enabled: true
   rank: ADMIN
