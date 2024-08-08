@@ -176,23 +176,25 @@ general:
 
 # General options for economic tasks, that apply to taxes, upkeep and nation upkeep.
 # Each task has it's own section, in this file and nations.yml, with specified options.
+# These options require server reload / restart.
 economic:
   # Default configuration: taxes, upkeep and nation upkeep are collected every day at midnight.
   interval:
-    # Collect taxes, upkeep and nation upkeep at midnight.
-    # Format: 24 hour format.
-    time: '24:00:00'
     # Set amount of days between each payment.
     # Example:
     # 1 = executes every day at the time specified at the top of this section.
     # 2 = executes every second day at the time specified at the top of this section.
-    days_2: 1
+    days_2: 7
+    # Set the time of day. Collect taxes, upkeep and nation upkeep at this time after x days.
+    # Format: 24 hour format.
+    time: '24:00:00'
     # Set the minimum time between a player's attempt to change the tax or upkeep and the next collection.
-    change-cooldown_time: 3h
+    change-cooldown_time: 2d
 
   # Altert the land or nation, if their funds are insufficient for upkeep.
-  # Default: Alerts them 5 hours before upkeep collection, if their balance is insufficient.
-  insufficient-altert_time: 5h
+  # The configured time defines a period before the actual upkeep collection.
+  # Example: 12h = alert lands and nations at earliest 12 hours before the upkeep collecting, if their funds are insufficient.
+  insufficient-altert_time: 2d
 
 
 # Upkeep can be toggled in the "features" section.
@@ -212,6 +214,7 @@ upkeep:
   nopay_time: 2d
   # Remind land members, which can deposit money into their lands, about upcoming upkeep payments until they have enough money to pay it.
   # This helps your players lands keeping track of it and not loosing claims or their membership in the nation.
+  # This will send a reminder ever configured period while in "insufficient-altert_time" from above.
   upkeep-reminder_time: 1h
 
 
@@ -285,12 +288,19 @@ land:
     # NOTE: This value can't be higher than your servers view distance.
     claim-radius: 1
 
-  # Set the minimum distance in chunks (16 blocks).
+  # Set the minimum Euclidean distance in chunks (16 blocks).
   # Players can bypass this restriction, if their role has the LAND_CLAIM_BORDER flag in the neighboring land.
   chunk-distance:
-    # Set the minimum distance in chunks (16 blocks) between two lands that aren't part of any nation.
+    # Available distance modes: SQUARE, EUCLIDEAN, DIAMOND_SHAPE
+    # SQUARE - checks chunks around the chunk that is being claimed in a square shape
+    # EUCLIDEAN - measures Euclidean distance from chunk that is being claimed to neighbouring chunks
+    # DIAMOND_SHAPE - creates buffer zone in form of a diamond around claims
+    mode_3: "EUCLIDEAN"
+    # Size of buffer zone around a land that isn't part of a nation.
     land_2: 1
-    # Set the minimum distance between a land and a nation or two nations.
+    # Size of buffer zone around a land that is part of a nation.
+    # This value only applies to surrounding lands. That means that if a nation tries to expand and the
+    # neighbouring claim isn't part of a nation, the "land_2" value from above will be used instead.
     nation: 3
 
   # Force lands to claim near their claims.
@@ -408,6 +418,7 @@ land:
   # Fly Settings (Flags can be found in the roles section)
   fly:
     # If you disable flight control, the FLY flag from roles.yml won't have any effect.
+    # If you want to disallow flight in the wilderness, you need to toggle the fly flag in the admin menu: /lands admin menu
     enabled_4: true
     # Allow players to fly only in
     # Lands claim worlds (setting: claim-worlds_list)?
@@ -524,6 +535,9 @@ land:
     # If the value is lower than a land's upkeep, it will automatically be adjusted to the land's upkeep.
     # Use 0 to disable this option completely.
     max-balance: 0
+    # Should money be taken from the players personal balance, if they for example try to claim, but the land bank doesn't have enough money?
+    # If disabled and they don't have enough money in the land bank during upkeep collection, they won't be able to pay the upkeep.
+    fallback-personal: true
 
 
 # Each chunk represents an 16x16 blocks area.
@@ -951,7 +965,7 @@ database:
     enabled_6: false
     address_3: "redis://127.0.0.1"
     port_3: 6379
-    # Database index. No other plugin should use the same index. It must be unique number.
+    # Database index. No other plugin should use the same index.
     database-index: 1
     username_3: "default"
     password_3: "password"
@@ -961,8 +975,11 @@ database:
     # If true: This server will execute tasks, such as upkeep, taxes etc. for all lands across all servers that are connected to the same Lands database and Redis.
     master: false
 
+  # Use SQLite for the database. Doesn't require a database server.
+  sqlite-v2: false
+
   ##########################################################
-  # Deprecated MySQL schema. Use mysql-v2 (above) instead. #
+  # Deprecated SQL schema. Use mysql-v2 (above) instead. #
   ##########################################################
   mysql:
     enabled_20: false
@@ -1027,7 +1044,8 @@ integration:
     exp:
       enabled_15: false
     # Item currency is used when all other economy options are disabled or unavailable.
-    # The currency item can be edited in the GUI language file at the "currency" item.
+    # The currency item can be changed in the GUI locale file. Just search for "currency" there. The locale file is located under /plugins/Lands/Language/yourlocale_gui.yml.
+    # You can also apply model-data to the currency item in the GUI locale file: https://github.com/Angeschossen/PluginFrameworkAPI/wiki/GUI-Menus#set-custom-model-data
     # Please note that taxes can't be enabled, if you don't use Vault economy.
     items:
       # If enabled, only items that have the same name, lore etc. will belong to the currency.
