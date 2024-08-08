@@ -14,7 +14,7 @@ ItemDespawnUponDeath: false
 #Does experience despawn upon death?
 ExperienceDespawnsUponDeath: false
 #Maximum item amount to drop per mob death
-ItemDropsMaximum: 2
+ItemDropsMaximum: 3
 #Minimum item amount to drop per mob death
 ItemDropsMinimum: 1
 #Mob experience drop multiplicator. Whole number only
@@ -57,7 +57,7 @@ ZombieBossRespawn: 24000
 ZombieBossDamage: 2
 ZombieBossExpMultiplier: 30
 ZombieBossHealth: 50
-ZombieBossItemMultiplier: 15
+ZombieBossItemMultiplier: 30
 #List of items that can drop, using the
 #"[ITEM_CODE]:[STACK AMOUNT]:[WEIGHT]:$name [META NAME]:$desc [META DESCRIPTION]:$enchant [ENCHANTMENT LIST]" format
 #$name, $desc and $enchant are of course optional
@@ -140,4 +140,4 @@ HordeSpawnDistance: 12
 #The minimum number of mobs in a horde
 HordeMinPopulation: 5
 #The maximum number of mobs in a horde
-HordeMaxPopulation: 10
+HordeMaxPopulation: 15
