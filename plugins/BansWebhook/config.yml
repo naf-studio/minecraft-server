@@ -1,4 +1,4 @@
-reload-message: "&a[BansWebhook] Reloaded Configuration!"
+reload-message: "&a[BanWebhook] Reloaded Configuration!"
 permanent-duration-translation: "Permanent"
 litebans-do-not-send-silent-punishments: true
 inline-webhooks: true
