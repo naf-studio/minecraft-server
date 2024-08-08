@@ -1,136 +1,151 @@
-settings:
-  debug: false
-  bungeecord: false
-  sample-count: 12
-  save-user-cache-on-stop-only: false
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  user-cache-size: 1000
-  attribute:
-    maxHealth:
-      max: 2048.0
-    movementSpeed:
-      max: 2048.0
-    attackDamage:
-      max: 2048.0
-  #! netty-threads: 2
-  #! player-shuffle: 8
-  netty-threads: 4
-  player-shuffle: 0
-  log-villager-deaths: true
-  log-named-deaths: true
-  moved-too-quickly-multiplier: 10.0
-  moved-wrongly-threshold: 0.0625
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+#
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the Discord or drop by our forums and leave a post.
+#
+# Discord: https://www.spigotmc.org/go/discord
+# Forums: http://www.spigotmc.org/
+
 advancements:
   disable-saving: false
   disabled:
   - minecraft:story/disabled
-messages:
-  whitelist: You are not whitelisted on this server! Please join our Discord for help "dsc.gg/nafdiscord"!
-  unknown-command: Unknown command. Type "/help" for help.
-  server-full: The server is full! Please join later! Join our Discord for help "dsc.gg/nafdiscord"!
-  outdated-client: Outdated client! Please use {0}! Join our Discord for help "dsc.gg/nafdiscord"!
-  outdated-server: Outdated server! I'm still on {0}! Please join our Discord for help "dsc.gg/nafdiscord"!
-  restart: Server is restarting! Please join our Discord for help "dsc.gg/nafdiscord"!
 commands:
+  log: true
   replace-commands:
   - setblock
   - summon
   - testforblock
   - tellraw
-  log: true
+  send-namespaced: true
+  silent-commandblock-console: false
   spam-exclusions:
   - /skill
   tab-complete: 0
-  send-namespaced: true
-  silent-commandblock-console: false
+messages:
+  outdated-client: "&4Outdated client!&r Please use version &41.20.x -> 1.21.x&r :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+  outdated-server: "&4Outdated server!&r I'm still on version &41.21&r :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+  restart: "&4Server is restarting!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+  server-full: "&4The server is full!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+  unknown-command: '&4[System] Unknown command.&r Type "/help" for help.'
+  whitelist: "&4You are not whitelisted on this server!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+players:
+  disable-saving: false
+settings:
+  attribute:
+    attackDamage:
+      max: 2048.0
+    maxAbsorption:
+      max: 2048.0
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+  bungeecord: false
+  debug: false
+  log-named-deaths: true
+  log-villager-deaths: true
+  moved-too-quickly-multiplier: 10.0
+  moved-wrongly-threshold: 0.0625
+  netty-threads: 4
+  player-shuffle: 0
+  restart-on-crash: true
+  restart-script: ./start.sh
+  sample-count: 12
+  save-user-cache-on-stop-only: false
+  timeout-time: 60
+  user-cache-size: 1000
+stats:
+  disable-saving: false
+  forced-stats: {}
 world-settings:
   default:
     unload-frozen-chunks: false
+    arrow-despawn-rate: 600
     below-zero-generation-in-existing-chunks: true
+    dragon-death-sound-radius: 0
+    enable-zombie-pigmen-portal-spawns: true
+    end-portal-sound-radius: 0
+    entity-activation-range:
+      animals: 16
+      flying-monsters: 32
+      ignore-spectators: false
+      misc: 8
+      monsters: 32
+      raiders: 48
+      tick-inactive-villagers: false
+      villagers: 16
+      villagers-active-for-panic: true
+      villagers-work-immunity-after: 100
+      villagers-work-immunity-for: 20
+      wake-up-inactive:
+        animals-every: 1200
+        animals-for: 60
+        animals-max-per-tick: 2
+        flying-monsters-every: 200
+        flying-monsters-for: 60
+        flying-monsters-max-per-tick: 4
+        monsters-every: 400
+        monsters-for: 60
+        monsters-max-per-tick: 2
+        villagers-every: 600
+        villagers-for: 60
+        villagers-max-per-tick: 2
+      water: 10
+    entity-tracking-range:
+      animals: 32
+      display: 96
+      misc: 32
+      monsters: 48
+      other: 64
+      players: 48
+    growth:
+      bamboo-modifier: 100
+      beetroot-modifier: 100
+      cactus-modifier: 100
+      cane-modifier: 100
+      carrot-modifier: 100
+      cavevines-modifier: 100
+      cocoa-modifier: 100
+      glowberry-modifier: 100
+      kelp-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      netherwart-modifier: 100
+      pitcherplant-modifier: 100
+      potato-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      sweetberry-modifier: 100
+      torchflower-modifier: 100
+      twistingvines-modifier: 100
+      vine-modifier: 100
+      weepingvines-modifier: 100
+      wheat-modifier: 100
+    hanging-tick-frequency: 100
+    hopper-amount: 1
+    hopper-can-load-chunks: false
+    hunger:
+      combat-exhaustion: 0.1
+      jump-sprint-exhaustion: 0.2
+      jump-walk-exhaustion: 0.05
+      other-multiplier: 0.0
+      regen-exhaustion: 6.0
+      sprint-multiplier: 0.1
+      swim-multiplier: 0.01
+    item-despawn-rate: 3600
     max-tick-time:
-      tile: 50
       entity: 50
+      tile: 50
     max-tnt-per-tick: 100
     merge-radius:
       exp: 4.0
       item: 3.0
-    hunger:
-      jump-walk-exhaustion: 0.05
-      jump-sprint-exhaustion: 0.2
-      combat-exhaustion: 0.1
-      regen-exhaustion: 6.0
-      swim-multiplier: 0.01
-      sprint-multiplier: 0.1
-      other-multiplier: 0.0
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 4
-    hopper-amount: 1
-    hopper-can-load-chunks: false
-    entity-activation-range:
-      animals: 16
-      monsters: 32
-      raiders: 32
-      misc: 8
-      water: 10
-      villagers: 16
-      flying-monsters: 32
-      wake-up-inactive:
-        animals-max-per-tick: 2
-        animals-every: 1200
-        animals-for: 60
-        monsters-max-per-tick: 4
-        monsters-every: 400
-        monsters-for: 60
-        villagers-max-per-tick: 2
-        villagers-every: 600
-        villagers-for: 60
-        flying-monsters-max-per-tick: 4
-        flying-monsters-every: 200
-        flying-monsters-for: 60
-      villagers-work-immunity-after: 100
-      villagers-work-immunity-for: 20
-      villagers-active-for-panic: true
-      tick-inactive-villagers: false
-      ignore-spectators: false
-    item-despawn-rate: 3600
-    arrow-despawn-rate: 600
-    trident-despawn-rate: 1200
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      beetroot-modifier: 100
-      carrot-modifier: 100
-      potato-modifier: 100
-      torchflower-modifier: 100
-      wheat-modifier: 100
-      netherwart-modifier: 100
-      vine-modifier: 100
-      cocoa-modifier: 100
-      bamboo-modifier: 100
-      sweetberry-modifier: 100
-      kelp-modifier: 100
-      twistingvines-modifier: 100
-      weepingvines-modifier: 100
-      cavevines-modifier: 100
-      glowberry-modifier: 100
-      pitcherplant-modifier: 100
     mob-spawn-range: 3
-    simulation-distance: default
-    thunder-chance: 100000
-    entity-tracking-range:
-      players: 48
-      animals: 32
-      monsters: 48
-      misc: 32
-      display: 128
-      other: 64
     nerf-spawner-mobs: false
     seed-ancientcity: 20083232
     seed-buriedtreasure: 10387320
@@ -153,19 +168,16 @@ world-settings:
     seed-trialchambers: 94251327
     seed-trailruins: 83469867
     seed-village: 10387312
+    simulation-distance: default
+    thunder-chance: 100000
+    ticks-per:
+      hopper-check: 4
+      hopper-transfer: 8
+    trident-despawn-rate: 1200
+    verbose: false
     view-distance: default
     wither-spawn-sound-radius: 0
-    hanging-tick-frequency: 100
-    end-portal-sound-radius: 0
-    dragon-death-sound-radius: 0
-    enable-zombie-pigmen-portal-spawns: true
     zombie-aggressive-towards-villager: true
-    verbose: false
   worldeditregentempworld:
     verbose: false
-players:
-  disable-saving: false
 config-version: 12
-stats:
-  disable-saving: false
-  forced-stats: {}
