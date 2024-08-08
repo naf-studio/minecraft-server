@@ -110,6 +110,7 @@ item-durability-loss-on-death: 0
 
 # A list of worlds that DeadChests will NOT be generated in...
 ExcludedWorld:
+  - 'limbo'
   - 'spawn'
 
 # A list of items that will be excluded from DeadChests...
