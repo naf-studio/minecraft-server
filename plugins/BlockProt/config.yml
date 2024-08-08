@@ -34,7 +34,7 @@ redstone_disallowed_by_default: false
 # owned by anyone. For example:
 #   - world_mining
 #   - world_end
-excluded_worlds: ["spawn"]
+excluded_worlds: ["limbo"]
 
 # Setting this to 'false' will make every new player have
 # their "lock on place" setting disabled. This will be by
@@ -110,23 +110,23 @@ lockable_blocks:
   - ANVIL
   - CHIPPED_ANVIL
   - DAMAGED_ANVIL
-  # - ACACIA_FENCE_GATE
-  # - BIRCH_FENCE_GATE
-  # - CRIMSON_FENCE_GATE
-  # - DARK_OAK_FENCE_GATE
-  # - JUNGLE_FENCE_GATE
-  # - OAK_FENCE_GATE
-  # - SPRUCE_FENCE_GATE
-  # - WARPED_FENCE_GATE
+  - ACACIA_FENCE_GATE
+  - BIRCH_FENCE_GATE
+  - CRIMSON_FENCE_GATE
+  - DARK_OAK_FENCE_GATE
+  - JUNGLE_FENCE_GATE
+  - OAK_FENCE_GATE
+  - SPRUCE_FENCE_GATE
+  - WARPED_FENCE_GATE
 
 # Doors are two blocks and are therefore handled differently.
 # This only works with Spigot 1.16.4 or higher.
 lockable_doors:
-  # - ACACIA_DOOR
-  # - BIRCH_DOOR
-  # - CRIMSON_DOOR
-  # - DARK_OAK_DOOR
-  # - JUNGLE_DOOR
-  # - OAK_DOOR
-  # - SPRUCE_DOOR
-  # - WARPED_DOOR
+  - ACACIA_DOOR
+  - BIRCH_DOOR
+  - CRIMSON_DOOR
+  - DARK_OAK_DOOR
+  - JUNGLE_DOOR
+  - OAK_DOOR
+  - SPRUCE_DOOR
+  - WARPED_DOOR
