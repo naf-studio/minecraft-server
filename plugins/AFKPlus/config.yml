@@ -16,7 +16,7 @@ Commands:
 #When the server hits this limit the players who have been AFK longer than the normal action time will be kicked
 #Its also recommended that you edit the warning message to tell players that they will be kicked when the server reaches x players
 #Setting to 0 means that players will always be acted upon when they reach their time to action
-ActionPlayerRequirement: 18
+ActionPlayerRequirement: 0
 
 #Enabling this setting will make AFKPlus update a players AFK status in essentials to match their AFKPlus AFK state
 #This may be useful for other plugins that check if a player is AFK by checking with Essentials
