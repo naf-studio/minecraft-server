@@ -1,10 +1,23 @@
-_version: 30
+# This is the world defaults configuration file for Paper.
+# As you can see, there's a lot to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+# 
+# Configuration options here apply to all worlds, unless you specify overrides inside
+# the world-specific config file inside each world folder.
+# 
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
+_version: 31
 anticheat:
   anti-xray:
     enabled: true
     engine-mode: 1
     hidden-blocks:
-    - chest
     - diamond_ore
     - deepslate_diamond_ore
     lava-obscures: false
@@ -25,6 +38,7 @@ chunks:
   entity-per-chunk-save-limit:
     area_effect_cloud: 8
     arrow: 16
+    breeze_wind_charge: 8
     dragon_fireball: 3
     egg: 8
     ender_pearl: 8
@@ -40,10 +54,11 @@ chunks:
     snowball: 8
     spectral_arrow: 16
     trident: 16
-    wither_skull: 5
+    wind_charge: 8
+    wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 12
+  max-auto-save-chunks-per-tick: 8
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -99,7 +114,7 @@ entities:
         per-player: false
     player-insomnia-start-ticks: 72000
     should-remove-dragon: false
-    spawner-nerfed-mobs-should-jump: false
+    spawner-nerfed-mobs-should-jump: true
     zombie-villager-infection-chance: default
     zombies-target-turtle-eggs: true
   entities-target-with-follow-range: false
@@ -110,7 +125,6 @@ entities:
       wither: true
       wither-skeleton: true
     spiders-immune-to-poison-effect: true
-    undead-immune-to-certain-effects: true
   sniffer:
     boosted-hatch-time: default
     hatch-time: default
@@ -252,8 +266,8 @@ environment:
   treasure-maps:
     enabled: false
     find-already-discovered:
-      loot-tables: true
-      villager-trade: true
+      loot-tables: default
+      villager-trade: false
   water-over-lava-flow-speed: 5
 feature-seeds:
   generate-random-seeds-for-all: false
@@ -303,15 +317,13 @@ scoreboards:
   use-vanilla-world-scoreboard-name-coloring: false
 spawn:
   allow-using-signs-inside-spawn-protection: false
-  keep-spawn-loaded: true
-  keep-spawn-loaded-range: 10
 tick-rates:
   behavior:
     villager:
       acquirepoi: 120
       validatenearbypoi: 60
   container-update: 2
-  dry-farmland: 1
+  dry-farmland: 2
   grass-spread: 2
   mob-spawner: 2
   sensor:
