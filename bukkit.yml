@@ -4,21 +4,20 @@ settings:
   permissions-file: permissions.yml
   update-folder: update
   plugin-profiling: false
-  #!connection-throttle: -1
   connection-throttle: 4000
   query-plugins: true
   deprecated-verbose: default
-  shutdown-message: Server closed! Please join our Discord for help "dsc.gg/nafdiscord"!
+  shutdown-message: §4Server closed!§r Please join our Discord for help §9dsc.gg/nafd§r!
   minimum-api: none
   use-map-color-cache: true
 spawn-limits:
-  monsters: 40
-  animals: 8
-  water-animals: 3
-  water-ambient: 7
+  monsters: 30
+  animals: 10
+  water-animals: 5
+  water-ambient: 3
   water-underground-creature: 3
   axolotls: 3
-  ambient: 8
+  ambient: 2
 chunk-gc:
   period-in-ticks: 600
 ticks-per:
