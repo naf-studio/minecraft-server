@@ -24,8 +24,7 @@ TradeSystem:
   - SURVIVAL
   - CREATIVE
   Blocked_Worlds:
-  - ExampleWorld-1
-  # - ExampleWorld-2
+  - limbo
   
   Allowed_Regions:
     # Valid modes: Blacklist, Whitelist
