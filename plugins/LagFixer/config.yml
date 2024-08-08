@@ -205,7 +205,7 @@ modules:
         ambient: 15
   
   WorldCleaner:
-    enabled: true
+    enabled: false
     worlds: # add '*' to list to enable for all worlds
       - '*'
     values:
