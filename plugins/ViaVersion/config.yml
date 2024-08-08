@@ -15,16 +15,16 @@ send-supported-versions: false
 # Easier to configure alternative to 'block-protocols'. Uses readable version strings with possible '<' and '>' prefixes.
 # An example to block 1.16.4, everything below 1.16, as well as everything above 1.17.1 would be: ["<1.16", "1.16.4", ">1.17.1"]
 # You can use both this and the block-protocols option at the same time as well.
-block-versions: ["<1.16"]
+block-versions: ["<1.20"]
 # Block specific Minecraft protocol version numbers.
 # List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
 block-protocols: []
 # Change the blocked disconnect message
-block-disconnect-msg: You are using an unsupported Minecraft version! Support minecraft version 1.16.x and higher! Join our Discord for help "dsc.gg/nafdiscord"!
+block-disconnect-msg: "You are using an unsupported Minecraft version!\n&r Support minecraft version &41.20.x -> 1.21.x&r!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
 # If you use ProtocolLib, we can't reload without kicking the players.
 # (We don't suggest using reload either, use a plugin manager)
 # You can customize the message we kick people with if you use ProtocolLib here.
-reload-disconnect-msg: Server reload, please rejoin again! Join our Discord for help "dsc.gg/nafdiscord"!
+reload-disconnect-msg: "Server reload, please rejoin again!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
 # We warn when there's an error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: false
 #
@@ -39,7 +39,7 @@ suppress-conversion-warnings: false
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
 max-pps: 800
-max-pps-kick-msg: You are sending too many packets!
+max-pps-kick-msg: "You are sending too many packets!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
 #
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 #
@@ -52,7 +52,7 @@ tracking-warning-pps: 120
 # This can never be higher than "tracking-period"?
 tracking-max-warnings: 4
 # The kick message sent if the user hits the max packets per second.
-tracking-max-kick-msg: You are sending too many packets, :(
+tracking-max-kick-msg: "You are sending too many packets, :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
 #
 #----------------------------------------------------------#
 #                 MULTIPLE VERSIONS OPTIONS                #
@@ -151,7 +151,7 @@ handle-invalid-item-count: false
 prevent-collision: true
 # If the above is true, should we automatically team players until you do?
 auto-team: true
-# When enabled if certain metadata can't be read, we won't tell you about it
+# When enabled if certain entity data can't be read, we won't tell you about it
 suppress-metadata-errors: false
 # When enabled, 1.9+ will be able to block by using shields
 shield-blocking: true
@@ -183,7 +183,7 @@ replace-pistons: false
 replacement-piston-id: 0
 # Fix 1.9+ clients not rendering the far away chunks and improve chunk rendering when moving fast (Increases network usage and decreases client fps slightly)
 chunk-border-fix: false
-# Minimize the cooldown animation in 1.8 servers
-minimize-cooldown: true
 # Allows 1.9+ left-handedness (main hand) on 1.8 servers
 left-handed-handling: true
+# Tries to cancel block break/place sounds sent by 1.8 servers to 1.9+ clients to prevent them from playing twice
+cancel-block-sounds: true
