@@ -18,7 +18,8 @@ custom-events:
                date: 1/9
          commands:
             start:
-               - "[Event] &Vu-lan festival has started, monsters are becoming stronger and stronger.."
+               - "[Event] &Vu-lan festival has started!"
+               - "[Event] Monsters are becoming stronger and stronger.."
                - "/difficulty hard"
             stop:
                - "/difficulty normal"
