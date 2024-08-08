@@ -1,7 +1,7 @@
 Punishments:
   broadcast_on_punishment: true
   Commands:
-    '1': spartan kick {player} {detections}
+    '1': ''
     '2': ''
     '3': ''
 Logs:
