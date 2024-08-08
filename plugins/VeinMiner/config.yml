@@ -16,7 +16,7 @@ RepairFriendly: false
 MaxVeinSize: 16
 Cost: 0.0
 DisabledWorlds:
-#- WorldName
+- limbo
 
 DisabledGameModes:
 - CREATIVE
