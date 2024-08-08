@@ -1,3 +1,17 @@
+# This is the global configuration file for Paper.
+# As you can see, there's a lot to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# 
+# If you need help with the configuration or have any questions related to Paper,
+# join us in our Discord or check the docs page.
+# 
+# The world configuration options have been moved inside
+# their respective world folder. The files are named paper-world.yml
+# 
+# Docs: https://docs.papermc.io/
+# Discord: https://discord.gg/papermc
+# Website: https://papermc.io/
+
 _version: 29
 block-updates:
   disable-chorus-plant-updates: false
@@ -42,10 +56,10 @@ logging:
   deobfuscate-stacktraces: true
 messages:
   kick:
-    authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
-    connection-throttle: Connection throttled! Please wait before reconnecting! Join our Discord for help "dsc.gg/nafdiscord"!
-    flying-player: <lang:multiplayer.disconnect.flying>
-    flying-vehicle: <lang:multiplayer.disconnect.flying>
+    authentication-servers-down: <dark_red><lang:multiplayer.disconnect.authservers_down><reset> Please join our Discord <blue>dsc.gg/nafd<reset> for more information!
+    connection-throttle: <dark_red>Connection throttled!<reset> Please wait before reconnecting!
+    flying-player: <dark_red><lang:multiplayer.disconnect.flying><reset> Please join our Discord <blue>dsc.gg/nafd<reset> for more information!
+    flying-vehicle: <dark_red><lang:multiplayer.disconnect.flying><reset> Please join our Discord <blue>dsc.gg/nafd<reset> for more information!
   no-permission: <red>I'm sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.
   use-display-name-in-quit-message: false
@@ -53,10 +67,10 @@ misc:
   chat-threads:
     chat-executor-core-size: -1
     chat-executor-max-size: -1
+  client-interaction-leniency-distance: default
   compression-level: default
   fix-entity-position-desync: true
   load-permissions-yml-before-plugins: true
-  #!max-joins-per-tick: 5
   max-joins-per-tick: 3
   region-file-cache-size: 256
   strict-advancement-dimension-check: false
@@ -93,6 +107,9 @@ spam-limiter:
   recipe-spam-limit: 20
   tab-spam-increment: 1
   tab-spam-limit: 500
+spark:
+  enable-immediately: false
+  enabled: true
 timings:
   enabled: false
   hidden-config-entries:
@@ -100,13 +117,11 @@ timings:
   - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
-  really-enabled: false
-  server-name: Unknown Server! Please join our Discord for help "dsc.gg/nafdiscord"!
+  server-name: naipret and friends
   server-name-privacy: false
   url: https://timings.aikar.co/
   verbose: true
 unsupported-settings:
-  allow-grindstone-overstacking: false
   allow-headless-pistons: false
   allow-permanent-block-break-exploits: false
   allow-piston-duplication: false
