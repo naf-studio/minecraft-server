@@ -22,7 +22,7 @@ Ban:
   - "&cReason &8» &7%REASON%"
   - '&7'
   - '&7Unban application in Discord'
-  - "&eDiscord &8» &9&ndsc.gg/nafdiscord"
+  - "&eDiscord &8» &9&ndsc.gg/nafd"
   Notification:
   - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
   - "&7For the reason &o%REASON%"
@@ -37,7 +37,7 @@ Ipban:
   - "&cReason &8» &7%REASON%"
   - '&7'
   - '&7Unban application in Discord'
-  - "&eDiscord &8» &9&ndsc.gg/nafdiscord"
+  - "&eDiscord &8» &9&ndsc.gg/nafd"
   Notification:
   - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
   - "&7For the reason &o%REASON%"
@@ -54,7 +54,7 @@ Tempban:
   - "&cDuration &8» &7%DURATION%"
   - '&7'
   - '&7Unban application in Discord'
-  - "&eDiscord &8» &9&ndsc.gg/nafdiscord"
+  - "&eDiscord &8» &9&ndsc.gg/nafd"
   Notification:
   - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
   - "&7For the reason &o%REASON%"
@@ -71,7 +71,7 @@ Tempipban:
   - "&cDuration &8» &7%DURATION%"
   - '&7'
   - '&7Unban application in Discord'
-  - "&eDiscord &8» &9&ndsc.gg/nafdiscord"
+  - "&eDiscord &8» &9&ndsc.gg/nafd"
   Notification:
   - "&c&o%NAME% &7got banned by &e&o%OPERATOR%"
   - "&7For the reason &o%REASON%"
