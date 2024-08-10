@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 500
+    block: "NETHERRACK"
+display:
+  name: "&b&nMining Quest:&r &e#12"
+  lore-normal:
+  - "&7This quest will require you to mine certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Break 500 netherrack."
+  - "&6◆ &eProgress:&r &7{mining:progress}/500 netherrack."
+  - "&6◆ &eReward:&r &a$35,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "NETHERRACK"
+rewards:
+  - "eco give {player} 35000"
+options:
+  category: "mining"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 12

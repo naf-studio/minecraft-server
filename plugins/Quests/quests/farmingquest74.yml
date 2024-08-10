@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 100
+    block: "VINE"
+display:
+  name: "&a&nFarming Quest:&r &e#74"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Break 100 vines."
+  - "&6◆ &eProgress:&r &7{mining:progress}/100 vines."
+  - "&6◆ &eReward:&r &a1,500 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "VINE"
+rewards:
+  - "xp give {player} 1500"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 74

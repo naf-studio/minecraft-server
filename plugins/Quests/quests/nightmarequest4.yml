@@ -1,0 +1,31 @@
+tasks:
+  riddle:
+    type: "inventory"
+    item: "CAKE"
+    amount: 1
+    remove-items-when-complete: true
+display:
+  name: "&4&nNightmare Quest:&r &e#4"
+  lore-normal:
+  - "&7This quest will require you to solve the"
+  - "&7riddle before receiving the reward."
+  - "&r"
+  - "&6◆ &eRiddle:&r &7Great for special occations,"
+  - "&7                    and fun to bake!"
+  - "&6◆ &eProgress:&r &7N/A"
+  - "&6◆ &eReward:&r &a1x Nightmare Leggings"
+  - "&7&o(Protection IV, Fire Protection III, Unbreaking III)"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "IRON_BARS"
+rewards:
+  - "give {player} DIAMOND_LEGGINGS 1 protection:4 fireprotection:3 unbreaking:3 name:&8&l◆_&4&lNIGHTMARE_LEGGINGS_&8◆"
+options:
+  category: "nightmare"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 4

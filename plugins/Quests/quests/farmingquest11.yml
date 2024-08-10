@@ -1,0 +1,29 @@
+tasks:
+  baking:
+    type: "inventory"
+    item: CAKE
+    amount: 10
+    remove-items-when-complete: true
+display:
+  name: "&a&nFarming Quest:&r &e#11"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Bake 10 cakes"
+  - "&6◆ &eProgress:&r &7{baking:progress}/10 cakes."
+  - "&6◆ &eReward:&r &a2,000 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "CAKE"
+rewards:
+  - "xp give {player} 2000"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 11

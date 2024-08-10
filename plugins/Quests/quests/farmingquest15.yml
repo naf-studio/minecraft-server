@@ -1,0 +1,29 @@
+tasks:
+  cooking:
+    type: "inventory"
+    item: "MUSHROOM_STEW"
+    amount: 27
+    remove-items-when-complete: true
+display:
+  name: "&a&nFarming Quest:&r &e#15"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Cook 27 bowls of mushroom stew."
+  - "&6◆ &eProgress:&r &7{cooking:progress}/27 stews."
+  - "&6◆ &eReward:&r &a2,250 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "MUSHROOM_STEW"
+rewards:
+  - "xp give {player} 2250"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 15

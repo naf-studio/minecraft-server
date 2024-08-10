@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 100
+    block: "OAK_LEAVES"
+display:
+  name: "&a&nFarming Quest:&r &e#65"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Plant 100 oak leaves."
+  - "&6◆ &eProgress:&r &7{mining:progress}/100 oak leaves."
+  - "&6◆ &eReward:&r &a1,500 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "OAK_LEAVES"
+rewards:
+  - "xp give {player} 1500"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 65

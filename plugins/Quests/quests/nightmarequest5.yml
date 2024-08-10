@@ -1,0 +1,30 @@
+tasks:
+  riddle:
+    type: "inventory"
+    item: "IRON_HORSE_ARMOR"
+    amount: 1
+    remove-items-when-complete: true
+display:
+  name: "&4&nNightmare Quest:&r &e#5"
+  lore-normal:
+  - "&7This quest will require you to solve the"
+  - "&7riddle before receiving the reward."
+  - "&r"
+  - "&6◆ &eRiddle:&r &7Heavy metal used to protect companions."
+  - "&6◆ &eProgress:&r &7N/A"
+  - "&6◆ &eReward:&r &a1x Nightmare Chestplate"
+  - "&7&o(Protection IV, Fire Protection III, Unbreaking III)"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "IRON_BARS"
+rewards:
+  - "give {player} DIAMOND_CHESTPLATE 1 protection:4 fireprotection:3 unbreaking:3 name:&8&l◆_&4&lNIGHTMARE_CHESTPLATE_&8◆"
+options:
+  category: "nightmare"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 5

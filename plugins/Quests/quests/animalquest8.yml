@@ -1,0 +1,27 @@
+tasks:
+  taming:
+    type: "taming"
+    amount: 25  
+display:
+  name: "&3&nAnimal Quest:&r &e#8"
+  lore-normal:
+  - "&7This quest will require to do something"
+  - "&7with animals before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Tame 25 mobs."
+  - "&6◆ &eProgress:&r &7{taming:progress}/25 mobs."
+  - "&6◆ &eReward:&r &a400 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "BONE"
+rewards:
+  - "xp give {player} 400"
+options:
+  category: "animal"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880  
+  sort-order: 8

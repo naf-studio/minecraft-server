@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 200
+    block: "RED_MUSHROOM"
+display:
+  name: "&a&nFarming Quest:&r &e#45"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Mine 200 red mushrooms."
+  - "&6◆ &eProgress:&r &7{mining:progress}/200 red mushrooms."
+  - "&6◆ &eReward:&r &a3,000 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "RED_MUSHROOM"
+rewards:
+  - "xp give {player} 3000"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 45
