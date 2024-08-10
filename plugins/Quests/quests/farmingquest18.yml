@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 512
+    block: "CACTUS"
+display:
+  name: "&a&nFarming Quest:&r &e#18"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Harvest 512 cactus."
+  - "&6◆ &eProgress:&r &7{mining:progress}/512 cactus."
+  - "&6◆ &eReward:&r &a3,000 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "CACTUS"
+rewards:
+  - "xp give {player} 3000"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 18

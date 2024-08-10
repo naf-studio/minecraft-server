@@ -1,0 +1,29 @@
+tasks:
+  gathering:
+    type: "inventory"
+    item: "LEATHER"
+    amount: 64
+    remove-items-when-complete: true
+display:
+  name: "&a&nFarming Quest:&r &e#55"
+  lore-normal:
+  - "&7This quest will require you to farm certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Obtain 64 leather."
+  - "&6◆ &eProgress:&r &7{gathering:progress}/64 leather."
+  - "&6◆ &eReward:&r &a750 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "LEATHER"
+rewards:
+  - "xp give {player} 750"
+options:
+  category: "farming"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 55

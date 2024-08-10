@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 1152
+    block: "END_STONE"
+display:
+  name: "&e&nExtreme Quest:&r &e#48"
+  lore-normal:
+  - "&7This quest will require you to obtain a lot"
+  - "&7of resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Mine 18 stacks of end stone."
+  - "&6◆ &eProgress:&r &7{mining:progress}/1152 end stone."
+  - "&6◆ &eReward:&r &a$20,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "END_STONE"
+rewards:
+  - "eco give {player} 20000"
+options:
+  category: "extreme"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880  
+  sort-order: 48

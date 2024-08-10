@@ -1,0 +1,39 @@
+tasks:
+  rails:
+    type: "blockplacecertain"
+    amount: 150
+    block: "RAIL"
+  prails:
+    type: "blockplacecertain"
+    amount: 50
+    block: "POWERED_RAIL"
+  redstoneblock:
+    type: "blockplacecertain"
+    amount: 50
+    block: "REDSTONE_BLOCK"
+display:
+  name: "&9&nBuilding Quest:&r &e#5"
+  lore-normal:
+  - "&7This quest will require to build a"
+  - "&7structure before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Build a railway system."
+  - "&6◆ &eProgress:&r"
+  - "        &6◆ &7{rails:progress}/150 rails"
+  - "        &6◆ &7{prails:progress}/50 powered rails"
+  - "        &6◆ &7{redstoneblock:progress}/50 redstone blocks"
+  - "&6◆ &eReward:&r &a2,000 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "RAIL"
+rewards:
+  - "xp give {player} 2000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880   
+  sort-order: 5

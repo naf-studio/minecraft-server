@@ -1,0 +1,27 @@
+tasks:
+  playtime:
+    type: "playtime"
+    minutes: 60 
+display:
+  name: "&d&nMiscellaneous Quest:&r &e#10"
+  lore-normal:
+  - "&7This quest will require you to do something"
+  - "&7before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Be online for 60 minutes."
+  - "&6◆ &eProgress:&r &7{playtime:progress}/60 minutes."
+  - "&6◆ &eReward:&r &a500 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "CLOCK"
+rewards:
+  - "xp give {player} 500"
+options:
+  category: "misc"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 10

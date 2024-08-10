@@ -1,0 +1,29 @@
+tasks:
+  killing:
+    type: "mobkillingcertain"
+    amount: 100
+    mob: GHAST
+display:
+  name: "&c&nCombat Quest:&r &e#30"
+  lore-normal:
+  - "&7This quest will require you to kill certain"
+  - "&7entities before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Kill 100 ghasts."
+  - "&6◆ &eProgress:&r &7{killing:progress}/100 ghasts."
+  - "&6◆ &eReward:&r &a1x Combat Bow (v2)"
+  - "&7&o(Power 5, Flame 1, Infinity 1, Unbreaking 3, Punch 2)"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "GHAST_TEAR"
+rewards:
+  - "give {player} bow 1 power:5 flame:1 infinity:1 punch:2 unbreaking:3 name:&4Combat_Bow"
+options:
+  category: "combat"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 30

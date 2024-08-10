@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 25000
+    block: "STONE"
+display:
+  name: "&e&nExtreme Quest:&r &e#34"
+  lore-normal:
+  - "&7This quest will require you to obtain a lot"
+  - "&7of resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Mine 25,000 stone."
+  - "&6◆ &eProgress:&r &7{mining:progress}/25000 stone."
+  - "&6◆ &eReward:&r &a$50,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "STONE"
+rewards:
+  - "eco give {player} 50000"
+options:
+  category: "extreme"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 34

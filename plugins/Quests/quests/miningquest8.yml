@@ -1,0 +1,28 @@
+tasks:
+  mining:
+    type: "blockbreakcertain"
+    amount: 100
+    block: "EMERALD_ORE"
+display:
+  name: "&b&nMining Quest:&r &e#8"
+  lore-normal:
+  - "&7This quest will require you to mine certain"
+  - "&7resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Break 100 emerald ore."
+  - "&6◆ &eProgress:&r &7{mining:progress}/100 emerald ore."
+  - "&6◆ &eReward:&r &a$75,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "EMERALD_ORE"
+rewards:
+  - "eco give {player} 75000"
+options:
+  category: "mining"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 8

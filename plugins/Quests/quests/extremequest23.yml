@@ -1,0 +1,29 @@
+tasks:
+  gather:
+    type: "inventory"
+    amount: 1152
+    item: "CARROT"
+    remove-items-when-complete: true
+display:
+  name: "&e&nExtreme Quest:&r &e#23"
+  lore-normal:
+  - "&7This quest will require you to obtain a lot"
+  - "&7of resources before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Gather 18 stacks of carrots."
+  - "&6◆ &eProgress:&r &7{gather:progress}/1152 carrots."
+  - "&6◆ &eReward:&r &a$20,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "CARROT"
+rewards:
+  - "eco give {player} 20000"
+options:
+  category: "extreme"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880  
+  sort-order: 23

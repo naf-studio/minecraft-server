@@ -1,0 +1,29 @@
+tasks:
+  riddle:
+    type: "inventory"
+    item: "ENDER_EYE"
+    amount: 1
+    remove-items-when-complete: true
+display:
+  name: "&4&nNightmare Quest:&r &e#17"
+  lore-normal:
+  - "&7This quest will require you to solve the"
+  - "&7riddle before receiving the reward."
+  - "&r"
+  - "&6◆ &eRiddle:&r &7Use it to enter another dimension."
+  - "&6◆ &eProgress:&r &7N/A"
+  - "&6◆ &eReward:&r &a$25,000"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "IRON_BARS"
+rewards:
+  - "eco give {player} 25000"
+options:
+  category: "nightmare"
+  requires: []
+  repeatable: false
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 17

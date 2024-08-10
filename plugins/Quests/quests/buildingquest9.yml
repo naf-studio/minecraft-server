@@ -1,0 +1,34 @@
+tasks:
+  cobble:
+    type: "blockplacecertain"
+    amount: 500
+    block: "COBBLESTONE"
+  stairs:
+    type: "blockplacecertain"
+    amount: 100
+    block: "COBBLESTONE_STAIRS"
+display:
+  name: "&9&nBuilding Quest:&r &e#9"
+  lore-normal:
+  - "&7This quest will require to build a"
+  - "&7structure before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Build a small castle."
+  - "&6◆ &eProgress:&r"
+  - "        &6◆ &7{cobble:progress}/500 cobblestone"
+  - "        &6◆ &7{stairs:progress}/100 cobblestone stairs"
+  - "&6◆ &eReward:&r &a1,000 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "COBBLESTONE"
+rewards:
+  - "xp give {player} 1000"
+options:
+  category: "building"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880 
+  sort-order: 9

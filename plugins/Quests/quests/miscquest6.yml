@@ -1,0 +1,27 @@
+tasks:
+  misc:
+    type: "walking"
+    distance: 5000
+display:
+  name: "&d&nMiscellaneous Quest:&r &e#6"
+  lore-normal:
+  - "&7This quest will require you to do something"
+  - "&7before receiving the reward."
+  - "&r"
+  - "&6◆ &eObjective:&r &7Walk 5,000 blocks."
+  - "&6◆ &eProgress:&r &7{misc:progress}/5000 blocks."
+  - "&6◆ &eReward:&r &a2,500 experience"
+  - "&r"
+  lore-started:
+  - "&a&k;&r&f&k;&r &a(!) You have started this quest."
+  type: "LEATHER_BOOTS"
+rewards:
+  - "xp give {player} 2500"
+options:
+  category: "misc"
+  requires: []
+  repeatable: true
+  cooldown:
+    enabled: true
+    time: 2880
+  sort-order: 6
