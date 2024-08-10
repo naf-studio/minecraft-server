@@ -1,0 +1,342 @@
+# https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+# #######################################################
+# # | ___ \             (_)             |  \/  |       ##
+# # | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___  ##
+# # |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \ ##
+# # | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/ ##
+# # \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___| ##
+# #######################################################
+
+# Player configuration and general
+player_config:
+  # speed that the player will have when injured.
+  downed_speed: 0.05
+  
+  # time in which the player will die if not revived.
+  death_delay: 75
+  
+  # Speed to revive the player (seconds)
+  reliving_count: 10
+  
+  # time in which the player is invulnerable.
+  invulnerability_delay: 15
+  
+  # Should it be invulnerable to mobs as well?
+  invulnerability_with_mobs: true
+  
+  # You want to disable the totems
+  enabled_totem: true
+  
+  # Should the totem be used first before being wounded?
+  totem_first: true
+  
+  # the player could commit suicide by pressing "crouch"
+  suicide_enable: true
+  
+  # How long you must hold down crouch to suicide. "0" is instadeath
+  suicide_count: 5
+  
+  # life that the player will have when injured
+  downed_health: 1
+  
+  # life that the player will have when revived
+  revived_health: 4.0
+  
+  # You can steal items from injured players with "crouch + right click"
+  steal_items: false
+  
+  # minimum distance required to revive
+  reliving_distance_min: 1.3
+  
+  # maximum distance you can walk away while reviving before it is canceled
+  reliving_distance_max: 5
+  
+  # mobs can attack when you are knocked down?
+  mobs_target_downed: false
+  
+  # Can downed players be picked up?
+  picked_enable: true
+  
+  # when the player carrying it takes damage should it fall to the ground?
+  picked_damage_drop: false
+  
+  # Can the wounded man stop riding the picker?
+  downed_can_dismount_picker: false
+  
+  # should the wounded die if there is no player nearby?
+  check_nearby_players_before_downing: false
+  
+  # range in which a player should be to not die, if it is 0 the player will die if there is no one on the server and will not die if there is someone connected
+  check_nearby_players_range: 100
+  
+  # Here you can choose what to do when the account runs out. can be "Kill" or "Revive"
+  death_count_action: kill
+  
+  # Should downed players who die keep their inventory on respawn?
+  downed_keep_inventory: false
+  
+  # As what interaction do you want to perform the pickup action?
+  pickup_interact: click
+  
+  # As what interaction do you want to perform the steal action?
+  steal_interact: crounch+click
+  
+  # If you have a problem when a player dismounts you can activate this option to fix it!
+  dismount_bug: false
+  
+  # when disconnected should it die?
+  disconnect_kill: true
+  
+  # Cooldown to avoid spam when reviving
+  start_revive_cooldown: 0
+  
+  # Waiting time to be able to revive another player again after reviving one
+  cooldown_revive_again: 0
+  
+  # Hide name tag for downed player, picker and reviver.
+  hide_nametag: false
+  
+  # Time the downed player must wait before committing suicide.
+  suicide_disabled_count: 0
+  
+  # ReviveMe priority over other plugins. If you have compatibility errors you can try changing this option. Options: "MONITOR, HIGHEST, HIGH, NORMAL, LOW, LOWEST"
+  config_event_priority: MONITOR
+  
+  # This option stops time to die if another player picks it up.
+  config_picked_stop_cooldown: false
+  
+  # Maximum number of revive attempts before permanent death. Set to 0 or -1 to disable this feature.
+  max_revive_attempts: -1
+
+# enable / disable world options.
+worlds_config:
+  enabled: true
+  # togle with: Blacklist/Whitelist
+  mode: Blacklist
+  list:
+  - limbo
+
+# enable / disable commands options.
+commands_config:
+  enabled: false
+  # togle with: Blacklist/Whitelist
+  mode: Blacklist
+  list:
+  - sethome
+  - createhome
+  - tpahere
+  - tpaccept
+  - tpyes
+  - tpa
+
+# Here you can choose what types of damage ReviveMe should ignore in case the mode is blacklist or what types of damage should be for it to work in case of whitelist
+# damages list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+damages_type:
+  enabled: true
+  mode: Blacklist
+  list:
+  - void
+
+# sounds configuration!
+sound_config:
+  reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1
+    yaw: 1
+  start_reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1
+    yaw: 1
+  stop_reliving:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1
+    yaw: 1
+  sucess_relive:
+    sound: BLOCK_NOTE_BLOCK_HARP
+    volume: 1
+    yaw: 1
+  suicide_count:
+    sound: BLOCK_NOTE_BLOCK_BIT
+    volume: 1
+    yaw: 1
+
+# compatibility with some plugins
+plugins_hooks:
+  Citizens:
+    enable: false
+    downedNpc: false
+  
+  CrackShot:
+    enable: false
+    downed_use_weapon: false
+  
+  QualityArmory:
+    enable: false
+    downed_use_weapon: false
+  
+  SaberFactions:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ally_enable: true
+    ignore_permission: true
+  
+  FactionsUUID:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ally_enable: true
+    ignore_permission: true
+  
+  BetterTeams:
+    enable: false
+    pickup_only_member: true
+    revive_only_member: true
+    ally_enable: true
+    ignore_permission: true
+  
+  Lands:
+    enable: false
+    pickup_in_war: true
+    revive_in_war: true
+    revive_ally: true
+    revive_enemy: false
+    pickup_ally: true
+    pickup_enemy: false
+    steal_in_war: true
+    steal_ally: false
+    steal_enemy: false
+  
+  ProjectKorra:
+    enable: false
+    downed_use_ability: false
+  
+  GriefPrevention:
+    enable: false
+    end_siege_on_downed: false
+  
+  PlasmoVoice:
+    enable: false
+    downed_can_speak: false
+  
+  Duels:
+    enable: false
+    downed_in_game: false
+  
+  CombatLogX:
+    enable: false
+    revive_in_combat: true
+    pickup_in_combat: false
+    disable_log_on_downed: false
+  
+  PartyGames:
+    enable: false
+    can_down_in_arena: false
+  
+  DeluxeCombat:
+    enable: false
+    revive_in_combat: true
+    pickup_in_combat: false
+  
+  UltimateClans:
+    enable: false
+    revive_ally: true
+    pickup_ally: true
+    revive_rival: false
+    pickup_rival: false
+  
+  WorldGuard:
+    downable_flag_default: true
+  
+  MCPets:
+    enable: false
+    downed_can_mount: false
+  
+  WeaponMechanics:
+    enable: false
+  
+  GSit:
+    enable: false
+    disable_player_player_sit: false
+  
+  Graves:
+    enable: false
+    downed_can_open: false
+    downed_can_break: false
+  
+  Towny:
+    enable: false
+    pickup_ally: true
+    pickup_enemy: false
+
+# vanilla teams mode
+vanilla_teams_config:
+  enabled: false
+  pickup_only_member: true
+  revive_only_member: true
+  ignore_permission: true
+
+# options is used to specify the item you want to use. in the other modes you only need the amount
+# price Modes: money, item, exp
+# reviver_speed Modes: rank, coming soon permission mode
+revive_options:
+  price:
+    enabled: false
+    mode: item
+    amount: 1
+    ignore_permission: true
+    options:
+      material: diamond
+      has_item_name: '&cReviver item'
+      has_lore_line: put here the text of one of the lines of the lore of your item
+      has_lore:
+      - If you want it to work with the item with its exact lore
+      - you must recreate it here
+  
+  reviver_speed:
+    enabled: false
+    mode: rank
+    values:
+    - 'default: 1'
+    - 'vip: 2'
+    - 'doctor: 5'
+  
+  downed_reliving_count:
+    enabled: false
+    mode: rank
+    values:
+    - 'default: 10'
+    - 'vip: 5'
+
+items_options:
+  no_downed_items:
+    enable: false
+    items:
+      vanillaItemExample:
+        item: diamond_sword
+        name: '&cFire sword'
+      
+      itemAdderExample:
+        item: itemsadder-myitems:emerald_sword
+
+steal_locked_items:
+  enabled: false
+  items:
+    myitem1:
+      has_custom_model_data: true
+      name_contains: '&eMy item'
+
+# Database configuration
+sql_config:
+  enabled: false
+  host: 127.0.0.1
+  port: 3306
+  database: minecraft
+  user: root
+  password: ''
+
+plugin_config:
+  metric: true
+  update_message: true
+config_event_priority: MONITOR
+auto_totem: false

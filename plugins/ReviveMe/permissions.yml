@@ -1,0 +1,46 @@
+#https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+#######################################################################################
+##               | ___ \             (_)             |  \/  |                        ##
+##               | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___                   ##
+##               |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \                  ##
+##               | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/                  ##
+##               \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___|                  ##
+#######################################################################################
+
+#ATENTION
+#When a enabled is "false" it means that players do not need to have the permission to perform the action.
+
+#Permission for injured players to be revived.
+revivable_player_permission:
+  enabled: true
+  permission: 'reviveme.revivable'
+
+#Permission players need to be able to revive a wounded
+reviver_player_permission:
+  enabled: true
+  permission: 'reviveme.reviver'
+
+#Permission that an injured person needs so that they can take with right click
+pickable_player_permission:
+  enabled: true
+  permission: 'reviveme.pickable'
+
+#Permission that a player needs to be able to take others on his shoulders
+picker_player_permission:
+  enabled: true
+  permission: 'reviveme.picker'
+
+#Permission the player needs to be knocked down
+downeable_player_permission:
+  enabled: false
+  permission: 'reviveme.downable'
+
+#Permission that the wounded person needs so that they can rob him with right click + crouch
+stealable_player_permission:
+  enabled: false
+  permission: 'reviveme.stealable'
+
+#Permission needed by the thief to open the injured person's inventory with right click + crouch
+robber_player_permission:
+  enabled: true
+  permission: 'reviveme.robber'
