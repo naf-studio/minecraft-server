@@ -1,0 +1,90 @@
+#https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+#######################################################################################
+##               | ___ \             (_)             |  \/  |                        ##
+##               | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___                   ##
+##               |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \                  ##
+##               | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/                  ##
+##               \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___|                  ##
+#######################################################################################
+
+#the downed player can hit?
+enable_damage: true
+
+#can the downed player interact with entities?
+enable_entity_interact: false
+
+#can the downed player break blocks?
+enable_block_break: true
+
+#can the downed player place blocks?
+enable_block_place: true
+
+#can the downed player interact?
+enable_interact: true
+
+#the downed player can move?
+enable_move: true
+
+#can the downed player teleport?
+enable_teleport: true
+
+#can the downed player shoot with a bow?
+enable_shoot_bow: false
+
+#can the downed player launch projectiles?
+enable_projectile_launch: true
+
+#downed player can be damaged by falling?
+enable_fall_damage: false
+
+#Can the downed player drop items?
+enable_item_drop: true
+
+#Can the downed player pick up items?
+enable_item_pickup: true
+
+#Can the downed player use the elytra?
+enable_gliding: true
+
+#Maximum distance for the player to be knocked down with fall damage. If the distance fallen is greater than this value, the player will die instantly.
+#put -1 to disable this option. if the option is disabled the player will be knocked down no matter how far they fell
+max_fall_distance: -1
+
+#Can the downed player use buckets?
+enable_buckets: true
+
+#Can it craft items?
+enable_craft: true
+
+##If the player is picked up by another player, should they be able to take damage?
+picked_can_receive_damage: true
+
+#Allow interaction with specific blocks
+block_interact_config:
+  enabled: false
+  #togle with: Blacklist/Whitelist
+  mode: Blacklist
+  list:
+    - "bed"
+  
+#Allow place with specific blocks
+block_place_config:
+  enabled: false
+  #togle with: Blacklist/Whitelist
+  mode: WhiteList
+  list:
+    - "bed_bed"
+
+#Allow break with specific blocks
+block_break_config:
+  enabled: false
+  #togle with: Blacklist/Whitelist
+  mode: WhiteList
+  list:
+    - "bed_bed"
+  
+downed_damages:
+  enabled: false
+  mode: BlackList
+  list:
+    - fire_tick

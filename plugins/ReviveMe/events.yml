@@ -1,0 +1,79 @@
+#https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+#######################################################################################
+##               | ___ \             (_)             |  \/  |                        ##
+##               | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___                   ##
+##               |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \                  ##
+##               | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/                  ##
+##               \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___|                  ##
+#######################################################################################
+#Events: here you can execute commands and some functions depending on the type of situation that is happening. you have some examples that you can look at and learn from them.
+#conditions are functions that need to meet a condition for it to work. you also have an example with "PotionOwO"                                                  
+#options:options:{receive_permission=reviveme.doctor,to_nearby_players=100}
+
+player_downed_event:
+  enabled: false
+  actions:
+    - '[potion] <victim> blindness 100 1'
+
+player_reliving_event:
+  enabled: true
+  actions:
+    - '[particle] <victim> heart <victim_x> <victim_y> <victim_z> <victim_w> 1'
+    - '[particle] <reviver> heart <victim_x> <victim_y> <victim_z> <victim_w> 1'
+
+player_start_reliving_event:
+  enabled: false
+  actions:
+    - '[victim] msg <reviver> thanks!'
+
+player_stop_reliving_event:
+  enabled: false
+  actions:
+    - '[victim] msg <reviver> sad :C'
+
+player_count_death_delay:
+  enabled: true
+  actions:
+    - '[condition] potionOwO'
+
+player_revive_event:
+  enabled: false
+  actions:
+    - '[rempotion] <victim> blindness'
+
+player_pickup_downed_event:
+  enabled: false
+  actions:
+    - '[picker] msg <victim> a'
+
+player_drop_downed_event:
+  enabled: false
+  actions:
+    - '[picker] msg <victim> b'
+
+downed_death_event:
+  enabled: false
+  actions:
+    - '[dropItem] death_drop'
+    
+player_first_steal_event:
+  enabled: true
+  actions:
+    - '[broadcast][ReviveMe] <victim> has been stolen while knocked down!'
+
+conditions:
+  potionOwO:
+    condition: '%reviveme_death_delay% == 10'
+    actions:
+      - '[potion] <victim> blindness 11 1'
+  
+  example2:
+    condition: '%player_name% == FavioMC19'
+    actions:
+      - '[console] rm revive FavioMC19'
+      - '[console] heal FavioMC19'
+      
+items:
+  death_drop:
+    material: ROTTEN_FLESH
+    amount: 0

@@ -1,0 +1,187 @@
+#https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+#######################################################################################
+##               | ___ \             (_)             |  \/  |                        ##
+##               | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___                   ##
+##               |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \                  ##
+##               | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/                  ##
+##               \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___|                  ##
+#######################################################################################
+
+victim_messages:
+  downed: '&#ff3333[ReviveMe] You have been seriously injured!'
+  downed_for_player: '&#cc0000[ReviveMe] <enemy> &#ff3333has seriously injured you!'
+  start_reliving: '&#00e6e6[ReviveMe] <reviver> &#b3ffffis reviving you.'
+  stop_reliving: '&#808080[ReviveMe] <reviver> &#a6a6a6has stopped reviving you.'
+  revived: '&#80ff80[ReviveMe] You have been revived!'
+  revived_for_player: '&#80ff80[ReviveMe] You have been revived by &#53ff1a<reviver>&#80ff80!'
+
+enemy_messages:
+  downed: '&#ff3333[ReviveMe] You have seriously injured &#cc0000<victim>'
+  
+reviver_messages:
+  start_reliving: '&#b3ffff[ReviveMe] You are reviving &#00e6e6<victim>'
+  stop_reliving: '&#a6a6a6[ReviveMe] You stopped reviving &#808080<victim>'
+  sucess_reliving: '&#80ff80[ReviveMe] You have successfully revived &#53ff1a<victim>'
+
+command_messages:
+  downed: '&#ff3333[ReviveMe] You have seriously injured &#cc0000<victim>'
+  revived: '&#80ff80[ReviveMe] You have successfully revived &#53ff1a<victim>'
+  kill: '&#ff3333[ReviveMe] You killed &#cc0000<victim>'
+  dont_permission: '&#ff3333[ReviveMe] You dont have permission'
+  blocked_command: '&#ff3333[ReviveMe] You re too hurt to use this command!'
+  player_no_downed: '&#ff3333[ReviveMe] This player is not down!'
+  player_no_online: '&#ff3333[ReviveMe] This player is not online!'
+
+plugin_messages:
+  config_reloaded: '&#ffbf00[ReviveMe] Configuration reloaded successfully!'
+
+disable_death_message: false
+
+status_messages:
+  waiting: 'Waiting'
+  reliving: 'Reliving'
+  no_downed: 'No downed'
+  
+time_messages:
+  second: 'second:seconds'
+  minute: 'minute:minutes'
+  hour: 'hour:hours'
+
+action_bar_messages:
+  enabled: true
+  waiting_text: '&#ffbf00❣: &#ffff99<invulnerability> &8&l┃ &#cccccc&o<status>... &8&l┃ &#cc0000☠:&#ff3333 <death_delay_time>'
+  reliving_text: '&#ffbf00❣: &#ffff99<invulnerability> &8&l┃ &#b3ffff&o<status>... &8&l┃ &#cc0000☠:&#ff3333 <death_delay_time> <bar1>'
+  auto_reviving: '<bar1>'
+  receives: 'downed,reviver,picker'
+  
+suicide_bar_message:
+  enabled: true
+  text: '&#ff3333Death in <suicideBar>'
+  
+
+scoreboard_messages:
+  enabled: true
+  receives: 'downed,reviver,picker'
+  #firsh line is title
+  waiting_score_board:
+    - '&#b3ffff&oWaiting...'
+    - ''
+    - '&#cc0000☠&#ff3333 » <death_delay_time>'
+    - ''
+    - '&#ffbf00❣&#ffff99 » <invulnerability_time>'
+    - ''
+    - '<bar1>'
+      
+  reliving_score_board:
+    - '&#b3ffff&oReliving...'
+    - ''
+    - '&#cc0000☠&#ff3333 » <death_delay_time>'
+    - ''
+    - '&#ffbf00❣&#ffff99 » <invulnerability_time>'
+    - ''
+    - '<bar1>'
+    - ''
+    - '&#b3ffffReliving: &#00e6e6<reviver>'
+
+#Valid bossbar colors: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+#Valid bossbar styles: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+boss_bar_messages:
+  enable: false
+  receives: 'downed,reviver,picker'
+  waiting_boss_bar:
+    progress_type: BossBarDeathDelay
+    text: '&#ff3333Waiting for relive...'
+    color: red
+    style: solid
+    
+  reliving_boss_bar:
+    progress_type: BossBarRelivingCount
+    text: '&#b3ffffReliving for &#00e6e6<reviver>'
+    color: blue
+    style: solid
+
+#You can create loading bars with the letters and symbols that you like the most, change their color and more. you can use as many as you like.
+#Modes RelivingCount, DeathDelay, SuicideCount
+bar_messages:
+  bar1:
+    first_char: '▌'
+    second_char: '▌'
+    first_color: '&#66ff33'
+    second_color: '&7'
+    amount: 20
+    bar: '&8&l&n|<chars>&8&l&n|'
+    holder: '<bar1>'
+    bar_mode: RelivingCount
+    
+  example_board:
+    first_char: '《'
+    second_char: '》'
+    first_color: '&a'
+    second_color: '&7'
+    amount: 15
+    bar: '&8&l&n『<chars>&8&l&n』'
+    holder: '<bar2>'
+    bar_mode: RelivingCount
+    
+  suicide_bar:
+    first_char: '☠'
+    second_char: '☠'
+    first_color: '&#ff3333'
+    second_color: '&7'
+    amount: 10
+    bar: '&#cc0000&l&n『<chars>&#cc0000&l&n』'
+    holder: '<suicideBar>'
+    bar_mode: SuicideCount
+
+#Messages that are sent in the title and subtitle of the screen
+title_messages:
+  enabled: false
+  receives: 'downed,reviver,picker'
+  waiting_title: '&#ff3333&oWaiting for reliving...'
+  waiting_subtitle: '&#cc0000Death in <death_delay_time>'
+  reliving_title: '&#b3ffffReliving for &#00e6e6<reviver>'
+  reliving_subtitle: '<bar1>'
+  
+price_messages:
+  no_has_pay: '&#ff3333You need &#cc0000<amount> <type> &#ff3333to do this!'
+
+zone_messages:
+  arg_error: '&#ff3333[Error] &7Use &#ff3333/rm zone help &7to get help.'
+  help_list_top: '&#ffbf00----Revive zones----'
+  help_list_format: '&f- &e<name>'
+  help_item: '&#ffbf00/rm zone item &e- &7Gets the item to mark the zone.'
+  help_create: '&#ffbf00/rm zone create &#ffd24d<name> &e- &7Create a zone.'
+  help_list: '&#ffbf00/rm zone list &e- &7List of created zones.'
+  help_remove: '&#ffbf00/rm zone remove &#ffd24d<name> &e- &7Delete a zone.'
+  help_speed: '&#ffbf00/rm zone speed &#ffd24d<name> <value> &e- &7Change revive speed.'
+  command_item: '&#ffbf00[ReviveMe] Left click: select pos #1; Right click: select pos #2'
+  pos1: '&#ff3333[ReviveMe] First position set to &#cc0000<pos>&#ff3333.'
+  pos2: '&#ff3333[ReviveMe] Second position set to &#cc0000<pos>&#ff3333.'
+  no_pos1: '&#ff3333[ReviveMe] You have not set the first position'
+  no_pos2: '&#ff3333[ReviveMe] You have not set the second position'
+  need_mark: '&#ff3333[ReviveMe] You must mark the zone with &#cc0000/rm item'
+  already_exist: '&#ff3333[ReviveMe] An zone with this name already exists'
+  no_exist: '&#ff3333[ReviveMe] There is no zone with that name'
+  different_world: '&#ff3333[ReviveMe] The positions are in different worlds'
+  only_player: '&#ff3333[ReviveMe] Only players can use this command'
+  sucess_created: '&#ff3333[ReviveMe] The zone has been created successfully'
+  removed_zone: '&#ff3333[ReviveMe] The area has been removed'
+  no_number: '&#ff3333[ReviveMe] The entered value is not a number'
+  succes_change_speed: '&#80ff80[ReviveMe] Changed revive speed successfully'
+  particle_enable: '&#80ff80[ReviveMe] The particles have been activated!'
+  particle_disable: '&#ff3333[ReviveMe] Particles have been disabled!'
+  particle_changed: '&#80ff80[ReviveMe] The color of the particles has been changed!'
+  particle_type_changed: '&#80ff80[ReviveMe] Particle type changed!'
+
+gps_messages:
+  gui_title: "Downed's Players"
+  
+help_messaages:
+  revive: '&#ffbf00/<label> revive &#ffd24d<player> &e- &7revive downed player.'
+  down: '&#ffbf00/<label> down &#ffd24d<player> &e- &7down player.'
+  kill: '&#ffbf00/<label> kill &#ffd24d<player> &e- &7kill player.'
+  reload: '&#ffbf00/<label> reload &e- &7reload all configuratios.'
+  suicide: '&#ffbf00/<label> suicide &e- &7commit suicide instantly.'
+  setprice: '&#ffbf00/<label> setprice revive &#ffd24d<item/xp/money> <amount> &e- &7price to revive.'
+  zone: '&#ffbf00/<label> zone help &e- &7Revive zones command list.'
+  verify: '&#ffbf00/<label> verify &e- &7Premium verification codes.'

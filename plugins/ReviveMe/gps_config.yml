@@ -1,0 +1,47 @@
+#https://gleaks.pro/attachments/reviveme-4-0-0-jar.12526/
+# gps to look for a downed player.
+BossBar_Gps:
+  target: '&a&l△'
+  left_target: '&c&l⫷'
+  right_target: '&c&l⫸'
+  size: 30
+  char_1: '&e · '
+  char_2: '&e '
+  bossbar_slyle: solid
+  bossbar_color: white
+  bossbar_progress: 0
+  separator: '&e · '
+
+Gui:
+  selected: '&7[&aSelected&7]'
+  
+  items:
+    pink_glass:
+      name: '&b '
+      material: PINK_STAINED_GLASS_PANE
+      slots: 1, 8, 10, 17, 19, 26, 28, 35, 37, 44, 46, 53
+      
+    black_glass:
+      name: '&b '
+      material: BLACK_STAINED_GLASS_PANE
+      slots: 0, 9, 18, 27, 36, 45
+      
+    prev_page:
+      name: '&7Previous page'
+      slot: 0
+      material: player_head
+      head: 6ccbf9883dd359fdf2385c90a459d737765382ec4117b04895ac4dc4b60fc
+      functions:
+      - '[prevpage]'
+    
+    next_page:
+      name: '&7Next page'
+      slot: 45
+      material: player_head
+      head: 72431911f4178b4d2b413aa7f5c78ae4447fe9246943c31df31163c0e043e0d6
+      functions:
+      - '[nextpage]'
+      
+Messages:
+  arrived: "&a[ReviveMe] You have reached your destination!"
+  no_downed: "&c[ReviveMe] There are no downed players."
