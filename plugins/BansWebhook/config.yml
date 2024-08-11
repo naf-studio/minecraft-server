@@ -74,7 +74,7 @@ unmute:
     "Reason:": "{reason}"
 
 unwarn:
-  enabled: true
+  enabled: false
   webhook-url: "webhook_url"
   webhook-title: "{player} has been unwarned!"
   webhook-thumbnail: ""
