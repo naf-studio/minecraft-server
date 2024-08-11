@@ -1,5 +1,5 @@
 enabled: true
-webhook: "https://discord.com/api/webhooks/1271807841094864978/v54OIiWMuSKo1WKizm5y0u03lrjXkimV0jApbWaxuS9Ciz4zjMfkoe9xH0k6W425LLh1"
+webhook: "webhook_url"
 embed-color: "#ffff00"
 violation-content:
   - "**Player**: %player%"
