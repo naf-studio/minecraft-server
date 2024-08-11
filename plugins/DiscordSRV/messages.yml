@@ -149,7 +149,7 @@ DiscordConsoleChannelPadding: 0
 # %error%: the reason for the error
 #           example: no permission
 #
-DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried running a command. Unfortunately, there was an error: %error%"
+DiscordChatChannelConsoleCommandNotifyErrorsFormat: "[DiscordSRV] **%user%**, you tried running a command. Unfortunately, there was an error: %error%"
 
 # Discord chat channel player list command
 # Messages used for when someone runs the playerlist command in a chat channel
