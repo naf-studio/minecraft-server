@@ -11,13 +11,13 @@ display:
   - "&r"
   - "&6◆ &eObjective:&r &7Mine 2,500 diamond ore."
   - "&6◆ &eProgress:&r &7{mining:progress}/2500 diamond ore."
-  - "&6◆ &eReward:&r &a$150,000"
+  - "&6◆ &eReward:&r &a15,000 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "DIAMOND_ORE"
 rewards:
-  - "eco give {player} 150000"
+  - "experience add {player} 15000"
 options:
   category: "extreme"
   requires: []

@@ -11,13 +11,13 @@ display:
   - "&r"
   - "&6◆ &eObjective:&r &7Break 50 ice."
   - "&6◆ &eProgress:&r &7{mining:progress}/50 ice."
-  - "&6◆ &eReward:&r &a$15,000"
+  - "&6◆ &eReward:&r &a1,500 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "ICE"
 rewards:
-  - "eco give {player} 15000"
+  - "experience add {player} 1500"
 options:
   category: "mining"
   requires: []

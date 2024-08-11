@@ -14,13 +14,13 @@ display:
   - "&7                  which way do I go?"
   - "&6◆ &eProgress:&r &7&kNOPEHAHA"
   - "&6◆ &eReward:&r &a1x Nightmare Helmet"
-  - "&7&o(Protection IV, Fire Protection III, Unbreaking III)"
+  - "&7&o(Protection IV, Unbreaking III)"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "IRON_BARS"
 rewards:
-  - "give {player} DIAMOND_HELMET 1 protection:4 fireprotection:3 unbreaking:3 name:&8&l◆_&4&lNIGHTMARE_HELMET_&8◆"
+  - "give {player} diamond_helmet[enchantments={levels:{'protection':4,'unbreaking':3}}] 1"
 options:
   category: "nightmare"
   requires: []

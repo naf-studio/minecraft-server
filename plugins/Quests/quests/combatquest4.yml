@@ -16,7 +16,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "DIAMOND_SWORD"
 rewards:
-  - "give {player} minecraft:enchanted_book 1 0 {StoredEnchantments:[{id:16,lvl:4},{id:20,lvl:2},{id:21,lvl:3}]}"
+  - "give {player} enchanted_book[stored_enchantments={levels:{'sharpness':5,'fire_aspect':2,'looting':3}}] 1"
 options:
   category: "combat"
   requires: []

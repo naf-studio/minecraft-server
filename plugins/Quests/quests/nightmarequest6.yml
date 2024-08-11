@@ -19,7 +19,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "IRON_BARS"
 rewards:
-  - "give {player} bow 1 power:4 flame:1 punch:2 unbreaking:3 name:&8&l◆_&4&lNIGHTMARE_BOW_&8◆"
+  - "give {player} bow[enchantments={levels:{'unbreaking':3,'power':4,'punch':2,'flame':1}}] 1"
 options:
   category: "nightmare"
   requires: []

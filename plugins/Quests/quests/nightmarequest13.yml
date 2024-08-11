@@ -12,13 +12,13 @@ display:
   - "&r"
   - "&6◆ &eRiddle:&r &7You understand me what I say."
   - "&6◆ &eProgress:&r &7N/A"
-  - "&6◆ &eReward:&r &a$35,000"
+  - "&6◆ &eReward:&r &a3,500 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "IRON_BARS"
 rewards:
-  - "eco give {player} 35000"
+  - "experience add {player} 3500"
 options:
   category: "nightmare"
   requires: []
