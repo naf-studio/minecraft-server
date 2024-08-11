@@ -5,7 +5,7 @@ inline-webhooks: true
 
 ban:
   enabled: true
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been banned!"
   webhook-thumbnail: ""
   webhook-color: "ff0000"
@@ -17,7 +17,7 @@ ban:
 
 mute:
   enabled: false
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been muted!"
   webhook-thumbnail: ""
   webhook-color: "ffff00"
@@ -29,7 +29,7 @@ mute:
 
 warn:
   enabled: false
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been warned!"
   webhook-thumbnail: ""
   webhook-color: "ffff00"
@@ -41,7 +41,7 @@ warn:
 
 kick:
   enabled: false
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been kicked!"
   webhook-thumbnail: ""
   webhook-color: "ff0000"
@@ -53,7 +53,7 @@ kick:
 
 unban:
   enabled: true
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been unbaned!"
   webhook-thumbnail: ""
   webhook-color: "00ff00"
@@ -64,7 +64,7 @@ unban:
 
 unmute:
   enabled: false
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been unmuted!"
   webhook-thumbnail: ""
   webhook-color: "00ff00"
@@ -75,7 +75,7 @@ unmute:
 
 unwarn:
   enabled: true
-  webhook-url: "https://discord.com/api/webhooks/1267713703281692703/8Kn3MkM0cJnlD-unVxqOH0KSB2PVyHyqfWLKrvoBDILHNnWzfhSN4Io7ROnEpcccURL1"
+  webhook-url: "webhook_url"
   webhook-title: "{player} has been unwarned!"
   webhook-thumbnail: ""
   webhook-color: "00ff00"
