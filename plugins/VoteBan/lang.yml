@@ -1,0 +1,44 @@
+RELOAD: '&a[Vote] You have successfully reloaded all configuration files.'
+FAILED_VOTE_KICK_BROADCAST: '&a[Vote] %player% &edid not receive enough votes and will not
+  be kicked from the server.'
+FAILED_VOTE_BAN_BROADCAST: '&a[Vote] %player% &edid not receive enough votes and will remain
+  playing this server.'
+FAILED_VOTE_MUTE_BROADCAST: '&a[Vote] %player% &edid not receive enough votes and will remain
+  unmuted.'
+SUCCESSFUL_VOTE_KICK_BROADCAST: '&c[Vote] &l%player% has been voted to be kicked from the
+  server. Reason: %reason%'
+SUCCESSFUL_VOTE_BAN_BROADCAST: '&c[Vote] &l%player% has been voted to be banned from the
+  server. Reason: %reason%'
+SUCCESSFUL_VOTE_MUTE_BROADCAST: '&c[Vote] &l%player% has been voted to be muted from the
+  chat. Reason: %reason%'
+VOTE_KICK_BROADCAST: '&e[Vote] There is currently a vote kick in progress for &a%player%&e.
+  If you agree this player should be kicked, type &a/addvote&e. Reason: &a%reason%'
+VOTE_BAN_BROADCAST: '&e[Vote] There is currently a vote ban in progress for &a%player%&e.
+  If you agree this player should be banned, type &a/addvote&e. Reason: &a%reason%'
+VOTE_MUTE_BROADCAST: '&e[Vote] There is currently a vote mute in progress for &a%player%&e.
+  If you agree this player should be muted, type &a/addvote&e. Reason: &a%reason%'
+SUCCESSFUL_VOTE: '&e[Vote] You have successfully added your vote for %player%.'
+VOTE_ADDED: '&e[Vote] %votedplayer% has voted for %target% to be %type%.'
+KICK_MESSAGE: |-
+  &c[Vote] You have been voted to be kicked by players of the server!
+  [Vote] Kick Reason: %reason%
+CHAT_DISABLED: '&c[Vote] Chat is currently disabled because there is a vote in progress.'
+ALREADY_VOTED: '&c[Vote] You have already voted for this.'
+SERVER_OPERATOR: '&c[Vote] You cannot ban another server operator. Please demote this player
+  first then execute this command again.'
+CANNOT_EXECUTE_THIS_PLAYER: '&c[Vote] You cannot start a vote command on: %player%'
+CANNOT_EXECUTE_YOURSELF: '&c[Vote] You cannot execute this command on yourself.'
+NOT_ACTIVE_VOTE: '&c[Vote] There is currently not a vote active.'
+ACTIVE_VOTE: '&c[Vote] There is already an active vote. Please wait for this to end before
+  creating a new one.'
+INCORRECT_USAGE: '&c[Vote] Correct Usage: %command%'
+INCORRECT_VALUE: '&c[Vote] You have entered an incorrect value for the length.'
+INCORRECT_UNIT: '&c[Vote] You have entered an incorrect value for the unit. Please enter:
+  second, minute, hour, day, month'
+NOT_BANNED: '&c[Vote] This player has not been banned from this server.'
+PLAYER_NOT_FOUND: '&c[Vote] %player% is not currently online.'
+IN_GAME_ONLY: '&c[Vote] This command can only be executed in game.'
+NO_PERMISSION: '&c[Vote] You do not have permission to execute this command.'
+ALREADY_BANNED: '&c[Vote] This player is already permanently banned from this server.'
+NOT_ENABLED: '&c[Vote] This command is not currently enabled.'
+NO_BAN_REASON: blank
