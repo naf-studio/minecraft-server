@@ -38,7 +38,8 @@ suppress-conversion-warnings: false
 #
 # What is the maximum per second a client can send (Use %pps to display their pps)
 # Use -1 to disable.
-max-pps: 800
+# max-pps: 800
+max-pps: 400
 max-pps-kick-msg: "You are sending too many packets!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
 #
 # We can also kick them if over a period they send over a threshold a certain amount of times.
