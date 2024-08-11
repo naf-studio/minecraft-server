@@ -25,7 +25,7 @@ DetailedDisableMessage: true
 LockdownOnError: true
 
 # This will be the default reason to be displayed if none is given
-DefaultReason: "none"
+DefaultReason: "blank"
 
 # Change this if your server has a different time that your users.
 # e.g.: ServerTime: 16:43 | Your Time: 13:43 | TimeDiff has to be set to -3
@@ -101,12 +101,14 @@ UUID-Fetcher:
 # You can also use non-AdvancedBan-Commands like 'broadcast' or 'clear %PLAYER%
 # Variables: %PLAYER%, %REASON%, %COUNT%
 WarnActions:
-  3: "kick %PLAYER% &c&oYou have received your 3rd warning!"
-  4: "tempban %PLAYER% 30m &c&oYou have received your 4th warning!"
-  5: "tempban %PLAYER% 5h &c&oYou have received your 5th warning!"
-  6: "tempban %PLAYER% 7d &c&oYou have received your 6th warning!"
-  7: "tempban %PLAYER% 1mo &c&oYou have received your %COUNT%th warning!"
-  10: "ban %PLAYER% &c&oYou have received your 10th warning!"
+  3: "kick %PLAYER% You have received your 3rd warning!"
+  4: "kick %PLAYER% You have received your 4th warning!"
+  5: "tempban %PLAYER% 5m You have received your 5th warning!"
+  6: "tempban %PLAYER% 15m You have received your 6th warning!"
+  7: "tempban %PLAYER% 30m You have received your 7th warning!"
+  8: "tempban %PLAYER% 1h You have received your 8th warning!"
+  9: "tempban %PLAYER% 1d You have received your 9th warning!"
+  10: "ban %PLAYER% You have received your 10th warning!"
 
 # Here you can create permission-nodes for max-punishment-duration.
 # The permission "ab.tempban.dur.1" would allow the player to ban max. for 600sec = 10min
