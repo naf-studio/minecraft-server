@@ -13,18 +13,17 @@
 # replaced with the current amount of warns the player already received
 # Example usage: /ban Leoko @ExampleLayout
 Message:
-  ExampleLayout:
-    - '&7You have been &cBANNED &7for hacking'
-    - '&c&oBanned by %OPERATOR%'
-    - '&7'
-    - "&cIt seems like you are using a"
-    - "&chacked client please disable it!"
-    - '&7'
-    - "&cUnban in &8» &7%DURATION%"
-    - '&7Sorry for this inconvenience!'
-    - '&7'
-    - '&7Unban application in Discord'
-    - "&eDiscord &8» &9&ndsc.gg/nafd"
+  hackclient:
+  - '&cYOU HAVE BEEN BANNED!'
+  - ''
+  - "&rIt seems like you are using a"
+  - "&rhacked client please disable it!"
+  - ''
+  - "&rBanned by&8: &7%OPERATOR%"
+  - "&rReason&8: &7%REASON%"
+  - "&rDuration&8: &7%DURATION%"
+  - ''
+  - '&rPlease join our Discord &9dsc.gg/nafd&r for more information!'
   # ExampleLayout2:
   #   - '%PREFIX% &7Banned for offensive language'
   #   - '&7'
@@ -36,20 +35,20 @@ Message:
 # You can also combine this with MessageLayouts like "/tempban Leoko #ExampleLayout @Hacking"
 Time:
   ExampleLayout:
-    - '1m'
-    - '2m'
-    - '3m'
-    - '5m'
-    - '10m'
-    - '30m'
-    - '1h'
-    - '2h'
-    - '3h'
-    - '5h'
-    - '1d'
-    - '2d'
-    - '3d'
-    - '5d'
-    - '1w'
-    - '1mo'
-    - 'perma'
+  - '1m'
+  - '2m'
+  - '3m'
+  - '5m'
+  - '10m'
+  - '30m'
+  - '1h'
+  - '2h'
+  - '3h'
+  - '5h'
+  - '1d'
+  - '2d'
+  - '3d'
+  - '5d'
+  - '1w'
+  - '1mo'
+  - 'perma'
