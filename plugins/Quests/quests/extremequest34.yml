@@ -11,13 +11,13 @@ display:
   - "&r"
   - "&6◆ &eObjective:&r &7Mine 25,000 stone."
   - "&6◆ &eProgress:&r &7{mining:progress}/25000 stone."
-  - "&6◆ &eReward:&r &a$50,000"
+  - "&6◆ &eReward:&r &a5,000 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "STONE"
 rewards:
-  - "eco give {player} 50000"
+  - "experience add {player} 5000"
 options:
   category: "extreme"
   requires: []

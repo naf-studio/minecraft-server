@@ -12,13 +12,13 @@ display:
   - "&r"
   - "&6◆ &eRiddle:&r &7I have feathers and I can FLY!"
   - "&6◆ &eProgress:&r &7N/A"
-  - "&6◆ &eReward:&r &a$25,000"
+  - "&6◆ &eReward:&r &a2,500 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "IRON_BARS"
 rewards:
-  - "eco give {player} 25000"
+  - "experience add {player} 2500"
 options:
   category: "nightmare"
   requires: []

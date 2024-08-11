@@ -10,13 +10,13 @@ display:
   - "&r"
   - "&6◆ &eObjective:&r &7Earn 50 experience levels."
   - "&6◆ &eProgress:&r &7{misc:progress}/50 experience levels."
-  - "&6◆ &eReward:&r &a$30,000"
+  - "&6◆ &eReward:&r &a3,000 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "minecraft:experience_bottle"
 rewards:
-  - "eco give {player} 30000"
+  - "experience add {player} 3000"
 options:
   category: "misc"
   requires: []
