@@ -12,22 +12,22 @@
 
 #Permission for injured players to be revived.
 revivable_player_permission:
-  enabled: true
+  enabled: false
   permission: 'reviveme.revivable'
 
 #Permission players need to be able to revive a wounded
 reviver_player_permission:
-  enabled: true
+  enabled: false
   permission: 'reviveme.reviver'
 
 #Permission that an injured person needs so that they can take with right click
 pickable_player_permission:
-  enabled: true
+  enabled: false
   permission: 'reviveme.pickable'
 
 #Permission that a player needs to be able to take others on his shoulders
 picker_player_permission:
-  enabled: true
+  enabled: false
   permission: 'reviveme.picker'
 
 #Permission the player needs to be knocked down
@@ -37,7 +37,7 @@ downeable_player_permission:
 
 #Permission that the wounded person needs so that they can rob him with right click + crouch
 stealable_player_permission:
-  enabled: false
+  enabled: true
   permission: 'reviveme.stealable'
 
 #Permission needed by the thief to open the injured person's inventory with right click + crouch
