@@ -18,7 +18,7 @@ maintenance-enabled: false
 # If you put in multiple entries, one of them will be chosen randomly on every ping.
 # If running an endtimer, the time left can be displayed by including '%TIMER%' in a pingmessage (also works in playercount(-hover) message).
 pingmessages:
-- <red>The server is CURRENTLY UNDER MAINTENANCE!<br><reset>Join our Discord <blue>dsc.gg/nafd<reset> for more information!
+- <red>             CURRENTLY UNDER MAINTENANCE!<br><reset>Please join our Discord <blue>dsc.gg/nafd<reset> for more info!
 # - "Other entry"
 enable-pingmessages: true
 
@@ -53,7 +53,7 @@ custom-maintenance-icon: false
 
 # If set to true, players with the 'maintenance.joinnotification' permission will receive a message,
 # that a player tried to join the server while maintenance is enabled.
-send-join-notification: false
+send-join-notification: true
 
 # Set this to false if you do not want players to be kicked when you enable maintenance (new connections will still be blocked).
 # ... I don't know why you would want that, but you can disable it. :p
@@ -71,21 +71,20 @@ language: en
 # If enabled and the server is restarted while running an endtimer, the timer will be continued after the restart.
 # If the timer ends while the server is offline, maintenance will be disabled as soon as the server starts again.
 continue-endtimer-after-restart:
-  enabled: false
+  enabled: true
   # This value is set everytime an endtimer is started, cancelled or ended.
   # Do not manually change this value.
   end: 0
 
 # If using the timer command: In what intervalls before enabling/disabling maintenance there will be a broadcast.
 timer-broadcast-for-seconds:
-- 1200
-- 900
 - 600
 - 300
+- 180
 - 120
 - 60
 - 30
-- 20
+- 15
 - 10
 - 5
 - 4
