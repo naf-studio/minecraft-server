@@ -9,7 +9,10 @@ settings:
   permissions-file: permissions.yml
   plugin-profiling: false
   query-plugins: true
-  shutdown-message: §4Server closed!§r Please join our Discord §9dsc.gg/nafd§r for more information!
+  shutdown-message: |-
+    §cSERVER CLOSED!
+    
+    §rPlease join our Discord §9dsc.gg/nafd§r for more information!
   update-folder: update
   use-map-color-cache: true
   warn-on-overload: true

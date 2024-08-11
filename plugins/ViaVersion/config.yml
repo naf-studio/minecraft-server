@@ -20,11 +20,18 @@ block-versions: ["<1.20"]
 # List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
 block-protocols: []
 # Change the blocked disconnect message
-block-disconnect-msg: "You are using an unsupported Minecraft version!\n&r Support minecraft version &41.20.x -> 1.21.x&r!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+block-disconnect-msg: |-
+  &cUNSUPPORTED MINECRAFT VERSION!
+  &rPlease use version &41.20.x -> 1.21.x
+
+  &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 # If you use ProtocolLib, we can't reload without kicking the players.
 # (We don't suggest using reload either, use a plugin manager)
 # You can customize the message we kick people with if you use ProtocolLib here.
-reload-disconnect-msg: "Server reload, please rejoin again!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+reload-disconnect-msg: |-
+  &cSERVER RELOADED!
+
+  &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 # We warn when there's an error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: false
 #
@@ -40,7 +47,10 @@ suppress-conversion-warnings: false
 # Use -1 to disable.
 # max-pps: 800
 max-pps: 400
-max-pps-kick-msg: "You are sending too many packets!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+max-pps-kick-msg: |-
+  &cSENDING TOO MANY PACKET!
+
+  &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 #
 # We can also kick them if over a period they send over a threshold a certain amount of times.
 #
@@ -53,7 +63,10 @@ tracking-warning-pps: 120
 # This can never be higher than "tracking-period"?
 tracking-max-warnings: 4
 # The kick message sent if the user hits the max packets per second.
-tracking-max-kick-msg: "You are sending too many packets, :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+tracking-max-kick-msg:  |-
+  &cSENDING TOO MANY PACKET!
+
+  &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 #
 #----------------------------------------------------------#
 #                 MULTIPLE VERSIONS OPTIONS                #

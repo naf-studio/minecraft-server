@@ -27,12 +27,29 @@ commands:
   - /skill
   tab-complete: 0
 messages:
-  outdated-client: "&4Outdated client!&r Please use version &41.20.x -> 1.21.x&r :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
-  outdated-server: "&4Outdated server!&r I'm still on version &41.21&r :(\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
-  restart: "&4Server is restarting!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
-  server-full: "&4The server is full!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
-  unknown-command: '&4[System] Unknown command.&r Type "/help" for help.'
-  whitelist: "&4You are not whitelisted on this server!\n\n&rPlease join our Discord &9dsc.gg/nafd&r for more information!"
+  outdated-client: |-
+    &cOUTDATED CLIENT!
+    &rPlease use version &41.20.x -> 1.21.x
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  outdated-server: |-
+    &cOUTDATED SERVER!
+    &rServer still on version &41.21
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  restart: |-
+    &cSERVER IS RESTARTING!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  server-full: |-
+    &cSERVER IS FULL!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  unknown-command: '&4[System] Unknown command. Type "/help" for help.'
+  whitelist: |-
+    &cYOU ARE NOT WHITELISTED!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 players:
   disable-saving: false
 settings:
