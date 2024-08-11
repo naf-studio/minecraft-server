@@ -20,7 +20,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "SLIME_BALL"
 rewards:
-  - "xp give {player} 10000"
+  - "experience add {player} 10000"
 options:
   category: "misc"
   requires: []

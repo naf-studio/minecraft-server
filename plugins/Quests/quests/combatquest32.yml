@@ -17,7 +17,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "GHAST_TEAR"
 rewards:
-  - "give {player} EXPERIENCE_BOTTLE 512"
+  - "give {player} minecraft:experience_bottle 512"
 options:
   category: "combat"
   requires: []

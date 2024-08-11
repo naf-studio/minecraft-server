@@ -16,7 +16,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "LEATHER_BOOTS"
 rewards:
-  - "xp give {player} 2500"
+  - "experience add {player} 2500"
 options:
   category: "misc"
   requires: []

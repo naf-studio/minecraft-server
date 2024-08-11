@@ -28,7 +28,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "TORCH"
 rewards:
-  - "xp give {player} 100"
+  - "experience add {player} 100"
 options:
   category: "building"
   requires: []

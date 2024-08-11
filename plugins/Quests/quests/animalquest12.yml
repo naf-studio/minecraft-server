@@ -16,7 +16,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "COD"
 rewards:
-  - "xp give {player} 1000"
+  - "experience add {player} 1000"
 options:
   category: "animal"
   requires: []

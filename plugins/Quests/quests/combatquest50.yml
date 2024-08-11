@@ -16,7 +16,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "DIAMOND_SWORD"
 rewards:
-  - "xp give {player} 600"
+  - "experience add {player} 600"
 options:
   category: "combat"
   requires: []

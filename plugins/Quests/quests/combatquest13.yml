@@ -17,7 +17,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "STRING"
 rewards:
-  - "give {player} EXPERIENCE_BOTTLE 32"
+  - "give {player} minecraft:experience_bottle 32"
 options:
   category: "combat"
   requires: []
