@@ -18,7 +18,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "WHITE_TULIP"
 rewards:
-  - "xp give {player} 500"
+  - "experience add {player} 500"
 options:
   category: "gathering"
   requires: []

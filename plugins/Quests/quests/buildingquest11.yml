@@ -23,7 +23,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "BOOK"
 rewards:
-  - "xp give {player} 200"
+  - "experience add {player} 200"
 options:
   category: "building"
   requires: []

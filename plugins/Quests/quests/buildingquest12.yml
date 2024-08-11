@@ -18,7 +18,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "GLASS"
 rewards:
-  - "xp give {player} 2000"
+  - "experience add {player} 2000"
 options:
   category: "building"
   requires: []

@@ -14,7 +14,7 @@ display:
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
-  type: "EXPERIENCE_BOTTLE"
+  type: "minecraft:experience_bottle"
 rewards:
   - "eco give {player} 25000"
 options:
