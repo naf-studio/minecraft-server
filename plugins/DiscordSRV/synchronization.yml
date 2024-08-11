@@ -14,7 +14,7 @@
 #                             example: 4988
 # PlaceholderAPI placeholders are supported for the values
 #
-NicknameSynchronizationEnabled: false
+NicknameSynchronizationEnabled: true
 NicknameSynchronizationCycleTime: 3
 NicknameSynchronizationFormat: "%displayname%"
 
