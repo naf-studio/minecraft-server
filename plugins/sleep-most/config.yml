@@ -60,6 +60,7 @@ sleep:
     non-sleeping-clock-animation: false
     dynamic-animation-speed: true
     skip-msg-audience: all
+    gsit-sleep-cmd: true
   
   limbo:
     enabled: false
