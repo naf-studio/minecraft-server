@@ -23,8 +23,7 @@ TradeSystem:
   Allowed_GameModes:
   - SURVIVAL
   - CREATIVE
-  Blocked_Worlds:
-  - limbo
+  Blocked_Worlds: []
   
   Allowed_Regions:
     # Valid modes: Blacklist, Whitelist
