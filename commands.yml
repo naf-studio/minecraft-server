@@ -3,3 +3,5 @@ ignore-vanilla-permissions: false
 aliases:
   ping:
   - spark ping
+  tps:
+  - spark tps
