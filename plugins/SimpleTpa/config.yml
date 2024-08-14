@@ -115,8 +115,7 @@ Deny-Button-Description: "&6Click here to &cDENY &6the tp request!"
 
 # If you want to disable simpletpa for some worlds, then you can add them by adding - 'NameOfTheWorld'
 #Disabled Worlds:
-disabled-worlds:
-  - 'limbo'
+disabled-worlds: []
 
 # If you set anything to true, you will disable it.
 # B A C K    S E T T I N G S
