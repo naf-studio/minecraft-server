@@ -82,9 +82,9 @@ Anti Border Hopping:
 # Invisibility -> Invisibility potions, defaults to false as it's a vanilla feature
 Disable:
   Fly: true
-  GameMode: true
+  GameMode: false
   Disguise: true
-  GodMode: true
+  GodMode: false
   # Makes player fall down if they're tagged while elytra gliding
   Elytra: false
   Invisibility:
@@ -174,6 +174,9 @@ Tagged In Combat:
       Whitelist: true
       Command List:
         - 'tell'
+        - 'msg'
+        - 'tps'
+        - 'ping'
         - 'combattag'
   Commands On Tag:
     - '!CONSOLE examplecommand'
@@ -253,8 +256,8 @@ Kill Abuse:
   # Possible variables are <player> and <victim>
   Commands on Abuse:
     - 'kick <player> &cKill Abuse Is Not Allowed!'
-  Respawn Protection: 3
-  Teleport Protection: 3
+  Respawn Protection: 300
+  Teleport Protection: 5
   WorldGuard Exclusions:
     - 'example'
   Command Cooldown After Death:
@@ -275,7 +278,7 @@ Player Kills:
   Money Penalty: 0.0
   Money Steal: false
   Death Effects:
-    Lightning: false
+    Lightning: true
   # Commands to execute on kill (<player> is the killer, <victim> is the victim, <item> is the item material in hand)
   Commands On Kill:
     - 'examplecommand <player> killed <victim> with <item>'
