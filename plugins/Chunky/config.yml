@@ -3,7 +3,7 @@
 
 version: 2
 language: en
-continue-on-restart: false
+continue-on-restart: true
 force-load-existing-chunks: false
 silent: false
 update-interval: 1

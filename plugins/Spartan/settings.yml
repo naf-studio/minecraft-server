@@ -1,0 +1,26 @@
+Punishments:
+  broadcast_on_punishment: true
+Logs:
+  log_file: true
+  log_console: true
+Notifications:
+  individual_only_notifications: false
+  enable_notifications_on_login: false
+  awareness_notifications: true
+  message_clickable_command: /teleport {player}
+Important:
+  max_supported_player_latency: 5000
+  op_bypass: false
+  server_name: ''
+  bedrock_client_permission: false
+  bedrock_player_prefix: BE_
+  enable_developer_api: true
+  enable_npc: true
+  enable_watermark: true
+Detections:
+  ground_teleport_on_detection: true
+  fall_damage_on_teleport: false
+Discord:
+  webhook_hex_color: ff0000
+  checks_webhook_url: ''
+  punishments_webhook_url: ''

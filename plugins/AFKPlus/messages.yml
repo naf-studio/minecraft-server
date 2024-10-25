@@ -1,46 +1,71 @@
-ConfigVersion: 2
+ConfigVersion: 5
 
-PrimaryColor: "&6"
-SecondaryColor: "&3"
+PrimaryColor: '&6'
+SecondaryColor: '&3'
 
 #The language used for time values like "60 minutes from now"
 #Accepted values can be found at http://www.ocpsoft.org/prettytime/#i18n
 #Please use the abbreviation next to the language e.g. DE for German or FR for french
-PrettyTimeLocale: "en"
+PrettyTimeLocale: en
 
 #These are sent to all players when AFK starts and stops
 Broadcast:
-  Start: "&8[&6AFK&8] &s{PLAYER}&p is now AFK"
+  Start: '&8[&6AFK&8] &s{PLAYER}&p is now AFK'
   #You may also add a {TIME} variable that will be replaced by how long the player was AFK
-  Stop: "&8[&6AFK&8] &s{PLAYER}&p is no longer AFK"
+  Stop: '&8[&6AFK&8] &s{PLAYER}&p is no longer AFK'
+
+#These messages are sent to the individual who's AFK status is changing
+Self:
+  Start: '&8[&6AFK&8] &sYou&p are now AFK'
+  #You may also add a {TIME} variable that will be replaced by how long the player was AFK
+  Stop: '&8[&6AFK&8] &sYou&p are no longer AFK'
 
 Updater:
-  NoUpdate: "&8[&6AFK&8] &pThere is no update available"
-  UpdateFound: "&8[&6AFK&8] &pThere is an update available for AFKPlus"
-  UpdateDownloading: "&8[&6AFK&8] &pAn update was found and is being downloaded, it will be installed on the next server restart"
+  NoUpdate: '&8[&6AFK&8] &pThere is no update available'
+  UpdateFound: '&8[&6AFK&8] &pThere is an update available for AFKPlus'
+  UpdateDownloading: '&8[&6AFK&8] &pAn update was found and is being downloaded, it
+    will be installed on the next server restart'
 
+Reload: '&pConfig files have been reloaded, any errors will be printed to the console'
+
+#These strings are used in the "/afkplus player name" commands
 Player:
-  AFK: "&8[&6AFK&8] &s{PLAYER}&p has been AFK since &s{TIME}"
-  NotAFK: "&8[&6AFK&8] &s{PLAYER}&p is not AFK"
+  AFK: '&8[&6AFK&8] &s{PLAYER}&p has been AFK since &s{TIME}'
+  NotAFK: '&8[&6AFK&8] &s{PLAYER}&p is not AFK'
+  NotOnline: '&s{PLAYER}&p is not currently online'
+  Stats: '&pThey have spent &s{TIME}&p AFK in total'
+  #The current permission assigned to this player will be appended to this string
+  Permission: '&pPlayers permission: &s'
+  #These two strings will only be shown if AggressiveAFKDetection is enabled
+  Active: '&pThis player is not exhibiting suspicious behaviour according to aggressive
+    AFK detection'
+  Inactive: '&sThis player has been behaving in a way that MIGHT mean they are trying
+    to avoid AFK detection, they have been marked as inactive'
 
 #Sent when the player is AFK long enough for a warning to be sent
-Warning: "&8[&6AFK&8]&p You will be kicked for AFK soon!"
+Warning: '&8[&6AFK&8]&p You will be kicked for AFK soon!'
 
 Help:
-  Help: "&8[&6AFK&8] The following is a list of commands and their uses:\n"
-  AFKPlus: "\"/afkplus\"\n
-  Shows plugin information"
-  AFKPlusHelp: "\"/afkplus [help]\"\n
-  Displays all of the commands and their uses"
-  AFKPlusUpdate: "\"/afkplus [update]\"\n
-  Checks for and installs any available update"
-  AFKPlusPlayer: "\"/afkplus player [PlayerName]\"\n
-  Tells you the AFK status of the player, if they are AFK it will also tell you how long they have been AFK"
-  AFK: "\"/afk [PlayerName]\"\n
-  Without a players name this will toggle your AFK status\n
-  With a name it will attempt to toggle that players AFK status"
+  Help: |
+    &8[&6AFK&8] The following is a list of commands and their uses:
+  AFKPlus: |-
+    "/afkplus"
+     Shows plugin information
+  AFKPlusHelp: |-
+    "/afkplus [help]"
+     Displays all of the commands and their uses
+  AFKPlusUpdate: |-
+    "/afkplus [update]"
+     Checks for and installs any available update
+  AFKPlusPlayer: |-
+    "/afkplus player [PlayerName]"
+     Tells you the AFK status of the player, if they are AFK it will also tell you how long they have been AFK
+  AFK: |-
+    "/afk [PlayerName]"
+     Without a players name this will toggle your AFK status
+     With a name it will attempt to toggle that players AFK status
 
 Error:
-  MustBePlayer: "&8[&6AFK&8] &sYou must be player to do this!"
-  PlayerNotFound: "&8[&6AFK&8] &sPlayer not found"
-  NotPermitted: "&8[&6AFK&8] &sYou aren't permitted to do this"
+  MustBePlayer: '&8[&6AFK&8] &sYou must be player to do this!'
+  PlayerNotFound: '&8[&6AFK&8] &sPlayer not found'
+  NotPermitted: '&8[&6AFK&8] &sYou aren''t permitted to do this'
