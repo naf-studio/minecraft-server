@@ -385,8 +385,8 @@ UnknownCommandMessage: "&b[DiscordSRV] That command doesn't exist!"
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
 # DiscordChatChannelServerShutdownMessage: message to be sent when server shuts down; leave blank to disable
 #
-DiscordChatChannelServerStartupMessage: ""
-DiscordChatChannelServerShutdownMessage: ""
+DiscordChatChannelServerStartupMessage: ":white_check_mark: **Server has started**"
+DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped**"
 
 # Server watchdog message
 #
@@ -401,7 +401,7 @@ DiscordChatChannelServerShutdownMessage: ""
 #                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
 #                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
-ServerWatchdogMessage: ""
+ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked in %timeout% seconds :fire::bangbang:"
 
 # Account link messages
 # These are messages used when accounts are linked

@@ -34,7 +34,7 @@ ProxyPassword: "PASSWORD"
 #
 # The first part of channel pairs is not the Discord channel name!
 # Run "/discord reload" after changing this option to apply
-Channels: {"global": "1129081325442310315", "link": "1268169558674636842"}
+Channels: {"global": "1129081325442310315", "link": "1268169558674636842", "watchdog": "1299323110410948630", "status": "1299323110410948630"}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
 DiscordConsoleChannelId: "000000000000000000"
