@@ -11,7 +11,7 @@ settings:
   query-plugins: true
   shutdown-message: |-
     §cSERVER CLOSED!
-    
+
     §rPlease join our Discord §9dsc.gg/nafd§r for more information!
   update-folder: update
   use-map-color-cache: true
