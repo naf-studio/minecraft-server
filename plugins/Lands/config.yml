@@ -45,6 +45,7 @@ general:
   # Worlds where players should be able to claim.
   # This list also supports setting an optional player claims height per world.
   # Example: world:30:319 -> this will configure the world 'world' with a claim height from 30 to 319.
+  # NOTE: Minimum height can't be lower than your server's min height and maximum height can't be higher than your servers maximum height.
   # NOTE: The claim height of admin lands will always be maxed out.
   # NOTE: This setting requires server reload / restart.
   claim-worlds_list:
@@ -271,28 +272,44 @@ land:
       enabled_3: true
       # Cost to repositon the mainblock after land creation.
       reposition-costs: 0
-    # Maximum land name length
-    # The maximum possible length is 80 when using MySQL and 32 when using SQLite (including color codes).
-    # How to filter names: https://github.com/Angeschossen/General/wiki/Messages#filter-swear-words-and-forbidden-names
-    name-length: 24
-    # Should colors be allowed in land and nation names?
-    # Disabling this option at a later time, will also remove color from existing lands and nations.
-    color_2: true
-    # Should land names be allowed to include formatting, such as bold, underlined etc.?
-    format: true
-    # Should spaces be allowed in land and nation names?
-    # Spaces will be replaced with an underscore, when being displayed as a command parameter.
-    # Disabling this option at a later time, will also remove spaces from existing lands and nations.
-    spaces: false
-    # Should numbers be allowed in land and nation names?
-    numbers: true
+
     # Claim a radius of chunks at land creation. These initial claims won't cost the land anything.
     # NOTE: 0 = only the chunk in which the player currently stands.
     # NOTE: This value can't be higher than your servers view distance.
     claim-radius: 1
 
-  # Set the minimum Euclidean distance in chunks (16 blocks).
-  # Players can bypass this restriction, if their role has the LAND_CLAIM_BORDER flag in the neighboring land.
+  # Land name options
+  name:
+    # Should spaces be allowed in land names?
+    # Spaces will be replaced with an underscore, when being displayed as a command parameter.
+    # Disabling this option at a later time, will also remove spaces from existing lands.
+    spaces: false
+    # Maximum land name length
+    # The maximum possible length is 80 when using MySQL and 32 when using SQLite (including color codes).
+    # How to filter names: https://github.com/Angeschossen/General/wiki/Messages#filter-swear-words-and-forbidden-names
+    length_2: 24
+    # Should colors be allowed in land names?
+    # Disabling this option at a later time, will also remove color from existing lands.
+    color_2: true
+    # Should land names be allowed to include formatting, such as bold, underlined etc.?
+    format: true
+    # Should numbers be allowed in land names?
+    numbers: true
+    # Allow only latin letters for land names?
+    # If enabled: They won't be able to use chinese letters etc.
+    only-latin: true
+
+    # Rename settings
+    # Command: /lands rename
+    rename:
+      # Costs to rename a land.
+      costs_5: 10000.0
+      # Cooldown to rename the land.
+      # Bypass permission: lands.bypass.cooldown.rename_land
+      cooldown_rename_time: 1d
+
+  # Set the minimum Euclidean distance in chunks (16 blocks). Players won't be able to claim in this buffer zone,
+  # unless their role has the LAND_CLAIM_BORDER flag in the neighboring land.
   chunk-distance:
     # Available distance modes: SQUARE, EUCLIDEAN, DIAMOND_SHAPE
     # SQUARE - checks chunks around the chunk that is being claimed in a square shape
@@ -409,15 +426,6 @@ land:
     # NOTE: This setting required server reload / restart.
     mute-global: false
 
-  # Rename settings
-  # Command: /lands rename
-  rename:
-    # Costs to rename a land.
-    costs_5: 0.0
-    # Cooldown to rename the land.
-    # Bypass permission: lands.bypass.cooldown.rename
-    rename-cooldown_time: 15m
-
   # Fly Settings (Flags can be found in the roles section)
   fly:
     # If you disable flight control, the FLY flag from roles.yml won't have any effect.
@@ -513,6 +521,8 @@ land:
       tag_time: 0s
       # Should a player be killed, if they log out while having a combat tag set on them?
       quit-kill: false
+      # Remove the combat tag upon death?
+      death-remove: true
     # Should players, which are members in a common land, be able to fight in wilderness?
     # NOTE: This option requires server restart / reload.
     ally-wilderness: true
@@ -553,9 +563,9 @@ chunk:
   # Increase cost per chunk claim.
   cost-increase:
     # Available modes:
-    # Percentage: For example putting 10% per claim on top of the normal claim price per claim.
-    # Add: For example adding 10 dollars to the claim cost every time the land claims a chunk.
-    # Default: Disables this option
+    # PERCENTAGE: For example putting 10% per claim on top of the normal claim price per claim.
+    # ADD: For example adding 10 dollars to the claim cost every time the land claims a chunk.
+    # DEFAULT: Disables this option.
     mode: 'DEFAULT'
     value: 2
     # Set the maximum claim cost.
@@ -566,6 +576,7 @@ chunk:
     # Available modes:
     # PERCENTAGE: For example giving them 10% from the buy price back.
     # ADD: For example giving them just 10 dollars back.
+    # DEFAULT: Disables this option.
     mode_2: 'PERCENTAGE'
     # Set this value to 0, if you want to disable this.
     # If you use claimblocks (/lands admin player <player> give), this value just needs to be greater than 0 to give them
@@ -688,22 +699,15 @@ unstuck:
 # When using this make sure to set the spawn of each world using /setworldspawn.
 random-teleport:
   # Worlds where players should be able to use /lands wild.
-  # You can use '*' as a entry, to allow all worlds.
-  # NOTE: World names are case-sensitive. If you don't enter them correctly, issues might occur.
+  # You can use '*' as an entry, to allow all worlds.
+  # Entry format: worldName:minDistance:maxDistance
+  # The minimum and maximum distance is measured from the world spawn (/setworldspawn).
   wild-worlds_list:
     - world
 
   # Should permissions for random teleportation be per world based instead of just lands.command.wild?
   # Example: world 'A': lands.command.wild.a, world 'B': lands.command.wild.b
   world-perms: false
-
-  distance:
-    # Max distance from world spawn
-    # NOTE: YOU NEED TO SET THE WOLRD SPAWN (MIDDLE) TO LET THIS WORK PROPERLY: /setworldspawn
-    # This setting requires server reload / restart.
-    max: 30000
-    # Set the minimum distance between the players current position and the teleport destination.
-    min: 800
 
   # Players will be random teleported in this world, if they're currently not in a world defined above.
   # NOTE: The world name is case-sensitive.
@@ -973,9 +977,13 @@ database:
     username_3: "default"
     password_3: "password"
     # This should be the name that you configured for this server in your BungeeCord or Velocity config.
+    # NOTE: If you're using mutlipaper, this option will be overridden by multipaper's own name decision.
+    # NOTE: This option can be overriden in server-name.yml to allow you copying this file (config.yml) to other servers without adjust this section.
     server-name: "server-1"
     # This option should only be enabled on ONE of the servers that are connected to the same Lands database and Redis.
     # If true: This server will execute tasks, such as upkeep, taxes etc. for all lands across all servers that are connected to the same Lands database and Redis.
+    # NOTE: If you're using multipaper, make sure to provide the actual name of the multipaper instance that should be the master server (not the multipaper master).
+    # NOTE: This option can be overriden in server-name.yml to allow you copying this file (config.yml) to other servers without adjust this section.
     master: false
 
   # Use SQLite for the database. Doesn't require a database server.

@@ -43,6 +43,9 @@ messages:
     # Every message sent by the plugin will use the players client locale if a translation is available.
     # If disabled, the config locale will be used instead.
     perIssuerLocale: true
+    # How dates are formatted by the plugin in messages. Format is explained here:
+    # https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
+    dateFormat: dd MMMM yyyy
 
 ############
 # Database #
@@ -101,10 +104,17 @@ commands:
         list: 
         - steve
         - owner
+    # To enable per skin permissions you must agree to these rules:
+    # - Do not monetize players being able to use their own skin
+    # - Do not force players to steve skins and make them pay to use their own skin
+    # - You can charge them for custom skins, but not their own skin
+    # If you agree, set this to: 'I will follow the rules'
+    perSkinPermissionsConsent: ''
     # Allows the usage of per-skin permission.
     # Example: skinsrestorer.skin.xknat OR skinsrestorer.skin.Pistonmaster
-    # with "skinsrestorer.ownskin" players can run /skin set %playerusername%.
+    # with "skinsrestorer.ownskin" players can run /skin set <their own name>.
     # [!] Only enable if you have set up permissions properly and know what you are doing.
+    # [!] This option only works if 'commands.perSkinPermissionsConsent' is consented to.
     perSkinPermissions: false
     # How many commands to store in the player's command history.
     # This is used for the /skin undo command.
@@ -137,6 +147,10 @@ commands:
 
 # Control what skins appear in the /skins GUI
 gui:
+    # Control what skin is displayed when a player does not have permission for a skin.
+    # This is the end part of the skin texture URL.
+    # You can obtain the texture URL from /sr info skin <skinName>
+    notUnlockedSkin: c10591e6909e6a281b371836e462d67a2c78fa0952e910f32b41a26c48c1757c
     # Control custom skins in the /skins GUI
     custom:
         # Whether custom skins are enabled in the /skins GUI
