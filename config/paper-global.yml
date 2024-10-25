@@ -57,22 +57,22 @@ logging:
 messages:
   kick:
     authentication-servers-down: |-
-        <red>AUTHENTICATION SERVERS ARE DOWN!</red>
-        
-        Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
+      <red>AUTHENTICATION SERVERS ARE DOWN!</red>
+
+      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
     connection-throttle: |-
-        <red>CONNECTION THROTTLE!</red>
-        Please wait before reconnecting
-        
-        Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
+      <red>CONNECTION THROTTLE!</red>
+      Please wait before reconnecting
+
+      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
     flying-player: |-
-        <red>FLYING IS NOT ALLOWED!</red>
-        
-        Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
+      <red>FLYING IS NOT ALLOWED!</red>
+
+      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
     flying-vehicle: |-
-        <red>FLYING IS NOT ALLOWED!</red>
-        
-        Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
+      <red>FLYING IS NOT ALLOWED!</red>
+
+      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
   no-permission: <red>I'm sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.
   use-display-name-in-quit-message: false
