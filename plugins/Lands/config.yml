@@ -303,7 +303,7 @@ land:
     # Command: /lands rename
     rename:
       # Costs to rename a land.
-      costs_5: 10000.0
+      costs_5: 0.0
       # Cooldown to rename the land.
       # Bypass permission: lands.bypass.cooldown.rename_land
       cooldown_rename_time: 1d
