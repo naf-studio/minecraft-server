@@ -591,13 +591,13 @@ discord-webhook:
   # The section for the Discord Webhook alerts
   alerts:
     # Whether or not Discord Webhook Alerts should be enabled
-    enabled: false
+    enabled: true
     # Paste the URL to your webhook here. For how to create a webhook, please see https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
     url: 'insert-webhook-url-here'
     # The avatar for the webhook
     avatar: 'https://i.imgur.com/JPG1Kwk.png'
     # Thumbnail for the webhook
-    thumbnail: 'http://cravatar.eu/avatar/%name%/64.png'
+    thumbnail: 'https://mc-heads.net/avatar/%skinsrestorer_texture_id_or_steve%.png/64'
     # Colors for the webhook (use a website like https://www.rapidtables.com/web/color/RGB_Color.html to pick colors)
     color-r: 255
     color-g: 255
@@ -611,18 +611,18 @@ discord-webhook:
     # Content will send text outside of the embed, so you can tag roles or people for example.
     content: ''
     information-field: false
-    client-version-field: true
     client-brand-field: true
+    client-version-field: true
     server-name-field: false
     description-field: false
     location-field: true
     ping-tps-field: true
   punishments:
     # Same settings and explanations as above
-    enabled: false
+    enabled: true
     url: 'insert-webhook-url-here'
     avatar: 'https://i.imgur.com/JPG1Kwk.png'
-    thumbnail: 'http://cravatar.eu/avatar/%name%/64.png'
+    thumbnail: 'https://mc-heads.net/avatar/%skinsrestorer_texture_id_or_steve%.png/64'
     color-r: 255
     color-g: 0
     color-b: 0
@@ -630,12 +630,12 @@ discord-webhook:
     title: 'Vulcan Punishment'
     description: '**%player%** was punished for %check% (Type %type%) [VL: %vl%]'
     content: ''
-    description-field: false
+    client-brand-field: true
+    client-version-field: true
     server-name-field: false
-    client-brand-field: false
-    client-version-field: false
-    ping-tps-field: false
-    location-field: false
+    description-field: false
+    location-field: true
+    ping-tps-field: true
 
 ########################################################################################################################
 # Check Configuration.
