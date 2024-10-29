@@ -39,7 +39,7 @@ nation:
     # Command: /nations rename
     rename:
       # Costs x each time the name is changed.
-      costs_2: 10000.0
+      costs_2: 0.0
       # Nation needs to wait x until they can change their name again.
       # Bypass permission: lands.bypass.cooldown.rename_nation
       cooldown_rename_time: 1d
