@@ -15,7 +15,7 @@
 _version: 31
 anticheat:
   anti-xray:
-    enabled: true
+    enabled: false
     engine-mode: 1
     hidden-blocks:
     - diamond_ore
