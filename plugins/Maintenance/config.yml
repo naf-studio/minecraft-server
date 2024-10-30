@@ -81,7 +81,7 @@ ping-message:
   # instead of the ones above, so you can have different messages for when an endtimer is running/not running.
   enable-timer-specific-messages: true
   timer-messages:
-  - <red>Currently under maintenance<br><gradient:#fbffc2:#fffff>Come back in:</gradient> <color:#aa55ee>%TIMER%
+  - <red>                 WE WILL COME BACK IN <light_purple>%TIMER%<br><reset>Please join our Discord <blue>dsc.gg/nafd<reset> for more info!
 
 # If enabled, the message below will be shown in the top right corner of the server in the server list, where the player count would normally be displayed.
 # You can use '%ONLINE%' and '%MAX%' if you want to include the player count in a custom message (e.g. "Maintenance %ONLINE%/%MAX%").
