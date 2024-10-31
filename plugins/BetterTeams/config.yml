@@ -328,7 +328,7 @@ levels:
     # - If singleOwner is set to true this value will be ignored
     #
     # Possible values [any positive whole number]
-    maxOwners: 2
+    maxOwners: 3
     #      - say %player% is no longer level 1
 
         # This message is included in /team rank command to give more details about the rank
@@ -346,7 +346,7 @@ levels:
     maxWarps: -1
     maxBal: 0
     maxAdmins: 5
-    maxOwners: 2
+    maxOwners: 3
     rankLore:
     - '&7The second level'
 
