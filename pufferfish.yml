@@ -3,11 +3,11 @@
 # Join our Discord for support: https://discord.gg/reZw4vQV9H
 # Download new builds at https://ci.pufferfish.host/job/Pufferfish
 info:
-  version: '1.0'
+  version: "1.0"
 tps-catchup: true
 allow-end-crystal-respawn: true
 inactive-goal-selector-throttle: true
-enable-books: false
+enable-books: true
 # These values define a entity's maximum lifespan. If an
 # entity is in this list and it has survived for longer than
 # that number of ticks, then it will be removed. Setting a value to
@@ -22,15 +22,15 @@ projectile:
 # Configures Flare, the built-in profiler
 flare:
   url: https://flare.airplane.gg
-enable-async-mob-spawning: true
+enable-async-mob-spawning: false
 # Settings for things that don't belong elsewhere
 misc:
   disable-method-profiler: true
-sentry-dsn: ''
+sentry-dsn: ""
 enable-suffocation-optimization: true
 # Options for connecting to Pufferfish/Airplane's online utilities
 web-services:
-  token: ''
+  token: ""
 # Optimizes entity brains when
 # they're far away from the player
 dab:
