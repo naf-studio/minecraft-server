@@ -13,18 +13,18 @@
 advancements:
   disable-saving: false
   disabled:
-  - minecraft:story/disabled
+    - minecraft:story/disabled
 commands:
   log: true
   replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
+    - setblock
+    - summon
+    - testforblock
+    - tellraw
   send-namespaced: true
   silent-commandblock-console: false
   spam-exclusions:
-  - /skill
+    - /skill
   tab-complete: 0
 messages:
   outdated-client: |-
@@ -64,6 +64,7 @@ settings:
       max: 2048.0
   bungeecord: false
   debug: false
+  save-user-cache-on-stop-onlymoved wrongly: true
   log-named-deaths: true
   log-villager-deaths: true
   moved-too-quickly-multiplier: 10.0
@@ -76,6 +77,8 @@ settings:
   save-user-cache-on-stop-only: false
   timeout-time: 60
   user-cache-size: 1000
+  int-cache-limit: 1024
+  item-dirty-ticks: 20
 stats:
   disable-saving: false
   forced-stats: {}
@@ -156,13 +159,13 @@ world-settings:
       swim-multiplier: 0.01
     item-despawn-rate: 3600
     max-tick-time:
-      entity: 50
-      tile: 50
+      entity: 600
+      tile: 600
     max-tnt-per-tick: 100
     merge-radius:
-      exp: 4.0
+      exp: 5.0
       item: 3.0
-    mob-spawn-range: 3
+    mob-spawn-range: 6
     nerf-spawner-mobs: false
     seed-ancientcity: 20083232
     seed-buriedtreasure: 10387320
@@ -191,7 +194,8 @@ world-settings:
       hopper-check: 4
       hopper-transfer: 8
     trident-despawn-rate: 1200
-    verbose: false
+    max-entity-collisions: 2
+    verbose: true
     view-distance: default
     wither-spawn-sound-radius: 0
     zombie-aggressive-towards-villager: true
