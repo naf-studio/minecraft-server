@@ -2,6 +2,6 @@ command-block-overrides: []
 ignore-vanilla-permissions: false
 aliases:
   ping:
-    - spark ping
+  - spark ping
   tps:
-    - spark tps
+  - spark tps
