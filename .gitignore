@@ -6,6 +6,8 @@
 !config/*.yml
 !plugins
 !plugins/*
+!plugins/__disabled
+!plugins/__disabled/*
 plugins/.paper-remapped
 plugins/.paper-remapped/*
 
