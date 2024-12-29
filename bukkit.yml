@@ -5,7 +5,7 @@ chunk-gc:
 settings:
   allow-end: true
   connection-throttle: -1
-  deprecated-verbose: default
+  deprecated-verbose: false
   minimum-api: none
   permissions-file: permissions.yml
   plugin-profiling: false
