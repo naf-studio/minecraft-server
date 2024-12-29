@@ -1,0 +1,69 @@
+---
+locale: tr
+enabled: Aktif
+disabled: Aktif değil
+inventories:
+  back: Geri
+  last_page: Önceki Sayfa
+  next_page: Sonraki Sayfa
+  block_lock: Blok Kilidi
+  user_settings: Kullanıcı Ayarları
+  block_info: Blok Bilgisi
+  lock: Kilitle
+  unlock: Kilidi Aç
+  lock_on_place: Otomatik olarak kilitle
+  copy_configuration: Konfigürasyonu kopyala
+  paste_configuration: Konfigürasyonu yapıştır
+  set_block_name: Blok ismini ayarla
+  inspect_contents: İçerikleri incele
+  redstone:
+    settings: Kızıltaş ayarları
+    redstone_protection: Kızıltaş koruması
+    piston_protection: Piston koruması
+    hopper_protection: Huni Koruması
+    enable_all: Hepsini aç
+    disable_all: Hepsini kapat
+  friends:
+    manage: Arkadaşları Yönet
+    edit: Arkadaşı Düzenle
+    remove: Arkadaşı Sil
+    search: Oyuncuları Ara
+    search_history: Arama geçmişi
+    result: Oyuncular bulundu
+    the_public: Genel
+    the_public_desc: Bu sunucudaki her oyuncuyu temsil eder.
+    make_public: Herkese açık yap
+    permissions: izinler
+    permission:
+      read: Oku
+      write: Yaz
+      manager: Yönetici
+  statistics:
+    statistics: İstatistikler
+    player_statistics: Oyuncu istatistikleri
+    global_statistics: Sunucu istatistikleri
+    container_count: Blok sayısı
+    your_blocks: Sendeki bloklar
+messages:
+  permission_granted: İzin verildi.
+  unlocked: Kilidi açıldı.
+  no_permission: İznin yok.
+  friend_added: Arkadaş eklendi.
+  friend_removed: Arkadaş silindi.
+  friend_already_added: Arkadaş zaten ekli.
+  friend_cant_be_removed: Arkadaş silinemez.
+  redstone_added: Kızıltaş koruması eklendi.
+  redstone_removed: Kızıltaş koruması kaldırıldı.
+  exceeded_max_block_count: Kilitlenebilen maksimum blok sayısına ulaştın.
+  lock_hint: "§6Sandıklar, fırınlar ve daha birçok bloku eğilip ve sağ tıklayarak
+    koruyabilirsiniz! Aynı zamanda /blockprot yazarak kendi isteklerinize göre ayarları
+    değiştirebilirsiniz."
+integrations:
+  lands:
+    protect_containers_flag_name: Konteynerleri (sandık, fırın vb.) koru. (BlockProt)
+    protect_containers_desc: Bir oyuncuya sandıklar, fırınlar gibi şeyleri korumaya
+      izin verir.
+    require_protect_for_friends_flag_name: Arkadaşlarınız için "Konteynerleri Koru"
+      izni gerekmektedir. (BlockProt)
+    require_protect_for_friends_desc: Yalnızca "Konteynerleri koru" etiketine sahip
+      olan oyuncular arkadaş olarak eklenebilir.

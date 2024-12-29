@@ -1,0 +1,71 @@
+---
+locale: es
+enabled: Activado
+disabled: Desactivado
+inventories:
+  back: Atrás
+  last_page: Última página
+  next_page: Siguiente página
+  block_lock: Proteger
+  user_settings: Configuración de Usuario
+  block_info: Información del Bloque
+  lock: Proteger
+  unlock: Desproteger
+  lock_on_place: Proteger siempre al colocar
+  copy_configuration: Copiar configuración
+  paste_configuration: Pegar configuración
+  set_block_name: Establecer el nombre del bloque
+  inspect_contents: Inspeccionar contenido
+  redstone:
+    settings: Configuración de Redstone
+    redstone_protection: Protección contra redstone
+    piston_protection: Protección contra pistones
+    hopper_protection: Protección contra tolvas
+    enable_all: Habilitar todo
+    disable_all: Desactivar todo
+  friends:
+    manage: Administrar permisos
+    edit: Modificar permisos
+    remove: Eliminar permisos
+    search: Buscar Jugadores
+    search_history: Buscar Historia
+    result: Jugadores encontrados
+    the_public: Público
+    the_public_desc: Representa todos los jugadores en este servidor.
+    make_public: Hacer público
+    permissions: Permisos
+    permission:
+      read: Leer
+      write: Escribir
+      manager: Manager
+  statistics:
+    statistics: Estadísticas
+    player_statistics: Estadísticas del jugador
+    global_statistics: Estadísticas del servidor
+    container_count: Número de bloques
+    your_blocks: Tus bloques
+messages:
+  permission_granted: Protegido.
+  unlocked: Desprotegido.
+  no_permission: No tienes permiso.
+  friend_added: Permiso añadido.
+  friend_removed: Permiso eliminado.
+  friend_already_added: Ya tiene permiso.
+  friend_cant_be_removed: No se puede retirar el permiso.
+  redstone_added: Se ha añadido protección contra Redstone.
+  redstone_removed: Se ha eliminado la protección contra Redstone.
+  exceeded_max_block_count: Has excedido el número máximo de bloques bloqueables.
+  lock_hint: "§6Puedes proteger tus bloques agachándote y haciendo clic derecho en
+    tus cofres, hornos, ¡y mucho más! Además, echa un vistazo a los ajustes con /blockprot
+    settings para configurarlo a tu gusto. (Haz clic aquí para desactivar estas sugerencias).\n"
+  hint_hover_text: Abra un menú desde blockport o haga clic aquí para desactivar las
+    sugerencias
+  disabled_hints: "§6Desactivar sugerencias!"
+integrations:
+  lands:
+    protect_containers_flag_name: Proteger contenedores (BlockProt)
+    protect_containers_desc: Permitir a los jugadores a proteger cofres, hornos, ...
+    require_protect_for_friends_flag_name: Requiere "Proteger contenedores" para amigos
+      (BlockProt)
+    require_protect_for_friends_desc: Solo los jugadores que tienen el "Proteger contenedores"
+      son elegibles para ser agregados a amigos.
