@@ -1,0 +1,66 @@
+---
+locale: zh_TW
+enabled: 啟用
+disabled: 禁用
+inventories:
+  back: 返回
+  last_page: 上一頁
+  next_page: 下一頁
+  block_lock: 方塊鎖
+  user_settings: 玩家設置
+  block_info: 方塊訊息
+  lock: 上鎖
+  unlock: 解鎖
+  lock_on_place: 在放置時自動上鎖
+  copy_configuration: 複製配置
+  paste_configuration: 貼上配置
+  set_block_name: 設置方塊名稱
+  inspect_contents: 檢查內容
+  redstone:
+    settings: 紅石設置
+    redstone_protection: 紅石保護
+    piston_protection: 活塞保護
+    hopper_protection: 漏斗保護
+    enable_all: 全部啟用
+    disable_all: 全部禁用
+  friends:
+    manage: 管理信任者
+    edit: 編輯信任者
+    remove: 移除信任者
+    search: 搜索玩家
+    search_history: 搜索歷史
+    result: 找到的玩家
+    the_public: 公開的
+    the_public_desc: 代表此伺服器上的每個玩家
+    make_public: 公開
+    permissions: 權限
+    permission:
+      read: 讀取
+      write: 編輯
+      manager: 管理
+  statistics:
+    statistics: 統計數據
+    player_statistics: 玩家統計數據
+    global_statistics: 伺服器統計數據
+    container_count: 方塊數
+    your_blocks: 你的方塊
+messages:
+  permission_granted: 許可授予
+  unlocked: 已被解鎖
+  no_permission: 無權限
+  friend_added: 已增加信任者
+  friend_removed: 已移除信任者
+  friend_already_added: 該玩家已經加入信任者了
+  friend_cant_be_removed: 該信任者無法移除
+  redstone_added: 添加了紅石保護
+  redstone_removed: 移除了紅石保護
+  exceeded_max_block_count: 您已超過最大可上鎖的方塊數
+  lock_hint: "§6您可以通過蹲下並右鍵點擊您的箱子、熔爐等來保護您的方塊!另外，請檢查 /blockprot settings 以根據您的喜好進行配置。(點擊此處禁用這些提示)\n"
+  hint_hover_text: 從 BlockProt 打開選單或點擊此處禁用提示
+  disabled_hints: "§6已關閉提示!"
+integrations:
+  lands:
+    protect_containers_flag_name: 保護方塊(BlockProt)
+    protect_containers_desc: 允許玩家保護箱子、熔爐、......
+    require_protect_for_friends_flag_name: 要求信任者"保護方塊"(BlockProt)
+    require_protect_for_friends_desc: 只有擁有"保護方塊"標誌的玩家才有資格被添加信任者

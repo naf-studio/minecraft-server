@@ -1,0 +1,72 @@
+---
+locale: fr
+enabled: Activé
+disabled: Désactivé
+inventories:
+  back: Retour
+  last_page: Dernière page
+  next_page: Page suivante
+  block_lock: Verrou du bloc
+  user_settings: Paramètres utilisateur
+  block_info: Informations du bloc
+  lock: Verrouiller
+  unlock: Déverrouiller
+  lock_on_place: Verrouiller automatiquement
+  copy_configuration: Copier la configuration
+  paste_configuration: Coller la configuration
+  set_block_name: Mettre un nom de bloc
+  inspect_contents: Inspecter le contenu
+  redstone:
+    settings: Paramètres Redstone
+    redstone_protection: Protection de redstone
+    piston_protection: Protection des pistons
+    hopper_protection: Protection des entonnoirs
+    enable_all: Tout activer
+    disable_all: Tout désactiver
+  friends:
+    manage: Gérer les amis
+    edit: Editer un ami
+    remove: Retirer un ami
+    search: Chercher un joueur
+    search_history: Historique des recherches
+    result: Joueurs trouvés
+    the_public: Le publique
+    the_public_desc: Représente chaque joueur sur ce serveur.
+    make_public: Mettre en publique
+    permissions: Permissions
+    permission:
+      read: Lire
+      write: Écrire
+      manager: Gérer
+  statistics:
+    statistics: Statistiques
+    player_statistics: Statistiques des joueurs
+    global_statistics: Statistiques du serveur
+    container_count: Nombre de blocs
+    your_blocks: Vos blocs
+messages:
+  permission_granted: Permission accordée.
+  unlocked: Déverrouillé.
+  no_permission: Aucune autorisation.
+  friend_added: Ami ajouté.
+  friend_removed: Ami supprimé.
+  friend_already_added: Ami déjà ajouté.
+  friend_cant_be_removed: L'ami ne peut pas être supprimé.
+  redstone_added: Protection Redstone ajoutée.
+  redstone_removed: Protection Redstone supprimée.
+  exceeded_max_block_count: Vous avez dépassé le nombre maximal de blocs verrouillables.
+  lock_hint: "§6Vous pouvez protéger vos blocs en vous accroupissant et en faisant
+    un clic droit sur vos coffres, vos fourneaux et bien plus encore ! Consultez également
+    les paramètres de /blockprot pour le configurer à votre convenance. (Cliquez ici
+    pour désactiver ces conseils)."
+  hint_hover_text: Ouvrez un menu à partir de BlockProt ou cliquez ici pour désactiver
+    les conseils.
+  disabled_hints: "§6Indices désactivées !"
+integrations:
+  lands:
+    protect_containers_flag_name: Protéger les conteneurs (BlockProt)
+    protect_containers_desc: Autorise un joueur de protéger des coffres, des fours...
+    require_protect_for_friends_flag_name: Exige "Protéger les conteneurs" pour les
+      amis (BlockProt)
+    require_protect_for_friends_desc: Seuls les joueurs qui ont l'autorisation "Protéger
+      les conteneurs" peuvent être ajoutés en tant qu'amis.
