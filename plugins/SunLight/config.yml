@@ -92,12 +92,12 @@ Modules:
   worlds: true
   spawns: true
   homes: true
-  kits: true
-  warps: true
+  kits: false
+  warps: false
   chat: true
   ptp: true
-  tab: true
-  scoreboard: true
+  tab: false
+  scoreboard: false
   rtp: true
   extras: true
   back_location: true
