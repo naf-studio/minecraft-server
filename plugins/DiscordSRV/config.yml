@@ -2,18 +2,11 @@
 # Need help? Join our Discord, https://discordsrv.com/discord
 
 # Don't touch pls
-ConfigVersion: 1.28.0
+ConfigVersion: 1.29.0
 
 # Bot token; don't know what this is? Look at the video on the plugin page for instructions
 # You must restart your server after changing this option
 BotToken: "BOTTOKEN"
-
-# The proxy to be used for Discord
-# Leave this alone if you don't understand what it does
-ProxyHost: "https://example.com"
-ProxyPort: 1234
-ProxyUser: "USERNAME"
-ProxyPassword: "PASSWORD"
 
 # Channel links from game to Discord
 # syntax is Channels: {"in-game channel name from Minecraft": "numerical channel ID from Discord", "another in-game channel name from Minecraft": "another numerical channel ID from Discord"}
@@ -41,34 +34,6 @@ DiscordConsoleChannelId: "000000000000000000"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
 DiscordInviteLink: "https://dsc.gg/nafd"
-
-# Debug information
-# Don't enable these unless you're attempting to locate an issue
-#
-# Available Debug categories:
-# MINECRAFT_TO_DISCORD  - Messages coming from Minecraft
-# DISCORD_TO_MINECRAFT  - Messages coming from Discord
-# GROUP_SYNC            - Group synchronization
-# PRESENCE              - The bot's game status or presence
-# VOICE                 - The voice module (see voice.yml)
-# REQUIRE_LINK          - The require link to join module (see linking.yml)
-# NICKNAME_SYNC         - Nickname synchronization
-# ALERTS                - Alerts (see alerts.yml)
-# WATCHDOG              - The watchdog
-# BAN_SYNCHRONIZATION   - Ban synchronization
-# LP_CONTEXTS           - LuckPerm's contexts
-# ACCOUNT_LINKING       - discord/minecraft account linking
-#
-# UNCATEGORIZED         - Anything not in any of the above categories
-# ALL                   - All the above categories (including UNCATEGORIZED)
-#
-# JDA                   - JDA's debug messages
-# JDA_REST_ACTIONS      - For debugging JDA's rest actions
-# CALLSTACKS            - Displays the stack trace for DiscordSRV debug calls
-#
-# Ex. "Debug: [GROUP_SYNC, PRESENCE]"
-#
-Debug: []
 
 # Experiments
 # These features are not fully optimized; use at your own risk
@@ -101,7 +66,6 @@ Experiment_MCDiscordReserializer_InBroadcast: false
 # Other
 CancelConsoleCommandIfLoggingFailed: true
 ForcedLanguage: EN
-PrintGuildsAndChannels: false
 ForceTLSv12: true
 NoopHostnameVerifier: false
 MaximumAttemptsForSystemDNSBeforeUsingFallbackDNS: 3
@@ -294,7 +258,7 @@ ChannelTopicUpdaterRateInMinutes: 10
 #     %totalplayers%:   total number of players to ever join the main world
 #     %timestamp%:      current unix timestamp
 #   UpdateInterval: Time in minutes to wait between updating the channel's name (minimum is 10 due to rate limits)
-ChannelUpdater:
+ChannelUpdater: 
   - ChannelId: "0000000000000000"
     Format: "%playercount% players online"
     ShutdownFormat: "Server is offline"
@@ -303,6 +267,7 @@ ChannelUpdater:
     Format: "Current TPS: %tps%"
     ShutdownFormat: "Server is offline"
     UpdateInterval: 10
+
 
 # Discord canned responses
 # These are triggers (commands in a way) that will trigger a "canned response" to be sent as a reply to them
@@ -353,3 +318,39 @@ MinecraftDiscordAccountLinkedMessageDeleteSeconds: 0
 ServerWatchdogEnabled: true
 ServerWatchdogTimeout: 30
 ServerWatchdogMessageCount: 3
+
+# HTTP proxy used for connecting to the Discord API
+# Leave this alone if you don't understand what it does
+ProxyHost: "example.com"
+ProxyPort: 1234
+ProxyUser: "USERNAME"
+ProxyPassword: "PASSWORD"
+
+# Debug information
+# Don't enable these unless you're attempting to locate an issue
+#
+# Available Debug categories:
+# MINECRAFT_TO_DISCORD  - Messages coming from Minecraft
+# DISCORD_TO_MINECRAFT  - Messages coming from Discord
+# GROUP_SYNC            - Group synchronization
+# PRESENCE              - The bot's game status or presence
+# VOICE                 - The voice module (see voice.yml)
+# REQUIRE_LINK          - The require link to join module (see linking.yml)
+# NICKNAME_SYNC         - Nickname synchronization
+# ALERTS                - Alerts (see alerts.yml)
+# WATCHDOG              - The watchdog
+# BAN_SYNCHRONIZATION   - Ban synchronization
+# LP_CONTEXTS           - LuckPerm's contexts
+# ACCOUNT_LINKING       - discord/minecraft account linking
+#
+# UNCATEGORIZED         - Anything not in any of the above categories
+# ALL                   - All the above categories (including UNCATEGORIZED)
+#
+# JDA                   - JDA's debug messages
+# JDA_REST_ACTIONS      - For debugging JDA's rest actions
+# CALLSTACKS            - Displays the stack trace for DiscordSRV debug calls
+#
+# Ex. "Debug: [GROUP_SYNC, PRESENCE]"
+#
+Debug: []
+
