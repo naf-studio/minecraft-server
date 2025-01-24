@@ -1,0 +1,19 @@
+# This GUI will be displayed when the plugin configuration allows you to craft a backpack.
+# In this case, the player will be able to choose whether to create a new backpack or assign it to an existing one.
+gui:
+  # The name of the selection GUI
+  title: "&e&lAssigning a backpack"
+
+  items:
+    # The backpack is to be created as new
+    createNewBackpack:
+      NAME: "&e&lCreate as new backpack"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBiMWI1MzY3NDkxODM5MWEwN2E5ZDAwNTgyYzA1OGY5MjgwYmM1MjZhNzE2Yzc5NmVlNWVhYjRiZTEwYTc2MCJ9fX0="
+      LORE: []
+
+    # The backpack is to be assigned to an existing one
+    assignToExisting:
+      NAME: "&f&lAssign to an existing backpack"
+      MATERIAL: LEATHER
+      LORE: []

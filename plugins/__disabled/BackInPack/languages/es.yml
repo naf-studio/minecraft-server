@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# Puedes usar colores en tus mensajes
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# ¡IMPORTANTE!
+# Cualquier cambio en este archivo requiere que el servidor se vuelva a cargar o reiniciar
+
+
+#    _____            _            _  __
+#   |_   _| _ __ _ __| |_  _ __ __(_)/_/ _ _
+#     | || '_/ _` / _` | || / _/ _| / _ \ ' \
+#     |_||_| \__,_\__,_|\_,_\__\__|_\___/_||_|
+#
+#        por olios [autor del complemento]
+#          usando el traductor de Google
+
+
+#
+#  _______  __    _  _______  __   __  __   __  _______  _______  ______
+# |       ||  |  | ||       ||  | |  ||  | |  ||       ||   _   ||    _ |
+# |    ___||   |_| ||       ||  |_|  ||  | |  ||    ___||  |_|  ||   | ||
+# |   |___ |       ||       ||       ||  |_|  ||   |___ |       ||   |_||_
+# |    ___||  _    ||      _||       ||       ||    ___||       ||    __  |
+# |   |___ | | |   ||     |_ |   _   ||       ||   |    |   _   ||   |  | |
+# |_______||_|  |__||_______||__| |__||_______||___|    |__| |__||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Estado del complemento
+enable-plugin: "El complemento BackInPack se ha habilitado"
+disable-plugin: "El complemento BackInPack se ha deshabilitado"
+loaded-language-file: "Se ha cargado el archivo de idioma %backinpack_config_language%.yml"
+language-file-not-found: "No se encontró el archivo de idioma %backinpack_config_language%. Se ha cargado el archivo en.yml"
+loading-single-backpack: "Cargando las mochilas de los jugadores"
+reload-complete: "Configuración del complemento BackInPack recargada exitosamente"
+missing-backpacks: "No se encontró ningún archivo de mochilas en la carpeta /backpacks"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Base de datos
+database-not-connected: "&cEl complemento no está conectado a la base de datos. No se puede ejecutar este comando"
+database-synchronized: "&aDatos sincronizados con la base de datos"
+# ___________________________________________________________________________
+
+
+#      ___  __   __  _______  _______  ______   _______  ______
+#     |   ||  | |  ||       ||   _   ||      | |       ||    _ |
+#     |   ||  | |  ||    ___||  |_|  ||  _    ||   _   ||   | ||
+#     |   ||  |_|  ||   | __ |       || | |   ||  | |  ||   |_||_
+#  ___|   ||       ||   ||  ||       || |_|   ||  |_|  ||    __  |
+# |       ||       ||   |_| ||   _   ||       ||       ||   |  | |
+# |_______||_______||_______||__| |__||______| |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Has muerto, los objetos en tu mochila han sido &celiminados!"
+player-death-drop: "&6Has muerto, los objetos en tu mochila han sido &ctirados!"
+player-death-save: "&aHas muerto, pero los objetos de tu mochila están preservados!"
+player-backpack-change-size: "El tamaño de tu mochila &9ha sido cambiado&f, había objetos en lugares inaccesibles y &9fueron eliminados"
+player-backpack-access-through-command-disabled: "&cEl acceso a la mochila a través del comando está desactivado!"
+player-backpack-access-through-item-disabled: "&cEl acceso a la mochila a través del objeto está desactivado!"
+player-backpack-name-changed: "&aSe ha cambiado el nombre de la mochila de &6%old-backpack-name% &aa &f%new-backpack-name%"
+player-backpack-not-owner: "&cNo puedes abrir las mochilas de otros jugadores!"
+player-backpack-change-name: "&fAhora ingresa un nuevo nombre para esta mochila"
+player-backpack-buy: "&aHas comprado con éxito una nueva mochila"
+player-max-backpacks: "&cYa tienes el número máximo de mochilas!"
+player-backpack-not-exists: "&6La mochila que intentaste abrir no existe. Fue reemplazada por una mochila no asignada."
+player-backpack-blacklist: "&cAlgunos objetos no se pueden guardar en tu mochila. ¡Han sido eliminados!"
+player-backpack-remove: "&6Tu mochila &f%backinpack_backpack_name% &6ha sido eliminada."
+player-backpack-refund: "&aSe te reembolsaron &6%backinpack_config_removing-backpacks_refund%$ &apor eliminar tu mochila."
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6es un complemento que te brinda la oportunidad de aumentar tu espacio actual en el inventario mediante mochilas virtuales."
+  - ""
+  - "&6Las mochilas se pueden acceder con el comando &l&a/backpack &r&6."
+  - "&6Puedes usar este comando de forma más corta: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Las mochilas se pueden obtener comprándolas o fabricándolas &c(estas opciones no estarán disponibles en todos los servidores, depende de los arreglos de la administración)&6."
+  - ""
+  - "&6Para obtener más información, contacta a la administración o encuentra la información que necesitas."
+  - ""
+  - "&6Hecho por: &aolios"
+  - "&c❤ ¡Gracias!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    __   __  ___   _______  _______  _______
+# |       ||       ||    _ |  |  |_|  ||   | |       ||       ||       |
+# |    _  ||    ___||   | ||  |       ||   | |  _____||   _   ||  _____|
+# |   |_| ||   |___ |   |_||_ |       ||   | | |_____ |  | |  || |_____
+# |    ___||    ___||    __  ||       ||   | |_____  ||  |_|  ||_____  |
+# |   |    |   |___ |   |  | || ||_|| ||   |  _____| ||       | _____| |
+# |___|    |_______||___|  |_||_|   |_||___| |_______||_______||_______|
+#
+
+
+# ___________________________________________________________________________
+# Permisos y comandos
+no-permission: "&cNo tienes suficientes permisos para usar este comando"
+no-permission-backpack-access: "&cNo tienes suficientes permisos para abrir esta mochila"
+console-command: "&cNo puedes usar este comando desde la consola"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _  ___   _______  _______  ______    _______  ______   _______  ______
+# |   _   ||      | |  |_|  ||   | |  |  | ||   | |       ||       ||    _ |  |   _   ||      | |       ||    _ |
+# |  |_|  ||  _    ||       ||   | |   |_| ||   | |  _____||_     _||   | ||  |  |_|  ||  _    ||   _   ||   | ||
+# |       || | |   ||       ||   | |       ||   | | |_____   |   |  |   |_||_ |       || | |   ||  | |  ||   |_||_
+# |       || |_|   ||       ||   | |  _    ||   | |_____  |  |   |  |    __  ||       || |_|   ||  |_|  ||    __  |
+# |   _   ||       || ||_|| ||   | | | |   ||   |  _____| |  |   |  |   |  | ||   _   ||       ||       ||   |  | |
+# |__| |__||______| |_|   |_||___| |_|  |__||___| |_______|  |___|  |___|  |_||__| |__||______| |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Jugadores
+player-not-found: "&cJugador &f&l%player% &cno encontrado"
+player-backpack-userinfo-offline: "&9Este jugador está desconectado, no se pueden verificar sus permisos - el tamaño de la mochila visible es &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6El tamaño de la mochila de este jugador ha cambiado."
+  - "&6Hay elementos en lugares bloqueados."
+  - "&6No habrá lugares bloqueados visibles en la mochila para no quitar elementos."
+player-has-max-backpacks: "&cEste jugador ya tiene el número máximo de mochilas. No se pueden añadir más."
+player-set-backpack-size: "&aTamaño de la mochila de jugador &f&l%backinpack_player_name% &acambiado a &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aTamaño de todas las mochilas del jugador &f&l%backinpack_player_name% &acambiado a &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aTamaño de la mochila establecido en &f%backinpack_backpack_size% &apara todos los jugadores (&f%backinpack_players%&a)"
+player-reload-complete: "&aConfiguración del plugin BackInPack recargada correctamente"
+player-database-not-connected: "&cEl plugin no está conectado a la base de datos. No se puede ejecutar este comando."
+player-database-synchronized: "&aDatos sincronizados con la base de datos"
+player-backpack-add: "&aMochila añadida a &f%backinpack_player_name%"
+player-backpack-give-offline: "&cEl jugador indicado está desconectado. La mochila no se ha añadido a su inventario."
+player-userinfo:
+  - ""
+  - "&6Nombre de usuario: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Las mochilas cuentan: &a%backinpack_player_backpacks_count%"
+  - "&6Lista de mochilas:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ______    ______    _______  ______    _______  _______
+# |       ||    _ |  |    _ |  |       ||    _ |  |       ||       |
+# |    ___||   | ||  |   | ||  |   _   ||   | ||  |    ___||  _____|
+# |   |___ |   |_||_ |   |_||_ |  | |  ||   |_||_ |   |___ | |_____
+# |    ___||    __  ||    __  ||  |_|  ||    __  ||    ___||_____  |
+# |   |___ |   |  | ||   |  | ||       ||   |  | ||   |___  _____| |
+# |_______||___|  |_||___|  |_||_______||___|  |_||_______||_______|
+#
+
+
+# ___________________________________________________________________________
+# Argumentos
+argument-not-number: "&f%args% &cno es un número"
+argument-invalid-number: "&cEl número no puede ser menor que 1 ni mayor que 54"
+argument-missing:
+  - "&cNo se proporcionaron todos los argumentos."
+  - "&cUsando el comando: &f%command%"
+argument-player-missing: "&cNo se encontró ese jugador."
+argument-backpack-not-found: "&cNo se encontró ninguna mochila con el nombre proporcionado."
+argument-backpack-name-not-given: "&cNo se ha proporcionado el nuevo nombre de la mochila."
+argument-need-change-for-all-players:
+  - "&cCuando cambias el tamaño de la mochila para todos los jugadores, debes cambiar el tamaño de todas las mochilas."
+  - "&cUsa el comando de la siguiente manera: &f/backpack-set-size all all <tamaño de la mochila>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Economía
+economy-not-enough-money: "&cNo tienes suficiente dinero para comprar una nueva mochila"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Comandos
+command-disabled: "&c¡Este comando está deshabilitado en este servidor!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    _______
+# |       ||       ||    _ |  |       |
+# |   _   ||_     _||   | ||  |   _   |
+# |  | |  |  |   |  |   |_||_ |  | |  |
+# |  |_|  |  |   |  |    __  ||  |_|  |
+# |       |  |   |  |   |  | ||       |
+# |_______|  |___|  |___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Valores
+true: "&aSí"
+false: "&cNo"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flags (flag descriptions cannot be a list)
+flag-none: "&7Sin banderas"
+flag-items-drop: "   &c- Con la muerte los objetos se caerán."
+flag-backpack-delete: "   &c- Con la muerte se pierde la mochila"
+# Positive
+flag-items-save: "   &a+ Después de la muerte, los artículos se almacenan."
+# ___________________________________________________________________________

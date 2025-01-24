@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# You can use colors in your messages
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# IMPORTANT!
+# Any changes to this file require the server to be reloaded or restarted
+
+
+#   _____                 _      _   _
+#  |_   _| _ __ _ _ _  __| |__ _| |_(_)___ _ _
+#    | || '_/ _` | ' \(_-< / _` |  _| / _ \ ' \
+#    |_||_| \__,_|_||_/__/_\__,_|\__|_\___/_||_|
+#
+#           by olios [plugin author]
+#           using Google Translate
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Plugin status
+enable-plugin: "Plugin BackInPack đã được kích hoạt"
+disable-plugin: "Plugin BackInPack đã được tắt"
+loaded-language-file: "Đã tải tệp ngôn ngữ %backinpack_config_language%.yml"
+language-file-not-found: "Không tìm thấy tệp ngôn ngữ %backinpack_config_language%.yml. Đã được tải tệp vi.yml - ddangle2611"
+loading-single-backpack: "Đang tải ba lô của người chơi"
+reload-complete: "Đã tải lại cấu hình plugin BackInPack thành công"
+missing-backpacks: "Không tìm thấy tệp ba lô trong thư mục /backpacks"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Database
+database-not-connected: "&cPlugin không kết nối với cơ sở dữ liệu. Không thể thực hiện lệnh này."
+database-synchronized: "&aDữ liệu đã được đồng bộ hóa với cơ sở dữ liệu."
+# ___________________________________________________________________________
+
+
+#  _______  ___      _______  __   __  _______  ______
+# |       ||   |    |   _   ||  | |  ||       ||    _ |
+# |    _  ||   |    |  |_|  ||  |_|  ||    ___||   | ||
+# |   |_| ||   |    |       ||       ||   |___ |   |_||_
+# |    ___||   |___ |       ||_     _||    ___||    __  |
+# |   |    |       ||   _   |  |   |  |   |___ |   |  | |
+# |___|    |_______||__| |__|  |___|  |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Bạn đã chết, các vật phẩm trong túi đồ đã bị &cxóa bỏ!"
+player-death-drop: "&6Bạn đã chết, các vật phẩm trong túi đồ đã được &cquăng đi!"
+player-death-save: "&aBạn đã chết, nhưng các vật phẩm trong túi đồ vẫn được bảo toàn!"
+player-backpack-change-size: "Kích thước túi đồ của bạn &9đã bị thay đổi&f, có các vật phẩm ở những vị trí không thể truy cập và &9chúng đã bị ném ra ngoài"
+player-backpack-access-through-command-disabled: "&cTruy cập vào túi đồ thông qua lệnh đã bị vô hiệu hóa!"
+player-backpack-access-through-item-disabled: "&cTruy cập vào túi đồ qua vật phẩm đã bị vô hiệu hóa!"
+player-backpack-name-changed: "&aĐã đổi tên túi đồ từ &6%old-backpack-name% &athi thành &f%new-backpack-name%"
+player-backpack-not-owner: "&cBạn không thể mở túi đồ của người chơi khác!"
+player-backpack-change-name: "&fBây giờ nhập vào tên mới cho túi đồ này"
+player-backpack-buy: "&aBạn đã mua một túi đồ mới thành công"
+player-max-backpacks: "&cBạn đã đạt đến số lượng tối đa cho phép của túi đồ!"
+player-backpack-not-exists: "&6Cái ba lô bạn cố gắng mở không tồn tại. Nó đã được thay thế bằng một cái ba lô không được chỉ định."
+player-backpack-blacklist: "&cMột số vật phẩm không thể lưu trong túi đồ của bạn! Chúng đã bị quăng đi"
+player-backpack-remove: "&6Ba lô của bạn &f%backinpack_backpack_name% &6đã bị gỡ bỏ."
+player-backpack-refund: "&aBạn đã được hoàn tiền &6%backinpack_config_removing-backpacks_refund%$ &aza việc gỡ bỏ ba lô của bạn."
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6là một plugin cho phép bạn tăng không gian lưu trữ hiện tại của bạn thông qua các ba lô ảo."
+  - ""
+  - "&6Ba lô có thể truy cập bằng lệnh &l&a/backpack &r&6."
+  - "&6Bạn có thể sử dụng lệnh này một cách ngắn gọn: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Ba lô có thể được mua hoặc chế tạo &c(các tùy chọn này sẽ không có trên tất cả các máy chủ, tùy thuộc vào sắp xếp của quản trị)&6."
+  - ""
+  - "&6Để biết thêm thông tin, hãy liên hệ với quản trị hoặc tìm thông tin bạn cần."
+  - ""
+  - "&6Được tạo bởi: &aolios"
+  - "&c❤ Cảm ơn!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    __   __  ___   _______  _______  ___   _______  __    _  _______
+# |       ||       ||    _ |  |  |_|  ||   | |       ||       ||   | |       ||  |  | ||       |
+# |    _  ||    ___||   | ||  |       ||   | |  _____||  _____||   | |   _   ||   |_| ||  _____|
+# |   |_| ||   |___ |   |_||_ |       ||   | | |_____ | |_____ |   | |  | |  ||       || |_____
+# |    ___||    ___||    __  ||       ||   | |_____  ||_____  ||   | |  |_|  ||  _    ||_____  |
+# |   |    |   |___ |   |  | || ||_|| ||   |  _____| | _____| ||   | |       || | |   | _____| |
+# |___|    |_______||___|  |_||_|   |_||___| |_______||_______||___| |_______||_|  |__||_______|
+#
+
+
+# ___________________________________________________________________________
+# Permissions & commands
+no-permission: "&cBạn không có đủ quyền để sử dụng lệnh này"
+no-permission-backpack-access: "&cBạn không có đủ quyền để mở chiếc cặp này!"
+console-command: "&cBạn không thể sử dụng lệnh này từ console"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _
+# |   _   ||      | |  |_|  ||   | |  |  | |
+# |  |_|  ||  _    ||       ||   | |   |_| |
+# |       || | |   ||       ||   | |       |
+# |       || |_|   ||       ||   | |  _    |
+# |   _   ||       || ||_|| ||   | | | |   |
+# |__| |__||______| |_|   |_||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Players
+player-not-found: "&cKhông tìm thấy người chơi &f&l%player%"
+player-backpack-userinfo-offline: "&9Người chơi này không hoạt động, không thể kiểm tra quyền của anh ấy - kích thước của balô hiển thị là &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6Kích thước balô của người chơi này đã thay đổi."
+  - "&6Có những vị trí đã bị chặn đầy đủ vật phẩm."
+  - "&6Không có những vị trí bị chặn hiển thị trong balô để không làm mất vật phẩm."
+player-has-max-backpacks: "&cNgười chơi này đã đạt đến số lượng tối đa của balô. Không thể thêm nữa!"
+player-set-backpack-size: "&aĐã đặt kích thước balô của người chơi &f&l%backinpack_player_name% &asang &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aĐã đặt kích thước tất cả balô của người chơi &f&l%backinpack_player_name% &asang &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aĐã đặt kích thước balô thành &f%backinpack_backpack_size% &ađối với tất cả người chơi (&f%backinpack_players%&a)"
+player-reload-complete: "&aHoàn tất việc tải lại cấu hình của tiện ích BackInPack"
+player-database-not-connected: "&cTiện ích không được kết nối đến cơ sở dữ liệu. Không thể thực hiện lệnh này!"
+player-database-synchronized: "&aĐồng bộ dữ liệu với cơ sở dữ liệu"
+player-backpack-add: "&aĐã thêm balô vào cho &f%backinpack_player_name%"
+player-backpack-give-offline: "&cNgười chơi được chỉ định đang offline. Balô không được thêm vào hành trang của anh ấy!"
+player-userinfo:
+  - ""
+  - "&6Username: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Backpacks count: &a%backinpack_player_backpacks_count%"
+  - "&6Danh sách balô:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ______    ______    _______  ______    _______
+# |       ||    _ |  |    _ |  |       ||    _ |  |       |
+# |    ___||   | ||  |   | ||  |   _   ||   | ||  |  _____|
+# |   |___ |   |_||_ |   |_||_ |  | |  ||   |_||_ | |_____
+# |    ___||    __  ||    __  ||  |_|  ||    __  ||_____  |
+# |   |___ |   |  | ||   |  | ||       ||   |  | | _____| |
+# |_______||___|  |_||___|  |_||_______||___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Arguments
+argument-not-number: "&f%args% &clà một số không hợp lệ"
+argument-invalid-number: "&cSố không thể nhỏ hơn 1 và lớn hơn 54"
+argument-missing:
+  - "&cKhông đủ đối số."
+  - "&cSử dụng lệnh: &f%command%"
+argument-player-missing: "&cKhông tìm thấy người chơi!"
+argument-backpack-not-found: "&cKhông tìm thấy túi đồ với tên đã cho!"
+argument-backpack-name-not-given: "&cKhông cho biết tên túi mới!"
+argument-need-change-for-all-players:
+  - "&cKhi thay đổi kích thước túi đồ cho tất cả các người chơi, bạn phải thay đổi kích thước của tất cả các túi đồ"
+  - "&cSử dụng lệnh như sau: &f/backpack-set-size all all <kích thước túi>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Economy
+economy-not-enough-money: "&cBạn không có đủ tiền để mua một chiếc balo mới"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Commands
+command-disabled: "&cLệnh này đã bị vô hiệu hóa trên máy chủ này!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  __   __  _______  ______
+# |       ||       ||  | |  ||       ||    _ |
+# |   _   ||_     _||  |_|  ||    ___||   | ||
+# |  | |  |  |   |  |       ||   |___ |   |_||_
+# |  |_|  |  |   |  |       ||    ___||    __  |
+# |       |  |   |  |   _   ||   |___ |   |  | |
+# |_______|  |___|  |__| |__||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Values
+true: "&aCó"
+false: "&cKhông"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Cờ (mô tả cờ không thể là danh sách)
+flag-none: "&7Không có cờ"
+flag-items-drop: "   &c- Với đồ chết sẽ rơi ra"
+flag-backpack-delete: "   &c- Với cái chết bạn mất ba lô"
+# Tích cực
+flag-items-save: "   &a+ Sau khi chết, vật phẩm được cất giữ"
+# ___________________________________________________________________________

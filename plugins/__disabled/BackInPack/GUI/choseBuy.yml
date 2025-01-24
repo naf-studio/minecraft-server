@@ -1,0 +1,75 @@
+# This GUI will be visible if you have set in the config that players can buy different backpacks.
+# After entering the purchase option, the player will see this GUI.
+gui:
+  # The name of the selection GUI
+  title: "&a&lBuying a new backpack"
+
+  # Number of lines in GUI (from 1 to 6)
+  size: 4
+
+  items:
+    # The name of the item must match the name of the backpack given in the config
+
+    copper:
+      NAME: "&6Copper backpack"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "https://textures.minecraft.net/texture/1e583cb771581d3b27b23f617c7b8a43dcd7220447ff95ff1960414d2350bdb9"
+      CUSTOM_MODEL_DATA: 1011
+      POSITION_X: 3
+      POSITION_Y: 2
+      LORE:
+        - "&8[]======[&fBuy informations&8]======[]"
+        - "  &f*Price:         &6%backinpack_config_backpack-config_copper_cost%$"
+        - "  &f*Size:          &6%backinpack_config_backpack-config_copper_backpack-size% slots"
+        - "  &f*Get as item:  &6%backinpack_config_backpack-config_copper_give-as-item%"
+        - "  &f*Flags:         %backinpack_config_backpack-config_copper_flags%"
+        - "&8[]===========================[]"
+        - ""
+        - "              &7(Click to buy)"
+        - ""
+
+
+    iron:
+      NAME: "&7Iron backpack"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "https://textures.minecraft.net/texture/ddaf8edc32afb461aee0713058023101f924e2a7efa883dae72d5d57d4c053d7"
+      CUSTOM_MODEL_DATA: 1012
+      POSITION_X: 5
+      POSITION_Y: 2
+      LORE:
+        - "&8[]======[&fBuy informations&8]======[]"
+        - "  &f*Price:         &6%backinpack_config_backpack-config_iron_cost%$"
+        - "  &f*Size:          &6%backinpack_config_backpack-config_iron_backpack-size% slots"
+        - "  &f*Get as item:  &6%backinpack_config_backpack-config_iron_give-as-item%"
+        - "  &f*Flags:         %backinpack_config_backpack-config_iron_flags%"
+        - "&8[]===========================[]"
+        - ""
+        - "              &7(Click to buy)"
+        - ""
+
+
+    diamond:
+      NAME: "&bDiamond backpack"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "https://textures.minecraft.net/texture/10d1b0732bf7a70de4dc01559cc5c9811068ef7b6095010382709f94093927f6"
+      CUSTOM_MODEL_DATA: 1013
+      POSITION_X: 7
+      POSITION_Y: 2
+      LORE:
+        - "&8[]======[&fBuy informations&8]======[]"
+        - "  &f*Price:         &6%backinpack_config_backpack-config_diamond_cost%$"
+        - "  &f*Size:          &6%backinpack_config_backpack-config_diamond_backpack-size% slots"
+        - "  &f*Get as item:  &6%backinpack_config_backpack-config_diamond_give-as-item%"
+        - "  &f*Flags:         %backinpack_config_backpack-config_diamond_flags%"
+        - "&8[]===========================[]"
+        - ""
+        - "              &7(Click to buy)"
+        - ""
+
+
+    # Return to the previous GUI
+    cancel:
+      NAME: "&cCancel"
+      MATERIAL: PLAYER_HEAD
+      TEXTURE: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="
+      LORE: [ ]

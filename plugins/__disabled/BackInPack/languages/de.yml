@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+#
+
+# Du kannst die Nachrichtenfarben ändern
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# WICHTIG!
+# Alle Änderungen an dieser Datei erfordern ein erneutes Laden oder einen Neustart des Servers!
+
+
+#   _   _ _                     _
+#  | | | | |__  ___ _ _ ___ ___| |_ ____  _ _ _  __ _
+#  | |_| | '_ \/ -_) '_(_-</ -_)  _|_ / || | ' \/ _` |
+#   \___/|_.__/\___|_| /__/\___|\__/__|\_,_|_||_\__, |
+#                                               |___/
+#              von olios [Plugin-Autor]
+#               mit Google Translate
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Plugin-Status
+enable-plugin: "Das Plugin BackInPack wurde aktiviert"
+disable-plugin: "Das Plugin BackInPack wurde deaktiviert"
+loaded-language-file: "Die Sprachdatei %backinpack_config_language%.yml wurde geladen"
+language-file-not-found: "Sprachdatei %backinpack_config_language%.yml nicht gefunden. Die Datei en.yml wurde geladen"
+loading-single-backpack: "Lade die Rucksäcke der Spieler"
+reload-complete: "Die Konfiguration des BackInPack Plugins wurde erfolgreich neu geladen"
+missing-backpacks: "Im Ordner /backpacks wurde keine Backpacks-Datei gefunden"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Datenbank
+database-not-connected: "&cDie Verbindung zum Plugin mit der Datenbank konnte nicht hergestellt werden. Dieser Befehl kann nicht ausgeführt werden"
+database-synchronized: "&aDaten wurden mit der Datenbank synchronisiert"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ___   _______  ___      _______  ______
+# |       ||       ||   | |       ||   |    |       ||    _ |
+# |  _____||    _  ||   | |    ___||   |    |    ___||   | ||
+# | |_____ |   |_| ||   | |   |___ |   |    |   |___ |   |_||_
+# |_____  ||    ___||   | |    ___||   |___ |    ___||    __  |
+#  _____| ||   |    |   | |   |___ |       ||   |___ |   |  | |
+# |_______||___|    |___| |_______||_______||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Du bist gestorben, Gegenstände in deinem Rucksack wurden &cgelöscht!"
+player-death-drop: "&6Du bist gestorben, Gegenstände in deinem Rucksack wurden &cweggeworfen!"
+player-death-save: "&aDu bist gestorben, aber die Gegenstände in deinem Rucksack sind erhalten geblieben!"
+player-backpack-change-size: "Die Größe deines Rucksacks &9wurde geändert&f. Es befanden sich Gegenstände an unzugänglichen Stellen und &9sie wurden daraus geworfen"
+player-backpack-access-through-command-disabled: "&cDer Zugriff auf den Rucksack über den Befehl ist deaktiviert!"
+player-backpack-access-through-item-disabled: "&cDer Zugriff auf den Rucksack über den Gegenstand wurde deaktiviert!"
+player-backpack-name-changed: "&aDer Name des Rucksacks wurde von &6%old-backpack-name% &aauf &f%new-backpack-name% &ageändert"
+player-backpack-not-owner: "&cDu kannst die Rucksäcke anderer Spieler nicht öffnen!"
+player-backpack-change-name: "&fGib jetzt einen neuen Namen für diesen Rucksack ein"
+player-backpack-buy: "&aDu hast erfolgreich einen neuen Rucksack gekauft"
+player-max-backpacks: "&cDu hast bereits die maximale Anzahl an Rucksäcken!"
+player-backpack-not-exists: "&6Der Rucksack, den Sie öffnen wollten, existiert nicht. Er wurde durch einen nicht zugewiesenen Rucksack ersetzt"
+player-backpack-blacklist: "&cEinige Gegenstände können nicht in deinem Rucksack gelagert werden! Sie wurden weggeworfen"
+player-backpack-remove: "&6Ihr &f%backinpack_backpack_name% &6Rucksack wurde entfernt"
+player-backpack-refund: "&aSie haben &6%backinpack_config_removing-backpacks_refund%$ &a für das Entfernen Ihres Rucksacks erstattet bekommen"
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6ist ein Plugin, das Ihnen die Möglichkeit gibt, Ihren aktuellen Lagerplatz durch virtuelle Rucksäcke zu vergrößern."
+  - ""
+  - "&6Auf Rucksäcke kann mit zugegriffen werden &l&a/backpack &r&6command."
+  - "&6Sie können diesen Befehl auf kürzere Weise verwenden: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Rucksäcke können durch Kauf, Herstellung usw. erhalten werden (diese Optionen sind nicht auf allen Servern verfügbar, dies hängt von den Vereinbarungen der Verwaltung ab)&6."
+  - ""
+  - "&6Für weitere Informationen wenden Sie sich an die Verwaltung oder finden Sie die Informationen, die Sie benötigen."
+  - ""
+  - "&6Hergestellt von: &aolios"
+  - "&c❤ Danke!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    _______  _______  __   __  _______  ___   _______  __   __  __    _  _______  _______  __    _
+# |  _    ||       ||    _ |  |       ||       ||  | |  ||       ||   | |       ||  | |  ||  |  | ||       ||       ||  |  | |
+# | |_|   ||    ___||   | ||  |    ___||       ||  |_|  ||_     _||   | |    ___||  | |  ||   |_| ||    ___||    ___||   |_| |
+# |       ||   |___ |   |_||_ |   |___ |       ||       |  |   |  |   | |   | __ |  |_|  ||       ||   | __ |   |___ |       |
+# |  _   | |    ___||    __  ||    ___||      _||       |  |   |  |   | |   ||  ||       ||  _    ||   ||  ||    ___||  _    |
+# | |_|   ||   |___ |   |  | ||   |___ |     |_ |   _   |  |   |  |   | |   |_| ||       || | |   ||   |_| ||   |___ | | |   |
+# |_______||_______||___|  |_||_______||_______||__| |__|  |___|  |___| |_______||_______||_|  |__||_______||_______||_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Berechtigungen und Befehle
+no-permission: "&cDu hast nicht ausreichende Berechtigungen, um diesen Befehl auszuführen"
+no-permission-backpack-access: "&cDu hast nicht ausreichende Berechtigungen, um diesen Rucksack zu öffnen!"
+console-command: "&cDu kannst diesen Befehl nicht von der Konsole ausführen"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _  ___   _______  _______  ______    _______  _______  _______  ______
+# |   _   ||      | |  |_|  ||   | |  |  | ||   | |       ||       ||    _ |  |   _   ||       ||       ||    _ |
+# |  |_|  ||  _    ||       ||   | |   |_| ||   | |  _____||_     _||   | ||  |  |_|  ||_     _||   _   ||   | ||
+# |       || | |   ||       ||   | |       ||   | | |_____   |   |  |   |_||_ |       |  |   |  |  | |  ||   |_||_
+# |       || |_|   ||       ||   | |  _    ||   | |_____  |  |   |  |    __  ||       |  |   |  |  |_|  ||    __  |
+# |   _   ||       || ||_|| ||   | | | |   ||   |  _____| |  |   |  |   |  | ||   _   |  |   |  |       ||   |  | |
+# |__| |__||______| |_|   |_||___| |_|  |__||___| |_______|  |___|  |___|  |_||__| |__|  |___|  |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Spieler
+player-not-found: "&cSpieler &f&l%player% &cnicht gefunden"
+player-backpack-userinfo-offline: "&9Dieser Spieler ist offline, seine Berechtigungen können nicht überprüft werden - die Größe des sichtbaren Rucksacks beträgt &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6Die Rucksackgröße dieses Spielers hat sich geändert."
+  - "&6Es befinden sich Gegenstände an blockierten Orten."
+  - "&6Es gibt keine sichtbaren blockierten Stellen im Rucksack, um das Herausnehmen von Gegenständen zu verhindern."
+player-has-max-backpacks: "&cDieser Spieler hat bereits die maximale Anzahl an Rucksäcken erreicht. Es können keine weiteren hinzugefügt werden!"
+player-set-backpack-size: "&aRucksackgröße für Spieler &f&l%backinpack_player_name% &aauf &f%backinpack_backpack_size% &agesetzt"
+player-set-player-all-backpack-size: "&aRucksackgröße für Spieler &f&l%backinpack_player_name% &aauf &f%backinpack_backpack_size% &afür alle Rucksäcke gesetzt"
+player-set-all-backpack-size: "&aRucksackgröße für alle Spieler auf &f%backinpack_backpack_size% &agesetzt (&f%backinpack_players%&a)"
+player-reload-complete: "&aKonfiguration des BackInPack Plugins erfolgreich neu geladen"
+player-database-not-connected: "&cDas Plugin ist nicht mit der Datenbank verbunden. Dieser Befehl kann nicht ausgeführt werden!"
+player-database-synchronized: "&aDaten mit der Datenbank synchronisiert"
+player-backpack-add: "&aRucksack zu &f%backinpack_player_name% &ahinzugefügt"
+player-backpack-give-offline: "&cDer angegebene Spieler ist offline. Der Rucksack wurde nicht zu seinem Inventar hinzugefügt!"
+player-userinfo:
+  - ""
+  - "&6Nutzername: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Rucksäcke zählen: &a%backinpack_player_backpacks_count%"
+  - "&6Liste der Rucksäcke:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  _______  __   __  ___      _______  ______
+# |       ||       ||  | |  ||   |    |       ||    _ |
+# |    ___||    ___||  |_|  ||   |    |    ___||   | ||
+# |   |___ |   |___ |       ||   |    |   |___ |   |_||_
+# |    ___||    ___||       ||   |___ |    ___||    __  |
+# |   |    |   |___ |   _   ||       ||   |___ |   |  | |
+# |___|    |_______||__| |__||_______||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Argumente
+argument-not-number: "&f%args% &cist keine Zahl"
+argument-invalid-number: "&cDie Zahl darf nicht kleiner als 1 oder größer als 54 sein"
+argument-missing:
+  - "&cNicht alle Argumente wurden angegeben."
+  - "&cVerwendung des Befehls: &f%command%"
+argument-player-missing: "&cKein solcher Spieler gefunden!"
+argument-backpack-not-found: "&cEs wurde kein Rucksack mit dem angegebenen Namen gefunden!"
+argument-backpack-name-not-given: "&cEs wurde kein neuer Rucksackname angegeben!"
+argument-need-change-for-all-players:
+  - "&cWenn du die Rucksackgröße für alle Spieler änderst, musst du die Größe aller Rucksäcke ändern"
+  - "&cVerwende den Befehl wie folgt: &f/backpack-set-size all all <Rucksackgröße>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Wirtschaft
+economy-not-enough-money: "&cDu hast nicht genug Geld, um einen neuen Rucksack zu kaufen"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Befehle
+command-disabled: "&cDieser Befehl ist auf diesem Server deaktiviert!"
+# ___________________________________________________________________________
+
+
+#  _______  __    _  ______   _______  ______    _______
+# |   _   ||  |  | ||      | |       ||    _ |  |       |
+# |  |_|  ||   |_| ||  _    ||    ___||   | ||  |    ___|
+# |       ||       || | |   ||   |___ |   |_||_ |   |___
+# |       ||  _    || |_|   ||    ___||    __  ||    ___|
+# |   _   || | |   ||       ||   |___ |   |  | ||   |___
+# |__| |__||_|  |__||______| |_______||___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Werte
+true: "&aJa"
+false: "&cNein"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Flags (Flag-Beschreibungen können keine Liste sein)
+flag-none: "&7Keine Flaggen"
+flag-items-drop: "   &c- Mit dem Tod fallen Gegenstände heraus"
+flag-backpack-delete: "   &c- Mit dem Tod verlierst du den Rucksack"
+# Positiv
+flag-items-save: "   &a+ Nach dem Tod werden Gegenstände aufbewahrt"
+# ___________________________________________________________________________
