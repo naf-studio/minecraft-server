@@ -1,0 +1,15 @@
+store:
+  Update_Interval_MS: 500
+  Texts:
+  - <gray>play.servermc.com</gray>
+  - <gray><white>play</white>.servermc.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.<white>servermc</white>.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.<white>com</white></gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.com</gray>
+  - <gray>play.servermc.com</gray>

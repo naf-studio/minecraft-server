@@ -1,0 +1,14 @@
+Join_Messages:
+  default:
+    Ranks:
+    - '*'
+    Priority: 0
+    Message: <gray>[<green>+</green>] %vault_prefix%%player_display_name%</gray>
+    DisplayMode: CHAT
+Quit_Messages:
+  default:
+    Ranks:
+    - '*'
+    Priority: 0
+    Message: <gray>[<red>-</red>] %vault_prefix%%player_display_name%</gray>
+    DisplayMode: CHAT
