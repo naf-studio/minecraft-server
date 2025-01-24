@@ -11,7 +11,7 @@ async:
   # Make entity tracking saving asynchronously, can improve performance significantly,
   # especially in some massive entities in small area situations.
   async-entity-tracker:
-    enabled: false
+    enabled: true
     # Enable compat mode ONLY if Citizens or NPC plugins using real entity has installed,
     # Compat mode fixed visible issue with player type NPCs of Citizens,
     # But still recommend to use packet based / virtual entity NPC plugin, e.g. ZNPC Plus, Adyeshach, Fancy NPC or else.
@@ -21,9 +21,9 @@ async:
   # **Experimental feature, may have data lost in some circumstances!**
   # Make PlayerData saving asynchronously.
   async-playerdata-save:
-    enabled: false
+    enabled: true
   async-pathfinding:
-    enabled: false
+    enabled: true
     max-threads: 0
     keepalive: 60
   # Whether or not asynchronous mob spawning should be enabled.
@@ -37,7 +37,7 @@ async:
   # This offloads structure locating to other threads.
   # Only for locate command, dolphin treasure finding and eye of ender currently.
   async-locator:
-    enabled: false
+    enabled: true
     threads: 0
     keepalive: 60
 
@@ -55,19 +55,19 @@ performance:
   inactive-goal-selector-throttle: true
   throttle-hopper-when-full:
     # Throttles the hopper if target container is full.
-    enabled: false
+    enabled: true
     # How many ticks to throttle when the Hopper is throttled.
     skip-ticks: 0
   skip-map-item-data-updates-if-map-does-not-have-craftmaprenderer: true
   skip-ai-for-non-aware-mob: true
   reduce-packets:
-    reduce-entity-move-packets: false
+    reduce-entity-move-packets: true
   optimized-powered-rails: true
   optimize-minecart:
     # Enable this feature to handle a large amount of stacked minecarts better.
     # By skipping tick collisions to reduce expensive getEntities
     # and bukkit event calls, useful for anarchy servers.
-    enabled: false
+    enabled: true
     skip-tick-count: 30
   # May cause the inconsistent order of future compose tasks.
   faster-structure-gen-future-sequencing: true
@@ -75,15 +75,9 @@ performance:
   # Requires a JVM that supports RandomGenerator.
   # Some JREs don't support this.
   faster-random-generator:
-    enabled: false
-    # Which random generator will be used?
-    # See https://openjdk.org/jeps/356
-    random-generator: Xoroshiro128PlusPlus
-    # Enable faster random generator for world generation.
-    # WARNING: This will affect world generation!!!
-    enable-for-worldgen: false
+    enabled: true
     # Warn if you are not using legacy random source for slime chunk generation.
-    warn-for-slime-chunk: true
+    warn-for-slime-chunk: false
     # Use legacy random source for slime chunk generation,
     # to follow vanilla behavior.
     use-legacy-random-for-slime-chunk: false
@@ -92,6 +86,8 @@ performance:
   # that number of ticks, then it will be removed. Setting a value to
   # -1 disables this feature.
   entity-timeouts:
+    SNOWBALL: 300
+    LLAMA_SPIT: -1
     ALLAY: -1
     AREA_EFFECT_CLOUD: -1
     ARMADILLO: -1
@@ -101,6 +97,7 @@ performance:
     BAT: -1
     BEE: -1
     BLAZE: -1
+    BLOCK_DISPLAY: -1
     BOAT: -1
     BOGGED: -1
     BREEZE: -1
@@ -121,6 +118,7 @@ performance:
     DROWNED: -1
     EGG: -1
     ELDER_GUARDIAN: -1
+    END_CRYSTAL: -1
     ENDER_DRAGON: -1
     ENDER_PEARL: -1
     ENDERMAN: -1
@@ -130,12 +128,14 @@ performance:
     EXPERIENCE_BOTTLE: -1
     EXPERIENCE_ORB: -1
     EYE_OF_ENDER: -1
+    FALLING_BLOCK: -1
     FIREWORK_ROCKET: -1
     FOX: -1
     FROG: -1
     FURNACE_MINECART: -1
     GHAST: -1
     GIANT: -1
+    GLOW_ITEM_FRAME: -1
     GLOW_SQUID: -1
     GOAT: -1
     GUARDIAN: -1
@@ -144,17 +144,23 @@ performance:
     HORSE: -1
     HUSK: -1
     ILLUSIONER: -1
+    INTERACTION: -1
     IRON_GOLEM: -1
     ITEM: -1
+    ITEM_DISPLAY: -1
+    ITEM_FRAME: -1
     OMINOUS_ITEM_SPAWNER: -1
     FIREBALL: -1
+    LEASH_KNOT: -1
     LIGHTNING_BOLT: -1
     LLAMA: -1
-    LLAMA_SPIT: -1
     MAGMA_CUBE: -1
+    MARKER: -1
+    MINECART: -1
     MOOSHROOM: -1
     MULE: -1
     OCELOT: -1
+    PAINTING: -1
     PANDA: -1
     PARROT: -1
     PHANTOM: -1
@@ -178,7 +184,6 @@ performance:
     SMALL_FIREBALL: -1
     SNIFFER: -1
     SNOW_GOLEM: -1
-    SNOWBALL: -1
     SPAWNER_MINECART: -1
     SPECTRAL_ARROW: -1
     SPIDER: -1
@@ -186,6 +191,8 @@ performance:
     STRAY: -1
     STRIDER: -1
     TADPOLE: -1
+    TEXT_DISPLAY: -1
+    TNT: -1
     TNT_MINECART: -1
     TRADER_LLAMA: -1
     TRIDENT: -1
@@ -216,7 +223,7 @@ performance:
     enabled: true
     # After enabling this, non-aquatic entities in the water will not be affected by DAB.
     # This could fix entities suffocate in the water.
-    dont-enable-if-in-water: false
+    dont-enable-if-in-water: true
     # This value determines how far away an entity has to be
     # from the player to start being effected by DEAR.
     start-distance: 12
@@ -227,7 +234,7 @@ performance:
     # tick frequency. freq = (distanceToPlayer^2) / (2^value)",
     # If you want further away entities to tick less often, use 7.
     # If you want further away entities to tick more often, try 9.
-    activation-dist-mod: 8
+    activation-dist-mod: 7
     # A list of entities to ignore for activation
     blacklisted-entities: []
   dont-save-entity:
@@ -261,9 +268,9 @@ gameplay-mechanisms:
     max-container-destroy-count: 0
   knockback:
     # Make snowball can knockback players.
-    snowball-knockback-players: false
+    snowball-knockback-players: true
     # Make egg can knockback players.
-    egg-knockback-players: false
+    egg-knockback-players: true
     # Make players can knockback zombie.
     can-player-knockback-zombie: true
   player:
