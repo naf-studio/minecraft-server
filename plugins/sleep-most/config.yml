@@ -67,9 +67,95 @@ sleep:
   
   world_nether:
     enabled: false
-
+    gsit-hook: false
+    feed: false
+    exempt-creative: false
+    prevent-sleep: false
+    use-title-night-skipped: false
+    longer-night-duration: 0
+    use-sound-night-skipped: false
+    reset-time-since-rest: true
+    mob-no-target: true
+    skip-msg-audience: all
+    prevent-phantom: false
+    non-sleeping-title: false
+    gsit-sleep-cmd: false
+    calculation-method: percentage
+    dynamic-animation-speed: false
+    phantom-reset-audience: all
+    use-exempt: false
+    gsit-sleep: true
+    heal: false
+    skip-night-sound: ui.toast.challenge_complete
+    skip-delay: 0
+    allow-sleep-cmd: true
+    use-title-storm-skipped: false
+    exempt-flying: false
+    insomnia-chance: 0.0
+    exempt-spectator: false
+    clock-animation: true
+    insomnia-milk: false
+    storm-sleep: true
+    force-nightcycle-animation: true
+    players-required: 5
+    non-sleeping-sound: false
+    skip-storm-sound: entity.wither.spawn
+    allow-kick: false
+    use-sound-storm-skipped: false
+    use-afk: false
+    use-bossbar: false
+    exempt-below-y: -1
+    skip-storm: true
+    non-sleeping-clock-animation: false
+    percentage-required: 0.5
+    disable-daylight-cycle-gamerule: true
+    nightcycle-animation: false
+  
   world_the_end:
     enabled: false
+    gsit-hook: false
+    feed: false
+    exempt-creative: false
+    prevent-sleep: false
+    use-title-night-skipped: false
+    longer-night-duration: 0
+    use-sound-night-skipped: false
+    reset-time-since-rest: true
+    mob-no-target: true
+    skip-msg-audience: all
+    prevent-phantom: false
+    non-sleeping-title: false
+    gsit-sleep-cmd: false
+    calculation-method: percentage
+    dynamic-animation-speed: false
+    phantom-reset-audience: all
+    use-exempt: false
+    gsit-sleep: true
+    heal: false
+    skip-night-sound: ui.toast.challenge_complete
+    skip-delay: 0
+    allow-sleep-cmd: true
+    use-title-storm-skipped: false
+    exempt-flying: false
+    insomnia-chance: 0.0
+    exempt-spectator: false
+    clock-animation: true
+    insomnia-milk: false
+    storm-sleep: true
+    force-nightcycle-animation: true
+    players-required: 5
+    non-sleeping-sound: false
+    skip-storm-sound: entity.wither.spawn
+    allow-kick: false
+    use-sound-storm-skipped: false
+    use-afk: false
+    use-bossbar: false
+    exempt-below-y: -1
+    skip-storm: true
+    non-sleeping-clock-animation: false
+    percentage-required: 0.5
+    disable-daylight-cycle-gamerule: true
+    nightcycle-animation: false
 
 # specify the time which the world will be set after reset
 time-after-reset: 0

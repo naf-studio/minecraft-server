@@ -76,6 +76,12 @@ performance:
   # Some JREs don't support this.
   faster-random-generator:
     enabled: true
+    # Which random generator will be used?
+    # See https://openjdk.org/jeps/356
+    random-generator: Xoroshiro128PlusPlus
+    # Enable faster random generator for world generation.
+    # WARNING: This will affect world generation!!!
+    enable-for-worldgen: false
     # Warn if you are not using legacy random source for slime chunk generation.
     warn-for-slime-chunk: false
     # Use legacy random source for slime chunk generation,
@@ -86,8 +92,6 @@ performance:
   # that number of ticks, then it will be removed. Setting a value to
   # -1 disables this feature.
   entity-timeouts:
-    SNOWBALL: 300
-    LLAMA_SPIT: -1
     ALLAY: -1
     AREA_EFFECT_CLOUD: -1
     ARMADILLO: -1
@@ -97,7 +101,6 @@ performance:
     BAT: -1
     BEE: -1
     BLAZE: -1
-    BLOCK_DISPLAY: -1
     BOAT: -1
     BOGGED: -1
     BREEZE: -1
@@ -118,7 +121,6 @@ performance:
     DROWNED: -1
     EGG: -1
     ELDER_GUARDIAN: -1
-    END_CRYSTAL: -1
     ENDER_DRAGON: -1
     ENDER_PEARL: -1
     ENDERMAN: -1
@@ -128,14 +130,12 @@ performance:
     EXPERIENCE_BOTTLE: -1
     EXPERIENCE_ORB: -1
     EYE_OF_ENDER: -1
-    FALLING_BLOCK: -1
     FIREWORK_ROCKET: -1
     FOX: -1
     FROG: -1
     FURNACE_MINECART: -1
     GHAST: -1
     GIANT: -1
-    GLOW_ITEM_FRAME: -1
     GLOW_SQUID: -1
     GOAT: -1
     GUARDIAN: -1
@@ -144,23 +144,17 @@ performance:
     HORSE: -1
     HUSK: -1
     ILLUSIONER: -1
-    INTERACTION: -1
     IRON_GOLEM: -1
     ITEM: -1
-    ITEM_DISPLAY: -1
-    ITEM_FRAME: -1
     OMINOUS_ITEM_SPAWNER: -1
     FIREBALL: -1
-    LEASH_KNOT: -1
     LIGHTNING_BOLT: -1
     LLAMA: -1
+    LLAMA_SPIT: -1
     MAGMA_CUBE: -1
-    MARKER: -1
-    MINECART: -1
     MOOSHROOM: -1
     MULE: -1
     OCELOT: -1
-    PAINTING: -1
     PANDA: -1
     PARROT: -1
     PHANTOM: -1
@@ -184,6 +178,7 @@ performance:
     SMALL_FIREBALL: -1
     SNIFFER: -1
     SNOW_GOLEM: -1
+    SNOWBALL: 300
     SPAWNER_MINECART: -1
     SPECTRAL_ARROW: -1
     SPIDER: -1
@@ -191,8 +186,6 @@ performance:
     STRAY: -1
     STRIDER: -1
     TADPOLE: -1
-    TEXT_DISPLAY: -1
-    TNT: -1
     TNT_MINECART: -1
     TRADER_LLAMA: -1
     TRIDENT: -1
