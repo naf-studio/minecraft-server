@@ -1,0 +1,998 @@
+command-anvil:
+  enable: true
+  commands:
+  - anvil
+  permission: essentials.anvil
+command-teleport-back:
+  enable: true
+  commands:
+  - back
+  permission: essentials.back
+command-balance-top:
+  enable: true
+  commands:
+  - balancetop
+  - baltop
+  permission: essentials.balance.top
+command-balance-top-refresh:
+  enable: true
+  commands:
+  - refresh
+  permission: essentials.balance.top.refresh
+command-ban:
+  enable: true
+  commands:
+  - ban
+  permission: essentials.ban
+command-bottom:
+  enable: true
+  commands:
+  - bottom
+  permission: essentials.bottom
+command-chat-broadcast:
+  enable: true
+  commands:
+  - broadcast
+  - bc
+  permission: essentials.chat.broadcast
+command-cartography-table:
+  enable: true
+  commands:
+  - cartographytable
+  permission: essentials.cartographytable
+command-chat-clear:
+  enable: true
+  commands:
+  - chatclear
+  - cl
+  permission: essentials.chat.clear
+command-chat-disable:
+  enable: true
+  commands:
+  - chatdisable
+  - cd
+  permission: essentials.chat.disable
+command-chat-enable:
+  enable: true
+  commands:
+  - chatenable
+  - ce
+  permission: essentials.chat.enable
+command-chat-history:
+  enable: true
+  commands:
+  - chathistory
+  - ct
+  permission: essentials.chat.history
+command-compact:
+  enable: true
+  commands:
+  - compact
+  - blocks
+  - condense
+  permission: essentials.compact
+command-compact-all:
+  enable: true
+  commands:
+  - compactall
+  - blocksall
+  - condenseall
+  permission: essentials.compact.all
+command-cooldown:
+  enable: true
+  commands:
+  - cooldown
+  permission: essentials.cooldown
+command-cooldown-create:
+  enable: true
+  commands:
+  - create
+  permission: essentials.cooldown.create
+command-cooldown-delete:
+  enable: true
+  commands:
+  - delete
+  permission: essentials.cooldown.delete
+command-craft:
+  enable: true
+  commands:
+  - craft
+  permission: essentials.craft
+command-day:
+  enable: true
+  commands:
+  - day
+  permission: essentials.day
+command-del-home:
+  enable: true
+  commands:
+  - delhome
+  - hdelete
+  - hd
+  permission: essentials.del.home
+command-del-home-confirm:
+  enable: true
+  commands:
+  - delhomeconfirm
+  permission: essentials.del.home.confirm
+command-del-warp:
+  enable: true
+  commands:
+  - delwarp
+  - wdelete
+  permission: essentials.warp.del
+command-economy:
+  enable: true
+  commands:
+  - economy
+  - eco
+  permission: essentials.eco.use
+command-economy-give:
+  enable: true
+  commands:
+  - give
+  permission: essentials.eco.give
+command-economy-give-all:
+  enable: true
+  commands:
+  - giveall
+  permission: essentials.eco.give.all
+command-economy-reset:
+  enable: true
+  commands:
+  - reset
+  permission: essentials.eco.reset
+command-economy-set:
+  enable: true
+  commands:
+  - set
+  permission: essentials.eco.set
+command-economy-show:
+  enable: true
+  commands:
+  - show
+  - s
+  permission: essentials.eco.show
+command-economy-take:
+  enable: true
+  commands:
+  - take
+  permission: essentials.eco.take
+command-enchant:
+  enable: true
+  commands:
+  - enchant
+  - enchantment
+  permission: essentials.enchant
+command-enchanting:
+  enable: true
+  commands:
+  - enchanting
+  permission: essentials.enchanting
+command-ender-chest:
+  enable: true
+  commands:
+  - enderchest
+  - ec
+  permission: essentials.enderchest
+command-ender-see:
+  enable: true
+  commands:
+  - endersee
+  - ecsee
+  permission: essentials.endersee
+command-version:
+  enable: true
+  commands:
+  - essversion
+  - ev
+command-experience:
+  enable: true
+  commands:
+  - experience
+  - xp
+  - exp
+  - level
+  - levels
+  permission: essentials.experience
+command-grant-experience:
+  enable: true
+  commands:
+  - grant
+  permission: essentials.experience.grant
+command-query-experience:
+  enable: true
+  commands:
+  - query
+  permission: essentials.experience.query
+command-set-experience:
+  enable: true
+  commands:
+  - set
+  permission: essentials.experience.set
+command-ext:
+  enable: true
+  commands:
+  - ext
+  permission: essentials.ext
+command-feed:
+  enable: true
+  commands:
+  - feed
+  - eat
+  permission: essentials.feed
+command-fly:
+  enable: true
+  commands:
+  - fly
+  permission: essentials.fly
+command-freeze:
+  enable: true
+  commands:
+  - freeze
+  permission: essentials.freeze
+command-furnace:
+  enable: true
+  commands:
+  - furnace
+  - burn
+  permission: essentials.furnace
+command-game-mode:
+  enable: true
+  commands:
+  - gamemode
+  - gm
+  permission: essentials.gamemode
+command-give:
+  enable: true
+  commands:
+  - give
+  permission: essentials.give
+command-give-all:
+  enable: true
+  commands:
+  - giveall
+  permission: essentials.give.all
+command-game-mode-adventure:
+  enable: true
+  commands:
+  - gma
+  - advent
+  permission: essentials.gamemode.adventure
+command-game-mode-creative:
+  enable: true
+  commands:
+  - gmc
+  - creat
+  permission: essentials.gamemode.creative
+command-game-mode-survival:
+  enable: true
+  commands:
+  - gms
+  - survi
+  permission: essentials.gamemode.survival
+command-game-mode-spectator:
+  enable: true
+  commands:
+  - gmsp
+  - spec
+  permission: essentials.gamemode.spectator
+command-god:
+  enable: true
+  commands:
+  - god
+  permission: essentials.god
+command-grind-stone:
+  enable: true
+  commands:
+  - grindstone
+  permission: essentials.grindstone
+command-hat:
+  enable: true
+  commands:
+  - hat
+  permission: essentials.hat
+command-heal:
+  enable: true
+  commands:
+  - heal
+  permission: essentials.heal
+command-hologram:
+  enable: true
+  commands:
+  - hologram
+  - holo
+  - ho
+  permission: essentials.hologram
+command-hologram-add-line:
+  enable: true
+  commands:
+  - addline
+  permission: essentials.hologram.add.line
+command-hologram-background:
+  enable: true
+  commands:
+  - background
+  permission: essentials.hologram.text.background
+command-hologram-bill-board:
+  enable: true
+  commands:
+  - billboard
+  permission: essentials.hologram.billboard
+command-hologram-block:
+  enable: true
+  commands:
+  - block
+  permission: essentials.hologram.add.line
+command-hologram-create:
+  enable: true
+  commands:
+  - create
+  permission: essentials.hologram.create
+command-hologram-delete:
+  enable: true
+  commands:
+  - delete
+  permission: essentials.hologram.delete
+command-hologram-insert-after-line:
+  enable: true
+  commands:
+  - insertafter
+  permission: essentials.hologram.insert.after.line
+command-hologram-insert-before-line:
+  enable: true
+  commands:
+  - insertbefore
+  permission: essentials.hologram.insert.before.line
+command-hologram-item:
+  enable: true
+  commands:
+  - item
+  permission: essentials.hologram.add.line
+command-hologram-list:
+  enable: true
+  commands:
+  - list
+  - l
+  - '?'
+  permission: essentials.hologram.list
+command-hologram-move-here:
+  enable: true
+  commands:
+  - movehere
+  permission: essentials.hologram.move.here
+command-hologram-move-to:
+  enable: true
+  commands:
+  - moveto
+  permission: essentials.hologram.move.to
+command-hologram-pitch:
+  enable: true
+  commands:
+  - pitch
+  permission: essentials.hologram.yaw
+command-hologram-remove-line:
+  enable: true
+  commands:
+  - removeline
+  permission: essentials.hologram.remove.line
+command-hologram-scale:
+  enable: true
+  commands:
+  - scale
+  permission: essentials.hologram.scale
+command-hologram-text-see-through:
+  enable: true
+  commands:
+  - seethrough
+  permission: essentials.hologram.see.through
+command-hologram-set-line:
+  enable: true
+  commands:
+  - setline
+  permission: essentials.hologram.set.line
+command-hologram-shadow-radius:
+  enable: true
+  commands:
+  - shadowradius
+  permission: essentials.hologram.shadow.radius
+command-hologram-shadow-strength:
+  enable: true
+  commands:
+  - shadowstrength
+  permission: essentials.hologram.shadow.strength
+command-hologram-teleport:
+  enable: true
+  commands:
+  - teleport
+  - tp
+  permission: essentials.hologram.teleport
+command-hologram-text-alignment:
+  enable: true
+  commands:
+  - textalignment
+  permission: essentials.hologram.text.alignment
+command-hologram-text-shadow:
+  enable: true
+  commands:
+  - textshadow
+  permission: essentials.hologram.text.shadow
+command-hologram-translation:
+  enable: true
+  commands:
+  - translation
+  permission: essentials.hologram.translation
+command-hologram-view-distance:
+  enable: true
+  commands:
+  - viewdistance
+  permission: essentials.hologram.shadow.strength
+command-hologram-yaw:
+  enable: true
+  commands:
+  - yaw
+  permission: essentials.hologram.yaw
+command-home:
+  enable: true
+  commands:
+  - home
+  - h
+  - homes
+  permission: essentials.home
+command-invsee:
+  enable: true
+  commands:
+  - invsee
+  permission: essentials.invsee
+command-item-lore:
+  enable: true
+  commands:
+  - itemlore
+  - ilore
+  - itemlore
+  - lore
+  permission: essentials.item.lore
+command-item-lore-add:
+  enable: true
+  commands:
+  - add
+  permission: essentials.item.lore.add
+command-item-lore-clear:
+  enable: true
+  commands:
+  - clear
+  permission: essentials.item.lore.clear
+command-item-lore-set:
+  enable: true
+  commands:
+  - set
+  permission: essentials.item.lore.set
+command-item-name:
+  enable: true
+  commands:
+  - itemname
+  - iname
+  - itemrename
+  - irename
+  permission: essentials.item.name
+command-kick:
+  enable: true
+  commands:
+  - kick
+  permission: essentials.kick
+command-kick-all:
+  enable: true
+  commands:
+  - kickall
+  permission: essentials.kick.all
+command-kill-all:
+  enable: true
+  commands:
+  - killall
+  permission: essentials.kill.all
+command-kit:
+  enable: true
+  commands:
+  - kit
+  - kits
+  permission: essentials.kit
+command-kit-create:
+  enable: true
+  commands:
+  - kitcreate
+  - kcreate
+  permission: essentials.kit.create
+command-kit-delete:
+  enable: true
+  commands:
+  - kitdelete
+  - delete
+  permission: essentials.kit.delete
+command-kit-editor:
+  enable: true
+  commands:
+  - kiteditor
+  - keditor
+  permission: essentials.kit.editor
+command-kitty-cannon:
+  enable: true
+  commands:
+  - kittycannon
+  permission: essentials.kitty.cannon
+command-loom:
+  enable: true
+  commands:
+  - loom
+  permission: essentials.loom
+command-mail:
+  enable: true
+  commands:
+  - mail
+  - mailbox
+  - mb
+  permission: essentials.mail
+command-mail-give:
+  enable: true
+  commands:
+  - give
+  permission: essentials.mail.give
+command-mail-give-all:
+  enable: true
+  commands:
+  - giveall
+  permission: essentials.mail.giveall
+command-mail-open:
+  enable: true
+  commands:
+  - open
+  permission: essentials.mail.open
+command-message:
+  enable: true
+  commands:
+  - message
+  - msg
+  - tell
+  - whisper
+  - m
+  permission: essentials.message
+command-message-toggle:
+  enable: true
+  commands:
+  - messagetoggle
+  - msgtoggle
+  - mtg
+  permission: essentials.message.toggle
+command-money:
+  enable: true
+  commands:
+  - money
+  - balance
+  permission: essentials.money
+command-more:
+  enable: true
+  commands:
+  - more
+  permission: essentials.more
+command-mute:
+  enable: true
+  commands:
+  - mute
+  permission: essentials.mute
+command-near:
+  enable: true
+  commands:
+  - near
+  permission: essentials.near
+command-night:
+  enable: true
+  commands:
+  - night
+  permission: essentials.night
+command-night-vision:
+  enable: true
+  commands:
+  - nightvision
+  - nv
+  permission: essentials.nightvision
+command-pay:
+  enable: true
+  commands:
+  - pay
+  permission: essentials.pay
+command-pay-toggle:
+  enable: true
+  commands:
+  - paytoggle
+  permission: essentials.pay.toggle
+command-player-time:
+  enable: true
+  commands:
+  - player-time
+  - ptime
+  permission: essentials.player.time
+command-player-weather:
+  enable: true
+  commands:
+  - player-weather
+  - pweather
+  permission: essentials.player.weather
+command-world-edit:
+  enable: true
+  commands:
+  - player-worldedit
+  - pwe
+  - ess-worldedit
+  - eworldedit
+  - ew
+  permission: essentials.worldedit.use
+command-world-edit-option-boss-bar:
+  enable: true
+  commands:
+  - bossbar
+  permission: essentials.worldedit.option.bossbar
+command-world-edit-confirm:
+  enable: true
+  commands:
+  - confirm
+  permission: essentials.worldedit.confirm
+command-world-edit-cut:
+  enable: true
+  commands:
+  - cut
+  permission: essentials.worldedit.cut
+command-world-edit-cyl:
+  enable: true
+  commands:
+  - cyl
+  permission: essentials.worldedit.cyl
+command-world-edit-fill:
+  enable: true
+  commands:
+  - fill
+  permission: essentials.worldedit.fill
+command-world-edit-give:
+  enable: true
+  commands:
+  - give
+  permission: essentials.worldedit.give
+command-world-edit-option-inventory:
+  enable: true
+  commands:
+  - inventory
+  - inv
+  permission: essentials.worldedit.option.inventory
+command-world-edit-option:
+  enable: true
+  commands:
+  - option
+  - o
+  permission: essentials.worldedit.option
+command-world-edit-pos1:
+  enable: true
+  commands:
+  - pos1
+  permission: essentials.worldedit.pos1
+command-world-edit-pos2:
+  enable: true
+  commands:
+  - pos2
+  permission: essentials.worldedit.pos2
+command-world-edit-set:
+  enable: true
+  commands:
+  - set
+  permission: essentials.worldedit.set
+command-world-edit-sphere:
+  enable: true
+  commands:
+  - sphere
+  permission: essentials.worldedit.sphere
+command-world-edit-stop:
+  enable: true
+  commands:
+  - stop
+  - cancel
+  permission: essentials.worldedit.stop
+command-world-edit-walls:
+  enable: true
+  commands:
+  - walls
+  permission: essentials.worldedit.walls
+command-play-time:
+  enable: true
+  commands:
+  - playtime
+  permission: essentials.play.time
+command-power-tools:
+  enable: true
+  commands:
+  - powertools
+  - pt
+  permission: essentials.power.tools
+command-power-tools-toggle:
+  enable: true
+  commands:
+  - powertools-toggle
+  - pt-toggle
+  permission: essentials.power.tools.toggle
+command-repair:
+  enable: true
+  commands:
+  - repair
+  - fix
+  permission: essentials.repair
+command-repair-all:
+  enable: true
+  commands:
+  - repairall
+  - fixall
+  permission: essentials.repair.all
+command-reply:
+  enable: true
+  commands:
+  - reply
+  - r
+  permission: essentials.reply
+command-rules:
+  enable: true
+  commands:
+  - rules
+  - '?'
+  - help
+  - aide
+  permission: essentials.rules
+command-sanction:
+  enable: true
+  commands:
+  - sanction
+  - sc
+  permission: essentials.sanction
+command-scoreboard:
+  enable: true
+  commands:
+  - sb
+  permission: essentials.scoreboard
+command-seen:
+  enable: true
+  commands:
+  - seen
+  - whois
+  permission: essentials.seen
+command-seen-ip:
+  enable: true
+  commands:
+  - seenip
+  - whoisip
+  permission: essentials.seen.ip
+command-set-home:
+  enable: true
+  commands:
+  - sethome
+  - hcreate
+  - hc
+  permission: essentials.set.home
+command-set-home-confirm:
+  enable: true
+  commands:
+  - sethomeconfirm
+  permission: essentials.set.home.confirm
+command-set-spawn:
+  enable: true
+  commands:
+  - setspawn
+  permission: essentials.set.spawn
+command-set-warp:
+  enable: true
+  commands:
+  - setwarp
+  - wcreate
+  permission: essentials.warp.set
+command-show-item:
+  enable: true
+  commands:
+  - showitem
+  permission: essentials.show.item
+command-show-kit:
+  enable: true
+  commands:
+  - showkit
+  permission: essentials.kit.show
+command-skull:
+  enable: true
+  commands:
+  - skull
+  permission: essentials.skull
+command-smithing-table:
+  enable: true
+  commands:
+  - smithingtable
+  permission: essentials.smithingtable
+command-social-spy:
+  enable: true
+  commands:
+  - socialspy
+  permission: essentials.socialspy
+command-spawn:
+  enable: true
+  commands:
+  - spawn
+  permission: essentials.spawn
+command-speed:
+  enable: true
+  commands:
+  - speed
+  permission: essentials.speed
+command-stone-cutter:
+  enable: true
+  commands:
+  - stonecutter
+  permission: essentials.stonecutter
+command-sudo:
+  enable: true
+  commands:
+  - sudo
+  - su
+  permission: essentials.sudo
+command-sun:
+  enable: true
+  commands:
+  - sun
+  permission: essentials.sun
+command-top:
+  enable: true
+  commands:
+  - top
+  permission: essentials.top
+command-teleport:
+  enable: true
+  commands:
+  - tp
+  permission: essentials.tp
+command-teleport-to:
+  enable: true
+  commands:
+  - tpa
+  permission: essentials.tpa
+command-teleport-cancel:
+  enable: true
+  commands:
+  - tpacancel
+  permission: essentials.tpa.cancel
+command-teleport-accept:
+  enable: true
+  commands:
+  - tpaccept
+  - tpyes
+  permission: essentials.tpa.accept
+command-teleport-all:
+  enable: true
+  commands:
+  - tpall
+  permission: essentials.tp.all
+command-teleport-deny:
+  enable: true
+  commands:
+  - tpdeny
+  - tpno
+  permission: essentials.tpa.deny
+command-teleport-here:
+  enable: true
+  commands:
+  - tphere
+  - s
+  permission: essentials.tp.here
+command-teleport-random:
+  enable: true
+  commands:
+  - tpr
+  - rtp
+  permission: essentials.tp.random
+command-trash:
+  enable: true
+  commands:
+  - trash
+  - poubelle
+  permission: essentials.trash
+command-un-ban:
+  enable: true
+  commands:
+  - unban
+  permission: essentials.un.ban
+command-un-mute:
+  enable: true
+  commands:
+  - unmute
+  permission: essentials.un.mute
+command-vault:
+  enable: true
+  commands:
+  - vault
+  - sac
+  - bag
+  - b
+  - coffre
+  - chest
+  permission: essentials.vault.use
+command-vault-add-slot:
+  enable: true
+  commands:
+  - add
+  permission: essentials.vault.add.slot
+command-vault-give:
+  enable: true
+  commands:
+  - give
+  permission: essentials.vault.give
+command-vault-set-slot:
+  enable: true
+  commands:
+  - set
+  permission: essentials.vault.set.slot
+command-vote:
+  enable: true
+  commands:
+  - vote
+  permission: essentials.vote.use
+command-vote-add:
+  enable: true
+  commands:
+  - add
+  permission: essentials.vote.add
+command-vote-party:
+  enable: true
+  commands:
+  - voteparty
+  - vp
+  permission: essentials.voteparty.use
+command-vote-party-add:
+  enable: true
+  commands:
+  - add
+  permission: essentials.voteparty.add
+command-vote-party-remove:
+  enable: true
+  commands:
+  - remove
+  permission: essentials.voteparty.remove
+command-vote-party-set:
+  enable: true
+  commands:
+  - set
+  permission: essentials.voteparty.set
+command-warp:
+  enable: true
+  commands:
+  - warp
+  - w
+  permission: essentials.warp
+command-warps:
+  enable: true
+  commands:
+  - warps
+  - wlist
+  permission: essentials.warps
+command-teleport-world:
+  enable: true
+  commands:
+  - worldtp
+  - wtp
+  permission: essentials.tp.world
+command-essentials:
+  enable: true
+  commands:
+  - zessentials
+  - ess
+  permission: essentials.use
+command-essentials-convert:
+  enable: true
+  commands:
+  - convert
+  - conv
+  - c
+  permission: essentials.convert
+command-essentials-reload:
+  enable: true
+  commands:
+  - reload
+  - rl
+  permission: essentials.reload
