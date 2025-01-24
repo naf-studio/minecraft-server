@@ -135,7 +135,7 @@ UseModernPaperChatEvent: false
 # DiscordGameStatus: Text to display. Can be a single value e.g. "Minecraft", or multiple values e.g. ["Minecraft", "yourip.changeme.com"]
 # DiscordOnlineStatus: Activity status to display. This must be one of the following: ONLINE, DND, IDLE or INVISIBLE
 # StatusUpdateRateInMinutes: How frequently to cycle the status
-DiscordGameStatus: ["Minecraft Survival 1.21"]
+DiscordGameStatus: ["NAF Minecraft SMP"]
 DiscordOnlineStatus: ONLINE
 StatusUpdateRateInMinutes: 2
 
@@ -173,7 +173,7 @@ DiscordChatChannelEmojiBehavior: "name"
 DiscordChatChannelEmoteBehavior: "name"
 DiscordChatChannelPrefixRequiredToProcessMessage: ""
 DiscordChatChannelPrefixActsAsBlacklist: false
-DiscordChatChannelRolesAllowedToUseColorCodesInChat: ["Owner", "Admin", "Support"]
+DiscordChatChannelRolesAllowedToUseColorCodesInChat: ["Owner", "CoOwner", "Admin", "Support"]
 DiscordChatChannelBroadcastDiscordMessagesToConsole: true
 DiscordChatChannelRequireLinkedAccount: false
 DiscordChatChannelBlockBots: false

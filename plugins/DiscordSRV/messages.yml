@@ -401,7 +401,7 @@ DiscordChatChannelServerShutdownMessage: ":octagonal_sign: **Server has stopped*
 #                        you can use ServerWatchdogTimeout as a placeholder by using %timeout%
 #                        you can use the %timestamp% placeholder for use in discord's timestamp format
 #
-ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked in %timeout% seconds :fire::bangbang:"
+ServerWatchdogMessage: ":fire: **Server hasn't ticked in %timeout% seconds**"
 
 # Account link messages
 # These are messages used when accounts are linked
@@ -428,8 +428,8 @@ ServerWatchdogMessage: "<t:%timestamp%:R> %guildowner%, the server hasn't ticked
 # Discord
 UnknownCode: "[DiscordSRV] I don't know of such a code, try again."
 InvalidCode: "[DiscordSRV] Are you sure that's your code? Link codes are 4 numbers long."
-DiscordAccountLinked: "[DiscordSRV] Your Discord account has been linked to %name% (%uuid%)"
-DiscordAccountAlreadyLinked: "[DiscordSRV] You are already linked to %username% (%uuid%)"
+DiscordAccountLinked: "[DiscordSRV] Your Discord account has been linked to %name%"
+DiscordAccountAlreadyLinked: "[DiscordSRV] You are already linked to %username%"
 DiscordLinkedAccountRequired: "[DiscordSRV] You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
 DiscordLinkedAccountCheckFailed: "[DiscordSRV] Unable to check if your account is linked, please try again later"
 # Minecraft
