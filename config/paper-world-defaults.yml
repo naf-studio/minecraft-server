@@ -80,7 +80,7 @@ chunks:
     wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 8
+  max-auto-save-chunks-per-tick: 10
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -222,7 +222,7 @@ entities:
     - SleepingX
     - SleepingY
     - SleepingZ
-    iron-golems-can-spawn-in-air: false
+    iron-golems-can-spawn-in-air: true
     monster-spawn-max-light-level: default
     non-player-arrow-despawn-rate: '60'
     per-player-mob-spawns: true
