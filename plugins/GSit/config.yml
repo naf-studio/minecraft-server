@@ -4,7 +4,7 @@ Lang:
   lang: en_us
   
   # Send messages to clients in their own language, if available
-  client-lang: true
+  client-lang: false
 
 
 
