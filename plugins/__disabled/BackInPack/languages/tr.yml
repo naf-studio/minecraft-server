@@ -1,0 +1,212 @@
+#
+# CC Creative Commons 2022-2023
+# Attribution-NoDerivatives 4.0 International
+# Author olios
+# Translated by Vlam_ (https://linktr.ee/vlam1)
+
+# You can use colors in your messages
+# https://minecraft.fandom.com/wiki/Formatting_codes
+
+# ONEMLI!
+# Bu dosyadaki herhangi bir değişiklik, sunucunun yeniden başlatılmasını gerektirir.
+
+
+#   _____                 _      _   _
+#  |_   _| _ __ _ _ _  __| |__ _| |_(_)___ _ _
+#    | || '_/ _` | ' \(_-< / _` |  _| / _ \ ' \
+#    |_||_| \__,_|_||_/__/_\__,_|\__|_\___/_||_|
+#
+#           by Vlam_
+#           by himself
+
+
+#
+#  _______  ___      __   __  _______  ___   __    _
+# |       ||   |    |  | |  ||       ||   | |  |  | |
+# |    _  ||   |    |  | |  ||    ___||   | |   |_| |
+# |   |_| ||   |    |  |_|  ||   | __ |   | |       |
+# |    ___||   |___ |       ||   ||  ||   | |  _    |
+# |   |    |       ||       ||   |_| ||   | | | |   |
+# |___|    |_______||_______||_______||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Plugin status
+enable-plugin: "Plugin BackInPack çalışıyor"
+disable-plugin: "Plugin BackInPack durduruldu"
+loaded-language-file: "%backinpack_config_language%.yml dil dosyası yüklendi"
+language-file-not-found: "Language file %backinpack_config_language%.yml bulunamadı. en.yml otomatik olarak yüklendi"
+loading-single-backpack: "Oyuncular Yükleniyor' Backpacks"
+reload-complete: "Ayar dosyası BackInPack eklentisi için başarıyla yeniden yüklendi"
+missing-backpacks: "/backpacks klasöründe sırt çantası dosyası bulunamadı"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Database
+database-not-connected: "&cPlugin bir veritabanına bağlı değil. Bu komut kullanılamaz"
+database-synchronized: "&aVeriler veritabanı ile senkronize edildi"
+# ___________________________________________________________________________
+
+
+#  _______  ___      _______  __   __  _______  ______
+# |       ||   |    |   _   ||  | |  ||       ||    _ |
+# |    _  ||   |    |  |_|  ||  |_|  ||    ___||   | ||
+# |   |_| ||   |    |       ||       ||   |___ |   |_||_
+# |    ___||   |___ |       ||_     _||    ___||    __  |
+# |   |    |       ||   _   |  |   |  |   |___ |   |  | |
+# |___|    |_______||__| |__|  |___|  |_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+player-death-delete: "&6Öldün, Backpack'in de ki eşyalar &csilindi!"
+player-death-drop: "&6Öldün, Backpack'in de ki eşyalar &cdüşüverdi!"
+player-death-save: "&aÖldün, ama Backpack'in de ki eşyalar güvende!"
+player-backpack-change-size: "Backpack boyutu &9değiştirildi&f, erişilemeyen slotlar vardı ve bu slotlarda bulunan eşyalar atıldı"
+player-backpack-access-through-command-disabled: "&cBackpack erişim komutu devredışı bırakıldı!"
+player-backpack-access-through-item-disabled: "&cÖğe ile Backpack'e erişim devredışı bırakıldı!"
+player-backpack-name-changed: "&aBackpack ismi şu isimden &6%old-backpack-name% &abu isime &f%new-backpack-name% &agüncellendi"
+player-backpack-not-owner: "&cDiğer oyuncuların Backpack'lerini açamazsın!"
+player-backpack-change-name: "&fBu Backpack için yeni bir isim giriniz"
+player-backpack-buy: "&aYeni bir Backpack başarıyla sipariş ettiniz"
+player-max-backpacks: "&cSahip olabileceğin en fazla Backpack sayısına sahipsin!"
+player-backpack-not-exists: "&6Açmaya çalıştığın Backpack bulunamadı. Atanmamış bir Backpack ile değiştirildi"
+player-backpack-blacklist: "&cBazı eşyalar Backpack'e konulamaz! Bu eşyalar atıldı"
+player-backpack-remove: "&6Senin &f%backinpack_backpack_name% &6 adlı Backpack'in silindi"
+player-backpack-refund: "&aGeri ödeme aldın &6%backinpack_config_removing-backpacks_refund%$ &açünkü Backpack'in silindi"
+cmd-about:
+  - "&l&6Back&l&9In&l&6Pack &r&6eklentisi senin sanal Sırt Çantaları oluşturarak envanterini genişletmeni sağlayan bir eklentidir."
+  - ""
+  - "&6Backpack'lere &l&a/backpack &r&6komut ile erişim sağlayabilirsin."
+  - "&6Bu komutu şu şekilde daha kısa kullanabilirsin: &l&a/b &r&6, &l&a/bck &r&6, &l&a/bip &r&6."
+  - ""
+  - "&6Backpack'ler yapılarak veya alınarak elde edilebilir &c(bu seçenekler bazen aktif olmayabilir, bu sunucu ayarlarına bağlıdır)&6."
+  - ""
+  - "&6Daha fazla bilgi için, yönetim ile iletişime geçebilirsin."
+  - ""
+  - "&6&aolios Tarafından yapıldı"
+  - "&c❤ Çeviri için Vlam_'a Teşekkürler!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  ______    __   __  ___   _______  _______  ___   _______  __    _  _______
+# |       ||       ||    _ |  |  |_|  ||   | |       ||       ||   | |       ||  |  | ||       |
+# |    _  ||    ___||   | ||  |       ||   | |  _____||  _____||   | |   _   ||   |_| ||  _____|
+# |   |_| ||   |___ |   |_||_ |       ||   | | |_____ | |_____ |   | |  | |  ||       || |_____
+# |    ___||    ___||    __  ||       ||   | |_____  ||_____  ||   | |  |_|  ||  _    ||_____  |
+# |   |    |   |___ |   |  | || ||_|| ||   |  _____| | _____| ||   | |       || | |   | _____| |
+# |___|    |_______||___|  |_||_|   |_||___| |_______||_______||___| |_______||_|  |__||_______|
+#
+
+
+# ___________________________________________________________________________
+# Permissions & commands
+no-permission: "&cBu komutu kullanabilmek için yeterli izinlere sahip değilsin"
+no-permission-backpack-access: "&cBu Backpack'e erişmek için yeterli izinlere sahip değilsin!"
+console-command: "&cBu komutu konsoldan kullanamazsın"
+# ___________________________________________________________________________
+
+
+#  _______  ______   __   __  ___   __    _
+# |   _   ||      | |  |_|  ||   | |  |  | |
+# |  |_|  ||  _    ||       ||   | |   |_| |
+# |       || | |   ||       ||   | |       |
+# |       || |_|   ||       ||   | |  _    |
+# |   _   ||       || ||_|| ||   | | | |   |
+# |__| |__||______| |_|   |_||___| |_|  |__|
+#
+
+
+# ___________________________________________________________________________
+# Players
+player-not-found: "&cOyuncu &f&l%player% &cbulunamadı"
+player-backpack-userinfo-offline: "&9Bu oyuncu çevrimdışı, izinler kontrol edilemedi - görülebilir Backpack boyutu &f54"
+player-backpack-size-changed-blocked-spaces:
+  - "&6Bu oyuncunun Backpack boyutu değiştirildi."
+  - "&6Erişilemeyen slotlarda eşyalar var."
+  - "&6Eşyaların çıkarılmaması için Backpack'de görünür engellenen yerler olmamalı."
+player-has-max-backpacks: "&cBu oyuncu en fazla sahip olabileceği backpack sayısına sahip. Daha fazla alamaz!"
+player-set-backpack-size: "&aOyuncu &f&l%backinpack_player_name% &abackpack boyutunu güncelledi: &f%backinpack_backpack_size%"
+player-set-player-all-backpack-size: "&aOyuncu &f&l%backinpack_player_name% &abütün Backpack boyutlarını güncelledi: &f%backinpack_backpack_size%"
+player-set-all-backpack-size: "&aBackpack boyutları güncellendi: &f%backinpack_backpack_size% &atüm oyuncular için (&f%backinpack_players%&a)"
+player-reload-complete: "&aBaşarıyla ayar dosyası BackInPack eklentisi için yeniden yüklendi"
+player-database-not-connected: "&cEklenti bir veritabanına bağlı değil, bu komut kullanılamaz!"
+player-database-synchronized: "&aVeriler veritabanı ile senkronize edildi"
+player-backpack-add: "&aŞu oyuncuya Backpack verildi: &f%backinpack_player_name%"
+player-backpack-give-offline: "&cHedeflenen oyuncu çevrimdışı. Backpack envanterine eklenemedi!"
+player-userinfo:
+  - ""
+  - "&6Kullanıcıadı: &a%backinpack_player_username%"
+  - "&6UUID: &a%backinpack_player_uuid%"
+  - "&6Backpack sayısı: &a%backinpack_player_backpacks_count%"
+  - "&6Backpack listesi:"
+  - "&a%backinpack_player_backpacks_list%"
+  - ""
+# ___________________________________________________________________________
+
+
+#  _______  ______    ______    _______  ______    _______
+# |       ||    _ |  |    _ |  |       ||    _ |  |       |
+# |    ___||   | ||  |   | ||  |   _   ||   | ||  |  _____|
+# |   |___ |   |_||_ |   |_||_ |  | |  ||   |_||_ | |_____
+# |    ___||    __  ||    __  ||  |_|  ||    __  ||_____  |
+# |   |___ |   |  | ||   |  | ||       ||   |  | | _____| |
+# |_______||___|  |_||___|  |_||_______||___|  |_||_______|
+#
+
+
+# ___________________________________________________________________________
+# Arguments
+argument-not-number: "&f%args% &cbir sayı değil"
+argument-invalid-number: "&cSayı 1'den az ve 54'den fazla olamaz!"
+argument-missing:
+  - "&cGerekli tüm girdiler verilmedi."
+  - "&cKomutun kullanımı: &f%command%"
+argument-player-missing: "&cBöyle bir oyuncu bulunamadı!"
+argument-backpack-not-found: "&cVerilen isimde bir Backpack bulunamadı!"
+argument-backpack-name-not-given: "&cYeni Backpack ismi verilemedi!"
+argument-need-change-for-all-players:
+  - "&cTüm oyuncuların Backpack boyutu değiştirilirken hata oldu, Bütün Backpack'lerin boyutunu ayarlamalısınız"
+  - "&cKomut kullanımı şöyle olmalı: &f/backpack-set-size all all <backpack boyutu>"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Economy
+economy-not-enough-money: "&cYeteri kadar paran yok!"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Commands
+command-disabled: "&cBu komut bu sunucuda devredışı bırakılmış!"
+# ___________________________________________________________________________
+
+
+#  _______  _______  __   __  _______  ______
+# |       ||       ||  | |  ||       ||    _ |
+# |   _   ||_     _||  |_|  ||    ___||   | ||
+# |  | |  |  |   |  |       ||   |___ |   |_||_
+# |  |_|  |  |   |  |       ||    ___||    __  |
+# |       |  |   |  |   _   ||   |___ |   |  | |
+# |_______|  |___|  |__| |__||_______||___|  |_|
+#
+
+
+# ___________________________________________________________________________
+# Değerler
+true: "&aEvet"
+false: "&cHayır"
+# ___________________________________________________________________________
+
+
+# ___________________________________________________________________________
+# Bayraklar (bayrak açıklamaları liste olamaz)
+flag-none: "&7Bayrak yok"
+flag-items-drop: "   &c- Ölümle birlikte eşyalar düşecek"
+flag-backpack-delete: "   &c- Ölümle sırt çantanı kaybedersin"
+# Pozitif
+flag-items-save: "   &a+ Ölümden sonra eşyalar saklanır"
+# ___________________________________________________________________________

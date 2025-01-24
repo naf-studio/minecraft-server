@@ -1,0 +1,7 @@
+# This GUI is visible when you open the backpack.
+# You can only change the GUI title here.
+gui:
+  # The name of the backkpack GUI
+  title: "&e%backinpack_backpack_name%"
+
+  # This GUI does not use items. All items are set automatically and are independent of this file.
