@@ -1,0 +1,199 @@
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                      _         _   _   ___       _                           | #
+# |                             _ __   /_\  _ __ | |_(_) / __\ ___ | |_                          | #
+# |                            | '_ \ //_\\| '_ \| __| |/__\/// _ \| __|                         | #
+# |                            | | | /  _  \ | | | |_| / \/  \ (_) | |_                          | #
+# |                            |_| |_\_/ \_/_| |_|\__|_\_____/\___/ \__|                         | #
+# |                                                                                              | #
+# |                                 A ready-to-use antibot plugin                                | #
+# |                                                                                              | #
+# |                                © 2024 - Powered by nickuc.com                                | #
+# |                                                                                              | #
+# |                                                                                              | #
+# |  New options are not automatically added in this file. Default values are used               | #
+# |  if an option is not found.                                                                  | #
+# +----------------------------------------------------------------------------------------------+ #
+####################################################################################################
+
+other:
+  title: "&c&lNANTIBOT"
+  chat-prefix: "&4&l[NANTIBOT] &7"
+  attack-started: "&7A bot attack was initiated..."
+
+  ongoing-attack:
+    - ""
+    - " &cAn attack is being mitigated by nAntiBot"
+    - ""
+    - "  &c▢ &7Type of attack: &f{0}"
+    - "  &c▢ &7Beginning of the attack: &f{1}"
+    - ""
+    - " &e➣ &7Use &f'/ab notify' &7for more information."
+    - ""
+
+  finalized-attack:
+    - ""
+    - " &cAn attack has been mitigated by nAntiBot"
+    - ""
+    - "  &c▢ &7Type of attack: &f{0}"
+    - ""
+    - "  &c▢ &7Blocked connections: &f{3}"
+    - "  &c▢ &7Connection peak: &f{4}"
+    - ""
+    - "  &c▢ &7Beginning of the attack: &f{1}"
+    - "  &c▢ &7End of the attack: &f{2}"
+    - ""
+
+command:
+  insufficient-permission: "&cSorry, but you do not have permission &8(&e{0}&8) &cto execute this command."
+  reload: "&aSettings reloaded."
+  usage: "&cUsage: /{0}"
+  unknown-address: "&cSorry, but this ip address does not exist."
+
+actionbar:
+  active: "&a&l%animation% &6nAntiBot &3> %status% &3| &7Join/s %join_sec%  &7Ping/s %ping_sec%  &7CPS %cps%  &7Total &f%total%  &7Captcha: &f%captcha_check%  &7Cloud: &f%cloud_check%  &7Malloc &f≃ %mem_alloc% &3| &a⬆ &f%output% &c⬇ &f%input%"
+  inactive: "&a&l%animation% &6nAntiBot &3> %status% &3| &7Join/s %join_sec%  &7Ping/s %ping_sec%  &7Captcha: &f%captcha_check%  &7Malloc &f≃ %mem_alloc% &3| &a⬆ &f%output% &c⬇ &f%input%"
+
+captcha:
+  invalid: "&cYou have entered an invalid code, please try again."
+
+  join:
+    title: "&a&lWELCOME!"
+    subtitle: "&fPlease enter the code in the chat."
+    chat: []
+
+  solved:
+    title: "&a&lOK!"
+    subtitle: "&fPlease rejoin the server."
+
+  kick:
+    timeout:
+      - "&cYou took too long to solve the captcha."
+      - ""
+      - "&ePlease rejoin the server."
+      - ""
+      - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+    many-tries:
+      - "&cYou have entered the incorrect captcha code too many times."
+      - ""
+      - "&ePlease rejoin the server."
+      - ""
+      - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+    solved:
+      - "&aCaptcha successfully solved!"
+      - ""
+      - "&fPlease rejoin the server."
+      - ""
+      - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+kick:
+  awaiting-cloud:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cAwaiting connection to the cloud service."
+    - ""
+    - "&ePlease wait a few seconds and log in again."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  awaiting-captcha:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cAwaiting captcha generation."
+    - ""
+    - "&ePlease wait a few seconds and log in again."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  attack-started:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cA bot attack was started moments ago."
+    - ""
+    - "&ePlease rejoin the server."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  invalid-nickname:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cSorry, but your nickname is invalid."
+    - ""
+    - "&eIn case of problems, try checking the nickname you entered."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  fast-join:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou logged in too fast."
+    - ""
+    - "&ePlease wait a few seconds and log in again."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  too-many-joins:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou logged in many times."
+    - ""
+    - "&ePlease wait a few seconds and log in again."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  address-limit:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou have exhausted the limits of connected accounts per IP."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  checking:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou are being checked, please wait."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  country-block:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYour country is not allowed on the server."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  online-verification:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cIt is necessary to confirm your identity."
+    - ""
+    - "&cGo to &b{0} &cand enter the code &b{1}"
+    - "&cto confirm your login."
+    - ""
+    - "&eYou will be able to log in immediately after doing so."
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  temporary-ban:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou have been temporarily banned by the antibot!"
+    - ""
+    - "&cTime remaining: &f{0} seconds"
+    - ""
+    - "&cReason:"
+    - "&e'{1}'"
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
+
+  temporary-ban-less:
+    - "&c&lANTIBOT"
+    - ""
+    - "&cYou have been temporarily banned by the antibot!"
+    - ""
+    - "&cReason:"
+    - "&e'{0}'"
+    - ""
+    - "&ePlease join our Discord &9dsc.gg/nafd&r for more information!"
