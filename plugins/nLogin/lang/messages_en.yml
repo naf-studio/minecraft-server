@@ -18,65 +18,65 @@
 ####################################################################################################
 
 pending:
-  login: '&eUse the command &7/login <password>&e.'
-  register: '&eUse the command &7/register <password> <password>&e.'
+  login: '&e[Login] Use the command &7/login <password>&e.'
+  register: '&e[Register] Use the command &7/register <password> <password>&e.'
   action-bar:
     singular: '&cYou have {0} second to {login/register}.'
     plural: '&cYou have {0} seconds to {login/register}.'
 success:
-  login: '&aYou have successfully logged.'
-  register: '&aYou have successfully registered.'
-  session: '&aYour login session has been continued.'
-  premium: '&aYou are automatically logged in as you are using an unique account.'
-  bedrock: '&aYou are automatically logged in, as you are accessing from a Bedrock account.'
-  change-password: '&aYour password has been successfully changed.'
-  reload: '&eThe plugin has been successfully reloaded.'
+  login: '&a[Login] You have successfully logged.'
+  register: '&a[Register] You have successfully registered.'
+  session: '&a[Login] Your login session has been continued.'
+  premium: '&a[Login] You are automatically logged in as you are using an unique account.'
+  bedrock: '&a[Login] You are automatically logged in, as you are accessing from a Bedrock account.'
+  change-password: '&a[Register] Your password has been successfully changed.'
+  reload: '&e[nLogin] The plugin has been successfully reloaded.'
   kick:
-    unregister: '&aYou have been successfully unregistered.'
-    marked-offline: '&7Your account has been marked as &6offline&7, please rejoin.'
-    challenge-premium: '&7To confirm that you are using a &apremium account&7, please log in again.'
+    unregister: '&a[Register] You have been successfully unregistered.'
+    marked-offline: '&7[Login] Your account has been marked as &6offline&7, please rejoin.'
+    challenge-premium: '&7[Login] To confirm that you are using a &apremium account&7, please log in again.'
 error:
-  not-registered: '&cThis nickname has not yet been registered.'
-  offline: '&cThe desired player is offline.'
-  address-limit: '&cYou have exhausted the account limits per IP.'
-  database: '&cSorry, this database operation could not be completed. Check the console for more details.'
+  not-registered: '&c[Register] This nickname has not yet been registered.'
+  offline: '&c[Login] The desired player is offline.'
+  address-limit: '&c[Login] You have exhausted the account limits per IP.'
+  database: '&c[nLogin] Sorry, this database operation could not be completed. Check the console for more details.'
   command:
-    usage: '&cYou must use {0}.'
-    no-permission: '&cYou do not have permission to run this command.'
-    player-required: '&cThis command has been disabled via console.'
-    console-required: '&cThis command can only be used via the console.'
+    usage: '&c[nLogin] You must use {0}.'
+    no-permission: '&c[nLogin] You do not have permission to run this command.'
+    player-required: '&c[nLogin] This command has been disabled via console.'
+    console-required: '&c[nLogin] This command can only be used via the console.'
     arguments:
       password: password
       current-password: current password
       new-password: new password
   already:
-    login: '&cYou are already logged in.'
-    login-other: '&cThis player is already logged in.'
-    registered: '&cThis nickname has already been registered.'
-    premium: '&cYour account is already marked as premium.'
+    login: '&c[Login] You are already logged in.'
+    login-other: '&c[Login] This player is already logged in.'
+    registered: '&c[Register] This nickname has already been registered.'
+    premium: '&c[Login] Your account is already marked as premium.'
   password:
-    same-as-current: '&cThe password entered is the same as the current.'
-    too-large: '&cThe password entered is too large.'
-    too-small: '&cThe password entered is too small.'
-    not-secure: '&cThe password provided does not meet the security requirements. Please include a number, upper and lower case letters and a special symbol.'
-    do-not-match: '&cPasswords are not the same.'
-    require-confirmation: '&cYou must confirm your password.'
-    incorrect: '&cIncorrect password. Please, try again.'
+    same-as-current: '&c[nLogin] The password entered is the same as the current.'
+    too-large: '&c[nLogin] The password entered is too large.'
+    too-small: '&c[nLogin] The password entered is too small.'
+    not-secure: '&c[nLogin] The password provided does not meet the security requirements. Please include a number, upper and lower case letters and a special symbol.'
+    do-not-match: '&c[nLogin] Passwords are not the same.'
+    require-confirmation: '&c[nLogin] You must confirm your password.'
+    incorrect: '&c[nLogin] Incorrect password. Please, try again.'
   kick:
-    incorrect-password: '&cYou entered the incorrect password.'
+    incorrect-password: '&c[nLogin] You entered the incorrect password.'
     wait-server-start: |-
-      &cThe server has not yet started completely.
+      &c[nLogin] The server has not yet started completely.
       &cWait a while to connect.
     account-blocked: |-
-      &cYour address has been blocked by suspected invasion.&r
+      &c[nLogin] Your address has been blocked by suspected invasion.&r
       &r&cRemaining banishment time: {0}
-    invalid-nickname: '&cYour nickname is invalid, remove spaces, symbols, and invalid characters from your name.'
-    bedrock-nickname: '&cThe chosen nickname &f("{0}") &cis restricted to Bedrock players.'
+    invalid-nickname: '&c[nLogin] Your nickname is invalid, remove spaces, symbols, and invalid characters from your name.'
+    bedrock-nickname: '&c[nLogin] The chosen nickname &f("{0}") &cis restricted to Bedrock players.'
     transferred-nickname: |-
-      &cThe chosen name &f("{0}") &cwas reserved and transferred to an account using the same UUID.
+      &c[nLogin] The chosen name &f("{0}") &cwas reserved and transferred to an account using the same UUID.
 
       &eTo enter, please use another nickname.
-    already-online: '&cThis player is already online.'
+    already-online: '&c[nLogin] This player is already online.'
     unknown-hostname: |-
       &4[nLogin] The hostname being used &f({0}) &4was not defined in the configuration.
       &r
@@ -84,27 +84,27 @@ error:
       &r
       &r&eFor more information, check out the username appender tutorial:
       &r&bhttps://docs.nickuc.com/nlogin/username-appender
-    premium-not-logged: '&cYou are not logged into your account. Try to restart your Minecraft client.'
-    premium-challenge: '&cYou failed the premium challenge. Please rejoin the server.'
+    premium-not-logged: '&c[nLogin] You are not logged into your account. Try to restart your Minecraft client.'
+    premium-challenge: '&c[nLogin] You failed the premium challenge. Please rejoin the server.'
     timeout:
-      login: '&cYou took too long to login.'
-      register: '&cYou took too long to register.'
+      login: '&c[nLogin] You took too long to login.'
+      register: '&c[nLogin] You took too long to register.'
 notification:
-  all-viewed: '&aAll notifications have been viewed.'
+  all-viewed: '&a[nLogin] All notifications have been viewed.'
   premium-question:
   - ''
-  - ' &eAre you using a premium account?'
+  - ' &e[nLogin] Are you using a premium account?'
   - ' &7(after accepting, you will need to re-join.)'
   - ''
   select-language:
   - ''
-  - ' &7We have detected that you are using the language &f{0}&7.'
+  - ' &7[nLogin] We have detected that you are using the language &f{0}&7.'
   - ''
   - ' &eDo you want to change the nLogin language?'
   - ''
   password-update:
   - ''
-  - ' &eYour password needs to be reset.'
+  - ' &e[nLogin] Your password needs to be reset.'
   - ''
   - ' &7Please change your password with the command below:'
   - ' &f/changepass <current password> <new password>'
@@ -120,20 +120,20 @@ notification:
       text: '&c[No]'
       hover: null
 2fa:
-  not-registered: '&cYou do not have a {0} account.'
-  already-registered: '&cYou have already registered your {0}.'
-  register-limit: '&cYou have exhausted the limits of accounts with the same {0}.'
-  unregistered: '&eYour {0} was successfully unregistered.'
-  incorrect-code: '&cIncorrect code. Please try again.'
-  rate-limit: '&cLimit exceeded. Please wait {0} minutes to try again.'
-  confirmed-account: '&aYour {0} account has been successfully registered.'
+  not-registered: '&c[nLogin] You do not have a {0} account.'
+  already-registered: '&c[nLogin] You have already registered your {0}.'
+  register-limit: '&c[nLogin] You have exhausted the limits of accounts with the same {0}.'
+  unregistered: '&e[nLogin] Your {0} was successfully unregistered.'
+  incorrect-code: '&c[nLogin] Incorrect code. Please try again.'
+  rate-limit: '&c[nLogin] Limit exceeded. Please wait {0} minutes to try again.'
+  confirmed-account: '&a[nLogin] Your {0} account has been successfully registered.'
   confirmation-message-sent: |-
-    &7A confirmation code was sent to your &6{0}&7.
+    &7[nLogin] A confirmation code was sent to your &6{0}&7.
     &8(&f{1}&8).
-  command-delay: '&cWait a while before executing this command again.'
+  command-delay: '&c[nLogin] Wait a while before executing this command again.'
   help-command:
   - ''
-  - ' &fStatus: [&a{2} registered//&c{2} not registered]&f.'
+  - ' &f[nLogin] Status: [&a{2} registered//&c{2} not registered]&f.'
   - ''
   - ' [&8⋆ &7/{0} add: &fRegister your {1}.]'
   - ' [&8⋆ &7/{0} remove: &fRemove your {1}.]'
@@ -142,23 +142,23 @@ notification:
   - ''
   recover-command:
   - ''
-  - ' &eChoose a recovery method:'
+  - ' &e[nLogin] Choose a recovery method:'
   - ' [&8⋆ &7{0}: &f/{1} recover]'
   - ''
   switch:
-    enabled: '&aThe two-factor feature has been activated.'
-    disabled: '&cThe two-factor feature has been deactivated.'
+    enabled: '&a[nLogin] The two-factor feature has been activated.'
+    disabled: '&c[nLogin] The two-factor feature has been deactivated.'
   recover:
-    not-equal: '&cThe {0} provided is not the same as the registered one.'
-    message-sent: '&aA recovery message was sent to your associated account.'
-    change-password: '&aYour password was automatically changed to &f''{0}''&a.'
+    not-equal: '&c[nLogin] The {0} provided is not the same as the registered one.'
+    message-sent: '&a[nLogin] A recovery message was sent to your associated account.'
+    change-password: '&a[nLogin] Your password was automatically changed to &f''{0}''&a.'
   discord:
     account-linked: |-
-      &aConfiguration in Discord successfully updated.
+      &a[nLogin] Configuration in Discord successfully updated.
       &aYou have been linked with &f{0} &aaccount.
     confirm-account:
     - ''
-    - ' &7To complete the linking, you need to confirm your Discord account.'
+    - ' &7[nLogin] To complete the linking, you need to confirm your Discord account.'
     - ' &7Join to &b{0} &7and type'
     - ' &7the command in the DM of the &f{1} &7bot.'
     - ''
@@ -166,20 +166,20 @@ notification:
     - ''
     warn-message:
     - ''
-    - ' &7Perform the command &f/discord add &7to register'
+    - ' &7[nLogin] Perform the command &f/discord add &7to register'
     - ' &7your &cdiscord&7. By doing so, you'
     - ' &7decrease the chance of being hacked.'
     - ''
     discord-required:
     - ''
-    - ' &7The current server requires you to link a'
+    - ' &7[nLogin] The current server requires you to link a'
     - ' &aDiscord account &7to complete registration.'
     - ''
     - ' &6Please run &f/discord add&6.'
     - ''
     address-changed:
     - ''
-    - ' &7You need to confirm your account login.'
+    - ' &7[nLogin] You need to confirm your account login.'
     - ' &7A security message has been sent to your registered Discord.'
     - ''
     - ' &aClick the message button to confirm your identity.'
@@ -187,17 +187,17 @@ notification:
     dm:
       configure:
         invalid:
-          title: Invalid code
+          title: '[nLogin] Invalid code'
           description: Sorry, but the token you entered is invalid or does not exist.
           image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
           color: '#808080'
         success:
-          title: Discord linked
+          title: '[nLogin] Discord linked'
           description: Your Discord has been linked successfully.
           image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
           color: '#808080'
       verify:
-        title: Confirm your account authentication.
+        title: '[nLogin] Confirm your account authentication.'
         description: |-
           Authentication confirmation is required to access your @player account.
 
@@ -207,7 +207,7 @@ notification:
         allow: Allow
         deny: Deny
       recover:
-        title: Password recovery requested.
+        title: '[nLogin] Password recovery requested.'
         description: |-
           A password recovery request has been requested from your @player account.
 
@@ -217,46 +217,46 @@ notification:
         allow: Allow
         deny: Deny
       new-password:
-        title: New password for @player
+        title: '[nLogin] New password for @player'
         description: |-
           A new password has been generated for your account:
           `{0}`
         image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
         color: '#808080'
       password-changed:
-        title: Password changed for @player
+        title: '[nLogin] Password changed for @player'
         description: |-
           Your password has been changed to:
           `{0}`
         image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
         color: '#808080'
   email:
-    invalid-email: '&cThe entered email is invalid.'
-    not-allowed: '&cThe domain of the chosen email is not allowed.'
-    server-email: '&cYou cannot use the server''s email.'
+    invalid-email: '&c[nLogin] The entered email is invalid.'
+    not-allowed: '&c[nLogin] The domain of the chosen email is not allowed.'
+    server-email: '&c[nLogin] You cannot use the server''s email.'
     warn-message:
     - ''
-    - ' &7Perform the command &f/email associate &7to register'
+    - ' &7[nLogin] Perform the command &f/email associate &7to register'
     - ' &7your &9email&7. By doing so, you'
     - ' &7decrease the chance of being hacked.'
     - ''
     email-required:
     - ''
-    - ' &7The current server requires you to link a'
+    - ' &7[nLogin] The current server requires you to link a'
     - ' &avalid email &7to complete registration.'
     - ''
     - ' &6Please run &f/email add <your email>&6.'
     - ''
     address-changed:
     - ''
-    - ' &7You need to confirm your account login.'
+    - ' &7[nLogin] You need to confirm your account login.'
     - ' &7A security message has been sent to your registered email.'
     - ''
     - ' &aUse the command §f/email <code> §ato complete the authentication.'
     - ''
     stmp:
       configure:
-        subject: Confirmation of the account @player
+        subject: '[nLogin] Confirmation of the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -268,7 +268,7 @@ notification:
         - ' If it wasn''t you, ignore this message.'
         - </p>
       verify:
-        subject: Login confirmation of the account @player
+        subject: '[nLogin] Login confirmation of the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -280,7 +280,7 @@ notification:
         - ' If it was not you, change your password <strong>IMMEDIATELY</strong>.'
         - </p>
       recover:
-        subject: Recovering the account @player
+        subject: '[nLogin] Recovering the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -292,7 +292,7 @@ notification:
         - ' If it wasn''t you, disregard this message.'
         - </p>
       new-password:
-        subject: New password for @player
+        subject: '[nLogin] New password for @player'
         content:
         - <h1>
         - ' Hi, @player!'
@@ -301,7 +301,7 @@ notification:
         - ' A new password has been generated for your account: {0}'
         - </p>
       password-changed:
-        subject: Password changed for @player
+        subject: '[nLogin] Password changed for @player'
         content:
         - <h1>
         - ' Hi, @player!'
@@ -312,7 +312,7 @@ notification:
 bedrock:
   forms:
     login:
-      title: Authentication
+      title: '[nLogin] Authentication'
       content:
       - Welcome, @player!
       - 'To log in, please enter your password in the field below:'
@@ -320,7 +320,7 @@ bedrock:
       - '[Password//Enter your password]'
       - ''
     register:
-      title: Register
+      title: '[nLogin] Register'
       content:
       - Welcome, @player!
       - To play on the server, you need to create a password.
@@ -332,91 +332,91 @@ bedrock:
 title:
   before-login:
     title: '&a&lWELCOME!'
-    subtitle: '&7Use: /login <your password>'
+    subtitle: '&7[nLogin] Use: /login <your password>'
     delays:
       fadeIn: 2
       stay: 9999
       fadeOut: 6
   before-register:
     title: '&a&lWELCOME!'
-    subtitle: '&7Use: /register <your password> <your password>'
+    subtitle: '&7[nLogin] Use: /register <your password> <your password>'
     delays:
       fadeIn: 2
       stay: 9999
       fadeOut: 6
   after-login:
     title: ''
-    subtitle: '&aYou have successfully logged!'
+    subtitle: '&a[nLogin] You have successfully logged!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   after-register:
     title: ''
-    subtitle: '&aYou have successfully registered!'
+    subtitle: '&a[nLogin] You have successfully registered!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   incorrect-password:
     title: ''
-    subtitle: '&cIncorrect password!'
+    subtitle: '&c[nLogin] Incorrect password!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   already-login:
     title: ''
-    subtitle: '&cYou are already logged in!'
+    subtitle: '&c[nLogin] You are already logged in!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   already-registered:
     title: ''
-    subtitle: '&cYou are already registered!'
+    subtitle: '&c[nLogin] You are already registered!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   passwords-dont-match:
     title: ''
-    subtitle: '&cPasswords are not the same!'
+    subtitle: '&c[nLogin] Passwords are not the same!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   session-login:
     title: ''
-    subtitle: '&eYour login session has been continued.'
+    subtitle: '&e[nLogin] Your login session has been continued.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   premium-login:
     title: ''
-    subtitle: '&eYour account is unique, successfully logged in.'
+    subtitle: '&e[nLogin] Your account is unique, successfully logged in.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   bedrock-login:
     title: ''
-    subtitle: '&eAccessing via Bedrock, successfully logged in.'
+    subtitle: '&e[nLogin] Accessing via Bedrock, successfully logged in.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   security-warning:
     title: ''
-    subtitle: '&cA new security alert has been sent in the chat'
+    subtitle: '&c[nLogin] A new security alert has been sent in the chat'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   answer-required:
     title: ''
-    subtitle: '&ePlease answer the question sent in the chat.'
+    subtitle: '&e[nLogin] Please answer the question sent in the chat.'
     delays:
       fadeIn: 2
       stay: 9999
