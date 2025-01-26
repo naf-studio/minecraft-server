@@ -187,17 +187,17 @@ notification:
     dm:
       configure:
         invalid:
-          title: '[nLogin] Invalid code'
+          title: 'Invalid code'
           description: Sorry, but the token you entered is invalid or does not exist.
           image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
           color: '#808080'
         success:
-          title: '[nLogin] Discord linked'
+          title: 'Discord linked'
           description: Your Discord has been linked successfully.
           image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
           color: '#808080'
       verify:
-        title: '[nLogin] Confirm your account authentication.'
+        title: 'Confirm your account authentication.'
         description: |-
           Authentication confirmation is required to access your @player account.
 
@@ -207,7 +207,7 @@ notification:
         allow: Allow
         deny: Deny
       recover:
-        title: '[nLogin] Password recovery requested.'
+        title: 'Password recovery requested.'
         description: |-
           A password recovery request has been requested from your @player account.
 
@@ -217,14 +217,14 @@ notification:
         allow: Allow
         deny: Deny
       new-password:
-        title: '[nLogin] New password for @player'
+        title: 'New password for @player'
         description: |-
           A new password has been generated for your account:
           `{0}`
         image: https://www.nickuc.com/static/assets/img/2fa-lock-default.png
         color: '#808080'
       password-changed:
-        title: '[nLogin] Password changed for @player'
+        title: 'Password changed for @player'
         description: |-
           Your password has been changed to:
           `{0}`
@@ -332,91 +332,91 @@ bedrock:
 title:
   before-login:
     title: '&a&lWELCOME!'
-    subtitle: '&7[nLogin] Use: /login <your password>'
+    subtitle: '&7Use: /login <your password>'
     delays:
       fadeIn: 2
       stay: 9999
       fadeOut: 6
   before-register:
     title: '&a&lWELCOME!'
-    subtitle: '&7[nLogin] Use: /register <your password> <your password>'
+    subtitle: '&7Use: /register <your password> <your password>'
     delays:
       fadeIn: 2
       stay: 9999
       fadeOut: 6
   after-login:
     title: ''
-    subtitle: '&a[nLogin] You have successfully logged!'
+    subtitle: '&aYou have successfully logged!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   after-register:
     title: ''
-    subtitle: '&a[nLogin] You have successfully registered!'
+    subtitle: '&aYou have successfully registered!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   incorrect-password:
     title: ''
-    subtitle: '&c[nLogin] Incorrect password!'
+    subtitle: '&cIncorrect password!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   already-login:
     title: ''
-    subtitle: '&c[nLogin] You are already logged in!'
+    subtitle: '&cYou are already logged in!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   already-registered:
     title: ''
-    subtitle: '&c[nLogin] You are already registered!'
+    subtitle: '&cYou are already registered!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   passwords-dont-match:
     title: ''
-    subtitle: '&c[nLogin] Passwords are not the same!'
+    subtitle: '&cPasswords are not the same!'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   session-login:
     title: ''
-    subtitle: '&e[nLogin] Your login session has been continued.'
+    subtitle: '&eYour login session has been continued.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   premium-login:
     title: ''
-    subtitle: '&e[nLogin] Your account is unique, successfully logged in.'
+    subtitle: '&eYour account is unique, successfully logged in.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   bedrock-login:
     title: ''
-    subtitle: '&e[nLogin] Accessing via Bedrock, successfully logged in.'
+    subtitle: '&eAccessing via Bedrock, successfully logged in.'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   security-warning:
     title: ''
-    subtitle: '&c[nLogin] A new security alert has been sent in the chat'
+    subtitle: '&cA new security alert has been sent in the chat'
     delays:
       fadeIn: 2
       stay: 60
       fadeOut: 6
   answer-required:
     title: ''
-    subtitle: '&e[nLogin] Please answer the question sent in the chat.'
+    subtitle: '&ePlease answer the question sent in the chat.'
     delays:
       fadeIn: 2
       stay: 9999
