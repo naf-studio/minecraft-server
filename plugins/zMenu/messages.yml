@@ -1,6 +1,6 @@
 messages:
   prefix:
-    message: '&8(&6zMenu&8) '
+    message: '&8[&6zMenu&8] '
   and:
     message: and
   time:
