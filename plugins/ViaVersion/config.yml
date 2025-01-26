@@ -18,7 +18,7 @@ send-supported-versions: false
 block-versions:
 - <1.20
 # Block specific Minecraft protocol version numbers.
-# List of all Minecraft protocol versions: https://wiki.vg/Protocol_version_numbers, or use a generator: https://via.krusic22.com
+# List of all Minecraft protocol versions: https://minecraft.wiki/w/Protocol_version, or use a generator: https://via.krusic22.com
 block-protocols: []
 # Change the blocked disconnect message
 block-disconnect-msg: |-
@@ -31,7 +31,7 @@ block-disconnect-msg: |-
 reload-disconnect-msg: |-
   &cSERVER RELOADED!
   &rPlease join our Discord &9dsc.gg/nafd&r for more information!
-# We warn when there's an error converting item and block data over versions, should we suppress these? (Only suggested if spamming)
+# We warn when there's an error converting item/block or component/nbt data over versions, should we suppress these? (Only suggested if spamming)
 suppress-conversion-warnings: false
 #
 #----------------------------------------------------------#
