@@ -1,0 +1,9 @@
+claim:
+  enabled: true
+  rank: ADMIN
+remove:
+  enabled: true
+  rank: ADMIN
+removeall:
+  enabled: true
+  rank: OWNER
