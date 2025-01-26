@@ -4,6 +4,7 @@
 
 !config
 !config/*.yml
+
 !plugins
 !plugins/*
 !plugins/__disabled
