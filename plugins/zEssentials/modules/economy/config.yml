@@ -11,7 +11,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # The economy that will be used by default.
 default-economy: "money"

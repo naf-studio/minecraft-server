@@ -12,7 +12,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # The conditions when connecting the player to choose the scoreboard
 # When connecting the scoreboard displayed will be the one with the highest priority and or the player to all requirements

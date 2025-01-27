@@ -11,7 +11,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # Displays a hologram that indicates the number of credits an entity will receive
 damage-indicator:

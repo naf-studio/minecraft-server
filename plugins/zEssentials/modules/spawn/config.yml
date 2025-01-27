@@ -31,7 +31,7 @@ spawn-join-listener-priority: highest
 respawn-at-anchor: false
 
 # When users die, should they respawn at their first home, instead of the spawnpoint?
-respawn-at-home: false
+respawn-at-home: true
 
 # When users die, should they respawn at their bed instead of the spawnpoint?
 respawn-at-bed: true
