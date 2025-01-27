@@ -14,7 +14,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # Send the player’s message on your discord
 chat-message:

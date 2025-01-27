@@ -18,9 +18,9 @@ enable: true
 # If the player has multiple permissions then the maximum number of home will be used.
 permissions:
   - permission: "essentials.home.default"
-    amount: 3
-  - permission: "essentials.home.vip"
     amount: 5
+  - permission: "essentials.home.vip"
+    amount: 6
   - permission: "essentials.home.staff"
     amount: 10
 

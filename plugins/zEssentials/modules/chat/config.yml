@@ -31,13 +31,13 @@
 enable: true
 
 # Enables verification of authorized characters in chat
-enable-alphanumeric-regex: true
+enable-alphanumeric-regex: false
 
 # Check whether the message contains links
-enable-link-regex: true
+enable-link-regex: false
 
 # Remove images that players are trying to put in the chat, for example: the message 'hey:auction:' will become: 'hey auction'
-enable-itemadders-font-regex: true
+enable-itemadders-font-regex: false
 
 # Allows to apply a dynamic cooldown between each message of a player, the more the player will spam the more he will have a great cooldown
 enable-chat-dynamic-cooldown: true
@@ -104,13 +104,12 @@ chat-cooldown-max: 50
 chat-formats:
   - priority: 1
     permission: "essentials.chat.format.vip"
-    format: "<hover:show_text:'&cReport this message'><click:run_command:'/report %player% chat'><#ff0000>⚠</click></hover> %moderator_action%<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%<newline><newline>&f➥ &7Click for more information'>%player%</hover> <#333333>» <#ffff6b><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
+    format: "%moderator_action%<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%<newline><newline>&f➥ &7Click for more information'>%player%</hover> <#333333>» <#ffff6b><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
   - priority: 2
-    permission: "essentials.chat.format.admin"
-    format: "<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%<newline><newline>&f➥ &7Click for more information'>%player%</hover> <#333333>» <#ff4444><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
+    permission: "<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%'><%player%></hover> <gray><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
 
 # Default chat format
-default-chat-format: "<hover:show_text:'&cReport this message'><click:run_command:'/report %player% chat'><#ff0000>⚠</click></hover> %moderator_action%<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%<newline><newline>&f➥ &7Click for more information'>%player%</hover> <#333333>» <gray><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
+default-chat-format: "%moderator_action%<#ffffff><hover:show_text:'#ffd353ℹ Informations#3f3f3f:<newline>#3f3f3f• &7Money#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_money%<newline>#3f3f3f• &7Coins#3f3f3f: #4cd5ff%zessentials_user_formatted_balance_coins%'><%player%></hover> <gray><click:suggest_command:'/msg %player% '><hover:show_text:'&fSend a private message'><message></hover></click>"
 
 # Allows players who have the essentials.chat.moderator permission to have a different view from other players.
 # By default, moderators will have a button to punish the player

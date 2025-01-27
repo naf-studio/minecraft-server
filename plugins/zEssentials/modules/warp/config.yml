@@ -11,7 +11,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # Opens the warps menu. The file is warps.yml, you need to modify it to match your server
 enable-inventory: false

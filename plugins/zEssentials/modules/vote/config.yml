@@ -11,7 +11,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # Allows to activate the party vote
 # The vote party is a system that allows to reward online players by reaching a certain number of votes
