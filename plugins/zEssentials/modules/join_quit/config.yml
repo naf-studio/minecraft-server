@@ -35,14 +35,14 @@ custom-quit-message: CUSTOM
 # %player% - The player's name
 # %totalUser% - The total number of unique players
 # %totalUserFormat% - The total formatted number of unique players
-allow-first-join-broadcast: true
+allow-first-join-broadcast: false
 
 # Send a welcome message to the player on first login
 #
 # Available placeholders:
 # %player% - The player's name.
 # %displayName% - The player's display name.
-allow-first-join-motd: true
+allow-first-join-motd: false
 
 # The number of ticks before sending the message
 first-join-motd-ticks: 20 # 1 second = 20 ticks
