@@ -1,5 +1,5 @@
 command-block-overrides: []
-ignore-vanilla-permissions: false
+ignore-vanilla-permissions: true
 aliases:
   ping:
   - spark ping
