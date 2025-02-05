@@ -182,7 +182,7 @@ join:
   clean-chat-on-join: true
 
   # Sets whether the join message will be removed.
-  remove-join-message: true
+  remove-join-message: false
 
 #   _____     _                       _
 #  /__   \___| | ___ _ __   ___  _ __| |_
