@@ -11,7 +11,7 @@
 #
 ########################################################################################################################
 
-enable: false
+enable: true
 
 # Should players with permissions be able to join and part silently?
 # You can control this with essentials.silentjoin and essentials.silentquit permissions if it is enabled.
