@@ -362,7 +362,7 @@ settings:
         # Should a grave spawn a zombie when it is looted by its owner.
         spawn-owner: false
         # Should a grave spawn a zombie if it is looted by another player.
-        spawn-other: true
+        spawn-other: false
         # Should a zombie only spawn if the player broke the grave not open it.
         only-break: false
         # Should a grave spawn a zombie if it is blown up, this only works if the grave can be blown up.
