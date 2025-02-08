@@ -37,7 +37,7 @@ async:
   # This offloads structure locating to other threads.
   # Only for locate command, dolphin treasure finding and eye of ender currently.
   async-locator:
-    enabled: true
+    enabled: false
     threads: 0
     keepalive: 60
 
