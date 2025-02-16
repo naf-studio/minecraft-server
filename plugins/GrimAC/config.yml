@@ -25,7 +25,6 @@ client-brand:
     - "^fabric$"
     - "^lunarclient:v\\d+\\.\\d+\\.\\d+-\\d{4}$"
     - "^Feather Fabric$"
-    - "^labymod$"
 
 spectators:
   # Hide all spectators with the grim.spectator permission regardless if they are actually actively spectating
@@ -59,11 +58,11 @@ Simulation:
   immediate-setback-threshold: 0.1
   # How large of an advantage over all ticks before we start to setback?
   # -1 to disable
-  max-advantage: 1
+  max-advantage: 0.1
   # After 50 seconds with default config, the player will go from 4 blocks -> 1 block of advantage
   # This is to stop the player from gathering too many violations and never being able to clear them all
   # Default advantage ceiling (x axis = seconds, y axis = 1/1000 block): https://www.desmos.com/calculator/4lovswdarj
-  max-ceiling: 4
+  max-ceiling: 0.7
 
 # Checks to see if a player entered a block during a movement
 Phase:
@@ -94,7 +93,7 @@ NoSlow:
   # Flags by 0.03-0.2 consistently with NoSlow on
   threshold: 0.001
   # Setback fast on the first item to remove any advantage NoSlow gives
-  setbackvl: 5
+  setbackvl: 10
   # Decay's when the player uses an item AND is slowed by it
   decay: 0.05
 
@@ -136,6 +135,9 @@ TimerVehicle:
   # Target 1.005 timer
   setbackvl: 10
 
+EntityControl:
+  setbackvl: 25
+
 Reach:
   # How much should we expand hitboxes by? 0.0005 should detect 3.0005+ reach
   #
@@ -152,7 +154,7 @@ Reach:
   # Enabling this will catch more cheaters.
   # Leaving this disabled will still catch cheaters and will not cause false positives
   # Unless you are a 1.8 PvP focused server, this additional packet is not recommended
-  enable-post-packet: false
+  enable-post-packet: true
 
 exploit:
   # You can gain high speeds when sprint jumping with an elytra, this prevents the exploit when set to false
@@ -169,7 +171,7 @@ exploit:
 debug-pipeline-on-join: false
 
 # Enables experimental checks
-experimental-checks: false
+experimental-checks: true
 
 mitigate-autoblock: true
 mitigate-desync-noslow: true
