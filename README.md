@@ -1,3 +1,4 @@
+## Một vài tùy chỉnh quan trọng!
 Trước tiên chạy 3 lệnh này:
 ```
 /lp import "luckperms-2025-01-29-19-10.json.gz"
@@ -10,3 +11,9 @@ Sau đó restart và chạy tiếp 2 lệnh này:
 /timebar reload
 ```
 Xong!
+
+## Một vài tuỳ chỉnh không quan trọng!
+```
+/setspawn
+/scoreboard players set #stellarity.config stellarity.config.dragon_health 500
+```
