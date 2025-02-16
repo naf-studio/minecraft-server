@@ -1,7 +1,7 @@
 ## Một vài tùy chỉnh quan trọng!
 Trước tiên chạy 3 lệnh này:
 ```
-/lp import "luckperms-2025-01-29-19-10.json.gz"
+/lp import "luckperms-2025-02-16-20-43.json.gz"
 /gamerule playersSleepingPercentage 50
 /rs install Terralith
 ```
