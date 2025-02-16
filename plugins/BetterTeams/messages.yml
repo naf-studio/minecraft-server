@@ -11,7 +11,7 @@ noPlayer: '&6[BetterTeams] &4Specified player not found'
 notTeam: '&6[BetterTeams] &6&4That team does not exist try &b/team create <name>'
 needSameTeam: '&6[BetterTeams] &6You are not in the same team as that person'
 noPerm: '&6[BetterTeams] &4You do not have permission to do that'
-prefixSyntax: '&6[BetterTeams] &7[{0}&7] &r{1}'
+prefixSyntax: '&7[{0}&7] &r{1}'
 bannedChar: '&6[BetterTeams] &4A character you tried to use is banned'
 noTeam: '&6[BetterTeams] &4That team does not exist'
 loading: '&6[BetterTeams] &6Loading'
@@ -19,7 +19,7 @@ cooldown:
   wait: '&6[BetterTeams] &4You need to wait another {0} seconds before running that!'
 cost:
   tooPoor: '&6[BetterTeams] &4You are too poor to run that command'
-  run: '&6[BetterTeams] &4&l-{0}'
+  run: '&4&l-{0}'
 placeholder:
   noTeam: ''
   noDescription: ''
@@ -56,7 +56,7 @@ rank:
   infos: '&6[BetterTeams] &6Team rank: &b{0} &7({1} score needed for next rankup)'
   infom: '&6[BetterTeams] &6Team rank: &b{0} &7(${1} needed for next rankup)'
   infomm: '&6[BetterTeams] &6Team rank: &b{0} &7(You are the max rank)'
-  syntax: '&6[BetterTeams] &b{0}: &6{1} &7({2})'
+  syntax: '&b{0}: &6{1} &7({2})'
 delhome:
   success: '&6[BetterTeams] &6Your team home has been deleted'
   noHome: '&6[BetterTeams] &4Your team has not set a home'
@@ -101,21 +101,21 @@ title:
   reset: '&6[BetterTeams] &6Your title has been reset'
   noPerm: '&6[BetterTeams] &4You do not have permission to change your team title'
 info:
-  needTeam: '&6[BetterTeams] &6No team or player found under that name'
-  name: '&6[BetterTeams] &6Name: &b{0}'
-  description: '&6[BetterTeams] &6Description: &b{0}'
-  open: '&6[BetterTeams] &6Open: &b{0}'
-  level: '&6[BetterTeams] &6Level: &b{0}'
-  owner: '&6[BetterTeams] &6Owners: &b{0}'
-  admin: '&6[BetterTeams] &6Admins: &b{0}'
-  default: '&6[BetterTeams] &6Members: &b{0}'
-  tag: '&6[BetterTeams] &6Tag: &b{0}'
-  fail: '&6[BetterTeams] &6No team or player found under that name'
-  score: '&6[BetterTeams] &6Score: &b{0}'
-  money: '&6[BetterTeams] &6Balance: &b{0}'
-  ally: '&6[BetterTeams] &6Allies: &b{0}'
-  online: '&6[BetterTeams] &a'
-  offline: '&6[BetterTeams] &c'
+  needTeam: '&6No team or player found under that name'
+  name: '&6Name: &b{0}'
+  description: '&6Description: &b{0}'
+  open: '&6Open: &b{0}'
+  level: '&6Level: &b{0}'
+  owner: '&6Owners: &b{0}'
+  admin: '&6Admins: &b{0}'
+  default: '&6Members: &b{0}'
+  tag: '&6Tag: &b{0}'
+  fail: '&6No team or player found under that name'
+  score: '&6Score: &b{0}'
+  money: '&6Balance: &b{0}'
+  ally: '&6Allies: &b{0}'
+  online: '&a'
+  offline: '&c'
 kick:
   success: '&6[BetterTeams] &6That player has been kicked'
   notify: '&6[BetterTeams] &6You have been kicked from team {0}'
@@ -202,7 +202,7 @@ neutral:
 list:
   noPage: '&6[BetterTeams] &6That page is not found'
   header: '&6[BetterTeams] &7--- &bTeam list page {0} &7---'
-  body: '&6[BetterTeams] &6{0}: &b{1}'
+  body: '&6{0}: &b{1}'
   footer: '&6[BetterTeams] &7--- &6do &b/team list [page] &6to view more &7---'
 setowner:
   use: '&6[BetterTeams] &6You cannot promote that player, use &b/team setowner <player> &6to promote
@@ -393,7 +393,7 @@ admin:
 nametag:
   
   
-  syntax: '&6[BetterTeams] &6&l{0}&r '
+  syntax: '&6&l{0}&r '
 holo:
   leaderboard: '&6[BetterTeams] &6Leaderboard'
   syntax: '&6[BetterTeams] &6{0}: &b{1}'
@@ -404,8 +404,8 @@ top:
   divide: '&6[BetterTeams] &f...'
 baltop:
   leaderboard: '&6[BetterTeams] &6Leaderboard'
-  syntax: '&6[BetterTeams] &b{0}: &6{1} &7({2})'
-  divide: '&6[BetterTeams] &f...'
+  syntax: '&b{0}: &6{1} &7({2})'
+  divide: '&f...'
 spy:
   stop: '&6[BetterTeams] &6You are no longer spying on team messages'
   start: '&6[BetterTeams] &6You are now spying on team messages'
@@ -453,10 +453,10 @@ help:
   neutral: Remove allies and reject ally requests
   allychat: Send a message only to your allies
 helpArg:
-  delhome: '&6[BetterTeams] '
-  echest: '&6[BetterTeams] '
+  delhome: ''
+  echest: ''
   color: <color code>
-  allychat: '&6[BetterTeams] [message]'
+  allychat: '[message]'
   description: '[description]'
   setwarp: <name> [password]
   title: '[player/me] [title]'
