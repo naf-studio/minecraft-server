@@ -75,7 +75,7 @@ prefix: name
 # - To disable the prefix, set the value to be ''
 #
 # Possible values: [Any text, any chat colours using the reference '&']
-prefixFormat: '&7[&6BetterTeams&7] '
+prefixFormat: '&6[BetterTeams] '
 
 # This is used to determine whether players joining a new team should be announced (Message is configurable in messages.yml)
 announceTeamJoin: true
