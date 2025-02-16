@@ -12,7 +12,7 @@ settings:
         # (Second) How long graves should stay alive for, 300 = 5 minutes, 10800 = 3 hours, -1 lasts forever.
         time: 21600
         # The max amount of graves an entity can have.
-        max: 18
+        max: 5
         # Can graves be broken.
         break: true
         # Can graves be blown up.
