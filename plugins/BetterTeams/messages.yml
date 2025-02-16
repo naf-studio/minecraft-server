@@ -159,7 +159,7 @@ sethome:
 chat:
   enabled: '&6[BetterTeams] &6Your messages now go to the team chat'
   disabled: '&6[BetterTeams] &6Your messages now go to the global chat'
-  syntax: '&6[BetterTeams] &b[Team]&f{0}&f: {1}'
+  syntax: '&b[Team]&f{0}&f: {1}'
 color:
   success: '&6[BetterTeams] &6Your team color has been changed'
   fail: '&6[BetterTeams] &6That is not a recognised chat color'
@@ -190,7 +190,7 @@ ally:
 allychat:
   disabled: '&6[BetterTeams] &6Your messages are no longer going to the ally chat'
   enabled: '&6[BetterTeams] &6Your messages are now going to the ally chat'
-  syntax: '&6[BetterTeams] &d[{0}]&f{1}&f: {2}'
+  syntax: '&d[{0}]&f{1}&f: {2}'
 neutral:
   self: '&6[BetterTeams] &6That is your own team'
   requestremove: '&6[BetterTeams] &6That ally request has been removed'
@@ -409,8 +409,8 @@ baltop:
 spy:
   stop: '&6[BetterTeams] &6You are no longer spying on team messages'
   start: '&6[BetterTeams] &6You are now spying on team messages'
-  team: '&6[BetterTeams] &7[&b{0}&7]&f{1}&f: {2}'
-  ally: '&6[BetterTeams] &7[&d{0}&7]&f{1}&f: {2}'
+  team: '&7[&b{0}&7]&f{1}&f: {2}'
+  ally: '&7[&d{0}&7]&f{1}&f: {2}'
 uclaim:
   
   team: '&6[BetterTeams] &4You must be in a team to create a claim'
