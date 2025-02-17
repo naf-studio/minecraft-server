@@ -155,7 +155,7 @@ near-permissions:
     distance: 200.0
 
 # Date format that will be used if no other format is available
-global-date-format: "yyyy-MM-dd HH:mm:ss"
+global-date-format: "dd-MM-yyyy HH:mm:ss"
 
 # Replace the result of one placeholder with another, very useful for adding colors for example
 # Then simply use the placeholder: %zessentials_replace_<placeholder>% to use this configuration
