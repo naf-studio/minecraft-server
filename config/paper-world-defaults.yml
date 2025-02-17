@@ -156,33 +156,26 @@ entities:
     alt-item-despawn-rate:
       enabled: true
       items:
-        acacia_leaves: 600
-        andesite: 600
-        bamboo: 1200
-        birch_leaves: 600
-        cactus: 1200
+        arrow: 900
+        blaze_rod: 1200
+        bone: 1200
+        bone_meal: 1200
+        cactus: 900
+        cobbled_deepslate: 600
         cobblestone: 600
-        dark_oak_leaves: 600
-        diorite: 600
-        dirt: 600
-        ender_pearl: 600
-        granite: 600
-        gravel: 600
-        jungle_leaves: 600
-        kelp: 1200
-        mangrove_leaves: 600
-        melon_slice: 1200
+        cod: 1200
+        egg: 900
+        ender_pearl: 900
+        feather: 900
+        gunpowder: 1200
+        ink_sac: 900
+        leather: 900
         netherrack: 600
-        oak_leaves: 600
-        pumpkin: 1200
-        red_sand: 600
-        sand: 600
-        scaffolding: 1200
-        short_grass: 600
-        spruce_leaves: 600
-        sugar_cane: 600
-        twisting_vines: 600
-        weeping_vines: 600
+        phantom_membrane: 900
+        rotten_flesh: 900
+        salmon: 1200
+        slime_ball: 1200
+        string: 1200
     count-all-mobs-for-spawning: false
     creative-arrow-despawn-rate: '60'
     despawn-range-shape: ELLIPSOID
@@ -200,7 +193,9 @@ entities:
         hard: default
         soft: default
       monster:
-        hard: default
+        hard:
+          horizontal: 112
+          vertical: default
         soft: default
       underground_water_creature:
         hard: default
@@ -211,6 +206,16 @@ entities:
       water_creature:
         hard: default
         soft: default
+    despawn-time:
+      arrow: 3000
+      dragon_fireball: 1200
+      fireball: 1200
+      llama_spit: 1200
+      shulker_bullet: 3000
+      small_fireball: 1200
+      snowball: 1200
+      trident: 3000
+      wither_skull: 3000
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
       mode: SAFE_REGEN
