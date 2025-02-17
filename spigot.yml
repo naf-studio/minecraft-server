@@ -165,7 +165,7 @@ world-settings:
     merge-radius:
       exp: 5.0
       item: 3.0
-    mob-spawn-range: 7
+    mob-spawn-range: 6
     nerf-spawner-mobs: false
     seed-ancientcity: 20083232
     seed-buriedtreasure: 10387320
