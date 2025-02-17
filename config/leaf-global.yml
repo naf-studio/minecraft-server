@@ -68,7 +68,7 @@ performance:
     # By skipping tick collisions to reduce expensive getEntities
     # and bukkit event calls, useful for anarchy servers.
     enabled: true
-    skip-tick-count: 30
+    skip-tick-count: 50
   # May cause the inconsistent order of future compose tasks.
   faster-structure-gen-future-sequencing: true
   # Use faster random generator?
@@ -219,10 +219,10 @@ performance:
     dont-enable-if-in-water: true
     # This value determines how far away an entity has to be
     # from the player to start being effected by DEAR.
-    start-distance: 12
+    start-distance: 8
     # This value defines how often in ticks, the furthest entity
     # will get their pathfinders and behaviors ticked. 20 = 1s
-    max-tick-freq: 20
+    max-tick-freq: 40
     # This value defines how much distance modifies an entity's
     # tick frequency. freq = (distanceToPlayer^2) / (2^value)",
     # If you want further away entities to tick less often, use 7.
@@ -234,8 +234,8 @@ performance:
     # Disable save primed tnt on chunk unloads.
     # Useful for redstone/technical servers, can prevent machines from being exploded by TNT,
     # when player disconnected caused by Internet issue.
-    dont-save-primed-tnt: false
-    dont-save-falling-block: false
+    dont-save-primed-tnt: true
+    dont-save-falling-block: true
 
 ###########
 #  FIXES  #
@@ -268,7 +268,7 @@ gameplay-mechanisms:
     can-player-knockback-zombie: true
   player:
     # Disable moved quickly/wrongly checks.
-    disable-moved-wrongly-threshold: false
+    disable-moved-wrongly-threshold: true
     # The max distance of UseItem for players.
     # Set to -1 to disable max-distance-check.
     # NOTE: if set to -1 to disable the check,
@@ -318,15 +318,15 @@ misc:
   # Once you enable secure seed, all ores and structures are generated with 1024-bit seed
   # instead of using 64-bit seed in vanilla, made seed cracker become impossible.
   secure-seed:
-    enabled: false
+    enabled: true
   # Remove Vanilla username check,
   # allowing all characters as username.
-  remove-vanilla-username-check: true
+  remove-vanilla-username-check: false
   # Enable player enter backend server through proxy
   # without backend server enabling its bungee mode.
   remove-spigot-check-bungee-config: true
   # Enable to prevent console spam.
-  remove-change-non-editable-sign-warning: false
+  remove-change-non-editable-sign-warning: true
   # Linear is a region file format that uses ZSTD compression instead of
   # ZLIB.
   # This format saves about 50% of disk space.
