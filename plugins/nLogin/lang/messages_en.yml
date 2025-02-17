@@ -63,32 +63,68 @@ error:
     require-confirmation: '&c[nLogin] You must confirm your password.'
     incorrect: '&c[nLogin] Incorrect password. Please, try again.'
   kick:
-    incorrect-password: '&c[nLogin] You entered the incorrect password.'
+    incorrect-password: |-
+      &cYOU ENTERED THE INCORRECT PASSWORD.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
     wait-server-start: |-
-      &c[nLogin] The server has not yet started completely.
-      &cWait a while to connect.
+      &cTHE SERVER HAS NOT YET STARTED COMPLETELY.
+      &rWait a while to connect.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
     account-blocked: |-
-      &c[nLogin] Your address has been blocked by suspected invasion.&r
+      &cYOUR ADDRESS HAS BEEN BLOCKED BY SUSPECTED INVASION.&r
       &r&cRemaining banishment time: {0}
-    invalid-nickname: '&c[nLogin] Your nickname is invalid, remove spaces, symbols, and invalid characters from your name.'
-    bedrock-nickname: '&c[nLogin] The chosen nickname &f("{0}") &cis restricted to Bedrock players.'
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+    invalid-nickname: |-
+      &cYOUR NICKNAME IS INVALID
+      &rPlease remove spaces, symbols, and invalid characters from your name.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+    bedrock-nickname: |-
+      &cSOMETHING WENT WRONG!
+      &rThe chosen nickname &c("{0}") &ris restricted to Bedrock players.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
     transferred-nickname: |-
-      &c[nLogin] The chosen name &f("{0}") &cwas reserved and transferred to an account using the same UUID.
-
-      &eTo enter, please use another nickname.
-    already-online: '&c[nLogin] This player is already online.'
+      &cSOMETHING WENT WRONG!
+      &rThe chosen name &c("{0}") &rwas reserved and transferred to an account using the same UUID.
+      &rTo enter, please use another nickname.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+    already-online: |-
+      &cTHIS PLAYER IS ALREADY ONLINE.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
     unknown-hostname: |-
-      &4[nLogin] The hostname being used &f({0}) &4was not defined in the configuration.
+      &cSOMETHING WENT WRONG!
+      &rThe hostname being used &c({0}) &rwas not defined in the configuration.
+      &rIf this is a valid IP, please add it to the most appropriate category in the config section &f"premium.username-appender".
       &r
-      &r&cIf this is a valid IP, please add it to the most appropriate category in the config section &f"premium.username-appender"&c.
-      &r
-      &r&eFor more information, check out the username appender tutorial:
+      &rFor more information, check out the username appender tutorial:
       &r&bhttps://docs.nickuc.com/nlogin/username-appender
-    premium-not-logged: '&c[nLogin] You are not logged into your account. Try to restart your Minecraft client.'
-    premium-challenge: '&c[nLogin] You failed the premium challenge. Please rejoin the server.'
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+    premium-not-logged: |-
+      &cYOU ARE NOT LOGGED INTO YOUR ACCOUNT.
+      &rTry to restart your Minecraft client.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+    premium-challenge: |-
+      &cYOU FAILED THE PREMIUM CHALLENGE.
+      &rPlease rejoin the server.
+      &r
+      &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
     timeout:
-      login: '&c[nLogin] You took too long to login.'
-      register: '&c[nLogin] You took too long to register.'
+      login: |-
+        &cYOU TOOK TOO LONG TO LOGIN.
+        &r
+        &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
+      register: |-
+        &cYOU TOOK TOO LONG TO REGISTER.
+        &r
+        &fPlease join our Discord &9dsc.gg/nafd &ffor more information!
 notification:
   all-viewed: '&a[nLogin] All notifications have been viewed.'
   premium-question:
@@ -256,7 +292,7 @@ notification:
     - ''
     stmp:
       configure:
-        subject: '[nLogin] Confirmation of the account @player'
+        subject: 'Confirmation of the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -268,7 +304,7 @@ notification:
         - ' If it wasn''t you, ignore this message.'
         - </p>
       verify:
-        subject: '[nLogin] Login confirmation of the account @player'
+        subject: 'Login confirmation of the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -280,7 +316,7 @@ notification:
         - ' If it was not you, change your password <strong>IMMEDIATELY</strong>.'
         - </p>
       recover:
-        subject: '[nLogin] Recovering the account @player'
+        subject: 'Recovering the account @player'
         content:
         - <h1>
         - ' Hello, @player!'
@@ -292,7 +328,7 @@ notification:
         - ' If it wasn''t you, disregard this message.'
         - </p>
       new-password:
-        subject: '[nLogin] New password for @player'
+        subject: 'New password for @player'
         content:
         - <h1>
         - ' Hi, @player!'
@@ -301,7 +337,7 @@ notification:
         - ' A new password has been generated for your account: {0}'
         - </p>
       password-changed:
-        subject: '[nLogin] Password changed for @player'
+        subject: 'Password changed for @player'
         content:
         - <h1>
         - ' Hi, @player!'
@@ -312,7 +348,7 @@ notification:
 bedrock:
   forms:
     login:
-      title: '[nLogin] Authentication'
+      title: 'Authentication'
       content:
       - Welcome, @player!
       - 'To log in, please enter your password in the field below:'
@@ -320,7 +356,7 @@ bedrock:
       - '[Password//Enter your password]'
       - ''
     register:
-      title: '[nLogin] Register'
+      title: 'Register'
       content:
       - Welcome, @player!
       - To play on the server, you need to create a password.
