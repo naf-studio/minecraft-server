@@ -31,6 +31,6 @@
 
 bots:
 - token: DISCORD_BOT_TOKEN_HERE
-  vc_id: 1245882816940740739
+  vc_id: 1334510513907826729
 alert_ops_of_updates: true
 debug_level: 0
