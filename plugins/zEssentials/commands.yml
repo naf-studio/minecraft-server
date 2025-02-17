@@ -64,6 +64,13 @@ command-chat-history:
   - chathistory
   - ct
   permission: essentials.chat.history
+clear-inventory-command:
+  enable: true
+  commands:
+  - clearinventory
+  - clear
+  - ci
+  permission: essentials.clearinventory
 command-compact:
   enable: true
   commands:
@@ -132,6 +139,12 @@ command-economy-give:
   commands:
   - give
   permission: essentials.eco.give
+command-economy-give-random:
+  enable: true
+  commands:
+  - give-random
+  - gr
+  permission: essentials.eco.give.random
 command-economy-give-all:
   enable: true
   commands:
@@ -226,6 +239,31 @@ command-fly:
   commands:
   - fly
   permission: essentials.fly
+command-fly-add:
+  enable: true
+  commands:
+  - add
+  permission: essentials.fly.add
+command-fly-get:
+  enable: true
+  commands:
+  - get
+  permission: essentials.fly.get
+command-fly-info:
+  enable: true
+  commands:
+  - info
+  permission: essentials.fly.info
+command-fly-remove:
+  enable: true
+  commands:
+  - remove
+  permission: essentials.fly.remove
+command-fly-set:
+  enable: true
+  commands:
+  - set
+  permission: essentials.fly.set
 command-freeze:
   enable: true
   commands:
@@ -519,6 +557,12 @@ command-kitty-cannon:
   commands:
   - kittycannon
   permission: essentials.kitty.cannon
+command-link:
+  enable: true
+  commands:
+  - link
+  - lier
+  permission: essentials.discord.link
 command-loom:
   enable: true
   commands:
@@ -833,6 +877,11 @@ command-sudo:
   - sudo
   - su
   permission: essentials.sudo
+command-suicide:
+  enable: true
+  commands:
+  - suicide
+  permission: essentials.suicide
 command-sun:
   enable: true
   commands:
@@ -864,6 +913,11 @@ command-teleport-accept:
   - tpaccept
   - tpyes
   permission: essentials.tpa.accept
+command-teleport-to-here:
+  enable: true
+  commands:
+  - tpahere
+  permission: essentials.tpa.here
 command-teleport-all:
   enable: true
   commands:
@@ -898,6 +952,12 @@ command-un-ban:
   commands:
   - unban
   permission: essentials.un.ban
+command-un-link:
+  enable: true
+  commands:
+  - unlink
+  - delier
+  permission: essentials.discord.unlink
 command-un-mute:
   enable: true
   commands:
@@ -983,6 +1043,11 @@ command-essentials:
   - zessentials
   - ess
   permission: essentials.use
+command-essentials-clear-random-word:
+  enable: true
+  commands:
+  - clear-random-word
+  permission: essentials.clear.random.word
 command-essentials-convert:
   enable: true
   commands:
@@ -990,6 +1055,11 @@ command-essentials-convert:
   - conv
   - c
   permission: essentials.convert
+command-essentials-delete-world:
+  enable: true
+  commands:
+  - delete-world
+  permission: essentials.delete.world
 command-essentials-reload:
   enable: true
   commands:
