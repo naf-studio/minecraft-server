@@ -217,7 +217,7 @@ entities:
         soft: default
       monster:
         hard:
-          horizontal: 112
+          horizontal: 96
           vertical: default
         soft: default
       underground_water_creature:
