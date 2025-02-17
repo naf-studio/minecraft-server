@@ -1,5 +1,5 @@
-## Một vài cài đặt quan trọng!
-Trước tiên chạy 3 lệnh này:
+## Some important settings!
+First, run these commands:
 ```
 /lp import "luckperms-2025-02-16-20-43.json.gz"
 ```
@@ -9,19 +9,21 @@ Trước tiên chạy 3 lệnh này:
 ```
 /rs install Terralith
 ```
-Sau đó restart và chạy tiếp 2 lệnh này:
+Then restart and run these commands:
 ```
 /rs set spring world
 ```
 ```
 /timebar reload
 ```
-Xong!
+Done!
 
-## Một vài tuỳ chỉnh không bắt buộc!
+## Some optional customizations!
 ```
 /setspawn
 ```
 ```
 /scoreboard players set #stellarity.config stellarity.config.dragon_health 500
 ```
+## Other information
+Optimization guide used at: https://minecraftvn.net/cau-hinh-de-giam-lag-va-toi-uu-server-minecraft-de-dat-hieu-nang-tot-nhat.t46151/
