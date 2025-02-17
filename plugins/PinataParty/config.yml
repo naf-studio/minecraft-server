@@ -181,7 +181,7 @@ placeholders:
       
       # The format for the placeholder when there is a time
       # Follows https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
-      format: "MM:dd:yyyy HH:mm:ss"
+      format: "dd:MM:yyyy HH:mm:ss"
       # When the player has never voted before
       never-voted: "&cYou've never voted before!"
 
@@ -189,7 +189,7 @@ placeholders:
       
       # The format for the placeholder when there is a time
       # Follows https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html
-      format: "MM:dd:yyyy HH:mm:ss"
+      format: "dd:MM:yyyy HH:mm:ss"
       # When the player has never voted before
       never-voted: "&cYou've never voted before!"
 

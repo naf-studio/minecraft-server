@@ -15,7 +15,7 @@ timebar-title: "{TIME-WORD} ({DATE}) {DAY} - {SEASON}"
 # Change the default formatting for dates.
 # See: https://www.digitalocean.com/community/tutorials/java-simpledateformat-java-date-format
 # Example: "dd/MM/yyyy"
-date-format: "dd/M/yyyy"
+date-format: "dd/MM/yyyy"
 
 # Want to change the wording of the time of days?
 times:
