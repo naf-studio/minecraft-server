@@ -33,8 +33,6 @@ rules:
   - "#3f3f3f• &7Keep chat clean and respectful."
   - "#3f3f3f• &7No spamming or advertising."
 
-
-
 # Commands
 command-syntax-error: "<error>You must execute the command like this#656665: &f%syntax%"
 command-no-permission: "<error>You do not have permission to run this command."
@@ -90,6 +88,17 @@ command-player-time-reset: "&7You just changed the time to that of the server."
 command-player-time-change: "&7You’re here to change your time."
 command-fly-enable: "&7Flight mode <success>enable &7for &f%player%<success>."
 command-fly-disable: "&7Flight mode <error>disable &7for &f%player%<success>."
+command-fly-error-world: "<error>You can’t fly in this world."
+command-fly-enable-seconds: "&7Flight mode <success>enable &7for &f%player%<success>. &8(&7time remaining %time%&8)"
+command-fly-error: "<error>You have no more fly time available."
+command-fly-end: "<error>You have used up your entire flight time, you can no longer fly."
+command-fly-error-other: "<error>%player% has no more flight time available."
+command-fly-add: "<success>You just added %time% <success>of fly time to &f%player%<success>."
+command-fly-get: "<success>%player%&8: &f%player%<success>."
+command-fly-info-empty: "<error>You do not have time to fly available."
+command-fly-info: "<success>You have &f%time%<success>."
+command-fly-remove: "<success>You just removed %time% <success>of fly time to &f%player%<success>."
+command-fly-set: "<success>You just set %time% <success>of fly time to &f%player%<success>."
 command-furnace-type: "<error>Impossible to smelt the material &f%material%<error>."
 command-furnace-error: "<error>You have no &f%item%<error> in your inventory."
 command-furnace-success: "&7You have just transformed #0EEA93x%amount% #34cfe0%item% &7into #0EEA93x%toAmount% #34cfe0%toItem%&7."
@@ -166,6 +175,8 @@ command-pay-not-enough: "<error>You don't have enough money."
 # Teleport commands
 command-tpa-error: "<error>You have already sent a request to #99E0FF%player%<error>."
 command-tpa-error-same: "<error>You cannot teleport to yourself."
+command-tpa-here-error: "<error>You have already sent a request to #99E0FF%player%<error>."
+command-tpa-here-error-same: "<error>You cannot teleport to yourself."
 command-tpa-error-offline: "<error>Unable to find player, must be offline."
 command-tpa-error-to-late-empty: "<error>You do not have a teleport request."
 command-tpa-error-to-late-expire: "<error>The teleport request has expired."
@@ -179,8 +190,20 @@ command-tpa-receiver:
   - "  <hover:show_text:'<error>✘ Deny teleportation'><click:run_command:/tpdeny>#99E0FFType <error>/tpdeny #99E0FFto <error><u>deny</u>#99E0FF.</click></hover>"
   - ""
   - "&7&oYou have 60 seconds to accept the teleport request."
+command-tpa-here-sender:
+  - "#00FF00✔ #99E0FFSent &f%displayName% #99E0FFa teleport request."
+  - "  <hover:show_text:'<error>✘ Cancel teleportation'><click:run_command:/tpacancel %player%>#99E0FFType #00FF00/tpacancel %player%#99E0FF to cancel your request.</click></hover>"
+command-tpa-here-receiver:
+  - ""
+  - "#F8F327⚠ &f%displayName% #99E0FFrequest to teleport you to him!"
+  - "  <hover:show_text:'#00FF00✔ Accept teleportation'><click:run_command:/tpaccept>#99E0FFType #00FF00/tpaccept #99E0FFto #00FF00<u>accept</u>#99E0FF.</click></hover>"
+  - "  <hover:show_text:'<error>✘ Deny teleportation'><click:run_command:/tpdeny>#99E0FFType <error>/tpdeny #99E0FFto <error><u>deny</u>#99E0FF.</click></hover>"
+  - ""
+  - "&7&oYou have 60 seconds to accept the teleport request."
 command-tpa-accept-receiver: "#99E0FFYou have just #00FF00accepted #99E0FFthe teleport request from #99E0FF%player%<success>."
 command-tpa-accept-sender: "#99E0FF%player%<success> has just accepted your teleport request."
+command-tpa-here-accept-receiver: "#99E0FFYou have just #00FF00accepted #99E0FFthe teleport request from #99E0FF%player%<success>."
+command-tpa-here-accept-sender: "#99E0FF%player%<success> has just accepted your teleport request."
 command-teleport-ignore-player: "<error>You cannot send a teleport request to #99E0FF%player%<error> they are ignoring you."
 command-teleport-world: "<error>You need to be in the same world to teleport."
 command-tpa-error-to-late: "<error>You do not have a teleport request."
@@ -217,6 +240,7 @@ first-join-motd:
 # Spawn
 command-set-spawn: "&fYou just set the spawn location."
 command-spawn-not-define: "<error>The spawn does not exist. Please contact an administrator."
+command-spawn-location-invalid: "<error>The spawn is invalid, please contact an administrator"
 
 
 # Command description
@@ -234,6 +258,7 @@ description-speed: "Change player speed"
 description-enderchest: "Open your enderchest"
 description-endersee: "Open a player enderchest"
 description-tpa: "Teleport to a player"
+description-tpa-here: "Teleport a player to you"
 description-tpa-accept: "Accept a teleportation request"
 description-tpa-deny: "Denied a teleportation request"
 description-tpa-cancel: "Cancel a teleportation request"
@@ -258,11 +283,17 @@ description-eco: "Manages the server economies"
 description-eco-set: "Sets the specified player's balance to the specified amount of money"
 description-eco-take: "Takes the specified amount of money from the specified player"
 description-eco-give: "Gives the specified player the specified amount of money"
+description-eco-give-random: "Gives the specified player a random amount of money"
 description-eco-give-all: "Gives for all players the specified amount of money"
 description-eco-reset: "Resets the specified player's balance to the server's starting balance"
 description-eco-show: "Show player money"
 description-pay: "Pays another player from your balance"
 description-fly: "Toggle flight"
+description-fly-add: "Add the fly time"
+description-fly-get: "Display player's fly info"
+description-fly-info: "Display your temporary fly info"
+description-fly-remove: "Remove the fly time"
+description-fly-set: "Set the fly time"
 description-anvil: "Open an anvil"
 description-cartographytable: "Open a cartography table"
 description-grindstone: "Open a grind stone"
@@ -391,7 +422,17 @@ description-vault-give: "Give items to player's vault"
 description-vault-add-slot: "Add slot to player's vault"
 description-vault-set-slot: "Set slot to player's vault"
 description-show-item: "Show player's item"
+description-freeze: "Freeze a player"
 description-experience: "Manage player experience"
+description-experience-query: "Query player experience"
+description-experience-set: "Set player experience"
+description-experience-grant: "Grant experience to player"
+description-delete-world: "Removes data being linked to a world"
+description-clearinventory: "Clear player's inventory"
+description-suicide: "Kill yourself"
+description-discord-link: "Link your discord account"
+description-discord-unlink: "Unlink your discord account"
+description-clear-random-word: "Clear random words"
 
 # Time format
 format-second: "second"
@@ -422,6 +463,7 @@ teleport-message-spawn:
   - message: "&7Teleporting in #0EEA93%seconds% &7seconds, you must not move."
   - type: ACTION
     message: "&7Teleporting in #0EEA93%seconds% &7seconds, you must not move."
+teleport-message-spawn-console: "<success>You just teleported the player <white>%player% <success>to spawn."
 teleport-success-spawn:
   - message: "&7You just teleported to #0EEA93spawn &7!"
   - type: ACTION
@@ -464,6 +506,7 @@ command-warp-destination: " <hover:show_text:'&fClick to teleport to warp &n%nam
 command-warp-list: "&7Warps&8:&f%destinations%"
 command-warp-list-info: " <hover:show_text:'&fClick to teleport to warp &n%name%'><click:run_command:'/warp %name%'>&f%name%</click></hover>&7"
 command-warp-delete: "#00ff00You just removed the warp &f%name%#00ff00."
+command-warp-invalid: "<error>Warp &f%name% <error>has an invalid location."
 
 
 # Homes
@@ -603,17 +646,16 @@ message-ban-join:
   - "&fMinecraft-Inventory-Builder.com"
   - ""
 
-description_freeze: "Freeze a player"
-message_freeze:
+message-freeze:
     - ""
     - "&fYou have just been frozen."
     - ""
-message_un_freeze:
+message-un-freeze:
   - ""
   - "&fYou have just been unfrozen."
   - ""
-command_freeze_success: "&7You just freeze the player &f%player%&7."
-command_un_freeze_success: "&7You just unfreeze the player &f%player%&7."
+command-freeze-success: "&7You just freeze the player &f%player%&7."
+command-un-freeze_success: "&7You just unfreeze the player &f%player%&7."
 
 # Chat
 chat-error: "<error>Impossible to let you speak, your data is not loaded."
@@ -716,8 +758,8 @@ command-give-vault: "<success>You just gave &n&fx%amount% %item%&r <success>to &
 
 command-power-tool-error-item: "<error>You have no item in your hand."
 command-power-tool-error-reset: "<error>This item has no recorded command."
-command-power-tool-info: "<success>You just put the command &f/%command%<success> on the item &f%item<success>."
-command-power-tool-reset: "<success>You have just deleted the command on the item &f%item<success>."
+command-power-tool-info: "<success>You just put the command &f/%command%<success> on the item &f%item%<success>."
+command-power-tool-reset: "<success>You have just deleted the command on the item &f%item%<success>."
 
 mailbox-remove-full: "<error>You must have space in your inventory to retrieve an item."
 mailbox-remove-expire: "<error>You can no longer retrieve this item, it has expired."
@@ -734,7 +776,7 @@ hologram-create:
   type: WITHOUT_PREFIX
   messages:
     - "<success>You just created the hologram &f%name%<success>."
-    - "&7Use &n<click:run_command:'/hologram edit %name%'>/hologram edit %name%</click>&r&7 command to edit the hologram"
+    - "&7Use &n<click:suggest_command:'/hologram %command% %name%'>/hologram %command% %name%</click>&r&7 command to edit the hologram"
 hologram-delete: "<success>Hologram &f%name% <success>has been deleted."
 hologram-doesnt-exist: "<error>Hologram &f%name% <error>doesn't exist."
 hologram-is-not-a-text: "<error>Hologram &f%name% <error>is not a text hologram."
@@ -884,6 +926,15 @@ worldedit-speed-error: "<error>You have no permission to set blocks per second."
 experience-granted: "<success>You have just given <white>%amount% %type% <success>to <white>%player%<success>."
 experience-setted: "<success>You have just set <white>%amount% %type% <success>to <white>%player%<success>."
 experience-queried: "<success><white>%player% <success>have <white>%amount% <success>%type%."
-description-experience-query: "Query player experience"
-description-experience-set: "Set player experience"
-description-experience-grant: "Grant experience to player"
+command-clearinventory-success: "<success>You have cleared your inventory."
+command-clearinventory-success-other: "<success>You have cleared the inventory of &f%player%<success>."
+
+# Discord
+command-link-account-already-linked: "<error>You are already linked to an account."
+command-link-account-invalid-code: "<error>Invalid code."
+command-link-account-success: "<success>You have just linked your account <white>%discord%<success>."
+command-link-account-disabled: "<error>You cannot link your account at this time."
+command-link-account-not-linked: "<error>You are not linked to an account."
+command-link-account-reset: "<success>You have just reset your account link."
+
+random-word-clear: "<success>The random word has been cleared."

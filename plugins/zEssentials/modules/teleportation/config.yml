@@ -35,10 +35,13 @@ teleport-delay-permissions:
 teleport-delay-bypass: false
 
 # The delay, in seconds, for the teleport request to expire.
-teleport-tpa-expire: 120
+teleport-tpa-expire: 60
 
 # Opens a confirmation inventory for the /tpa command.
 open-confirm-inventory-for-tpa: false
+
+# Opens a confirmation inventory for the /tpahere command.
+open-confirm-inventory-for-tpa-here: false
 
 rtp-center-x: 0
 rtp-center-z: 0

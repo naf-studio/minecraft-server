@@ -45,30 +45,46 @@ task-conditions:
 scoreboards:
   default:
     default: true
-    title: "#53edd6NAF SMP"
+    title: "#53edd6zEssentials"
     lines:
       - line: 1
-        text: "&7• Money: &a%zessentials_user_formatted_balance_money%"
-        event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
+        text: ""
       - line: 2
-        text: "&7• Coins: #4cd5ff%zessentials_user_formatted_balance_coins%"
+        text: "&7Balance: &a%zessentials_user_formatted_balance_money%"
         event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
       - line: 3
-        text: ""
-        event: ""
+        text: "&7Coins: &a%zessentials_user_formatted_balance_coins%"
+        event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
       - line: 4
-        text: "dsc.gg/nafd"
+        text: ""
+      - line: 5
+        text: "play.essentials.fr"
+        animation: COLOR_WAVE
+        fromColor: "#5599ff"
+        toColor: "#ffffff"
+        length: 5 # animation length
+        delayBetween: 5000 # in milliseconds
+        animationSpeed: 30 # in milliseconds
   admin:
-    title: "#53edd6NAF SMP"
+    title: "#53edd6zEssentials"
     lines:
       - line: 1
-        text: "&7• Money: &a%zessentials_user_formatted_balance_money%"
-        event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
+        text: ""
       - line: 2
-        text: "&7• Coins: #4cd5ff%zessentials_user_formatted_balance_coins%"
+        text: "&7Balance: &a%zessentials_user_formatted_balance_money%"
         event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
       - line: 3
-        text: ""
-        event: ""
+        text: "&7Coins: &a%zessentials_user_formatted_balance_coins%"
+        event: "fr.maxlego08.essentials.api.event.events.user.UserEconomyPostUpdateEvent"
       - line: 4
-        text: "dsc.gg/nafd"
+        text: "&7Rank: &cAdmin"
+      - line: 5
+        text: ""
+      - line: 6
+        text: "play.essentials.fr"
+        animation: COLOR_WAVE
+        fromColor: "#5599ff"
+        toColor: "#ffffff"
+        length: 5 # animation length
+        delayBetween: 5000 # in milliseconds
+        animationSpeed: 30 # in milliseconds
