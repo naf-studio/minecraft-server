@@ -8,7 +8,7 @@
 custom-events:
    dated-events:
       october-event-example:
-         enabled: true
+         enabled: false
          name: "&6Vu-lan Festival"
          display-event: true
          times:
