@@ -7,7 +7,7 @@
 # messagetype:
 #  - 'message1'
 
-prefix: '&7[&bSleep&7]'
+prefix: '&b[Sleep]'
 user:
   night-skipped-chat: ''
   storm-skipped-chat: ''
