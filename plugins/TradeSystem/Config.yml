@@ -1,5 +1,5 @@
 TradeSystem:
-  Prefix: '&8[&cTrade&8] &r'
+  Prefix: '&d[Trade] &r'
   Language: ENG
   # Permissions:
   #   "tradesystem.trade": Can accept/deny/toggle trade requests
