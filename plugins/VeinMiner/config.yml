@@ -25,7 +25,7 @@ DisabledGameModes:
 Hunger:
   HungerModifier: 2.5
   MinimumFoodLevel: 1
-  HungryMessage: "&7You are too hungry to vein mine!"
+  HungryMessage: "&7[VeinMiner] You are too hungry to vein mine!"
 
 Client:
   AllowActivationKeybind: true
