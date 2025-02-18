@@ -1473,7 +1473,7 @@ world-settings:
           wait-until-trade-locked: false
         display-trade-item: true
         spawn-iron-golem:
-          radius: 0
+          radius: 5
           limit: 0
         search-radius:
           acquire-poi: 48
