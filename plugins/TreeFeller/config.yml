@@ -9,7 +9,7 @@ startup-logs: false
 default-enabled: true
 
 # How far should the plugin scan for logs? (If a tree is larger, only the part within this distance will be felled)
-scan-distance: 128
+scan-distance: 256
 
 # How far away from logs should leaf blocks be detected?
 leaf-detect-range: 6
