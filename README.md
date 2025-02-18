@@ -26,5 +26,7 @@
 - Add bot token for Discord Voice Chat in `plugins/voicechat-discord/config.yml`
 - Add webhook for Grim in `plugins/GrimAC/discord.yml`
 
-## Other information
+## Other information:
+- Paper folk optimization: https://paper-chan.moe/paper-optimization/
+- Flags generator: https://www.birdflop.com/resources/flags/
 - Optimization guide used at: https://minecraftvn.net/cau-hinh-de-giam-lag-va-toi-uu-server-minecraft-de-dat-hieu-nang-tot-nhat.t46151/
