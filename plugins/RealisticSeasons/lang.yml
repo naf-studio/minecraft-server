@@ -1,9 +1,9 @@
 SEASONSCOMMAND-DAYSUNTILNEXTEVENT: '&a[RealisticSeason] Days until next event (&2$next_event$&a):
   &7$days_until_next_event$'
-SEASON-TO-WINTER: '&b&l[RealisticSeason] Winter is starting!'
-SEASON-TO-FALL: '&b&l[RealisticSeason] Fall is starting!'
-SEASON-TO-SPRING: '&b&l[RealisticSeason] Spring is starting!'
-SEASON-TO-SUMMER: '&b&l[RealisticSeason] Summer is starting!'
+SEASON-TO-WINTER: '&b[RealisticSeason] Winter is starting!'
+SEASON-TO-FALL: '&b[RealisticSeason] Fall is starting!'
+SEASON-TO-SPRING: '&b[RealisticSeason] Spring is starting!'
+SEASON-TO-SUMMER: '&b[RealisticSeason] Summer is starting!'
 NO-PERMISSION-MESSAGE: '&c[RealisticSeason] You don''t have the permission to do that!'
 WINTER-DISPLAY-NAME: Winter
 FALL-DISPLAY-NAME: Fall
