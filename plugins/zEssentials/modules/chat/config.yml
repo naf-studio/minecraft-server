@@ -28,7 +28,7 @@
 #
 ########################################################################################################################
 
-enable: true
+enable: false
 
 # Enables verification of authorized characters in chat
 enable-alphanumeric-regex: false
