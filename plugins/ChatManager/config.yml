@@ -110,14 +110,14 @@ Anti_Spam:
   Chat:
     # How many seconds does the player have to wait till they send their next message?
     # Set to 0 to disable.
-    Chat_Delay: 3
+    Chat_Delay: 0
     # Prevent players from repeating the same messages.
     Block_Repetitive_Messages: true
   # Anti-spam section for commands.
   Command:
     # How many seconds does the player have to wait till they send their next command?
     # Set to 0 to disable.
-    Command_Delay: 3
+    Command_Delay: 0
     # Prevent players from repeating the same commands.
     Block_Repetitive_Commands: false
     # Whitelisted commands that won't be effected by the anti-spam.
@@ -229,13 +229,13 @@ Broadcast_Commands:
     # Broadcast Command
     Broadcast:
       # The default prefix that goes in front of the broadcasted message.
-      Prefix: "&c[&4Broadcast&c]&r "
+      Prefix: "&4[Broadcast]&r "
       # The default color the broadcasted message will be.
       Default_Color: "&b"
       # The sound that will be sent to everyone on the server when a broadcasted message is sent.
       # Set toggle to false
       sound:
-        toggle: false
+        toggle: true
         value: 'ENTITY_PLAYER_LEVELUP'
         pitch: 1.0
         volume: 1.0
@@ -244,7 +244,7 @@ Broadcast_Commands:
       # The sound that will be sent to everyone on the server when an announcement is sent.
       # Set toggle to false
       sound:
-        toggle: false
+        toggle: true
         value: 'ENTITY_PLAYER_LEVELUP'
         pitch: 1.0
         volume: 1.0
@@ -259,7 +259,7 @@ Broadcast_Commands:
       # The sound that will be sent to everyone on the server when a broadcasted message is sent.
       # Set toggle to false
       sound:
-        toggle: false
+        toggle: true
         value: 'ENTITY_PLAYER_LEVELUP'
         pitch: 1.0
         volume: 1.0
@@ -488,7 +488,7 @@ Messages:
       #Enable if you don't want to use group messages
       #If players doesn't have a permission set in group messages these messages will send.
       #Same rules apply for the Quit, Actionbar, and Title Messages.
-      Enable: false
+      Enable: true
       # The sound that will be sent to everyone on the server when a broadcasted message is sent.
       # Set toggle to false
       sound:
@@ -499,7 +499,7 @@ Messages:
       Message: "&b{player} &ajoined the server"
     
     Quit_Message:
-      Enable: false
+      Enable: true
 
       # The sound that will be sent to everyone on the server when a broadcasted message is sent.
       # Set toggle to false
@@ -512,7 +512,7 @@ Messages:
       Message: "&b{player} &cleft the server"
     
     Actionbar_Message:
-      Enable: true
+      Enable: false
       Message: "&eWelcome back to &b{server_name} %luckperms_prefix% {player}&e!"
     
     Title_Message:
@@ -594,11 +594,11 @@ Messages:
 # When a player mentions another players name.
 #=================================================================================================#
 Mentions:
-  Enable: false
+  Enable: true
   # The sound that's played to the receiver
   # https://jd.papermc.io/paper/1.20/org/bukkit/Sound.html
   sound:
-    toggle: false
+    toggle: true
     value: 'ENTITY_PLAYER_LEVELUP'
     pitch: 1.0
     volume: 1.0
@@ -682,7 +682,7 @@ Private_Messages:
   # The sound that's played to the receiver
   # https://jd.papermc.io/paper/1.20/org/bukkit/Sound.html
   sound:
-    toggle: false
+    toggle: true
     value: 'ENTITY_PLAYER_LEVELUP'
     pitch: 1.0
     volume: 1.0
