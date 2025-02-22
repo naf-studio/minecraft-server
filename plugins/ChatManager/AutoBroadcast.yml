@@ -1,13 +1,13 @@
 Auto_Broadcast:
   Global_Messages:
-    Enable: false
+    Enable: true
     Header_And_Footer: true
-    Interval: 30
-    Prefix: "&7[&6AutoBroadcast&7] &r"
+    Interval: 60
+    Prefix: "&6[AutoBroadcast] &r"
     Header: "&7*&7&m--------------------------------&7*"
     Footer: "&7*&7&m--------------------------------&7*"
     sound:
-      toggle: false
+      toggle: true
       value: 'ENTITY_PLAYER_LEVELUP'
       pitch: 1
       volume: 1
@@ -19,7 +19,7 @@ Auto_Broadcast:
     Enable: false
     Header_And_Footer: true
     Interval: 60
-    Prefix: "&7[&6AutoBroadcast&7] &r"
+    Prefix: "&6[AutoBroadcast] &r"
     Header: "&7*&7&m--------------------------------&7*"
     Footer: "&7*&7&m--------------------------------&7*"
     sound:
@@ -48,7 +48,7 @@ Auto_Broadcast:
   Actionbar_Messages:
     Enable: false
     Interval: 60
-    Prefix: "&7[&6AutoBroadcast&7] &r"
+    Prefix: "&6[AutoBroadcast] &r"
     sound:
       toggle: false
       value: 'ENTITY_PLAYER_LEVELUP'
