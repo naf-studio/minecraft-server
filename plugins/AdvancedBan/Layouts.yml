@@ -13,33 +13,42 @@
 # replaced with the current amount of warns the player already received
 # Example usage: /ban Leoko @ExampleLayout
 Message:
-  ExampleLayout:
-    - '%PREFIX% &7Banned for Hacking'
-    - '&c&oBanned by %OPERATOR%'
-    - '&7'
-    - "&cIt seems like you are using a"
-    - "&chacked client please disable it!"
-    - "&cUnban in &8» &7%DURATION%"
-    - '&7'
-    - '&8Unban application in TS or forum'
-    - "&eTS-Ip &8» &c&ncoming soon"
-    - "&eForum &8» &c&ncoming soon"
-  ExampleLayout2:
-    - '%PREFIX% &7Banned for offensive language'
-    - '&7'
-    - "&cWe don't tolerate swearing on our server!"
-    - "&cYou got banned for the word '%REASON%'" # You can even use reasons in message layouts
+  hackclient:
+  - '&cYOU HAVE BEEN BANNED!'
+  - ''
+  - "&rIt seems like you are using a"
+  - "&rhacked client please disable it!"
+  - ''
+  - "&rBanned by&8: &7%OPERATOR%"
+  - "&rReason&8: &7%REASON%"
+  - "&rDuration&8: &7%DURATION%"
+  - ''
+  - '&rPlease join our Discord &9dsc.gg/nafd&r for more information!'
+  # ExampleLayout2:
+  #   - '%PREFIX% &7Banned for offensive language'
+  #   - '&7'
+  #   - "&cWe don't tolerate swearing on our server!"
+  #   - "&cYou got banned for the word '%REASON%'" # You can even use reasons in message layouts
 
 # You would use this time-layout for example like this: "/tempban Leoko #ExampleLayout Hacking in FFA"
 # Or with "/tempwarn Leoko #ExampleLayout Advertising" or even "/tempwarn Leoko #ExampleLayout No capslock please"
 # You can also combine this with MessageLayouts like "/tempban Leoko #ExampleLayout @Hacking"
 Time:
   ExampleLayout:
-    - '30m'
-    - '2h'
-    - '1d'
-    - '1w'
-    - '1mo'
-    - '2mo'
-    - '4mo'
-    - 'perma'
+  - '1m'
+  - '2m'
+  - '3m'
+  - '5m'
+  - '10m'
+  - '30m'
+  - '1h'
+  - '2h'
+  - '3h'
+  - '5h'
+  - '1d'
+  - '2d'
+  - '3d'
+  - '5d'
+  - '1w'
+  - '1mo'
+  - 'perma'
