@@ -7,15 +7,6 @@
 # [webhook] - special command to alert to discord webhook
 # [proxy] - special command to alert to other servers connected to your proxy (BungeeCord/Velocity)
 
-
-
-
-#BY TOLUAM 
-
-
-
-
-
 Punishments:
   Simulation:
     remove-violations-after: 180
@@ -23,7 +14,7 @@ Punishments:
       - "Simulation"
     commands:
       - "50:10 [alert]"
-      - "100:30 [webhook]"      
+      - "100:30 [webhook]"
       - "100:100 [webhook]"
 
   GroundSpoof:
@@ -34,7 +25,8 @@ Punishments:
       - "10:10 [alert]"
       - "10:2 [webhook]"
       - "20:20 [webhook]"
-      - "15:0 kick %player% Ground"
+      #- "15:0 advancedban:tempban %player% 1d Ground"
+      - "15:0 advancedban:kick %player% Ground"
 
   Timer:
     remove-violations-after: 300
@@ -44,7 +36,8 @@ Punishments:
       - "10:1 [alert]"
       - "10:2 [webhook]"
       - "20:20 [webhook]"
-      - "15:0 kick %player% Timer"
+      #- "15:0 advancedban:tempban %player% 1d Timer"
+      - "15:0 advancedban:kick %player% Timer"
 
   Explosion:
     remove-violations-after: 300
@@ -61,8 +54,9 @@ Punishments:
     commands:
       - "5:1 [alert]"
       - "5:5 [webhook]"
-      - "10:0 [webhook]"      
-      - "10:0 kick %player% Velocity"
+      - "10:0 [webhook]"
+      #- "10:0 advancedban:tempban %player% 1d Velocity"
+      - "10:0 advancedban:kick %player% Velocity"
 
   Post:
     remove-violations-after: 300
@@ -72,7 +66,9 @@ Punishments:
       - "20:20 [alert]"
       - "40:40 [webhook]"
       - "40:40 [webhook]"
-      - "40:0 kick %player% Post"
+      #- "40:0 advancedban:tempban %player% 1d Post"
+      - "40:0 advancedban:kick %player% Post"
+
   BadPackets:
     remove-violations-after: 300
     checks:
@@ -81,7 +77,8 @@ Punishments:
       - "10:5 [alert]"
       - "15:10 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 kick %player% Bad Packet"
+      - "20:0 advancedban:kick %player% Bad Packet"
+
   Crash:
     remove-violations-after: 300
     checks:
@@ -90,7 +87,7 @@ Punishments:
       - "10:5 [alert]"
       - "15:10 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 kick %player% Bad Packet"
+      - "20:0 advancedban:kick %player% Bad Packet"
 
   Reach:
     remove-violations-after: 400
@@ -100,7 +97,8 @@ Punishments:
       - "1:1 [alert]"
       - "3:1 [webhook]"
       - "5:0 [webhook]"
-      - "5:0 kick %player% Reach"
+      #- "5:0 advancedban:tempban %player% 1d Reach"
+      - "5:0 advancedban:kick %player% Reach"
 
   EntityControl:
     remove-violations-after: 300
@@ -117,7 +115,8 @@ Punishments:
     commands:
       - "10:10 [alert]"
       - "20:0 [webhook]"
-      - "20:0 kick %player% Bad Transaction"
+      #- "20:0 advancedban:tempban %player% 1d Transaction"
+      - "20:0 advancedban:kick %player% Bad Transaction"
 
   Baritone:
     remove-violations-after: 300
@@ -135,7 +134,8 @@ Punishments:
       - "10:5 [alert]"
       - "10:10 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 kick %player% NoSlow"
+      #- "20:0 advancedban:tempban %player% 1d NoSlow"
+      - "20:0 advancedban:kick %player% NoSlow"
 
   Scaffold:
     remove-violations-after: 300
@@ -145,7 +145,8 @@ Punishments:
       - "10:1 [alert]"
       - "10:5 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 kick %player% NoSlow"
+      #- "20:0 advancedban:tempban %player% 1d NoSlow"
+      - "20:0 advancedban:kick %player% NoSlow"
 
   FastBreak:
     remove-violations-after: 300
@@ -155,7 +156,8 @@ Punishments:
       - "5:1 [alert]"
       - "5:5 [webhook]"
       - "15:0 [webhook]"
-      - "15:0 kick %player% FastBreak"
+      #- "15:0 advancedban:tempban %player% 1d FastBreak"
+      - "15:0 advancedban:kick %player% FastBreak"
   
   NoFall:
     remove-violations-after: 300
@@ -165,7 +167,8 @@ Punishments:
       - "10:5 [alert]"
       - "20:10 [webhook]"
       - "30:30 [webhook]"      
-      - "30:30 kick %player% NoFall"
+      #- "30:30 advancedban:tempban %player% 1d NoFall"
+      - "30:30 advancedban:kick %player% NoFall"
 
   Aim:
     remove-violations-after: 300
@@ -175,7 +178,8 @@ Punishments:
       - "20:5 [alert]"
       - "40:10 [webhook]"
       - "30:30 [webhook]"  
-      - "50:0 kick %player% Aim"
+      #- "50:0 advancedban:tempban %player% 1d Aim"
+      - "50:0 advancedban:kick %player% Aim"
 
   Killaura:
     remove-violations-after: 400
@@ -185,4 +189,5 @@ Punishments:
       - "10:10 [alert]"
       - "20:20 [webhook]"
       - "30:0 [webhook]"
-      - "30:0 kick %player% Killaura"
+      #- "30:0 advancedban:tempban %player% 1d Killaura"
+      - "30:0 advancedban:kick %player% Killaura"
