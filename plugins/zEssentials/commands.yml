@@ -20,7 +20,7 @@ command-balance-top-refresh:
   - refresh
   permission: essentials.balance.top.refresh
 command-ban:
-  enable: true
+  enable: false
   commands:
   - ban
   permission: essentials.ban
@@ -514,7 +514,7 @@ command-item-name:
   - irename
   permission: essentials.item.name
 command-kick:
-  enable: true
+  enable: false
   commands:
   - kick
   permission: essentials.kick
@@ -893,7 +893,7 @@ command-top:
   - top
   permission: essentials.top
 command-teleport:
-  enable: true
+  enable: false
   commands:
   - tp
   permission: essentials.tp
@@ -948,7 +948,7 @@ command-trash:
   - poubelle
   permission: essentials.trash
 command-un-ban:
-  enable: true
+  enable: false
   commands:
   - unban
   permission: essentials.un.ban
