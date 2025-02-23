@@ -7,7 +7,7 @@ Auto_Broadcast:
     Header: "&7*&7&m--------------------------------&7*"
     Footer: "&7*&7&m--------------------------------&7*"
     sound:
-      toggle: true
+      toggle: false
       value: 'ENTITY_PLAYER_LEVELUP'
       pitch: 1
       volume: 1
