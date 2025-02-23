@@ -1,0 +1,68 @@
+ConfigVersion: 7
+
+#Primary and secondary colors will replace &p and &s in any messages
+PrimaryColor: "&6"
+SecondaryColor: "&8"
+
+#This prefix will replace {PREFIX} in all messages
+Prefix: "&6[AFK]"
+
+#The language used for time values like "60 minutes from now"
+#Accepted values can be found at http://www.ocpsoft.org/prettytime/#i18n
+#Please use the abbreviation next to the language e.g. DE for German or FR for french
+PrettyTimeLocale: "en"
+
+#These are sent to all players when AFK starts and stops
+Broadcast:
+  Start: "{PREFIX} &s{PLAYER}&p is now AFK"
+  #You may also add a {TIME} variable that will be replaced by how long the player was AFK
+  Stop: "{PREFIX} &s{PLAYER}&p is no longer AFK"
+
+#These messages are sent to the individual who's AFK status is changing
+Self:
+  Start: "{PREFIX} &sYou&p are now AFK"
+  #You may also add a {TIME} variable that will be replaced by how long the player was AFK
+  Stop: "{PREFIX} &sYou&p are no longer AFK"
+  #The message sent to players when they join and are immediately set as AFK
+  Resume: "{PREFIX} &pYour AFK State has been resumed!"
+
+Updater:
+  NoUpdate: "&pThere is no update available"
+  UpdateFound: "&pThere is an update available for AFKPlus"
+  UpdateDownloading: "&pAn update was found and is being downloaded, it will be installed on the next server restart"
+
+Reload: "&pConfig files have been reloaded, any errors will be printed to the console"
+
+#These strings are used in the "/afkplus player name" commands
+Player:
+  AFK: "&s{PLAYER}&p has been AFK since &s{TIME}"
+  NotAFK: "&s{PLAYER}&p is not AFK"
+  NotOnline: "&s{PLAYER}&p is not currently online"
+  Stats: "&pThey have spent &s{TIME}&p AFK in total"
+  #The current permission assigned to this player will be appended to this string
+  Permission: "&pPlayers permission: &s"
+  #These two strings will only be shown if AggressiveAFKDetection is enabled
+  Active: "&pThis player is not exhibiting suspicious behaviour according to aggressive AFK detection"
+  Inactive: "&sThis player has been behaving in a way that MIGHT mean they are trying to avoid AFK detection, they have been marked as inactive"
+
+#Sent when the player is AFK long enough for a warning to be sent
+Warning: "{PREFIX}&p You will be kicked for AFK soon!"
+
+Help:
+  Help: "The following is a list of commands and their uses:\n"
+  AFKPlus: "\"/afkplus\"\n
+  Shows plugin information"
+  AFKPlusHelp: "\"/afkplus [help]\"\n
+  Displays all of the commands and their uses"
+  AFKPlusUpdate: "\"/afkplus [update]\"\n
+  Checks for and installs any available update"
+  AFKPlusPlayer: "\"/afkplus player [PlayerName]\"\n
+  Tells you the AFK status of the player, if they are AFK it will also tell you how long they have been AFK"
+  AFK: "\"/afk [PlayerName]\"\n
+  Without a players name this will toggle your AFK status\n
+  With a name it will attempt to toggle that players AFK status"
+
+Error:
+  MustBePlayer: "&sYou must be player to do this!"
+  PlayerNotFound: "&sPlayer not found"
+  NotPermitted: "&sYou aren't permitted to do this"
