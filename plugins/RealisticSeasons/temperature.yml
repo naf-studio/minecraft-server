@@ -1,3 +1,4 @@
+temperature-change-rate: 0.2
 entity-temperature:
   enabled: false
   entity-effects:
