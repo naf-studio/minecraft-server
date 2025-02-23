@@ -3,7 +3,7 @@ Auto_Broadcast:
     Enable: true
     Header_And_Footer: true
     Interval: 60
-    Prefix: "&6[AutoBroadcast] &r"
+    Prefix: "&6[Tips] &r"
     Header: "&7*&7&m--------------------------------&7*"
     Footer: "&7*&7&m--------------------------------&7*"
     sound:
@@ -12,9 +12,29 @@ Auto_Broadcast:
       pitch: 1
       volume: 1
     Messages:
-      - "{prefix}&7Auto-Broadcast chat message."
-      - "{prefix}&7Plugin created by H1DD3NxN1NJA."
-      - "{prefix}&7Hello &c{player} &7there are &c{online} &7players online."
+      - "{prefix}&7The gamerule keepInventory is set to &cfalse&7. Be careful! If you die, you will lose your items. However, the server will send you your death coordinates."
+      - "{prefix}&7Teleport to your friends easily with &e/tpa <player>&7 or bring them to you with &e/tpahere <player>&7."
+      - "{prefix}&7Save your favorite locations using &e/sethome <name>&7 and return anytime with &e/home <name>&7."
+      - "{prefix}&7Need to go AFK? Use &e/afk &7to enter AFK mode. You won't be attacked, and you're exempt from sleeping requirements."
+      - "{prefix}&7Change your skin in-game with &e/skin <name>&7"
+      - "{prefix}&7Want to sit, lay down, or crawl? Try &e/sit&7, &e/lay&7, &e/crawl&7, and more!"
+      - "{prefix}&7Want to teleport randomly? Use &e/rtp&7 to find a new location instantly."
+      - "{prefix}&7Chop trees and mine ores quickly by holding &eSNEAK &7and left-clicking!"
+      - "{prefix}&7Join or create a team using &e/team create <name>&7. Teams can share chests, set warps, and work together!"
+      - "{prefix}&7Bloodmoon occurs every 30 days, increasing monster spawn rates and loot drops. Use &e/bloodmoon show &7to check when the next one happens!"
+      - "{prefix}&7Enhance your gameplay with Simple Voice Chat! Check YouTube for installation guides."
+      - "{prefix}&7Vote to mute, kick, or ban players using &e/votemute, /votekick, &7or &e/voteban &7with a reason. At least 50% of players must agree!"
+      - "{prefix}&7Discover new biomes, structures, and bosses in the Nether and End with our enhanced world generation:D"
+      - "{prefix}&7Want powerful new weapons? Explore the Nether and The End to find unique bosses and loot. Watch tutorials in Discord for guidance!"
+      - "{prefix}&7Embark on quests! Use &e/quest &7to choose from 331 quests and earn awesome rewards."
+      - "{prefix}&7Wear anything on your head with &e/hat&7."
+      - "{prefix}&7Use &e/spawn&7 to return to the server spawn point."
+      - "{prefix}&7Get a starter kit with &e/kit <kitname>&7."
+      - "{prefix}&7Join our Discord community! Type &e/discord &7for the invite link."
+      - "{prefix}&7Check your connection speed with &e/ping&7."
+      - "{prefix}&7Check for our tps with &e/tps&7."
+      - "{prefix}&7To enhance your experience, Incendium and Stellarity have their own resource packs! Make sure to install them for the best visuals."
+      - "{prefix}&7Don't forget to join our Discord &9dsc.gg/nafd server for the latest announcements and support!"
   Per_World_Messages:
     Enable: false
     Header_And_Footer: true
