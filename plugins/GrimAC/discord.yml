@@ -1,12 +1,17 @@
+
+#           BY TOLUAM
+
 enabled: true
 webhook: ""
-embed-title: "**Anticheat Alert**"
+embed-title: "**Thần Chết Đến Đây**"
 embed-color: "#E67E22"
-violation-content:
-  - "**%player% information:**"
-  - "> Client: %version%"
-  - "> Brand: %brand%"
+violation-content: 
+  - "**Thông tin của %player%:**"
+  - "> Phiên bản: %version%"
+  - "> Client: %brand%"
   - "> Ping: %ping%"
-  - "**Anticheat information:**"
-  - "> Check: %check%"
-  - "> Violations: %violations%"
+  - "> TPS: %tps%"
+  - " "
+  - "**Bắt vì lí do**:"
+  - "> Kiểm: %check%"
+  - "> Vi phạm: %violations%"

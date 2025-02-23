@@ -6,6 +6,16 @@
 # [alert] - special command to alert
 # [webhook] - special command to alert to discord webhook
 # [proxy] - special command to alert to other servers connected to your proxy (BungeeCord/Velocity)
+
+
+
+
+#BY TOLUAM 
+
+
+
+
+
 Punishments:
   Simulation:
     remove-violations-after: 180
@@ -13,7 +23,7 @@ Punishments:
       - "Simulation"
     commands:
       - "50:10 [alert]"
-      - "100:30 [proxy]"      
+      - "100:30 [webhook]"      
       - "100:100 [webhook]"
 
   GroundSpoof:
@@ -22,9 +32,9 @@ Punishments:
       - "GroundSpoof"
     commands:
       - "10:10 [alert]"
-      - "10:2 [proxy]"
+      - "10:2 [webhook]"
       - "20:20 [webhook]"
-      - "15:0 ban %player% 1d Ground"
+      - "15:0 kick %player% Ground"
 
   Timer:
     remove-violations-after: 300
@@ -32,9 +42,9 @@ Punishments:
       - "Timer"
     commands:
       - "10:1 [alert]"
-      - "10:2 [proxy]"
+      - "10:2 [webhook]"
       - "20:20 [webhook]"
-      - "15:0 ban %player% 1d Timer"
+      - "15:0 kick %player% Timer"
 
   Explosion:
     remove-violations-after: 300
@@ -50,9 +60,9 @@ Punishments:
       - "Knockback"
     commands:
       - "5:1 [alert]"
-      - "5:5 [proxy]"
+      - "5:5 [webhook]"
       - "10:0 [webhook]"      
-      - "10:0 ban %player% 5d Velocity"
+      - "10:0 kick %player% Velocity"
 
   Post:
     remove-violations-after: 300
@@ -61,38 +71,36 @@ Punishments:
     commands:
       - "20:20 [alert]"
       - "40:40 [webhook]"
-      - "40:40 [proxy]"
-      - "40:0 ban %player% 5d Post"
-
+      - "40:40 [webhook]"
+      - "40:0 kick %player% Post"
   BadPackets:
     remove-violations-after: 300
     checks:
       - "BadPackets"
     commands:
       - "10:5 [alert]"
-      - "15:10 [proxy]"
+      - "15:10 [webhook]"
       - "20:0 [webhook]"
       - "20:0 kick %player% Bad Packet"
-
   Crash:
     remove-violations-after: 300
     checks:
       - "Crash"
     commands:
       - "10:5 [alert]"
-      - "15:10 [proxy]"
+      - "15:10 [webhook]"
       - "20:0 [webhook]"
       - "20:0 kick %player% Bad Packet"
 
   Reach:
-    remove-violations-after: 300
+    remove-violations-after: 400
     checks:
       - "Reach"
     commands:
       - "1:1 [alert]"
-      - "3:1 [proxy]"
+      - "3:1 [webhook]"
       - "5:0 [webhook]"
-      - "5:0 ban %player% 5d Reach"
+      - "5:0 kick %player% Reach"
 
   EntityControl:
     remove-violations-after: 300
@@ -117,17 +125,17 @@ Punishments:
       - "Baritone"
     commands:
       - "10:10 [alert]"
-      - "20:20 [proxy]"
+      - "20:20 [webhook]"
 
   NoSlow:
-    remove-violations-after: 300
+    remove-violations-after: 400
     checks:
       - "NoSlow"
     commands:
       - "10:5 [alert]"
-      - "10:10 [proxy]"
+      - "10:10 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 ban %player% 1d NoSlow"
+      - "20:0 kick %player% NoSlow"
 
   Scaffold:
     remove-violations-after: 300
@@ -135,9 +143,9 @@ Punishments:
       - "Place"
     commands:
       - "10:1 [alert]"
-      - "10:5 [proxy]"
+      - "10:5 [webhook]"
       - "20:0 [webhook]"
-      - "20:0 ban %player% 1d NoSlow"
+      - "20:0 kick %player% NoSlow"
 
   FastBreak:
     remove-violations-after: 300
@@ -145,9 +153,9 @@ Punishments:
       - "FastBreak"
     commands:
       - "5:1 [alert]"
-      - "5:5 [proxy]"
+      - "5:5 [webhook]"
       - "15:0 [webhook]"
-      - "15:0 ban %player% 1d FastBreak"
+      - "15:0 kick %player% FastBreak"
   
   NoFall:
     remove-violations-after: 300
@@ -155,9 +163,9 @@ Punishments:
       - "NoFall"
     commands:
       - "10:5 [alert]"
-      - "20:10 [proxy]"
+      - "20:10 [webhook]"
       - "30:30 [webhook]"      
-      - "30:30 ban %player% 1d NoFall"
+      - "30:30 kick %player% NoFall"
 
   Aim:
     remove-violations-after: 300
@@ -165,16 +173,16 @@ Punishments:
       - "Aim"
     commands:
       - "20:5 [alert]"
-      - "40:10 [proxy]"
+      - "40:10 [webhook]"
       - "30:30 [webhook]"  
-      - "50:0 ban %player% 5d Aim"
+      - "50:0 kick %player% Aim"
 
   Killaura:
-    remove-violations-after: 300
+    remove-violations-after: 400
     checks:
       - "Killaura"
     commands:
       - "10:10 [alert]"
-      - "20:20 [proxy]"
+      - "20:20 [webhook]"
       - "30:0 [webhook]"
-      - "30:0 ban %player% 5d Killaura"
+      - "30:0 kick %player% Killaura"

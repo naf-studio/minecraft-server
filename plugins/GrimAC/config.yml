@@ -4,6 +4,14 @@
 # Modified binaries, or plugins with copied grim code, must be private,
 # or with full source code available to buyers at no additional cost.
 
+
+
+
+#BY TOLUAM 
+
+
+
+
 alerts:
   # In addition to broadcasting alerts to players, should they also be sent to the console?
   print-to-console: true
@@ -87,7 +95,7 @@ RotationPlace:
 # Prediction-based no slow check
 # Grim accounts for buggy netcode here... hard to false even when spamming right click and offhand button
 # Much more stable than other anticheats, but please report any falses... I have fixed a ton of netcode issues here.
-NoSlow:
+NoSlowA:
   # How much of an offset is "cheating"
   # By default this is lower than other offs
   # Flags by 0.03-0.2 consistently with NoSlow on
@@ -143,7 +151,7 @@ Reach:
   #
   # There is 0.03 forced expansion with 1.9-1.18.1 (not 1.18.2), or some client/server combinations due to
   # protocol changes and limitations. This check is most powerful with 1.7/1.8 clients on 1.8 servers.
-  threshold: 0.0005
+  threshold: 0.0004
   # Should we cancel hits that we know are impossible?
   # 3.00-3.03 hits may go through but still be flagged, due to packet order limitations
   block-impossible-hits: true
@@ -172,9 +180,6 @@ debug-pipeline-on-join: false
 
 # Enables experimental checks
 experimental-checks: true
-
-mitigate-autoblock: true
-mitigate-desync-noslow: true
 
 # Grim sometimes cancels illegal packets such as with timer, after X packets in a second cancelled, when should
 # we simply kick the player? This is required as some packet limiters don't count packets cancelled by grim.
