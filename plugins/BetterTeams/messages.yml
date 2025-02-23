@@ -1,8 +1,8 @@
 # Any placeholders from placeholder API will work in this file
 invalidArg: '&6[BetterTeams] &4Invalid Arguments, help'
 inTeam: '&6[BetterTeams] &4You must be in a team to do that'
-internalError: '&6[BetterTeams] &4Something went wrong while executing that command, please report
-  it to your server owners'
+internalError: '&6[BetterTeams] &4Something went wrong while executing that command,
+  please report it to your server owners'
 notInTeam: '&6[BetterTeams] &4You must leave your team before doing that'
 needOwner: '&6[BetterTeams] &4You must be the owner of the team to do that'
 needAdmin: '&6[BetterTeams] &4You must be admin or owner of the team to do that'
@@ -42,10 +42,11 @@ create:
   success: '&6[BetterTeams] &6Your team has been created'
   banned: '&6[BetterTeams] &4That team name is banned'
   maxLength: '&6[BetterTeams] &4That team name is too long'
+  minLength: '&4That team name is too short'
 leave:
   success: '&6[BetterTeams] &6You have left the team'
-  lastOwner: '&6[BetterTeams] &6You are the only owner rank within the team, Either promote someone
-    else or use &b/team disband &6to disband command. the team'
+  lastOwner: '&6[BetterTeams] &6You are the only owner rank within the team, Either
+    promote someone else or use &b/team disband &6to disband command. the team'
 announce:
   join: '&6[BetterTeams] &3{0} &7has joined team {1}'
   leave: '&6[BetterTeams] &3{0} &7has left team {1}'
@@ -75,12 +76,13 @@ name:
   noPerm: '&6[BetterTeams] &4You do not have permission to change your team name'
 invite:
   success: '&6[BetterTeams] &6That player has been invited'
-  invite: '&6[BetterTeams] &6You have been invited to join team {0} do &b/team join {0} &6 to join
-    the team'
+  invite: '&6[BetterTeams] &6You have been invited to join team {0} do &b/team join
+    {0} &6 to join the team'
   hover: '&6[BetterTeams] &6Click to join &b{0}'
   inTeam: '&6[BetterTeams] &6That player is already in a team'
   banned: '&6[BetterTeams] &6That player is banned from your team'
-  full: '&6[BetterTeams] &6Your team is maximum size, kick someone out before inviting more people'
+  full: '&6[BetterTeams] &6Your team is maximum size, kick someone out before inviting
+    more people'
   expired: '&6[BetterTeams] &4The invite from &b{0} &4has expired'
 join:
   success: '&6[BetterTeams] &6You have joined that team'
@@ -137,18 +139,19 @@ promote:
   noPerm: '&6[BetterTeams] &6You do not have permissions to promote that person'
   max: '&6[BetterTeams] &6That person is already promoted to the max!'
   notify: '&6[BetterTeams] &6You have been promoted!'
-  maxAdmins: '&6[BetterTeams] &4Your team already has the maximum number of admins, demote someone
-    or level your team up'
-  maxOwners: '&6[BetterTeams] &4Your team already has the maximum number of owners, demote someone
-    or level your team up'
+  maxAdmins: '&6[BetterTeams] &4Your team already has the maximum number of admins,
+    demote someone or level your team up'
+  maxOwners: '&6[BetterTeams] &4Your team already has the maximum number of owners,
+    demote someone or level your team up'
 demote:
   success: '&6[BetterTeams] &6That player has been demoted'
   noPerm: '&6[BetterTeams] &6You do not have permissions to demote that person'
   min: '&6[BetterTeams] &6That person is already the lowest rank'
   notify: '&6[BetterTeams] &6You have been demoted'
-  lastOwner: '&6[BetterTeams] &6You cannot demote the final owner, promote someone else first'
-  maxAdmins: '&6[BetterTeams] &4Your team already has the maximum number of admins, remove and admin
-    or level your team up'
+  lastOwner: '&6[BetterTeams] &6You cannot demote the final owner, promote someone
+    else first'
+  maxAdmins: '&6[BetterTeams] &4Your team already has the maximum number of admins,
+    remove and admin or level your team up'
 home:
   success: '&6[BetterTeams] &6You have been teleported'
   noHome: '&6[BetterTeams] &6Your team has not set a home'
@@ -180,13 +183,16 @@ ally:
   ally: '&6[BetterTeams] &6Your team is now allied with &b{0}'
   ally_title: '&6[BetterTeams] &6Your team is now allied with &b{0}'
   requested: '&6[BetterTeams] &6An ally request has been sent to that team'
-  request: '&6[BetterTeams] &b{0} &6has sent an ally request, use &b/team ally <team> &6to accept'
+  request: '&6[BetterTeams] &b{0} &6has sent an ally request, use &b/team ally <team>
+    &6to accept'
   self: '&6[BetterTeams] &4You cannot ally your own team'
   from: '&6[BetterTeams] &6You have ally requests from: {0}'
   noRequests: '&6[BetterTeams] &4You do not have any ally requests'
-  onJoin: '&6[BetterTeams] &6You have new ally requests do &b/team ally &6to view them'
+  onJoin: '&6[BetterTeams] &6You have new ally requests do &b/team ally &6to view
+    them'
   limit: '&6[BetterTeams] &4The limit on allies has been reached'
-  alreadyrequest: '&6[BetterTeams] &4You have already requested to be allies with that team'
+  alreadyrequest: '&6[BetterTeams] &4You have already requested to be allies with
+    that team'
 allychat:
   disabled: '&6[BetterTeams] &6Your messages are no longer going to the ally chat'
   enabled: '&6[BetterTeams] &6Your messages are now going to the ally chat'
@@ -205,8 +211,8 @@ list:
   body: '&6{0}: &b{1}'
   footer: '&6[BetterTeams] &7--- &6do &b/team list [page] &6to view more &7---'
 setowner:
-  use: '&6[BetterTeams] &6You cannot promote that player, use &b/team setowner <player> &6to promote
-    that player to owner'
+  use: '&6[BetterTeams] &6You cannot promote that player, use &b/team setowner <player>
+    &6to promote that player to owner'
   success: '&6[BetterTeams] &6That player is now owner'
   notify: '&6[BetterTeams] &6You are now owner of your team'
   max: '&6[BetterTeams] &4That player is already owner'
@@ -241,6 +247,10 @@ chest:
   all:
     success: '&6[BetterTeams] &6Unclaimed all chests'
   claimed: '&6[BetterTeams] &4That chest is claimed by &a{0}'
+  check:
+    self: '&6Your team has claimed that chest'
+    notClaimed: '&6That chest has not been claimed'
+    claimed: '&6That chest is claimed by &a{0}'
 echest:
   
   echest: Enderchest
@@ -269,8 +279,8 @@ admin:
     'no': '&6[BetterTeams] &4That rank either does not exist or is not setup correctly'
   config:
     
-    reload: '&6[BetterTeams] &6BetterTeams has been reloaded (If you are having problems when using
-      this command, restart the server)'
+    reload: '&6[BetterTeams] &6BetterTeams has been reloaded (If you are having problems
+      when using this command, restart the server)'
   holo:
     create:
       success: '&6[BetterTeams] &6Hologram created'
@@ -315,18 +325,18 @@ admin:
     notify: '&6[BetterTeams] &6You have been demoted'
     success: '&6[BetterTeams] &6That player has been demoted'
     min: '&6[BetterTeams] &4That player cannot be demoted any more'
-    maxAdmins: '&6[BetterTeams] &4That team already has the max number of admins, remove one before
-      demoting this player'
+    maxAdmins: '&6[BetterTeams] &4That team already has the max number of admins,
+      remove one before demoting this player'
   promote:
     max: '&6[BetterTeams] &6That player is already the maximum rank'
     notify: '&6[BetterTeams] &6You have been promoted'
     success: '&6[BetterTeams] &6That player has been promoted'
-    owner: '&6[BetterTeams] &6It is configured that teams can only have a single owner, do &b/teama
-      setowner <player> &6to set the player as the owner'
-    maxAdmins: '&6[BetterTeams] &4That team already has the max number of admins, remove one before
-      promoting that player'
-    maxOwners: '&6[BetterTeams] &4That team already has the max number of owners, remove one before
-      promoting that player'
+    owner: '&6[BetterTeams] &6It is configured that teams can only have a single owner,
+      do &b/teama setowner <player> &6to set the player as the owner'
+    maxAdmins: '&6[BetterTeams] &4That team already has the max number of admins,
+      remove one before promoting that player'
+    maxOwners: '&6[BetterTeams] &4That team already has the max number of owners,
+      remove one before promoting that player'
   setowner:
     already: '&6[BetterTeams] &4That player is already an owner'
     nonotify: '&6[BetterTeams] &6You are no longer owner of the team'
@@ -338,8 +348,8 @@ admin:
     success: '&6[BetterTeams] &6That warp has been set'
     max: '&6[BetterTeams] &6That team has already set the maximum number of warps'
   purge:
-    confirm: '&6[BetterTeams] &6Run that command in the next 10 seconds to confirm, &4THIS CANNOT
-      BE UNDONE AND WILL RESET SCORES FOR ALL TEAMS'
+    confirm: '&6[BetterTeams] &6Run that command in the next 10 seconds to confirm,
+      &4THIS CANNOT BE UNDONE AND WILL RESET SCORES FOR ALL TEAMS'
     success: '&6[BetterTeams] &6The teams have been purged'
   score:
     tooSmall: '&6[BetterTeams] &4The score must be greater than 0'
@@ -347,7 +357,8 @@ admin:
   bal:
     toSmall: '&6[BetterTeams] &4The balance must be greater than 0'
     success: '&6[BetterTeams] &6That teams balance has been changed'
-  update: '&6[BetterTeams] &4There is a new version of better teams released update here: https://www.spigotmc.org/resources/better-teams.17129/'
+  update: '&6[BetterTeams] &4There is a new version of better teams released update
+    here: https://www.spigotmc.org/resources/better-teams.17129/'
   disband:
     success: '&6[BetterTeams] &6That team has been disbanded successfully'
   color:
@@ -356,7 +367,8 @@ admin:
     claim:
       success: '&6[BetterTeams] &6You have claimed that chest on behalf of the team'
     remove:
-      success: '&6[BetterTeams] &6You have successfully removed the claim from that chest'
+      success: '&6[BetterTeams] &6You have successfully removed the claim from that
+        chest'
       notClaimed: '&6[BetterTeams] &4No team has claimed that chest'
     all:
       success: '&6[BetterTeams] &6All claims removed from that team'
@@ -378,7 +390,8 @@ admin:
     all:
       success: '&6[BetterTeams] &6All online members of all teams were teleported'
       home:
-        success: '&6[BetterTeams] &6All online members of all teams with a home were teleported'
+        success: '&6[BetterTeams] &6All online members of all teams with a home were
+          teleported'
   ally:
     same: '&6[BetterTeams] &4You cannot make a team an ally of itself'
     already: '&6[BetterTeams] &4Those teams are already allies'
@@ -417,7 +430,8 @@ uclaim:
   member: '&6[BetterTeams] &4You cannot leave your teams claim'
   kick: '&6[BetterTeams] &4You cannot kick members of your own team from your claim'
   ban: '&6[BetterTeams] &4You cannot ban members of your own team from your claim'
-  dissolve: '&6[BetterTeams] &4Your team has been disbanded so your claim has been dissolved'
+  dissolve: '&6[BetterTeams] &4Your team has been disbanded so your claim has been
+    dissolved'
 help:
   
   header: '&6---- &bBetterTeams Help &6----'
@@ -548,3 +562,4 @@ command:
   teleport: teleport
   importmessages: importmessages
   money: money
+  check: check
