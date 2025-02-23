@@ -169,7 +169,6 @@ Kick:
   - ''
   - "&rKicked by&8: &7%OPERATOR%"
   - "&rReason&8: &7%REASON%"
-  - "&rDuration&8: &7%DURATION%"
   - ''
   - '&rPlease join our Discord &9dsc.gg/nafd&r for more information!'
   Notification:
