@@ -554,3 +554,4 @@ checkUpdates: true
 rebuildLookups: false
 purgeCommands:
 - give @a minecraft:dirt 1
+minTeamLength: 2
