@@ -675,9 +675,9 @@ Per_World_Chat:
 #=================================================================================================#
 Private_Messages:
   Sender:
-    Format: "&c&l(!) &f&l[&e&lYou &d-> &e{receiver}&f&l] &b"
+    Format: "&f[&eYou &d-> &e{receiver}&f] &b"
   Receiver:
-    Format: "&c&l(!) &f&l[&e{player} &d-> &e&lYou&f&l] &b"
+    Format: "&f[&e{player} &d-> &eYou&f] &b"
 
   # The sound that's played to the receiver
   # https://jd.papermc.io/paper/1.20/org/bukkit/Sound.html
