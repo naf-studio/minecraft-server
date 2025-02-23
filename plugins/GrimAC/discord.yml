@@ -1,17 +1,25 @@
-
-#           BY TOLUAM
-
 enabled: true
 webhook: ""
-embed-title: "**Thần Chết Đến Đây**"
+embed-title: "**Anticheat Alert**"
 embed-color: "#E67E22"
-violation-content: 
-  - "**Thông tin của %player%:**"
-  - "> Phiên bản: %version%"
-  - "> Client: %brand%"
+violation-content:
+  - "**%player% information:**"
+  - "> Client: %version%"
+  - "> Brand: %brand%"
   - "> Ping: %ping%"
   - "> TPS: %tps%"
-  - " "
-  - "**Bắt vì lí do**:"
-  - "> Kiểm: %check%"
-  - "> Vi phạm: %violations%"
+  - "**Anticheat information:**"
+  - "> Check: %check%"
+  - "> Violations: %violations%"
+# embed-title: "**Thần Chết Đến Đây**"
+# embed-color: "#E67E22"
+# violation-content: 
+#   - "**Thông tin của %player%:**"
+#   - "> Phiên bản: %version%"
+#   - "> Client: %brand%"
+#   - "> Ping: %ping%"
+#   - "> TPS: %tps%"
+#   - " "
+#   - "**Bắt vì lí do**:"
+#   - "> Kiểm: %check%"
+#   - "> Vi phạm: %violations%"
