@@ -110,7 +110,7 @@ Anti_Spam:
   Chat:
     # How many seconds does the player have to wait till they send their next message?
     # Set to 0 to disable.
-    Chat_Delay: 0
+    Chat_Delay: 0.2
     # Prevent players from repeating the same messages.
     Block_Repetitive_Messages: true
   # Anti-spam section for commands.
