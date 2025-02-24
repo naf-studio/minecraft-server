@@ -936,7 +936,7 @@ command-teleport-here:
   - s
   permission: essentials.tp.here
 command-teleport-random:
-  enable: true
+  enable: false
   commands:
   - tpr
   - rtp
