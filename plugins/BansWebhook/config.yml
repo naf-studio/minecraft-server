@@ -40,7 +40,7 @@ warn:
     "Duration:": "{duration}"
 
 kick:
-  enabled: false
+  enabled: true
   webhook-url: "webhook"
   webhook-title: "{player} has been kicked!"
   webhook-thumbnail: ""
