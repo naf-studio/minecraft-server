@@ -4,8 +4,8 @@ Auto_Broadcast:
     Header_And_Footer: true
     Interval: 60
     Prefix: "&6[Tips] &r"
-    Header: "&7*&7&m--------------------------------&7*"
-    Footer: "&7*&7&m--------------------------------&7*"
+    Header: "&7*&7&m---------------------------------------------------&7*"
+    Footer: "&7*&7&m---------------------------------------------------&7*"
     sound:
       toggle: false
       value: 'ENTITY_PLAYER_LEVELUP'
@@ -42,14 +42,14 @@ Auto_Broadcast:
       - "{prefix}&7Check your connection speed with &e/ping&7."
       - "{prefix}&7Check for our tps with &e/tps&7."
       - "{prefix}&7To enhance your experience, Incendium and Stellarity have their own resource packs! Make sure to install them for the best visuals."
-      - "{prefix}&7Don't forget to join our Discord &9dsc.gg/nafd for the latest announcements and support!"
+      - "{prefix}&7Don't forget to join our Discord &9dsc.gg/nafd &7for the latest announcements and support!"
   Per_World_Messages:
     Enable: false
     Header_And_Footer: true
     Interval: 60
     Prefix: "&6[AutoBroadcast] &r"
-    Header: "&7*&7&m--------------------------------&7*"
-    Footer: "&7*&7&m--------------------------------&7*"
+    Header: "&7*&7&m---------------------------------------------------&7*"
+    Footer: "&7*&7&m---------------------------------------------------&7*"
     sound:
       toggle: false
       value: 'ENTITY_PLAYER_LEVELUP'
