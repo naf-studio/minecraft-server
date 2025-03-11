@@ -1,5 +1,5 @@
 enabled: true
-webhook: "https://discord.com/api/webhooks/1341406463121293455/lwMBjwlWU_KXORB9etfW_LlG_lV8Pu_ljxUwwC_LNXiXjj-mrLdA4RCrZV_LnHoNw0Y6"
+webhook: ""
 embed-title: "**Anticheat Alert**"
 embed-color: "#E67E22"
 violation-content:
