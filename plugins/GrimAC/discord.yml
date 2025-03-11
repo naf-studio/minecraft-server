@@ -1,5 +1,5 @@
 enabled: true
-webhook: ""
+webhook: "https://discord.com/api/webhooks/1341406463121293455/lwMBjwlWU_KXORB9etfW_LlG_lV8Pu_ljxUwwC_LNXiXjj-mrLdA4RCrZV_LnHoNw0Y6"
 embed-title: "**Anticheat Alert**"
 embed-color: "#E67E22"
 violation-content:
@@ -11,15 +11,3 @@ violation-content:
   - "**Anticheat information:**"
   - "> Check: %check%"
   - "> Violations: %violations%"
-# embed-title: "**Thần Chết Đến Đây**"
-# embed-color: "#E67E22"
-# violation-content: 
-#   - "**Thông tin của %player%:**"
-#   - "> Phiên bản: %version%"
-#   - "> Client: %brand%"
-#   - "> Ping: %ping%"
-#   - "> TPS: %tps%"
-#   - " "
-#   - "**Bắt vì lí do**:"
-#   - "> Kiểm: %check%"
-#   - "> Vi phạm: %violations%"
