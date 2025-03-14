@@ -43,6 +43,8 @@ Auto_Broadcast:
       - "{prefix}&7Check for our tps with &e/tps&7."
       - "{prefix}&7To enhance your experience, Incendium and Stellarity have their own resource packs! Make sure to install them for the best visuals."
       - "{prefix}&7Don't forget to join our Discord &9dsc.gg/nafd &7for the latest announcements and support!"
+      - "{prefix}&7Want to change your password? Simply use the command &e/changepass <current_password> <new_password>&7."
+      - "{prefix}&7Need to unlink your Discord account? Use the command &e/unlink&7."
   Per_World_Messages:
     Enable: false
     Header_And_Footer: true
