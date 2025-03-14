@@ -52,12 +52,12 @@ Require linked account to play:
     Require subscriber role to join: false
     Subscriber roles: ["00000000000000000", "00000000000000000", "00000000000000000"]
     Require all of the listed roles: false # when false, only one of the above roles is required
-    Kick message: "&cYou must be subscribed on Twitch to be able to play."
+    Kick message: "&cYOU MUST BE SUBSCRIBED ON TWITCH TO BE ABLE TO PLAY."
 
 
   Messages:
     DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\nTry again in a minute."
-    Not in server: "&cYou are currently not a part of our Discord server.\n\n[Discord] {INVITE}!"
-    Failed to find subscriber role: "&cFailed to find any subscriber role on Discord.\n\nContact your server admins about this issue."
-    Failed for unknown reason: "&cAn error occurred while trying to verify your account.\n\nContact your server admin about this issue."
+    Not in server: "&cYOU ARE CURRENTLY NOT A PART OF OUR DISCORD SERVER!\n\n&7Please join our Discord to play &b{INVITE}!"
+    Failed to find subscriber role: "&cFAILED TO FIND ANY SUBSCRIBER ROLE ON DISCORD.\n\nContact your server admins about this issue."
+    Failed for unknown reason: "&cAN ERROR OCCURRED WHILE TRYING TO VERIFY YOUR ACCOUNT.\n\nContact your server admin about this issue."
     Kicked for unlinking: "&cYOU HAVE BEEN UNLINKED YOUR ACCOUNTS.\n\n&7Please rejoin the server to link your accounts again.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
