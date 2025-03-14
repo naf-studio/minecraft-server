@@ -558,7 +558,7 @@ command-kitty-cannon:
   - kittycannon
   permission: essentials.kitty.cannon
 command-link:
-  enable: true
+  enable: false
   commands:
   - link
   - lier
@@ -953,7 +953,7 @@ command-un-ban:
   - unban
   permission: essentials.un.ban
 command-un-link:
-  enable: true
+  enable: false
   commands:
   - unlink
   - delier
