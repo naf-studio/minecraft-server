@@ -21,7 +21,7 @@ async:
   # **Experimental feature, may have data lost in some circumstances!**
   # Make PlayerData saving asynchronously.
   async-playerdata-save:
-    enabled: false
+    enabled: true
   async-pathfinding:
     enabled: true
     max-threads: 0
@@ -37,7 +37,7 @@ async:
   # This offloads structure locating to other threads.
   # Only for locate command, dolphin treasure finding and eye of ender currently.
   async-locator:
-    enabled: false
+    enabled: true
     threads: 0
     keepalive: 60
 
