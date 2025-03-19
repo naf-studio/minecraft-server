@@ -21,7 +21,7 @@ async:
   # **Experimental feature, may have data lost in some circumstances!**
   # Make PlayerData saving asynchronously.
   async-playerdata-save:
-    enabled: true
+    enabled: false
   async-pathfinding:
     enabled: true
     max-threads: 0
