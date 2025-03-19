@@ -1,0 +1,38 @@
+options:
+  prefix: &b[AllowEnd]
+
+command /allowendtoggle:
+  permission: op
+  trigger:
+    if {endblock::enabled} is not set:
+      set {endblock::enabled} to true
+      broadcast "{@prefix} &aThe End has been enabled."
+      # execute console command "title @a title \"The End\""
+      # execute console command "title @a subtitle \"is now open!\""
+    else:
+      if {endblock::enabled} is true:
+        set {endblock::enabled} to false
+        broadcast "{@prefix} &cThe End has been disabled."
+        loop all players:
+          if loop-player's world is "world_the_end":
+            teleport loop-player to spawn of world "world"
+            send "{@prefix} &cYou have been teleported to the Overworld because The End was disabled." to loop-player
+        # execute console command 'title @a title \"The End\"'
+        # execute console command 'title @a subtitle \"is now closed!\"'
+      else:
+        set {endblock::enabled} to true
+        broadcast "{@prefix} &aThe End has been enabled."
+        # execute console command "title @a title \"The End\""
+        # execute console command "title @a subtitle \"is now open!\""
+
+on teleport:
+  if event-location's world is "world_the_end":
+    if {endblock::enabled} is false:
+      cancel event
+      send "{@prefix} &cThe End is currently disabled." to player
+
+on portal create:
+  if event-block is end portal:
+    if {endblock::enabled} is false:
+      cancel event
+      send "{@prefix} &cThe End is currently disabled." to player
