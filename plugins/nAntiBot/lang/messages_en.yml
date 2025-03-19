@@ -18,7 +18,7 @@
 
 other:
   title: "&c&lNANTIBOT"
-  chat-prefix: "&4&l[NANTIBOT] &7"
+  chat-prefix: "&4[NANTIBOT] &7"
   attack-started: "&7A bot attack was initiated..."
 
   ongoing-attack:

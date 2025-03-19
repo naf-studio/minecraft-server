@@ -128,7 +128,7 @@ Tagged In Combat:
   PvE Damage: false
   Any Damage: false
   Time: 10
-  NameTag Prefix: '&4&lCombat &c'
+  NameTag Prefix: '&4Combat &c'
   # Only when using the TAB plugin
   NameTag Suffix: ''
   Glowing: true
@@ -136,13 +136,13 @@ Tagged In Combat:
   Action Bar:
     Enabled: true
     # You can use any PlaceholderAPI placeholders here
-    Message: '&b&lCombat &a<barsLeft>&c<barsPassed> &e&l<time> &b[sec]'
+    Message: '&bCombat &a<barsLeft>&c<barsPassed> &e<time> &b[sec]'
     Symbol: '▊'
     Total Bars: 20
   Boss Bar:
     Enabled: true
     # You can use any PlaceholderAPI placeholders here
-    Message: '&8&l[&c&lIn Combat&8&l] &e&l<time> seconds'
+    Message: '&c[In Combat] &e<time> seconds'
     # See here for bar color options - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarColor.html
     BarColor: RED
     # See here for bar style options - https://hub.spigotmc.org/javadocs/spigot/org/bukkit/boss/BarStyle.html
