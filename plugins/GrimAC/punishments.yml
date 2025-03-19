@@ -75,7 +75,7 @@ Punishments:
       - "5:5 [webhook]"
       - "5:5 [log]"
       - "10:5 [webhook]"
-      - "10:0 advancedban:kick %player% @kickhackclient Reach"
+      - "10:0 kick %player% @kickhackclient Reach"
   HitboxMiss:
     remove-violations-after: 300
     checks:
@@ -117,7 +117,7 @@ Punishments:
       - "20:10 [webhook]"
       - "20:10 [log]"
       - "50:10 [webhook]"
-      - "50:0 advancedban:kick %player% @kickhackclient NoSlow"
+      - "50:0 kick %player% @kickhackclient NoSlow"
   Combat:
     remove-violations-after: 300
     checks:
@@ -127,7 +127,7 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "20:40 [log]"
-      - "30:0 advancedban:kick %player% @kickhackclient Killaura"
+      - "30:0 kick %player% @kickhackclient Killaura"
   # As of 2.2.10, there are no AutoClicker checks and this is a placeholder. Grim will include AutoClicker checks in the future.
   Autoclicker:
     remove-violations-after: 300
