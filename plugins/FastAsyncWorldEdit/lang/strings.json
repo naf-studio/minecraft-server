@@ -1,5 +1,5 @@
 {
-  "prefix": "&8[&4&lFAWE&8]&7 {0}",
+  "prefix": "&8[FAWE]&7 {0}",
   "fawe.worldedit.history.find.element": "&2{0} {1} &7ago &3{2}m &6{3} &c/{4}",
   "fawe.worldedit.history.find.element.more": " - Changes: {0}\n - Bounds: {1} -> {2}\n - Extra: {3}\n - Size on Disk: {4}",
   "fawe.worldedit.history.find.hover": "{0} blocks changed, click for more info",
