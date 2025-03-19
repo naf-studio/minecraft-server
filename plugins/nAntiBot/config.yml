@@ -247,7 +247,7 @@ verification:
       #  |=> 1: always request.
       #  |=> 2: request during attacks or if recommended.
       #
-      mode: 2
+      mode: 0
 
       map:
         # Defines whether the map captcha should be used if available.
