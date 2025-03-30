@@ -7,11 +7,11 @@ worlds:
     - world_nether
     - world_the_end
   # Set a TimeBar for "world2".
-  world2:
-    # Display the TimeBar for "world2" in these worlds below.
-    - world2
-    - world2_nether
-    - world2_the_end
+  # world2:
+  #   # Display the TimeBar for "world2" in these worlds below.
+  #   - world2
+  #   - world2_nether
+  #   - world2_the_end
 
 # Set the color of the TimeBar.
 # The valid options are: blue, green, pink, purple, red, white, and yellow.
@@ -21,7 +21,7 @@ titlebar-color: "blue"
 # {TIME} - The time to display. Dawn, afternoon, etc.
 # {DAYCOUNT} - How many total days in game have passed.
 # {DAYPERCENT} - Percentage of day completion.
-timebar-title: "{TIME} (Day {DAYCOUNT}) {DAYPERCENT}"
+timebar-title: "{TIME} (Day {DAYCOUNT})"
 
 # How often should the title and progress update?
 # This is in game ticks, 20 ticks = 1 second.
