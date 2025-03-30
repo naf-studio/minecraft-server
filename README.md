@@ -10,10 +10,8 @@ scoreboard players set #stellarity.config stellarity.config.dragon_health 500
 ```
 
 ## Some optional customizations!
-- Add bot token for DiscordSRV in `plugins/DiscordSRV/config.yml`
-- Change channel id for DiscordSRV in `plugins/DiscordSRV/config.yml`
-- Add bot token for Discord Voice Chat in `plugins/voicechat-discord/config.yml`
-- Change channel id for Discord Voice Chat in `plugins/voicechat-discord/config.yml`
+- Add bot token and change channel id for DiscordSRV in `plugins/DiscordSRV/config.yml`
+- Add bot token and change channel id for Discord Voice Chat in `plugins/voicechat-discord/config.yml`
 - Add webhook for Grim in `plugins/GrimAC/discord.yml`
 - Add webhook for BanWebhook in `plugins/BansWebhook/config.yml`
 - Use `/setspawn` and `/setworldspawn` to set the spawn points
