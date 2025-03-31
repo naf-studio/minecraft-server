@@ -316,7 +316,7 @@ MinecraftPlayerDeathMessage:
 # %world%:       the name of the world the user is in
 #
 MinecraftPlayerAchievementMessage: 
-  Enabled: false
+  Enabled: true
   Webhook:
     Enable: false
     AvatarUrl: "%botavatarurl%"
