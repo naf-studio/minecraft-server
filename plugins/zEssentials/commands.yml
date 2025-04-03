@@ -1066,3 +1066,23 @@ command-essentials-reload:
   - reload
   - rl
   permission: essentials.reload
+command-world-edit-cancel:
+  enable: true
+  commands:
+  - cancel
+  permission: essentials.worldedit.cancel
+command-pub:
+  enable: true
+  commands:
+  - pub
+  permission: essentials.pub
+command-step:
+  enable: true
+  commands:
+  - step
+  permission: essentials.step
+command-essentials-test:
+  enable: true
+  commands:
+  - test
+  permission: essentials.reload
