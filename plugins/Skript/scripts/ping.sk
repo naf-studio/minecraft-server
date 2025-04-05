@@ -1,0 +1,6 @@
+command /ping [<player>]:
+  trigger:
+    if arg-1 is set:
+      make player execute command "spark ping --player %arg-1%"
+    else:
+      make player execute command "spark ping"

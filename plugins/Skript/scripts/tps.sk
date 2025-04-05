@@ -1,0 +1,3 @@
+command /tps:
+  trigger:
+    make player execute command "/spark tps"

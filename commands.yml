@@ -1,7 +1,0 @@
-command-block-overrides: []
-ignore-vanilla-permissions: true
-aliases:
-  ping:
-  - spark ping
-  tps:
-  - spark tps
