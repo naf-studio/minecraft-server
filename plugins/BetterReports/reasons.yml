@@ -30,43 +30,43 @@
 allow-custom-reason: true
 
 reasons:
-  - name: "&cSpeed Hacking"
-    reason: "Speed Hacking"
+  - name: "&cSpeed"
+    reason: "Speed"
     lore: |
       &7Click to report &c{target} &7for {offence}&7.
     material: DIAMOND_BOOTS
     glowing: false
 
-  - name: "&cFlying"
-    reason: "Flying"
+  - name: "&cFly"
+    reason: "Fly"
     lore: |
       &7Click to report &c{target} &7for {offence}&7.
     material: FEATHER
     glowing: false
 
-  - name: "&cCombat Hacks"
-    reason: "Combat Hacks"
+  - name: "&cCombat"
+    reason: "Combat"
     lore: |
       &7Click to report &c{target} &7for {offence}&7.
     material: IRON_SWORD
     glowing: false
 
-  - name: "&cGriefing"
-    reason: "Griefing"
+  - name: "&cGrief"
+    reason: "Grief"
     lore: |
       &7Click to report &c{target} &7for {offence}&7.
     material: TNT
     glowing: false
 
-  - name: "&cInappropriate Name or Skin"
-    reason: "Inappropriate Name or Skin"
+  - name: "&cName or Skin"
+    reason: "Name or Skin"
     lore: |
       &7Click to report &c{target} &7for {offence}&7.
     material: PLAYER_HEAD
     glowing: false
 
-  - name: "&cBeing Disrespectful"
-    reason: "Disrespectful"
+  - name: "&cInsultes"
+    reason: "Insultes"
     lore: |
       &7This is for when someone is &cdisrespectful&7 in chat.
       
