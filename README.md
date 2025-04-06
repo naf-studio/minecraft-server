@@ -5,9 +5,6 @@ lp import "luckperms-naf-default.json.gz"
 ```
 gamerule playersSleepingPercentage 50
 ```
-```
-scoreboard players set #stellarity.config stellarity.config.dragon_health 500
-```
 
 ## Some optional customizations!
 - Add bot token and change channel id for DiscordSRV in `plugins/DiscordSRV/config.yml`
