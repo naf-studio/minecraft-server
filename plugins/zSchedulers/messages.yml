@@ -1,0 +1,73 @@
+messages:
+  prefix:
+    message: '&6[zScheduler] '
+  teleport:
+    move:
+      message: '&cYou must not move!'
+    message:
+      message: '&7Teleportation in &3%second% &7seconds!'
+    error:
+      message: '&cYou already have a teleportation in progress!'
+    success:
+      message: '&7Teleportation done!'
+  inventory:
+    clone:
+      'null':
+        message: '&cThe inventory clone is null!'
+    open:
+      error:
+        message: '&cAn error occurred with the opening of the inventory &6%id%&c.'
+  time:
+    day:
+      message: '%02d %day% %02d %hour% %02d %minute% %02d %second%'
+    hour:
+      message: '%02d %hour% %02d minute(s) %02d %second%'
+    minute:
+      message: '%02d %minute% %02d %second%'
+    second:
+      message: '%02d %second%'
+  format:
+    second:
+      message: second
+    seconds:
+      message: seconds
+    minute:
+      message: minute
+    minutes:
+      message: minutes
+    hour:
+      message: hour
+    hours:
+      message: hours
+    day:
+      message: d
+    days:
+      message: days
+  command:
+    syntax:
+      error:
+        message: '&cYou must execute the command like this&7: &a%syntax%'
+      help:
+        message: '&f%syntax% &7» &7%description%'
+    'no':
+      permission:
+        message: '&cYou do not have permission to run this command.'
+      console:
+        message: '&cOnly one player can execute this command.'
+      arg:
+        message: '&cImpossible to find the command with its arguments.'
+  reload:
+    message: '&aYou have just reloaded the configuration files.'
+  description:
+    reload:
+      message: Reload configuration files
+    version:
+      message: Show plugin version
+    list:
+      message: Reload configuration files
+  scheduler:
+    list:
+      header:
+        message: '&fSchedulers&8:'
+      line:
+        message: '&b%name% &8- &7%date%'
