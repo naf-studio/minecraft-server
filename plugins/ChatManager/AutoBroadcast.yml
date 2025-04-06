@@ -25,7 +25,7 @@ Auto_Broadcast:
       - "{prefix}&7Need to go AFK? Use &e/afk &7to enter AFK mode. You won't be attacked, and you're exempt from sleeping requirements."
       - "{prefix}&7Join or create a team using &e/team create <name>&7. Teams can share chests, set warps, and work together!"
       - "{prefix}&7Bloodmoon occurs every 30 days, increasing monster spawn rates and loot drops. Use &e/bloodmoon show &7to check when the next one happens!"
-      - "{prefix}&7Vote to mute, kick, or ban players using &e/votemute, /votekick, &7or &e/voteban &7with a reason. At least 50% of players must agree!"
+      # - "{prefix}&7Vote to mute, kick, or ban players using &e/votemute, /votekick, &7or &e/voteban &7with a reason. At least 50% of players must agree!"
       - "{prefix}&7Found a bug? Report it!"
       - "{prefix}&7Embark on quests! Use &e/quest &7to choose from 331 quests and earn awesome rewards."
       - "{prefix}&7Want to chat privately? Use &e/msg <player> <message>&7 to send a private message, and &e/r <message>&7 to reply."
