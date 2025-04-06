@@ -268,20 +268,20 @@ reports:
 
 # Every field in this section supports PlaceholderAPI - Single.
 language:
-  no-permission-message: "&cYou do not have permission to execute this command!"
-  error-sending-message: "&cError sending the bug report to discord. Please contact the admin."
-  player-only-message: "&cOnly players can execute that command!"
-  no-reason-message: "&cPlease specify a reason for reporting!"
-  no-bug-provided-message: "&cPlease specify the bug you would like to report!"
-  report-self-message: "&cYou can't report yourself!"
-  player-not-found: "&cPlayer not found."
-  cannot-report-message: "&cYou cannot report that player!"
-  unknown-command: "&cUnknown Command."
-  config-reloaded: "&aConfig reloaded!"
-  cooldown-message: "&cYou must wait {time} before reporting a {type} again."
+  no-permission-message: "&c[Report] You do not have permission to execute this command!"
+  error-sending-message: "&c[Report] Error sending the bug report to discord. Please contact the admin."
+  player-only-message: "&c[Report] Only players can execute that command!"
+  no-reason-message: "&c[Report] Please specify a reason for reporting!"
+  no-bug-provided-message: "&c[Report] Please specify the bug you would like to report!"
+  report-self-message: "&c[Report] You can't report yourself!"
+  player-not-found: "&c[Report] Player not found."
+  cannot-report-message: "&c[Report] You cannot report that player!"
+  unknown-command: "&c[Report] Unknown Command."
+  config-reloaded: "&a[Report] Config reloaded!"
+  cooldown-message: "&c[Report] You must wait {time} before reporting a {type} again."
 
   usage:
-    prefix: "&cInvalid Usage: &c"
+    prefix: "&c[Report] Invalid Usage: &c"
     report: "/report <player|bug> <player> <reason>"
     report-bug: "/reportbug <reason>"
     report-player: "/reportplayer <player> <reason>"
