@@ -122,8 +122,8 @@ reports:
 
         footer:
           timestamp: false # If this is true, the current time will be used.
-          text: "AusTech - BetterReports"
-          icon-url: "https://cdn.discordapp.com/icons/749536377020088361/b8d4bada3908ccb2bac76773489ee0cf.png"
+          text: "from NAF"
+          icon-url: ""
 
       # Use this if you would like to ping a discord role or user upon a report being created. To get a user or role ID, follow this guide: https://ozonprice.com/blog/discord-get-role-id/
       # For roles, use the format <@&ROLE_ID>
@@ -228,8 +228,8 @@ reports:
 
         footer:
           timestamp: false # If this is true, the current time will be used.
-          text: "AusTech - BetterReports"
-          icon-url: "https://cdn.discordapp.com/icons/749536377020088361/b8d4bada3908ccb2bac76773489ee0cf.png"
+          text: "from NAF"
+          icon-url: ""
 
       # Use this if you would like to ping a discord role or user upon a report being created. To get a user or role ID, follow this guide: https://ozonprice.com/blog/discord-get-role-id/
       # For roles, use the format <@&ROLE_ID>
