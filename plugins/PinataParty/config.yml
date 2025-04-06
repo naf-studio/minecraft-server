@@ -22,7 +22,7 @@ save-timer: 1800
 
 # Should we send a message to all players online telling them to vote (ONLY if they haven't in the last 24 hours)
 # The edit-able message in further down in the config under "message".
-vote-reminder: true
+vote-reminder: false
 # Time in seconds (Default 10800 / 3 hours).
 # Recommended to be at least 3600+.
 vote-reminder-timer: 10800
