@@ -1,0 +1,137 @@
+#############################
+#######    SETTINGS    ######
+#############################
+disabled-worlds:
+  - 'example_world'
+
+prefix: '&c&lC&d&lH&b&lA&a&lT &6&lG&e&lA&a&lM&c&lE&b&lS'
+
+#Only players with 'chatgames.start.*' will be able to start even when this is false
+allow_starting_from_disabled: true
+
+#The minimum amount of players that have to be online in order for the chat event to start
+min_players_online: 1
+
+#The time it will take for a random game to be picked again
+time_minutes: 25
+
+#The time users will have to guess, solve, write, etc in seconds.
+timeToGuess_seconds: 20
+
+#Turning this off will mean that chatgames.play permission will not be necessary to show the games
+use-permission-toplay: false
+
+#Sound to send to players when a chat event starts!
+playSound: true
+sound: 'ENTITY_PLAYER_LEVELUP'
+
+
+#############################
+######    CHATGAMES    ######
+#############################
+unscramble:
+    enable: true
+    
+    case-sensitive: true
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&b%word%'
+    subtitleMessage: '&aUnscramble'
+
+unreverse:
+    enable: true
+    
+    case-sensitive: true
+    #Leave the following 2 empty to disable them
+    titleMessage: '&b%word%'
+    subtitleMessage: '&aUnreverse'
+
+reaction:
+    enable: true
+    
+    case-sensitive: true
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&b%word%'
+    subtitleMessage: '&aWrite'
+    
+fillout:
+    enable: true
+    
+    case-sensitive: true
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&b%word%'
+    subtitleMessage: '&aFill Out'
+
+#In this game, a string of the length specified will be created with random characters
+random:
+    enable: true
+    
+    case-sensitive: true
+    #The length of the string that will randomly generate for this game
+    length: 6
+    #Types available: ALPHA (letters), ALPHANUMERIC (letters and numbers), NUMERIC (numbers), SYMBOLIC (symbols)
+    character_type: ALPHANUMERIC
+    
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&b%random%'
+    subtitleMessage: '&aWrite'
+
+math:
+    enable: true
+    
+    #Don't change this
+    case-sensitive: false
+    #Difficulty random number ranges:
+    #1 - (1-9)
+    #2 - (1-99)
+    #3 - (1-999)
+    #4 - (1-9999)
+    #5 - (1-99999)
+    difficulty: 2
+    #Operators to use, the four listed are the ones available, you can remove if you don't want to use all of them. Always leave at least 1
+    operators:
+      - '+'
+      - '-'
+      - '*'
+      - '/'
+      
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&b%equation%'
+    subtitleMessage: '&aSolve'
+    
+variable:
+    enable: true
+    
+    #Don't change this
+    case-sensitive: false
+    
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&bSOLVE'
+    subtitleMessage: '&aFor &7`&b%symbol%&7`'
+    
+    #The range of the random result number
+    result-min: 20
+    result-max: 100
+    
+    toGet: '✗'
+    #Here are some other symbols you can use to add: ✪❃✿✠❂♫♪❦♡♤♢✦☾☽✹
+    data:
+      - '✯;10'
+      - '♛;15'
+      - '❅;20'
+      - '♫;25'
+          
+trivia:
+    enable: true
+    
+    case-sensitive: false
+    #__Leave the following 2 empty to disable them__
+    titleMessage: '&bTRIVIA'
+    subtitleMessage: '&aCheck Chat!'
+    
+    data:
+      1:
+        question: 'How many sides does a dice have? (number)'
+        answer: '6'
+      2:
+        question: 'In what planet do we live in?'
+        answer: 'Earth'
