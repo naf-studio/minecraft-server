@@ -1,0 +1,85 @@
+#POSSIBLE ACTIONS:
+#
+#[playercmd] - Executes the command as the winner
+#[consolecmd] - Executes the command from console
+#[playermsg] - Sends a message to the winner
+#[broadcast] - Broadcasts a message to all the players in enabled worlds
+#
+#ADD CHANCES TO REWARDS BY DOING THE FOLLOWING:
+#
+#EXAMPLE:
+#  - '10.0%~ [consolecmd] give %player% iron_block 5'
+#WILL ONLY WORK IF THE FORMAT IS THE SAME AS THE EXAMPLE, WITH THE <chance>% AT THE BEGINNING FOLLOWED BY A ~ AND A SPACE. ALWAYS FIRST IN THE COMMAND
+#
+#COMMANDS WITHOUT ANY % WILL BE REWARDS GIVEN 100%.
+
+#PERMISSION CHECKING:
+#
+#PUT AT THE END OF COMMAND LINE.
+#Example:
+#  - '[consolecmd] give %player% iron_block 5 has:test.permission'
+
+#The 1 is for the FIRST winner, IF YOU ADD MORE WINNERS IN THE config.yml AND WANT DIFFERENT REWARDS ADD THEIR SPOT (2:, etc)
+unscramble:
+    rewards:
+        reward_1:
+          data:
+            - '10.0%~ [consolecmd] give %player% diamond_block 3 has:test.permission'
+            - '[consolecmd] give %player% iron_block 5'
+        reward_2:
+          chance: 50
+          data:
+            - '[consolecmd] give %player% iron_block 2'
+
+unreverse:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+
+reaction:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+          
+clickable:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+
+fillout:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+          
+hoverable:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+
+random:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+variable:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+
+math:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'
+          
+trivia:
+    rewards:
+        reward_1:
+          data:
+            - '[consolecmd] give %player% iron_block 5'

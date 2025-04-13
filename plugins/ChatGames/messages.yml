@@ -1,0 +1,219 @@
+unknown_command: '&8[%prefix%&8] &cUnknown command.'
+config_reloaded: '&8[%prefix%&8] &fThe configuration files has been reloaded!'
+not_enough_permissions: '&8[%prefix%&8] &cYou don`t have enough permissions to execute this command!'
+player_only_command: '&8[%prefix%&8] &cThis command can only be executed by players!'
+
+cannot_start_from_disabled: '&8[%prefix%&8] &cYou can`t start a chat game from a disabled world!'
+toggle_game: '&8[%prefix%&8] &fYou have toggled &a%state% &fchat events!'
+game_started: '&8[%prefix%&8] &aYou have started a %game% chat event in your chat!'
+
+#You can use <center> if you wish to do so in the next 4 messages.
+top:
+  header: '&b&m---------&e&lTOP CHAT&b&m---------'
+  format: '&c%spot%. &f%player% &8| &e&l%points% &7points'
+  player-stat-format: '&7You`ve got &e&l%player_points% &7wins'
+  footer: '&b&m---------------------------'
+  
+  no_data_message: '&8[%prefix%&8] &cThere is no data yet! Win a chat game and get points!'
+
+help_command:
+  - '&7&m-------------------------------------------------'
+  - '&e&l-ChatGames-'
+  - '&6'
+  - '&6&lCOMMANDS:'
+  - '&6'
+  - '&a/chatgames (type) &f- &3Starts the event type specified instantly.'
+  - '&a/chatgames top &f- &3Shows the top 10 players with most points.'
+  - '&a/chatgames toggle &f- &3Toggle games on or off.'
+  - '&a/chatgames reload &f- &3Reloads the config.yml file.'
+  - '&6'
+  - '&2&lGAME TYPES:'
+  - '&5unscramble, unreverse, reaction, random,  math, trivia'
+  - '&7&m-------------------------------------------------'
+  
+#Use <center> in LIST messages to center the messages, the lines with this will be centered!
+
+  
+#############################
+##    CHATGAME MESSAGES    ##
+#############################
+
+#YOU CAN USE "%display_name%" AS A REPLACEMENT FOR %player% IN correct_message FOR ALL GAMES.
+unscramble:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dunscramble&f: `&b%word%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7has correctly unscrambled `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe unscramble game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+
+unreverse:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dunreverse&f the word: `&b%word%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to unreverse `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe unreverse game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+
+reaction:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dwrite out&f the word: `&b%word%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to write out `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe reaction game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+      
+fillout:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dfill in&f the word: `&b%word%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to fill `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe fillout game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+
+#In this game, a string of the length specified will be created with random characters
+random:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dwrite out&f: `&b%random%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to write `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe random game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+
+math:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dsolve&f: `&b%equation%&f`'
+      - ''
+    #Here, you can also use '%equation%' in the message if you wish to do so
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to get `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe math game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+      
+variable:
+    #This is the format in which they will appear, you may change amount of times %symbol% is repeated in 'line1and2-format' but all variables in line 3 are as they are shown.
+    line1and2-format: '&c%symbol%&f + &c%symbol%&f + &c%symbol%&f = &e'
+    line3-format: '&c%symbol_1%&f + &c%symbol_2%&f + &b%toGet% &f= &e%result%'
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &dsolve for&f: `&b%symbol%&f`'
+      - ''
+      - '<center>%line_1%'
+      - '<center>%line_2%'
+      - '<center>%line_3%'
+      - ''
+    #Here, you can also use '%equation%' in the message if you wish to do so
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the fastest to get `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe variable game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
+          
+trivia:
+    gameStartAnnouncement: 
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&fYou have &e%timeToGuess% seconds &fto &danswer&f:'
+      - '<center>&f`&b%question%&f`'
+      - ''
+    correct_message: 
+      - ''
+      - '<center>&r✓ ✯ %prefix% &r✯ ✓'
+      - ''
+      - '<center>&a%player% &7was the first to answer `&e%correct_answer%&7` (&c%time%s&7) and got a prize!'
+      - ''
+    time_expired_message:
+      - ''
+      - '<center>&r✓ ✯ %prefix%&r ✯ ✓'
+      - ''
+      - '<center>&f%timeToGuess%s &chave passed! &fThe trivia game is now over!'
+      - '<center>The correct answer was &e%correct_answer%&f!'
+      - ''
