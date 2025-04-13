@@ -129,45 +129,45 @@ command-del-warp:
   - wdelete
   permission: essentials.warp.del
 command-economy:
-  enable: true
+  enable: false
   commands:
   - economy
   - eco
   permission: essentials.eco.use
 command-economy-give:
-  enable: true
+  enable: false
   commands:
   - give
   permission: essentials.eco.give
 command-economy-give-random:
-  enable: true
+  enable: false
   commands:
   - give-random
   - gr
   permission: essentials.eco.give.random
 command-economy-give-all:
-  enable: true
+  enable: false
   commands:
   - giveall
   permission: essentials.eco.give.all
 command-economy-reset:
-  enable: true
+  enable: false
   commands:
   - reset
   permission: essentials.eco.reset
 command-economy-set:
-  enable: true
+  enable: false
   commands:
   - set
   permission: essentials.eco.set
 command-economy-show:
-  enable: true
+  enable: false
   commands:
   - show
   - s
   permission: essentials.eco.show
 command-economy-take:
-  enable: true
+  enable: false
   commands:
   - take
   permission: essentials.eco.take
@@ -618,7 +618,7 @@ command-more:
   - more
   permission: essentials.more
 command-mute:
-  enable: true
+  enable: false
   commands:
   - mute
   permission: essentials.mute
@@ -786,7 +786,7 @@ command-rules:
   - aide
   permission: essentials.rules
 command-sanction:
-  enable: true
+  enable: false
   commands:
   - sanction
   - sc
@@ -959,7 +959,7 @@ command-un-link:
   - delier
   permission: essentials.discord.unlink
 command-un-mute:
-  enable: true
+  enable: false
   commands:
   - unmute
   permission: essentials.un.mute
@@ -1086,3 +1086,29 @@ command-essentials-test:
   commands:
   - test
   permission: essentials.reload
+command-home-list:
+  enable: true
+  commands:
+  - home-list
+  - hlist
+  permission: essentials.home.list
+command-mail-clear:
+  enable: true
+  commands:
+  - clear
+  permission: essentials.mail.clear
+command-grant-random-experience:
+  enable: true
+  commands:
+  - grant-random
+  permission: essentials.experience.grant
+command-first-spawn:
+  enable: true
+  commands:
+  - firstspawn
+  permission: essentials.spawn.first
+command-set-first-spawn:
+  enable: true
+  commands:
+  - setfirstspawn
+  permission: essentials.set.first.spawn

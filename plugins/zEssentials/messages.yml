@@ -17,6 +17,15 @@
 #
 # #######################################################################################################################
 
+command-spawn-first-not-define: <error>The first spawn does not exist. Please contact
+  an administrator.
+description-set-first-spawn: Set server first spawn
+description-spawn-first: Teleport to first spawn
+teleport-random-start: '&7Searching for a destination... you must not move.'
+description-home-list: Show player's homes
+description-mail-clear: Removes items from the player’s mailbox
+command-home-admin-list-empty: <error>The player has no home
+mailbox-clear: <success>You have just cleared the mailbox of &f%player%<success>.
 command-pay-disabled: <error>You cannot send money to this player.
 description-worldedit-cancel: Cancel current selection
 description-pub: Send a message highlighted in the chat
