@@ -12,7 +12,6 @@ gamerule playersSleepingPercentage 50
 - Add webhook for Grim in `plugins/GrimAC/discord.yml`
 - Add webhook for BanWebhook in `plugins/BansWebhook/config.yml`
 - Add webhook for BetterReports in `plugins/BetterReports/config.yml`
-- Use `/setspawn` and `/setworldspawn` to set the spawn points
 - Use `/maintenance on` if you are not ready to open the server yet
 - Start preload your world with chunky, use: `/chunk world <world_name>`, `/chunky radius <radius>`, `/chunky start`
 

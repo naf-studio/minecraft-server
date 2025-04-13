@@ -37,7 +37,6 @@ Auto_Broadcast:
       - "{prefix}&7Share rare items with your team using &e/team echest&7!"
       - "{prefix}&7Change your skin in-game with &e/skin <name>&7"
       - "{prefix}&7Wear anything on your head with &e/hat&7."
-      - "{prefix}&7Use &e/spawn&7 to return to the server spawn point."
       - "{prefix}&7Hey Speedrunner! Just slown down, tke your time and enjoy the server. There's lots to explore!"
       - "{prefix}&7Check your connection speed with &e/ping&7."
       - "{prefix}&7Check for our tps with &e/tps&7."
