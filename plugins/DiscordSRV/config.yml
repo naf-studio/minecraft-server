@@ -27,7 +27,7 @@ BotToken: "BOTTOKEN"
 #
 # The first part of channel pairs is not the Discord channel name!
 # Run "/discord reload" after changing this option to apply
-Channels: {"global": "1129081325442310315", "link": "1332181653094797342", "watchdog": "1299323110410948630", "status": "1299323110410948630"}
+Channels: {"global": "1129081325442310315", "link": "1332181653094797342", "watchdog": "1299323110410948630", "status": "1299323110410948630", "Ban": "1269156669082964022", "IPBan": "1269156669082964022", "Mute": "1269156669082964022", "Kick": "1269156669082964022", "Warn": "1269156669082964022", "Unban": "1269156669082964022", "Unmute": "1269156669082964022", "Report": "1358403421094416465"}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
 DiscordConsoleChannelId: "000000000000000000"
