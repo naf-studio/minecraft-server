@@ -1,0 +1,25 @@
+'!!ORDER':
+- Griefing
+- Duping
+- XRay
+- Hack-Client
+
+Griefing:
+  duration: 3d
+  baldeduct: 30%
+  clear-inv: false
+Duping:
+  duration: 3d
+  baldeduct: 100%
+  clear-inv: true
+XRay:
+  duration: 7d
+  baldeduct: 50%
+  clear-inv: true
+Hack-Client:
+  duration: 14d
+  baldeduct: 70%
+  clear-inv: true
+  console-commands:
+  - reset %player%
+  - home %player%
