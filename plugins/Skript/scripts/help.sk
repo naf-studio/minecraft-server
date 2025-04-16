@@ -1,0 +1,4 @@
+command /help:
+  aliases: /helps, /?, /tip, /tips
+  trigger:
+    make player execute command "/autobroadcast list global"
