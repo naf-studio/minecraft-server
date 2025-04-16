@@ -4,7 +4,7 @@
 disabled-worlds:
   - 'example_world'
 
-prefix: '&c&lC&d&lH&b&lA&a&lT &6&lG&e&lA&a&lM&c&lE&b&lS'
+prefix: '&dChatGames'
 
 #Only players with 'chatgames.start.*' will be able to start even when this is false
 allow_starting_from_disabled: true
@@ -13,7 +13,7 @@ allow_starting_from_disabled: true
 min_players_online: 1
 
 #The time it will take for a random game to be picked again
-time_minutes: 25
+time_minutes: 10
 
 #The time users will have to guess, solve, write, etc in seconds.
 timeToGuess_seconds: 20
@@ -135,3 +135,27 @@ trivia:
       2:
         question: 'In what planet do we live in?'
         answer: 'Earth'
+      3:
+        question: 'What is the capital of France?'
+        answer: 'Paris'
+      4:
+        question: 'What is the largest mammal in the world?'
+        answer: 'Blue Whale'
+      5:
+        question: 'What is the smallest country in the world?'
+        answer: 'Vatican City'
+      6:
+        question: 'What is the largest desert in the world?'
+        answer: 'Sahara'
+      7:
+        question: 'What is the capital of Japan?'
+        answer: 'Tokyo'
+      8:
+        question: 'What is the chemical symbol for gold?'
+        answer: 'Au'
+      9:
+        question: 'What is the largest ocean in the world?'
+        answer: 'Pacific Ocean'
+      10:
+        question: 'What is the largest continent in the world?'
+        answer: 'Asia'
