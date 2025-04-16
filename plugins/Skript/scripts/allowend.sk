@@ -1,7 +1,7 @@
 options:
   prefix: &b[AllowEnd]
 
-command /allowendtoggle:
+command /allowend:
   permission: op
   trigger:
     if {endblock::enabled} is not set:
