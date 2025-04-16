@@ -22,7 +22,7 @@ Database:
 
 
 # Changes the display name of your console. For example, when you ban a player using the console, it'll substitute, save, and display the name below instead of just "CONSOLE."
-console-name: "The Great Console"
+console-name: "CONSOLE"
 
 
 
@@ -43,7 +43,8 @@ cache:
 
 # The command that will execute to deduct balance from the player if a supported economy plugin is not found. Currently supported economy plugins: Vault
 # NOTE: You will not be able to use percentage deductions if your economy plugin is unsupported.
-Bal-Deduct-Command: "eco take %player% %amount%"
+Bal-Deduct-Command: ""
+# Bal-Deduct-Command: "eco take %player% %amount%"
 
 
 
@@ -76,7 +77,7 @@ default-punishments-to-permanent: false
 warn:
   3:
     console-commands:
-    - eco take %player% 500
+    # - eco take %player% 500
     - kick %player% Reached 3 warns.
   5:
     console-commands:
@@ -89,7 +90,7 @@ warn-title:
   enable: true
   warn-title: "&c&lYou have been warned!"
   # Set to true if you want the warn reason as the subtitle.
-  custom-subtitle: false
+  custom-subtitle: true
   warn-subtitle: "\u00A7fYou've been warned! Check your chat."
 
 
@@ -104,6 +105,7 @@ whisper-commands:
   - "lc"
   - "factionchat"
   - "fc"
+  - "r"
 
 
 
@@ -116,7 +118,7 @@ Disable-Signs-On-Mute: false
 word-out-durations:
   announcers: true
   pages: true
-  time-remaining: false
+  time-remaining: true
   time-passed: true
 
   
@@ -131,8 +133,8 @@ updates:
 
 # Logs to the console when a ban or mute has been lifted (i.e. served their sentences).
 log:
-  ban-lifts: false
-  mute-lifts: false
+  ban-lifts: true
+  mute-lifts: true
 
 
 
