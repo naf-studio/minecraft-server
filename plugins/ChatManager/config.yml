@@ -694,19 +694,24 @@ Server_Rules:
   Rules:
     1:
       - "&7&m----------&8[ &aServer Rules Page 1/3 &8]&7&m----------"
-      - "&aNo Hacking"
-      - "&aNo DDOS Threats"
-      - "&aBe Kind to all players and staff"
+      - "&aNo inappropriate, obscene, vulgar, or toxic messages of any kind."
+      - "&aNo threats, insults, or attacks directed at individuals or groups."
+      - "&aNo messages related to illegal activities (DDoS, Dox, Raid, extortion, etc.)."
+      - "&aNo spamming or disruptive messages in chat."
     2:
       - "&7&m----------&8[ &aServer Rules Page 2/3 &8]&7&m----------"
-      - "&aNo swearing anywhere at anytime!"
-      - "&aDo NOT abusing caps!"
-      - "&aNo Advertising any other minecraft servers!"
+      - "&aProhibit any use of names and skins to impersonate anyone for fraud or exploitation purposes."
+      - "&aProhibit any use of names (in-game name) and characters (skins) that are offensive, vulgar, or defamatory to any individual or organization."
+      - "&aProhibit any creation of secondary accounts (clones) that negatively affect the server/players,..."
     3:
       - "&7&m----------&8[ &aServer Rules Page 3/3 &8]&7&m----------"
-      - "&aDo not use any special characters in chat."
-      - "&aDo not ask for staff."
-      - "&aDo not spam in chat."
+      - "&aProhibit any unauthorized access to other players' accounts."
+      - "&aProhibit any fraudulent activities."
+      - "&aProhibit the use, sharing, or distribution of tools that provide unfair advantages (hacks, cheats, third-party software, etc.)."
+      - "&aProhibit any actions that harm the server (DDoS, crashing the server, raids, bot attacks, etc.)."
+      - "&aProhibit exploiting server bugs or vulnerabilities for personal gain without reporting them to authorized personnel."
+      - "&aProhibit trading or selling in-game items for real money, which may result in item confiscation or account suspension."
+      - "&aProhibit any actions that severely impact the server or other players."
 
 #=================================================================================================#
 # Staff can see what players type in certain commands.
