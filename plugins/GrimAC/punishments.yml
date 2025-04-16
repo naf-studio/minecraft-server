@@ -31,6 +31,8 @@ Punishments:
       - "100:40 [alert]"
       - "100:100 [webhook]"
       - "100:100 [log]"
+      - "150:0 kick %player% Detected using Simulation hacks!"
+      - "200:0 ban %player% 1d Detected using Simulation hacks!"
   Knockback:
     remove-violations-after: 300
     checks:
@@ -40,6 +42,8 @@ Punishments:
       - "5:5 [alert]"
       - "20:20 [webhook]"
       - "20:20 [log]"
+      - "25:0 kick %player% Detected using Knockback exploits!"
+      - "30:0 ban %player% 1d Detected using Knockback exploits!"
   Post:
     remove-violations-after: 300
     checks:
@@ -48,6 +52,8 @@ Punishments:
       - "20:20 [alert]"
       - "40:40 [webhook]"
       - "40:40 [log]"
+      - "50:0 kick %player% Detected using Post exploits!"
+      - "60:0 ban %player% 1d Detected using Post exploits!"
   BadPackets:
     remove-violations-after: 300
     checks:
@@ -58,6 +64,8 @@ Punishments:
       - "20:20 [alert]"
       - "40:40 [webhook]"
       - "40:40 [log]"
+      - "50:0 kick %player% Detected using BadPackets exploits!"
+      - "60:0 ban %player% 1d Detected using BadPackets exploits!"
   Inventory:
     remove-violations-after: 300
     checks:
@@ -66,6 +74,8 @@ Punishments:
       - "10:10 [alert]"
       - "20:20 [webhook]"
       - "20:20 [log]"
+      - "25:0 kick %player% Detected using Inventory exploits!"
+      - "30:0 ban %player% 1d Detected using Inventory exploits!"
   Reach:
     remove-violations-after: 300
     checks:
@@ -74,8 +84,8 @@ Punishments:
       - "5:5 [alert]"
       - "5:5 [webhook]"
       - "5:5 [log]"
-      - "10:5 [webhook]"
-      - "10:0 kick %player% @kickhackclient Reach"
+      - "15:0 kick %player% Detected using Reach hacks!"
+      - "20:0 ban %player% 1d Detected using Reach hacks!"
   HitboxMiss:
     remove-violations-after: 300
     checks:
@@ -84,6 +94,8 @@ Punishments:
       - "7:5 [alert]"
       - "7:5 [webhook]"
       - "7:5 [log]"
+      - "15:0 kick %player% Detected using HitboxMiss exploits!"
+      - "20:0 ban %player% 1d Detected using HitboxMiss exploits!"
   HitboxBlock:
     remove-violations-after: 300
     checks:
@@ -92,6 +104,8 @@ Punishments:
       - "10:5 [alert]"
       - "10:5 [webhook]"
       - "10:5 [log]"
+      - "15:0 kick %player% Detected using HitboxBlock exploits!"
+      - "20:0 ban %player% 1d Detected using HitboxBlock exploits!"
   HitboxEntity:
     remove-violations-after: 300
     checks:
@@ -100,6 +114,8 @@ Punishments:
       - "15:10 [alert]"
       - "15:10 [webhook]"
       - "15:10 [log]"
+      - "20:0 kick %player% Detected using HitboxEntity exploits!"
+      - "25:0 ban %player% 1d Detected using HitboxEntity exploits!"
   Misc:
     remove-violations-after: 300
     checks:
@@ -117,7 +133,8 @@ Punishments:
       - "20:10 [webhook]"
       - "20:10 [log]"
       - "50:10 [webhook]"
-      - "50:0 kick %player% @kickhackclient NoSlow"
+      - "60:0 kick %player% Detected using Miscellaneous exploits!"
+      - "70:0 ban %player% 1d Detected using Miscellaneous exploits!"
   Combat:
     remove-violations-after: 300
     checks:
@@ -127,7 +144,8 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "20:40 [log]"
-      - "30:0 kick %player% @kickhackclient Killaura"
+      - "50:0 kick %player% Detected using Combat hacks!"
+      - "60:0 ban %player% 1d Detected using Combat hacks!"
   # As of 2.2.10, there are no AutoClicker checks and this is a placeholder. Grim will include AutoClicker checks in the future.
   Autoclicker:
     remove-violations-after: 300
@@ -136,3 +154,5 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "20:40 [log]"
+      - "50:0 kick %player% Detected using Autoclicker!"
+      - "60:0 ban %player% 1d Detected using Autoclicker!"
