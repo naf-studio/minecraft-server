@@ -1,0 +1,159 @@
+#MYSQL CONFIGURATION - You may setup your MySql Database here.
+# You may delete the .db file if you use this version.
+mysql:
+  enable: false
+  host:
+  port:
+  user:
+  pass:
+  database-name: "custombansplus"
+  useSSL: false
+  allowPublicKeyRetrieval: false
+
+
+
+Database:
+  Validate-Tables: true
+
+
+# Change to true if this server is part of a Bungeecord Network. Currently doesn't do anything.
+# Bungeecord-Mode: false
+
+
+
+# Changes the display name of your console. For example, when you ban a player using the console, it'll substitute, save, and display the name below instead of just "CONSOLE."
+console-name: "The Great Console"
+
+
+
+# Note: If both are set to false, the plugin will default to interval saving at a 15 minute duration.
+cache:
+  # Sends a notif message to admins when cache is being stored.
+  notify-save: false
+  # Data saves when N number of new players join.
+  fixed-amount:
+    enable: true
+    save-at: 100
+  # Data saves every N duration.
+  intervals:
+    enable: true
+    save-at: 15m
+
+
+
+# The command that will execute to deduct balance from the player if a supported economy plugin is not found. Currently supported economy plugins: Vault
+# NOTE: You will not be able to use percentage deductions if your economy plugin is unsupported.
+Bal-Deduct-Command: "eco take %player% %amount%"
+
+
+
+GUI:
+  Ban-GUI:
+    Enable: true
+    Defaults:
+      Duration: 3d
+      Reason: "Struck by the ban hammer!"
+      Is-Silent: false
+      Clear-Inv: false
+      # Can be exact amount or percentage (Examples: 500, 30%, 2000, 50%, 200%)
+      Bal-Deduct: "0"
+
+
+
+# Set to true if you want to use punishments without reason, and false if you want to use the default reasons if reason is blank.
+toggle-no-reason: false
+# Set to true if you want to force use the ban preset reason regardless if the sender inputted their own reason or not.
+force-preset-reason: false
+# Set to true if you want punishments with durations to default to permanent if no value or an invalid value is specified.
+# "/ban [-s] <player> <reason>" would default to permanent.
+default-punishments-to-permanent: false
+
+
+
+# Add as many warn checkers as you want.
+# Order of commands executed is top to bottom.
+# Format: %player%
+warn:
+  3:
+    console-commands:
+    - eco take %player% 500
+    - kick %player% Reached 3 warns.
+  5:
+    console-commands:
+    - ban %player% s1 Reached 5 warns.
+
+
+
+# Set enable-warn-titles to true if you want titles to appear on your warns.
+warn-title:
+  enable: true
+  warn-title: "&c&lYou have been warned!"
+  # Set to true if you want the warn reason as the subtitle.
+  custom-subtitle: false
+  warn-subtitle: "\u00A7fYou've been warned! Check your chat."
+
+
+
+# Input your server's whisper or communication commands. A muted player will not be able to use these commands.
+whisper-commands:
+  - "tell"
+  - "whisper"
+  - "w"
+  - "msg"
+  - "localchat"
+  - "lc"
+  - "factionchat"
+  - "fc"
+
+
+
+# Set to true if you want to disallow muted players from placing signs.
+Disable-Signs-On-Mute: false
+
+
+
+# Set to true if you want your durations to be worded out (e.g. 2d -> 2 Days or 3d2h30m -> 3 Days, 2 Hours, and 30 Minutes).
+word-out-durations:
+  announcers: true
+  pages: true
+  time-remaining: false
+  time-passed: true
+
+  
+
+updates:
+  # Set to true if you want op players to receive plugin update notifications.
+  notify: true
+  # Set intervals of when to check for updates. Follows the same duration patterns (Xs, Xm, Xh, Xd).
+  interval: 3h
+
+
+
+# Logs to the console when a ban or mute has been lifted (i.e. served their sentences).
+log:
+  ban-lifts: false
+  mute-lifts: false
+
+
+
+PlasmoVoice:
+  Mute-Voice-On-Mute: true
+
+
+
+DiscordSRV:
+  # Set to true if you want to still announce silent announcements in the 'CustomBansPlus' channel.
+  Announce-Silent-Announcements: false
+
+
+
+# For Offline-Mode Servers: Set to true if you want to force players to use the correct name capitalization based on the first name they joined with.
+# Example: Player logged in with the username "Coralise". The server will now deny any other variation of the username (cOrAlIsE, CORAlise, CoralisE) except the original one from logging in.
+Strict-Username-Capitalization: true
+
+
+
+# Generally used for development and bug fixing.
+# The developer might ask you to enable this for her to properly locate bugs.
+# WARNING: Will spam your console.
+Debug-Mode: false
