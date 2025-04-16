@@ -58,6 +58,7 @@ database:
   database: spigot
   user: root
   password: password
+  tablePrefix: BetterTeams_
 
 # This is the value to determine if the chat prefix is enabled
 # - If this is enabled (true / name) a prefix [TeamName] will be displayed at the begining of chat messages.
@@ -555,3 +556,10 @@ rebuildLookups: false
 purgeCommands:
 - give @a minecraft:dirt 1
 minTeamLength: 2
+hookURL: WEBHOOKURL_HERE
+hookSupport: false
+create-hook: false
+disband-hook: false
+player-left-hook: false
+team-nameChange-hook: false
+team-chat: false
