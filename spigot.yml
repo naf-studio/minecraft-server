@@ -29,7 +29,7 @@ commands:
 messages:
   outdated-client: |-
     &cOUTDATED CLIENT!
-    &rPlease use version &41.20.x -> 1.21.x
+    &rPlease use version &41.21.x
 
     &rPlease join our Discord &9dsc.gg/nafd&r for more information!
   outdated-server: |-
