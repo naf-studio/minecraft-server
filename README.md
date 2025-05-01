@@ -10,10 +10,7 @@ gamerule playersSleepingPercentage 50
 - Add bot token and change channel id for DiscordSRV in `plugins/DiscordSRV/config.yml`
 - Add bot token and change channel id for Discord Voice Chat in `plugins/voicechat-discord/config.yml`
 - Add webhook for Grim in `plugins/GrimAC/discord.yml`
-- Add webhook for BanWebhook in `plugins/BansWebhook/config.yml`
-- Add webhook for BetterReports in `plugins/BetterReports/config.yml`
 - Use `/maintenance on` if you are not ready to open the server yet
-- Start preload your world with chunky, use: `/chunk world <world_name>`, `/chunky radius <radius>`, `/chunky start`
 
 ## Other information:
 - Paper folk optimization: https://paper-chan.moe/paper-optimization/
