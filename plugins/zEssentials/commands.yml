@@ -1112,3 +1112,20 @@ command-set-first-spawn:
   commands:
   - setfirstspawn
   permission: essentials.set.first.spawn
+command-cooldown-show:
+  enable: true
+  commands:
+  - show
+  - s
+  permission: essentials.cooldown.show
+command-take-experience:
+  enable: true
+  commands:
+  - take
+  permission: essentials.experience.take
+command-kit-give:
+  enable: true
+  commands:
+  - kitgive
+  - kgive
+  permission: essentials.kit.give
