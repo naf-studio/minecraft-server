@@ -38,3 +38,4 @@ plugins/.paper-remapped/*
 !server.jar
 !server.properties
 !spigot.yml
+!TODO.md
