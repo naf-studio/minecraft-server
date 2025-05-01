@@ -1,9 +1,9 @@
 # These first 6 aren't configurable
 issues: "https://github.com/IntellectualSites/FastAsyncWorldEdit/issues"
 wiki: "https://intellectualsites.github.io/fastasyncworldedit-documentation/"
-date: "Mon Mar 17 00:00:00 UTC 2025"
-build: "https://ci.athion.net/job/FastAsyncWorldEdit/1050"
-commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/ff5f1599"
+date: "Wed Jan 29 00:00:00 UTC 2025"
+build: "https://ci.athion.net/job/FastAsyncWorldEdit/0"
+commit: "https://github.com/IntellectualSites/FastAsyncWorldEdit/commit/f0c96050"
 platform: "Bukkit"
 # Set true to enable WorldEdit restrictions per region (e.g. PlotSquared or WorldGuard).
 # To be allowed to WorldEdit in a region, users need the appropriate
@@ -13,9 +13,6 @@ region-restrictions: true
 #  - Bypass with `/wea` or `//fast` or `fawe.bypass`
 #  - Disable with 100 or -1.
 max-memory-percent: 95
-# When percent memory usage reaches this threshold some aspects of editing will be slowed down:
-#  - FAWE-Asynchronous chunk loading when writing changes (see queue.async-chunk-load-write)
-slower-memory-percent: 80
 
 # Enable or disable core components
 enabled-components:
@@ -23,12 +20,8 @@ enabled-components:
   # Show additional information in console. It helps us at IntellectualSites to find out more about an issue.
   # Leave it off if you don't need it, it can spam your console.
   debug: false
-  # Whether or not FAWE should notify you on startup about new available snapshots.
-  snapshot-update-notifications: true
-  # Whether or not FAWE should notify you on startup about new releases.
-  release-update-notifications: true
-  # Whether or not FAWE should notify you for updates (snapshot / release) on join (with the required permission)
-  notify-update-ingame: true
+  # Whether or not FAWE should notify you on startup about new versions available.
+  update-notifications: true
 
 clipboard:
   # Store the clipboard on disk instead of memory
@@ -145,10 +138,6 @@ experimental:
   #  - If the entity is in an unloaded or partially loaded chunk, this will fail
   #  - If an entity cannot be removed, it is possible duplicate entities may be created when using undo and/or redo
   remove-entity-from-world-on-chunk-fail: true
-  # [SAFE] Perform operations involving entities on chunk load
-  #  - Allows entities that might not otherwise be captured due to unloaded chunks to be captured
-  #  - Main use-case is copying larger areas with entities
-  improved-entity-edits: true
   # Increased debug logging for brush actions and processor setup
   other: false
   # Allow fluids placed by FAWE to tick (flow). This could cause the big lags.
@@ -197,17 +186,6 @@ queue:
   # If pooling is enabled (reduces GC, higher memory usage)
   #  - Enable to improve performance at the expense of memory
   pool: true
-  # If chunk loading for writing edits to the world should be performed asynchronously to FAWE
-  #  - Enable to improve performance at the expense of memory
-  #  - If experience out of memory crashed, disable this or reduce slower-memory-percent
-  async-chunk-load-write: true
-  # Percentage of queue.target-size to use per thread in multi-threaded operations
-  #  - Minimum of 100 / queue.parallel-threads (queue.target-size split across threads)
-  #  - Maximum of 100 (queue.target-size per thread)
-  #  - Higher performance at the expense of memory
-  #  - I.e. target-size=400, parallel-threads=8 and threads-target-size=25 means target-size of 100 per thread
-  #  - Defaults to 100 * 2 / parallel-threads
-  thread-target-size-percent: 100
 
 history:
   # Should history be saved on disk:
