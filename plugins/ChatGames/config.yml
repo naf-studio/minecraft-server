@@ -16,7 +16,7 @@ min_players_online: 5
 time_minutes: 30
 
 #The time users will have to guess, solve, write, etc in seconds.
-timeToGuess_seconds: 20
+timeToGuess_seconds: 30
 
 #Turning this off will mean that chatgames.play permission will not be necessary to show the games
 use-permission-toplay: false
