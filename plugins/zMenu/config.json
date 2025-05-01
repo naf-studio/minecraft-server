@@ -31,5 +31,6 @@
   "enableCooldownClick": true,
   "cooldownClickMilliseconds": 100,
   "cachePlaceholderAPI": 20,
-  "enableCachePlaceholderAPI": false
+  "enableCachePlaceholderAPI": false,
+  "enableDownloadCommand": false
 }
