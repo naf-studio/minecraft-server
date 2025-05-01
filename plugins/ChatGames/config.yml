@@ -10,7 +10,7 @@ prefix: '&dChatGames'
 allow_starting_from_disabled: true
 
 #The minimum amount of players that have to be online in order for the chat event to start
-min_players_online: 1
+min_players_online: 5
 
 #The time it will take for a random game to be picked again
 time_minutes: 30
