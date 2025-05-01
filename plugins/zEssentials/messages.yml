@@ -17,6 +17,13 @@
 #
 # #######################################################################################################################
 
+command-fly-remaining: <success>You have &f%time% <success> remaining flight time.
+description-kit-give: Give a kit to a player
+description-cooldown-show: Display a player’s cooldowns
+description-experience-take: Take experience to player
+command-kit-delete-error: <error>Impossible to delete the kit &f%kit%<error>.
+command-kit-give: <success>You just gave the kit &f%kit%<success> to <u>%player%<u><success>.
+experience-taken: <success>You have just take <white>%amount% %type% <success>to <white>%player%<success>.
 command-spawn-first-not-define: <error>The first spawn does not exist. Please contact
   an administrator.
 description-set-first-spawn: Set server first spawn
