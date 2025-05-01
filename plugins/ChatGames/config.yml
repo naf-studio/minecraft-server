@@ -13,7 +13,7 @@ allow_starting_from_disabled: true
 min_players_online: 1
 
 #The time it will take for a random game to be picked again
-time_minutes: 10
+time_minutes: 30
 
 #The time users will have to guess, solve, write, etc in seconds.
 timeToGuess_seconds: 20
