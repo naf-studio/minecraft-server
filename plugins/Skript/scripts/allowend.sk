@@ -30,9 +30,3 @@ on teleport:
     if {endblock::enabled} is false:
       cancel event
       send "{@prefix} &cThe End is currently disabled." to player
-
-on portal create:
-  if event-block is end portal:
-    if {endblock::enabled} is false:
-      cancel event
-      send "{@prefix} &cThe End is currently disabled." to player
