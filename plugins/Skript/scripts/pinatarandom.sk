@@ -1,0 +1,31 @@
+# Description: Spawns pinatas on random online players
+
+# Usage:
+# /pinatarandom [amount]
+
+options:
+  prefix: &b[PinataRandom]
+
+command /pinatarandom [<number>]:
+  permission: op
+  trigger:
+    if arg is not set:
+      set {_amount} to 1
+    else if arg is integer:
+      set {_amount} to arg
+    else:
+      send "{@prefix} &cAmount must be a number."
+      stop
+
+    if {_amount} < 1:
+      send "{@prefix} &cAmount must be at least 1."
+      stop
+
+    if size of all players < 1:
+      send "{@prefix} &cNo players online."
+      stop
+
+    loop {_amount} times:
+      set {_target} to random element out of all players
+      execute console command "pinata spawn %{_target}%"
+      send "{@prefix} &fSpawned pinata on %{_target}%."
