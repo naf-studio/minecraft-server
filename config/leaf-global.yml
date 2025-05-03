@@ -87,6 +87,34 @@ performance:
     # Use legacy random source for slime chunk generation,
     # to follow vanilla behavior.
     use-legacy-random-for-slime-chunk: false
+  # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
+  enable-cached-minecraft-to-bukkit-entitytype-convert: true
+  # Optimizes entity brains when
+  # they're far away from the player
+  dab:
+    enabled: true
+    # After enabling this, non-aquatic entities in the water will not be affected by DAB.
+    # This could fix entities suffocate in the water.
+    dont-enable-if-in-water: true
+    # This value determines how far away an entity has to be
+    # from the player to start being effected by DEAR.
+    start-distance: 8
+    # This value defines how often in ticks, the furthest entity
+    # will get their pathfinders and behaviors ticked. 20 = 1s
+    max-tick-freq: 40
+    # This value defines how much distance modifies an entity's
+    # tick frequency. freq = (distanceToPlayer^2) / (2^value)",
+    # If you want further away entities to tick less often, use 7.
+    # If you want further away entities to tick more often, try 9.
+    activation-dist-mod: 7
+    # A list of entities to ignore for activation
+    blacklisted-entities: []
+  dont-save-entity:
+    # Disable save primed tnt on chunk unloads.
+    # Useful for redstone/technical servers, can prevent machines from being exploded by TNT,
+    # when player disconnected caused by Internet issue.
+    dont-save-primed-tnt: true
+    dont-save-falling-block: true
   # These values define a entity's maximum lifespan. If an
   # entity is in this list and it has survived for longer than
   # that number of ticks, then it will be removed. Setting a value to
@@ -208,34 +236,6 @@ performance:
     ZOMBIE_VILLAGER: -1
     ZOMBIFIED_PIGLIN: -1
     FISHING_BOBBER: -1
-  # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
-  enable-cached-minecraft-to-bukkit-entitytype-convert: true
-  # Optimizes entity brains when
-  # they're far away from the player
-  dab:
-    enabled: true
-    # After enabling this, non-aquatic entities in the water will not be affected by DAB.
-    # This could fix entities suffocate in the water.
-    dont-enable-if-in-water: true
-    # This value determines how far away an entity has to be
-    # from the player to start being effected by DEAR.
-    start-distance: 8
-    # This value defines how often in ticks, the furthest entity
-    # will get their pathfinders and behaviors ticked. 20 = 1s
-    max-tick-freq: 40
-    # This value defines how much distance modifies an entity's
-    # tick frequency. freq = (distanceToPlayer^2) / (2^value)",
-    # If you want further away entities to tick less often, use 7.
-    # If you want further away entities to tick more often, try 9.
-    activation-dist-mod: 7
-    # A list of entities to ignore for activation
-    blacklisted-entities: []
-  dont-save-entity:
-    # Disable save primed tnt on chunk unloads.
-    # Useful for redstone/technical servers, can prevent machines from being exploded by TNT,
-    # when player disconnected caused by Internet issue.
-    dont-save-primed-tnt: true
-    dont-save-falling-block: true
 
 ###########
 #  FIXES  #
@@ -275,6 +275,10 @@ gameplay-mechanisms:
     # players are able to use some packet modules of hack clients,
     # and NoCom Exploit!!
     max-use-item-distance: 1.0000001
+  afk-command:
+    # The AFK command based on Minecraft built-in idle-timeout mechanism
+    # Rest of AFK settings are in the Purpur config
+    enabled: false
 
 #############
 #  NETWORK  #
