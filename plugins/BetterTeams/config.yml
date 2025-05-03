@@ -240,7 +240,7 @@ tpDelay: 3
 # - If this is false, the player can move around however they want while waiting for the teleport
 #
 # Possible values: [true, false]
-noMove: false
+noMove: true
 
 # this is used if noMove is set to true. this is the distance the player can travel while not being classed as moving
 # - If this is set to 0 the player cannot move 
