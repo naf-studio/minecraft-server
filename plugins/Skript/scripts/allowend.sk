@@ -16,28 +16,25 @@ command /allowend [<boolean>]:
     if arg 1 is set:
       # If argument is 'true', enable the End
       if arg 1 is true:
-        if {endblock::enabled} is not set or {endblock::enabled} is false:
+        if {endblock::enabled} is true:
+          send "{@prefix} &aThe End is already enabled." to player
+        else:
           set {endblock::enabled} to true
           broadcast "{@prefix} &aThe End has been enabled."
-        else:
-          send "{@prefix} &aThe End is already enabled." to player
       # If argument is 'false', disable the End
-      else if arg 1 is false:
-        if {endblock::enabled} is not set or {endblock::enabled} is true:
+      else:
+        if {endblock::enabled} is false:
+          send "{@prefix} &cThe End is already disabled." to player
+        else:
           set {endblock::enabled} to false
           broadcast "{@prefix} &cThe End has been disabled."
           loop all players:
             if loop-player's world is "world_the_end":
               teleport loop-player to spawn of world "world"
               send "{@prefix} &cYou have been teleported to the Overworld because The End was disabled." to loop-player
-        else:
-          send "{@prefix} &cThe End is already disabled." to player
     # If no argument, toggle the state
     else:
-      if {endblock::enabled} is not set:
-        set {endblock::enabled} to true
-        broadcast "{@prefix} &aThe End has been enabled."
-      else if {endblock::enabled} is true:
+      if {endblock::enabled} is true:
         set {endblock::enabled} to false
         broadcast "{@prefix} &cThe End has been disabled."
         loop all players:
