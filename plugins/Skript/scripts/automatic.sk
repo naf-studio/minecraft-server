@@ -1,77 +1,33 @@
 every day at 0:05 AM:
   if now is 2025-09-02:
-    execute console command "chunky radius 10000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 20000"
-    send "&a[Border] &fDaily border update for 2/9/2025 completed." to console
+    execute console command "border 10000"
 
   else if now is 2025-09-03:
-    execute console command "chunky radius 9000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 18000"
-    send "&a[Border] &fDaily border update for 3/9/2025 completed." to console
+    execute console command "border 9000"
 
   else if now is 2025-09-04:
-    execute console command "chunky radius 8000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 16000"
-    send "&a[Border] &fDaily border update for 4/9/2025 completed." to console
+    execute console command "border 8000"
 
   else if now is 2025-09-05:
-    execute console command "chunky radius 7000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 14000"
-    send "&a[Border] &fDaily border update for 5/9/2025 completed." to console
+    execute console command "border 7000"
 
   else if now is 2025-09-06:
-    execute console command "chunky radius 6000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 12000"
-    send "&a[Border] &fDaily border update for 6/9/2025 completed." to console
+    execute console command "border 6000"
 
   else if now is 2025-09-07:
-    execute console command "chunky radius 5000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 10000"
-    send "&a[Border] &fDaily border update for 7/9/2025 completed." to console
+    execute console command "border 5000"
 
   else if now is 2025-09-08:
-    execute console command "chunky radius 4000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 8000"
-    send "&a[Border] &fDaily border update for 8/9/2025 completed." to console
+    execute console command "border 4000"
 
   else if now is 2025-09-09:
-    execute console command "chunky radius 3000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 6000"
-    send "&a[Border] &fDaily border update for 9/9/2025 completed." to console
+    execute console command "border 3000"
 
   else if now is 2025-09-10:
-    execute console command "chunky radius 2000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 4000"
-    send "&a[Border] &fDaily border update for 10/9/2025 completed." to console
+    execute console command "border 2000"
 
   else if now is 2025-09-11:
-    execute console command "chunky radius 1000"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 2000"
-    send "&a[Border] &fDaily border update for 11/9/2025 completed." to console
+    execute console command "border 1000"
 
   else if now is 2025-09-12:
-    execute console command "chunky radius 500"
-    execute console command "chunky border add"
-    wait 1 second
-    execute console command "worldborder set 1000"
-    send "&a[Border] &fDaily border update for 12/9/2025 completed." to console
+    execute console command "border 500"
