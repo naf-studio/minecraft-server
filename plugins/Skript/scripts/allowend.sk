@@ -1,17 +1,27 @@
+# Description: This Skript allows to enable or disable access to The End
+
+# Usage:
+# /allowend [true|false]
+# - Use `/allowend true` to force enable access to The End
+# - Use `/allowend false` to force disable access to The End and teleport players out
+# - Use `/allowend` with no arguments to toggle the current state
+
 options:
   prefix: &b[AllowEnd]
 
 command /allowend [<boolean>]:
   permission: op
   trigger:
+    # Check if a boolean argument was provided
     if arg 1 is set:
+      # If argument is 'true', enable the End
       if arg 1 is true:
         if {endblock::enabled} is not set or {endblock::enabled} is false:
           set {endblock::enabled} to true
           broadcast "{@prefix} &aThe End has been enabled."
         else:
           send "{@prefix} &aThe End is already enabled." to player
-      # If argument is false
+      # If argument is 'false', disable the End
       else if arg 1 is false:
         if {endblock::enabled} is not set or {endblock::enabled} is true:
           set {endblock::enabled} to false
@@ -22,7 +32,7 @@ command /allowend [<boolean>]:
               send "{@prefix} &cYou have been teleported to the Overworld because The End was disabled." to loop-player
         else:
           send "{@prefix} &cThe End is already disabled." to player
-    # If no argument is provided, toggle the state
+    # If no argument, toggle the state
     else:
       if {endblock::enabled} is not set:
         set {endblock::enabled} to true
