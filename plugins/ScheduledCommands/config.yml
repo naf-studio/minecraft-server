@@ -1,0 +1,17 @@
+# =================================
+#! This plugin use the GMT timezone
+# =================================
+
+scheduled-events:
+  - name: "Evento1"
+    time: "2024-12-31 18:00"
+    commands:
+      - "say ¡Happy new year!"
+      - "tp @a 100 64 100"
+      - "give @a minecraft:diamond 10"
+  - name: "Evento2"
+    time: "2025-05-04 01:31"
+    commands:
+      - "tps"
+      - "time set day"
+      - "say ¡Welcome to the new year!"
