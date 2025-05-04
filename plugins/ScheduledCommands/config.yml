@@ -3,15 +3,183 @@
 # =================================
 
 scheduled-events:
-  - name: "Evento1"
-    time: "2024-12-31 18:00"
+# AllowEnd Events
+  - name: "disable_end_early_july_12"
+    time: "2025-07-11 17:05" # Original: 12/7 00:05 VN (UTC+7)
     commands:
-      - "say ¡Happy new year!"
-      - "tp @a 100 64 100"
-      - "give @a minecraft:diamond 10"
-  - name: "Evento2"
-    time: "2025-05-04 01:31"
+      - "/allowend false"
+  - name: "enable_end_evening_july_12"
+    time: "2025-07-12 13:00" # Original: 12/7 20:00 VN (UTC+7)
     commands:
-      - "tps"
-      - "time set day"
-      - "say ¡Welcome to the new year!"
+      - "/allowend true"
+  - name: "enable_end_and_disable_script_aug_2"
+    time: "2025-08-02 13:00" # Original: 2/8 20:00 VN (UTC+7)
+    commands:
+      - "/allowend true"
+      - "/sk disable allowend.sk"
+
+# Difficulty Event
+  - name: "set_difficulty_hard_aug_16"
+    time: "2025-08-15 17:05" # Original: 16/8 00:05 VN (UTC+7)
+    commands:
+      - "/difficulty hard"
+
+# Pinata Events (Weekly)
+  - name: "pinata_week_1"
+    time: "2025-06-15 13:00" # Original: 15/6 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 1"
+  - name: "pinata_week_2"
+    time: "2025-06-22 13:00" # Original: 22/6 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 2"
+  - name: "pinata_week_3"
+    time: "2025-06-29 13:00" # Original: 29/6 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 3"
+  - name: "pinata_week_4"
+    time: "2025-07-06 13:00" # Original: 6/7 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 4"
+  - name: "pinata_week_5"
+    time: "2025-07-13 13:00" # Original: 13/7 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 5"
+  - name: "pinata_week_6"
+    time: "2025-07-20 13:00" # Original: 20/7 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 6"
+  - name: "pinata_week_7"
+    time: "2025-07-27 13:00" # Original: 27/7 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 7"
+  - name: "pinata_week_8"
+    time: "2025-08-03 13:00" # Original: 3/8 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 8"
+  - name: "pinata_week_9"
+    time: "2025-08-10 13:00" # Original: 10/8 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 9"
+  - name: "pinata_week_10"
+    time: "2025-08-17 13:00" # Original: 17/8 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 10"
+  - name: "pinata_week_11"
+    time: "2025-08-24 13:00" # Original: 24/8 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 11"
+  - name: "pinata_week_12"
+    time: "2025-08-31 13:00" # Original: 31/8 20:00 VN (UTC+7)
+    commands:
+      - "/pinatarandom 12"
+
+# Border Shrink Events (Daily /border)
+  - name: "border_shrink_10k"
+    time: "2025-09-01 17:05" # Original: 2/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 10000"
+  - name: "border_shrink_9k"
+    time: "2025-09-02 17:05" # Original: 3/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 9000"
+  - name: "border_shrink_8k"
+    time: "2025-09-03 17:05" # Original: 4/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 8000"
+  - name: "border_shrink_7k"
+    time: "2025-09-04 17:05" # Original: 5/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 7000"
+  - name: "border_shrink_6k"
+    time: "2025-09-05 17:05" # Original: 6/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 6000"
+  - name: "border_shrink_5k"
+    time: "2025-09-06 17:05" # Original: 7/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 5000"
+  - name: "border_shrink_4k"
+    time: "2025-09-07 17:05" # Original: 8/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 4000"
+  - name: "border_shrink_3k"
+    time: "2025-09-08 17:05" # Original: 9/9 00:05 VN (UTC+7)
+    commands:
+      - "/border 3000"
+
+# WorldBorder Shrink Events (Daily /worldborder)
+  - name: "worldborder_set_4k"
+    time: "2025-09-09 17:05" # Original: 10/9 00:05 VN (UTC+7)
+    commands:
+      - "/worldborder set 4000"
+  - name: "worldborder_set_2k"
+    time: "2025-09-10 17:05" # Original: 11/9 00:05 VN (UTC+7)
+    commands:
+      - "/worldborder set 2000"
+  - name: "worldborder_set_1k"
+    time: "2025-09-11 17:05" # Original: 12/9 00:05 VN (UTC+7)
+    commands:
+      - "/worldborder set 1000"
+
+# WorldBorder Shrink Events (Hourly on Sep 12 /worldborder)
+  - name: "worldborder_set_940"
+    time: "2025-09-12 00:00" # Original: 12/9 07:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 940"
+  - name: "worldborder_set_880"
+    time: "2025-09-12 01:00" # Original: 12/9 08:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 880"
+  - name: "worldborder_set_820"
+    time: "2025-09-12 02:00" # Original: 12/9 09:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 820"
+  - name: "worldborder_set_760"
+    time: "2025-09-12 03:00" # Original: 12/9 10:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 760"
+  - name: "worldborder_set_700"
+    time: "2025-09-12 04:00" # Original: 12/9 11:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 700"
+  - name: "worldborder_set_640"
+    time: "2025-09-12 05:00" # Original: 12/9 12:00 VN (UTC+7) - Assumed 12:00 PM noon
+    commands:
+      - "/worldborder set 640"
+  - name: "worldborder_set_580"
+    time: "2025-09-12 06:00" # Original: 12/9 13:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 580"
+  - name: "worldborder_set_520"
+    time: "2025-09-12 07:00" # Original: 12/9 14:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 520"
+  - name: "worldborder_set_460"
+    time: "2025-09-12 08:00" # Original: 12/9 15:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 460"
+  - name: "worldborder_set_400"
+    time: "2025-09-12 09:00" # Original: 12/9 16:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 400"
+  - name: "worldborder_set_340"
+    time: "2025-09-12 10:00" # Original: 12/9 17:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 340"
+  - name: "worldborder_set_280"
+    time: "2025-09-12 11:00" # Original: 12/9 18:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 280"
+  - name: "worldborder_set_220"
+    time: "2025-09-12 12:00" # Original: 12/9 19:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 220"
+  - name: "worldborder_set_160"
+    time: "2025-09-12 13:00" # Original: 12/9 20:00 VN (UTC+7) - Assumed 20:00 PM
+    commands:
+      - "/worldborder set 160"
+  - name: "worldborder_set_100"
+    time: "2025-09-12 14:00" # Original: 12/9 21:00 VN (UTC+7)
+    commands:
+      - "/worldborder set 100"
