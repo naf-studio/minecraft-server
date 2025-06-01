@@ -10,13 +10,13 @@ display:
   - "&r"
   - "&6◆ &eObjective:&r &7Shear 50 sheep."
   - "&6◆ &eProgress:&r &7{shearing:progress}/50 sheep."
-  - "&6◆ &eReward:&r &a750 experience"
+  - "&6◆ &eReward:&r &a500 experience"
   - "&r"
   lore-started:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "SHEARS"
 rewards:
-  - "experience add {player} 750"
+  - "experience add {player} 500"
 options:
   category: "animal"
   requires: []
