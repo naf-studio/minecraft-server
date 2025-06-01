@@ -16,7 +16,7 @@ Require linked account to play:
 
 
   # Minecraft IGNs to always allow whether linked or subscriber or not
-  Bypass names: [admin]
+  Bypass names: [god]
   # Whether players on the VANILLA whitelist will bypass the need to link their accounts/have a sub role
   Whitelisted players bypass check: true
   # Whether to let players in the VANILLA banlist be able to link their accounts
