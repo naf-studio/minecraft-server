@@ -200,7 +200,7 @@ command-version:
   - essversion
   - ev
 command-experience:
-  enable: true
+  enable: false
   commands:
   - experience
   - xp
@@ -209,17 +209,17 @@ command-experience:
   - levels
   permission: essentials.experience
 command-grant-experience:
-  enable: true
+  enable: false
   commands:
   - grant
   permission: essentials.experience.grant
 command-query-experience:
-  enable: true
+  enable: false
   commands:
   - query
   permission: essentials.experience.query
 command-set-experience:
-  enable: true
+  enable: false
   commands:
   - set
   permission: essentials.experience.set
