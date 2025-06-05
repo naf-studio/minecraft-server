@@ -118,6 +118,10 @@ info:
   ally: '&6Allies: &b{0}'
   online: '&a'
   offline: '&c'
+  anchor: '&6Anchor: &b{0}'
+  onlinePlayer: <green>{0}</green>
+  offlinePlayer: <red>{0}</red>
+  playerListSpace: ' '
 kick:
   success: '&6[BetterTeams] &6That player has been kicked'
   notify: '&6[BetterTeams] &6You have been kicked from team {0}'
@@ -403,6 +407,15 @@ admin:
   import:
     fail: '&6[BetterTeams] &4The messages import failed, check the console for errors'
     success: '&6[BetterTeams] &6The messages have been successfully imported'
+  versionplugins: '&6Plugin integrations: &b{0}'
+  versionconflicts: '&6Potential conflicts: &b{0}'
+  anchor:
+    enabled: '&6Forced the player to allow their respawning at their team''s home'
+    disabled: '&6Forced the player to disallow their respawning at their team''s home'
+  setanchor:
+    enabled: '&6That team''s anchor status has been enabled'
+    disabled: '&6That team''s anchor status has been disabled'
+    noHome: '&4That team must have a home set first'
 nametag:
   
   
@@ -466,6 +479,8 @@ help:
   ally: Used to request an alliance with another team
   neutral: Remove allies and reject ally requests
   allychat: Send a message only to your allies
+  anchor: Toggles whether you want to respawn at your team's home
+  setanchor: Sets your team home's ability to serve as a respawn point
 helpArg:
   delhome: ''
   echest: ''
@@ -507,6 +522,8 @@ helpArg:
   open: ''
   warp: <name>
   withdraw: <amount>
+  anchor: ''
+  setanchor: <true/false>
 command:
   
   create: create
@@ -563,6 +580,8 @@ command:
   importmessages: importmessages
   money: money
   check: check
+  anchor: anchor
+  setanchor: setanchor
 webhook:
   unknownPlayer: an unknown player
   create:
@@ -580,3 +599,15 @@ webhook:
   chat:
     title: 'Team Message: {0} [{1}]'
     description: '{0}'
+anchor:
+  enabled: '&6Now you allow your respawning at team home'
+  disabled: '&6Now you do not allow your respawning at team home'
+  noHome: '&6Your team must have team home set and team anchor enabled'
+setanchor:
+  enabled: '&6Team anchor enabled'
+  disabled: '&6Team anchor disabled'
+  notifyEnable: '&6Team anchor has been enabled by {0}'
+  notifyDisable: '&6Team anchor has been disabled by {0}'
+  noHome: '&4Must set a team home first'
+  noPerm: '&4You don''t have permission to set your team''s anchor state'
+  noBool: '&4Team anchor state can only be true or false'

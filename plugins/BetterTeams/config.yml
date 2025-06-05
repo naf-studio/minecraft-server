@@ -59,6 +59,8 @@ database:
   user: root
   password: password
   tablePrefix: BetterTeams_
+  additionalOptions:
+  - useSSL=false
 
 # This is the value to determine if the chat prefix is enabled
 # - If this is enabled (true / name) a prefix [TeamName] will be displayed at the begining of chat messages.
@@ -563,3 +565,9 @@ disband-hook: false
 player-left-hook: false
 team-nameChange-hook: false
 team-chat: false
+anchor:
+  enable: true
+  checkAnchoredPlayer: true
+  checkUsePermission: true
+  priority: HIGH
+invalidateCacheSeconds: 60
