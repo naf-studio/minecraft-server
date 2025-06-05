@@ -98,3 +98,9 @@ pvp:
   rank: ADMIN
 chest:
   enabled: true
+anchor:
+  enabled: true
+  rank: DEFAULT
+setanchor:
+  enabled: true
+  rank: ADMIN
