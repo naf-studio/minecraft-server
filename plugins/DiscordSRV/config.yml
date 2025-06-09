@@ -300,7 +300,7 @@ DiscordCannedResponses: {}
 #
 MinecraftDiscordAccountLinkedConsoleCommands: ["", "", ""]
 MinecraftDiscordAccountUnlinkedConsoleCommands: ["", "", ""]
-MinecraftDiscordAccountLinkedRoleNameToAddUserTo: "Linked"
+MinecraftDiscordAccountLinkedRoleNameToAddUserTo: "Season 7"
 MinecraftDiscordAccountLinkedAllowRelinkBySendingANewCode: false
 MinecraftDiscordAccountLinkedUsePM: true
 MinecraftDiscordAccountLinkedMessageDeleteSeconds: 0
