@@ -1129,3 +1129,13 @@ command-kit-give:
   - kitgive
   - kgive
   permission: essentials.kit.give
+command-step-finish:
+  enable: true
+  commands:
+  - finish
+  permission: essentials.step.finish
+command-step-start:
+  enable: true
+  commands:
+  - start
+  permission: essentials.step.start
