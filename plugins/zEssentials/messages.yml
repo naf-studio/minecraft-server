@@ -17,6 +17,9 @@
 #
 # #######################################################################################################################
 
+description-step-start: Start a step
+description-step-finish: Finish a step
+step-doesnt-started: <error>Step &f%step% <error>is not started.
 command-fly-remaining: <success>You have &f%time% <success> remaining flight time.
 description-kit-give: Give a kit to a player
 description-cooldown-show: Display a player’s cooldowns
