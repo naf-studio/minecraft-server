@@ -1,20 +1,18 @@
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Header-&-Footer
 header-footer:
-  enabled: false
+  enabled: true
   header:
-    - "<#FFFFFF>&m                                                </#FFFF00>"
-    - "&3&lServer name"
-    - "&r&7&l>> %animation:Welcome%&3 &l%player%&7&l! &7&l<<"
-    - "&r&7Online players: &f%online%"
-    - "&6Online staff: &e%staffonline%"
+    - ""
+    - "&5Wellcome &7to &d&lNAF"
+    - ""
+    - "&f&l————— &r&6Season 7 &f&l—————"
     - ""
   footer:
-    - "%animation:time%"
-    - "&2Ping: %ping%"
-    - "&7&l Used memory: %memory-used% MB / %memory-max% MB"
     - ""
-    - "&r&7Visit our webpage %animation:web%"
-    - "<#FFFFFF>&m                                                </#FFFF00>"
+    - "&7Online: &a%online% &7| Ping: &a%ping%"
+    - ""
+    - "&f&l————— &9dsc.gg/nafd &f&l—————"
+    - ""
   disable-condition: '%world%=disabledworld'
   per-world:
     world1:
