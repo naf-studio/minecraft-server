@@ -174,7 +174,7 @@ Permissions:
     FakeAFK: 1
     #How many seconds of inactivity are required before they will automatically be set as AFK
     #Set to -1 if the player shouldn't be automatically placed in AFK
-    TimeToAFK: 60
+    TimeToAFK: -1
     #How many seconds of AFK are required before the player is warned about action being taken
     #Set to -1 to disable warnings for this permission
     TimeToWarning: -1
