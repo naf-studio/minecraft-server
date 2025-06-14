@@ -1098,7 +1098,7 @@ command-mail-clear:
   - clear
   permission: essentials.mail.clear
 command-grant-random-experience:
-  enable: true
+  enable: false
   commands:
   - grant-random
   permission: essentials.experience.grant
@@ -1119,7 +1119,7 @@ command-cooldown-show:
   - s
   permission: essentials.cooldown.show
 command-take-experience:
-  enable: true
+  enable: false
   commands:
   - take
   permission: essentials.experience.take
