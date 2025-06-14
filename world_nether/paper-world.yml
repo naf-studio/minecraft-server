@@ -7,11 +7,26 @@ _version: 31
 anticheat:
   anti-xray:
     enabled: true
-    engine-mode: 1
+    engine-mode: 2
     hidden-blocks:
+    # See note about air and possible client performance issues above.
+    - air
     - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
     lava-obscures: false
-    max-block-height: 24
-    replacement-blocks: []
+    max-block-height: 128
+    replacement-blocks:
+    - basalt
+    - blackstone
+    - gravel
+    - netherrack
+    - soul_sand
+    - soul_soil
     update-radius: 2
     use-permission: false
