@@ -1,0 +1,33 @@
+#Plugin version. Please do not tamper
+LocalesVersion: 0.8.1
+
+#Locales file. use $n to create a new line
+#Some entries can accept a parameter, which will be $d
+#You can completely silence a line by assigning "%void%"
+#You can use color codes. Refer to https://dev.bukkit.org/projects/color-chat for more info
+
+BloodMoonTitleBar: "BloodMoon"
+DeathSuffix: "during a BloodMoon!"
+DaysBeforeBloodMoon: "&a[Bloodmoon] There are&f $d &adays until the next BloodMoon"
+BloodMoonRightNow: "&a[Bloodmoon] &ca BloodMoon is taking place right now!"
+BloodMoonTomorrow: "&6[Bloodmoon] a BloodMoon is on its way tomorrow"
+BloodMoonTonight: "&5[Bloodmoon] The sky is darker than usual tonight"
+BloodMoonWarningTitle: "&4&l[Bloodmoon] The BloodMoon is upon us"
+BloodMoonWarningBody: "&c[Bloodmoon] Experience is multiplied, and mobs have bonus drops$n&cMobs are stronger and apply special debuffs"
+BloodMoonEndingMessage: "&a&l[Bloodmoon] The BloodMoon fades away... for now"
+DyingResultsInInventoryLoss: "&4&l[Bloodmoon] Dying during a BloodMoon results in complete deletion of inventory"
+DyingResultsInExperienceLoss: "&4&l[Bloodmoon] Dying during a BloodMoon resets your experience to zero"
+PluginReloaded: "&a[Bloodmoon] Plugin has been reloaded successfully"
+NoBloodMoonInWorld: "&o[Bloodmoon] There are no BloodMoon in you current world"
+CommandNotFound: "&c[Bloodmoon] Command&o&f $d &r&cdoes not exist!"
+NoPermission: "&c[Bloodmoon] You do not have the permission to do that!"
+AllowedCommands: "&6[Bloodmoon] Supported commands are: &f&o$d"
+BedNotAllowed: "&c[Bloodmoon] You cannot sleep during a &4BloodMoon"
+WorldIsPermanentBloodMoon: "&c[Bloodmoon] This whole world is permanently in a BloodMoon!"
+CannotStopBloodMoon: "&c[Bloodmoon] You cannot stop the BloodMoon in this world!"
+GeneralError: "&c&o[Bloodmoon] There was an error processing your request"
+ZombieBossSpawned: "&f&l[Bloodmoon] $b &fhas arrived!"
+ZombieBossName: "The Tough One"
+BossSlain: "[Bloodmoon] &l$p &2has slain &f$b!"
+HordeArrived: "&c[Bloodmoon] A horde has descended upon &f$p!"
+NoPlayerOfName: "&c[Bloodmoon] No player of name &f$p &ccould be found in world &f$w"
