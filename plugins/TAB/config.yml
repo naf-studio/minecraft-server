@@ -3,7 +3,7 @@ header-footer:
   enabled: true
   header:
     - ""
-    - "&5Wellcome &7to &d&lNAF"
+    - "&5Welcome &7to &d&lNAF"
     - ""
     - "&f&l————— &r&6Season 7 &f&l—————"
     - ""

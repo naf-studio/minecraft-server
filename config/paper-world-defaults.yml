@@ -80,13 +80,13 @@ chunks:
     wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 10
+  max-auto-save-chunks-per-tick: 16
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: true
-  max-entity-collisions: 2
+  max-entity-collisions: 3
   only-players-collide: false
 command-blocks:
   force-follow-perm-level: true
@@ -334,7 +334,7 @@ environment:
   void-damage-min-build-height-offset: -64.0
   water-over-lava-flow-speed: 5
 feature-seeds:
-  generate-random-seeds-for-all: false
+  generate-random-seeds-for-all: true
 fishing-time-range:
   maximum: 600
   minimum: 100
@@ -387,17 +387,17 @@ tick-rates:
   behavior:
     villager:
       acquirepoi: 120
-      validatenearbypoi: 60
+      validatenearbypoi: 100
   container-update: 2
   dry-farmland: 2
   grass-spread: 2
-  mob-spawner: 2
+  mob-spawner: 3
   sensor:
     villager:
       nearestbedsensor: 80
       nearestlivingentitysensor: 40
       playersensor: 40
-      secondarypoisensor: 80
+      secondarypoisensor: 160
       villagerbabiessensor: 40
   wet-farmland: 1
 unsupported-settings:
