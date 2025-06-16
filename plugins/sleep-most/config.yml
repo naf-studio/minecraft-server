@@ -56,6 +56,8 @@ sleep:
     non-sleeping-clock-animation: false
     dynamic-animation-speed: true
     skip-msg-audience: all
+    calculation-method: percentage
+    percentage-required: 0.25
   
   limbo:
     enabled: false
