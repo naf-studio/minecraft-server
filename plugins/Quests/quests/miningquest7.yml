@@ -17,7 +17,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "DIAMOND_ORE"
 rewards:
-  - "experience add {player} 5000"
+  - "minecraft:experience add {player} 5000"
 options:
   category: "mining"
   requires: []

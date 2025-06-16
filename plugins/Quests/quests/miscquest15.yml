@@ -20,7 +20,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "SLIME_BALL"
 rewards:
-  - "experience add {player} 5000"
+  - "minecraft:experience add {player} 5000"
 options:
   category: "misc"
   requires: []
