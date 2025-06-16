@@ -17,7 +17,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "NETHERRACK"
 rewards:
-  - "experience add {player} 2000"
+  - "minecraft:experience add {player} 2000"
 options:
   category: "extreme"
   requires: []

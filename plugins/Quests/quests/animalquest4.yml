@@ -16,7 +16,7 @@ display:
   - "&a&k;&r&f&k;&r &a(!) You have started this quest."
   type: "SHEARS"
 rewards:
-  - "experience add {player} 100"
+  - "minecraft:experience add {player} 100"
 options:
   category: "animal"
   requires: []
