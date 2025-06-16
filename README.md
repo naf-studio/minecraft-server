@@ -3,7 +3,7 @@
 lp import "luckperms-naf-default.json.gz"
 ```
 ```
-gamerule playersSleepingPercentage 50
+gamerule playersSleepingPercentage 25
 ```
 
 ## Some optional customizations!
@@ -16,3 +16,5 @@ gamerule playersSleepingPercentage 50
 - Paper folk optimization: https://paper-chan.moe/paper-optimization/
 - Flags generator: https://www.birdflop.com/resources/flags/
 - Optimization guide used at: https://minecraftvn.net/cau-hinh-de-giam-lag-va-toi-uu-server-minecraft-de-dat-hieu-nang-tot-nhat.t46151/
+- Optimize Your Leaf Server: https://www.leafmc.one/docs/how-to/optimize-leaf-server
+- Java Flags for Servers by Leaf: https://www.leafmc.one/docs/how-to/java-flags
