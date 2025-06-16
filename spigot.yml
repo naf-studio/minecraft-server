@@ -26,6 +26,7 @@ commands:
   spam-exclusions:
   - /skill
   tab-complete: 0
+  enable-spam-exclusions: false
 messages:
   outdated-client: |-
     &cOUTDATED CLIENT!
