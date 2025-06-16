@@ -9,7 +9,6 @@ anticheat:
     enabled: true
     engine-mode: 2
     hidden-blocks:
-    # See note about air and possible client performance issues above.
     - air
     - ancient_debris
     - bone_block

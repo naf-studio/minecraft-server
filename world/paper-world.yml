@@ -9,8 +9,6 @@ anticheat:
     enabled: true
     engine-mode: 2
     hidden-blocks:
-    # You can add air here such that many holes are generated.
-    # This works well against cave finders but may cause client FPS drops for all players.
     - air
     - copper_ore
     - deepslate_copper_ore
@@ -27,13 +25,8 @@ anticheat:
     - redstone_ore
     - deepslate_redstone_ore
     lava-obscures: false
-    # As of 1.18 some ores are generated much higher.
-    # Please adjust the max-block-height setting at your own discretion.
-    # https://minecraft.wiki/w/Ore might be helpful.
     max-block-height: 64
     replacement-blocks:
-    # Chest is a tile entity and can't be added to hidden-blocks in engine-mode: 2.
-    # But adding chest here will hide buried treasures, if max-block-height is increased.
     - chest
     - amethyst_block
     - andesite
