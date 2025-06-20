@@ -390,65 +390,65 @@ info:
     zombified_piglin: Zombified piglin
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    knockback: Knockback
-    nova_structures:multishot: Nova_structures:multishot
-    frost_walker: Frost_walker
-    piercing: Piercing
+    riptide: Riptide
+    loyalty: Loyalty
+    nova_structures:gravity: Nova_structures:gravity
     nova_structures:traveler: Nova_structures:traveler
-    arrow_damage: Arrow_damage
-    loot_bonus_blocks: Loot_bonus_blocks
-    multishot: Multishot
-    nova_structures:wax_wings: Nova_structures:wax_wings
-    durability: Durability
-    protection_projectile: Protection_projectile
-    wind_burst: Wind_burst
-    protection_fall: Protection_fall
-    breach: Breach
-    nova_structures:illagers_bane: Nova_structures:illagers_bane
     nova_structures:power: Nova_structures:power
+    nova_structures:multishot: Nova_structures:multishot
+    durability: Durability
+    arrow_damage: Arrow_damage
     nova_structures:piercing: Nova_structures:piercing
-    water_worker: Water_worker
-    impaling: Impaling
-    lure: Lure
-    nova_structures:conductivity_curse: Nova_structures:conductivity_curse
     luck: Luck
-    quick_charge: Quick_charge
+    damage_arthropods: Damage_arthropods
+    protection_fall: Protection_fall
+    frost_walker: Frost_walker
+    nova_structures:photosynthesis: Nova_structures:photosynthesis
+    channeling: Channeling
+    density: Density
+    nova_structures:wither_coated: Nova_structures:wither_coated
+    fire_aspect: Fire_aspect
+    nova_structures:shulker_miniboss: Nova_structures:shulker_miniboss
+    nova_structures:outreach: Nova_structures:outreach
+    protection_environmental: Protection_environmental
+    nova_structures:illagers_bane: Nova_structures:illagers_bane
+    protection_projectile: Protection_projectile
+    mending: Mending
+    damage_undead: Damage_undead
+    loot_bonus_blocks: Loot_bonus_blocks
+    water_worker: Water_worker
+    depth_strider: Depth_strider
     arrow_infinite: Arrow_infinite
+    breach: Breach
+    nova_structures:conductivity_curse: Nova_structures:conductivity_curse
+    nova_structures:spiteful: Nova_structures:spiteful
+    protection_explosions: Protection_explosions
+    nova_structures:antidote: Nova_structures:antidote
+    dig_speed: Dig_speed
+    swift_sneak: Swift_sneak
+    multishot: Multishot
+    oxygen: Oxygen
+    quick_charge: Quick_charge
+    piercing: Piercing
+    knockback: Knockback
+    wind_burst: Wind_burst
+    nova_structures:ghasted: Nova_structures:ghasted
+    lure: Lure
+    arrow_knockback: Arrow_knockback
+    damage_all: Damage_all
+    vanishing_curse: Vanishing_curse
+    nova_structures:shulker_boss: Nova_structures:shulker_boss
+    protection_fire: Protection_fire
+    binding_curse: Binding_curse
+    nova_structures:boss_behaviour: Nova_structures:boss_behaviour
+    silk_touch: Silk_touch
+    sweeping_edge: Sweeping_edge
+    soul_speed: Soul_speed
+    impaling: Impaling
+    arrow_fire: Arrow_fire
+    nova_structures:wax_wings: Nova_structures:wax_wings
     loot_bonus_mobs: Loot_bonus_mobs
     thorns: Thorns
-    damage_undead: Damage_undead
-    nova_structures:shulker_boss: Nova_structures:shulker_boss
-    density: Density
-    channeling: Channeling
-    nova_structures:ghasted: Nova_structures:ghasted
-    arrow_knockback: Arrow_knockback
-    nova_structures:shulker_miniboss: Nova_structures:shulker_miniboss
-    protection_explosions: Protection_explosions
-    depth_strider: Depth_strider
-    swift_sneak: Swift_sneak
-    protection_environmental: Protection_environmental
-    dig_speed: Dig_speed
-    silk_touch: Silk_touch
-    binding_curse: Binding_curse
-    arrow_fire: Arrow_fire
-    damage_arthropods: Damage_arthropods
-    nova_structures:boss_behaviour: Nova_structures:boss_behaviour
-    fire_aspect: Fire_aspect
-    riptide: Riptide
-    soul_speed: Soul_speed
-    damage_all: Damage_all
-    nova_structures:outreach: Nova_structures:outreach
-    nova_structures:wither_coated: Nova_structures:wither_coated
-    vanishing_curse: Vanishing_curse
-    mending: Mending
-    oxygen: Oxygen
-    nova_structures:photosynthesis: Nova_structures:photosynthesis
-    protection_fire: Protection_fire
-    nova_structures:gravity: Nova_structures:gravity
-    loyalty: Loyalty
-    nova_structures:antidote: Nova_structures:antidote
-    sweeping_edge: Sweeping_edge
-    nova_structures:spiteful: Nova_structures:spiteful
   PotionEffectAliases:
     instanthealth:
     - Instant health
