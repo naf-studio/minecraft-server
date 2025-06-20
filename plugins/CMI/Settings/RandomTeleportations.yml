@@ -1,0 +1,98 @@
+RandomTeleportation:
+  # How long force player to wait before using command again.
+  Cooldown: 5
+  # How many times to try find correct location for teleportation.
+  # Keep it at low number, as player always can try again after delay
+  MaxTries: 20
+  # List of biomes to exclude from random teleportation
+  ExcludedBiomes:
+  - Ocean
+  - Deep ocean
+  - Deep cold ocean
+  - Cold ocean
+  - Deep lukewarm ocean
+  - Lukewarm ocean
+  - Warm ocean
+  - River
+  # If this set to true we will generate random teleport default settings for all detected worlds
+  # Setting to false will no longer generate world setups, but you can add them manually if needed
+  AutoGenerateWorlds: true
+  Worlds:
+    world:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+    world_nether:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 128
+    world_the_end:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
