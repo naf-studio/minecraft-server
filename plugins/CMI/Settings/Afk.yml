@@ -1,6 +1,6 @@
 Afk:
   # Enable or disable auto afk system entirely
-  Enabled: false
+  Enabled: true
   # When enabled shows title message informing that player is in afk mode
   TitleMessage: true
   # When enabled shows random subtitle message
@@ -19,7 +19,7 @@ Afk:
   # Defines how long to wait after player stops moving to set him as afk
   # Player needs to have cmi.command.afk.auto permission node
   # Set to 0 if you want to disable it
-  AutoAfkIn: 300
+  AutoAfkIn: 60
   # Defines commands to be performed when player enters afk mode automatically while addling
   # Supports specialized commands
   AutoAfkCmds:
@@ -68,8 +68,8 @@ Afk:
   - cmi kick [playerName] &eYou have been kicked for idling more than [time]
   # Defines worlds where players will not be placed into afk mode after they idled for defined time
   DisabledWorlds:
-  - oneTestWorld
-  - secondTestWorld
+  - limbo
+  - world_pvp
   # Disables afk on interaction
   DisableOnInteract: true
   # Prevents player from going bypassing afk mode while continuously holding one button with particular items or on particular blocks
@@ -82,11 +82,11 @@ Afk:
   # Keep in mind that player can still be moved around the same block he is in
   PreventPushing: false
   # Disables afk on inventory click
-  DisableOnInventoryClick: true
+  DisableOnInventoryClick: false
   # Disables afk on item drop
   DisableOnitemDrop: true
   # Disables afk on command usage
-  DisableOnCommand: true
+  DisableOnCommand: false
   # Disables afk on public chat message
   DisableOnPublicChat: true
   # Disables afk on private chat message
@@ -106,7 +106,7 @@ Afk:
     # This can be more on heavy side of the server as it will try constantly to spawn in monsters near afk players
     Natural: false
     # Prevent mob spawning from spawners
-    Spawners: true
+    Spawners: false
     # Usually responsible for spawning in iron golems
     VillageDefence: true
   # Disables exp pickup while afk
