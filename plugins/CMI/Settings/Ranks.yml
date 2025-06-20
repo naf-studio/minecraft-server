@@ -85,7 +85,7 @@
 #         KilledBy - defines amount of deaths by monster. If specific monster is not defined, then total amount is used
 
 Newbie:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Newbie'
   DefaultRank: true
   AutoRankup: true
@@ -93,7 +93,7 @@ Newbie:
   - Branch1
   - Branch2
 Branch1:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Branch1'
   AutoRankup: true
   RankupConfirmation: true
@@ -129,7 +129,7 @@ Branch1:
   - MonsterKills:wolf:5
   - AccountAge:1209600
 Branch1Rank1:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Branch1Rank1'
   DefaultRank: false
   AutoRankup: true
@@ -152,7 +152,7 @@ Branch1Rank1:
   - taming:10
   - unarmed:30
 Branch2:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Branch2'
   AutoRankup: true
   RankupConfirmation: true
@@ -169,7 +169,7 @@ Branch2:
   - MonsterKills:zombie:15
   - MonsterKills:slime:10
 Branch2Rank1:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Branch2Rank1'
   AutoRankup: true
   RankupConfirmation: false
@@ -185,7 +185,7 @@ Branch2Rank1:
   - SneakTime:180
   - MonsterKills:100
 Branch2Rank2:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Branch2Rank2'
   AutoRankup: true
   RankupConfirmation: false
@@ -201,7 +201,7 @@ Branch2Rank2:
   - ItemsUsed:10000
   - PlayerKills:10
 Last:
-  Enabled: true
+  Enabled: false
   DisplayName: '&2Last'
   AutoRankup: true
   StatsRequirements:
