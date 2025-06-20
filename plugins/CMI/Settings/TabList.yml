@@ -29,23 +29,23 @@ TabList:
   # Full list can be checked ingame with /cmi placeholders
   GeneralFormat:
     # This will define how others see players name in tab list
-    PlayerName: '[playerDisplayName]'
+    PlayerName: '[playerDisplayName] %cmi_user_ping%ms'
     Header:
       '1':
-      - '&f------------------------------------'
-      - '&7Welcome'
-      - '&7Online &f%server_online%&7/&f%server_max_players%'
-      - '&f------------------------------------'
+      - '&8------------------------------------'
+      - '&5Chào mừng&7 đến với &d&lNAF'
+      - '&6Mùa 7 &7| &7Discord: &9dsc.gg/nafd'
+      - '&8------------------------------------'
     Footer:
       '1':
-      - '&f------------------------------------'
-      - '&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%'
-      - '&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%'
-      - '&f------------------------------------'
+      - '&8------------------------------------'
+      - '&7Online: &f%server_online%&7/&f%server_max_players% &7| &7Ping: &f%cmi_user_ping%ms
+        &7| &7Time: &f%server_time_HH:MM%'
+      - '&8------------------------------------'
   useGeneralName: false
   # When this set to true, in case you dint defined PlayerName, Header or Footer in GroupFormat, then default one from GeneralFormat will be used
-  useGeneralHeader: false
-  useGeneralFooter: false
+  useGeneralHeader: true
+  useGeneralFooter: true
   # Defines custom formats to be used for players.
   # Any player which have cmi.tablist.[number] permission node will use defined grouped format in tablist
   # Id should be a number and in case player has more than one, bigger number id will be used
