@@ -390,48 +390,65 @@ info:
     zombified_piglin: Zombified piglin
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    quick_charge: Quick_charge
-    protection_explosions: Protection_explosions
-    breach: Breach
-    vanishing_curse: Vanishing_curse
-    frost_walker: Frost_walker
-    damage_arthropods: Damage_arthropods
-    thorns: Thorns
-    dig_speed: Dig_speed
-    piercing: Piercing
-    damage_all: Damage_all
-    luck: Luck
-    channeling: Channeling
-    lure: Lure
-    wind_burst: Wind_burst
-    loyalty: Loyalty
-    swift_sneak: Swift_sneak
     durability: Durability
     arrow_infinite: Arrow_infinite
-    depth_strider: Depth_strider
-    fire_aspect: Fire_aspect
-    impaling: Impaling
-    mending: Mending
-    binding_curse: Binding_curse
-    density: Density
-    arrow_fire: Arrow_fire
     loot_bonus_mobs: Loot_bonus_mobs
-    water_worker: Water_worker
-    silk_touch: Silk_touch
-    riptide: Riptide
-    damage_undead: Damage_undead
+    nova_structures:illagers_bane: Nova_structures:illagers_bane
+    nova_structures:power: Nova_structures:power
+    nova_structures:wither_coated: Nova_structures:wither_coated
+    arrow_fire: Arrow_fire
     arrow_damage: Arrow_damage
-    loot_bonus_blocks: Loot_bonus_blocks
-    protection_environmental: Protection_environmental
-    soul_speed: Soul_speed
-    sweeping_edge: Sweeping_edge
-    protection_fire: Protection_fire
-    multishot: Multishot
-    arrow_knockback: Arrow_knockback
-    protection_projectile: Protection_projectile
+    damage_undead: Damage_undead
+    channeling: Channeling
+    piercing: Piercing
+    nova_structures:conductivity_curse: Nova_structures:conductivity_curse
     oxygen: Oxygen
-    protection_fall: Protection_fall
+    nova_structures:ghasted: Nova_structures:ghasted
+    nova_structures:boss_behaviour: Nova_structures:boss_behaviour
+    protection_fire: Protection_fire
+    frost_walker: Frost_walker
     knockback: Knockback
+    nova_structures:multishot: Nova_structures:multishot
+    loot_bonus_blocks: Loot_bonus_blocks
+    lure: Lure
+    nova_structures:shulker_miniboss: Nova_structures:shulker_miniboss
+    density: Density
+    nova_structures:antidote: Nova_structures:antidote
+    nova_structures:shulker_boss: Nova_structures:shulker_boss
+    breach: Breach
+    nova_structures:gravity: Nova_structures:gravity
+    multishot: Multishot
+    swift_sneak: Swift_sneak
+    nova_structures:traveler: Nova_structures:traveler
+    damage_all: Damage_all
+    sweeping_edge: Sweeping_edge
+    wind_burst: Wind_burst
+    protection_fall: Protection_fall
+    protection_projectile: Protection_projectile
+    soul_speed: Soul_speed
+    silk_touch: Silk_touch
+    nova_structures:piercing: Nova_structures:piercing
+    quick_charge: Quick_charge
+    water_worker: Water_worker
+    dig_speed: Dig_speed
+    fire_aspect: Fire_aspect
+    thorns: Thorns
+    vanishing_curse: Vanishing_curse
+    depth_strider: Depth_strider
+    loyalty: Loyalty
+    luck: Luck
+    nova_structures:outreach: Nova_structures:outreach
+    mending: Mending
+    nova_structures:spiteful: Nova_structures:spiteful
+    binding_curse: Binding_curse
+    impaling: Impaling
+    protection_explosions: Protection_explosions
+    damage_arthropods: Damage_arthropods
+    riptide: Riptide
+    protection_environmental: Protection_environmental
+    arrow_knockback: Arrow_knockback
+    nova_structures:wax_wings: Nova_structures:wax_wings
+    nova_structures:photosynthesis: Nova_structures:photosynthesis
   PotionEffectAliases:
     instanthealth:
     - Instant health

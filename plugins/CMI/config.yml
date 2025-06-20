@@ -3,10 +3,10 @@
 # ********************************************
 
 # Language file you want to use
-Language: EN
+Language: VN
 # Defines if you want to auto download default locale files from github repository
 # You can disable this if you are using EN or you already have your locale set up and you don't need other languages to be downloaded.
-LanguageDownload: true
+LanguageDownload: false
 Economy:
   # Enable or disable the CMI economy in general
   # If CMIInjector is present, this will be set to true automatically
@@ -124,7 +124,7 @@ Optimizations:
   # Time in seconds we want to give for playes who joins server a immortality state
   # Set this to 0 to disable
   # Max 60 seconds
-  ImmortalityOnJoin: 3
+  ImmortalityOnJoin: 5
   # Enables or disables maintenance mode
   Maintenance: false
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
@@ -534,7 +534,7 @@ ExploitPatcher:
   # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
   # While enabled we will prevent items being teleported with end portal and end beacons
-  BlockEndPortalItemTransfers: true
+  BlockEndPortalItemTransfers: false
   # When enabled we will not allow usage of riptide while player has pweather set to rain while players world is in sunny state
   Riptide: true
   Placeholders:
@@ -581,7 +581,7 @@ ReSpawn:
   # Can be used to prevent respawn camping
   # Set to 0 if you want to disable it
   # Max 60 seconds
-  Immortality: 3
+  Immortality: 5
   # If you want 3rd party plugin to handle player respawning, simply set this to false and reload plugin
   Enabled: true
   Global:
@@ -1002,8 +1002,7 @@ Animations:
 # Negative values will heal player instead of damaging him
 # If player have more than one permission node for same damage cause, then last one in list will be used to determine final damage
 DamageControl:
-# - nowalldamage:fly_into_wall:1
-# - lowermagmacubedamage:hot_floor:0.9
+- nowalldamage:fly_into_wall:1
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
   RemoveFromInventory: false
@@ -1454,8 +1453,9 @@ Cooldowns:
   # KEEP IN MIND that for permission to work you need to set base command cooldown in this list, otherwise permission node will have no effect
   # -----
   # ATTENTION! If you have command like "/cmi home" and you want to prevent teleportation to home but allow gui opening without restrictions, use space after command, in example "cmi home :10"
-  Enabled: false
+  Enabled: true
   List:
+  - cmi home:120
   - cmi heal:180
   - cmi feed:120
 ShulkerBoxes:
@@ -1559,9 +1559,9 @@ WarmUps:
   # ATTENTION! cmi home command is being handled in special way and to prevent double warmup, add space, example: - cmi home :5:false
   # Experimental: add GlyphHead to the warmup to show particle effect while command is on warmup period. Like
   # - cmi warp :3:false:GlyphHead
-  Enabled: false
+  Enabled: true
   InformOnNoMove: true
-  showCounterBarInfo: false
+  showCounterBarInfo: true
   BossBarInfo:
     Enabled: false
     Color: blue
@@ -1570,8 +1570,8 @@ WarmUps:
   List:
   - cmi tp :5:false
   - cmi back:3:true
-  - cmi warp :3:false
-  - cmi home :3:false
+  - cmi warp :5:false
+  - cmi home :5:false
 Jail:
   # Defines in milliseconds how often to check if player leaves jail area
   # Bigger numbers can help slightly lower server load
