@@ -1002,8 +1002,8 @@ Animations:
 # Negative values will heal player instead of damaging him
 # If player have more than one permission node for same damage cause, then last one in list will be used to determine final damage
 DamageControl:
-- nowalldamage:fly_into_wall:1
-- lowermagmacubedamage:hot_floor:0.9
+# - nowalldamage:fly_into_wall:1
+# - lowermagmacubedamage:hot_floor:0.9
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
   RemoveFromInventory: false
