@@ -940,7 +940,7 @@ Alias:
     Enabled: true
     Tab: true
   rtp:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi sameip $1-
   sameip:
