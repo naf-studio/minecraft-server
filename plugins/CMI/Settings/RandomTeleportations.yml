@@ -1,6 +1,6 @@
 RandomTeleportation:
   # How long force player to wait before using command again.
-  Cooldown: 5
+  Cooldown: 300
   # How many times to try find correct location for teleportation.
   # Keep it at low number, as player always can try again after delay
   MaxTries: 20
@@ -29,9 +29,9 @@ RandomTeleportation:
       Range:
         # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
         # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
-        Max: 1000
+        Max: 3000
         # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-        Min: 500
+        Min: 1000
       Center:
         X: 0
         Z: 0
@@ -70,15 +70,15 @@ RandomTeleportation:
       MaxTries: 0
       Cooldown: 0
       Range:
-        Max: 1000
-        Min: 500
+        Max: 3000
+        Min: 1000
       Center:
         X: 0
         Z: 0
       Circle: false
       SurfaceOnly: false
       FromAnotherWorld: true
-      RequireWorldPermission: false
+      RequireWorldPermission: true
       YLimits:
         Min: 0
         Max: 128
@@ -96,15 +96,15 @@ RandomTeleportation:
       MaxTries: 0
       Cooldown: 0
       Range:
-        Max: 1000
-        Min: 500
+        Max: 3000
+        Min: 1000
       Center:
         X: 0
         Z: 0
       Circle: false
       SurfaceOnly: false
       FromAnotherWorld: true
-      RequireWorldPermission: false
+      RequireWorldPermission: true
       YLimits:
         Min: 0
         Max: 256
