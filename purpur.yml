@@ -10,6 +10,7 @@
 
 verbose: false
 settings:
+  server-mod-name: Leaf
   register-minecraft-debug-commands: false
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
@@ -97,6 +98,8 @@ settings:
       second: '%02d second'
       seconds: '%02d seconds'
   blocks:
+    snow:
+      smooth-accumulation-step: 0
     barrel:
       rows: 3
     chest_boat:
@@ -183,7 +186,7 @@ settings:
       distance: 0.5
     minecraft:hay_block:
       damage: 0.2
-config-version: 37
+config-version: 41
 world-settings:
   default:
     blocks:
@@ -392,6 +395,12 @@ world-settings:
           minecraft:cherry_log:
             drops: {}
             into: minecraft:stripped_cherry_log
+          minecraft:pale_oak_wood:
+            drops: {}
+            into: minecraft:stripped_pale_oak_wood
+          minecraft:pale_oak_log:
+            drops: {}
+            into: minecraft:stripped_pale_oak_log
         waxables:
           minecraft:waxed_copper_block:
             drops: {}
@@ -634,6 +643,15 @@ world-settings:
       use-night-vision: false
       use-dismounts-underwater-tag: true
     mobs:
+      creaking:
+        ridable: false
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 1.0
+          scale: 1.0
+        takes-damage-from-water: false
+        always-drop-exp: false
       allay:
         ridable: false
         ridable-in-water: true
@@ -678,6 +696,7 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       bee:
+        can-instantly-start-drowning: true
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -1234,16 +1253,23 @@ world-settings:
         bypass-mob-griefing: false
         takes-damage-from-water: false
         griefable-blocks:
-        - minecraft:oak_leaves
+        - minecraft:torchflower_crop
         - minecraft:spruce_leaves
-        - minecraft:birch_leaves
-        - minecraft:jungle_leaves
-        - minecraft:acacia_leaves
-        - minecraft:dark_oak_leaves
-        - minecraft:beetroots
-        - minecraft:carrots
-        - minecraft:potatoes
         - minecraft:wheat
+        - minecraft:azalea_leaves
+        - minecraft:cherry_leaves
+        - minecraft:oak_leaves
+        - minecraft:pitcher_crop
+        - minecraft:jungle_leaves
+        - minecraft:mangrove_leaves
+        - minecraft:carrots
+        - minecraft:flowering_azalea_leaves
+        - minecraft:potatoes
+        - minecraft:birch_leaves
+        - minecraft:beetroots
+        - minecraft:pale_oak_leaves
+        - minecraft:dark_oak_leaves
+        - minecraft:acacia_leaves
         always-drop-exp: false
         avoid-rabbits: false
       salmon:
@@ -1454,6 +1480,7 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
+          tempt_range: 10.0
           max_health: 20.0
           scale: 1.0
         follow-emerald-blocks: false
@@ -1494,6 +1521,7 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
+          tempt_range: 10.0
           max_health: 20.0
           scale: 1.0
         follow-emerald-blocks: false
@@ -1703,6 +1731,7 @@ world-settings:
           fire: []
           lightning: []
         shears:
+          damage-if-sprinting-item-model: purpurmc:scissors
           damage-if-sprinting: false
           ignore-in-water: false
           ignore-in-lava: false
