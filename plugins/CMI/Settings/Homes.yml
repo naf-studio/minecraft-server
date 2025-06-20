@@ -84,7 +84,9 @@ Homes:
     Use: false
     Groups:
       Example1:
+        # Amount of homes you can have in this world home group. Setting to 0 would basically disable home creation in this world. Setting to lower than 0 will ignore this world group entirely
         Amount: 3
+        # World list where this limit should apply to. Multiple worlds can be defined if you want to group them up
         Worlds:
         - testWorld
       Example2:
