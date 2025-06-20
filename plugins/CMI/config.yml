@@ -531,7 +531,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
   # While enabled we will prevent items being teleported with end portal and end beacons
   BlockEndPortalItemTransfers: true
