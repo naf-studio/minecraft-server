@@ -47,7 +47,7 @@ RandomTeleportation:
       YLimits:
         # Location detection limitations on Y axis. If you want to minimize teleportations underground then you can set this value to 63
         # Higher limitations might increase time needed to find valid one
-        Min: -64
+        Min: 63
         Max: 320
       Ignore:
         Water: true
