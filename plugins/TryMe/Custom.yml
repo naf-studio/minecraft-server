@@ -1,0 +1,48 @@
+# Custom file
+# You can categorize questions which can be used to show harder or simpler questions or questions depending on situation. There are no limitation on how many categories you can have. By default you have 2categories: Default, Hard
+# DefaultPostAnswerCommands section defines default commands we should perform if actual question doesnt have specified PostAnswerCommands section. If question does have PostAnswerCommands then DefaultPostAnswerCommands will not be used for that particular question
+# QuestionCommands will be performed from console on quiz start. This is mainly used to show actual question in text form or any other way
+# PostAnswerCommands will be performed when player correctly answers to the question. You can use [player] to include players name or [answer] to include correct answer
+# Multiple answers are useful when there is more than one correct answer. For example: Who created Minecraft? Answers: Notch, markus persson
+# Answers can contain spaces and those will be ignored when answering, for example "Markus Persson" and "markuspersson" are valid answers
+# All 3 config sections (QuestionCommands, PostAnswerCommands, Answers) can contain one or more lines. In case you only have one line you can simply it and define as for exaple-> Answers: sandbox
+
+DefaultPostAnswerCommands:
+- 'broadcast &6[player] &eanswered correctly with (&7[answer]&e) answer'
+
+Data:
+  Default:
+    -
+      QuestionCommands: 
+      - 'broadcast &9Minecraft: How much gunpowder do you need to make one TNT?'
+      PostAnswerCommands:
+      - 'broadcast &6[player] &eanswered correctly with (&7[answer]&e) answer'
+      Answers:
+      - '5'
+      - 'five'
+    -
+      QuestionCommands: 
+      - 'broadcast &9Minecraft: Who created Minecraft (full name)?'
+      PostAnswerCommands:
+      - 'broadcast &6[player] &eanswered correctly with (&7[answer]&e) answer'
+      Answers:
+      - Notch
+      - Markus Persson
+    -
+      QuestionCommands: 'broadcast &9Minecraft: What type of game is Minecraft?'
+      Answers: sandbox
+  Hard:
+    -
+      QuestionCommands: 
+      - 'broadcast &9Movies: Name the dog from the Wizard of Oz'
+      PostAnswerCommands:
+      - 'broadcast &6[player] &eanswered correctly with (&7[answer]&e) answer'
+      Answers:
+      - toto
+    -
+      QuestionCommands: 
+      - 'broadcast &9Trivia: What is the first organisms to grow back after fire?'
+      PostAnswerCommands:
+      - 'broadcast &6[player] &eanswered correctly with (&7[answer]&e) answer'
+      Answers:
+      - moss
