@@ -1,0 +1,172 @@
+# Task file
+# Just enter Task number, Task itself and target materials. You can have as many materials as you want.
+# Providing multiple materials in the list will require from player to eat defined amount of each material type
+# Listing multiple materials in one row will define that player needs to consume specified amount of material from provided list of types.
+#   For example: APPLE,BEEF,CARROT-4
+#   This will require to consume 4 materials from the list, this can be 3 Beef and 1 Carrot or 4 Apples or any other variation
+# Optional TaskCommands section can be used to define specific commands for specific task
+
+#Prefix used to be added to every task description to avoid repeating entries
+Prefix: '&7Be the first to eat &2'
+Data:
+  Default:
+    '1':
+      Task: '&2Apple'
+      Materials:
+      - 'APPLE'
+    '2':
+      Task: '2x &2Baked potato'
+      Materials:
+      - 'BAKED_POTATO-2'
+    '3':
+      Task: '&2Beef'
+      Materials:
+      - 'BEEF'
+    '4':
+      Task: '&2Beetroot'
+      Materials:
+      - 'BEETROOT'
+    '5':
+      Task: '&2Beetroot soup'
+      Materials:
+      - 'BEETROOT_SOUP'
+    '6':
+      Task: '3x &2Bread'
+      Materials:
+      - 'BREAD-3'
+    '7':
+      Task: '&2Carrot'
+      Materials:
+      - 'CARROT'
+    '8':
+      Task: '3x &2Chicken'
+      Materials:
+      - 'CHICKEN-3'
+    '9':
+      Task: '3x &2Chorus fruit'
+      Materials:
+      - 'CHORUS_FRUIT-3'
+    '10':
+      Task: '4x &2Cod'
+      Materials:
+      - 'COD-4'
+    '11':
+      Task: '4x &2Cooked beef'
+      Materials:
+      - 'COOKED_BEEF-4'
+    '12':
+      Task: '4x &2Cooked chicken'
+      Materials:
+      - 'COOKED_CHICKEN-4'
+    '13':
+      Task: '4x &2Cooked cod'
+      Materials:
+      - 'COOKED_COD-4'
+    '14':
+      Task: '3x &2Cooked mutton'
+      Materials:
+      - 'COOKED_MUTTON-3'
+    '15':
+      Task: '&2Cooked porkchop'
+      Materials:
+      - 'COOKED_PORKCHOP'
+    '16':
+      Task: '4x &2Cooked rabbit'
+      Materials:
+      - 'COOKED_RABBIT-4'
+    '17':
+      Task: '3x &2Cooked salmon'
+      Materials:
+      - 'COOKED_SALMON-3'
+    '18':
+      Task: '2x &2Cookie'
+      Materials:
+      - 'COOKIE-2'
+    '19':
+      Task: '&2Dried kelp'
+      Materials:
+      - 'DRIED_KELP'
+    '20':
+      Task: '2x &2Enchanted golden apple'
+      Materials:
+      - 'ENCHANTED_GOLDEN_APPLE-2'
+    '21':
+      Task: '3x &2Golden apple'
+      Materials:
+      - 'GOLDEN_APPLE-3'
+    '22':
+      Task: '2x &2Golden carrot'
+      Materials:
+      - 'GOLDEN_CARROT-2'
+    '23':
+      Task: '2x &2Melon slice'
+      Materials:
+      - 'MELON_SLICE-2'
+    '24':
+      Task: '3x &2Mushroom stew'
+      Materials:
+      - 'MUSHROOM_STEW-3'
+    '25':
+      Task: '3x &2Mutton'
+      Materials:
+      - 'MUTTON-3'
+    '26':
+      Task: '3x &2Poisonous potato'
+      Materials:
+      - 'POISONOUS_POTATO-3'
+    '27':
+      Task: '3x &2Porkchop'
+      Materials:
+      - 'PORKCHOP-3'
+    '28':
+      Task: '&2Potato'
+      Materials:
+      - 'POTATO'
+    '29':
+      Task: '&2Pufferfish'
+      Materials:
+      - 'PUFFERFISH'
+    '30':
+      Task: '3x &2Pumpkin pie'
+      Materials:
+      - 'PUMPKIN_PIE-3'
+    '31':
+      Task: '2x &2Rabbit'
+      Materials:
+      - 'RABBIT-2'
+    '32':
+      Task: '&2Rabbit stew'
+      Materials:
+      - 'RABBIT_STEW'
+    '33':
+      Task: '3x &2Rotten flesh'
+      Materials:
+      - 'ROTTEN_FLESH-3'
+    '34':
+      Task: '2x &2Salmon'
+      Materials:
+      - 'SALMON-2'
+    '35':
+      Task: '2x &2Spider eye'
+      Materials:
+      - 'SPIDER_EYE-2'
+    '36':
+      Task: '&2Tropical fish'
+      Materials:
+      - 'TROPICAL_FISH'
+    '37':
+      Task: '4x &2Suspicious stew'
+      Materials:
+      - 'SUSPICIOUS_STEW-4'
+    '38':
+      Task: '4x &2Sweet berries'
+      Materials:
+      - 'SWEET_BERRIES-4'
+    '39':
+      Task: '3x &2Honey bottle'
+      Materials:
+      - 'HONEY_BOTTLE-3'
+    '40':
+      Task: '2x &2Glow berries'
+      Materials:
+      - 'GLOW_BERRIES-2'

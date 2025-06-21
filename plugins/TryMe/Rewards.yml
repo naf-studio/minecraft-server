@@ -1,0 +1,143 @@
+# Reward file
+Example:
+  # Reward category name
+  Simplerewards:
+  # This is example, real rewards below
+    RewardName:
+      # Chance to pick this question in percentage
+      Chance: 20
+      # Time in seconds. Answer time should be less than this to get this reward. Can be used to promote fast answers with better rewards 
+      MaxAnswerTime: 5
+      # How much money to give player for correct answer
+      Money: 20
+      Items:
+      # Gives item by its Material (Use 1.13+ material names) and quantity, you can give separate enchantments, lore or name (optional). All color codes are supported. 
+      # You can give more items just by adding next number
+        '1':
+          Material: Diamond_sword
+          Qty: 1
+          Name: '&2Stone Sword'
+          Lore: 
+          - '&bSpecial Prize'
+          - '&bfor [player]'
+          Enchants:
+          - DAMAGE_ALL=1
+          - FIRE_ASPECT=1      
+        '2':
+          Material: Black_Wool
+          Qty: 2
+      Commands:
+      # Executes command of your choice, while you can use variable [player] to get the winning players name
+      - 'give [player] tnt 1'
+      - 'give [player] apple 1'
+      PrivateMessages:
+      # Message will be shown ONLY to the winner. Full color code support. Multiple lines support
+      - '&aYou just got some TnT'
+      - '&cSorry, you didn''t win anything this time'
+      Broadcasts:
+      # Message to all server, if not defined, will broadcast default message. Full color code support Multiple lines support
+      - '&3[player] &ajust got some TnT!'
+      - '&3[player] &aGot tasty apple!'
+   
+Rewards:
+  easy:
+    First:
+      Chance: 10
+      MaxAnswerTime: 5
+      Money: 200
+    FirstSlow:
+      Chance: 10
+      MaxAnswerTime: 30
+      Money: 100
+    Second:
+      Chance: 20
+      Money: 20
+      Items:
+        '1':
+          Material: Diamond_sword
+          Qty: 1
+          Lore: 
+          - '&bSpecial Prize'
+          - '&bfor [player]'
+    Third:
+      Chance: 30
+      Money: 10
+      Items:
+        '1':
+          Material: Golden_sword
+          Qty: 1
+          Name: '&2Stone Sword'
+          Lore: 
+          - '&bSpecial Prize'
+          - '&bfor [player]'
+          Enchants:
+          - DAMAGE_ALL=1
+          - FIRE_ASPECT=1
+  medium:
+    Fourth:
+      Chance: 10
+      Money: 10
+      Commands:
+      - 'give [player] tnt 1'
+      PrivateMessages:
+      - '&aYou just got some TnT'
+      Broadcasts:
+      - '&3[player] &ajust got some TnT!'
+    Fifth:
+      Chance: 10
+      Commands:
+      - 'give [player] apple 1'
+      PrivateMessages:
+      - '&aYou got a tasty apple'
+    Sixth:
+      Chance: 2
+      PrivateMessages:
+      - '&cSorry, you didn''t win anything this time'
+  hard:
+    first:
+      Chance: 10
+      Money: 10
+      Commands:
+      - 'give [player] tnt 3'
+      PrivateMessages:
+      - '&aYou just got some TnT'
+      Broadcasts:
+      - '&3[player] &ajust got some TnT!'
+      
+# This section is for scheduled rewards
+# Made separetly just to avoid mixing with regualr ones
+# Works in same way as regualr rewards, just one difference that there is no Chance variable
+DailyRewards:
+  Daily:
+    First:
+      Money: 1000
+      PrivateMessages:
+      - '&3[player] &2You are best quiz game player from last 24 hours!'
+      - '&3[player] &2For this you have got 1000 money!'
+    Second:
+      Money: 800
+      PrivateMessages:
+      - '&3[player] &2You are second best quiz game player from last 24 hours!'
+      - '&3[player] &2For this you have got 800 money!'
+    Third:
+      Money: 600
+      PrivateMessages:
+      - '&3[player] &2You are third best quiz game player from last 24 hours!'
+      - '&3[player] &2For this you have got 600 money!'
+  Weekly:
+    First:
+      Money: 600
+      PrivateMessages:
+      - '&3[player] &2You are one of best quiz game players from last 7 days!'
+      - '&3[player] &2For this you have got 600 money!'
+    Second:
+      Money: 800
+      PrivateMessages:
+      - '&3[player] &2You are one of best quiz game players from last 7 days!'
+      - '&3[player] &2For this you have got 800 money!'
+  Monthly:
+    Second:
+      Money: 800
+      PrivateMessages:
+      - '&3[player] &2You are one of best quiz game players from last month!'
+      - '&3[player] &2For this you have got 800 money!'

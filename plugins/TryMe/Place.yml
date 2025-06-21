@@ -1,0 +1,3732 @@
+# Task file
+# Just enter Task number, Task itself and target materials. You can have as many materials as you want.
+# Providing multiple materials in the list will require from player to place defined amount of each material type
+# Listing multiple materials in one row will define that player needs to place specified amount of material from provided list of types.
+#   For example: ACACIA_PLANKS,ACACIA_SLAB,ACACIA_LOG-4
+#   This will require to place 4 materials from the list, this can be 3 slabs and 1 log or 4 planks or any other variation
+# Optional TaskCommands section can be used to define specific commands for specific task
+
+#Prefix used to be added to every task description to avoid repeating entries
+Prefix: '&7Block &bplace &7race -> &6'
+Data:
+  Default:
+    '1':
+      Task: '4x &2Acacia button'
+      Materials:
+      - 'ACACIA_BUTTON-4'
+    '2':
+      Task: '3x &2Acacia door'
+      Materials:
+      - 'ACACIA_DOOR-3'
+    '3':
+      Task: '&2Acacia fence'
+      Materials:
+      - 'ACACIA_FENCE'
+    '4':
+      Task: '4x &2Acacia fence gate'
+      Materials:
+      - 'ACACIA_FENCE_GATE-4'
+    '5':
+      Task: '&2Acacia leaves'
+      Materials:
+      - 'ACACIA_LEAVES'
+    '6':
+      Task: '&2Acacia log'
+      Materials:
+      - 'ACACIA_LOG'
+    '7':
+      Task: '4x &2Acacia planks'
+      Materials:
+      - 'ACACIA_PLANKS-4'
+    '8':
+      Task: '3x &2Acacia pressure plate'
+      Materials:
+      - 'ACACIA_PRESSURE_PLATE-3'
+    '9':
+      Task: '2x &2Acacia sapling'
+      Materials:
+      - 'ACACIA_SAPLING-2'
+    '10':
+      Task: '3x &2Acacia slab'
+      Materials:
+      - 'ACACIA_SLAB-3'
+    '11':
+      Task: '2x &2Acacia stairs'
+      Materials:
+      - 'ACACIA_STAIRS-2'
+    '12':
+      Task: '2x &2Acacia trapdoor'
+      Materials:
+      - 'ACACIA_TRAPDOOR-2'
+    '13':
+      Task: '&2Acacia wood'
+      Materials:
+      - 'ACACIA_WOOD'
+    '14':
+      Task: '&2Activator rail'
+      Materials:
+      - 'ACTIVATOR_RAIL'
+    '15':
+      Task: '3x &2Allium'
+      Materials:
+      - 'ALLIUM-3'
+    '16':
+      Task: '&2Andesite'
+      Materials:
+      - 'ANDESITE'
+    '17':
+      Task: '2x &2Anvil'
+      Materials:
+      - 'ANVIL-2'
+    '18':
+      Task: '4x &2Attached melon stem'
+      Materials:
+      - 'ATTACHED_MELON_STEM-4'
+    '19':
+      Task: '2x &2Attached pumpkin stem'
+      Materials:
+      - 'ATTACHED_PUMPKIN_STEM-2'
+    '20':
+      Task: '&2Azure bluet'
+      Materials:
+      - 'AZURE_BLUET'
+    '21':
+      Task: '2x &2Barrier'
+      Materials:
+      - 'BARRIER-2'
+    '22':
+      Task: '2x &2Beacon'
+      Materials:
+      - 'BEACON-2'
+    '23':
+      Task: '4x &2Bedrock'
+      Materials:
+      - 'BEDROCK-4'
+    '24':
+      Task: '2x &2Beetroots'
+      Materials:
+      - 'BEETROOTS-2'
+    '25':
+      Task: '3x &2Birch button'
+      Materials:
+      - 'BIRCH_BUTTON-3'
+    '26':
+      Task: '4x &2Birch door'
+      Materials:
+      - 'BIRCH_DOOR-4'
+    '27':
+      Task: '2x &2Birch fence'
+      Materials:
+      - 'BIRCH_FENCE-2'
+    '28':
+      Task: '&2Birch fence gate'
+      Materials:
+      - 'BIRCH_FENCE_GATE'
+    '29':
+      Task: '&2Birch leaves'
+      Materials:
+      - 'BIRCH_LEAVES'
+    '30':
+      Task: '4x &2Birch log'
+      Materials:
+      - 'BIRCH_LOG-4'
+    '31':
+      Task: '4x &2Birch planks'
+      Materials:
+      - 'BIRCH_PLANKS-4'
+    '32':
+      Task: '&2Birch pressure plate'
+      Materials:
+      - 'BIRCH_PRESSURE_PLATE'
+    '33':
+      Task: '3x &2Birch sapling'
+      Materials:
+      - 'BIRCH_SAPLING-3'
+    '34':
+      Task: '3x &2Birch slab'
+      Materials:
+      - 'BIRCH_SLAB-3'
+    '35':
+      Task: '2x &2Birch stairs'
+      Materials:
+      - 'BIRCH_STAIRS-2'
+    '36':
+      Task: '&2Birch trapdoor'
+      Materials:
+      - 'BIRCH_TRAPDOOR'
+    '37':
+      Task: '2x &2Birch wood'
+      Materials:
+      - 'BIRCH_WOOD-2'
+    '38':
+      Task: '4x &2Black banner'
+      Materials:
+      - 'BLACK_BANNER-4'
+    '39':
+      Task: '&2Black bed'
+      Materials:
+      - 'BLACK_BED'
+    '40':
+      Task: '&2Black carpet'
+      Materials:
+      - 'BLACK_CARPET'
+    '41':
+      Task: '2x &2Black concrete'
+      Materials:
+      - 'BLACK_CONCRETE-2'
+    '42':
+      Task: '2x &2Black concrete powder'
+      Materials:
+      - 'BLACK_CONCRETE_POWDER-2'
+    '43':
+      Task: '3x &2Black glazed terracotta'
+      Materials:
+      - 'BLACK_GLAZED_TERRACOTTA-3'
+    '44':
+      Task: '&2Black shulker box'
+      Materials:
+      - 'BLACK_SHULKER_BOX'
+    '45':
+      Task: '4x &2Black stained glass'
+      Materials:
+      - 'BLACK_STAINED_GLASS-4'
+    '46':
+      Task: '3x &2Black stained glass pane'
+      Materials:
+      - 'BLACK_STAINED_GLASS_PANE-3'
+    '47':
+      Task: '3x &2Black terracotta'
+      Materials:
+      - 'BLACK_TERRACOTTA-3'
+    '48':
+      Task: '4x &2Black wall banner'
+      Materials:
+      - 'BLACK_WALL_BANNER-4'
+    '49':
+      Task: '3x &2Black wool'
+      Materials:
+      - 'BLACK_WOOL-3'
+    '50':
+      Task: '&2Blue banner'
+      Materials:
+      - 'BLUE_BANNER'
+    '51':
+      Task: '4x &2Blue bed'
+      Materials:
+      - 'BLUE_BED-4'
+    '52':
+      Task: '&2Blue carpet'
+      Materials:
+      - 'BLUE_CARPET'
+    '53':
+      Task: '2x &2Blue concrete'
+      Materials:
+      - 'BLUE_CONCRETE-2'
+    '54':
+      Task: '&2Blue concrete powder'
+      Materials:
+      - 'BLUE_CONCRETE_POWDER'
+    '55':
+      Task: '2x &2Blue glazed terracotta'
+      Materials:
+      - 'BLUE_GLAZED_TERRACOTTA-2'
+    '56':
+      Task: '3x &2Blue ice'
+      Materials:
+      - 'BLUE_ICE-3'
+    '57':
+      Task: '&2Blue orchid'
+      Materials:
+      - 'BLUE_ORCHID'
+    '58':
+      Task: '2x &2Blue shulker box'
+      Materials:
+      - 'BLUE_SHULKER_BOX-2'
+    '59':
+      Task: '&2Blue stained glass'
+      Materials:
+      - 'BLUE_STAINED_GLASS'
+    '60':
+      Task: '4x &2Blue stained glass pane'
+      Materials:
+      - 'BLUE_STAINED_GLASS_PANE-4'
+    '61':
+      Task: '3x &2Blue terracotta'
+      Materials:
+      - 'BLUE_TERRACOTTA-3'
+    '62':
+      Task: '3x &2Blue wall banner'
+      Materials:
+      - 'BLUE_WALL_BANNER-3'
+    '63':
+      Task: '2x &2Blue wool'
+      Materials:
+      - 'BLUE_WOOL-2'
+    '64':
+      Task: '2x &2Bone block'
+      Materials:
+      - 'BONE_BLOCK-2'
+    '65':
+      Task: '4x &2Bookshelf'
+      Materials:
+      - 'BOOKSHELF-4'
+    '66':
+      Task: '4x &2Brain coral'
+      Materials:
+      - 'BRAIN_CORAL-4'
+    '67':
+      Task: '4x &2Brain coral block'
+      Materials:
+      - 'BRAIN_CORAL_BLOCK-4'
+    '68':
+      Task: '2x &2Brain coral fan'
+      Materials:
+      - 'BRAIN_CORAL_FAN-2'
+    '69':
+      Task: '3x &2Brain coral wall fan'
+      Materials:
+      - 'BRAIN_CORAL_WALL_FAN-3'
+    '70':
+      Task: '&2Brewing stand'
+      Materials:
+      - 'BREWING_STAND'
+    '71':
+      Task: '4x &2Bricks'
+      Materials:
+      - 'BRICKS-4'
+    '72':
+      Task: '2x &2Brick slab'
+      Materials:
+      - 'BRICK_SLAB-2'
+    '73':
+      Task: '2x &2Brick stairs'
+      Materials:
+      - 'BRICK_STAIRS-2'
+    '74':
+      Task: '4x &2Brown banner'
+      Materials:
+      - 'BROWN_BANNER-4'
+    '75':
+      Task: '2x &2Brown bed'
+      Materials:
+      - 'BROWN_BED-2'
+    '76':
+      Task: '3x &2Brown carpet'
+      Materials:
+      - 'BROWN_CARPET-3'
+    '77':
+      Task: '4x &2Brown concrete'
+      Materials:
+      - 'BROWN_CONCRETE-4'
+    '78':
+      Task: '&2Brown concrete powder'
+      Materials:
+      - 'BROWN_CONCRETE_POWDER'
+    '79':
+      Task: '2x &2Brown glazed terracotta'
+      Materials:
+      - 'BROWN_GLAZED_TERRACOTTA-2'
+    '80':
+      Task: '2x &2Brown mushroom'
+      Materials:
+      - 'BROWN_MUSHROOM-2'
+    '81':
+      Task: '2x &2Brown mushroom block'
+      Materials:
+      - 'BROWN_MUSHROOM_BLOCK-2'
+    '82':
+      Task: '3x &2Brown shulker box'
+      Materials:
+      - 'BROWN_SHULKER_BOX-3'
+    '83':
+      Task: '2x &2Brown stained glass'
+      Materials:
+      - 'BROWN_STAINED_GLASS-2'
+    '84':
+      Task: '2x &2Brown stained glass pane'
+      Materials:
+      - 'BROWN_STAINED_GLASS_PANE-2'
+    '85':
+      Task: '2x &2Brown terracotta'
+      Materials:
+      - 'BROWN_TERRACOTTA-2'
+    '86':
+      Task: '2x &2Brown wall banner'
+      Materials:
+      - 'BROWN_WALL_BANNER-2'
+    '87':
+      Task: '3x &2Brown wool'
+      Materials:
+      - 'BROWN_WOOL-3'
+    '88':
+      Task: '2x &2Bubble column'
+      Materials:
+      - 'BUBBLE_COLUMN-2'
+    '89':
+      Task: '4x &2Bubble coral'
+      Materials:
+      - 'BUBBLE_CORAL-4'
+    '90':
+      Task: '2x &2Bubble coral block'
+      Materials:
+      - 'BUBBLE_CORAL_BLOCK-2'
+    '91':
+      Task: '3x &2Bubble coral fan'
+      Materials:
+      - 'BUBBLE_CORAL_FAN-3'
+    '92':
+      Task: '3x &2Bubble coral wall fan'
+      Materials:
+      - 'BUBBLE_CORAL_WALL_FAN-3'
+    '93':
+      Task: '2x &2Cactus'
+      Materials:
+      - 'CACTUS-2'
+    '94':
+      Task: '2x &2Cake'
+      Materials:
+      - 'CAKE-2'
+    '95':
+      Task: '4x &2Carrots'
+      Materials:
+      - 'CARROTS-4'
+    '96':
+      Task: '4x &2Carved pumpkin'
+      Materials:
+      - 'CARVED_PUMPKIN-4'
+    '97':
+      Task: '3x &2Cauldron'
+      Materials:
+      - 'CAULDRON-3'
+    '98':
+      Task: '&2Chain command block'
+      Materials:
+      - 'CHAIN_COMMAND_BLOCK'
+    '99':
+      Task: '&2Chest'
+      Materials:
+      - 'CHEST'
+    '100':
+      Task: '&2Chipped anvil'
+      Materials:
+      - 'CHIPPED_ANVIL'
+    '101':
+      Task: '3x &2Chiseled quartz block'
+      Materials:
+      - 'CHISELED_QUARTZ_BLOCK-3'
+    '102':
+      Task: '4x &2Chiseled red sandstone'
+      Materials:
+      - 'CHISELED_RED_SANDSTONE-4'
+    '103':
+      Task: '4x &2Chiseled sandstone'
+      Materials:
+      - 'CHISELED_SANDSTONE-4'
+    '104':
+      Task: '2x &2Chiseled stone bricks'
+      Materials:
+      - 'CHISELED_STONE_BRICKS-2'
+    '105':
+      Task: '&2Chorus flower'
+      Materials:
+      - 'CHORUS_FLOWER'
+    '106':
+      Task: '&2Chorus plant'
+      Materials:
+      - 'CHORUS_PLANT'
+    '107':
+      Task: '&2Clay'
+      Materials:
+      - 'CLAY'
+    '108':
+      Task: '&2Coal block'
+      Materials:
+      - 'COAL_BLOCK'
+    '109':
+      Task: '4x &2Coal ore'
+      Materials:
+      - 'COAL_ORE-4'
+    '110':
+      Task: '2x &2Coarse dirt'
+      Materials:
+      - 'COARSE_DIRT-2'
+    '111':
+      Task: '&2Cobblestone'
+      Materials:
+      - 'COBBLESTONE'
+    '112':
+      Task: '2x &2Cobblestone slab'
+      Materials:
+      - 'COBBLESTONE_SLAB-2'
+    '113':
+      Task: '3x &2Cobblestone stairs'
+      Materials:
+      - 'COBBLESTONE_STAIRS-3'
+    '114':
+      Task: '2x &2Cobblestone wall'
+      Materials:
+      - 'COBBLESTONE_WALL-2'
+    '115':
+      Task: '2x &2Cobweb'
+      Materials:
+      - 'COBWEB-2'
+    '116':
+      Task: '4x &2Cocoa'
+      Materials:
+      - 'COCOA-4'
+    '117':
+      Task: '4x &2Command block'
+      Materials:
+      - 'COMMAND_BLOCK-4'
+    '118':
+      Task: '4x &2Comparator'
+      Materials:
+      - 'COMPARATOR-4'
+    '119':
+      Task: '4x &2Conduit'
+      Materials:
+      - 'CONDUIT-4'
+    '120':
+      Task: '3x &2Cracked stone bricks'
+      Materials:
+      - 'CRACKED_STONE_BRICKS-3'
+    '121':
+      Task: '3x &2Crafting table'
+      Materials:
+      - 'CRAFTING_TABLE-3'
+    '122':
+      Task: '&2Creeper head'
+      Materials:
+      - 'CREEPER_HEAD'
+    '123':
+      Task: '4x &2Creeper wall head'
+      Materials:
+      - 'CREEPER_WALL_HEAD-4'
+    '124':
+      Task: '&2Cut red sandstone'
+      Materials:
+      - 'CUT_RED_SANDSTONE'
+    '125':
+      Task: '3x &2Cut sandstone'
+      Materials:
+      - 'CUT_SANDSTONE-3'
+    '126':
+      Task: '4x &2Cyan banner'
+      Materials:
+      - 'CYAN_BANNER-4'
+    '127':
+      Task: '&2Cyan bed'
+      Materials:
+      - 'CYAN_BED'
+    '128':
+      Task: '3x &2Cyan carpet'
+      Materials:
+      - 'CYAN_CARPET-3'
+    '129':
+      Task: '4x &2Cyan concrete'
+      Materials:
+      - 'CYAN_CONCRETE-4'
+    '130':
+      Task: '3x &2Cyan concrete powder'
+      Materials:
+      - 'CYAN_CONCRETE_POWDER-3'
+    '131':
+      Task: '4x &2Cyan glazed terracotta'
+      Materials:
+      - 'CYAN_GLAZED_TERRACOTTA-4'
+    '132':
+      Task: '&2Cyan shulker box'
+      Materials:
+      - 'CYAN_SHULKER_BOX'
+    '133':
+      Task: '2x &2Cyan stained glass'
+      Materials:
+      - 'CYAN_STAINED_GLASS-2'
+    '134':
+      Task: '4x &2Cyan stained glass pane'
+      Materials:
+      - 'CYAN_STAINED_GLASS_PANE-4'
+    '135':
+      Task: '&2Cyan terracotta'
+      Materials:
+      - 'CYAN_TERRACOTTA'
+    '136':
+      Task: '4x &2Cyan wall banner'
+      Materials:
+      - 'CYAN_WALL_BANNER-4'
+    '137':
+      Task: '&2Cyan wool'
+      Materials:
+      - 'CYAN_WOOL'
+    '138':
+      Task: '&2Damaged anvil'
+      Materials:
+      - 'DAMAGED_ANVIL'
+    '139':
+      Task: '2x &2Dandelion'
+      Materials:
+      - 'DANDELION-2'
+    '140':
+      Task: '2x &2Dark oak button'
+      Materials:
+      - 'DARK_OAK_BUTTON-2'
+    '141':
+      Task: '2x &2Dark oak door'
+      Materials:
+      - 'DARK_OAK_DOOR-2'
+    '142':
+      Task: '4x &2Dark oak fence'
+      Materials:
+      - 'DARK_OAK_FENCE-4'
+    '143':
+      Task: '3x &2Dark oak fence gate'
+      Materials:
+      - 'DARK_OAK_FENCE_GATE-3'
+    '144':
+      Task: '&2Dark oak leaves'
+      Materials:
+      - 'DARK_OAK_LEAVES'
+    '145':
+      Task: '2x &2Dark oak log'
+      Materials:
+      - 'DARK_OAK_LOG-2'
+    '146':
+      Task: '2x &2Dark oak planks'
+      Materials:
+      - 'DARK_OAK_PLANKS-2'
+    '147':
+      Task: '&2Dark oak pressure plate'
+      Materials:
+      - 'DARK_OAK_PRESSURE_PLATE'
+    '148':
+      Task: '4x &2Dark oak sapling'
+      Materials:
+      - 'DARK_OAK_SAPLING-4'
+    '149':
+      Task: '&2Dark oak slab'
+      Materials:
+      - 'DARK_OAK_SLAB'
+    '150':
+      Task: '&2Dark oak stairs'
+      Materials:
+      - 'DARK_OAK_STAIRS'
+    '151':
+      Task: '4x &2Dark oak trapdoor'
+      Materials:
+      - 'DARK_OAK_TRAPDOOR-4'
+    '152':
+      Task: '3x &2Dark oak wood'
+      Materials:
+      - 'DARK_OAK_WOOD-3'
+    '153':
+      Task: '2x &2Dark prismarine'
+      Materials:
+      - 'DARK_PRISMARINE-2'
+    '154':
+      Task: '3x &2Dark prismarine slab'
+      Materials:
+      - 'DARK_PRISMARINE_SLAB-3'
+    '155':
+      Task: '3x &2Dark prismarine stairs'
+      Materials:
+      - 'DARK_PRISMARINE_STAIRS-3'
+    '156':
+      Task: '3x &2Daylight detector'
+      Materials:
+      - 'DAYLIGHT_DETECTOR-3'
+    '157':
+      Task: '4x &2Dead brain coral'
+      Materials:
+      - 'DEAD_BRAIN_CORAL-4'
+    '158':
+      Task: '2x &2Dead brain coral block'
+      Materials:
+      - 'DEAD_BRAIN_CORAL_BLOCK-2'
+    '159':
+      Task: '2x &2Dead brain coral fan'
+      Materials:
+      - 'DEAD_BRAIN_CORAL_FAN-2'
+    '160':
+      Task: '&2Dead brain coral wall fan'
+      Materials:
+      - 'DEAD_BRAIN_CORAL_WALL_FAN'
+    '161':
+      Task: '3x &2Dead bubble coral'
+      Materials:
+      - 'DEAD_BUBBLE_CORAL-3'
+    '162':
+      Task: '2x &2Dead bubble coral block'
+      Materials:
+      - 'DEAD_BUBBLE_CORAL_BLOCK-2'
+    '163':
+      Task: '3x &2Dead bubble coral fan'
+      Materials:
+      - 'DEAD_BUBBLE_CORAL_FAN-3'
+    '164':
+      Task: '3x &2Dead bubble coral wall fan'
+      Materials:
+      - 'DEAD_BUBBLE_CORAL_WALL_FAN-3'
+    '165':
+      Task: '4x &2Dead bush'
+      Materials:
+      - 'DEAD_BUSH-4'
+    '166':
+      Task: '3x &2Dead fire coral'
+      Materials:
+      - 'DEAD_FIRE_CORAL-3'
+    '167':
+      Task: '4x &2Dead fire coral block'
+      Materials:
+      - 'DEAD_FIRE_CORAL_BLOCK-4'
+    '168':
+      Task: '3x &2Dead fire coral fan'
+      Materials:
+      - 'DEAD_FIRE_CORAL_FAN-3'
+    '169':
+      Task: '&2Dead fire coral wall fan'
+      Materials:
+      - 'DEAD_FIRE_CORAL_WALL_FAN'
+    '170':
+      Task: '3x &2Dead horn coral'
+      Materials:
+      - 'DEAD_HORN_CORAL-3'
+    '171':
+      Task: '&2Dead horn coral block'
+      Materials:
+      - 'DEAD_HORN_CORAL_BLOCK'
+    '172':
+      Task: '2x &2Dead horn coral fan'
+      Materials:
+      - 'DEAD_HORN_CORAL_FAN-2'
+    '173':
+      Task: '&2Dead horn coral wall fan'
+      Materials:
+      - 'DEAD_HORN_CORAL_WALL_FAN'
+    '174':
+      Task: '&2Dead tube coral'
+      Materials:
+      - 'DEAD_TUBE_CORAL'
+    '175':
+      Task: '&2Dead tube coral block'
+      Materials:
+      - 'DEAD_TUBE_CORAL_BLOCK'
+    '176':
+      Task: '&2Dead tube coral fan'
+      Materials:
+      - 'DEAD_TUBE_CORAL_FAN'
+    '177':
+      Task: '3x &2Dead tube coral wall fan'
+      Materials:
+      - 'DEAD_TUBE_CORAL_WALL_FAN-3'
+    '178':
+      Task: '2x &2Detector rail'
+      Materials:
+      - 'DETECTOR_RAIL-2'
+    '179':
+      Task: '2x &2Diamond block'
+      Materials:
+      - 'DIAMOND_BLOCK-2'
+    '180':
+      Task: '&2Diamond ore'
+      Materials:
+      - 'DIAMOND_ORE'
+    '181':
+      Task: '2x &2Diorite'
+      Materials:
+      - 'DIORITE-2'
+    '182':
+      Task: '3x &2Dirt'
+      Materials:
+      - 'DIRT-3'
+    '183':
+      Task: '&2Dispenser'
+      Materials:
+      - 'DISPENSER'
+    '184':
+      Task: '&2Dragon egg'
+      Materials:
+      - 'DRAGON_EGG'
+    '185':
+      Task: '&2Dragon head'
+      Materials:
+      - 'DRAGON_HEAD'
+    '186':
+      Task: '4x &2Dragon wall head'
+      Materials:
+      - 'DRAGON_WALL_HEAD-4'
+    '187':
+      Task: '&2Dried kelp block'
+      Materials:
+      - 'DRIED_KELP_BLOCK'
+    '188':
+      Task: '4x &2Dropper'
+      Materials:
+      - 'DROPPER-4'
+    '189':
+      Task: '3x &2Emerald block'
+      Materials:
+      - 'EMERALD_BLOCK-3'
+    '190':
+      Task: '4x &2Emerald ore'
+      Materials:
+      - 'EMERALD_ORE-4'
+    '191':
+      Task: '3x &2Enchanting table'
+      Materials:
+      - 'ENCHANTING_TABLE-3'
+    '192':
+      Task: '4x &2Ender chest'
+      Materials:
+      - 'ENDER_CHEST-4'
+    '193':
+      Task: '4x &2End gateway'
+      Materials:
+      - 'END_GATEWAY-4'
+    '194':
+      Task: '2x &2End portal'
+      Materials:
+      - 'END_PORTAL-2'
+    '195':
+      Task: '2x &2End portal frame'
+      Materials:
+      - 'END_PORTAL_FRAME-2'
+    '196':
+      Task: '2x &2End rod'
+      Materials:
+      - 'END_ROD-2'
+    '197':
+      Task: '&2End stone'
+      Materials:
+      - 'END_STONE'
+    '198':
+      Task: '3x &2End stone bricks'
+      Materials:
+      - 'END_STONE_BRICKS-3'
+    '199':
+      Task: '&2Farmland'
+      Materials:
+      - 'FARMLAND'
+    '200':
+      Task: '2x &2Fern'
+      Materials:
+      - 'FERN-2'
+    '201':
+      Task: '&2Fire'
+      Materials:
+      - 'FIRE'
+    '202':
+      Task: '4x &2Fire coral'
+      Materials:
+      - 'FIRE_CORAL-4'
+    '203':
+      Task: '3x &2Fire coral block'
+      Materials:
+      - 'FIRE_CORAL_BLOCK-3'
+    '204':
+      Task: '&2Fire coral fan'
+      Materials:
+      - 'FIRE_CORAL_FAN'
+    '205':
+      Task: '&2Fire coral wall fan'
+      Materials:
+      - 'FIRE_CORAL_WALL_FAN'
+    '206':
+      Task: '2x &2Flower pot'
+      Materials:
+      - 'FLOWER_POT-2'
+    '207':
+      Task: '2x &2Frosted ice'
+      Materials:
+      - 'FROSTED_ICE-2'
+    '208':
+      Task: '&2Furnace'
+      Materials:
+      - 'FURNACE'
+    '209':
+      Task: '2x &2Glass'
+      Materials:
+      - 'GLASS-2'
+    '210':
+      Task: '3x &2Glass pane'
+      Materials:
+      - 'GLASS_PANE-3'
+    '211':
+      Task: '2x &2Glowstone'
+      Materials:
+      - 'GLOWSTONE-2'
+    '212':
+      Task: '4x &2Gold block'
+      Materials:
+      - 'GOLD_BLOCK-4'
+    '213':
+      Task: '&2Gold ore'
+      Materials:
+      - 'GOLD_ORE'
+    '214':
+      Task: '3x &2Granite'
+      Materials:
+      - 'GRANITE-3'
+    '215':
+      Task: '3x &2Grass'
+      Materials:
+      - 'GRASS-3'
+    '216':
+      Task: '2x &2Grass block'
+      Materials:
+      - 'GRASS_BLOCK-2'
+    '217':
+      Task: '4x &2Gravel'
+      Materials:
+      - 'GRAVEL-4'
+    '218':
+      Task: '4x &2Gray banner'
+      Materials:
+      - 'GRAY_BANNER-4'
+    '219':
+      Task: '&2Gray bed'
+      Materials:
+      - 'GRAY_BED'
+    '220':
+      Task: '4x &2Gray carpet'
+      Materials:
+      - 'GRAY_CARPET-4'
+    '221':
+      Task: '2x &2Gray concrete'
+      Materials:
+      - 'GRAY_CONCRETE-2'
+    '222':
+      Task: '2x &2Gray concrete powder'
+      Materials:
+      - 'GRAY_CONCRETE_POWDER-2'
+    '223':
+      Task: '3x &2Gray glazed terracotta'
+      Materials:
+      - 'GRAY_GLAZED_TERRACOTTA-3'
+    '224':
+      Task: '4x &2Gray shulker box'
+      Materials:
+      - 'GRAY_SHULKER_BOX-4'
+    '225':
+      Task: '3x &2Gray stained glass'
+      Materials:
+      - 'GRAY_STAINED_GLASS-3'
+    '226':
+      Task: '3x &2Gray stained glass pane'
+      Materials:
+      - 'GRAY_STAINED_GLASS_PANE-3'
+    '227':
+      Task: '3x &2Gray terracotta'
+      Materials:
+      - 'GRAY_TERRACOTTA-3'
+    '228':
+      Task: '2x &2Gray wall banner'
+      Materials:
+      - 'GRAY_WALL_BANNER-2'
+    '229':
+      Task: '&2Gray wool'
+      Materials:
+      - 'GRAY_WOOL'
+    '230':
+      Task: '&2Green banner'
+      Materials:
+      - 'GREEN_BANNER'
+    '231':
+      Task: '3x &2Green bed'
+      Materials:
+      - 'GREEN_BED-3'
+    '232':
+      Task: '2x &2Green carpet'
+      Materials:
+      - 'GREEN_CARPET-2'
+    '233':
+      Task: '&2Green concrete'
+      Materials:
+      - 'GREEN_CONCRETE'
+    '234':
+      Task: '4x &2Green concrete powder'
+      Materials:
+      - 'GREEN_CONCRETE_POWDER-4'
+    '235':
+      Task: '4x &2Green glazed terracotta'
+      Materials:
+      - 'GREEN_GLAZED_TERRACOTTA-4'
+    '236':
+      Task: '4x &2Green shulker box'
+      Materials:
+      - 'GREEN_SHULKER_BOX-4'
+    '237':
+      Task: '2x &2Green stained glass'
+      Materials:
+      - 'GREEN_STAINED_GLASS-2'
+    '238':
+      Task: '3x &2Green stained glass pane'
+      Materials:
+      - 'GREEN_STAINED_GLASS_PANE-3'
+    '239':
+      Task: '3x &2Green terracotta'
+      Materials:
+      - 'GREEN_TERRACOTTA-3'
+    '240':
+      Task: '&2Green wall banner'
+      Materials:
+      - 'GREEN_WALL_BANNER'
+    '241':
+      Task: '4x &2Green wool'
+      Materials:
+      - 'GREEN_WOOL-4'
+    '242':
+      Task: '&2Hay block'
+      Materials:
+      - 'HAY_BLOCK'
+    '243':
+      Task: '4x &2Heavy weighted pressure plate'
+      Materials:
+      - 'HEAVY_WEIGHTED_PRESSURE_PLATE-4'
+    '244':
+      Task: '4x &2Hopper'
+      Materials:
+      - 'HOPPER-4'
+    '245':
+      Task: '4x &2Horn coral'
+      Materials:
+      - 'HORN_CORAL-4'
+    '246':
+      Task: '&2Horn coral block'
+      Materials:
+      - 'HORN_CORAL_BLOCK'
+    '247':
+      Task: '3x &2Horn coral fan'
+      Materials:
+      - 'HORN_CORAL_FAN-3'
+    '248':
+      Task: '&2Horn coral wall fan'
+      Materials:
+      - 'HORN_CORAL_WALL_FAN'
+    '249':
+      Task: '3x &2Ice'
+      Materials:
+      - 'ICE-3'
+    '250':
+      Task: '2x &2Infested chiseled stone bricks'
+      Materials:
+      - 'INFESTED_CHISELED_STONE_BRICKS-2'
+    '251':
+      Task: '4x &2Infested cobblestone'
+      Materials:
+      - 'INFESTED_COBBLESTONE-4'
+    '252':
+      Task: '3x &2Infested cracked stone bricks'
+      Materials:
+      - 'INFESTED_CRACKED_STONE_BRICKS-3'
+    '253':
+      Task: '3x &2Infested mossy stone bricks'
+      Materials:
+      - 'INFESTED_MOSSY_STONE_BRICKS-3'
+    '254':
+      Task: '4x &2Infested stone'
+      Materials:
+      - 'INFESTED_STONE-4'
+    '255':
+      Task: '3x &2Infested stone bricks'
+      Materials:
+      - 'INFESTED_STONE_BRICKS-3'
+    '256':
+      Task: '3x &2Iron bars'
+      Materials:
+      - 'IRON_BARS-3'
+    '257':
+      Task: '&2Iron block'
+      Materials:
+      - 'IRON_BLOCK'
+    '258':
+      Task: '4x &2Iron door'
+      Materials:
+      - 'IRON_DOOR-4'
+    '259':
+      Task: '3x &2Iron ore'
+      Materials:
+      - 'IRON_ORE-3'
+    '260':
+      Task: '3x &2Iron trapdoor'
+      Materials:
+      - 'IRON_TRAPDOOR-3'
+    '261':
+      Task: '4x &2Jack o lantern'
+      Materials:
+      - 'JACK_O_LANTERN-4'
+    '262':
+      Task: '&2Jukebox'
+      Materials:
+      - 'JUKEBOX'
+    '263':
+      Task: '3x &2Jungle button'
+      Materials:
+      - 'JUNGLE_BUTTON-3'
+    '264':
+      Task: '&2Jungle door'
+      Materials:
+      - 'JUNGLE_DOOR'
+    '265':
+      Task: '&2Jungle fence'
+      Materials:
+      - 'JUNGLE_FENCE'
+    '266':
+      Task: '3x &2Jungle fence gate'
+      Materials:
+      - 'JUNGLE_FENCE_GATE-3'
+    '267':
+      Task: '3x &2Jungle leaves'
+      Materials:
+      - 'JUNGLE_LEAVES-3'
+    '268':
+      Task: '2x &2Jungle log'
+      Materials:
+      - 'JUNGLE_LOG-2'
+    '269':
+      Task: '&2Jungle planks'
+      Materials:
+      - 'JUNGLE_PLANKS'
+    '270':
+      Task: '3x &2Jungle pressure plate'
+      Materials:
+      - 'JUNGLE_PRESSURE_PLATE-3'
+    '271':
+      Task: '3x &2Jungle sapling'
+      Materials:
+      - 'JUNGLE_SAPLING-3'
+    '272':
+      Task: '2x &2Jungle slab'
+      Materials:
+      - 'JUNGLE_SLAB-2'
+    '273':
+      Task: '3x &2Jungle stairs'
+      Materials:
+      - 'JUNGLE_STAIRS-3'
+    '274':
+      Task: '4x &2Jungle trapdoor'
+      Materials:
+      - 'JUNGLE_TRAPDOOR-4'
+    '275':
+      Task: '2x &2Jungle wood'
+      Materials:
+      - 'JUNGLE_WOOD-2'
+    '276':
+      Task: '&2Kelp'
+      Materials:
+      - 'KELP'
+    '277':
+      Task: '2x &2Kelp plant'
+      Materials:
+      - 'KELP_PLANT-2'
+    '278':
+      Task: '&2Ladder'
+      Materials:
+      - 'LADDER'
+    '279':
+      Task: '&2Lapis block'
+      Materials:
+      - 'LAPIS_BLOCK'
+    '280':
+      Task: '2x &2Lapis ore'
+      Materials:
+      - 'LAPIS_ORE-2'
+    '281':
+      Task: '2x &2Large fern'
+      Materials:
+      - 'LARGE_FERN-2'
+    '282':
+      Task: '4x &2Lava'
+      Materials:
+      - 'LAVA-4'
+    '283':
+      Task: '&2Lever'
+      Materials:
+      - 'LEVER'
+    '284':
+      Task: '2x &2Light blue banner'
+      Materials:
+      - 'LIGHT_BLUE_BANNER-2'
+    '285':
+      Task: '&2Light blue bed'
+      Materials:
+      - 'LIGHT_BLUE_BED'
+    '286':
+      Task: '&2Light blue carpet'
+      Materials:
+      - 'LIGHT_BLUE_CARPET'
+    '287':
+      Task: '2x &2Light blue concrete'
+      Materials:
+      - 'LIGHT_BLUE_CONCRETE-2'
+    '288':
+      Task: '3x &2Light blue concrete powder'
+      Materials:
+      - 'LIGHT_BLUE_CONCRETE_POWDER-3'
+    '289':
+      Task: '4x &2Light blue glazed terracotta'
+      Materials:
+      - 'LIGHT_BLUE_GLAZED_TERRACOTTA-4'
+    '290':
+      Task: '2x &2Light blue shulker box'
+      Materials:
+      - 'LIGHT_BLUE_SHULKER_BOX-2'
+    '291':
+      Task: '&2Light blue stained glass'
+      Materials:
+      - 'LIGHT_BLUE_STAINED_GLASS'
+    '292':
+      Task: '2x &2Light blue stained glass pane'
+      Materials:
+      - 'LIGHT_BLUE_STAINED_GLASS_PANE-2'
+    '293':
+      Task: '2x &2Light blue terracotta'
+      Materials:
+      - 'LIGHT_BLUE_TERRACOTTA-2'
+    '294':
+      Task: '3x &2Light blue wall banner'
+      Materials:
+      - 'LIGHT_BLUE_WALL_BANNER-3'
+    '295':
+      Task: '&2Light blue wool'
+      Materials:
+      - 'LIGHT_BLUE_WOOL'
+    '296':
+      Task: '3x &2Light gray banner'
+      Materials:
+      - 'LIGHT_GRAY_BANNER-3'
+    '297':
+      Task: '&2Light gray bed'
+      Materials:
+      - 'LIGHT_GRAY_BED'
+    '298':
+      Task: '&2Light gray carpet'
+      Materials:
+      - 'LIGHT_GRAY_CARPET'
+    '299':
+      Task: '4x &2Light gray concrete'
+      Materials:
+      - 'LIGHT_GRAY_CONCRETE-4'
+    '300':
+      Task: '3x &2Light gray concrete powder'
+      Materials:
+      - 'LIGHT_GRAY_CONCRETE_POWDER-3'
+    '301':
+      Task: '4x &2Light gray glazed terracotta'
+      Materials:
+      - 'LIGHT_GRAY_GLAZED_TERRACOTTA-4'
+    '302':
+      Task: '3x &2Light gray shulker box'
+      Materials:
+      - 'LIGHT_GRAY_SHULKER_BOX-3'
+    '303':
+      Task: '3x &2Light gray stained glass'
+      Materials:
+      - 'LIGHT_GRAY_STAINED_GLASS-3'
+    '304':
+      Task: '3x &2Light gray stained glass pane'
+      Materials:
+      - 'LIGHT_GRAY_STAINED_GLASS_PANE-3'
+    '305':
+      Task: '&2Light gray terracotta'
+      Materials:
+      - 'LIGHT_GRAY_TERRACOTTA'
+    '306':
+      Task: '4x &2Light gray wall banner'
+      Materials:
+      - 'LIGHT_GRAY_WALL_BANNER-4'
+    '307':
+      Task: '4x &2Light gray wool'
+      Materials:
+      - 'LIGHT_GRAY_WOOL-4'
+    '308':
+      Task: '3x &2Light weighted pressure plate'
+      Materials:
+      - 'LIGHT_WEIGHTED_PRESSURE_PLATE-3'
+    '309':
+      Task: '2x &2Lilac'
+      Materials:
+      - 'LILAC-2'
+    '310':
+      Task: '3x &2Lily pad'
+      Materials:
+      - 'LILY_PAD-3'
+    '311':
+      Task: '4x &2Lime banner'
+      Materials:
+      - 'LIME_BANNER-4'
+    '312':
+      Task: '&2Lime bed'
+      Materials:
+      - 'LIME_BED'
+    '313':
+      Task: '&2Lime carpet'
+      Materials:
+      - 'LIME_CARPET'
+    '314':
+      Task: '4x &2Lime concrete'
+      Materials:
+      - 'LIME_CONCRETE-4'
+    '315':
+      Task: '&2Lime concrete powder'
+      Materials:
+      - 'LIME_CONCRETE_POWDER'
+    '316':
+      Task: '4x &2Lime glazed terracotta'
+      Materials:
+      - 'LIME_GLAZED_TERRACOTTA-4'
+    '317':
+      Task: '3x &2Lime shulker box'
+      Materials:
+      - 'LIME_SHULKER_BOX-3'
+    '318':
+      Task: '3x &2Lime stained glass'
+      Materials:
+      - 'LIME_STAINED_GLASS-3'
+    '319':
+      Task: '&2Lime stained glass pane'
+      Materials:
+      - 'LIME_STAINED_GLASS_PANE'
+    '320':
+      Task: '3x &2Lime terracotta'
+      Materials:
+      - 'LIME_TERRACOTTA-3'
+    '321':
+      Task: '&2Lime wall banner'
+      Materials:
+      - 'LIME_WALL_BANNER'
+    '322':
+      Task: '&2Lime wool'
+      Materials:
+      - 'LIME_WOOL'
+    '323':
+      Task: '2x &2Magenta banner'
+      Materials:
+      - 'MAGENTA_BANNER-2'
+    '324':
+      Task: '2x &2Magenta bed'
+      Materials:
+      - 'MAGENTA_BED-2'
+    '325':
+      Task: '3x &2Magenta carpet'
+      Materials:
+      - 'MAGENTA_CARPET-3'
+    '326':
+      Task: '2x &2Magenta concrete'
+      Materials:
+      - 'MAGENTA_CONCRETE-2'
+    '327':
+      Task: '4x &2Magenta concrete powder'
+      Materials:
+      - 'MAGENTA_CONCRETE_POWDER-4'
+    '328':
+      Task: '2x &2Magenta glazed terracotta'
+      Materials:
+      - 'MAGENTA_GLAZED_TERRACOTTA-2'
+    '329':
+      Task: '&2Magenta shulker box'
+      Materials:
+      - 'MAGENTA_SHULKER_BOX'
+    '330':
+      Task: '&2Magenta stained glass'
+      Materials:
+      - 'MAGENTA_STAINED_GLASS'
+    '331':
+      Task: '4x &2Magenta stained glass pane'
+      Materials:
+      - 'MAGENTA_STAINED_GLASS_PANE-4'
+    '332':
+      Task: '4x &2Magenta terracotta'
+      Materials:
+      - 'MAGENTA_TERRACOTTA-4'
+    '333':
+      Task: '4x &2Magenta wall banner'
+      Materials:
+      - 'MAGENTA_WALL_BANNER-4'
+    '334':
+      Task: '4x &2Magenta wool'
+      Materials:
+      - 'MAGENTA_WOOL-4'
+    '335':
+      Task: '3x &2Magma block'
+      Materials:
+      - 'MAGMA_BLOCK-3'
+    '336':
+      Task: '&2Melon'
+      Materials:
+      - 'MELON'
+    '337':
+      Task: '4x &2Melon stem'
+      Materials:
+      - 'MELON_STEM-4'
+    '338':
+      Task: '4x &2Mossy cobblestone'
+      Materials:
+      - 'MOSSY_COBBLESTONE-4'
+    '339':
+      Task: '4x &2Mossy cobblestone wall'
+      Materials:
+      - 'MOSSY_COBBLESTONE_WALL-4'
+    '340':
+      Task: '3x &2Mossy stone bricks'
+      Materials:
+      - 'MOSSY_STONE_BRICKS-3'
+    '341':
+      Task: '2x &2Moving piston'
+      Materials:
+      - 'MOVING_PISTON-2'
+    '342':
+      Task: '2x &2Mushroom stem'
+      Materials:
+      - 'MUSHROOM_STEM-2'
+    '343':
+      Task: '&2Mycelium'
+      Materials:
+      - 'MYCELIUM'
+    '344':
+      Task: '3x &2Netherrack'
+      Materials:
+      - 'NETHERRACK-3'
+    '345':
+      Task: '4x &2Nether bricks'
+      Materials:
+      - 'NETHER_BRICKS-4'
+    '346':
+      Task: '3x &2Nether brick fence'
+      Materials:
+      - 'NETHER_BRICK_FENCE-3'
+    '347':
+      Task: '4x &2Nether brick slab'
+      Materials:
+      - 'NETHER_BRICK_SLAB-4'
+    '348':
+      Task: '&2Nether brick stairs'
+      Materials:
+      - 'NETHER_BRICK_STAIRS'
+    '349':
+      Task: '3x &2Nether portal'
+      Materials:
+      - 'NETHER_PORTAL-3'
+    '350':
+      Task: '4x &2Nether quartz ore'
+      Materials:
+      - 'NETHER_QUARTZ_ORE-4'
+    '351':
+      Task: '3x &2Nether wart'
+      Materials:
+      - 'NETHER_WART-3'
+    '352':
+      Task: '4x &2Nether wart block'
+      Materials:
+      - 'NETHER_WART_BLOCK-4'
+    '353':
+      Task: '&2Note block'
+      Materials:
+      - 'NOTE_BLOCK'
+    '354':
+      Task: '&2Oak button'
+      Materials:
+      - 'OAK_BUTTON'
+    '355':
+      Task: '&2Oak door'
+      Materials:
+      - 'OAK_DOOR'
+    '356':
+      Task: '3x &2Oak fence'
+      Materials:
+      - 'OAK_FENCE-3'
+    '357':
+      Task: '4x &2Oak fence gate'
+      Materials:
+      - 'OAK_FENCE_GATE-4'
+    '358':
+      Task: '3x &2Oak leaves'
+      Materials:
+      - 'OAK_LEAVES-3'
+    '359':
+      Task: '4x &2Oak log'
+      Materials:
+      - 'OAK_LOG-4'
+    '360':
+      Task: '4x &2Oak planks'
+      Materials:
+      - 'OAK_PLANKS-4'
+    '361':
+      Task: '2x &2Oak pressure plate'
+      Materials:
+      - 'OAK_PRESSURE_PLATE-2'
+    '362':
+      Task: '&2Oak sapling'
+      Materials:
+      - 'OAK_SAPLING'
+    '363':
+      Task: '3x &2Oak slab'
+      Materials:
+      - 'OAK_SLAB-3'
+    '364':
+      Task: '4x &2Oak stairs'
+      Materials:
+      - 'OAK_STAIRS-4'
+    '365':
+      Task: '&2Oak trapdoor'
+      Materials:
+      - 'OAK_TRAPDOOR'
+    '366':
+      Task: '4x &2Oak wood'
+      Materials:
+      - 'OAK_WOOD-4'
+    '367':
+      Task: '2x &2Observer'
+      Materials:
+      - 'OBSERVER-2'
+    '368':
+      Task: '2x &2Obsidian'
+      Materials:
+      - 'OBSIDIAN-2'
+    '369':
+      Task: '2x &2Orange banner'
+      Materials:
+      - 'ORANGE_BANNER-2'
+    '370':
+      Task: '2x &2Orange bed'
+      Materials:
+      - 'ORANGE_BED-2'
+    '371':
+      Task: '3x &2Orange carpet'
+      Materials:
+      - 'ORANGE_CARPET-3'
+    '372':
+      Task: '4x &2Orange concrete'
+      Materials:
+      - 'ORANGE_CONCRETE-4'
+    '373':
+      Task: '&2Orange concrete powder'
+      Materials:
+      - 'ORANGE_CONCRETE_POWDER'
+    '374':
+      Task: '3x &2Orange glazed terracotta'
+      Materials:
+      - 'ORANGE_GLAZED_TERRACOTTA-3'
+    '375':
+      Task: '3x &2Orange shulker box'
+      Materials:
+      - 'ORANGE_SHULKER_BOX-3'
+    '376':
+      Task: '3x &2Orange stained glass'
+      Materials:
+      - 'ORANGE_STAINED_GLASS-3'
+    '377':
+      Task: '3x &2Orange stained glass pane'
+      Materials:
+      - 'ORANGE_STAINED_GLASS_PANE-3'
+    '378':
+      Task: '4x &2Orange terracotta'
+      Materials:
+      - 'ORANGE_TERRACOTTA-4'
+    '379':
+      Task: '&2Orange tulip'
+      Materials:
+      - 'ORANGE_TULIP'
+    '380':
+      Task: '2x &2Orange wall banner'
+      Materials:
+      - 'ORANGE_WALL_BANNER-2'
+    '381':
+      Task: '4x &2Orange wool'
+      Materials:
+      - 'ORANGE_WOOL-4'
+    '382':
+      Task: '&2Oxeye daisy'
+      Materials:
+      - 'OXEYE_DAISY'
+    '383':
+      Task: '&2Packed ice'
+      Materials:
+      - 'PACKED_ICE'
+    '384':
+      Task: '&2Peony'
+      Materials:
+      - 'PEONY'
+    '385':
+      Task: '3x &2Petrified oak slab'
+      Materials:
+      - 'PETRIFIED_OAK_SLAB-3'
+    '386':
+      Task: '2x &2Pink banner'
+      Materials:
+      - 'PINK_BANNER-2'
+    '387':
+      Task: '4x &2Pink bed'
+      Materials:
+      - 'PINK_BED-4'
+    '388':
+      Task: '2x &2Pink carpet'
+      Materials:
+      - 'PINK_CARPET-2'
+    '389':
+      Task: '3x &2Pink concrete'
+      Materials:
+      - 'PINK_CONCRETE-3'
+    '390':
+      Task: '2x &2Pink concrete powder'
+      Materials:
+      - 'PINK_CONCRETE_POWDER-2'
+    '391':
+      Task: '2x &2Pink glazed terracotta'
+      Materials:
+      - 'PINK_GLAZED_TERRACOTTA-2'
+    '392':
+      Task: '4x &2Pink shulker box'
+      Materials:
+      - 'PINK_SHULKER_BOX-4'
+    '393':
+      Task: '2x &2Pink stained glass'
+      Materials:
+      - 'PINK_STAINED_GLASS-2'
+    '394':
+      Task: '3x &2Pink stained glass pane'
+      Materials:
+      - 'PINK_STAINED_GLASS_PANE-3'
+    '395':
+      Task: '&2Pink terracotta'
+      Materials:
+      - 'PINK_TERRACOTTA'
+    '396':
+      Task: '3x &2Pink tulip'
+      Materials:
+      - 'PINK_TULIP-3'
+    '397':
+      Task: '4x &2Pink wall banner'
+      Materials:
+      - 'PINK_WALL_BANNER-4'
+    '398':
+      Task: '3x &2Pink wool'
+      Materials:
+      - 'PINK_WOOL-3'
+    '399':
+      Task: '&2Piston'
+      Materials:
+      - 'PISTON'
+    '400':
+      Task: '4x &2Piston head'
+      Materials:
+      - 'PISTON_HEAD-4'
+    '401':
+      Task: '&2Player head'
+      Materials:
+      - 'PLAYER_HEAD'
+    '402':
+      Task: '4x &2Player wall head'
+      Materials:
+      - 'PLAYER_WALL_HEAD-4'
+    '403':
+      Task: '3x &2Podzol'
+      Materials:
+      - 'PODZOL-3'
+    '404':
+      Task: '2x &2Polished andesite'
+      Materials:
+      - 'POLISHED_ANDESITE-2'
+    '405':
+      Task: '3x &2Polished diorite'
+      Materials:
+      - 'POLISHED_DIORITE-3'
+    '406':
+      Task: '2x &2Polished granite'
+      Materials:
+      - 'POLISHED_GRANITE-2'
+    '407':
+      Task: '3x &2Poppy'
+      Materials:
+      - 'POPPY-3'
+    '408':
+      Task: '&2Potatoes'
+      Materials:
+      - 'POTATOES'
+    '409':
+      Task: '3x &2Potted acacia sapling'
+      Materials:
+      - 'POTTED_ACACIA_SAPLING-3'
+    '410':
+      Task: '&2Potted allium'
+      Materials:
+      - 'POTTED_ALLIUM'
+    '411':
+      Task: '4x &2Potted azure bluet'
+      Materials:
+      - 'POTTED_AZURE_BLUET-4'
+    '412':
+      Task: '&2Potted birch sapling'
+      Materials:
+      - 'POTTED_BIRCH_SAPLING'
+    '413':
+      Task: '2x &2Potted blue orchid'
+      Materials:
+      - 'POTTED_BLUE_ORCHID-2'
+    '414':
+      Task: '&2Potted brown mushroom'
+      Materials:
+      - 'POTTED_BROWN_MUSHROOM'
+    '415':
+      Task: '3x &2Potted cactus'
+      Materials:
+      - 'POTTED_CACTUS-3'
+    '416':
+      Task: '2x &2Potted dandelion'
+      Materials:
+      - 'POTTED_DANDELION-2'
+    '417':
+      Task: '2x &2Potted dark oak sapling'
+      Materials:
+      - 'POTTED_DARK_OAK_SAPLING-2'
+    '418':
+      Task: '4x &2Potted dead bush'
+      Materials:
+      - 'POTTED_DEAD_BUSH-4'
+    '419':
+      Task: '3x &2Potted fern'
+      Materials:
+      - 'POTTED_FERN-3'
+    '420':
+      Task: '2x &2Potted jungle sapling'
+      Materials:
+      - 'POTTED_JUNGLE_SAPLING-2'
+    '421':
+      Task: '2x &2Potted oak sapling'
+      Materials:
+      - 'POTTED_OAK_SAPLING-2'
+    '422':
+      Task: '3x &2Potted orange tulip'
+      Materials:
+      - 'POTTED_ORANGE_TULIP-3'
+    '423':
+      Task: '2x &2Potted oxeye daisy'
+      Materials:
+      - 'POTTED_OXEYE_DAISY-2'
+    '424':
+      Task: '3x &2Potted pink tulip'
+      Materials:
+      - 'POTTED_PINK_TULIP-3'
+    '425':
+      Task: '2x &2Potted poppy'
+      Materials:
+      - 'POTTED_POPPY-2'
+    '426':
+      Task: '4x &2Potted red mushroom'
+      Materials:
+      - 'POTTED_RED_MUSHROOM-4'
+    '427':
+      Task: '&2Potted red tulip'
+      Materials:
+      - 'POTTED_RED_TULIP'
+    '428':
+      Task: '2x &2Potted spruce sapling'
+      Materials:
+      - 'POTTED_SPRUCE_SAPLING-2'
+    '429':
+      Task: '3x &2Potted white tulip'
+      Materials:
+      - 'POTTED_WHITE_TULIP-3'
+    '430':
+      Task: '3x &2Powered rail'
+      Materials:
+      - 'POWERED_RAIL-3'
+    '431':
+      Task: '3x &2Prismarine'
+      Materials:
+      - 'PRISMARINE-3'
+    '432':
+      Task: '3x &2Prismarine bricks'
+      Materials:
+      - 'PRISMARINE_BRICKS-3'
+    '433':
+      Task: '3x &2Prismarine brick slab'
+      Materials:
+      - 'PRISMARINE_BRICK_SLAB-3'
+    '434':
+      Task: '3x &2Prismarine brick stairs'
+      Materials:
+      - 'PRISMARINE_BRICK_STAIRS-3'
+    '435':
+      Task: '4x &2Prismarine slab'
+      Materials:
+      - 'PRISMARINE_SLAB-4'
+    '436':
+      Task: '2x &2Prismarine stairs'
+      Materials:
+      - 'PRISMARINE_STAIRS-2'
+    '437':
+      Task: '4x &2Pumpkin'
+      Materials:
+      - 'PUMPKIN-4'
+    '438':
+      Task: '3x &2Pumpkin stem'
+      Materials:
+      - 'PUMPKIN_STEM-3'
+    '439':
+      Task: '4x &2Purple banner'
+      Materials:
+      - 'PURPLE_BANNER-4'
+    '440':
+      Task: '2x &2Purple bed'
+      Materials:
+      - 'PURPLE_BED-2'
+    '441':
+      Task: '2x &2Purple carpet'
+      Materials:
+      - 'PURPLE_CARPET-2'
+    '442':
+      Task: '4x &2Purple concrete'
+      Materials:
+      - 'PURPLE_CONCRETE-4'
+    '443':
+      Task: '2x &2Purple concrete powder'
+      Materials:
+      - 'PURPLE_CONCRETE_POWDER-2'
+    '444':
+      Task: '&2Purple glazed terracotta'
+      Materials:
+      - 'PURPLE_GLAZED_TERRACOTTA'
+    '445':
+      Task: '&2Purple shulker box'
+      Materials:
+      - 'PURPLE_SHULKER_BOX'
+    '446':
+      Task: '2x &2Purple stained glass'
+      Materials:
+      - 'PURPLE_STAINED_GLASS-2'
+    '447':
+      Task: '4x &2Purple stained glass pane'
+      Materials:
+      - 'PURPLE_STAINED_GLASS_PANE-4'
+    '448':
+      Task: '3x &2Purple terracotta'
+      Materials:
+      - 'PURPLE_TERRACOTTA-3'
+    '449':
+      Task: '4x &2Purple wall banner'
+      Materials:
+      - 'PURPLE_WALL_BANNER-4'
+    '450':
+      Task: '2x &2Purple wool'
+      Materials:
+      - 'PURPLE_WOOL-2'
+    '451':
+      Task: '3x &2Purpur block'
+      Materials:
+      - 'PURPUR_BLOCK-3'
+    '452':
+      Task: '3x &2Purpur pillar'
+      Materials:
+      - 'PURPUR_PILLAR-3'
+    '453':
+      Task: '3x &2Purpur slab'
+      Materials:
+      - 'PURPUR_SLAB-3'
+    '454':
+      Task: '2x &2Purpur stairs'
+      Materials:
+      - 'PURPUR_STAIRS-2'
+    '455':
+      Task: '3x &2Quartz block'
+      Materials:
+      - 'QUARTZ_BLOCK-3'
+    '456':
+      Task: '3x &2Quartz pillar'
+      Materials:
+      - 'QUARTZ_PILLAR-3'
+    '457':
+      Task: '3x &2Quartz slab'
+      Materials:
+      - 'QUARTZ_SLAB-3'
+    '458':
+      Task: '4x &2Quartz stairs'
+      Materials:
+      - 'QUARTZ_STAIRS-4'
+    '459':
+      Task: '3x &2Rail'
+      Materials:
+      - 'RAIL-3'
+    '460':
+      Task: '4x &2Redstone block'
+      Materials:
+      - 'REDSTONE_BLOCK-4'
+    '461':
+      Task: '4x &2Redstone lamp'
+      Materials:
+      - 'REDSTONE_LAMP-4'
+    '462':
+      Task: '3x &2Redstone ore'
+      Materials:
+      - 'REDSTONE_ORE-3'
+    '463':
+      Task: '&2Redstone torch'
+      Materials:
+      - 'REDSTONE_TORCH'
+    '464':
+      Task: '&2Redstone wall torch'
+      Materials:
+      - 'REDSTONE_WALL_TORCH'
+    '465':
+      Task: '2x &2Redstone wire'
+      Materials:
+      - 'REDSTONE_WIRE-2'
+    '466':
+      Task: '2x &2Red banner'
+      Materials:
+      - 'RED_BANNER-2'
+    '467':
+      Task: '2x &2Red bed'
+      Materials:
+      - 'RED_BED-2'
+    '468':
+      Task: '3x &2Red carpet'
+      Materials:
+      - 'RED_CARPET-3'
+    '469':
+      Task: '4x &2Red concrete'
+      Materials:
+      - 'RED_CONCRETE-4'
+    '470':
+      Task: '2x &2Red concrete powder'
+      Materials:
+      - 'RED_CONCRETE_POWDER-2'
+    '471':
+      Task: '3x &2Red glazed terracotta'
+      Materials:
+      - 'RED_GLAZED_TERRACOTTA-3'
+    '472':
+      Task: '&2Red mushroom'
+      Materials:
+      - 'RED_MUSHROOM'
+    '473':
+      Task: '2x &2Red mushroom block'
+      Materials:
+      - 'RED_MUSHROOM_BLOCK-2'
+    '474':
+      Task: '3x &2Red nether bricks'
+      Materials:
+      - 'RED_NETHER_BRICKS-3'
+    '475':
+      Task: '3x &2Red sand'
+      Materials:
+      - 'RED_SAND-3'
+    '476':
+      Task: '3x &2Red sandstone'
+      Materials:
+      - 'RED_SANDSTONE-3'
+    '477':
+      Task: '&2Red sandstone slab'
+      Materials:
+      - 'RED_SANDSTONE_SLAB'
+    '478':
+      Task: '2x &2Red sandstone stairs'
+      Materials:
+      - 'RED_SANDSTONE_STAIRS-2'
+    '479':
+      Task: '4x &2Red shulker box'
+      Materials:
+      - 'RED_SHULKER_BOX-4'
+    '480':
+      Task: '&2Red stained glass'
+      Materials:
+      - 'RED_STAINED_GLASS'
+    '481':
+      Task: '4x &2Red stained glass pane'
+      Materials:
+      - 'RED_STAINED_GLASS_PANE-4'
+    '482':
+      Task: '&2Red terracotta'
+      Materials:
+      - 'RED_TERRACOTTA'
+    '483':
+      Task: '4x &2Red tulip'
+      Materials:
+      - 'RED_TULIP-4'
+    '484':
+      Task: '2x &2Red wall banner'
+      Materials:
+      - 'RED_WALL_BANNER-2'
+    '485':
+      Task: '4x &2Red wool'
+      Materials:
+      - 'RED_WOOL-4'
+    '486':
+      Task: '3x &2Repeater'
+      Materials:
+      - 'REPEATER-3'
+    '487':
+      Task: '2x &2Repeating command block'
+      Materials:
+      - 'REPEATING_COMMAND_BLOCK-2'
+    '488':
+      Task: '3x &2Rose bush'
+      Materials:
+      - 'ROSE_BUSH-3'
+    '489':
+      Task: '3x &2Sand'
+      Materials:
+      - 'SAND-3'
+    '490':
+      Task: '2x &2Sandstone'
+      Materials:
+      - 'SANDSTONE-2'
+    '491':
+      Task: '4x &2Sandstone slab'
+      Materials:
+      - 'SANDSTONE_SLAB-4'
+    '492':
+      Task: '&2Sandstone stairs'
+      Materials:
+      - 'SANDSTONE_STAIRS'
+    '493':
+      Task: '&2Seagrass'
+      Materials:
+      - 'SEAGRASS'
+    '494':
+      Task: '2x &2Sea lantern'
+      Materials:
+      - 'SEA_LANTERN-2'
+    '495':
+      Task: '2x &2Sea pickle'
+      Materials:
+      - 'SEA_PICKLE-2'
+    '496':
+      Task: '4x &2Shulker box'
+      Materials:
+      - 'SHULKER_BOX-4'
+    '497':
+      Task: '4x &2Skeleton skull'
+      Materials:
+      - 'SKELETON_SKULL-4'
+    '498':
+      Task: '3x &2Skeleton wall skull'
+      Materials:
+      - 'SKELETON_WALL_SKULL-3'
+    '499':
+      Task: '4x &2Slime block'
+      Materials:
+      - 'SLIME_BLOCK-4'
+    '500':
+      Task: '&2Smooth quartz'
+      Materials:
+      - 'SMOOTH_QUARTZ'
+    '501':
+      Task: '3x &2Smooth red sandstone'
+      Materials:
+      - 'SMOOTH_RED_SANDSTONE-3'
+    '502':
+      Task: '2x &2Smooth sandstone'
+      Materials:
+      - 'SMOOTH_SANDSTONE-2'
+    '503':
+      Task: '4x &2Smooth stone'
+      Materials:
+      - 'SMOOTH_STONE-4'
+    '504':
+      Task: '2x &2Snow'
+      Materials:
+      - 'SNOW-2'
+    '505':
+      Task: '&2Snow block'
+      Materials:
+      - 'SNOW_BLOCK'
+    '506':
+      Task: '4x &2Soul sand'
+      Materials:
+      - 'SOUL_SAND-4'
+    '507':
+      Task: '3x &2Spawner'
+      Materials:
+      - 'SPAWNER-3'
+    '508':
+      Task: '&2Sponge'
+      Materials:
+      - 'SPONGE'
+    '509':
+      Task: '2x &2Spruce button'
+      Materials:
+      - 'SPRUCE_BUTTON-2'
+    '510':
+      Task: '2x &2Spruce door'
+      Materials:
+      - 'SPRUCE_DOOR-2'
+    '511':
+      Task: '4x &2Spruce fence'
+      Materials:
+      - 'SPRUCE_FENCE-4'
+    '512':
+      Task: '3x &2Spruce fence gate'
+      Materials:
+      - 'SPRUCE_FENCE_GATE-3'
+    '513':
+      Task: '&2Spruce leaves'
+      Materials:
+      - 'SPRUCE_LEAVES'
+    '514':
+      Task: '&2Spruce log'
+      Materials:
+      - 'SPRUCE_LOG'
+    '515':
+      Task: '&2Spruce planks'
+      Materials:
+      - 'SPRUCE_PLANKS'
+    '516':
+      Task: '2x &2Spruce pressure plate'
+      Materials:
+      - 'SPRUCE_PRESSURE_PLATE-2'
+    '517':
+      Task: '3x &2Spruce sapling'
+      Materials:
+      - 'SPRUCE_SAPLING-3'
+    '518':
+      Task: '&2Spruce slab'
+      Materials:
+      - 'SPRUCE_SLAB'
+    '519':
+      Task: '2x &2Spruce stairs'
+      Materials:
+      - 'SPRUCE_STAIRS-2'
+    '520':
+      Task: '4x &2Spruce trapdoor'
+      Materials:
+      - 'SPRUCE_TRAPDOOR-4'
+    '521':
+      Task: '4x &2Spruce wood'
+      Materials:
+      - 'SPRUCE_WOOD-4'
+    '522':
+      Task: '4x &2Sticky piston'
+      Materials:
+      - 'STICKY_PISTON-4'
+    '523':
+      Task: '4x &2Stone'
+      Materials:
+      - 'STONE-4'
+    '524':
+      Task: '&2Stone bricks'
+      Materials:
+      - 'STONE_BRICKS'
+    '525':
+      Task: '4x &2Stone brick slab'
+      Materials:
+      - 'STONE_BRICK_SLAB-4'
+    '526':
+      Task: '&2Stone brick stairs'
+      Materials:
+      - 'STONE_BRICK_STAIRS'
+    '527':
+      Task: '3x &2Stone button'
+      Materials:
+      - 'STONE_BUTTON-3'
+    '528':
+      Task: '3x &2Stone pressure plate'
+      Materials:
+      - 'STONE_PRESSURE_PLATE-3'
+    '529':
+      Task: '4x &2Stone slab'
+      Materials:
+      - 'STONE_SLAB-4'
+    '530':
+      Task: '4x &2Stripped acacia log'
+      Materials:
+      - 'STRIPPED_ACACIA_LOG-4'
+    '531':
+      Task: '2x &2Stripped acacia wood'
+      Materials:
+      - 'STRIPPED_ACACIA_WOOD-2'
+    '532':
+      Task: '&2Stripped birch log'
+      Materials:
+      - 'STRIPPED_BIRCH_LOG'
+    '533':
+      Task: '&2Stripped birch wood'
+      Materials:
+      - 'STRIPPED_BIRCH_WOOD'
+    '534':
+      Task: '4x &2Stripped dark oak log'
+      Materials:
+      - 'STRIPPED_DARK_OAK_LOG-4'
+    '535':
+      Task: '2x &2Stripped dark oak wood'
+      Materials:
+      - 'STRIPPED_DARK_OAK_WOOD-2'
+    '536':
+      Task: '2x &2Stripped jungle log'
+      Materials:
+      - 'STRIPPED_JUNGLE_LOG-2'
+    '537':
+      Task: '&2Stripped jungle wood'
+      Materials:
+      - 'STRIPPED_JUNGLE_WOOD'
+    '538':
+      Task: '3x &2Stripped oak log'
+      Materials:
+      - 'STRIPPED_OAK_LOG-3'
+    '539':
+      Task: '4x &2Stripped oak wood'
+      Materials:
+      - 'STRIPPED_OAK_WOOD-4'
+    '540':
+      Task: '2x &2Stripped spruce log'
+      Materials:
+      - 'STRIPPED_SPRUCE_LOG-2'
+    '541':
+      Task: '4x &2Stripped spruce wood'
+      Materials:
+      - 'STRIPPED_SPRUCE_WOOD-4'
+    '542':
+      Task: '2x &2Structure block'
+      Materials:
+      - 'STRUCTURE_BLOCK-2'
+    '543':
+      Task: '4x &2Structure void'
+      Materials:
+      - 'STRUCTURE_VOID-4'
+    '544':
+      Task: '2x &2Sugar cane'
+      Materials:
+      - 'SUGAR_CANE-2'
+    '545':
+      Task: '&2Sunflower'
+      Materials:
+      - 'SUNFLOWER'
+    '546':
+      Task: '2x &2Tall grass'
+      Materials:
+      - 'TALL_GRASS-2'
+    '547':
+      Task: '3x &2Tall seagrass'
+      Materials:
+      - 'TALL_SEAGRASS-3'
+    '548':
+      Task: '3x &2Terracotta'
+      Materials:
+      - 'TERRACOTTA-3'
+    '549':
+      Task: '2x &2Tnt'
+      Materials:
+      - 'TNT-2'
+    '550':
+      Task: '&2Torch'
+      Materials:
+      - 'TORCH'
+    '551':
+      Task: '4x &2Trapped chest'
+      Materials:
+      - 'TRAPPED_CHEST-4'
+    '552':
+      Task: '4x &2Tripwire'
+      Materials:
+      - 'TRIPWIRE-4'
+    '553':
+      Task: '&2Tripwire hook'
+      Materials:
+      - 'TRIPWIRE_HOOK'
+    '554':
+      Task: '4x &2Tube coral'
+      Materials:
+      - 'TUBE_CORAL-4'
+    '555':
+      Task: '2x &2Tube coral block'
+      Materials:
+      - 'TUBE_CORAL_BLOCK-2'
+    '556':
+      Task: '&2Tube coral fan'
+      Materials:
+      - 'TUBE_CORAL_FAN'
+    '557':
+      Task: '4x &2Tube coral wall fan'
+      Materials:
+      - 'TUBE_CORAL_WALL_FAN-4'
+    '558':
+      Task: '4x &2Turtle egg'
+      Materials:
+      - 'TURTLE_EGG-4'
+    '559':
+      Task: '4x &2Vine'
+      Materials:
+      - 'VINE-4'
+    '560':
+      Task: '3x &2Wall torch'
+      Materials:
+      - 'WALL_TORCH-3'
+    '561':
+      Task: '2x &2Water'
+      Materials:
+      - 'WATER-2'
+    '562':
+      Task: '2x &2Wet sponge'
+      Materials:
+      - 'WET_SPONGE-2'
+    '563':
+      Task: '&2Wheat'
+      Materials:
+      - 'WHEAT'
+    '564':
+      Task: '2x &2White banner'
+      Materials:
+      - 'WHITE_BANNER-2'
+    '565':
+      Task: '2x &2White bed'
+      Materials:
+      - 'WHITE_BED-2'
+    '566':
+      Task: '4x &2White carpet'
+      Materials:
+      - 'WHITE_CARPET-4'
+    '567':
+      Task: '2x &2White concrete'
+      Materials:
+      - 'WHITE_CONCRETE-2'
+    '568':
+      Task: '3x &2White concrete powder'
+      Materials:
+      - 'WHITE_CONCRETE_POWDER-3'
+    '569':
+      Task: '4x &2White glazed terracotta'
+      Materials:
+      - 'WHITE_GLAZED_TERRACOTTA-4'
+    '570':
+      Task: '2x &2White shulker box'
+      Materials:
+      - 'WHITE_SHULKER_BOX-2'
+    '571':
+      Task: '&2White stained glass'
+      Materials:
+      - 'WHITE_STAINED_GLASS'
+    '572':
+      Task: '3x &2White stained glass pane'
+      Materials:
+      - 'WHITE_STAINED_GLASS_PANE-3'
+    '573':
+      Task: '3x &2White terracotta'
+      Materials:
+      - 'WHITE_TERRACOTTA-3'
+    '574':
+      Task: '2x &2White tulip'
+      Materials:
+      - 'WHITE_TULIP-2'
+    '575':
+      Task: '4x &2White wall banner'
+      Materials:
+      - 'WHITE_WALL_BANNER-4'
+    '576':
+      Task: '4x &2White wool'
+      Materials:
+      - 'WHITE_WOOL-4'
+    '577':
+      Task: '3x &2Wither skeleton skull'
+      Materials:
+      - 'WITHER_SKELETON_SKULL-3'
+    '578':
+      Task: '3x &2Wither skeleton wall skull'
+      Materials:
+      - 'WITHER_SKELETON_WALL_SKULL-3'
+    '579':
+      Task: '&2Yellow banner'
+      Materials:
+      - 'YELLOW_BANNER'
+    '580':
+      Task: '2x &2Yellow bed'
+      Materials:
+      - 'YELLOW_BED-2'
+    '581':
+      Task: '4x &2Yellow carpet'
+      Materials:
+      - 'YELLOW_CARPET-4'
+    '582':
+      Task: '3x &2Yellow concrete'
+      Materials:
+      - 'YELLOW_CONCRETE-3'
+    '583':
+      Task: '4x &2Yellow concrete powder'
+      Materials:
+      - 'YELLOW_CONCRETE_POWDER-4'
+    '584':
+      Task: '2x &2Yellow glazed terracotta'
+      Materials:
+      - 'YELLOW_GLAZED_TERRACOTTA-2'
+    '585':
+      Task: '&2Yellow shulker box'
+      Materials:
+      - 'YELLOW_SHULKER_BOX'
+    '586':
+      Task: '3x &2Yellow stained glass'
+      Materials:
+      - 'YELLOW_STAINED_GLASS-3'
+    '587':
+      Task: '3x &2Yellow stained glass pane'
+      Materials:
+      - 'YELLOW_STAINED_GLASS_PANE-3'
+    '588':
+      Task: '4x &2Yellow terracotta'
+      Materials:
+      - 'YELLOW_TERRACOTTA-4'
+    '589':
+      Task: '4x &2Yellow wall banner'
+      Materials:
+      - 'YELLOW_WALL_BANNER-4'
+    '590':
+      Task: '2x &2Yellow wool'
+      Materials:
+      - 'YELLOW_WOOL-2'
+    '591':
+      Task: '4x &2Zombie head'
+      Materials:
+      - 'ZOMBIE_HEAD-4'
+    '592':
+      Task: '3x &2Zombie wall head'
+      Materials:
+      - 'ZOMBIE_WALL_HEAD-3'
+    '593':
+      Task: '2x &2Acacia sign'
+      Materials:
+      - 'ACACIA_SIGN-2'
+    '594':
+      Task: '&2Acacia wall sign'
+      Materials:
+      - 'ACACIA_WALL_SIGN'
+    '595':
+      Task: '&2Andesite slab'
+      Materials:
+      - 'ANDESITE_SLAB'
+    '596':
+      Task: '4x &2Andesite stairs'
+      Materials:
+      - 'ANDESITE_STAIRS-4'
+    '597':
+      Task: '3x &2Andesite wall'
+      Materials:
+      - 'ANDESITE_WALL-3'
+    '598':
+      Task: '2x &2Bamboo'
+      Materials:
+      - 'BAMBOO-2'
+    '599':
+      Task: '3x &2Bamboo sapling'
+      Materials:
+      - 'BAMBOO_SAPLING-3'
+    '600':
+      Task: '4x &2Barrel'
+      Materials:
+      - 'BARREL-4'
+    '601':
+      Task: '4x &2Bell'
+      Materials:
+      - 'BELL-4'
+    '602':
+      Task: '3x &2Birch sign'
+      Materials:
+      - 'BIRCH_SIGN-3'
+    '603':
+      Task: '4x &2Birch wall sign'
+      Materials:
+      - 'BIRCH_WALL_SIGN-4'
+    '604':
+      Task: '3x &2Blast furnace'
+      Materials:
+      - 'BLAST_FURNACE-3'
+    '605':
+      Task: '4x &2Brick wall'
+      Materials:
+      - 'BRICK_WALL-4'
+    '606':
+      Task: '2x &2Campfire'
+      Materials:
+      - 'CAMPFIRE-2'
+    '607':
+      Task: '2x &2Cartography table'
+      Materials:
+      - 'CARTOGRAPHY_TABLE-2'
+    '608':
+      Task: '3x &2Cornflower'
+      Materials:
+      - 'CORNFLOWER-3'
+    '609':
+      Task: '3x &2Cut red sandstone slab'
+      Materials:
+      - 'CUT_RED_SANDSTONE_SLAB-3'
+    '610':
+      Task: '2x &2Cut sandstone slab'
+      Materials:
+      - 'CUT_SANDSTONE_SLAB-2'
+    '611':
+      Task: '4x &2Dark oak sign'
+      Materials:
+      - 'DARK_OAK_SIGN-4'
+    '612':
+      Task: '2x &2Dark oak wall sign'
+      Materials:
+      - 'DARK_OAK_WALL_SIGN-2'
+    '613':
+      Task: '&2Diorite slab'
+      Materials:
+      - 'DIORITE_SLAB'
+    '614':
+      Task: '3x &2Diorite stairs'
+      Materials:
+      - 'DIORITE_STAIRS-3'
+    '615':
+      Task: '&2Diorite wall'
+      Materials:
+      - 'DIORITE_WALL'
+    '616':
+      Task: '2x &2End stone brick slab'
+      Materials:
+      - 'END_STONE_BRICK_SLAB-2'
+    '617':
+      Task: '2x &2End stone brick stairs'
+      Materials:
+      - 'END_STONE_BRICK_STAIRS-2'
+    '618':
+      Task: '&2End stone brick wall'
+      Materials:
+      - 'END_STONE_BRICK_WALL'
+    '619':
+      Task: '2x &2Fletching table'
+      Materials:
+      - 'FLETCHING_TABLE-2'
+    '620':
+      Task: '3x &2Granite slab'
+      Materials:
+      - 'GRANITE_SLAB-3'
+    '621':
+      Task: '2x &2Granite stairs'
+      Materials:
+      - 'GRANITE_STAIRS-2'
+    '622':
+      Task: '&2Granite wall'
+      Materials:
+      - 'GRANITE_WALL'
+    '623':
+      Task: '4x &2Grindstone'
+      Materials:
+      - 'GRINDSTONE-4'
+    '624':
+      Task: '3x &2Jigsaw'
+      Materials:
+      - 'JIGSAW-3'
+    '625':
+      Task: '4x &2Jungle sign'
+      Materials:
+      - 'JUNGLE_SIGN-4'
+    '626':
+      Task: '&2Jungle wall sign'
+      Materials:
+      - 'JUNGLE_WALL_SIGN'
+    '627':
+      Task: '&2Lantern'
+      Materials:
+      - 'LANTERN'
+    '628':
+      Task: '4x &2Lectern'
+      Materials:
+      - 'LECTERN-4'
+    '629':
+      Task: '2x &2Lily of the valley'
+      Materials:
+      - 'LILY_OF_THE_VALLEY-2'
+    '630':
+      Task: '2x &2Loom'
+      Materials:
+      - 'LOOM-2'
+    '631':
+      Task: '2x &2Mossy cobblestone slab'
+      Materials:
+      - 'MOSSY_COBBLESTONE_SLAB-2'
+    '632':
+      Task: '2x &2Mossy cobblestone stairs'
+      Materials:
+      - 'MOSSY_COBBLESTONE_STAIRS-2'
+    '633':
+      Task: '4x &2Mossy stone brick slab'
+      Materials:
+      - 'MOSSY_STONE_BRICK_SLAB-4'
+    '634':
+      Task: '4x &2Mossy stone brick stairs'
+      Materials:
+      - 'MOSSY_STONE_BRICK_STAIRS-4'
+    '635':
+      Task: '&2Mossy stone brick wall'
+      Materials:
+      - 'MOSSY_STONE_BRICK_WALL'
+    '636':
+      Task: '2x &2Nether brick wall'
+      Materials:
+      - 'NETHER_BRICK_WALL-2'
+    '637':
+      Task: '&2Oak sign'
+      Materials:
+      - 'OAK_SIGN'
+    '638':
+      Task: '&2Oak wall sign'
+      Materials:
+      - 'OAK_WALL_SIGN'
+    '639':
+      Task: '&2Polished andesite stairs'
+      Materials:
+      - 'POLISHED_ANDESITE_STAIRS'
+    '640':
+      Task: '3x &2Polished andesite slab'
+      Materials:
+      - 'POLISHED_ANDESITE_SLAB-3'
+    '641':
+      Task: '&2Polished diorite slab'
+      Materials:
+      - 'POLISHED_DIORITE_SLAB'
+    '642':
+      Task: '&2Polished diorite stairs'
+      Materials:
+      - 'POLISHED_DIORITE_STAIRS'
+    '643':
+      Task: '4x &2Polished granite slab'
+      Materials:
+      - 'POLISHED_GRANITE_SLAB-4'
+    '644':
+      Task: '3x &2Polished granite stairs'
+      Materials:
+      - 'POLISHED_GRANITE_STAIRS-3'
+    '645':
+      Task: '4x &2Potted bamboo'
+      Materials:
+      - 'POTTED_BAMBOO-4'
+    '646':
+      Task: '&2Potted cornflower'
+      Materials:
+      - 'POTTED_CORNFLOWER'
+    '647':
+      Task: '3x &2Potted lily of the valley'
+      Materials:
+      - 'POTTED_LILY_OF_THE_VALLEY-3'
+    '648':
+      Task: '&2Potted wither rose'
+      Materials:
+      - 'POTTED_WITHER_ROSE'
+    '649':
+      Task: '3x &2Prismarine wall'
+      Materials:
+      - 'PRISMARINE_WALL-3'
+    '650':
+      Task: '&2Red nether brick slab'
+      Materials:
+      - 'RED_NETHER_BRICK_SLAB'
+    '651':
+      Task: '4x &2Red nether brick stairs'
+      Materials:
+      - 'RED_NETHER_BRICK_STAIRS-4'
+    '652':
+      Task: '&2Red nether brick wall'
+      Materials:
+      - 'RED_NETHER_BRICK_WALL'
+    '653':
+      Task: '&2Red sandstone wall'
+      Materials:
+      - 'RED_SANDSTONE_WALL'
+    '654':
+      Task: '3x &2Sandstone wall'
+      Materials:
+      - 'SANDSTONE_WALL-3'
+    '655':
+      Task: '3x &2Scaffolding'
+      Materials:
+      - 'SCAFFOLDING-3'
+    '656':
+      Task: '4x &2Smithing table'
+      Materials:
+      - 'SMITHING_TABLE-4'
+    '657':
+      Task: '4x &2Smoker'
+      Materials:
+      - 'SMOKER-4'
+    '658':
+      Task: '2x &2Smooth quartz slab'
+      Materials:
+      - 'SMOOTH_QUARTZ_SLAB-2'
+    '659':
+      Task: '2x &2Smooth quartz stairs'
+      Materials:
+      - 'SMOOTH_QUARTZ_STAIRS-2'
+    '660':
+      Task: '4x &2Smooth red sandstone slab'
+      Materials:
+      - 'SMOOTH_RED_SANDSTONE_SLAB-4'
+    '661':
+      Task: '&2Smooth red sandstone stairs'
+      Materials:
+      - 'SMOOTH_RED_SANDSTONE_STAIRS'
+    '662':
+      Task: '4x &2Smooth sandstone slab'
+      Materials:
+      - 'SMOOTH_SANDSTONE_SLAB-4'
+    '663':
+      Task: '2x &2Smooth sandstone stairs'
+      Materials:
+      - 'SMOOTH_SANDSTONE_STAIRS-2'
+    '664':
+      Task: '3x &2Smooth stone slab'
+      Materials:
+      - 'SMOOTH_STONE_SLAB-3'
+    '665':
+      Task: '4x &2Spruce sign'
+      Materials:
+      - 'SPRUCE_SIGN-4'
+    '666':
+      Task: '3x &2Spruce wall sign'
+      Materials:
+      - 'SPRUCE_WALL_SIGN-3'
+    '667':
+      Task: '2x &2Stonecutter'
+      Materials:
+      - 'STONECUTTER-2'
+    '668':
+      Task: '4x &2Stone brick wall'
+      Materials:
+      - 'STONE_BRICK_WALL-4'
+    '669':
+      Task: '4x &2Stone stairs'
+      Materials:
+      - 'STONE_STAIRS-4'
+    '670':
+      Task: '4x &2Sweet berry bush'
+      Materials:
+      - 'SWEET_BERRY_BUSH-4'
+    '671':
+      Task: '3x &2Wither rose'
+      Materials:
+      - 'WITHER_ROSE-3'
+    '672':
+      Task: '2x &2Composter'
+      Materials:
+      - 'COMPOSTER-2'
+    '673':
+      Task: '&2Beehive'
+      Materials:
+      - 'BEEHIVE'
+    '674':
+      Task: '&2Bee nest'
+      Materials:
+      - 'BEE_NEST'
+    '675':
+      Task: '4x &2Honeycomb block'
+      Materials:
+      - 'HONEYCOMB_BLOCK-4'
+    '676':
+      Task: '&2Honey block'
+      Materials:
+      - 'HONEY_BLOCK'
+    '677':
+      Task: '3x &2Ancient debris'
+      Materials:
+      - 'ANCIENT_DEBRIS-3'
+    '678':
+      Task: '4x &2Basalt'
+      Materials:
+      - 'BASALT-4'
+    '679':
+      Task: '3x &2Blackstone'
+      Materials:
+      - 'BLACKSTONE-3'
+    '680':
+      Task: '2x &2Blackstone slab'
+      Materials:
+      - 'BLACKSTONE_SLAB-2'
+    '681':
+      Task: '4x &2Blackstone stairs'
+      Materials:
+      - 'BLACKSTONE_STAIRS-4'
+    '682':
+      Task: '&2Blackstone wall'
+      Materials:
+      - 'BLACKSTONE_WALL'
+    '683':
+      Task: '4x &2Chain'
+      Materials:
+      - 'CHAIN-4'
+    '684':
+      Task: '2x &2Chiseled nether bricks'
+      Materials:
+      - 'CHISELED_NETHER_BRICKS-2'
+    '685':
+      Task: '&2Chiseled polished blackstone'
+      Materials:
+      - 'CHISELED_POLISHED_BLACKSTONE'
+    '686':
+      Task: '&2Cracked nether bricks'
+      Materials:
+      - 'CRACKED_NETHER_BRICKS'
+    '687':
+      Task: '2x &2Cracked polished blackstone bricks'
+      Materials:
+      - 'CRACKED_POLISHED_BLACKSTONE_BRICKS-2'
+    '688':
+      Task: '4x &2Crimson button'
+      Materials:
+      - 'CRIMSON_BUTTON-4'
+    '689':
+      Task: '2x &2Crimson door'
+      Materials:
+      - 'CRIMSON_DOOR-2'
+    '690':
+      Task: '3x &2Crimson fence'
+      Materials:
+      - 'CRIMSON_FENCE-3'
+    '691':
+      Task: '3x &2Crimson fence gate'
+      Materials:
+      - 'CRIMSON_FENCE_GATE-3'
+    '692':
+      Task: '3x &2Crimson fungus'
+      Materials:
+      - 'CRIMSON_FUNGUS-3'
+    '693':
+      Task: '2x &2Crimson hyphae'
+      Materials:
+      - 'CRIMSON_HYPHAE-2'
+    '694':
+      Task: '3x &2Crimson nylium'
+      Materials:
+      - 'CRIMSON_NYLIUM-3'
+    '695':
+      Task: '4x &2Crimson planks'
+      Materials:
+      - 'CRIMSON_PLANKS-4'
+    '696':
+      Task: '2x &2Crimson pressure plate'
+      Materials:
+      - 'CRIMSON_PRESSURE_PLATE-2'
+    '697':
+      Task: '4x &2Crimson roots'
+      Materials:
+      - 'CRIMSON_ROOTS-4'
+    '698':
+      Task: '&2Crimson sign'
+      Materials:
+      - 'CRIMSON_SIGN'
+    '699':
+      Task: '4x &2Crimson slab'
+      Materials:
+      - 'CRIMSON_SLAB-4'
+    '700':
+      Task: '2x &2Crimson stairs'
+      Materials:
+      - 'CRIMSON_STAIRS-2'
+    '701':
+      Task: '3x &2Crimson stem'
+      Materials:
+      - 'CRIMSON_STEM-3'
+    '702':
+      Task: '3x &2Crimson trapdoor'
+      Materials:
+      - 'CRIMSON_TRAPDOOR-3'
+    '703':
+      Task: '4x &2Crimson wall sign'
+      Materials:
+      - 'CRIMSON_WALL_SIGN-4'
+    '704':
+      Task: '2x &2Crying obsidian'
+      Materials:
+      - 'CRYING_OBSIDIAN-2'
+    '705':
+      Task: '4x &2Gilded blackstone'
+      Materials:
+      - 'GILDED_BLACKSTONE-4'
+    '706':
+      Task: '2x &2Lodestone'
+      Materials:
+      - 'LODESTONE-2'
+    '707':
+      Task: '4x &2Netherite block'
+      Materials:
+      - 'NETHERITE_BLOCK-4'
+    '708':
+      Task: '&2Nether gold ore'
+      Materials:
+      - 'NETHER_GOLD_ORE'
+    '709':
+      Task: '&2Nether sprouts'
+      Materials:
+      - 'NETHER_SPROUTS'
+    '710':
+      Task: '&2Polished basalt'
+      Materials:
+      - 'POLISHED_BASALT'
+    '711':
+      Task: '&2Polished blackstone'
+      Materials:
+      - 'POLISHED_BLACKSTONE'
+    '712':
+      Task: '&2Polished blackstone bricks'
+      Materials:
+      - 'POLISHED_BLACKSTONE_BRICKS'
+    '713':
+      Task: '&2Polished blackstone brick slab'
+      Materials:
+      - 'POLISHED_BLACKSTONE_BRICK_SLAB'
+    '714':
+      Task: '3x &2Polished blackstone brick stairs'
+      Materials:
+      - 'POLISHED_BLACKSTONE_BRICK_STAIRS-3'
+    '715':
+      Task: '3x &2Polished blackstone brick wall'
+      Materials:
+      - 'POLISHED_BLACKSTONE_BRICK_WALL-3'
+    '716':
+      Task: '2x &2Polished blackstone button'
+      Materials:
+      - 'POLISHED_BLACKSTONE_BUTTON-2'
+    '717':
+      Task: '2x &2Polished blackstone pressure plate'
+      Materials:
+      - 'POLISHED_BLACKSTONE_PRESSURE_PLATE-2'
+    '718':
+      Task: '3x &2Polished blackstone slab'
+      Materials:
+      - 'POLISHED_BLACKSTONE_SLAB-3'
+    '719':
+      Task: '4x &2Polished blackstone stairs'
+      Materials:
+      - 'POLISHED_BLACKSTONE_STAIRS-4'
+    '720':
+      Task: '2x &2Polished blackstone wall'
+      Materials:
+      - 'POLISHED_BLACKSTONE_WALL-2'
+    '721':
+      Task: '2x &2Potted crimson fungus'
+      Materials:
+      - 'POTTED_CRIMSON_FUNGUS-2'
+    '722':
+      Task: '&2Potted crimson roots'
+      Materials:
+      - 'POTTED_CRIMSON_ROOTS'
+    '723':
+      Task: '&2Potted warped fungus'
+      Materials:
+      - 'POTTED_WARPED_FUNGUS'
+    '724':
+      Task: '2x &2Potted warped roots'
+      Materials:
+      - 'POTTED_WARPED_ROOTS-2'
+    '725':
+      Task: '3x &2Quartz bricks'
+      Materials:
+      - 'QUARTZ_BRICKS-3'
+    '726':
+      Task: '4x &2Respawn anchor'
+      Materials:
+      - 'RESPAWN_ANCHOR-4'
+    '727':
+      Task: '4x &2Shroomlight'
+      Materials:
+      - 'SHROOMLIGHT-4'
+    '728':
+      Task: '4x &2Soul campfire'
+      Materials:
+      - 'SOUL_CAMPFIRE-4'
+    '729':
+      Task: '4x &2Soul fire'
+      Materials:
+      - 'SOUL_FIRE-4'
+    '730':
+      Task: '&2Soul lantern'
+      Materials:
+      - 'SOUL_LANTERN'
+    '731':
+      Task: '&2Soul soil'
+      Materials:
+      - 'SOUL_SOIL'
+    '732':
+      Task: '3x &2Soul torch'
+      Materials:
+      - 'SOUL_TORCH-3'
+    '733':
+      Task: '4x &2Soul wall torch'
+      Materials:
+      - 'SOUL_WALL_TORCH-4'
+    '734':
+      Task: '2x &2Stripped crimson hyphae'
+      Materials:
+      - 'STRIPPED_CRIMSON_HYPHAE-2'
+    '735':
+      Task: '2x &2Stripped crimson stem'
+      Materials:
+      - 'STRIPPED_CRIMSON_STEM-2'
+    '736':
+      Task: '3x &2Stripped warped hyphae'
+      Materials:
+      - 'STRIPPED_WARPED_HYPHAE-3'
+    '737':
+      Task: '4x &2Stripped warped stem'
+      Materials:
+      - 'STRIPPED_WARPED_STEM-4'
+    '738':
+      Task: '3x &2Target'
+      Materials:
+      - 'TARGET-3'
+    '739':
+      Task: '&2Twisting vines'
+      Materials:
+      - 'TWISTING_VINES'
+    '740':
+      Task: '2x &2Twisting vines plant'
+      Materials:
+      - 'TWISTING_VINES_PLANT-2'
+    '741':
+      Task: '2x &2Warped button'
+      Materials:
+      - 'WARPED_BUTTON-2'
+    '742':
+      Task: '4x &2Warped door'
+      Materials:
+      - 'WARPED_DOOR-4'
+    '743':
+      Task: '4x &2Warped fence'
+      Materials:
+      - 'WARPED_FENCE-4'
+    '744':
+      Task: '3x &2Warped fence gate'
+      Materials:
+      - 'WARPED_FENCE_GATE-3'
+    '745':
+      Task: '2x &2Warped fungus'
+      Materials:
+      - 'WARPED_FUNGUS-2'
+    '746':
+      Task: '4x &2Warped hyphae'
+      Materials:
+      - 'WARPED_HYPHAE-4'
+    '747':
+      Task: '&2Warped nylium'
+      Materials:
+      - 'WARPED_NYLIUM'
+    '748':
+      Task: '2x &2Warped planks'
+      Materials:
+      - 'WARPED_PLANKS-2'
+    '749':
+      Task: '4x &2Warped pressure plate'
+      Materials:
+      - 'WARPED_PRESSURE_PLATE-4'
+    '750':
+      Task: '&2Warped roots'
+      Materials:
+      - 'WARPED_ROOTS'
+    '751':
+      Task: '2x &2Warped sign'
+      Materials:
+      - 'WARPED_SIGN-2'
+    '752':
+      Task: '3x &2Warped slab'
+      Materials:
+      - 'WARPED_SLAB-3'
+    '753':
+      Task: '&2Warped stairs'
+      Materials:
+      - 'WARPED_STAIRS'
+    '754':
+      Task: '4x &2Warped stem'
+      Materials:
+      - 'WARPED_STEM-4'
+    '755':
+      Task: '3x &2Warped trapdoor'
+      Materials:
+      - 'WARPED_TRAPDOOR-3'
+    '756':
+      Task: '3x &2Warped wall sign'
+      Materials:
+      - 'WARPED_WALL_SIGN-3'
+    '757':
+      Task: '2x &2Warped wart block'
+      Materials:
+      - 'WARPED_WART_BLOCK-2'
+    '758':
+      Task: '3x &2Weeping vines'
+      Materials:
+      - 'WEEPING_VINES-3'
+    '759':
+      Task: '&2Weeping vines plant'
+      Materials:
+      - 'WEEPING_VINES_PLANT'
+    '760':
+      Task: '3x &2Amethyst block'
+      Materials:
+      - 'AMETHYST_BLOCK-3'
+    '761':
+      Task: '4x &2Amethyst cluster'
+      Materials:
+      - 'AMETHYST_CLUSTER-4'
+    '762':
+      Task: '&2Azalea'
+      Materials:
+      - 'AZALEA'
+    '763':
+      Task: '&2Azalea leaves'
+      Materials:
+      - 'AZALEA_LEAVES'
+    '764':
+      Task: '3x &2Big dripleaf'
+      Materials:
+      - 'BIG_DRIPLEAF-3'
+    '765':
+      Task: '&2Big dripleaf stem'
+      Materials:
+      - 'BIG_DRIPLEAF_STEM'
+    '766':
+      Task: '&2Black candle'
+      Materials:
+      - 'BLACK_CANDLE'
+    '767':
+      Task: '2x &2Black candle cake'
+      Materials:
+      - 'BLACK_CANDLE_CAKE-2'
+    '768':
+      Task: '3x &2Blue candle'
+      Materials:
+      - 'BLUE_CANDLE-3'
+    '769':
+      Task: '2x &2Blue candle cake'
+      Materials:
+      - 'BLUE_CANDLE_CAKE-2'
+    '770':
+      Task: '2x &2Brown candle'
+      Materials:
+      - 'BROWN_CANDLE-2'
+    '771':
+      Task: '3x &2Brown candle cake'
+      Materials:
+      - 'BROWN_CANDLE_CAKE-3'
+    '772':
+      Task: '&2Budding amethyst'
+      Materials:
+      - 'BUDDING_AMETHYST'
+    '773':
+      Task: '3x &2Calcite'
+      Materials:
+      - 'CALCITE-3'
+    '774':
+      Task: '&2Candle'
+      Materials:
+      - 'CANDLE'
+    '775':
+      Task: '&2Candle cake'
+      Materials:
+      - 'CANDLE_CAKE'
+    '776':
+      Task: '3x &2Cave vines'
+      Materials:
+      - 'CAVE_VINES-3'
+    '777':
+      Task: '3x &2Cave vines plant'
+      Materials:
+      - 'CAVE_VINES_PLANT-3'
+    '778':
+      Task: '4x &2Chiseled deepslate'
+      Materials:
+      - 'CHISELED_DEEPSLATE-4'
+    '779':
+      Task: '&2Cobbled deepslate'
+      Materials:
+      - 'COBBLED_DEEPSLATE'
+    '780':
+      Task: '&2Cobbled deepslate slab'
+      Materials:
+      - 'COBBLED_DEEPSLATE_SLAB'
+    '781':
+      Task: '3x &2Cobbled deepslate stairs'
+      Materials:
+      - 'COBBLED_DEEPSLATE_STAIRS-3'
+    '782':
+      Task: '3x &2Cobbled deepslate wall'
+      Materials:
+      - 'COBBLED_DEEPSLATE_WALL-3'
+    '783':
+      Task: '3x &2Copper block'
+      Materials:
+      - 'COPPER_BLOCK-3'
+    '784':
+      Task: '&2Copper ore'
+      Materials:
+      - 'COPPER_ORE'
+    '785':
+      Task: '&2Cracked deepslate bricks'
+      Materials:
+      - 'CRACKED_DEEPSLATE_BRICKS'
+    '786':
+      Task: '4x &2Cracked deepslate tiles'
+      Materials:
+      - 'CRACKED_DEEPSLATE_TILES-4'
+    '787':
+      Task: '2x &2Cut copper'
+      Materials:
+      - 'CUT_COPPER-2'
+    '788':
+      Task: '&2Cut copper slab'
+      Materials:
+      - 'CUT_COPPER_SLAB'
+    '789':
+      Task: '&2Cut copper stairs'
+      Materials:
+      - 'CUT_COPPER_STAIRS'
+    '790':
+      Task: '4x &2Cyan candle'
+      Materials:
+      - 'CYAN_CANDLE-4'
+    '791':
+      Task: '3x &2Cyan candle cake'
+      Materials:
+      - 'CYAN_CANDLE_CAKE-3'
+    '792':
+      Task: '&2Deepslate'
+      Materials:
+      - 'DEEPSLATE'
+    '793':
+      Task: '4x &2Deepslate bricks'
+      Materials:
+      - 'DEEPSLATE_BRICKS-4'
+    '794':
+      Task: '3x &2Deepslate brick slab'
+      Materials:
+      - 'DEEPSLATE_BRICK_SLAB-3'
+    '795':
+      Task: '4x &2Deepslate brick stairs'
+      Materials:
+      - 'DEEPSLATE_BRICK_STAIRS-4'
+    '796':
+      Task: '3x &2Deepslate brick wall'
+      Materials:
+      - 'DEEPSLATE_BRICK_WALL-3'
+    '797':
+      Task: '4x &2Deepslate coal ore'
+      Materials:
+      - 'DEEPSLATE_COAL_ORE-4'
+    '798':
+      Task: '3x &2Deepslate copper ore'
+      Materials:
+      - 'DEEPSLATE_COPPER_ORE-3'
+    '799':
+      Task: '3x &2Deepslate diamond ore'
+      Materials:
+      - 'DEEPSLATE_DIAMOND_ORE-3'
+    '800':
+      Task: '4x &2Deepslate emerald ore'
+      Materials:
+      - 'DEEPSLATE_EMERALD_ORE-4'
+    '801':
+      Task: '3x &2Deepslate gold ore'
+      Materials:
+      - 'DEEPSLATE_GOLD_ORE-3'
+    '802':
+      Task: '&2Deepslate iron ore'
+      Materials:
+      - 'DEEPSLATE_IRON_ORE'
+    '803':
+      Task: '&2Deepslate lapis ore'
+      Materials:
+      - 'DEEPSLATE_LAPIS_ORE'
+    '804':
+      Task: '4x &2Deepslate redstone ore'
+      Materials:
+      - 'DEEPSLATE_REDSTONE_ORE-4'
+    '805':
+      Task: '2x &2Deepslate tiles'
+      Materials:
+      - 'DEEPSLATE_TILES-2'
+    '806':
+      Task: '4x &2Deepslate tile slab'
+      Materials:
+      - 'DEEPSLATE_TILE_SLAB-4'
+    '807':
+      Task: '4x &2Deepslate tile stairs'
+      Materials:
+      - 'DEEPSLATE_TILE_STAIRS-4'
+    '808':
+      Task: '&2Deepslate tile wall'
+      Materials:
+      - 'DEEPSLATE_TILE_WALL'
+    '809':
+      Task: '4x &2Dirt path'
+      Materials:
+      - 'DIRT_PATH-4'
+    '810':
+      Task: '3x &2Dripstone block'
+      Materials:
+      - 'DRIPSTONE_BLOCK-3'
+    '811':
+      Task: '3x &2Exposed copper'
+      Materials:
+      - 'EXPOSED_COPPER-3'
+    '812':
+      Task: '3x &2Exposed cut copper'
+      Materials:
+      - 'EXPOSED_CUT_COPPER-3'
+    '813':
+      Task: '4x &2Exposed cut copper slab'
+      Materials:
+      - 'EXPOSED_CUT_COPPER_SLAB-4'
+    '814':
+      Task: '4x &2Exposed cut copper stairs'
+      Materials:
+      - 'EXPOSED_CUT_COPPER_STAIRS-4'
+    '815':
+      Task: '&2Flowering azalea'
+      Materials:
+      - 'FLOWERING_AZALEA'
+    '816':
+      Task: '3x &2Flowering azalea leaves'
+      Materials:
+      - 'FLOWERING_AZALEA_LEAVES-3'
+    '817':
+      Task: '3x &2Glow lichen'
+      Materials:
+      - 'GLOW_LICHEN-3'
+    '818':
+      Task: '&2Gray candle'
+      Materials:
+      - 'GRAY_CANDLE'
+    '819':
+      Task: '2x &2Gray candle cake'
+      Materials:
+      - 'GRAY_CANDLE_CAKE-2'
+    '820':
+      Task: '4x &2Green candle'
+      Materials:
+      - 'GREEN_CANDLE-4'
+    '821':
+      Task: '3x &2Green candle cake'
+      Materials:
+      - 'GREEN_CANDLE_CAKE-3'
+    '822':
+      Task: '2x &2Hanging roots'
+      Materials:
+      - 'HANGING_ROOTS-2'
+    '823':
+      Task: '3x &2Infested deepslate'
+      Materials:
+      - 'INFESTED_DEEPSLATE-3'
+    '824':
+      Task: '2x &2Large amethyst bud'
+      Materials:
+      - 'LARGE_AMETHYST_BUD-2'
+    '825':
+      Task: '4x &2Lava cauldron'
+      Materials:
+      - 'LAVA_CAULDRON-4'
+    '826':
+      Task: '4x &2Light'
+      Materials:
+      - 'LIGHT-4'
+    '827':
+      Task: '&2Lightning rod'
+      Materials:
+      - 'LIGHTNING_ROD'
+    '828':
+      Task: '2x &2Light blue candle'
+      Materials:
+      - 'LIGHT_BLUE_CANDLE-2'
+    '829':
+      Task: '4x &2Light blue candle cake'
+      Materials:
+      - 'LIGHT_BLUE_CANDLE_CAKE-4'
+    '830':
+      Task: '2x &2Light gray candle'
+      Materials:
+      - 'LIGHT_GRAY_CANDLE-2'
+    '831':
+      Task: '2x &2Light gray candle cake'
+      Materials:
+      - 'LIGHT_GRAY_CANDLE_CAKE-2'
+    '832':
+      Task: '&2Lime candle'
+      Materials:
+      - 'LIME_CANDLE'
+    '833':
+      Task: '&2Lime candle cake'
+      Materials:
+      - 'LIME_CANDLE_CAKE'
+    '834':
+      Task: '&2Magenta candle'
+      Materials:
+      - 'MAGENTA_CANDLE'
+    '835':
+      Task: '4x &2Magenta candle cake'
+      Materials:
+      - 'MAGENTA_CANDLE_CAKE-4'
+    '836':
+      Task: '2x &2Medium amethyst bud'
+      Materials:
+      - 'MEDIUM_AMETHYST_BUD-2'
+    '837':
+      Task: '4x &2Moss block'
+      Materials:
+      - 'MOSS_BLOCK-4'
+    '838':
+      Task: '4x &2Moss carpet'
+      Materials:
+      - 'MOSS_CARPET-4'
+    '839':
+      Task: '4x &2Orange candle'
+      Materials:
+      - 'ORANGE_CANDLE-4'
+    '840':
+      Task: '&2Orange candle cake'
+      Materials:
+      - 'ORANGE_CANDLE_CAKE'
+    '841':
+      Task: '&2Oxidized copper'
+      Materials:
+      - 'OXIDIZED_COPPER'
+    '842':
+      Task: '4x &2Oxidized cut copper'
+      Materials:
+      - 'OXIDIZED_CUT_COPPER-4'
+    '843':
+      Task: '&2Oxidized cut copper slab'
+      Materials:
+      - 'OXIDIZED_CUT_COPPER_SLAB'
+    '844':
+      Task: '&2Oxidized cut copper stairs'
+      Materials:
+      - 'OXIDIZED_CUT_COPPER_STAIRS'
+    '845':
+      Task: '&2Pink candle'
+      Materials:
+      - 'PINK_CANDLE'
+    '846':
+      Task: '&2Pink candle cake'
+      Materials:
+      - 'PINK_CANDLE_CAKE'
+    '847':
+      Task: '&2Pointed dripstone'
+      Materials:
+      - 'POINTED_DRIPSTONE'
+    '848':
+      Task: '&2Polished deepslate'
+      Materials:
+      - 'POLISHED_DEEPSLATE'
+    '849':
+      Task: '4x &2Polished deepslate slab'
+      Materials:
+      - 'POLISHED_DEEPSLATE_SLAB-4'
+    '850':
+      Task: '2x &2Polished deepslate stairs'
+      Materials:
+      - 'POLISHED_DEEPSLATE_STAIRS-2'
+    '851':
+      Task: '2x &2Polished deepslate wall'
+      Materials:
+      - 'POLISHED_DEEPSLATE_WALL-2'
+    '852':
+      Task: '&2Potted azalea bush'
+      Materials:
+      - 'POTTED_AZALEA_BUSH'
+    '853':
+      Task: '3x &2Potted flowering azalea bush'
+      Materials:
+      - 'POTTED_FLOWERING_AZALEA_BUSH-3'
+    '854':
+      Task: '3x &2Powder snow'
+      Materials:
+      - 'POWDER_SNOW-3'
+    '855':
+      Task: '&2Powder snow cauldron'
+      Materials:
+      - 'POWDER_SNOW_CAULDRON'
+    '856':
+      Task: '4x &2Purple candle'
+      Materials:
+      - 'PURPLE_CANDLE-4'
+    '857':
+      Task: '4x &2Purple candle cake'
+      Materials:
+      - 'PURPLE_CANDLE_CAKE-4'
+    '858':
+      Task: '4x &2Raw copper block'
+      Materials:
+      - 'RAW_COPPER_BLOCK-4'
+    '859':
+      Task: '4x &2Raw gold block'
+      Materials:
+      - 'RAW_GOLD_BLOCK-4'
+    '860':
+      Task: '4x &2Raw iron block'
+      Materials:
+      - 'RAW_IRON_BLOCK-4'
+    '861':
+      Task: '4x &2Red candle'
+      Materials:
+      - 'RED_CANDLE-4'
+    '862':
+      Task: '4x &2Red candle cake'
+      Materials:
+      - 'RED_CANDLE_CAKE-4'
+    '863':
+      Task: '2x &2Rooted dirt'
+      Materials:
+      - 'ROOTED_DIRT-2'
+    '864':
+      Task: '3x &2Sculk sensor'
+      Materials:
+      - 'SCULK_SENSOR-3'
+    '865':
+      Task: '&2Small amethyst bud'
+      Materials:
+      - 'SMALL_AMETHYST_BUD'
+    '866':
+      Task: '2x &2Small dripleaf'
+      Materials:
+      - 'SMALL_DRIPLEAF-2'
+    '867':
+      Task: '4x &2Smooth basalt'
+      Materials:
+      - 'SMOOTH_BASALT-4'
+    '868':
+      Task: '4x &2Spore blossom'
+      Materials:
+      - 'SPORE_BLOSSOM-4'
+    '869':
+      Task: '&2Tinted glass'
+      Materials:
+      - 'TINTED_GLASS'
+    '870':
+      Task: '3x &2Tuff'
+      Materials:
+      - 'TUFF-3'
+    '871':
+      Task: '&2Water cauldron'
+      Materials:
+      - 'WATER_CAULDRON'
+    '872':
+      Task: '4x &2Waxed copper block'
+      Materials:
+      - 'WAXED_COPPER_BLOCK-4'
+    '873':
+      Task: '2x &2Waxed cut copper'
+      Materials:
+      - 'WAXED_CUT_COPPER-2'
+    '874':
+      Task: '&2Waxed cut copper slab'
+      Materials:
+      - 'WAXED_CUT_COPPER_SLAB'
+    '875':
+      Task: '4x &2Waxed cut copper stairs'
+      Materials:
+      - 'WAXED_CUT_COPPER_STAIRS-4'
+    '876':
+      Task: '2x &2Waxed exposed copper'
+      Materials:
+      - 'WAXED_EXPOSED_COPPER-2'
+    '877':
+      Task: '3x &2Waxed exposed cut copper'
+      Materials:
+      - 'WAXED_EXPOSED_CUT_COPPER-3'
+    '878':
+      Task: '2x &2Waxed exposed cut copper slab'
+      Materials:
+      - 'WAXED_EXPOSED_CUT_COPPER_SLAB-2'
+    '879':
+      Task: '&2Waxed exposed cut copper stairs'
+      Materials:
+      - 'WAXED_EXPOSED_CUT_COPPER_STAIRS'
+    '880':
+      Task: '4x &2Waxed oxidized copper'
+      Materials:
+      - 'WAXED_OXIDIZED_COPPER-4'
+    '881':
+      Task: '2x &2Waxed oxidized cut copper'
+      Materials:
+      - 'WAXED_OXIDIZED_CUT_COPPER-2'
+    '882':
+      Task: '&2Waxed oxidized cut copper slab'
+      Materials:
+      - 'WAXED_OXIDIZED_CUT_COPPER_SLAB'
+    '883':
+      Task: '2x &2Waxed oxidized cut copper stairs'
+      Materials:
+      - 'WAXED_OXIDIZED_CUT_COPPER_STAIRS-2'
+    '884':
+      Task: '3x &2Waxed weathered copper'
+      Materials:
+      - 'WAXED_WEATHERED_COPPER-3'
+    '885':
+      Task: '3x &2Waxed weathered cut copper'
+      Materials:
+      - 'WAXED_WEATHERED_CUT_COPPER-3'
+    '886':
+      Task: '&2Waxed weathered cut copper slab'
+      Materials:
+      - 'WAXED_WEATHERED_CUT_COPPER_SLAB'
+    '887':
+      Task: '4x &2Waxed weathered cut copper stairs'
+      Materials:
+      - 'WAXED_WEATHERED_CUT_COPPER_STAIRS-4'
+    '888':
+      Task: '&2Weathered copper'
+      Materials:
+      - 'WEATHERED_COPPER'
+    '889':
+      Task: '&2Weathered cut copper'
+      Materials:
+      - 'WEATHERED_CUT_COPPER'
+    '890':
+      Task: '3x &2Weathered cut copper slab'
+      Materials:
+      - 'WEATHERED_CUT_COPPER_SLAB-3'
+    '891':
+      Task: '2x &2Weathered cut copper stairs'
+      Materials:
+      - 'WEATHERED_CUT_COPPER_STAIRS-2'
+    '892':
+      Task: '2x &2White candle'
+      Materials:
+      - 'WHITE_CANDLE-2'
+    '893':
+      Task: '2x &2White candle cake'
+      Materials:
+      - 'WHITE_CANDLE_CAKE-2'
+    '894':
+      Task: '2x &2Yellow candle'
+      Materials:
+      - 'YELLOW_CANDLE-2'
+    '895':
+      Task: '&2Yellow candle cake'
+      Materials:
+      - 'YELLOW_CANDLE_CAKE'
+    '896':
+      Task: '&2Frogspawn'
+      Materials:
+      - 'FROGSPAWN'
+    '897':
+      Task: '4x &2Mangrove button'
+      Materials:
+      - 'MANGROVE_BUTTON-4'
+    '898':
+      Task: '4x &2Mangrove door'
+      Materials:
+      - 'MANGROVE_DOOR-4'
+    '899':
+      Task: '3x &2Mangrove fence'
+      Materials:
+      - 'MANGROVE_FENCE-3'
+    '900':
+      Task: '4x &2Mangrove fence gate'
+      Materials:
+      - 'MANGROVE_FENCE_GATE-4'
+    '901':
+      Task: '2x &2Mangrove leaves'
+      Materials:
+      - 'MANGROVE_LEAVES-2'
+    '902':
+      Task: '3x &2Mangrove log'
+      Materials:
+      - 'MANGROVE_LOG-3'
+    '903':
+      Task: '4x &2Mangrove planks'
+      Materials:
+      - 'MANGROVE_PLANKS-4'
+    '904':
+      Task: '&2Mangrove pressure plate'
+      Materials:
+      - 'MANGROVE_PRESSURE_PLATE'
+    '905':
+      Task: '4x &2Mangrove propagule'
+      Materials:
+      - 'MANGROVE_PROPAGULE-4'
+    '906':
+      Task: '4x &2Mangrove roots'
+      Materials:
+      - 'MANGROVE_ROOTS-4'
+    '907':
+      Task: '3x &2Mangrove sign'
+      Materials:
+      - 'MANGROVE_SIGN-3'
+    '908':
+      Task: '2x &2Mangrove slab'
+      Materials:
+      - 'MANGROVE_SLAB-2'
+    '909':
+      Task: '3x &2Mangrove stairs'
+      Materials:
+      - 'MANGROVE_STAIRS-3'
+    '910':
+      Task: '3x &2Mangrove trapdoor'
+      Materials:
+      - 'MANGROVE_TRAPDOOR-3'
+    '911':
+      Task: '&2Mangrove wall sign'
+      Materials:
+      - 'MANGROVE_WALL_SIGN'
+    '912':
+      Task: '3x &2Mangrove wood'
+      Materials:
+      - 'MANGROVE_WOOD-3'
+    '913':
+      Task: '3x &2Mud'
+      Materials:
+      - 'MUD-3'
+    '914':
+      Task: '4x &2Muddy mangrove roots'
+      Materials:
+      - 'MUDDY_MANGROVE_ROOTS-4'
+    '915':
+      Task: '4x &2Mud bricks'
+      Materials:
+      - 'MUD_BRICKS-4'
+    '916':
+      Task: '2x &2Mud brick slab'
+      Materials:
+      - 'MUD_BRICK_SLAB-2'
+    '917':
+      Task: '2x &2Mud brick stairs'
+      Materials:
+      - 'MUD_BRICK_STAIRS-2'
+    '918':
+      Task: '&2Mud brick wall'
+      Materials:
+      - 'MUD_BRICK_WALL'
+    '919':
+      Task: '&2Ochre froglight'
+      Materials:
+      - 'OCHRE_FROGLIGHT'
+    '920':
+      Task: '&2Packed mud'
+      Materials:
+      - 'PACKED_MUD'
+    '921':
+      Task: '&2Pearlescent froglight'
+      Materials:
+      - 'PEARLESCENT_FROGLIGHT'
+    '922':
+      Task: '4x &2Potted mangrove propagule'
+      Materials:
+      - 'POTTED_MANGROVE_PROPAGULE-4'
+    '923':
+      Task: '3x &2Reinforced deepslate'
+      Materials:
+      - 'REINFORCED_DEEPSLATE-3'
+    '924':
+      Task: '3x &2Sculk'
+      Materials:
+      - 'SCULK-3'
+    '925':
+      Task: '&2Sculk catalyst'
+      Materials:
+      - 'SCULK_CATALYST'
+    '926':
+      Task: '3x &2Sculk shrieker'
+      Materials:
+      - 'SCULK_SHRIEKER-3'
+    '927':
+      Task: '3x &2Sculk vein'
+      Materials:
+      - 'SCULK_VEIN-3'
+    '928':
+      Task: '3x &2Stripped mangrove log'
+      Materials:
+      - 'STRIPPED_MANGROVE_LOG-3'
+    '929':
+      Task: '&2Stripped mangrove wood'
+      Materials:
+      - 'STRIPPED_MANGROVE_WOOD'
+    '930':
+      Task: '2x &2Verdant froglight'
+      Materials:
+      - 'VERDANT_FROGLIGHT-2'

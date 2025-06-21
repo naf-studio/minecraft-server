@@ -1,0 +1,150 @@
+Timer:
+  '1':
+    Mode: all
+    From: 09:10:00
+    Until: '10:15:10'
+    Categories:
+    - All
+    Days:
+    - All
+    Rewards:
+    - All
+  '2':
+    Mode: Flash
+    From: '11:20:15'
+    Until: '12:00:00'
+    Categories:
+    - All
+    Days:
+    - All
+    Rewards:
+    - All
+  '3':
+    Mode: Decode
+    From: '14:00:25'
+    Until: '16:00:00'
+    Categories:
+    - All
+    Days:
+    - All
+    Rewards:
+    - All
+  '4':
+    Mode: Decode
+    From: '17:01:11'
+    Until: '17:30:35'
+    Categories:
+    - All
+    Days:
+    - All
+    Rewards:
+    - All
+  '5':
+    Mode: Questions
+    From: '18:00:00'
+    Until: '20:00:00'
+    Categories:
+    - All
+    Days:
+    - All
+    Rewards:
+    - All
+DailyTimer:
+  ThisIsDaily:
+    Mode: Questions
+    RewardTimeRange: 1440
+    AnnounceOn: '12:23:00'
+    WeekDays:
+    - All
+    MonthDays:
+    - All
+    Rewards:
+      '1':
+        RewardCategory: Daily
+        RewardName: First
+      '2':
+        RewardCategory: Daily
+        RewardName: Second
+      '3':
+        RewardCategory: Daily
+        RewardName: Third
+    BroadcastMessage:
+    - '&2----------&e ========== &6TryMe &e========== &2----------'
+    - '&eCongratz for best quiz game players from last 24 hours!'
+    - '&eFirst place gets &3[1name] with [1points]!'
+    - '&eSecond place gets &3[2name] with [2points]!'
+    - '&eThird place gets &3[3name] with [3points]!'
+    - '&2----------------------------------------------'
+  ThisIsWeekly:
+    Mode: Questions
+    RewardTimeRange: 10080
+    AnnounceOn: '12:00:00'
+    WeekDays:
+    - Sunday
+    MonthDays:
+    - All
+    Rewards:
+      '1':
+        RewardCategory: Weekly
+        RewardName: All
+      '2':
+        RewardCategory: Weekly
+        RewardName: All
+      '3':
+        RewardCategory: Weekly
+        RewardName: All
+    BroadcastMessage:
+    - '&2----------&e ========== &6TryMe &e========== &2----------'
+    - '&eCongratz for best quiz game players from last 7 days!'
+    - '&eFirst place gets &3[1name]!'
+    - '&eSecond place gets &3[2name]!'
+    - '&eThird place gets &3[3name]!'
+    - '&2----------------------------------------------'
+  ThisIsMonthly:
+    Mode: All
+    RewardTimeRange: 40320
+    AnnounceOn: '12:00:00'
+    WeekDays:
+    - All
+    MonthDays:
+    - 1
+    Rewards:
+      '1':
+        RewardCategory: Monthly
+        RewardName: Second
+      '2':
+        RewardCategory: Monthly
+        RewardName: Second
+      '3':
+        RewardCategory: Monthly
+        RewardName: Second
+      '4':
+        RewardCategory: Monthly
+        RewardName: Second
+      '5':
+        RewardCategory: Monthly
+        RewardName: Second
+      '6':
+        RewardCategory: Monthly
+        RewardName: Second
+      '7':
+        RewardCategory: Monthly
+        RewardName: Second
+      '8':
+        RewardCategory: Monthly
+        RewardName: Second
+      '9':
+        RewardCategory: Monthly
+        RewardName: Second
+      '10':
+        RewardCategory: Monthly
+        RewardName: Second
+    BroadcastMessage:
+    - '&2----------&e ========== &6TryMe &e========== &2----------'
+    - '&eCongratz for best quiz game players from last month!'
+    - '&eFirst place gets &3[1name]!'
+    - '&eSecond place gets &3[2name]!'
+    - '&eThird place gets &3[3name]!'
+    - '&eAnd rest of them in order: &3[4name]&e, &3[5name]&e, &3[6name]&e, &3[7name]&e,
+      &3[8name]&e, &3[9name]&e, &3[10name]&e,!'
+    - '&2----------------------------------------------'
