@@ -13,7 +13,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need either an injector or a recompiled Vault version.
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform a full server restart for this to take effect and avoid issues when retrieving players' balances.
-  Enabled: false
+  Enabled: true
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -138,6 +138,10 @@ Optimizations:
     # When set to true, plugin will check if player can manipulate armor stand by sending fake block place event and checking if any plugin would want to prevent this action
     # This can help out to minimize posibility for players to manipulate armor stands when they don't have build permission in area where armorstand is standing
     CheckBlockPlace: false
+    # Minimal armorstand scale which can be set in armor stand editor
+    MinScale: 0.5
+    # Max armorstand scale which can be set in armor stand editor
+    MaxScale: 3
     Templates:
       # When set to true, the player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
       SpecificPermission: false
@@ -710,6 +714,8 @@ Signs:
   # Usually used for preventing shop sign modifications
   editBlackList:
   - '[Shop]'
+  # When enabled player needs to be sneaking to edit signs
+  RequireSneaking: false
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -720,13 +726,9 @@ Skins:
   # Requests from player specific permission for that skin cmi.command.skin.perm.[skinName]
   RequireSpecificPerm: false
   # Defines time in minutes how offten we want to update skin information from online Mojang servers
-  # Keep in mind that your server can only send 1 request every minute, so keep it at a decent amount, hour or more
   # So if you have this set to 1 hour, then player skin information will be updated if player old skin information is older then 1 hour
   # This only triggers when player joins server or changes skin manually
   SkinUpdateTimer: 1320
-  # Defines time in minutes how offten we want to send requests to Mojang servers
-  # This is to limit amount of requests in specific time to avoid cluter with possible requests
-  SkinRequestFrequency: 10
 Alert:
   # Time in minutes for how long we want to keep set allert on player when performing /cmi alert command. Default is 24 hours
   Timer: 1440
