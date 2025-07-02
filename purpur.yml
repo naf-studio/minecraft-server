@@ -10,18 +10,17 @@
 
 verbose: false
 settings:
-  server-mod-name: Leaf
   register-minecraft-debug-commands: false
   messages:
     cannot-ride-mob: <red>You cannot mount that mob
     afk-broadcast-away: <yellow><italic>%s is now AFK
     afk-broadcast-back: <yellow><italic>%s is no longer AFK
     afk-title-away: <gold><bold>AFK:<red>You are now AFK...:10:70:20
+    afk-command-cooldown: 0
+    afk-command-cooldown-msg: <gray>You need to wait %time%s to use /afk.
     afk-broadcast-use-display-name: false
     afk-tab-list-prefix: '[AFK] '
     afk-tab-list-suffix: ''
-    afk-command-cooldown: 0
-    afk-command-cooldown-msg: <gray>You need to wait %time%s to use /afk.
     credits-command-output: <green>%s has been shown the end credits
     demo-command-output: <green>%s has been shown the demo screen
     ping-command-output: <green>%s's ping is %sms
@@ -37,6 +36,7 @@ settings:
     death-message:
       run-with-scissors: <player> slipped and fell on their shears
       stonecutter: <player> has sawed themself in half
+  server-mod-name: Leaf
   disable-give-dropping: false
   bee-count-payload: false
   tps-catchup: true
@@ -98,8 +98,6 @@ settings:
       second: '%02d second'
       seconds: '%02d seconds'
   blocks:
-    snow:
-      smooth-accumulation-step: 0
     barrel:
       rows: 3
     chest_boat:
@@ -113,6 +111,8 @@ settings:
       max-bees-inside: 3
     anvil:
       cumulative-cost: true
+    snow:
+      smooth-accumulation-step: 0
     lightning_rod:
       range: 128
     grindstone:
@@ -134,14 +134,13 @@ settings:
     soul-sand:
       reverse-bubble-column-flow: false
   enchantment:
-    allow-looting-on-shears: false
     anvil:
       allow-inapplicable-enchants: false
       allow-incompatible-enchants: false
       allow-higher-enchants-levels: false
       replace-incompatible-enchants: false
     allow-unsafe-enchant-command: false
-    clamp-levels: false
+    clamp-levels: true
   entity:
     enderman:
       short-height: false
@@ -152,6 +151,18 @@ settings:
   username-valid-characters: ^[a-zA-Z0-9_.]*$
   blast-resistance-overrides: {}
   block-fall-multipliers:
+    minecraft:magenta_bed:
+      distance: 0.5
+    minecraft:purple_bed:
+      distance: 0.5
+    minecraft:light_blue_bed:
+      distance: 0.5
+    minecraft:pink_bed:
+      distance: 0.5
+    minecraft:red_bed:
+      distance: 0.5
+    minecraft:hay_block:
+      damage: 0.2
     minecraft:white_bed:
       distance: 0.5
     minecraft:gray_bed:
@@ -174,18 +185,6 @@ settings:
       distance: 0.5
     minecraft:light_gray_bed:
       distance: 0.5
-    minecraft:magenta_bed:
-      distance: 0.5
-    minecraft:purple_bed:
-      distance: 0.5
-    minecraft:light_blue_bed:
-      distance: 0.5
-    minecraft:pink_bed:
-      distance: 0.5
-    minecraft:red_bed:
-      distance: 0.5
-    minecraft:hay_block:
-      damage: 0.2
 config-version: 41
 world-settings:
   default:
@@ -332,76 +331,94 @@ world-settings:
     tools:
       axe:
         strippables:
-          minecraft:warped_hyphae:
+          minecraft:pale_oak_log:
             drops: {}
-            into: minecraft:stripped_warped_hyphae
-          minecraft:spruce_wood:
-            drops: {}
-            into: minecraft:stripped_spruce_wood
-          minecraft:birch_log:
-            drops: {}
-            into: minecraft:stripped_birch_log
-          minecraft:warped_stem:
-            drops: {}
-            into: minecraft:stripped_warped_stem
-          minecraft:cherry_wood:
-            drops: {}
-            into: minecraft:stripped_cherry_wood
-          minecraft:mangrove_log:
-            drops: {}
-            into: minecraft:stripped_mangrove_log
-          minecraft:birch_wood:
-            drops: {}
-            into: minecraft:stripped_birch_wood
-          minecraft:dark_oak_log:
-            drops: {}
-            into: minecraft:stripped_dark_oak_log
-          minecraft:oak_wood:
-            drops: {}
-            into: minecraft:stripped_oak_wood
-          minecraft:oak_log:
-            drops: {}
-            into: minecraft:stripped_oak_log
-          minecraft:mangrove_wood:
-            drops: {}
-            into: minecraft:stripped_mangrove_wood
+            into: minecraft:stripped_pale_oak_log
           minecraft:crimson_hyphae:
             drops: {}
             into: minecraft:stripped_crimson_hyphae
           minecraft:bamboo_block:
             drops: {}
             into: minecraft:stripped_bamboo_block
+          minecraft:cherry_wood:
+            drops: {}
+            into: minecraft:stripped_cherry_wood
+          minecraft:cherry_log:
+            drops: {}
+            into: minecraft:stripped_cherry_log
+          minecraft:mangrove_wood:
+            drops: {}
+            into: minecraft:stripped_mangrove_wood
+          minecraft:pale_oak_wood:
+            drops: {}
+            into: minecraft:stripped_pale_oak_wood
+          minecraft:acacia_log:
+            drops: {}
+            into: minecraft:stripped_acacia_log
+          minecraft:dark_oak_log:
+            drops: {}
+            into: minecraft:stripped_dark_oak_log
+          minecraft:spruce_wood:
+            drops: {}
+            into: minecraft:stripped_spruce_wood
+          minecraft:acacia_wood:
+            drops: {}
+            into: minecraft:stripped_acacia_wood
+          minecraft:oak_log:
+            drops: {}
+            into: minecraft:stripped_oak_log
           minecraft:jungle_wood:
             drops: {}
             into: minecraft:stripped_jungle_wood
           minecraft:jungle_log:
             drops: {}
             into: minecraft:stripped_jungle_log
+          minecraft:oak_wood:
+            drops: {}
+            into: minecraft:stripped_oak_wood
+          minecraft:mangrove_log:
+            drops: {}
+            into: minecraft:stripped_mangrove_log
+          minecraft:birch_wood:
+            drops: {}
+            into: minecraft:stripped_birch_wood
           minecraft:crimson_stem:
             drops: {}
             into: minecraft:stripped_crimson_stem
+          minecraft:warped_hyphae:
+            drops: {}
+            into: minecraft:stripped_warped_hyphae
+          minecraft:birch_log:
+            drops: {}
+            into: minecraft:stripped_birch_log
+          minecraft:warped_stem:
+            drops: {}
+            into: minecraft:stripped_warped_stem
           minecraft:spruce_log:
             drops: {}
             into: minecraft:stripped_spruce_log
-          minecraft:acacia_log:
-            drops: {}
-            into: minecraft:stripped_acacia_log
           minecraft:dark_oak_wood:
             drops: {}
             into: minecraft:stripped_dark_oak_wood
-          minecraft:acacia_wood:
-            drops: {}
-            into: minecraft:stripped_acacia_wood
-          minecraft:cherry_log:
-            drops: {}
-            into: minecraft:stripped_cherry_log
-          minecraft:pale_oak_wood:
-            drops: {}
-            into: minecraft:stripped_pale_oak_wood
-          minecraft:pale_oak_log:
-            drops: {}
-            into: minecraft:stripped_pale_oak_log
         waxables:
+          minecraft:waxed_cut_copper_slab:
+            drops: {}
+            into: minecraft:cut_copper_slab
+          minecraft:waxed_exposed_cut_copper:
+            drops: {}
+            into: minecraft:exposed_cut_copper
+          minecraft:waxed_oxidized_copper_bulb:
+            drops: {}
+            into: minecraft:oxidized_copper_bulb
+          minecraft:waxed_oxidized_copper_grate:
+            drops: {}
+            into: minecraft:oxidized_copper_grate
+          minecraft:waxed_oxidized_copper_door:
+            drops: {}
+            into: minecraft:oxidized_copper_door
+          minecraft:waxed_oxidized_chiseled_copper:
+            drops: {}
+            into: minecraft:oxidized_chiseled_copper
           minecraft:waxed_copper_block:
             drops: {}
             into: minecraft:copper_block
@@ -492,25 +509,22 @@ world-settings:
           minecraft:waxed_oxidized_cut_copper_slab:
             drops: {}
             into: minecraft:oxidized_cut_copper_slab
-          minecraft:waxed_cut_copper_slab:
-            drops: {}
-            into: minecraft:cut_copper_slab
-          minecraft:waxed_exposed_cut_copper:
-            drops: {}
-            into: minecraft:exposed_cut_copper
-          minecraft:waxed_oxidized_copper_bulb:
-            drops: {}
-            into: minecraft:oxidized_copper_bulb
-          minecraft:waxed_oxidized_copper_grate:
-            drops: {}
-            into: minecraft:oxidized_copper_grate
-          minecraft:waxed_oxidized_copper_door:
-            drops: {}
-            into: minecraft:oxidized_copper_door
-          minecraft:waxed_oxidized_chiseled_copper:
-            drops: {}
-            into: minecraft:oxidized_chiseled_copper
         weatherables:
+          minecraft:oxidized_cut_copper_slab:
+            drops: {}
+            into: minecraft:weathered_cut_copper_slab
+          minecraft:oxidized_copper_bulb:
+            drops: {}
+            into: minecraft:weathered_copper_bulb
+          minecraft:oxidized_cut_copper:
+            drops: {}
+            into: minecraft:weathered_cut_copper
+          minecraft:exposed_chiseled_copper:
+            drops: {}
+            into: minecraft:chiseled_copper
+          minecraft:oxidized_copper:
+            drops: {}
+            into: minecraft:weathered_copper
           minecraft:exposed_copper_door:
             drops: {}
             into: minecraft:copper_door
@@ -577,23 +591,12 @@ world-settings:
           minecraft:weathered_copper_grate:
             drops: {}
             into: minecraft:exposed_copper_grate
-          minecraft:oxidized_cut_copper_slab:
-            drops: {}
-            into: minecraft:weathered_cut_copper_slab
-          minecraft:oxidized_copper_bulb:
-            drops: {}
-            into: minecraft:weathered_copper_bulb
-          minecraft:oxidized_cut_copper:
-            drops: {}
-            into: minecraft:weathered_cut_copper
-          minecraft:exposed_chiseled_copper:
-            drops: {}
-            into: minecraft:chiseled_copper
-          minecraft:oxidized_copper:
-            drops: {}
-            into: minecraft:weathered_copper
       hoe:
         tillables:
+          minecraft:dirt:
+            into: minecraft:farmland
+            condition: air_above
+            drops: {}
           minecraft:rooted_dirt:
             into: minecraft:dirt
             condition: always
@@ -611,14 +614,16 @@ world-settings:
             into: minecraft:farmland
             condition: air_above
             drops: {}
-          minecraft:dirt:
-            into: minecraft:farmland
-            condition: air_above
-            drops: {}
         replant-crops: false
         replant-nether-warts: false
       shovel:
         flattenables:
+          minecraft:mycelium:
+            drops: {}
+            into: minecraft:dirt_path
+          minecraft:grass_block:
+            drops: {}
+            into: minecraft:dirt_path
           minecraft:dirt:
             drops: {}
             into: minecraft:dirt_path
@@ -631,27 +636,12 @@ world-settings:
           minecraft:rooted_dirt:
             drops: {}
             into: minecraft:dirt_path
-          minecraft:mycelium:
-            drops: {}
-            into: minecraft:dirt_path
-          minecraft:grass_block:
-            drops: {}
-            into: minecraft:dirt_path
     ridable-settings:
       babies-are-ridable: true
       untamed-tamables-are-ridable: true
       use-night-vision: false
       use-dismounts-underwater-tag: true
     mobs:
-      creaking:
-        ridable: false
-        ridable-in-water: true
-        controllable: true
-        attributes:
-          max_health: 1.0
-          scale: 1.0
-        takes-damage-from-water: false
-        always-drop-exp: false
       allay:
         ridable: false
         ridable-in-water: true
@@ -696,7 +686,6 @@ world-settings:
         takes-damage-from-water: false
         always-drop-exp: false
       bee:
-        can-instantly-start-drowning: true
         ridable: false
         ridable-in-water: true
         controllable: true
@@ -708,6 +697,7 @@ world-settings:
         takes-damage-from-water: false
         can-work-at-night: false
         can-work-in-rain: false
+        can-instantly-start-drowning: true
         always-drop-exp: false
         dies-after-sting: true
       blaze:
@@ -798,6 +788,15 @@ world-settings:
         naturally-aggressive-to-players:
           chance: 0.0
           damage: 2.0
+        always-drop-exp: false
+      creaking:
+        ridable: false
+        ridable-in-water: true
+        controllable: true
+        attributes:
+          max_health: 1.0
+          scale: 1.0
+        takes-damage-from-water: false
         always-drop-exp: false
       creeper:
         ridable: false
@@ -892,7 +891,6 @@ world-settings:
         takes-damage-from-water: true
         aggressive-towards-endermites: true
         aggressive-towards-endermites-only-spawned-by-player-thrown-ender-pearls: false
-        ignore-players-wearing-dragon-head: false
         disable-player-stare-aggression: false
         ignore-projectiles: false
         always-drop-exp: false
@@ -1253,23 +1251,23 @@ world-settings:
         bypass-mob-griefing: false
         takes-damage-from-water: false
         griefable-blocks:
-        - minecraft:torchflower_crop
-        - minecraft:spruce_leaves
-        - minecraft:wheat
-        - minecraft:azalea_leaves
-        - minecraft:cherry_leaves
         - minecraft:oak_leaves
-        - minecraft:pitcher_crop
-        - minecraft:jungle_leaves
-        - minecraft:mangrove_leaves
-        - minecraft:carrots
-        - minecraft:flowering_azalea_leaves
-        - minecraft:potatoes
+        - minecraft:spruce_leaves
         - minecraft:birch_leaves
-        - minecraft:beetroots
-        - minecraft:pale_oak_leaves
-        - minecraft:dark_oak_leaves
+        - minecraft:jungle_leaves
         - minecraft:acacia_leaves
+        - minecraft:cherry_leaves
+        - minecraft:dark_oak_leaves
+        - minecraft:pale_oak_leaves
+        - minecraft:mangrove_leaves
+        - minecraft:azalea_leaves
+        - minecraft:flowering_azalea_leaves
+        - minecraft:wheat
+        - minecraft:carrots
+        - minecraft:potatoes
+        - minecraft:torchflower_crop
+        - minecraft:pitcher_crop
+        - minecraft:beetroots
         always-drop-exp: false
         avoid-rabbits: false
       salmon:
@@ -1480,9 +1478,9 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
-          tempt_range: 10.0
           max_health: 20.0
           scale: 1.0
+          tempt_range: 10.0
         follow-emerald-blocks: false
         can-be-leashed: false
         can-breed: true
@@ -1500,7 +1498,7 @@ world-settings:
           wait-until-trade-locked: false
         display-trade-item: true
         spawn-iron-golem:
-          radius: 5
+          radius: 0
           limit: 0
         search-radius:
           acquire-poi: 48
@@ -1521,9 +1519,9 @@ world-settings:
         ridable-in-water: true
         controllable: true
         attributes:
-          tempt_range: 10.0
           max_health: 20.0
           scale: 1.0
+          tempt_range: 10.0
         follow-emerald-blocks: false
         can-be-leashed: false
         takes-damage-from-water: false
@@ -1684,28 +1682,28 @@ world-settings:
         eject-players-on-land: false
         do-fall-damage: false
       disable-drops-on-cramming-death: false
+      milk-cures-bad-omen: true
+      trident-loyalty-void-return-height: 0.0
       entities-can-use-portals: true
+      raid-cooldown-seconds: 0
+      animal-breeding-cooldown-seconds: 0
+      persistent-droppable-entity-display-names: true
       entities-pick-up-loot-bypass-mob-griefing: false
       fireballs-bypass-mob-griefing: false
+      projectiles-bypass-mob-griefing: false
+      note-block-ignore-above: false
       impose-teleport-restrictions-on-gateways: false
       impose-teleport-restrictions-on-nether-portals: false
       impose-teleport-restrictions-on-end-portals: false
-      milk-cures-bad-omen: true
-      milk-clears-beneficial-effects: true
-      note-block-ignore-above: false
-      persistent-tileentity-lore: false
-      persistent-tileentity-display-name: true
-      persistent-droppable-entity-display-names: true
-      projectiles-bypass-mob-griefing: false
       tick-fluids: true
       entity-blindness-multiplier: 1.0
-      trident-loyalty-void-return-height: 0.0
-      raid-cooldown-seconds: 0
-      animal-breeding-cooldown-seconds: 0
       mobs-ignore-rails: false
       rain-stops-after-sleep: true
       thunder-stops-after-sleep: true
+      persistent-tileentity-lore: false
+      persistent-tileentity-display-name: true
       mob-last-hurt-by-player-time: 100
+      milk-clears-beneficial-effects: true
       disable-oxidation-proximity-penalty: false
       daylight-cycle-ticks:
         daytime: 12000
@@ -1731,8 +1729,8 @@ world-settings:
           fire: []
           lightning: []
         shears:
-          damage-if-sprinting-item-model: purpurmc:scissors
           damage-if-sprinting: false
+          damage-if-sprinting-item-model: purpurmc:scissors
           ignore-in-water: false
           ignore-in-lava: false
           sprinting-damage: 1.0
