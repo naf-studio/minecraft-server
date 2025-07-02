@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: COOKED_BEEF
-  displayname: '&6&lFood'
-  name: '&6&lFood'
+  displayname: '&6Food'
+  name: '&6Food'

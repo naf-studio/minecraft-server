@@ -11,5 +11,5 @@ nav-bar:
 item:
   potion-glow: true
   material: POTION
-  displayname: '&d&lPotions + Tipped Arrows'
-  name: '&d&lPotions + Tipped Arrows'
+  displayname: '&dPotions + Tipped Arrows'
+  name: '&dPotions + Tipped Arrows'

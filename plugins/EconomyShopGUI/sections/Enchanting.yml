@@ -10,7 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: ENCHANTED_BOOK
-  lore:
-  - '&5&lGear up with enchantments!'
-  displayname: '&d&lEnchanting'
-  name: '&d&lEnchanting'
+  displayname: '&dEnchanting'
+  name: '&dEnchanting'

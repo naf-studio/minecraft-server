@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: GRASS_BLOCK
-  displayname: '&2&lBlocks'
-  name: '&2&lBlocks'
+  displayname: '&2Blocks'
+  name: '&2Blocks'

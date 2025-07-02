@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: BAT_SPAWN_EGG
-  displayname: '&8&lSpawnEggs'
-  name: '&8&lSpawnEggs'
+  displayname: '&8SpawnEggs'
+  name: '&8SpawnEggs'

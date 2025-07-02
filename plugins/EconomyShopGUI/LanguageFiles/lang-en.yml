@@ -41,17 +41,17 @@ loaded-shop-stand-module: Completed loading %count% shop stand(s) from stands.js
 saving-shop-stands: Saving %count% shop stands to 'stands.json'...
 
 #Shop prefix
-shop-prefix: '&9&lShop &8&l>> '
+shop-prefix: '&6[NAFMC] '
 
 #Main Shop Inventory
-inventory-main-shop-title: '&8&lServer Shop'
+inventory-main-shop-title: '&8NAFMC - Shop'
 profile: '&aProfile'
 name: '&6Name'
 money: '&6Balance'
 level: '&6Level'
 
 # SellGUI inventory
-inventory-sellgui-title: '&8&lSellGUI'
+inventory-sellgui-title: '&8NAFMC - Sell'
 
 #Buystacks Inventory title
 inventory-buystacks-title: '&8Buying stacks &a&l> &r&8%item%'
@@ -107,24 +107,24 @@ next-page: '&bNext Page'
 current-page: '&7Page:'
 
 # ShopItem lore
-left-click-buy: \n &a&lBuy Price\n &a■ &f%buyPrice%
-seasonal-buy-price: \n &a&lBuy Price\n &a■ &f&m%buyPrice%&r &f%seasonalBuyPrice%
-discounted-buy-price: \n &a&lBuy Price\n &a■ &f&m%buyPrice%&r &f%discountedPrice%
-right-click-sell: \n &c&lSell Price\n &c■ &f%sellPrice%
-seasonal-sell-price: \n &c&lSell Price\n &c■ &f&m%sellPrice%&r &f%seasonalSellPrice%
-multiplied-sell-price: \n &c&lSell Price\n &c■ &f&m%sellPrice%&r &f%multipliedPrice%
+left-click-buy: '\n&aBuy Price: &f%buyPrice%'
+seasonal-buy-price: '\n&aBuy Price: &f&m%buyPrice%&r &f%seasonalBuyPrice%'
+discounted-buy-price: '\n&aBuy Price: &f&m%buyPrice%&r &f%discountedPrice%'
+right-click-sell: '&cSell Price: &f%sellPrice%'
+seasonal-sell-price: '&cSell Price: &f&m%sellPrice%&r &f%seasonalSellPrice%'
+multiplied-sell-price: '&cSell Price: &f&m%sellPrice%&r &f%multipliedPrice%'
 shift-right-click-sell-all: '&bShift + Right Click: Sell All'
 item-location-in-shop: '&8Section: %shopsection%, Index: %itemLoc%'
-item-cannot-be-bought: \n &a&lBuy Price\n &a■ &fCannot be bought
-item-cannot-be-sold: \n &c&lSell Price\n &c■ &fCannot be sold
-item-seasonal-price: '&e&lSeasonal price %season-icon%'
-decoration-lore: '\n &e&lUsage:'
-decoration-lore-buy: '&e ╚&e&l» &fLeft click to buy'
-decoration-lore-sell-all: '&e ╚&e&l» &fShift + Right Click to sell all'
-decoration-lore-sell: '&e ╚&e&l» &fRight click to sell'
-time-requirement-lore: '&c&lCan only be purchased between\n&c%minTime% &land &c%maxTime% &lingame time.'
-quest-requirement-lore: '&c&lRequires to complete quest &b&l%questName%'
-region-requirement-lore: '&c&lRequires to be inside region &b&l%regionName%'
+item-cannot-be-bought: '\n&aBuy Price: &fCannot be bought'
+item-cannot-be-sold: '&cSell Price: &fCannot be sold'
+item-seasonal-price: '&eSeasonal price %season-icon%'
+decoration-lore: '\n&eUsage:'
+decoration-lore-buy: '&e&fLeft click to buy'
+decoration-lore-sell-all: '&e&fShift + Right Click to sell all'
+decoration-lore-sell: '&e&fRight click to sell'
+time-requirement-lore: '&cCan only be purchased between\n&c%minTime% &land &c%maxTime% &lingame time.'
+quest-requirement-lore: '&cRequires to complete quest &b&l%questName%'
+region-requirement-lore: '&cRequires to be inside region &b&l%regionName%'
 
 #Buy/Sell Messages
 discord-srv-player-transaction: '%player_name% %bought/sold% %amount% x %items% for %price%'

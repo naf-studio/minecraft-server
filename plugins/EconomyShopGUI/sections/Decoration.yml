@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: TUBE_CORAL
-  displayname: '&9&lDecoration'
-  name: '&9&lDecoration'
+  displayname: '&9Decoration'
+  name: '&9Decoration'
