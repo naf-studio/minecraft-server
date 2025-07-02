@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: WHEAT
-  displayname: '&a&lFarming'
-  name: '&a&lFarming'
+  displayname: '&aFarming'
+  name: '&aFarming'

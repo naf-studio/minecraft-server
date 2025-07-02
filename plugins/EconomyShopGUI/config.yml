@@ -83,7 +83,7 @@ update-checking: true
 #----------------------------------------------DebugMode------------------------------------------------
 
 # Set this value to false to disable debug mode and do not send debug messages to the console.
-debug: true
+debug: false
 
 # When this option is true, nms will be used for item loading and opening shops
 use-nms: true
@@ -127,7 +127,7 @@ shop-stands: false
 
 # The setting below enables or disables the disabled commands inside certain worlds feature
 # When this option is true, the commands that are added to the world inside the list below will be disabled
-enable-disabled-worlds: false
+enable-disabled-worlds: true
 
 # List of commands with disabled worlds
 # Each command has its own list of worlds that will be disabled.
@@ -136,14 +136,13 @@ enable-disabled-worlds: false
 disabled-worlds-per-command:
 
   shop:
-  - 'testbuilding'
+  - 'limbo'
 
   sellall:
-  - 'randompvp'
+  - 'limbo'
 
   editshop:
-  - 'boss-fights'
-  - 'Survival-Spawn'
+  - 'limbo'
 
 # NOTE: Commands disabled inside worlds with the feature above will still be registered inside the server,
 # meaning that a command still can conflict with the same command from another plugin.
@@ -201,7 +200,7 @@ currency-formats:
 # SPAWNERMETA = An external spawner provider that can stack & upgrade spawners
 # SPAWNERLEGACY = The premium version of SpawnerMeta with more features/customize-ability
 # SMART_SPAWNER = A spawner provider which supports stacking spawners
-spawner-provider: AUTO
+spawner-provider: ROSESTACKER
 # NOTE: When there is no spawner provider set, the default will be used
 
 
@@ -273,7 +272,7 @@ drop-remaining-items-on-ground: false
 # Whether to sell shulker contents
 # When false, shulker boxes inside the player's inventory when selling items won't be emptied/sold
 # When true, the plugin will try to sell any item inside a shulker box when selling items
-sell-shulker-boxes: true
+sell-shulker-boxes: false
 
 # Players will not be able to buy/sell items, nor use /sellall and /sellgui while inside any of the below gamemodes
 # Possible values: ADVENTURE, CREATIVE, SPECTATOR and SURVIVAL
@@ -369,19 +368,26 @@ main-menu-nav-bar:
       lore:
       - '%translations-money%: &c%player_balance%'
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     4:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     5:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     6:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     9:
       material: barrier
       name: '%translations-cancel%'
@@ -399,9 +405,11 @@ shops-nav-bar:
       lore:
       - '%translations-money%: &c%player_balance%'
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     4:
       material: red_stained_glass_pane
       name: '%translations-previous-page%'
@@ -422,9 +430,11 @@ shops-nav-bar:
         orElse:
           material: AIR
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     9:
       material: barrier
       name: '%translations-back%'
@@ -442,22 +452,28 @@ transaction-screens-nav-bar:
       lore:
       - '%translations-money%: &c%player_balance%'
     2:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     3:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     4:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     5:
       material: REDSTONE_TORCH
       name: '&c&lToggle buying/selling'
       action: TOGGLE_MODE
       onlyEnableForGeyserPlayers: true
     6:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     7:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     8:
-      material: air
+      material: GRAY_STAINED_GLASS_PANE
+      name: '&c'
     9:
       material: barrier
       name: '%translations-back%'
@@ -502,16 +518,16 @@ sellgui-nav-bar:
   items:
     1:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     2:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     3:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     4:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     5:
       material: NETHER_STAR
       name: '&a&lSellGUI'
@@ -522,16 +538,16 @@ sellgui-nav-bar:
       - '&ewill be given back to you.'
     6:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     7:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     8:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
     9:
       material: GRAY_STAINED_GLASS_PANE
-      name: ' '
+      name: '&c'
 
 
 #---------------------------------------------ItemSettings----------------------------------------------
@@ -1175,7 +1191,7 @@ commands:
   sreload: true
 
   # With this command you can add/remove items without configuring the shops config
-  editshop: true
+  editshop: false
 
   # This command opens a sell GUI to sell items
   sellgui: true
@@ -1267,5 +1283,7 @@ spawner-break-tools:
     material: NETHERITE_PICKAXE
     enchantments:
     - 'SILK_TOUCH'
+prioritize-item-lore: false
+disableBackButtonWithShopSectionCommand: true
 
 # NOTE: When any other 3rd party spawner provider is enabled and setup, these options will no longer work since they are not controlled anymore by ESGUI

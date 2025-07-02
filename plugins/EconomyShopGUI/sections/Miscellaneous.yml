@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: SADDLE
-  displayname: '&c&lMiscellaneous'
-  name: '&c&lMiscellaneous'
+  displayname: '&cMiscellaneous'
+  name: '&cMiscellaneous'

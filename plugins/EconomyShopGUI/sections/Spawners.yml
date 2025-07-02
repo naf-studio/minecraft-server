@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: SPAWNER
-  displayname: '&8&lSpawners'
-  name: '&8&lSpawners'
+  displayname: '&8Spawners'
+  name: '&8Spawners'

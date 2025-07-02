@@ -10,5 +10,5 @@ nav-bar:
   mode: INHERIT
 item:
   material: CYAN_DYE
-  displayname: '&2&lDyes'
-  name: '&2&lDyes'
+  displayname: '&2Dyes'
+  name: '&2Dyes'

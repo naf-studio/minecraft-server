@@ -12,5 +12,5 @@ item:
   material: REDSTONE
   lore:
   - '&4&lFor all redstone geeks!'
-  displayname: '&c&lRedstone'
-  name: '&c&lRedstone'
+  displayname: '&cRedstone'
+  name: '&cRedstone'
