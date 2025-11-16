@@ -13,7 +13,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need either an injector or a recompiled Vault version.
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform a full server restart for this to take effect and avoid issues when retrieving players' balances.
-  Enabled: true
+  Enabled: false
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -180,7 +180,7 @@ Optimizations:
   # When set to true players with same name but different capitalization will be denyied from joining server to avoid possible issues. In example if on first day player Zrips joined server and on second day player zRips tries to join server, he will be rejected
   # RECOMMENDED to keep this at true
   PreventDifferentCapitalizationNames: false
-  # When this set to true by using any command, requiring players name, in case plugin cant determine player by given full name, then partial matches from online players will be used. In example: /cmi heal rips can heal player Zrips 
+  # When this set to true by using any command, requiring players name, in case plugin cant determine player by given full name, then partial matches from online players will be used. In example: /cmi heal rips can heal player Zrips
   # Useful when you have players with complicated names
   PartialPlayerName: false
   # If you want to prioritize online players when using partial player name enable this setting
@@ -677,7 +677,7 @@ Votifier:
 Ranks:
   # If set to true we will check players rank by his access to rank by permission node and prioritize any rank which has more weight over current one
   # This means that in case player has access to third rank while recorded one is first one, we will prioritize third one
-  # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this, 
+  # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this,
   # you will have to remove access to specific rank by removing permission node before trying to derank him
   PermissionCheck: false
   # Defines how often in minutes plugin will recalculate players group
@@ -1304,7 +1304,7 @@ WorldLimits:
   Enabled: false
   # World list with default game modes
   # If player will have cmi.worldlimit.gamemode.bypass permission node, game mode wont be changed
-  # Possible modes: creative, survival, adventure, spectator, 
+  # Possible modes: creative, survival, adventure, spectator,
   Gamemode:
   - testWorld:Survival
   # If player will have cmi.worldlimit.fly.bypass permission node, fly mode wont be changed
@@ -1811,7 +1811,7 @@ BlueMap:
     IconAnchor: 16
     # List of warp names we should not show. Keep in mind that hidden warps are not shown by default already
     BlackList: []
-# If you want to disable particular sound entirely, set it to "" 
+# If you want to disable particular sound entirely, set it to ""
 Sounds:
   Enabled: true
   WarpGuiOpen: entity_bat_takeoff:0.5:1
