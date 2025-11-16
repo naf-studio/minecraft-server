@@ -1,5 +1,0 @@
-# World name and mob amount
-# Set to -1 to disable mob limiting in that world
-world: -1
-world_nether: -1
-world_the_end: -1
