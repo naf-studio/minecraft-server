@@ -1,3 +1,23 @@
+#!/bin/bash
+# ==============================================================================
+# Script Name: run.sh
+# Description: Startup script for the Minecraft server. It sets Java Virtual
+#              Machine (JVM) flags for optimization and restarts the server
+#              automatically upon stop/crash until manually terminated.
+#
+# Usage:
+#   ./run.sh
+#
+# Environment Variables:
+#   None required. Adjustments to memory and flags can be made within the script.
+#
+# Flags Used:
+#   - Xms1G: Sets the initial memory allocation pool to 1 GB.
+#   - XX:MaxRAMPercentage=95.0: Uses 95% of available container/system RAM.
+#   - ZGC: Uses the Z Garbage Collector for low latency.
+#   - Various other flags for vectorization, optimization, and performance.
+# ==============================================================================
+
 # MeowIce's Startup Flags
 
 while true; do

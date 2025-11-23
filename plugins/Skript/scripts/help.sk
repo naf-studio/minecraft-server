@@ -1,3 +1,15 @@
+# ==============================================================================
+# Script Name: help.sk
+# Description: Provides a custom help command that triggers an auto-broadcast list.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Command: /help
+# Purpose: Displays the help message or list of tips to the player.
+# Aliases: /helps, /?, /tip, /tips
+# Usage:
+#   /help
+# ------------------------------------------------------------------------------
 command /help:
   aliases: /helps, /?, /tip, /tips
   trigger:

@@ -1,11 +1,23 @@
-# Description: Spawns pinatas on random online players
+# ==============================================================================
+# Script Name: pinatarandom.sk
+# Description: Spawns pinatas on random online players using the Pinata plugin.
+# ==============================================================================
 
-# Usage:
-# /pinatarandom [amount]
-
+# ------------------------------------------------------------------------------
+# Options
+# ------------------------------------------------------------------------------
 options:
   prefix: &b[PinataRandom]
 
+# ------------------------------------------------------------------------------
+# Command: /pinatarandom
+# Purpose: Spawns a specified number of pinatas on random online players.
+# Permission: op
+# Usage:
+#   /pinatarandom [amount]
+# Arguments:
+#   - [amount] (optional): The number of pinatas to spawn. Defaults to 1.
+# ------------------------------------------------------------------------------
 command /pinatarandom [<number>]:
   permission: op
   trigger:

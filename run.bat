@@ -1,3 +1,21 @@
+@echo off
+REM ==============================================================================
+REM Script Name: run.bat
+REM Description: Windows startup script for the Minecraft server. It sets Java
+REM              Virtual Machine (JVM) flags for optimization and restarts the
+REM              server automatically upon stop/crash.
+REM
+REM Usage:
+REM   Double-click run.bat or run from command line:
+REM   > run.bat
+REM
+REM Flags Used:
+REM   - Xms1G: Sets the initial memory allocation pool to 1 GB.
+REM   - XX:MaxRAMPercentage=95.0: Uses 95% of available container/system RAM.
+REM   - ZGC: Uses the Z Garbage Collector for low latency.
+REM   - Various other flags for vectorization, optimization, and performance.
+REM ==============================================================================
+
 @REM MeowIce's Startup Flags
 
 :start

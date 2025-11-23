@@ -1,3 +1,14 @@
+# ==============================================================================
+# Script Name: tps.sk
+# Description: Wrapper for the Spark tps command to check server performance.
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Command: /tps
+# Purpose: Checks the server's TPS (Ticks Per Second).
+# Usage:
+#   /tps
+# ------------------------------------------------------------------------------
 command /tps:
   trigger:
     make player execute command "/spark tps"
