@@ -1,14 +1,27 @@
-# Description: This Skript allows to enable or disable access to The End
+# ==============================================================================
+# Script Name: allowend.sk
+# Description: Manages access to The End world. Allows enabling, disabling,
+#              and toggling access. When disabled, players in The End are
+#              teleported to the Overworld spawn.
+# ==============================================================================
 
-# Usage:
-# /allowend [true|false]
-# - Use `/allowend true` to force enable access to The End
-# - Use `/allowend false` to force disable access to The End and teleport players out
-# - Use `/allowend` with no arguments to toggle the current state
-
+# ------------------------------------------------------------------------------
+# Options
+# ------------------------------------------------------------------------------
 options:
   prefix: &b[AllowEnd]
 
+# ------------------------------------------------------------------------------
+# Command: /allowend
+# Purpose: Enables, disables, or toggles access to The End.
+# Permission: op
+# Usage:
+#   /allowend          - Toggles the current state.
+#   /allowend <true>   - Forces The End to be enabled.
+#   /allowend <false>  - Forces The End to be disabled and teleports players out.
+# Arguments:
+#   - <boolean> (optional): true to enable, false to disable. If omitted, toggles.
+# ------------------------------------------------------------------------------
 command /allowend [<boolean>]:
   permission: op
   trigger:
@@ -45,6 +58,10 @@ command /allowend [<boolean>]:
         set {endblock::enabled} to true
         broadcast "{@prefix} &aThe End has been enabled."
 
+# ------------------------------------------------------------------------------
+# Event: on teleport
+# Purpose: Prevents players from teleporting to The End if it is disabled.
+# ------------------------------------------------------------------------------
 on teleport:
   if event-location's world is "world_the_end":
     if {endblock::enabled} is false:

@@ -1,11 +1,25 @@
-# Description: This Skript allows to manage the world border with chunky border which enforce moving players inside the border and the worldborder will set the barier
+# ==============================================================================
+# Script Name: border.sk
+# Description: Manages the world border radius using ChunkyBorder.
+#              It sets the Chunky border radius, starts the border generation,
+#              and sets the vanilla world border to twice the radius.
+# ==============================================================================
 
-# Usage:
-# /border <radius>
-
+# ------------------------------------------------------------------------------
+# Options
+# ------------------------------------------------------------------------------
 options:
   prefix: &a[Border]
 
+# ------------------------------------------------------------------------------
+# Command: /border
+# Purpose: Sets the world border radius and updates ChunkyBorder and vanilla border.
+# Permission: op
+# Usage:
+#   /border <radius>
+# Arguments:
+#   - <radius>: The radius of the border in blocks (integer).
+# ------------------------------------------------------------------------------
 command /border <radius: integer>:
   permission: op
   trigger:
