@@ -1,0 +1,26 @@
+#
+# For information on how to apply overrides please visit
+# https://wiki.songoda.com/Editing-GUIs-1c00f1089702800c9b89d0fa9f6bbcd6
+#
+overrides:
+
+  #
+  # This is just an example and does not override to any items
+  # in this GUI.
+  #
+  example:
+
+    # This is the icon material you would like to replace
+    # the current material with.
+    item: STONE
+
+    # This is the current position of the icon you would like to move.
+    # The number represents the cell the icon currently resides in.
+    position: 5
+
+# All keys on this list will be disabled. You can add any items key here
+# if you no longer want that item in the GUI.
+disabled:
+- example3
+- example4
+- example5
