@@ -1,0 +1,53 @@
+############################################################################
+# This is where you configure the power cell items.                        #
+# Supported item types: vanilla, slimefun, itembridge, itemsadder          #
+# Note: Vanilla items should be placed at the bottom to prevent conflicts. #
+############################################################################
+
+items:
+  '0':
+    type: vanilla
+    item: DIAMOND
+    value: 120
+  '1':
+    type: vanilla
+    item: IRON_INGOT
+    value: 30
+
+recipe:
+  '0':
+    type: vanilla
+    item: IRON_INGOT
+    slot: 3
+  '1':
+    type: vanilla
+    item: DIAMOND
+    slot: 4
+  '2':
+    type: vanilla
+    item: IRON_INGOT
+    slot: 5
+  '3':
+    type: vanilla
+    item: DIAMOND
+    slot: 12
+  '4':
+    type: vanilla
+    item: IRON_INGOT
+    slot: 13
+  '5':
+    type: vanilla
+    item: DIAMOND
+    slot: 14
+  '6':
+    type: vanilla
+    item: IRON_INGOT
+    slot: 21
+  '7':
+    type: vanilla
+    item: DIAMOND
+    slot: 22
+  '8':
+    type: vanilla
+    item: IRON_INGOT
+    slot: 23
