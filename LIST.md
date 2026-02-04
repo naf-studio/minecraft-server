@@ -34,6 +34,7 @@ https://modrinth.com/datapack/nullscape
 https://modrinth.com/datapack/structory
 https://modrinth.com/datapack/structory-towers
 
+https://modrinth.com/datapack/dungeons-and-taverns
 https://modrinth.com/datapack/dungeons-and-taverns-ancient-city-overhaul
 https://modrinth.com/datapack/dungeons-and-taverns-stronghold-overhaul
 https://modrinth.com/datapack/dungeons-and-taverns-pillager-outpost-overhaul
