@@ -1,9 +1,0 @@
-wand: 271
-useonmove: true
-portalsdefaulttonether: false
-enforceportalaccess: false
-portalcooldown: 1000
-clearonremove: false
-teleportvehicles: true
-netheranimation: true
-framematerials: []
