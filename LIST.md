@@ -20,7 +20,7 @@ https://modrinth.com/plugin/luckperms
 https://github.com/retrooper/packetevents
 https://github.com/hyperdefined/TimeBar
 https://songoda.com/plugin/ultimate-claims-14
-https://modrinth.com/datapack/veinminer
+https://modrinth.com/plugin/veinminer
 https://github.com/ViaVersion/ViaBackwards
 https://github.com/ViaVersion/ViaVersion
 https://modrinth.com/plugin/simple-voice-chat
@@ -58,8 +58,8 @@ https://modrinth.com/datapack/qraftys-bunkers | outdated
 https://modrinth.com/datapack/qraftys-mushroom-villages | outdated
 https://modrinth.com/datapack/qraftys-mountain-villages
 
-https://modrinth.com/datapack/epic-structures-villages
-https://modrinth.com/datapack/epic-structures-witch-huts
+https://modrinth.com/datapack/epic-structures-villages | future
+https://modrinth.com/datapack/epic-structures-witch-huts | future
 
 https://modrinth.com/datapack/revamped-shipwrecks
 https://modrinth.com/datapack/unwrecked-ships
