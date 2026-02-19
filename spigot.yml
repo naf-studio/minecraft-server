@@ -35,11 +35,29 @@ settings:
   log-villager-deaths: true
   log-named-deaths: true
 messages:
-  whitelist: You are not whitelisted on this server!
-  server-full: The server is full!
-  outdated-client: Outdated client! Please use {0}
-  outdated-server: Outdated server! I'm still on {0}
-  restart: Server is restarting
+  outdated-client: |-
+    &cOUTDATED CLIENT!
+    &rPlease use version &41.21.11
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  outdated-server: |-
+    &cOUTDATED SERVER!
+    &rServer still on version &41.21.11
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  restart: |-
+    &cSERVER IS RESTARTING!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  server-full: |-
+    &cSERVER IS FULL!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+  unknown-command: '&4[System] Unknown command. Type "/help" for help.'
+  whitelist: |-
+    &cYOU ARE NOT WHITELISTED!
+
+    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
 advancements:
   disable-saving: false
   disabled:

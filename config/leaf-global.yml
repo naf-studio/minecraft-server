@@ -43,7 +43,7 @@ async:
   # **Experimental feature**
   # Enables parallel world ticking to improve performance on multi-core systems.
   parallel-world-ticking:
-    enabled: false
+    enabled: true
     threads: 8
     log-container-creation-stacktraces: false
     disable-hard-throw: false

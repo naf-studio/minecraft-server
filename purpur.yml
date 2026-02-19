@@ -5,8 +5,8 @@
 # If you need help with the configuration or have any questions related to Purpur,
 # join us in our Discord guild.
 #
-# Website: https://purpurmc.org 
-# Docs: https://purpurmc.org/docs 
+# Website: https://purpurmc.org
+# Docs: https://purpurmc.org/docs
 
 verbose: false
 settings:
@@ -493,7 +493,7 @@ world-settings:
         always-drop-exp: false
         minimum-demand: 0
         lobotomize:
-          enabled: true
+          enabled: false
           check-interval: 100
           wait-until-trade-locked: false
         display-trade-item: true
@@ -501,8 +501,8 @@ world-settings:
           radius: 0
           limit: 0
         search-radius:
-          acquire-poi: 16
-          nearest-bed-sensor: 16
+          acquire-poi: 32
+          nearest-bed-sensor: 32
         mob-griefing-override: default
       polar_bear:
         ridable: false
