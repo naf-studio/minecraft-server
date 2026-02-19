@@ -8,11 +8,12 @@
 # The world configuration options have been moved inside
 # their respective world folder. The files are named paper-world.yml
 # 
+# File Reference: https://docs.papermc.io/paper/reference/global-configuration/
 # Docs: https://docs.papermc.io/
 # Discord: https://discord.gg/papermc
 # Website: https://papermc.io/
 
-_version: 29
+_version: 31
 anticheat:
   obfuscation:
     items:
@@ -35,15 +36,14 @@ block-updates:
   disable-tripwire-updates: false
 chunk-loading-advanced:
   auto-config-send-distance: true
-  player-max-concurrent-chunk-generates: 0
-  player-max-concurrent-chunk-loads: 0
+  player-max-concurrent-chunk-generates: 8
+  player-max-concurrent-chunk-loads: 8
 chunk-loading-basic:
-  player-max-chunk-generate-rate: -1.0
-  player-max-chunk-load-rate: 100.0
-  player-max-chunk-send-rate: 75.0
+  player-max-chunk-generate-rate: 10.0
+  player-max-chunk-load-rate: 200.0
+  player-max-chunk-send-rate: 200.0
 chunk-system:
-  gen-parallelism: 'true'
-  io-threads: 12
+  io-threads: 8
   worker-threads: 12
 collisions:
   enable-player-collisions: true
@@ -71,47 +71,38 @@ logging:
   deobfuscate-stacktraces: true
 messages:
   kick:
-    authentication-servers-down: |-
-      <red>AUTHENTICATION SERVERS ARE DOWN!</red>
-
-      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
-    connection-throttle: |-
-      <red>CONNECTION THROTTLE!</red>
-      Please wait before reconnecting
-
-      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
-    flying-player: |-
-      <red>FLYING IS NOT ALLOWED!</red>
-
-      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
-    flying-vehicle: |-
-      <red>FLYING IS NOT ALLOWED!</red>
-
-      Please join our Discord <blue>dsc.gg/nafd</blue> for more information!
+    authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
+    connection-throttle: Connection throttled! Please wait before reconnecting.
+    flying-player: <lang:multiplayer.disconnect.flying>
+    flying-vehicle: <lang:multiplayer.disconnect.flying>
   no-permission: <red>I'm sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.
   use-display-name-in-quit-message: false
 misc:
   chat-threads:
-    chat-executor-core-size: -1
-    chat-executor-max-size: -1
+    chat-executor-core-size: 8
+    chat-executor-max-size: 16
   client-interaction-leniency-distance: default
-  compression-level: default
-  fix-entity-position-desync: true
+  compression-level: 6
+  enable-nether: true
+  fix-far-end-terrain-generation: true
   load-permissions-yml-before-plugins: true
   max-joins-per-tick: 3
-  region-file-cache-size: 256
+  prevent-negative-villager-demand: false
+  region-file-cache-size: 512
+  send-full-pos-for-item-entities: false
   strict-advancement-dimension-check: false
   use-alternative-luck-formula: false
   use-dimension-type-for-custom-spawners: false
+  xp-orb-groups-per-area: default
 packet-limiter:
   all-packets:
     action: KICK
     interval: 7.0
-    max-packet-rate: 500.0
+    max-packet-rate: 300.0
   kick-message: <red><lang:disconnect.exceeded_packet_rate>
   overrides:
-    ServerboundPlaceRecipePacket:
+    minecraft:place_recipe:
       action: DROP
       interval: 4.0
       max-packet-rate: 5.0
@@ -127,7 +118,7 @@ proxies:
     online-mode: true
     secret: ''
 scoreboards:
-  save-empty-scoreboard-teams: false
+  save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false
 spam-limiter:
   incoming-packet-threshold: 300
@@ -138,27 +129,20 @@ spam-limiter:
 spark:
   enable-immediately: false
   enabled: true
-timings:
-  enabled: false
-  hidden-config-entries:
-  - database
-  - proxies.velocity.secret
-  history-interval: 300
-  history-length: 3600
-  server-name: naipret and friends
-  server-name-privacy: false
-  url: https://timings.aikar.co/
-  verbose: false
 unsupported-settings:
   allow-headless-pistons: false
   allow-permanent-block-break-exploits: false
   allow-piston-duplication: false
   allow-unsafe-end-portal-teleportation: false
   compression-format: ZLIB
+  oversized-item-component-sanitizer:
+    dont-sanitize: []
   perform-username-validation: true
   skip-tripwire-hook-placement-validation: false
   skip-vanilla-damage-tick-when-shield-blocked: false
   update-equipment-on-player-actions: true
+update-checker:
+  enabled: true
 watchdog:
   early-warning-delay: 10000
   early-warning-every: 5000
