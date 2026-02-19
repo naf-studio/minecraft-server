@@ -13,19 +13,13 @@
 
 _version: 1
 gameplay-mechanics:
-  arrow-movement-resets-despawn-counter: false
   entities-can-random-stroll-into-non-ticking-chunks: true
   entity-wake-up-duration-ratio-standard-deviation: 0.2
   fixes:
     broadcast-crit-animations-as-the-entity-being-critted: false
-    keep-mooshroom-rotation-after-shearing: true
-    mc-110386: true
-    mc-121706: true
+    mc-121706: false
     mc-238526: false
-    mc-31819: true
   hide-flames-on-entities-with-fire-resistance: false
-  technical:
-    load-portal-destination-chunk-before-entity-teleport: false
   try-respawn-ender-dragon-after-end-crystal-place: true
 small-optimizations:
   load-chunks:
@@ -38,12 +32,12 @@ small-optimizations:
       reset-movement-after-reach-limit: false
     per-tick: 10
   reduced-intervals:
-    acquire-poi-for-stuck-entity: 200
+    acquire-poi-for-stuck-entity: 60
     check-nearby-item:
       hopper:
-        interval: 20
+        interval: 1
         minecart:
-          interval: 20
+          interval: 1
           temporary-immunity:
             check-for-minecart-near-item-interval: 20
             check-for-minecart-near-item-while-active: false

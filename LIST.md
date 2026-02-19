@@ -14,13 +14,13 @@ https://modrinth.com/plugin/fastasyncworldedit
 https://geysermc.org/download?project=floodgate
 https://geysermc.org/download?project=geyser
 https://www.spigotmc.org/resources/gravesx.118271/
-https://modrinth.com/plugin/lightning-grim-anticheat
+https://modrinth.com/plugin/grimac
 https://github.com/Navio1430/LibreLoginProd
 https://modrinth.com/plugin/luckperms
 https://github.com/retrooper/packetevents
 https://github.com/hyperdefined/TimeBar
 https://songoda.com/plugin/ultimate-claims-14
-https://modrinth.com/plugin/veinminer
+https://github.com/2008Choco/VeinMiner/
 https://github.com/ViaVersion/ViaBackwards
 https://github.com/ViaVersion/ViaVersion
 https://modrinth.com/plugin/simple-voice-chat

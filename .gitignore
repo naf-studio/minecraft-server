@@ -30,12 +30,13 @@ plugins/.paper-remapped/*
 !commands.yml
 !eula.txt
 !LICENSE
+!LIST.md
 !pufferfish.yml
 !purpur.yml
+!README.md
 !run.bat
 !run.sh
 !server-icon.png
 !server.jar
 !server.properties
 !spigot.yml
-!TODO.md

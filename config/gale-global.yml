@@ -20,7 +20,7 @@ log-to-console:
     expired-message-warning: false
     not-secure-marker: true
   ignored-advancements: true
-  invalid-pool-element-error-log-level: info
+  invalid-legacy-text-component: true
   invalid-statistics: true
   legacy-material-initialization: false
   null-id-disconnections: true
@@ -34,7 +34,7 @@ log-to-console:
 misc:
   ignore-null-legacy-structure-data: false
   keepalive:
-    send-multiple: true
+    send-multiple: false
   last-tick-time-in-tps-command:
     add-oversleep: false
     enabled: false
@@ -42,11 +42,5 @@ misc:
   verify-chat-order: true
 small-optimizations:
   reduced-intervals:
-    increase-time-statistics: 60
+    increase-time-statistics: 20
     update-entity-line-of-sight: 4
-  use-xor-shift-random:
-    auto-replenish-lootable-refill: true
-    elytra-firework-speed: true
-    entity-wake-up-duration: true
-    generate-tree-with-bukkit-api: true
-    lightning-random-tick: true
