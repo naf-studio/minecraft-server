@@ -56,6 +56,10 @@ performance:
   check-survival-before-growth:
     # Check if a cactus can survive before growing.
     cactus-check-survival: true
+  despawn-time:
+    # Proactive despawn check for weak-loaded entities.
+    # This is an experimental feature.
+    proactive-weak-loading-despawn: false
   dont-save-entity:
     # Disable save primed tnt on chunk unloads.
     # Useful for redstone/technical servers, can prevent machines from being exploded by TNT,
@@ -84,38 +88,43 @@ performance:
     blacklisted-entities: []
   # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
   enable-cached-minecraft-to-bukkit-entitytype-convert: true
+  entity-goal:
+    start-tick-chance:
+      nearest-attackable-target: -1
+      follow-parent: -1
+      avoid-entity: -1
+      temptation: -1
+      enderman-look-for-player: -1
   fast-biome-manager-seed-obfuscation:
     # Replace vanilla SHA-256 seed obfuscation in BiomeManager with XXHash.
     enabled: false
     # Seed obfuscation key for XXHash.
     seed-obfuscation-key: 7544867116911564421
   # Use faster random generator?
-  # Requires a JVM that supports RandomGenerator.
+  # Requires a JVM that supports Xoroshiro128PlusPlus.
   # Some JREs don't support this.
   faster-random-generator:
     enabled: true
-    # Which random generator will be used?
-    # See https://openjdk.org/jeps/356
-    random-generator: Xoroshiro128PlusPlus
     # Enable faster random generator for world generation.
     # WARNING: This will affect world generation!!!
     enable-for-worldgen: false
     # Warn if you are not using legacy random source for slime chunk generation.
-    warn-for-slime-chunk: true
+    warn-for-slime-chunk: false
     # Use legacy random source for slime chunk generation,
     # to follow vanilla behavior.
-    use-legacy-random-for-slime-chunk: false
-    # Use direct random implementation instead of delegating to Java's RandomGenerator.
-    # This may improve performance but potentially changes RNG behavior.
-    use-direct-implementation: true
+    use-legacy-random-for-slime-chunk: true
   # May cause the inconsistent order of future compose tasks.
   faster-structure-gen-future-sequencing: true
+  # Experimental feature.
+  # Reuse BlockPos to reduce memory allocation slightly and improve performance on random ticking.
+  # May conflict with certain plugins or operations. Disable if position issues occur.
+  reuse-random-ticking-blockpos: false
   cache-biome:
     enabled: true
     mob-spawning: true
     advancements: true
   optimize-block-entities: true
-  optimize-mob-despawn: false
+  optimize-mob-despawn: true
   # Whether to only tick / update items in main hand and offhand instead of the entire inventory.
   only-tick-items-in-hand: true
   optimize-no-action-time:
@@ -123,7 +132,7 @@ performance:
   # Whether to optimize player movement processing by skipping unnecessary edge checks and avoiding redundant view distance updates.
   optimize-player-movement: true
   optimize-random-tick: true
-  optimize-waypoint: false
+  optimize-waypoint: true
   # Whether to use optimized powered rails.
   # The implementation is based on RailOptimization made by GitHub@FxMorin
   optimized-powered-rails: true
@@ -180,10 +189,17 @@ performance:
 #  FIXES  #
 ###########
 fixes:
-  # Don't let player join server if the server is full.
-  # If enable this, you should use 'purpur.joinfullserver' permission instead of
-  # PlayerLoginEvent#allow to let player join full server.
-  dont-place-player-if-server-full: false
+  # Fixes for vanilla Minecraft bugs.
+  vanilla-bug-fix:
+    # Whether to fix incorrect granting of 'Who needs rockets?' advancement.
+    # Mojira link: https://mojira.dev/MC-270656
+    mc-270656: false
+  # Prevents entities from moving into weak loaded chunks.
+  prevent-moving-into-weak-loaded-chunks:
+    # Set to true to enable features below.
+    enabled: false
+    # Prevents projectiles from moving into weak loaded chunks.
+    projectiles: false
 
 ##############
 #  GAMEPLAY  #
@@ -301,14 +317,6 @@ network:
 #  MISC  #
 ##########
 misc:
-  cache:
-    profile-lookup:
-      # Cache profile data lookups (skins, textures, etc.) to reduce API calls to Mojang.
-      enabled: true
-      # The timeout for profile lookup cache. Unit: Minutes.
-      timeout: 1440
-      # Maximum number of profiles to cache. Higher values use more memory (not that much).
-      max-size: 8192
   # Connection message, using MiniMessage format, set to "default" to use vanilla join message.
   # available placeholders:
   # <player_name> - player name
