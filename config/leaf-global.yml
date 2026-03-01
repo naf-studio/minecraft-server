@@ -1,6 +1,6 @@
 
 # Leaf Config
-#
+# 
 # Website: https://www.leafmc.one/
 # Docs: https://www.leafmc.one/docs/getting-started
 # GitHub Repo: https://github.com/Winds-Studio/Leaf
@@ -290,10 +290,10 @@ network:
   chat-message-signature: true
   # WARNING: This option is NOT compatible with ProtocolLib and may cause
   # issues with other plugins that modify packet handling.
-  #
+  # 
   # Optimizes non-flush packet sending by using Netty's lazyExecute method to avoid
   # expensive thread wakeup calls when scheduling packet operations.
-  #
+  # 
   # Requires server restart to take effect.
   OptimizeNonFlushPacketSending: true
   protocol-support:
