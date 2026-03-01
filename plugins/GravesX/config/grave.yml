@@ -17,20 +17,23 @@ settings:
         break: true
         # Can graves be blown up.
         explode: false
-        # The radius a grave may be protected. Setting to less than 2 could allow floating blocks when looted. Best to keep it at least more than two. To disable, just set to 0
-        # Note that higher protection radius's can cause TPS drops. It's best to keep this less than 5 unless you specifically need it to be higher.
-        protection-radius: 0
-        # Should blocks be protected when explosion occurs? This does not affect the grave at all, but allows legacy block explosion behavior around the grave regardless if the radius is protected.
-        explode-protection: true
         # Should we replace the oldest graves with a new one when a player his the max limit? This will remove abandoned graves as well and all contents will be lost.
         replace-oldest: false
         # Should a player be allowed to preview a grave?
         preview: true
+        # Should we strike lightning where the player has died?
+        smite-death-location: true
+        # Should we actually smite a death location? Keep note enabling this will hurt entities or destroy ground items if items are ignored. Retained as some use it.
+        actually-smite-death-location: false
+        # Should we run a task to check for missing graves? NOTE THAT THIS CAN CAUSE TPS TO DROP
+        check-missing-graves: false
 
       #############
       # Placement #
       #############
       placement:
+        # This controls all smart grave placement options. It is best to keep this enabled. If for some reason you are having issues with this feature, you can disable it.
+        safe-location: true
         # Only create graves where the entity can build, should work with all protection plugins.
         can-build: false
         # Only create graves where the entity can build, (According to ProtectionLib).
@@ -39,12 +42,23 @@ settings:
         ground: true
         # If the entity dies in the void, should it place a grave in the air if it can't find anywhere else.
         void: true
-        # If the entity dies in lava should the grave it floats to the top.
+        # If the entity dies in lava should the grave float to the top.
         lava-top: true
-        # If the entity dies in the void, should it place a grave in the air if it can't find anywhere else.
-        void-smart: true
+        # If the entity drowns in water should the grave float to the top.
+        # If the entity drowns in water should the grave float to the top.
+        water-top: false
         # If the entity dies in lava, try place the grave on the last solid block they stood on. (Only works for players)
         lava-smart: true
+        # If the entity drowns in water, try place the grave on the last solid block they stood on. (Only works for players)
+        water-smart: false
+        # Allow grave placement above the Nether roof? (Not recommended, as graves placed here may be inaccessible.)
+        nether-roof: false
+        # End Settings
+        end:
+          # Search until a block is found
+          search-radius: 96
+          # Fallback Y position
+          fallback-y: 64
         # If a grave tries is trying to be created and can't find a valid location should the player keep their inventory.
         failure-keep-inventory: true
         offset:
@@ -59,11 +73,11 @@ settings:
       # World #
       #########
       world:
-        # What worlds will a grave will spawn in. ALL will allow all worlds
-        #- world
-        #- world_nether
-        #- world_the_end
-        - ALL
+      - ALL
+      # What worlds will a grave will spawn in. ALL will allow all worlds
+      #- world
+      #- world_nether
+      #- world_the_end
 
       ########
       # Drop #
@@ -79,6 +93,8 @@ settings:
         timeout: true
         # When a grave times out set the grave to an abandoned state instead of dropping everything? If false, nothing changes for this behavior. Must have drop.timeout disabled.
         abandon: true
+        # Should a grave lose all of its experience when it goes abandoned?
+        abandon-lose-experience: true
         # When a grave explodes drop everything in it. If false it gets destroyed.
         explode: true
         # When a grave is broken drop everything in it. If false it gets destroyed.
@@ -92,6 +108,12 @@ settings:
           living-entity: true
           # Should projectiles from other sources cause the grave to break? (Dispenser)
           other: false
+        # Should pistons break graves?
+        piston-extend: true
+        # Should we have an explosion effect occur on looting a grave?
+        looted-explosion-effect: false
+        # Should a grave drop all items if a grave is being replaced as a player reaches the maximum graves allowed?
+        old-grave-replacement: true
 
       #########
       # Block #
@@ -114,9 +136,9 @@ settings:
         head:
           # 0 = Player/Entity head, (1 = Custom texture or 2 = Player username set under name).
           type: 1
-          base64: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdjYWI1NmM4MmNiODFiZGI5OTc5YTQ2NGJjOWQzYmEzZTY3MjJiYTEyMmNmNmM1Mjg3MzAxMGEyYjU5YWVmZSJ9fX0="
+          base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjdjYWI1NmM4MmNiODFiZGI5OTc5YTQ2NGJjOWQzYmEzZTY3MjJiYTEyMmNmNmM1Mjg3MzAxMGEyYjU5YWVmZSJ9fX0=
           # If type is set to 2.
-          name: "MHF_Chest"
+          name: MHF_Chest
 
       ############
       # Hologram #
@@ -136,7 +158,7 @@ settings:
           y: -0.28
           # Hologram offset Z.
           z: 0
-        # Placeholders for the hologram include 
+        # Placeholders for the hologram include
         # %item% - for the item amount
         # %level% - for the amount of levels dropped
         # %owner_name_display% - for the grave owner's name
@@ -144,9 +166,9 @@ settings:
         # %killer_name_display% - for the cause of death
         # %state_protection% - State of grave protection
         line:
-          - "&7%owner_name_display%&r's Grave"
-          - "&7%time_alive_remaining_formatted% &r| %state_protection%"
-          - "&fKilled By &c%killer_name_display%"
+        - '&7%owner_name_display%&r''s Grave'
+        - '&7%time_alive_remaining_formatted% &r| %state_protection%'
+        - '&fKilled By &c%killer_name_display%'
 
       ##############
       # Protection #
@@ -171,9 +193,9 @@ settings:
             other: false
         state:
           # Message for protected graves.
-          protected: "&c✘"
+          protected: '&c✘'
           # Message for unprotected graves.
-          unprotected: "&a✔"
+          unprotected: '&a✔'
         # Should players be allowed to preview a grave in a protected state?
         preview: false
 
@@ -184,16 +206,10 @@ settings:
       teleport:
         # Can the entity teleport to their grave from the Graves GUI.
         enabled: false
-        # How much it costs to teleport to a grave, you need Vault for this.
-        cost: 2
         # How long should it be before a player is teleported to a grave in seconds? Set to 0 to make teleportation instant.
         delay: 0
         # Should we detect yaw and pitch when delay is enabled? Recommend leaving this as false as this may affect players who are on Vivecraft or using Mods that allows controllers (Stick Drift)
         strict: false
-        # Extra cost added on top of cost if the grave is in a different world.
-        cost-different-world: 0
-        # Increase the price the further away the grave is.
-        cost-distance-increase: false
         # Should entities be allowed to always teleport to a grave even if unsafe.
         unsafe: false
         # If the grave is in an unsafe location, should the entity be teleported to the top.
@@ -204,16 +220,19 @@ settings:
       ###########
       # How the items are saved in graves.
       storage:
-        # COMPACT - stacks all items and puts them into a small as possible inventory
-        # EXACT - matches the player's inventory exactly.
+        # COMPACT - stacks all items and puts them into a small as possible inventory. Autoloot will not place armor back in armor slots with this setting.
+        # EXACT - matches the player's inventory exactly. Autoloot will put armor back in the correct slot with this option
         # CHESTSORT - Automatically sorts all items in graves in a neat fashion. This will not have the same behavior as EXACT. Acts more like COMPACT, but sorts it all if needed. (ChestSort must be installed)
         mode: EXACT
 
       ##############
       # Experience #
       ##############
-      # If store is false it will store what Minecraft would normally drop, if you want to fully disable it, set store to true and store-percent to 0.
+      # If store-in-grave is false it will drop experience in the world instead of placing them in a grave, if you want to fully disable this plugins experience calculation, set store to 0.0 to use the default vanilla calculation.
+      # Valid values between 0.01 - 1.0
+      # Note: Experience may double (dupe) if you go above 1.0
       experience:
+        store-in-grave: true
         store: 0.8
 
       ###########
@@ -225,7 +244,7 @@ settings:
         # How long should the entity be given a compass on respawn after the grave was first created.
         compass-time: 900
         # Should we run a function after respawning, you can use menu and list among the other functions.
-        function: "none"
+        function: none
 
         # Should entities be given a potion effect when they respawn. (Only works for players)
         potion-effect: true
@@ -241,15 +260,9 @@ settings:
         # Enable the particles feature.
         enabled: true
         # List for particles (Must be in caps) https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
-        type: "ENCHANTMENT_TABLE"
+        type: ENCHANTMENT_TABLE
         # Amount of particles.
         count: 4
-        # Options Below Only applies to REDSTONE or DUST.
-        dust-size: 4
-        # Legacy Colors: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html
-        # To use hex colors, just set to #rrggbb. This only works on 1.16 or newer where hex colors are supported.
-        dust-color: "RED"
-        # dust-color: "#FF0000"
         offset:
           # Particle offset X.
           x: 0
@@ -258,13 +271,72 @@ settings:
           # Particle offset Z.
           z: 0
 
+        ############
+        # Redstone #
+        ############
+        dust-size: 4
+        # Legacy Colors: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html
+        # To use hex colors, just set to #rrggbb. This only works on 1.16 or newer where hex colors are supported.
+        dust-color: RED
+        # dust-color: "#FF0000"
+
+        ##############
+        # Block Data #
+        ##############
+        # Only Works on Block based data
+        block-material: STONE
+        block-data: ''
+
+        ##############
+        # Color Tint #
+        ##############
+        # Works with tinted leaves
+        # Legacy Colors: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html
+        # To use hex colors, just set to #rrggbb. This only works on 1.16 or newer where hex colors are supported.
+        color: WHITE
+
+        ########
+        # Item #
+        ########
+        item: STONE
+
+        #########
+        # Skulk #
+        #########
+        sculk-charge: 1.0
+
+        ##########
+        # Shriek #
+        ##########
+        shriek-delay: 1
+
+        #########
+        # Trail #
+        #########
+        trail:
+          duration-ticks: 20
+          spread: 0.02
+
+        #############
+        # Vibration #
+        #############
+        vibration:
+          # "single" -> player -> grave (or player -> random entity if destination=entity)
+          # "bounce" -> player -> grave, then grave -> player (one round-trip, efficient)
+          mode: bounce
+
+          # Destination of the vibration path:
+          #   "block"  -> player -> grave block center  (vanilla-like)
+          #   "entity" -> player -> a RANDOM nearby online player (UUID randomized each time)
+          destination: block
+
       ###########
       # Compass #
       ###########
       # Compass that points towards the closest location belonging to a grave, only supported on 1.16.2+.
       compass:
         # The function that gets run on right click.
-        function: "distance"
+        function: distance
         # Ignore the compass if an entity dies with it, drop it normally.
         ignore: true
         # Should a previous compass be destroyed when creating a new grave.
@@ -272,21 +344,21 @@ settings:
         # Should the compass be a recovery compass, 1.19+ only. Older versions will fallback to a regular compass
         recovery: true
         # Name of the compass.
-        name: "%owner_name%'s Grave"
+        name: '%owner_name%''s Grave'
         # Should the compass glow.
         glow: true
         # Custom model data for the compass, -1 is none.
         model-data: -1
         # Lore of the compass.
         lore:
-          - "%world_formatted%, %x%x, %y%y, %z%z"
+        - '%world_formatted%, %x%x, %y%y, %z%z'
 
         # Handling for Particles
         particles:
           # Should right-clicking a compass spawn particles leading to the grave site?
           enabled: false
           # What particle should we use? Valid Particle Types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
-          particle: "FLAME"
+          particle: FLAME
           # How many particles should spawn? Keep note that setting this at a very high value can decrease performance on clients and server
           count: 5
           # How fast should the particles go from the player to the grave location?
@@ -306,30 +378,30 @@ settings:
         # Should obituaries drop to the ground instead of being stored in the player's grave?
         drop: false
         # Title of the obituary.
-        title: "&c%owner_name%'s Obituary"
+        title: '&c%owner_name%''s Obituary'
         # Author of the obituary.
-        author: "%killer_name%"
+        author: '%killer_name%'
         # Should the obituary glow.
         glow: true
         # Custom model data, -1 is none.
         model-data: -1
         # Lines of the obituary.
         line:
-          - "         Obituary         "
-          - "-------------------"
-          - "  Name: %owner_name%"
-          - "  Cause: %killer_name%"
-          - "  Date: %time_creation_formatted%"
-          - "  Items: %item%"
-          - "  Exp: %experience%"
-          - "  Location:"
-          - "    World: %world_formatted%"
-          - "    X: %x%"
-          - "    Y: %y%"
-          - "    Z: %z%"
+        - '         Obituary         '
+        - '-------------------'
+        - '  Name: %owner_name%'
+        - '  Cause: %killer_name%'
+        - '  Date: %time_creation_formatted%'
+        - '  Items: %item%'
+        - '  Exp: %experience%'
+        - '  Location:'
+        - '    World: %world_formatted%'
+        - '    X: %x%'
+        - '    Y: %y%'
+        - '    Z: %z%'
         # Lore of the obituary.
         lore:
-          - "&7Date: %time_creation_formatted%"
+        - '&7Date: %time_creation_formatted%'
 
       ########
       # Head #
@@ -345,11 +417,11 @@ settings:
         # Custom model data, -1 is none.
         model-data: -1
         # Name of the head.
-        name: "&e%owner_name%'s Head"
+        name: '&e%owner_name%''s Head'
         # Lore of the head.
         lore:
-          - "&7Killed by %killer_name%"
-          - '&7Date: %time_creation_formatted%'
+        - '&7Killed by %killer_name%'
+        - '&7Date: %time_creation_formatted%'
 
       ##########
       # Zombie #
@@ -358,7 +430,7 @@ settings:
         # Valid Zombie Types. Must be in caps. https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/LivingEntity.html
         type: ZOMBIE
         # Name of the zombie.
-        name: "%owner_name%'s Zombie"
+        name: '%owner_name%''s Zombie'
         # Should a grave spawn a zombie when it is looted by its owner.
         spawn-owner: false
         # Should a grave spawn a zombie if it is looted by another player.
@@ -384,7 +456,7 @@ settings:
         # Should graves require tokens for their creation.
         enabled: false
         # Name of the token defined in token.yml file.
-        name: "basic"
+        name: basic
 
       ###########
       # Virtual #
@@ -446,18 +518,18 @@ settings:
         # Should FurnitureLib furniture be used.
         enabled: true
         # Object ID.
-        name: "Grave1"
+        name: Grave1
         head:
           replace: true
           material:
-            - PLAYER_HEAD
-            - SKULL
-            - SKELETON_SKULL
-            - ZOMBIE_HEAD
+          - PLAYER_HEAD
+          - SKULL
+          - SKELETON_SKULL
+          - ZOMBIE_HEAD
         # If the model contains a sign, this is the text we will apply to it.
         line:
-          - "%owner_name% Died"
-          - "By %killer_name%"
+        - '%owner_name% Died'
+        - By %killer_name%
 
       ###################
       # FurnitureEngine #
@@ -467,7 +539,7 @@ settings:
         # Should FurnitureEngine furniture be used.
         enabled: false
         # Furniture name.
-        name: "grave"
+        name: grave
 
       ##############
       # ItemsAdder #
@@ -479,12 +551,12 @@ settings:
           # Should we use ItemsAdder furniture?
           enabled: true
           # Furniture name.
-          name: "graves:grave"
+          name: graves:grave
         block:
           # Should we use ItemsAdder blocks?
           enabled: false
           # Block name.
-          name: "itemsadder:nice_stone"
+          name: itemsadder:nice_stone
 
       ##########
       # Oraxen #
@@ -496,12 +568,29 @@ settings:
           # Should we use Oraxen furniture?
           enabled: false
           # Block name.
-          name: "grave"
+          name: grave
         block:
           # Should we use Oraxen blocks?
           enabled: false
           # Block name.
-          name: "caveblock"
+          name: caveblock
+
+      ##########
+      # Nexo #
+      ##########
+      # The option requires Nexo, you must have this installed to use models.
+      # Graves automatically adds models into Nexo, if you want to use it you will need to re-generate your pack and use "grave" as the furniture name.
+      nexo:
+        furniture:
+          # Should we use Nexo furniture?
+          enabled: false
+          # Block name.
+          name: grave
+        block:
+          # Should we use Nexo blocks?
+          enabled: false
+          # Block name.
+          name: caveblock
 
       #############
       # PlayerNPC #
@@ -512,7 +601,7 @@ settings:
           # Should we create a corpse?
           enabled: false
           # What pose should the entity use? https://sergiferry.github.io/PlayerNPC/dev/sergiferry/playernpc/api/NPC.Pose.html
-          pose: "SLEEPING"
+          pose: SLEEPING
           # Corpse offset X.
           offset:
             x: -0.5
@@ -546,57 +635,26 @@ settings:
             z: -0.5
           armor: true
           hand: true
+          # Must use a valid pose for FancyNpcs or else it will resort to an error and revert to swimming
+          pose: SWIMMING
 
-      ############
-      # Citizens #
-      ############
-      # The option requires Citizens, you must have this installed to use corpses, only supported on 1.17+.
-      citizens:
+      ##############
+      # Mannequins #
+      ##############
+      # Uses the vanilla Mannequin entity (Spigot/Paper 1.21.9+).
+      mannequins:
         corpse:
-          # Should we create a corpse?
           enabled: false
-          # What pose should the entity use? https://jd.citizensnpcs.co/net/citizensnpcs/util/PlayerAnimation.html
-          pose: "SLEEP"
-          # Corpse offset X.
+          # Spawn offset from the grave/player death location
           offset:
             x: -0.5
-            # Corpse offset Y.
             y: 0
-            # Corpse offset Z.
             z: -0.5
-          # Should the corpse wear the player's armor?
+          # Copy the dead player's equipment onto the mannequin
           armor: true
-          # Should the corpse hold the player's items?
           hand: true
-          # Should corpses be collidable?
-          collide: false
-          # Should corpses glow?
-          glow:
-            # Glow color.
-            color: RED
-            # Should corpses glow?
-            enabled: false
-
-      #############
-      # Schematic #
-      #############
-      # Schematic options, this feature is in beta. Schematics don't get cleaned up when the grave is removed.
-      schematic:
-        # Should schematics be enabled.
-        enabled: false
-        # Schematic file name.
-        name: "grave_default"
-        # Radius to rollback
-        radius: 10
-        # Schematic offset X.
-        offset:
-          x: 0
-          # Schematic offset Y.
-          y: 0
-          # Schematic offset Z.
-          z: 0
-        # Should we ignore air blocks? Most cases, this should be true, but with some schematics, you may need to set this to false.
-        ignore-air: true
+          # Must use a valid player pose or else it will resort to an error and revert to swimming
+          pose: SWIMMING
 
       ################
       # NoteBlockAPI #
@@ -607,10 +665,10 @@ settings:
         # Should the noteblock sound play locally?
         play-locally: true
         # nbs sound to play. Must be placed in /plugins/GravesX/nbs/
-        nbs-sound: "examplesound"
+        nbs-sound: examplesound
         # What nbs sound should play upon death? Must be placed in /plugins/GravesX/nbs/
         death-causes:
-          - "SUICIDE: ExampleSuicideSound"
+        - 'SUICIDE: ExampleSuicideSound'
 
       #########
       # Sound #
@@ -619,11 +677,13 @@ settings:
       sound:
         open: BLOCK_FENCE_GATE_OPEN
         close: BLOCK_FENCE_GATE_CLOSE
-        loot: ITEM_FIRECHARGE_USE
         teleport: ENTITY_ENDERMAN_TELEPORT
         menu-open: UI_BUTTON_CLICK
         protection: BLOCK_CHEST_LOCKED
         protection-change: UI_BUTTON_CLICK
+        grave-create: ''
+
+      # Sounds for grave-create previously included BLOCK_BELL_USE and ENTITY_ZOMBIE_AMBIENT.
 
       ##########
       # Effect #
@@ -639,41 +699,45 @@ settings:
       event:
         command:
           loot:
-            # Commands to run when looting a grave.
-            - ""
-            #- "say %interact_name% looted %owner_name%'s grave"
+          - ''
+          # Commands to run when looting a grave.
+          #- "say %interact_name% looted %owner_name%'s grave"
           create:
-            # Commands to run when creating a grave.
-            - ""
-            #- "say %owner_name% was killed by %killer_name% at %x%x %y%y %z%z, grave lasts for %time_alive_remaining_formatted%."
+          - ''
+          # Commands to run when creating a grave.
+          #- "say %owner_name% was killed by %killer_name% at %x%x %y%y %z%z, grave lasts for %time_alive_remaining_formatted%."
           block:
-            # Commands to run when placing a grave block.
-            - ""
-            #- "say %owner_name% grave block placed at %x%x %y%y %z%z."
+          - ''
+          # Commands to run when placing a grave block.
+          #- "say %owner_name% grave block placed at %x%x %y%y %z%z."
           open:
-            # Commands to run when opening a grave.
-            - ""
-            #- "say %interact_name% is looting %owner_name%'s grave."
+          - ''
+          # Commands to run when opening a grave.
+          #- "say %interact_name% is looting %owner_name%'s grave."
           break:
-            # Commands to run when breaking a grave.
-            - ""
-            #- "say %interact_name% broke %owner_name%'s grave."
+          - ''
+          # Commands to run when breaking a grave.
+          #- "say %interact_name% broke %owner_name%'s grave."
           explode:
-            # Commands to run when a grave explodes.
-            - ""
-            #- "say %interact_name% exploded %owner_name%'s grave."
+          - ''
+          # Commands to run when a grave explodes.
+          #- "say %interact_name% exploded %owner_name%'s grave."
           teleport:
-            # Commands to run when teleporting to a grave.
-            - ""
-            #- "say %interact_name% teleported to %owner_name%'s grave."
+          - ''
+          # Commands to run when teleporting to a grave.
+          #- "say %interact_name% teleported to %owner_name%'s grave."
           autoloot:
-            # Commands to run when auto-looting a grave.
-            - ""
-            #- "say %interact_name% auto looted %owner_name%'s grave."
+          - ''
+          # Commands to run when auto-looting a grave.
+          #- "say %interact_name% auto looted %owner_name%'s grave."
           zombiespawn:
-            # Commands to run when zombies spawn at a grave.
-            - ""
-            #- "say %interact_name% made zombies spawn at %owner_name%'s grave."
+          - ''
+          # Commands to run when zombies spawn at a grave.
+          #- "say %interact_name% made zombies spawn at %owner_name%'s grave."
+          pistonextend:
+          - ''
+      # Commands to run when piston extend destroys a grave.
+      #- "say piston broke %owner_name%'s grave."
 
       ##########
       # Ignore #
@@ -681,31 +745,61 @@ settings:
       # Items that graves will ignore from the inventory, these items will be handled normally.
       ignore:
         item:
-          # Items that graves will ignore by material.
+          # Ignore items based on their material type.
           material:
-            - ""
-            #- BEDROCK  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
-          # Items that graves will ignore by exact name.
+          - ''
+          #- BEDROCK  # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+          # Ignore items with an exact display name match.
           name:
-            - ""
-            #- "&4Admin Sword"
-          # Items that graves will ignore by exact lore.
+          - ''
+          #- "&4Admin Sword"
+
+          # Ignore items with an exact lore line match.
           lore:
-            - ""
-            #- "Soulbound"
-          # Items that graves will ignore if the name contains this string.
+          - ''
+          #- "Soulbound"
+
+          # Ignore items with an exact enchantment (namespace:key@level) match.
+          # Examples:
+          # - "minecraft:sharpness@1" for a vanilla Minecraft enchantment
+          # - "myplugin:custom_enchant@1" for a custom plugin enchantment
+          enchantment:
+          - minecraft:vanishing_curse@1
+          - minecraft:binding_curse@1
+          #- "minecraft:sharpness@1"
+          #- "myplugin:custom_enchant@1"
+
+          # Ignore items if their display name contains this substring.
           name-contains:
-            - ""
-            #- "Super Pickaxe"
-          # Items that graves will ignore if the lore contains this string.
+          - ''
+          #- "Super Pickaxe"
+
+          # Ignore items if any lore line contains this substring.
           lore-contains:
-            - ""
-            #- "Ignore Lore"
+          - ''
+          #- "Ignore Lore"
+
+          # Ignore items if any enchantment key contains this substring.
+          enchantment-contains:
+          - ''
+          #- "Custom"
+
+          # Ignore items if NamespacedKeys contains minecraft:key or plugin:key
+          namespacedkeys:
+          - ''
+          #- "ecoenchants:soulbound"
+
+          # Ignore items if any NamespacedKeys contains the following names
+          namespacedkeys-contains:
+          - ''
+        #- "soulbound"
+
         block:
-          # Blocks that graves will not spawn in.
+          # Materials in which graves will not be created.
           material:
-            - ""
-            #- LAVA
+          - ''
+      #- LAVA
 
       #########
       # Death #
@@ -720,36 +814,36 @@ settings:
         environmental: false
         # Only create graves for entities that were killed for these reasons. If you use any reason, make sure to disable ALL as it will cause issues.
         reason:
-          #- CONTACT
-          #- ENTITY_ATTACK
-          #- ENTITY_SWEEP_ATTACK
-          #- PROJECTILE
-          #- SUFFOCATION
-          #- FALL
-          #- FIRE
-          #- FIRE_TICK
-          #- MELTING
-          #- LAVA
-          #- DROWNING
-          #- BLOCK_EXPLOSION
-          #- ENTITY_EXPLOSION
-          #- VOID
-          #- LIGHTNING
-          #- SUICIDE
-          #- STARVATION
-          #- POISON
-          #- MAGIC
-          #- WITHER
-          #- FALLING_BLOCK
-          #- THORNS
-          #- DRAGON_BREATH
-          #- CUSTOM
-          #- FLY_INTO_WALL
-          #- HOT_FLOOR
-          #- CRAMMING
-          #- DRYOUT
-          #- FREEZE
-          - ALL # All reasons.
+        - ALL
+      #- CONTACT
+      #- ENTITY_ATTACK
+      #- ENTITY_SWEEP_ATTACK
+      #- PROJECTILE
+      #- SUFFOCATION
+      #- FALL
+      #- FIRE
+      #- FIRE_TICK
+      #- MELTING
+      #- LAVA
+      #- DROWNING
+      #- BLOCK_EXPLOSION
+      #- ENTITY_EXPLOSION
+      #- VOID
+      #- LIGHTNING
+      #- SUICIDE
+      #- STARVATION
+      #- POISON
+      #- MAGIC
+      #- WITHER
+      #- FALLING_BLOCK
+      #- THORNS
+      #- DRAGON_BREATH
+      #- CUSTOM
+      #- FLY_INTO_WALL
+      #- HOT_FLOOR
+      #- CRAMMING
+      #- DRYOUT
+      #- FREEZE
 
       #########
       # Spawn #
@@ -757,42 +851,42 @@ settings:
       # Only create graves for creature entities that have a spawn reason from the list below.
       spawn:
         reason:
-          - NATURAL
-          - DEFAULT
-          - JOCKEY
-          - CHUNK_GEN
-          - EGG
-          - SPAWNER_EGG
-          - LIGHTNING
-          - BUILD_SNOWMAN
-          - BUILD_IRONGOLEM
-          - BUILD_WITHER
-          - VILLAGE_DEFENSE
-          - VILLAGE_INVASION
-          - BREEDING
-          - SLIME_SPLIT
-          - REINFORCEMENTS
-          - NETHER_PORTAL
-          - DISPENSE_EGG
-          - INFECTION
-          - CURED
-          - OCELOT_BABY
-          - SILVERFISH_BLOCK
-          - MOUNT
-          - TRAP
-          - ENDER_PEARL
-          - SHOULDER_ENTITY
-          - DROWNED
-          - SHEARED
-          - EXPLOSION
-          - RAID
-          - PATROL
-          - BEEHIVE
-          - PIGLIN_ZOMBIFIED
-          - COMMAND
-          - CUSTOM
-          #- SPAWNER
-          #- ALL
+        - NATURAL
+        - DEFAULT
+        - JOCKEY
+        - CHUNK_GEN
+        - EGG
+        - SPAWNER_EGG
+        - LIGHTNING
+        - BUILD_SNOWMAN
+        - BUILD_IRONGOLEM
+        - BUILD_WITHER
+        - VILLAGE_DEFENSE
+        - VILLAGE_INVASION
+        - BREEDING
+        - SLIME_SPLIT
+        - REINFORCEMENTS
+        - NETHER_PORTAL
+        - DISPENSE_EGG
+        - INFECTION
+        - CURED
+        - OCELOT_BABY
+        - SILVERFISH_BLOCK
+        - MOUNT
+        - TRAP
+        - ENDER_PEARL
+        - SHOULDER_ENTITY
+        - DROWNED
+        - SHEARED
+        - EXPLOSION
+        - RAID
+        - PATROL
+        - BEEHIVE
+        - PIGLIN_ZOMBIFIED
+        - COMMAND
+        - CUSTOM
+      #- SPAWNER
+      #- ALL
 
       ###########
       # Message #
@@ -800,109 +894,119 @@ settings:
       # Messages and formats for various interactions and events.
       message:
         # Prefix for messages.
-        prefix: "&c[Graves] &r"
+        prefix: '&c[Graves] &r'
         # Messages for different interactions.
-        looted: "You looted &c%owner_name%&r's grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r."
-        experience: "Looted &c%level% &rlevels from grave."
-        empty: "You don't have any graves."
-        death: "You were killed in &c%world_formatted% &rby &c%killer_name%&r."
-        block: "Grave created at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r."
-        timeout: "Your grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r timed out with &c%item% &ritems and &c%experience% &rExperience."
-        ignore: "A grave was not created because you died in &c%name%&r."
-        max: "A grave was not created, you have reached the maximum."
-        failure-keep-inventory: "A grave was unable to find a suitable location, preserving inventory."
-        failure: "A grave was unable to find a suitable location, item's dropped on ground."
-        no-money: "You don't have enough money, you need &c%teleport_cost%&r."
-        no-token: "A grave was not created because you didn't have a grave token."
-        give-token: "You were given a Grave Token."
-        distance: "You are &c%distance% &rblocks away."
-        distance-world: "Can't measure distance, wrong world."
-        teleport: "You teleported to your grave."
-        teleport-waiting: "Teleporting to grave..."
-        teleport-top: "Grave is in an unsafe location, you have been teleported nearby."
-        teleport-failure: "Teleport failed, teleport location is unsafe."
-        teleport-disabled: "Grave teleportation is disabled."
-        teleport-cancelled: "Teleport cancelled due to movement."
-        build-denied: "A grave was not created because you don't have permission to build where you died."
-        distance-virtual: "You are too far away to virtually open this grave."
-        permission-denied: "Permission denied."
-        protection: "This grave is protected for %time_protection_remaining_formatted%."
-        grave-abandoned: "Your grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r has been abandoned with &c%item% &ritems and &c%experience% &rExperience."
-        grave-oldest-replaced: "Your oldest grave has been removed since you have reached the max limit."
-        grave-plugin-version-latest: "You are running the latest version of %plugin_name%."
+        looted: You looted &c%owner_name%&r's grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r.
+        experience: Looted &c%level% &rlevels from grave.
+        empty: You don't have any graves.
+        death: You were killed in &c%world_formatted% &rby &c%killer_name%&r.
+        block: Grave created at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r.
+        timeout: Your grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r timed
+          out with &c%item% &ritems and &c%experience% &rExperience.
+        ignore: A grave was not created because you died in &c%name%&r.
+        max: A grave was not created, you have reached the maximum.
+        failure-keep-inventory: A grave was unable to find a suitable location, preserving
+          inventory.
+        failure: A grave was unable to find a suitable location, item's dropped on ground.
+        no-token: A grave was not created because you didn't have a grave token.
+        give-token: You were given a Grave Token.
+        distance: You are &c%distance% &rblocks away.
+        distance-world: Can't measure distance, wrong world.
+        teleport: You teleported to your grave.
+        teleport-waiting: Teleporting to grave...
+        teleport-top: Grave is in an unsafe location, you have been teleported nearby.
+        teleport-failure: Teleport failed, teleport location is unsafe.
+        teleport-disabled: Grave teleportation is disabled.
+        teleport-cancelled: Teleport cancelled due to movement.
+        build-denied: A grave was not created because you don't have permission to build where
+          you died.
+        distance-virtual: You are too far away to virtually open this grave.
+        permission-denied: Permission denied.
+        protection: This grave is protected for %time_protection_remaining_formatted%.
+        grave-abandoned: Your grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r
+          has been abandoned with &c%item% &ritems and &c%experience% &rExperience.
+        grave-oldest-replaced: Your oldest grave has been removed since you have reached the
+          max limit.
+        grave-plugin-version-latest: You are running the latest version of %plugin_name%.
         grave-plugin-version-outdated:
-          - "&cYou are using an outdated version of %plugin_name%."
-          - "&cGrab the latest release from https://www.spigotmc.org/resources/%spigot_id%/"
+        - '&cYou are using an outdated version of %plugin_name%.'
+        - '&cGrab the latest release from https://www.spigotmc.org/resources/%spigot_id%/'
         grave-plugin-version-development:
-          - "&cYou are running %plugin_name% version %plugin_version%, which is a development build and is not production safe."
-          - "&cTHERE WILL NOT BE SUPPORT IF YOU LOSE GRAVE DATA FROM DEVELOPMENT OR COMPILED BUILDS. THIS BUILD IS FOR TESTING PURPOSES ONLY"
-          - "&cKeep note that you are using a development version when you report bugs."
-          - "&cIf the same issue occurs in %plugin_version%, then let us know in https://discord.ranull.com/."
+        - '&cYou are running %plugin_name% version %plugin_version%, which is a development
+          build and is not production safe.'
+        - '&cTHERE WILL NOT BE SUPPORT IF YOU LOSE GRAVE DATA FROM DEVELOPMENT OR COMPILED
+          BUILDS. THIS BUILD IS FOR TESTING PURPOSES ONLY'
+        - '&cKeep note that you are using a development version when you report bugs.'
+        - '&cIf the same issue occurs in %plugin_version%, then let us know in https://discord.ranull.com/.'
+        open-insufficient-balance: You do not have a sufficient balance to open your grave.
+        autoloot-insufficient-balance: You do not have a sufficient balance to autoloot your
+          grave.
+        grave-in-use: '&cThis grave is currently in use.'
 
         # World Message Format
         # Format: WORLD_NAME: World Name
         world:
-          - "world: Overworld"
-          - "world_nether: Nether"
-          - "world_the_end: The End"
+        - 'world: Overworld'
+        - 'world_nether: Nether'
+        - 'world_the_end: The End'
 
         # Death reasons
         # Format: DEATH_REASON: Replacement Message
         death-reason:
-          - "ENTITY_ATTACK: Attacked"
-          - "ENTITY_SWEEP_ATTACK: Sweep Attacked"
-          - "PROJECTILE: Projectile Struck"
-          - "SUFFOCATION: Suffocated"
-          - "FALL: Fell"
-          - "FIRE: Burned"
-          - "FIRE_TICK: Burned"
-          - "MELTING: Melted"
-          - "LAVA: Burned"
-          - "DROWNING: Drowned"
-          - "BLOCK_EXPLOSION: Exploded"
-          - "ENTITY_EXPLOSION: Exploded"
-          - "VOID: Voided"
-          - "LIGHTNING: Zeus"
-          - "SUICIDE: Suicide"
-          - "STARVATION: Starved"
-          - "POISON: Poisoned"
-          - "MAGIC: Magic Missile"
-          - "WITHER: Withered Away"
-          - "FALLING_BLOCK: Crushed"
-          - "THORNS: Thorned"
-          - "DRAGON_BREATH: Dragon Breath"
-          - "CUSTOM: Dark Magic"
-          - "FLY_INTO_WALL: Splat"
-          - "HOT_FLOOR: Burned Feet"
-          - "CRAMMING: Crushed"
-          - "DRYOUT: Dried Out"
-          - "FREEZE: Froze"
-          - "SONIC_BOOM: Sonic Boomed"
-          - "STALAGMITE: Impaled"
-          - "OUTSIDE_BORDER: Crossed the Border"
-          - "FALLING_STALACTITE: Impaled"
-          - "GENERIC: Died"
-          - "ENTITY_HIT: Hit"
-          - "ENTITY_BURN: Burned by Entity"
-          - "ENDER_DRAGON: Dragon"
-          - "WITHER_SKULL: Wither Skull"
-          - "CONSTRUCTION: Construction Error"
-          - "SLIME: Slammed"
-          - "ELDER_GUARDIAN: Guardian Attack"
-          - "KILL: Killed"
-          - "CONTACT: Touched"
+        - 'ENTITY_ATTACK: Attacked'
+        - 'ENTITY_SWEEP_ATTACK: Sweep Attacked'
+        - 'PROJECTILE: Projectile Struck'
+        - 'SUFFOCATION: Suffocated'
+        - 'FALL: Fell'
+        - 'FIRE: Burned'
+        - 'FIRE_TICK: Burned'
+        - 'MELTING: Melted'
+        - 'LAVA: Burned'
+        - 'DROWNING: Drowned'
+        - 'BLOCK_EXPLOSION: Exploded'
+        - 'ENTITY_EXPLOSION: Exploded'
+        - 'VOID: Voided'
+        - 'LIGHTNING: Zeus'
+        - 'SUICIDE: Suicide'
+        - 'STARVATION: Starved'
+        - 'POISON: Poisoned'
+        - 'MAGIC: Magic Missile'
+        - 'WITHER: Withered Away'
+        - 'FALLING_BLOCK: Crushed'
+        - 'THORNS: Thorned'
+        - 'DRAGON_BREATH: Dragon Breath'
+        - 'CUSTOM: Dark Magic'
+        - 'FLY_INTO_WALL: Splat'
+        - 'HOT_FLOOR: Burned Feet'
+        - 'CRAMMING: Crushed'
+        - 'DRYOUT: Dried Out'
+        - 'FREEZE: Froze'
+        - 'SONIC_BOOM: Sonic Boomed'
+        - 'STALAGMITE: Impaled'
+        - 'OUTSIDE_BORDER: Crossed the Border'
+        - 'FALLING_STALACTITE: Impaled'
+        - 'GENERIC: Died'
+        - 'ENTITY_HIT: Hit'
+        - 'ENTITY_BURN: Burned by Entity'
+        - 'ENDER_DRAGON: Dragon'
+        - 'WITHER_SKULL: Wither Skull'
+        - 'CONSTRUCTION: Construction Error'
+        - 'SLIME: Slammed'
+        - 'ELDER_GUARDIAN: Guardian Attack'
+        - 'KILL: Killed'
+        - 'CONTACT: Touched'
 
       ########
       # Time #
       ########
       # Time formatting for various durations.
       time:
-        second: "&7%second%&fs "
-        minute: "&7%minute%&fm "
-        hour: "&7%hour%&fh "
-        day: "&7%day%&fd "
-        infinite: "&7Forever"
-        date: "dd-MM-yyyy"
+        second: '&7%second%&fs '
+        minute: '&7%minute%&fm '
+        hour: '&7%hour%&fh '
+        day: '&7%day%&fd '
+        infinite: '&7Forever'
+        date: dd-MM-yyyy
 
       #######
       # GUI #
@@ -911,7 +1015,7 @@ settings:
       gui:
         grave:
           # Title of the grave GUI.
-          title: "%owner_name%'s Grave"
+          title: '%owner_name%''s Grave'
 
         menu:
           list:
@@ -920,557 +1024,557 @@ settings:
               block: true
               material: CHEST
             # Title for the grave list menu.
-            title: "Grave List"
-            function: "menu"
-            name: "Grave"
+            title: Grave List
+            function: menu
+            name: Grave
             glow: false
             model-data: -1
-            empty: "You don't have any graves."
+            empty: You don't have any graves.
             lore:
-              - "&7Created %time_lived_formatted% &7ago"
+            - '&7Created %time_lived_formatted% &7ago'
 
           grave:
             # Title for the individual grave menu.
-            title: "Grave"
+            title: Grave
             slot:
               0:
                 enabled: true
-                material: "PAPER"
-                function: "distance"
-                name: "Information"
+                material: PAPER
+                function: distance
+                name: Information
                 glow: false
                 model-data: -1
                 lore:
-                  - "Items: &f%item%"
-                  - "Levels: &f%level%"
-                  - "Death Location: &f%world_formatted%, %x%x, %y%y, %z%z"
+                - 'Items: &f%item%'
+                - 'Levels: &f%level%'
+                - 'Death Location: &f%world_formatted%, %x%x, %y%y, %z%z'
 
               1:
                 enabled: true
-                material: "ENDER_PEARL"
-                function: "teleportation"
-                name: "Teleport"
+                material: ENDER_PEARL
+                function: teleportation
+                name: Teleport
                 glow: false
                 model-data: -1
                 lore:
-                  - "Teleport to your grave"
+                - Teleport to your grave
 
-              2: # Toggle protection on and off.
+              2:
                 enabled: false
-                material: "TRIPWIRE_HOOK"
-                function: "protection"
-                name: "Toggle Protection %state_protection%"
+                material: TRIPWIRE_HOOK
+                function: protection
+                name: Toggle Protection %state_protection%
                 glow: false
                 model-data: -1
                 lore:
-                  - "Toggle grave protection"
+                - Toggle grave protection
 
-              3: # Open your grave remotely.
+              3:
                 enabled: false
-                material: "CHEST"
-                function: "virtual"
-                name: "open grave"
+                material: CHEST
+                function: virtual
+                name: open grave
                 glow: false
                 model-data: -1
                 lore:
-                  - "Open your grave remotely"
+                - Open your grave remotely
 
-              4: # Abandon your grave.
+              4:
                 enabled: false
-                material: "COMPASS"
-                function: "abandoned"
-                name: "abandon grave"
+                material: COMPASS
+                function: abandoned
+                name: abandon grave
                 glow: false
                 model-data: -1
                 lore:
-                  - "Toggle Abandoned %state_abandoned%"
+                - Toggle Abandoned %state_abandoned%
 
               5:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               6:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               7:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               8:
                 enabled: true
-                material: "BARRIER"
-                function: "list"
-                name: "Back"
+                material: BARRIER
+                function: list
+                name: Back
                 glow: false
                 model-data: -1
                 lore:
-                  - "Return back to the list"
+                - Return back to the list
 
               9:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               10:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               11:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               12:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               13:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               14:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               15:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               16:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               17:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               18:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               19:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               20:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               21:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               22:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               23:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               24:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               25:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               26:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               27:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               28:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               29:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               30:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               31:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               32:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               33:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               34:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               35:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               36:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               37:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               38:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               39:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               40:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               41:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               42:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               43:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               44:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               45:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               46:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               47:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               48:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               49:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               50:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               51:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               52:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
 
               53:
                 enabled: false
-                material: "PAPER"
-                function: ""
-                name: "Example Item"
+                material: PAPER
+                function: ''
+                name: Example Item
                 glow: false
                 model-data: -1
                 lore:
-                  - "Example Lore"
+                - Example Lore
