@@ -1,14 +1,12 @@
 # Minecraft Server Repository
 
-This repository contains the configuration, plugins, and scripts for a customized Minecraft server. It relies on the Purpur/Spigot/Paper ecosystem (implied by `purpur.yml`, `spigot.yml`) and includes custom Skripts for enhanced gameplay mechanics.
+This repository contains the configuration, plugins, and scripts for a customized Minecraft server.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Usage](#usage)
-- [Custom Scripts (Skripts)](#custom-scripts-skripts)
 - [Startup Flags](#startup-flags)
 - [Maintenance and Configuration](#maintenance-and-configuration)
 
@@ -17,30 +15,12 @@ This repository contains the configuration, plugins, and scripts for a customize
 This project is a Minecraft server setup that includes:
 -   **Core Server**: `server.jar` (likely Purpur or a fork).
 -   **Plugins**: A collection of plugins in the `plugins/` directory to enhance gameplay, administration, and performance.
--   **Custom Scripts**: `.sk` files in `plugins/Skript/scripts/` to handle specific server logic like access control, borders, and pinatas.
 -   **Optimization**: Highly tuned startup flags in `run.sh` and `run.bat` for optimal performance using the Z Garbage Collector (ZGC) and vectorization.
 
 ## Prerequisites
 
 -   **Java Development Kit (JDK)**: A compatible Java version is required to run `server.jar`. Based on the flags used (`--add-modules=jdk.incubator.vector`), a modern JDK (likely Java 17 or newer, possibly 21+) is expected.
 -   **Operating System**: Linux (for `run.sh`) or Windows (for `run.bat`).
-
-## Installation
-
-1.  **Clone the Repository**:
-    ```bash
-    git clone <repository-url>
-    cd <repository-directory>
-    ```
-
-2.  **Download/Verify Server Jar**:
-    Ensure `server.jar` is present in the root directory. If not, download the appropriate version of Purpur/Paper.
-
-3.  **Permissions (Linux)**:
-    Ensure the startup script is executable:
-    ```bash
-    chmod +x run.sh
-    ```
 
 ## Usage
 
@@ -52,46 +32,11 @@ To start the server, run the appropriate script for your operating system. The s
 ```
 
 ### Windows
-Double-click `run.bat` or run it from the command prompt:
 ```cmd
-run.bat
+.\run.bat
 ```
 
 To stop the server loop, press `CTRL + C` during the 5-second countdown after the server shuts down.
-
-## Custom Scripts (Skripts)
-
-This server uses the Skript plugin to implement custom commands and mechanics. The scripts are located in `plugins/Skript/scripts/`.
-
-### `allowend.sk`
-**Purpose**: Manages access to The End world.
--   **Usage**: `/allowend [true|false]`
--   **Behavior**: Can enable or disable The End. If disabled, players currently in The End are teleported to the Overworld spawn.
-
-### `border.sk`
-**Purpose**: Manages the world border using ChunkyBorder and the vanilla world border.
--   **Usage**: `/border <radius>`
--   **Behavior**: Sets the Chunky border radius and the vanilla world border (2x radius).
-
-### `help.sk`
-**Purpose**: Provides a custom help command.
--   **Usage**: `/help` (Aliases: `/helps`, `/?`, `/tip`, `/tips`)
--   **Behavior**: Triggers a global auto-broadcast list of tips.
-
-### `pinatarandom.sk`
-**Purpose**: Spawns pinatas on random online players.
--   **Usage**: `/pinatarandom [amount]`
--   **Behavior**: Spawns the specified number of pinatas on randomly selected players.
-
-### `ping.sk`
-**Purpose**: A wrapper for the Spark ping command.
--   **Usage**: `/ping [player]`
--   **Behavior**: Checks latency for the executor or a target player.
-
-### `tps.sk`
-**Purpose**: A wrapper for the Spark TPS command.
--   **Usage**: `/tps`
--   **Behavior**: Displays server performance statistics (Ticks Per Second).
 
 ## Startup Flags
 
