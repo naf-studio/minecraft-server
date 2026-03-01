@@ -64,7 +64,7 @@ https://modrinth.com/datapack/epic-structures-witch-huts | future
 
 https://modrinth.com/datapack/revamped-shipwrecks
 https://modrinth.com/datapack/unwrecked-ships
-
 https://modrinth.com/datapack/pale-formations
+https://modrinth.com/datapack/wabi-sabi-structures
 
 https://modrinth.com/datapack/true-ending
