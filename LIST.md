@@ -2,7 +2,7 @@
 https://github.com/Winds-Studio/Leaf
 
 # plugin
-https://modrinth.com/plugin/anarchyexploitfixes
+<!-- https://modrinth.com/plugin/anarchyexploitfixes | outdated-->
 <!-- https://modrinth.com/plugin/autotreechop -->
 https://modrinth.com/plugin/chunky
 https://modrinth.com/plugin/chunkyborder
