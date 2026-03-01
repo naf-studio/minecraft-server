@@ -10,6 +10,7 @@ cmi
 cmilib
 https://github.com/DiscordSRV/DiscordSRV
 https://github.com/Minebench/EntityDetection
+https://github.com/LukeOnuke/fast-leaf-decay
 <!-- https://modrinth.com/plugin/fairy -->
 https://modrinth.com/plugin/fastasyncworldedit
 https://geysermc.org/download?project=floodgate
