@@ -2,14 +2,15 @@
 https://github.com/Winds-Studio/Leaf
 
 # plugin
-exploit
-https://modrinth.com/plugin/autotreechop
+https://modrinth.com/plugin/anarchyexploitfixes
+<!-- https://modrinth.com/plugin/autotreechop -->
 https://modrinth.com/plugin/chunky
 https://modrinth.com/plugin/chunkyborder
 cmi
 cmilib
 https://github.com/DiscordSRV/DiscordSRV
-entity
+https://github.com/Minebench/EntityDetection
+<!-- https://modrinth.com/plugin/fairy -->
 https://modrinth.com/plugin/fastasyncworldedit
 https://geysermc.org/download?project=floodgate
 https://modrinth.com/plugin/freedomchat
@@ -19,10 +20,13 @@ https://modrinth.com/plugin/grimac
 https://github.com/Navio1430/LibreLoginProd
 https://modrinth.com/plugin/luckperms
 https://github.com/retrooper/packetevents
+<!-- https://github.com/dmulloy2/ProtocolLib -->
+<!-- https://github.com/stonar96/RayTraceAntiXray -->
+https://github.com/retrooper/packetevents
 https://github.com/hyperdefined/TimeBar
-https://songoda.com/plugin/ultimate-claims-14
-https://github.com/2008Choco/VeinMiner/
-https://github.com/ViaVersion/ViaBackwards
+<!-- https://songoda.com/plugin/ultimate-claims-14 -->
+<!-- https://github.com/2008Choco/VeinMiner/ -->
+<!-- https://github.com/ViaVersion/ViaBackwards -->
 https://github.com/ViaVersion/ViaVersion
 https://modrinth.com/plugin/simple-voice-chat
 
@@ -49,6 +53,11 @@ https://modrinth.com/datapack/dungeons-and-taverns-nether-fortress-overhaul
 https://modrinth.com/datapack/nofun-dnt
 https://modrinth.com/datapack/dnt-enchant-disabler
 
+https://modrinth.com/datapack/wabi-sabi-structures
+https://modrinth.com/datapack/pale-formations
+https://modrinth.com/datapack/revamped-shipwrecks
+https://modrinth.com/datapack/unwrecked-ships
+
 https://modrinth.com/datapack/villages-revamped
 https://modrinth.com/datapack/qraftys-japanese-villages
 https://modrinth.com/datapack/qraftys-end-villages
@@ -59,12 +68,7 @@ https://modrinth.com/datapack/qraftys-bunkers | outdated
 https://modrinth.com/datapack/qraftys-mushroom-villages | outdated
 https://modrinth.com/datapack/qraftys-mountain-villages
 
-https://modrinth.com/datapack/epic-structures-villages | future
-https://modrinth.com/datapack/epic-structures-witch-huts | future
-
-https://modrinth.com/datapack/revamped-shipwrecks
-https://modrinth.com/datapack/unwrecked-ships
-https://modrinth.com/datapack/pale-formations
-https://modrinth.com/datapack/wabi-sabi-structures
+<!-- https://modrinth.com/datapack/epic-structures-villages | future -->
+<!-- https://modrinth.com/datapack/epic-structures-witch-huts | future -->
 
 https://modrinth.com/datapack/true-ending
