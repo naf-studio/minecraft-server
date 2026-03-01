@@ -12,6 +12,7 @@ https://github.com/DiscordSRV/DiscordSRV
 entity
 https://modrinth.com/plugin/fastasyncworldedit
 https://geysermc.org/download?project=floodgate
+https://modrinth.com/plugin/freedomchat
 https://geysermc.org/download?project=geyser
 https://www.spigotmc.org/resources/gravesx.118271/
 https://modrinth.com/plugin/grimac
