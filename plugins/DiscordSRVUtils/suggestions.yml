@@ -1,0 +1,35 @@
+# https://wiki.discordsrvutils.xyz/suggestions/
+
+# Is Suggestions enabled?
+enabled: false
+# Channel to send suggestions in
+suggestions_channel: 0
+# Suggestion Message without notes or approval/decline
+suggestions_message: 'message:suggestion'
+# The Reaction for community to react when they +1 vote the suggestion
+yes_reaction: 'white_check_mark'
+# The Reaction for community to react when they -1 vote the suggestion
+no_reaction: 'x'
+# Should the Submitter of suggestion be able to vote their own suggestion?
+allow_submitter_vote: false
+# Message when the suggestion is noted (only latest note is previewed)
+suggestion_noted_message: 'message:suggestion-noted'
+# Message when the suggestion is noted and also approved (only latest note is previewed)
+suggestion_noted_approved: 'message:suggestion-noted-approved'
+# Message when the suggestion is approved
+suggestion_approved: 'message:suggestion-approved'
+# Message when the suggestion is noted and also denied (only latest note is previewed)
+suggestion_noted_denied: 'message:suggestion-noted-denied'
+# Message when the suggestion is denied
+suggestion_denied: 'message:suggestion-denied'
+# If a message is sent in the suggestions channel, do we delete it and make a new suggestion?
+# Note: Muted role and anti suggestion spam will not be applied here
+set_suggestion_from_channel: false
+# Role that if user have they can't make suggestions
+suggestion_muted_role: 0
+# Mode of the suggestions. Set to BUTTONS to make it use buttons instead of reactions/n# Note that changing this is not affected until server restart./n# Another note is that your votes will be reset by changing this
+suggestions_vote_mode: 'REACTIONS'
+# Message when User tries to vote their own suggestion. This message is only sent on BUTTONS mode.
+vote_own_suggestion_message: 'You may not vote your own suggestion.'
+# Should the message responses use ephemeral replies? This means that only the user can see it, and it disappears after a while.
+use_ephemeral: false

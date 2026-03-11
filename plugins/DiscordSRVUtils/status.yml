@@ -1,0 +1,6 @@
+# Events to update the status message on.
+update_events:
+  - 'org.bukkit.event.player.PlayerJoinEvent'
+  - 'org.bukkit.event.player.PlayerQuitEvent'
+# Delay to update the status message in seconds. Keep in mind discord has rate limits
+update_delay: 60
