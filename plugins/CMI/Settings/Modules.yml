@@ -199,7 +199,7 @@ decoratedpot: true
 #  
 # Handles player skins
 # Applies for servers from 1.8.x and up
-skin: true
+skin: false
 #  
 # Handles selection areas. While this is disabled, command can still be used
 # Applies for servers from 1.7.x and up

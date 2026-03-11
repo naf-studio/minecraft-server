@@ -22,6 +22,8 @@ https://modrinth.com/plugin/grimac
 https://github.com/Navio1430/LibreLoginProd
 https://modrinth.com/plugin/luckperms
 https://github.com/retrooper/packetevents
+https://modrinth.com/plugin/placeholderapi
+https://modrinth.com/plugin/skinsrestorer
 <!-- https://github.com/dmulloy2/ProtocolLib -->
 <!-- https://github.com/stonar96/RayTraceAntiXray -->
 https://github.com/retrooper/packetevents
