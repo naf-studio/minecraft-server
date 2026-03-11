@@ -1,0 +1,18 @@
+# Database config. Only MySQL & MariaDB are supported
+# Should we use a database?
+isEnabled: false
+
+# Host for your database, usually localhost.
+Host: 'localhost'
+
+# Port for your Database, usually 3306
+Port: 3306
+
+# Username used to login to database.
+UserName: 'root'
+
+# Password used to login to database.
+Password: 'password'
+
+# Database name. The host should tell you the name normally.
+DatabaseName: 'DiscordSRVUtilsData'

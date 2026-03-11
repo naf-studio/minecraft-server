@@ -9,6 +9,7 @@ https://modrinth.com/plugin/chunkyborder
 cmi
 cmilib
 https://github.com/DiscordSRV/DiscordSRV
+https://github.com/BlueDevelopersInc/DiscordSRVUtils
 https://github.com/Minebench/EntityDetection
 https://github.com/LukeOnuke/fast-leaf-decay
 <!-- https://modrinth.com/plugin/fairy -->
