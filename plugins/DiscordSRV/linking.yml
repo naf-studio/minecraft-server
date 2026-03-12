@@ -56,8 +56,8 @@ Require linked account to play:
 
 
   Messages:
-    DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\nTry again in a minute."
+    DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
     Not in server: "&cYOU ARE CURRENTLY NOT A PART OF OUR DISCORD SERVER!\n\n&7Please join our Discord to play &b{INVITE}!"
-    Failed to find subscriber role: "&cFAILED TO FIND ANY SUBSCRIBER ROLE ON DISCORD.\n\nContact your server admins about this issue."
-    Failed for unknown reason: "&cAN ERROR OCCURRED WHILE TRYING TO VERIFY YOUR ACCOUNT.\n\nContact your server admin about this issue."
-    Kicked for unlinking: "&cYOU HAVE BEEN UNLINKED YOUR ACCOUNTS.\n\n&7Please rejoin the server to link your accounts again.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+    Failed to find subscriber role: "&cFAILED TO FIND ANY SUBSCRIBER ROLE ON DISCORD.\nContact your server admins about this issue.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+    Failed for unknown reason: "&cAN ERROR OCCURRED WHILE TRYING TO VERIFY YOUR ACCOUNT.\nContact your server admin about this issue.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+    Kicked for unlinking: "&cYOU HAVE BEEN UNLINKED YOUR ACCOUNTS.\n&7Please rejoin the server to link your accounts again.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
