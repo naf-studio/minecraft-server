@@ -29,21 +29,21 @@ bedrock:
 java:
   # What type of authentication Bedrock players will be checked against when logging into the Java server.
   # Can be "floodgate" (see https://wiki.geysermc.org/floodgate/), "online", or "offline".
-  auth-type: online
+  auth-type: offline
 
 # MOTD settings
 motd:
   # The MOTD that will be broadcasted to Minecraft: Bedrock Edition clients. This is irrelevant if "passthrough-motd" is set to true.
   # If either of these are empty, the respective string will default to "Geyser"
-  primary-motd: Geyser
-  secondary-motd: Another Geyser server.
+  primary-motd: NAFMC
+  secondary-motd: Play together!
 
   # Whether Geyser should relay the MOTD from the Java server to Bedrock players.
   passthrough-motd: true
 
   # Maximum amount of players that can connect.
   # This is only visual, and is only applied if passthrough-motd is disabled.
-  max-players: 100
+  max-players: 64
 
   # Whether to relay the player count and max players from the Java server to Bedrock players.
   passthrough-player-counts: true
@@ -59,7 +59,7 @@ motd:
 # Gameplay options that affect Bedrock players
 gameplay:
   # The server name that will be sent to Minecraft: Bedrock Edition clients. This is visible in both the pause menu and the settings menu.
-  server-name: Geyser
+  server-name: NAFMC
 
   # Allow a fake cooldown indicator to be sent. Bedrock players otherwise do not see a cooldown as they still use 1.8 combat.
   # Please note: if the cooldown is enabled, some users may see a black box during the cooldown sequence, like below:
