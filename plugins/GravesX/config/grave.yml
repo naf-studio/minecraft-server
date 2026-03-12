@@ -894,7 +894,7 @@ settings:
       # Messages and formats for various interactions and events.
       message:
         # Prefix for messages.
-        prefix: '&c[Graves] &r'
+        prefix: '&r'
         # Messages for different interactions.
         looted: You looted &c%owner_name%&r's grave at &c%x%&rx, &c%y%&ry, &c%z%&rz in &c%world_formatted%&r.
         experience: Looted &c%level% &rlevels from grave.
