@@ -221,7 +221,7 @@ storage:
         - <random>
     # <!! Warning !!>
     # Enable this will require players to run "/skin update" to update their skin.
-    disallowAutoUpdateSkin: false
+    disallowAutoUpdateSkin: true
     # Time that skins are stored in the database before we request again (in minutes).
     # [?] A value of 0 will always trigger a request to the Mojang API.
     # [!] Lowering this value will increase the amount of requests which could be a problem on large servers.
