@@ -185,12 +185,12 @@ settings:
           # Can the killer open the owner's grave.
           killer: true
           # Can other entities open the owner's grave.
-          other: false
+          other: true
           missing:
             # If a killer can't be found should the owner be allowed to open the grave.
             owner: true
             # If a killer can't be found should everyone be allowed to open the grave.
-            other: false
+            other: true
         state:
           # Message for protected graves.
           protected: '&c✘'
