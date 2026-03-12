@@ -454,128 +454,157 @@ info:
     zombified_piglin: Zombified piglin
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    unbreaking: Unbreaking
-    infinity: Infinity
-    luck_of_the_sea: Luck_Of_The_Sea
-    riptide: Riptide
-    density: Density
-    quick_charge: Quick_Charge
-    depth_strider: Depth_Strider
-    protection: Protection
-    silk_touch: Silk_Touch
-    wind_burst: Wind_Burst
-    multishot: Multishot
-    impaling: Impaling
-    loyalty: Loyalty
-    feather_falling: Feather_Falling
-    blast_protection: Blast_Protection
-    swift_sneak: Swift_Sneak
-    projectile_protection: Projectile_Protection
-    looting: Looting
-    breach: Breach
-    fire_protection: Fire_Protection
-    sharpness: Sharpness
-    flame: Flame
-    bane_of_arthropods: Bane_Of_Arthropods
-    efficiency: Efficiency
-    power: Power
-    aqua_affinity: Aqua_Affinity
-    lunge: Lunge
-    knockback: Knockback
-    mending: Mending
-    thorns: Thorns
+    antidote: Antidote
+    jockey/spawn_camel_husk_jockey: Jockey/spawn_Camel_Husk_Jockey
     channeling: Channeling
-    piercing: Piercing
-    sweeping_edge: Sweeping_Edge
-    binding_curse: Binding_Curse
-    respiration: Respiration
-    fire_aspect: Fire_Aspect
-    soul_speed: Soul_Speed
-    vanishing_curse: Vanishing_Curse
-    fortune: Fortune
-    frost_walker: Frost_Walker
-    smite: Smite
+    efficiency: Efficiency
+    depth_strider: Depth_Strider
+    boss_nether: Boss_Nether
+    aqua_affinity: Aqua_Affinity
+    conductivity_curse: Conductivity_Curse
+    sharpness: Sharpness
+    unbreaking: Unbreaking
+    illagers_bane: Illagers_Bane
     lure: Lure
+    piercing: Piercing
+    jockey/spawn_chicken_jockey: Jockey/spawn_Chicken_Jockey
+    feather_falling: Feather_Falling
+    jockey/spawn_stray_horseman: Jockey/spawn_Stray_Horseman
+    impaling: Impaling
+    thorns: Thorns
+    multishot: Multishot
+    jockey/spawn_hoglin_jockey: Jockey/spawn_Hoglin_Jockey
+    boss_behaviour: Boss_Behaviour
+    vanishing_curse: Vanishing_Curse
+    shulker_boss: Shulker_Boss
+    swift_sneak: Swift_Sneak
+    gravity: Gravity
+    tavern_level_checker: Tavern_Level_Checker
+    flame: Flame
+    looting: Looting
+    power: Power
+    spiteful: Spiteful
+    jockey/make_drowned_into_jockey: Jockey/make_Drowned_Into_Jockey
+    shulker_miniboss: Shulker_Miniboss
+    loyalty: Loyalty
+    breach: Breach
+    jockey/spawn_zautilus_jockey: Jockey/spawn_Zautilus_Jockey
+    librarian_level_checker: Librarian_Level_Checker
+    fire_aspect: Fire_Aspect
+    smite: Smite
+    traveler: Traveler
+    aerials_bane: Aerials_Bane
     punch: Punch
+    density: Density
+    fire_protection: Fire_Protection
+    respiration: Respiration
+    lunge: Lunge
+    mending: Mending
+    quick_charge: Quick_Charge
+    jockey/spawn_skeleton_horseman: Jockey/spawn_Skeleton_Horseman
+    binding_curse: Binding_Curse
+    infinity: Infinity
+    silk_touch: Silk_Touch
+    luck_of_the_sea: Luck_Of_The_Sea
+    outreach: Outreach
+    photosynthesis: Photosynthesis
+    protection: Protection
+    soul_speed: Soul_Speed
+    jockey/spawn_zombie_horseman: Jockey/spawn_Zombie_Horseman
+    bane_of_arthropods: Bane_Of_Arthropods
+    frost_walker: Frost_Walker
+    wind_burst: Wind_Burst
+    blast_protection: Blast_Protection
+    sweeping_edge: Sweeping_Edge
+    fortune: Fortune
+    knockback: Knockback
+    wither_coated: Wither_Coated
+    ghasted: Ghasted
+    riptide: Riptide
+    swift_soar: Swift_Soar
+    wax_wings: Wax_Wings
+    projectile_protection: Projectile_Protection
+    hydro_veil: Hydro_Veil
+    jockey/spawn_bogged_horseman: Jockey/spawn_Bogged_Horseman
   PotionEffectAliases:
-    darkness:
-    - Darkness
-    nightvision:
-    - Night vision
-    saturation:
-    - Saturation
-    unluck:
-    - Unluck
-    wither:
-    - Wither
-    regeneration:
-    - Regeneration
-    glowing:
-    - Glowing
-    badomen:
-    - Bad omen
-    absorption:
-    - Absorption
-    healthboost:
-    - Health boost
-    waterbreathing:
-    - Water breathing
+    haste:
+    - Haste
     windcharged:
     - Wind charged
-    levitation:
-    - Levitation
+    instanthealth:
+    - Instant health
+    trialomen:
+    - Trial omen
     resistance:
     - Resistance
-    slowfalling:
-    - Slow falling
-    luck:
-    - Luck
-    miningfatigue:
-    - Mining fatigue
-    fireresistance:
-    - Fire resistance
-    oozing:
-    - Oozing
-    blindness:
-    - Blindness
-    speed:
-    - Speed
+    regeneration:
+    - Regeneration
+    unluck:
+    - Unluck
+    absorption:
+    - Absorption
+    nausea:
+    - Nausea
     raidomen:
     - Raid omen
+    invisibility:
+    - Invisibility
+    luck:
+    - Luck
+    slowfalling:
+    - Slow falling
+    badomen:
+    - Bad omen
     heroofthevillage:
     - Hero of the village
     weakness:
     - Weakness
-    slowness:
-    - Slowness
-    conduitpower:
-    - Conduit power
-    invisibility:
-    - Invisibility
-    trialomen:
-    - Trial omen
-    nausea:
-    - Nausea
-    jumpboost:
-    - Jump boost
-    weaving:
-    - Weaving
-    instanthealth:
-    - Instant health
-    instantdamage:
-    - Instant damage
-    hunger:
-    - Hunger
-    dolphinsgrace:
-    - Dolphins grace
-    poison:
-    - Poison
+    fireresistance:
+    - Fire resistance
+    healthboost:
+    - Health boost
     infested:
     - Infested
+    levitation:
+    - Levitation
+    speed:
+    - Speed
+    poison:
+    - Poison
+    blindness:
+    - Blindness
     strength:
     - Strength
-    haste:
-    - Haste
+    jumpboost:
+    - Jump boost
+    glowing:
+    - Glowing
+    wither:
+    - Wither
+    nightvision:
+    - Night vision
+    miningfatigue:
+    - Mining fatigue
+    waterbreathing:
+    - Water breathing
+    darkness:
+    - Darkness
+    oozing:
+    - Oozing
+    slowness:
+    - Slowness
+    weaving:
+    - Weaving
+    conduitpower:
+    - Conduit power
+    hunger:
+    - Hunger
+    instantdamage:
+    - Instant damage
+    saturation:
+    - Saturation
+    dolphinsgrace:
+    - Dolphins grace
 dialog:
   signEditor: Sign Editor
   update: Update

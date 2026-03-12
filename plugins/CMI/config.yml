@@ -16,6 +16,8 @@ Economy:
   Enabled: false
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
+  # Should we allow offline payments. This is primarily for pay command and will not block other payments like receiving money from other plugins
+  OfflinePayments: true
   # Set to true if you want to log money transfers between players
   LogEnabled: false
   log:
@@ -69,6 +71,7 @@ Economy:
     IncludeFakes: false
     # Set to 0 or lower to disable this feature
     # Time in days of player being offline to exclude from being included in balance top list
+    # For full effect this will require server restart
     ExcludeInactive: 0
   Global:
     # Starting amount of money players will have
@@ -103,6 +106,25 @@ Economy:
     SwitchPlaces: false
     # Placing of currency symbol
     Placing: '[money][symbol]'
+    # Taxing for /pay command usage
+    # This is only for this specific command at the moment and will not tax other actions
+    Tax:
+      # Type of taxing. None, Flat, Percentage
+      # Where flat type will deduct specific amount of money for each pay command usage
+      # Percentage type will deduct percentage of money for each pay command usage based on transfer amount
+      Type: None
+      # Either flat amount or percentage on transaction amount
+      # Percentage is defined between 0 and 100
+      Amount: 4.0
+      # Minimal amount to tax player, mostly used when taxing based on percentage
+      Min: 0.0
+      # Maximal amount to tax player, mostly used when taxing based on percentage
+      # Set to 0 if you don't want to have max limit
+      Max: 1000.0
+      # When set to true tax will be added on top of transfered amount, so if player transfers 100 and tax is 10 then receiving player receives 100 and sender player looses 110
+      # If its set to false tax will be subtracted from transfered amount, so if player transfers 100 and tax is 10 then receiving player receives 90 and sender player pays 100
+      # Recommended to keep it at true just to avoid confusion why receiving player got less money
+      DeductOnTop: true
 FileSave:
   # Change this to true only if you have issues with drives I/O and you need to save players files in async mode to lower waiting time for mc server
   Async: false
@@ -139,8 +161,12 @@ Optimizations:
     # This can help out to minimize posibility for players to manipulate armor stands when they don't have build permission in area where armorstand is standing
     CheckBlockPlace: false
     # Minimal armorstand scale which can be set in armor stand editor
+    # This is base min scale, can be overriden with cmi.command.armorstand.scalemin.[value] permission node
+    # Keep in mind that min value will be taken from this setting and permission node if both are set
     MinScale: 0.5
     # Max armorstand scale which can be set in armor stand editor
+    # This is base max scale, can be overriden with cmi.command.armorstand.scalemax.[value] permission node
+    # Keep in mind that max value will be taken from this setting and permission node if both are set
     MaxScale: 3
     Templates:
       # When set to true, the player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
@@ -180,7 +206,7 @@ Optimizations:
   # When set to true players with same name but different capitalization will be denyied from joining server to avoid possible issues. In example if on first day player Zrips joined server and on second day player zRips tries to join server, he will be rejected
   # RECOMMENDED to keep this at true
   PreventDifferentCapitalizationNames: false
-  # When this set to true by using any command, requiring players name, in case plugin cant determine player by given full name, then partial matches from online players will be used. In example: /cmi heal rips can heal player Zrips
+  # When this set to true by using any command, requiring players name, in case plugin cant determine player by given full name, then partial matches from online players will be used. In example: /cmi heal rips can heal player Zrips 
   # Useful when you have players with complicated names
   PartialPlayerName: false
   # If you want to prioritize online players when using partial player name enable this setting
@@ -340,8 +366,6 @@ Optimizations:
   # Do you want to run auto top playtime updater
   # This is responsible for providing players current top playtimes which gets updated on consistent intervals, useful for placeholders
   PlayTimeAutoUpdater: true
-  # When set to true, playtimetop list will be loaded on server startup
-  PreloadTopPlaytime: false
   # Do you want to use CMI playtime tracking
   # While this is enabled, player play time will be record for each hour he playied in server
   # This doesnt have effect on rankup or /playtime commands, it will only show more specific playtime by hours when using /cplaytime command
@@ -427,6 +451,10 @@ Optimizations:
         Time2: 86400
         Time3: 604800
         Time4: 2592000
+    CheckAccount:
+      # List of users/ip's to be excluded from checkaccount command
+      ExcludedUsers:
+      - Zrips
     Inv:
       # List of players which you should not be able to open inventories
       # This can still be bypassed if you are OP
@@ -633,9 +661,13 @@ Holograms:
     # Default value for hologram view range
     # This defines from how far holograms will appear for the player or when they will disapear
     viewRange: 16
-    # Defines default update interval
-    # Bigger this number is better performance we will have
+    # Default value for hologram update range
+    # This defines how close player should get for hologram to start updating its text
+    # Keep it at reasoble numbers as there is no point to update hologram across map
     updateRange: 8
+    # Defines default update interval
+    # Higher values means that holograms will be updated less often
+    # When value is set to 0 or lower, holograms will not be updated
     updateInterval: 0.0
     # Defines default page change interval
     # When value is set to 0 or lower, pages will not be changed
@@ -677,7 +709,7 @@ Votifier:
 Ranks:
   # If set to true we will check players rank by his access to rank by permission node and prioritize any rank which has more weight over current one
   # This means that in case player has access to third rank while recorded one is first one, we will prioritize third one
-  # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this,
+  # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this, 
   # you will have to remove access to specific rank by removing permission node before trying to derank him
   PermissionCheck: false
   # Defines how often in minutes plugin will recalculate players group
@@ -716,6 +748,9 @@ Signs:
   - '[Shop]'
   # When enabled player needs to be sneaking to edit signs
   RequireSneaking: false
+  # When enabled sign editor will be represented with new Dialog editor introduced in 1.21.7+
+  # Only for Paper servers
+  DialogEditor: true
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -821,6 +856,9 @@ NickName:
   MinLength: 4
   # Max length of nick name, can be bypassed with cmi.command.nick.bypass.length
   MaxLength: 16
+  # When enabled players will not be able to choose existing real player names
+  # Can be bypassed with cmi.command.nick.bypassrealname permission node
+  PreventRealNames: true
   # Adds prefix for players nickname to indicate that its not real name. This can be added to display name with {nicknameprefix}
   Prefix: '~'
   # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without adding prefix
@@ -959,6 +997,9 @@ Mirror:
   # Defines how far in blocks from mirror center you can build
   # This is mainly to protect from forgeting to turn off mirror and starting to build on different side of map
   MaxRange: 50
+  # Max amount of blocks to be modified in one go
+  # Keep this realitvely low to avoid unesecerry load on server due to each block requiring separte checks
+  MaxBlocks: 16
   # When disabled block will not be broken in mirror mode
   # This is mainly to prevent this feature being used for mining purposes and not for building
   BreakDisabled: false
@@ -998,7 +1039,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 4
-# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom
+# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom, custom
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1304,7 +1345,7 @@ WorldLimits:
   Enabled: false
   # World list with default game modes
   # If player will have cmi.worldlimit.gamemode.bypass permission node, game mode wont be changed
-  # Possible modes: creative, survival, adventure, spectator,
+  # Possible modes: creative, survival, adventure, spectator, 
   Gamemode:
   - testWorld:Survival
   # If player will have cmi.worldlimit.fly.bypass permission node, fly mode wont be changed
@@ -1326,7 +1367,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_COPPERGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, REANIMATE, REHYDRATION, CUSTOM, DEFAULT
   SpawnReasons:
     world:
     - None
@@ -1464,6 +1505,8 @@ ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
   # Combat timer can be defined under combat section
   PreventInCombat: true
+  # When set to true player will be required to have cmi.openshulker.edit permission to edit shulker box from inventory
+  RequirePermission: false
   # Money cost to open shulker box, if player doesn't have enough money then we will not allow to open shulker box from inventory
   # Setting this to 0 will disable money requirement
   # This can be bypassed with cmi.openshulker.free permission node
@@ -1532,6 +1575,8 @@ Player:
       pvpDamageNumbers: true
       InformDurability: true
       receivePets: true
+      deathMessages: true
+      notarget: false
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1551,9 +1596,12 @@ Player:
       pvpDamageNumbers: DIAMOND_SWORD
       InformDurability: ANVIL
       receivePets: LEAD
+      deathMessages: DEAD_BUSH
+      notarget: BEDROCK
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
-  # tp:5:false means that when player performs /tp command he will need to wait 5 sec
+  # tp:5:false means that when player performs /tp command he will need to wait 5 sec and will not be able to move outside current block
+  # tp:5:false-3 means that when player performs /tp command he will need to wait 5 sec and will be limited to movement of no more than 3 blocks from original position
   # false variable is optional and when its set to false player cant move while warmup is counting
   # If you don't want to deny empty warp command but want to deny any extra variable after that, then just add space, in example 'warp :5:false'
   # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5:false'
@@ -1706,14 +1754,17 @@ Enchanting:
     Enabled: true
     MaxLevel:
       density: 5
+      nova_structures:hydro_veil: 4
       swift_sneak: 3
       nova_structures:traveler: 3
       breach: 4
       protection_fall: 4
       arrow_infinite: 1
       nova_structures:wax_wings: 1
+      nova_structures:jockey/spawn_hoglin_jockey: 5
       nova_structures:gravity: 3
       arrow_fire: 1
+      nova_structures:jockey/spawn_stray_horseman: 5
       impaling: 5
       protection_environmental: 4
       knockback: 2
@@ -1727,30 +1778,41 @@ Enchanting:
       nova_structures:outreach: 4
       nova_structures:ghasted: 3
       nova_structures:piercing: 4
-      nova_structures:shulker_miniboss: 1
-      nova_structures:wither_coated: 1
+      nova_structures:shulker_miniboss: 5
+      nova_structures:wither_coated: 3
       channeling: 1
       binding_curse: 1
       quick_charge: 3
       damage_arthropods: 5
       frost_walker: 2
+      nova_structures:librarian_level_checker: 5
+      nova_structures:swift_soar: 3
       multishot: 1
       protection_projectile: 4
+      nova_structures:aerials_bane: 5
+      nova_structures:tavern_level_checker: 5
       water_worker: 1
       soul_speed: 3
+      nova_structures:jockey/spawn_bogged_horseman: 5
       wind_burst: 3
+      nova_structures:jockey/spawn_camel_husk_jockey: 5
       nova_structures:multishot: 1
       loot_bonus_mobs: 3
       nova_structures:illagers_bane: 5
       damage_undead: 5
       piercing: 4
       lure: 3
-      nova_structures:shulker_boss: 1
+      lunge: 3
+      nova_structures:shulker_boss: 5
       nova_structures:power: 5
+      nova_structures:jockey/make_drowned_into_jockey: 5
       riptide: 3
+      nova_structures:jockey/spawn_zautilus_jockey: 5
       arrow_damage: 5
-      nova_structures:boss_behaviour: 1
+      nova_structures:boss_behaviour: 5
+      nova_structures:boss_nether: 5
       nova_structures:photosynthesis: 1
+      nova_structures:jockey/spawn_chicken_jockey: 1
       protection_explosions: 4
       mending: 1
       fire_aspect: 2
@@ -1760,9 +1822,11 @@ Enchanting:
       sweeping_edge: 3
       nova_structures:conductivity_curse: 1
       arrow_knockback: 2
+      nova_structures:jockey/spawn_skeleton_horseman: 5
       damage_all: 5
       dig_speed: 5
       loot_bonus_blocks: 3
+      nova_structures:jockey/spawn_zombie_horseman: 5
       durability: 3
   # When set to true, players will be required to have cmi.enchantments.[enchantname] permission node
   RequireSpecificPermission: false
@@ -1811,7 +1875,7 @@ BlueMap:
     IconAnchor: 16
     # List of warp names we should not show. Keep in mind that hidden warps are not shown by default already
     BlackList: []
-# If you want to disable particular sound entirely, set it to ""
+# If you want to disable particular sound entirely, set it to "" 
 Sounds:
   Enabled: true
   WarpGuiOpen: entity_bat_takeoff:0.5:1

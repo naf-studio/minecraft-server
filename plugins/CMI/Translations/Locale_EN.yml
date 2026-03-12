@@ -1,53 +1,104 @@
+
 # Full color code support and some variables
+
 # Keep in mind that variables wont work for some lines, when it will for anothers :)
+
 # Just keep them where there are now and everything will be ok :)
+
 # Some lines can have global variables set. For player who will be effected. In example /heal Zrips then Zrips data will be used
+
 # [serverName] to show server name
+
 # [playerName] to show target player name
+
 # [playerDisplayName] to show target player display name
+
 # [lvl] to show target player level
+
 # [exp] to show target player total exp
+
 # [hp] to show target player health
+
 # [maxHp] to show target player max health
+
 # [hunger] to show target player hunger level
+
 # [gameMode] to show target player gamemode
+
 # [prefix] to show target player prefix if possible
+
 # [suffix] to show target player suffix if possible
+
 # Sender is console or player who performs command. In example Zrips performs /heal Zhax then Zrips data will be used
+
 # [senderName] to show Sender player name
+
 # [senderDisplayName] to show Sender player display name
+
 # [senderLvl] to show Sender player level
+
 # [senderExp] to show Sender player total exp
+
 # [senderHp] to show Sender player health
+
 # [senderMaxHp] to show Sender player max health
+
 # [senderHunger] to show Sender player hunger level
+
 # [senderGameMode] to show Sender player gamemode
+
 # [senderPrefix] to show Sender player prefix if possible
+
 # [senderSuffix] to show Sender player suffix if possible
+
 # Source is player which is being used for extra info. In example Zrips performs /tp Zhax Zrips then Zhax data will be used as its location is being taken for new player location
+
 # [sourceName] to show source player name
+
 # [sourceDisplayName] to show source player display name
+
 # [sourceLvl] to show source player level
+
 # [sourceExp] to show source player total exp
+
 # [sourceHp] to show source player health
+
 # [sourceMaxHp] to show source player max health
+
 # [sourceHunger] to show source player hunger level
+
 # [sourceGameMode] to show source player gamemode
+
 # [sourcePrefix] to show source player prefix if possible
+
 # [sourceSuffix] to show source player suffix if possible
+
 # ***********************************************
+
 # Some lines supports option to send them to custom places, like action bar, title, sub title or even create JSON/clickable messages
+
 # If line starts with !toast! then player will get toast message (advancement popup, only 1.12 and up). Some extra variables can be used to define type and icon. example: !toast! -t:goal -icon:paper Hello world!
+
 # If line starts with !actionbar! then player will get action bar message defined after this variable
+
 # If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
+
 # If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
+
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
+
 # If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message. Optional time can be defined with !title:4.5! which will keep title message for 4.5 seconds
+
 # If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
-#
-#
-#
+
+# 
+
+# 
+
+# 
+
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
+
 # After you update locale in CMILib file perform `/cmil reload` command for changes to take effect
 
 info:
@@ -113,7 +164,9 @@ info:
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
+  # Don't forget to enable custom logout messages in config!
   LogoutCustom: ' &6[playerDisplayName] &eleft the game'
+  # Don't forget to enable custom login messages in config!
   LoginCustom: ' &6[playerDisplayName] &ejoined the game'
   deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
   book:
@@ -177,6 +230,7 @@ info:
   outsideWorldBorder: '&cLocation is outside world border'
   noWorldAccess: '&cNo world access'
   IncorrectColor: '&4Color defined incorrectly!'
+  IncorrectFile: '{gcw}File name defined incorrectly!'
   time:
     # Mainly for placeholder playtime output
     # Use + sign at the start of line to force include it even if specific and previous time values are 0
@@ -188,6 +242,12 @@ info:
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+dialog:
+  signEditor: Sign Editor
+  update: Update
+  save: Save
+  close: Close
+  line: Line [line]
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -422,6 +482,7 @@ command:
       nameEdit: '&7Q click to edit name'
       interactable: '&7Interactable'
       scale: '&7Scale: &f[amount]'
+      scaleLimits: '{gcs}[min] {gcp}- {gcs}[max]'
       explanation: '&8Left or right mouse button adjusts value'
       explanation2: '&8Hold shift to make it 10x faster'
       disableGravity: '&eDisable gravity if you want to change this value'
@@ -724,6 +785,7 @@ command:
       args: (playerName)
     info:
       list: '&6[place]&e. &e[playerDisplayName] &6[time]'
+      name: '{gcp}Name: {gcs}[playerName]'
       permanent: '&3Permanent'
       bannedUntil: '&eBanned for: &6[time]'
       reason: '&eReason: &6[reason]'
@@ -962,6 +1024,15 @@ command:
       exact: '&2Require exact ingredients: [state]'
       exists: '&4Looks like recipe like this already exists'
       mainTitle: '&8Custom recipes (&7[current]&8/&7[total]&8)'
+  database:
+    help:
+      info: Manage backup data
+      args: '[action] (playerName) (dataType) (fileName)'
+    info:
+      backupSuccess: '{gcp}Backup created with name {gcs}[name] {gcp}Tables: {gcs}[types]'
+      backupFailed: '{gcp}Backup failed'
+      userDataRestored: '{gcp}Restored {gcs}[playerName] {gcp}data. Tables: {gcs}[types]'
+      userDataFailed: '{gcw}Restoring failed for {gcs}[playerName]'
   dback:
     help:
       info: '&eReturns to death location'
@@ -969,6 +1040,12 @@ command:
     info:
       noinfo: '&4There is no saved location to return to!'
       feedback: '&6Returned to last saved location ([world],[x],[y],[z])!'
+  dialogs:
+    help:
+      info: Shows specified dialog
+      args: '[dialogName] (playerName) ([variableName]:value) (-s)'
+    info:
+      notFound: '{gcw}Dialog by this name was not found'
   disableenchant:
     help:
       info: '&eDisable enchantment'
@@ -1153,8 +1230,8 @@ command:
       explanation:
       - -o will take item from offhand
     info:
-      feedback: '&eYou have enchanted item with &3[enchant]:[level]&e enchantment
-        for &3[playerDisplayName]'
+      enchanted: '{gcp}Enchanted with {gcs}[enchant] {gcp}lvl {gcs}[level]{gcp} for
+        {gcs}[playerDisplayName]'
       removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]'
       clear: '&eCleared enchantments from item for &3[playerDisplayName]'
       clearOne: '&eRemoved &3[enchant] &eenchantment from item for &3[playerDisplayName]'
@@ -1603,6 +1680,10 @@ command:
       fadeIn: '&7Fade in animation: &6[state]'
       textAlpha: '&7Text transparency: &6[alpha]'
       textWidth: '&7Text width: &6[width]'
+      textFiller: '{gcd}Text filler: {gcs}[width]'
+      textFillerExplanation: '{gcd}Add %filler% to auto fill text'
+      # Should be single symbol/letter without color codes
+      filler: ' '
       bgAlpha: '&7Background transparency: &6[alpha]'
       bgColor: '&7Background color: &6[color]'
       scaleWidth: '&7Scale width: &6[scale]'
@@ -1636,6 +1717,88 @@ command:
       addInfo: '&eEnter new line text. Type &6cancel &eto cancel. Extra variables:
         &6ICON:&7[Value] &6SICON:&7[Value]&e where &7Value&e- &7[MaterialName-amount]%enchanted%&e,
         &7%itemInHand%&e, &7Head:[headOwner]'
+  hologram2:
+    help:
+      info: Manage holograms
+      args: ''
+    info:
+      gui: '{gcs}---- {gcp}<Open settings gui> {gcs}----'
+      guiHover: '{gcp}Open hologram settings GUI'
+      pageInterval: '{gcp}Change page every {gcs}[second] {gcp}seconds'
+      pageIntervalLore:
+      - '{gcp}How often, in seconds, hologram page is changed automatically'
+      pageIntervalNoPages: '{gcd}This hologram doesn''t have any pages yet'
+      reqPermission: '{gcp}Requires permission to see: {gcs}[state]'
+      teleport: '{gcp}Teleport to hologram location'
+      material: '{gcp}Current material: {gcs}[material]'
+      range: '{gcp}Show range: {gcs}[blocks]'
+      rangeLore:
+      - '{gcp}Defines area around hologram to show or hide it'
+      updateRange: '{gcp}Update range: {gcs}[blocks]'
+      updateRangeLore:
+      - '{gcp}Defines area around hologram to trigger update'
+      relocate: '{gcp}Relocate'
+      relocateLore:
+      - '{gcp}Relocates hologram to your current location'
+      holoYaw: '{gcp}Yaw: {gcs}[angle]'
+      los: '{gcp}Consider line of sight: {gcs}[state]'
+      interact: '{gcp}Interactable: {gcs}[state]'
+      particles: '{gcp}Show particles: {gcs}[state]'
+      commands: '{gcp}Commands:'
+      hoverParticles: '{gcp}Show hover particles: {gcs}[state]'
+      particleCount: '{gcp}Particles: {gcs}[count]'
+      particleType: '{gcp}Particle type: {gcs}[type]'
+      particleSpacing: '{gcp}Particle spacing: {gcs}[amount]'
+      particleExtraDimension: '{gcp}Particle extra dimension'
+      particleOffset: '{gcp}Particle offset'
+      basePrefix: '{gcp}Base prefix: &r[prefix]'
+      hoverPrefix: '{gcp}Hover prefix: &r[prefix]'
+      InteractionExtraDimension: '{gcp}Interaction extra dimension'
+      locationRange: '{gcp}Modify location and range'
+      interactions: '{gcp}Modify interactions'
+      newDisplayMethod: '{gcp}Use new display method: {gcs}[state]'
+      enabled: '{gcp}Activated: {gcs}[state]'
+      followType: '{gcp}Follow type: {gcs}[type]'
+      doubleSided: '{gcp}Double sided: {gcs}[state]'
+      alignment: '{gcp}Text alignment: {gcs}[type]'
+      shadow: '{gcp}Text shadow: {gcs}[state]'
+      textAlpha: '{gcp}Text transparency: {gcs}[alpha]'
+      textWidth: '{gcp}Text width: {gcs}[width]'
+      order: '{gcp}Downwards placement: {gcs}[state]'
+      fadeIn: '{gcp}Fade In: {gcs}[state]'
+      fadeOut: '{gcp}Fade Out: {gcs}[state]'
+      board: '{gcp}Board enabled: {gcs}[state]'
+      lightLevels: '{gcp}Light levels'
+      levels: |-
+        {gcp}Sky: {gcs}[sky]
+        {gcp}Block: {gcs}[block]
+      bgColor: '{gcp}Background color: {gcs}[color]'
+      bgAlpha: '{gcp}Background transparency: {gcs}[alpha]'
+      textFiller: '{gcp}Text filler: {gcs}[width]'
+      textFillerExplanation: '{gcp}Add %filler% to auto fill text'
+      interval: '{gcp}Update every {gcs}[second] {gcp}seconds'
+      intervalLore:
+      - '{gcp}How often, in seconds, information on the hologram is updated'
+      - '{gcp}If text is not changing, set it to 0'
+      scale: '{gcp}Scale'
+      offset: '{gcp}Center Offset'
+      iconFullScale: '{gcp}Icon scale'
+      iconDirection: '{gcp}Icon direction'
+      iconOffset: '{gcp}Icon offset'
+      reset: '{gcp}Press {gcs}Q {gcp}to reset'
+      directionBasic: '{gcp}Pitch: {gcs}[pitch] {gcp}Yaw: {gcs}[yaw]'
+      directionFull: '{gcp}Pitch: {gcs}[pitch] {gcp}Yaw: {gcs}[yaw] {gcp}Roll: {gcs}[roll]'
+      scaleBasic: '{gcp}Width: {gcs}[width] {gcp}Height: {gcs}[height]'
+      scaleFull: '{gcp}Width: {gcs}[width] {gcp}Height: {gcs}[height] {gcp}Depth:
+        {gcs}[depth]'
+      vectorFull: '{gcp}X: {gcs}[x] {gcp}Y: {gcs}[y] {gcp}Z: {gcs}[z]'
+      vectorBasic: '{gcp}X: {gcs}[x] {gcp}Y: {gcs}[y]'
+      embeddedAutoButton: '{gcp}Enabled pagination buttons: [state]'
+      autoPage: <T><<<<  </T><C>[prevPage]</C><T>  >>>></T><C>[nextPage]</C>
+      moveX: '{gcp}X: {gcs}[x]'
+      moveY: '{gcp}Y: {gcs}[y]'
+      moveZ: '{gcp}Z: {gcs}[z]'
+      listFormat: '{gcp}[name]{gcp}: &r[extra]'
   hologrampages:
     help:
       info: '&eChange hologram page'
@@ -1974,8 +2137,6 @@ command:
       info: '&eManage item frames'
       args: (invisible/fixed/invulnerable/all)
     info:
-      enabled: Enabled
-      disabled: Disabled
       feedback: '&e[count] &6item frames are invisible around you'
   iteminfo:
     help:
@@ -2039,6 +2200,7 @@ command:
       reason: ' &eFor: &c[reason]'
       leftTime: '!title!&7Jail time:!subtitle![time]'
       jailedTarget: '&eYou have been jailed! [time]'
+      jailedTimeChange: '{gcp}Jail time changed to [time]'
       cantTalk: '&cYou cant talk while you are jailed'
       cantTalkRange: '!actionbar!&fYour chat range is limited to &c[range] &fblocks'
       failed: '&cFailed to jail player. Check target jail name, cell id or time format'
@@ -2122,6 +2284,9 @@ command:
       ambient: Ambient
       vehicles: Vehicles
       named: With custom name
+      withitems: With items
+      force: Force
+      custom: By type
   kit:
     help:
       info: '&eGives predefined kit.'
@@ -2440,6 +2605,7 @@ command:
     info:
       changed: '&eChanged max allowed players from &6[old] &eto &6[new]&e. Online:
         &6[current]'
+      label: '{gcp}Max Players. Currently: {gcs}[online]{gcp}/{gcs}[max]'
   me:
     help:
       info: '&eSends special message to all players'
@@ -2468,6 +2634,7 @@ command:
         cartographer: Cartographer
         armorer: Armorer
         butcher: Butcher
+        none: None
         fisherman: Fisherman
   migratedatabase:
     help:
@@ -2482,40 +2649,83 @@ command:
       stopped: '&6Mirroring stopped'
       tooFar: '&cYou are too far from mirror center (max &6[blocks] &cblocks). Feature
         is paused!'
-      title: Mirror
-      notSet: '&cCenter not set'
-      set: '&2Center set'
       noBlocks: '&cNot enough blocks'
       used: '&7Used: &7[blocks]'
+      title: Mirror
+      location: '{gcp}Location'
+      offset: '{gcp}Offset'
+      offsetPos: '{gcp}X:{gcs}[x] {gcp}Y:{gcs}[y] {gcp}Z:{gcs}[z] {gcp}- {gcs}[id]'
+      sections: '{gcp}Sections: {gcs}[sections]'
+      flipType: '{gcp}Flip type: {gcs}[type]'
+      sectionsAdjust: '{gcp}Shift + Mouse click to adjust'
+      blocksToPlace: '{gcp}Blocks to be placed: {gcs}[blocks]{gcp}/{gcs}[total]'
       Action:
-        Name:
-          X: X
-          Y: Y
-          Z: Z
-          XY: XY
-          ZY: ZY
-          XZ: XZ
-          ZX: ZX
-          Rotate90V: Rotate90V
-          Rotate90H: Rotate90H
-          Rotate90HC: Rotate90HC
-          Rotate180H: Rotate180H
-          Pause: Pause
-          Location: Location
-        Desc:
-          X: '&eMirrors by &6X &eaxis'
-          Y: '&eMirrors by &6Y &eaxis'
-          Z: '&eMirrors by &6Z &eaxis'
-          XY: '&eMirrors by &6X &eto &6Y &eaxis'
-          ZY: '&eMirrors by &6Z &eto &6Y &eaxis'
-          XZ: '&eMirrors by &6X &eto &6Z &eaxis'
-          ZX: '&eMirrors by &6Z &eto &6Y &eaxis'
-          Rotate90V: '&eRotates up'
-          Rotate90H: '&eRotates &690 &edegrees clock wise'
-          Rotate90HC: '&eRotates &690 &edegrees counter clock wise'
-          Rotate180H: '&eRotates &6180 &edegrees'
-          Pause: '&ePauses mirroring'
-          Location: '&eSets mirroring center location'
+        XR:
+          Name: XR
+          Desc: '{gcp}Mirrors on {gcs}X {gcp}axis'
+        YR:
+          Name: YR
+          Desc: '{gcp}Mirrors on {gcs}Y {gcp}axis'
+        ZR:
+          Name: ZR
+          Desc: '{gcp}Mirrors on {gcs}Z {gcp}axis'
+        X90:
+          Name: X90
+          Desc: '{gcp}90 on {gcs}X {gcp}axis'
+        Y90:
+          Name: Y90
+          Desc: '{gcp}90 on {gcs}Y {gcp}axis'
+        Z90:
+          Name: Z90
+          Desc: '{gcp}90 on {gcs}Z {gcp}axis'
+        X90R:
+          Name: X90R
+          Desc: '{gcp}-90 on {gcs}X {gcp}axis'
+        Y90R:
+          Name: Y90R
+          Desc: '{gcp}-90 on {gcs}Y {gcp}axis'
+        Z90R:
+          Name: Z90R
+          Desc: '{gcp}-90 on {gcs}Z {gcp}axis'
+        XY180:
+          Name: XY180
+          Desc: '{gcp}180 on {gcs}Z {gcp}axis'
+        YZ180:
+          Name: YZ180
+          Desc: '{gcp}180 on {gcs}X {gcp}axis'
+        ZX180:
+          Name: ZX180
+          Desc: '{gcp}180 on {gcs}Y {gcp}axis'
+        XYZ180:
+          Name: XYZ180
+          Desc: '{gcp}180 on {gcs}All {gcp}axis'
+        XS:
+          Name: XS
+          Desc: '{gcp}Spreads on {gcs}X {gcp}axis'
+        YS:
+          Name: YS
+          Desc: '{gcp}Spreads on {gcs}Y {gcp}axis'
+        ZS:
+          Name: ZS
+          Desc: '{gcp}Spreads on {gcs}Z {gcp}axis'
+        XYM:
+          Name: XYM
+          Desc: '{gcp}Mirrors by {gcs}X {gcp}to {gcs}Y {gcp}plane'
+        YZM:
+          Name: YZM
+          Desc: '{gcp}Mirrors by {gcs}Z {gcp}to {gcs}Y {gcp}plane'
+        ZXM:
+          Name: ZXM
+          Desc: '{gcp}Mirrors by {gcs}X {gcp}to {gcs}Z {gcp}plane'
+        XYMR:
+          Name: XYMR
+          Desc: '{gcp}Mirrors by {gcs}X {gcp}to {gcs}Y {gcp}plane reverse'
+        YZMR:
+          Name: YZMR
+          Desc: '{gcp}Mirrors by {gcs}Y {gcp}to {gcs}Z {gcp}plane reverse'
+        ZXMR:
+          Name: ZXMR
+          Desc: '{gcp}Mirrors by {gcs}X {gcp}to {gcs}Z {gcp}plane reverse'
   mobhead:
     help:
       info: '&eGet mob head'
@@ -2545,6 +2755,7 @@ command:
       notAccepting: '&eThis user is not accepting payments from other players'
       giveAll: '&eGive out &6[totalAmount] &efor &6[playerCount] &eplayers'
       takeAll: '&eTook &6[totalAmount] &efrom &6[playerCount] &eplayers'
+      taxes: '{gcp}Taxes: {gcs}[taxes]'
       overLimit: '&e[playerDisplayName] &ecan''t receive your money due limitations
         in how many he can hold at once'
   more:
@@ -2694,6 +2905,8 @@ command:
         pvpDamageNumbers: '&eShows PvP damage numbers'
         InformDurability: '&eInform on item durability loss'
         receivePets: '&eDo you want to receive pets as gifts'
+        deathMessages: '{gcp}Do you want to show death messages'
+        notarget: '{gcp}Do you want to be ignored by mobs'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -2790,6 +3003,7 @@ command:
       requiresPermission: '&eRequires &7[perm] &epermission to use: [state]'
       kickBack: '&ePrevent enter without permission: [state]'
       informPermission: '&eInform on missing permission: [state]'
+      cancelWarmup: '{gcp}Cancel command warmup on leave: [state]'
       teleportToLocation: '&eTeleport to portal location'
       teleportToTarget: '&eTeleport to portal target location'
       performCommandsWithoutTp: '&ePerform commands without valid teleport location'
@@ -3188,8 +3402,8 @@ command:
       explanation:
       - More information at https://www.zrips.net/cmi/extra/scan/
     info:
-      baseListEntity: '&f[number]. &7[location] &6[type] &7[amount]'
-      baseListBlock: '&f[number]. &7[location] &e[type] &7[amount]'
+      ListEntity: '{gcs}[number]{gcp}. [location] {gcs}[checked][type] {gcs}[amount]'
+      ListBlock: '{gcs}[number]{gcp}. [location] {gcp}[checked][type] {gcs}[amount]'
       pause: '&eScanning paused, to continue use &6/cmi scan continue'
       resume: '&eScanning resumed'
       noInformation: '&eThere is no information'
@@ -3435,8 +3649,7 @@ command:
       explanation:
       - cmi.command.silence.bypass - to bypass silence
     info:
-      enabled: '&eSilence mode &2Enabled'
-      disabled: '&eSilence mode &cDisabled'
+      change: '{gcp}Silence mode {gcs}[state]'
       inMode: '&ePlayer is in silence mode'
   silentchest:
     help:
@@ -3624,7 +3837,7 @@ command:
         TIME_SINCE_DEATH: From last death
         TIME_SINCE_REST: From last rest
         SNEAK_TIME: Sneak time
-        ACOUNT_AGE: Account age
+        ACCOUNT_AGE: Account age
         TRAVEL: Travel
         WALK_ONE_CM: Walk
         CROUCH_ONE_CM: Sneak
@@ -3739,6 +3952,7 @@ command:
         tiles &6[players] players'
       MostTiles: '&7Most tiles (&f[tiles]&7) in &f[coord] &7chunk'
       MostEntities: '&7Most entities (&f[entities]&7) in &f[coord] &7chunk'
+      Pending: '{gcp}Pending Tasks: {gcs}[taskCount]'
   stonecutter:
     help:
       info: '&eOpen stonecutter'
@@ -4052,6 +4266,12 @@ command:
     info:
       feedback: '&6[tree] &espawned.'
       cantSpawn: '&cCant spawn (&e[tree]&c) on this block.'
+  trim:
+    help:
+      info: Modify trim on armor
+      args: (playerName) (-s) (clear)
+    info:
+      title: '{gcp}Modify trim on armor'
   unban:
     help:
       info: '&eUnban player or ip'
@@ -4171,6 +4391,7 @@ command:
       hookPlayers: '&eHooking entities'
       level: '&eVanish level'
       bossbarTitle: '&fVanished'
+      modified: '{gcp}Set {gcs}[type] {gcp}to {gcs}[state]'
   version:
     help:
       info: '&eShow plugin version'
@@ -4188,14 +4409,12 @@ command:
       Network: ' &e[type] '
       CMILib: '&eCMILib: &6[version] '
       cmilVersionNew: '&e-> [newVersion]'
-  viewrange:
+  viewdistance:
     help:
-      info: '&eChange view range'
-      args: '[range] (playerName)'
+      info: Change view distance
+      args: '[range] (playerName/worldName) (view/simulation)'
     info:
-      changed: '&eView range changed to &6[range]'
-      NoProtocolLib: '&cThis function requires ProtocolLib!'
-      NoMore: '&eRange can''t be more than 32 chunks. Changed to 32.'
+      output: '{gcp}View: {gcs}[view] {gcp}Simulation: {gcs}[simulation] {gcn}[type]'
   voteedit:
     help:
       info: '&eManage players votes'
