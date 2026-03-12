@@ -232,8 +232,16 @@ Alias:
   customrecipe:
     Enabled: true
     Tab: true
+  # /cmi database $1-
+  database:
+    Enabled: true
+    Tab: true
   # /cmi dback $1-
   dback:
+    Enabled: true
+    Tab: true
+  # /cmi dialogs $1-
+  dialogs:
     Enabled: true
     Tab: true
   # /cmi disableenchant $1-
@@ -472,6 +480,10 @@ Alias:
     Tab: true
   # /cmi hologram $1-
   hologram:
+    Enabled: true
+    Tab: true
+  # /cmi hologram2 $1-
+  hologram2:
     Enabled: true
     Tab: true
   # /cmi hologrampages $1-
@@ -888,7 +900,7 @@ Alias:
     Enabled: true
     Tab: true
   delhome:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi removeuser $1-
   removeuser:
@@ -1283,6 +1295,10 @@ Alias:
   tree:
     Enabled: true
     Tab: true
+  # /cmi trim $1-
+  trim:
+    Enabled: true
+    Tab: true
   # /cmi unban $1-
   unban:
     Enabled: true
@@ -1334,8 +1350,8 @@ Alias:
   version:
     Enabled: false
     Tab: true
-  # /cmi viewrange $1-
-  viewrange:
+  # /cmi viewdistance $1-
+  viewdistance:
     Enabled: true
     Tab: true
   # /cmi voteedit $1-
