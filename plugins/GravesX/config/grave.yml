@@ -18,11 +18,11 @@ settings:
         # Can graves be blown up.
         explode: false
         # Should we replace the oldest graves with a new one when a player his the max limit? This will remove abandoned graves as well and all contents will be lost.
-        replace-oldest: false
+        replace-oldest: true
         # Should a player be allowed to preview a grave?
         preview: true
         # Should we strike lightning where the player has died?
-        smite-death-location: true
+        smite-death-location: false
         # Should we actually smite a death location? Keep note enabling this will hurt entities or destroy ground items if items are ignored. Retained as some use it.
         actually-smite-death-location: false
         # Should we run a task to check for missing graves? NOTE THAT THIS CAN CAUSE TPS TO DROP
@@ -73,11 +73,11 @@ settings:
       # World #
       #########
       world:
-      - ALL
+      # - ALL
       # What worlds will a grave will spawn in. ALL will allow all worlds
-      #- world
-      #- world_nether
-      #- world_the_end
+      - world
+      - world_nether
+      - world_the_end
 
       ########
       # Drop #
@@ -258,7 +258,7 @@ settings:
       ############
       particle:
         # Enable the particles feature.
-        enabled: true
+        enabled: false
         # List for particles (Must be in caps) https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
         type: ENCHANTMENT_TABLE
         # Amount of particles.
