@@ -39,7 +39,7 @@ messages:
     # Has to be a string separated by an underscore.
     consoleLocale: en
     # Disable the message prefix in SkinsRestorer messages.
-    disablePrefix: false
+    disablePrefix: true
     # Every message sent by the plugin will use the players client locale if a translation is available.
     # If disabled, the config locale will be used instead.
     perIssuerLocale: true
