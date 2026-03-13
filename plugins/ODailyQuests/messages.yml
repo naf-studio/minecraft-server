@@ -1,0 +1,107 @@
+# NEVER DELETE A %variable%
+# Messages support HEX colours codes.
+
+player_help: |
+  &3&m---&3 Player commands &3&m---
+  &3> &b/dq, /dq me &3- &7see your own quests
+  &3> &b/dq reroll <index> &3- &7reroll a quest (requires permission)
+  &3> &b/dq show <category> &3- &7see the quests of a category
+admin_help: |
+  &c&m---&c Admin commands &c&m---
+  &3> &b/dqa complete <player> <index> &3- &7complete a player quest
+  &3> &b/dqa customcomplete <player> <type> <amount> &3- &7complete a player quest from a custom type
+  &3> &b/dqa reset <quests/total> <player> &3- &7draw new quests for a player, or reset his total number of achieved quests
+  &3> &b/dqa add total <player> <amount> &3- &7add a number of achieved quests to a player
+  &3> &b/dqa add total <category> <player> <amount> &3- &7add a number of achieved quests in a specific category to a player
+  &3> &b/dqa remove total <player> <amount> &3- &7remove a number of achieved quests to a player
+  &3> &b/dqa remove total <category> <player> <amount> &3- &7remove a number of achieved quests in a specific category to a player
+  &3> &b/dqa reroll <player> <index> &3- &7draw a new quest for a player, at a specific index
+  &3> &b/dqa set <player> <slot> <category> <file index> &3- &7assign a specific quest to a player
+  &3> &b/dqa show <player> &3- &7see quests of a player
+  &3> &b/dqa open <player> &3- &7force a player to open the quest interface
+  &3> &b/dqa convert <old format> <new format> &3- &7convert the storage format of the plugin
+no_permission: '&cYou don''t have permission.'
+no_permission_category: '&cYou don''t have permission to see this category.'
+player_only: '&cOnly player can execute this command.'
+invalid_category: '&cInvalid quest category.'
+invalid_player: '&cThis player doesn''t exist, or is offline.'
+invalid_quest_id: '&cYou must specify a valid quest ID.'
+quest_already_assigned: '&cThis quest is already assigned to the player.'
+invalid_quest_index: '&cThe specified index is invalid.'
+invalid_amount: '&cThe specified amount is invalid.'
+player_quests_not_loaded: '&cThe player''s quests are not loaded yet. Please try again
+  in a moment.'
+already_achieved: '&cThis quest is already achieved.'
+quests_in_progress: '&eYou still have daily quests to complete !'
+all_quests_achieved_connect: '&aYou have completed all your daily quests !'
+quests_renewed: '&aYou have new daily quests to complete !'
+quests_renewed_admin: '&eYou have reset the quests of %target%.'
+quest_rerolled: '&aYou have rerolled your quest number %index% -- %remaining% rerolls
+  left!'
+quest_rerolled_admin: '&eYou have rerolled the quest number %index% of %target%.'
+no_available_quests_in_category: '&cThere are no available quests in this category
+  to assign.'
+quest_set_admin: '&eYou have set quest %quest_id% (%quest%&r&e) in slot %slot% for
+  %target% in %category%.'
+quest_set_target: '&eAn admin set your quest number %slot% to %quest%&r&e (%quest_id%)
+  in %category%.'
+add_total_admin: '&eYou have added %amount% to %target%''s total number of completed
+  quests.'
+add_total_target: '&eAn admin has added %amount% to your total number of completed
+  quests.'
+add_total_category_admin: '&eYou have added %amount% to %target%''s total number of
+  completed quests in the category %category%.'
+add_total_category_target: '&eAn admin has added %amount% to your total number of
+  completed quests in the category %category%.'
+remove_total_admin: '&eYou have removed %amount% to %target%''s total number of completed
+  quests.'
+remove_total_target: '&eAn admin has removed %amount% to your total number of completed
+  quests.'
+remove_total_category_admin: '&eYou have removed %amount% to %target%''s total number
+  of completed quests in the category %category%.'
+remove_total_category_target: '&eAn admin has removed %amount% to your total number
+  of completed quests in the category %category%.'
+total_amount_reset: '&eYour total number of completed quests has been reset by an
+  admin.'
+total_amount_reset_admin: '&e%target%''s total number of completed quests has been
+  reset by an admin.'
+total_category_reset_admin: '&e%target%''s total number of completed quests in the
+  category %category% has been reset by an admin.'
+total_category_reset_target: '&eYour total number of completed quests in the category
+  %category% has been reset by an admin.'
+quest_achieved: '&aYou finished the quest &e%questName%&a, well done !'
+all_quests_achieved: '&aYou have finished all your daily quests, well done !'
+category_quests_achieved: '&aYou have completed all your %category% quests!'
+not_enough_items: '&cYou don''t have the required amount to complete this quest.'
+not_required_world: '&cYou can''t complete this quest in this world.'
+not_required_region: '&cYou can''t complete this quest in this region.'
+reward_command: '&aYou receive some rewards commands.'
+reward_command_error: '&cAn error occurred while executing the reward command: &e%command%&c.
+  Please inform an administrator.'
+reward_exp_levels: '&aYou receive &e%rewardAmount% &bEXP &alevels.'
+reward_exp_points: '&aYou receive &e%rewardAmount% &bEXP &apoints.'
+reward_money: '&aYou receive &e%rewardAmount% &b$&a.'
+reward_points: '&aYou receive &e%rewardAmount% &bpoints&a.'
+reward_coins_engine: '&aYou receive &e%rewardAmount% &b%currencyName%&a.'
+new_day: '&6It''s a new day!'
+too_far: '&cYou are too far from the required location.'
+bad_world: '&cYou are in the wrong world.'
+placeholder_api_not_enabled: '&cThe PlaceholderAPI plugin is not enabled. Please inform
+  an administrator.'
+placeholder_not_number: '&cThe placeholder %placeholder% is not a number. Please inform
+  an administrator.'
+cannot_complete_quest_with_off_hand: '&cAll required items must be in your inventory,
+  not in your off hand.'
+cannot_reroll_if_achieved: '&cYou can''t reroll a quest that you have already achieved!'
+cannot_reroll_if_max: '&cYou can''t reroll any more quests!'
+plugin_reloaded: '&aThe plugin has been reloaded successfully!'
+error_inventory: '&cAn error occurred while opening the inventory.'
+conversion_failed: '&cConversion failed! Please check the console for more information.'
+conversion_success: '&aConversion successful! Please select the new storage mode in
+  the config file and restart the server to apply changes.'
+check_console: '&cPlease check the console for more information.'
+impossible_to_open_inventory: '&cImpossible to open the quests interface. Is the plugin
+  still loading?'
+contact_admin: '&cIf the problem persists, please contact the server administrator.'
+configuration_error: '&cA configuration error prevents the interface from being displayed.
+  Please inform an administrator.'
