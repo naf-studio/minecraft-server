@@ -253,7 +253,7 @@ Alias:
     Enabled: true
     Tab: true
   trash:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi distance $1-
   distance:
@@ -409,7 +409,7 @@ Alias:
     Tab: true
   # /cmi give $1-
   give:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi giveall $1-
   giveall:
@@ -654,7 +654,7 @@ Alias:
     Enabled: true
     Tab: true
   kits:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi kit -preview $1-
   kitpreview:
@@ -753,7 +753,7 @@ Alias:
     Enabled: true
     Tab: true
   w:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi mute $1-
   mute:
@@ -911,7 +911,7 @@ Alias:
     Enabled: true
     Tab: true
   delwarp:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi repair $1-
   repair:
@@ -930,7 +930,7 @@ Alias:
     Enabled: true
     Tab: true
   r:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi resetback $1-
   resetback:
@@ -1233,7 +1233,7 @@ Alias:
     Tab: true
   # /cmi tp $1-
   tp:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi tpa $1-
   tpa:
@@ -1386,7 +1386,7 @@ Alias:
     Enabled: true
     Tab: true
   warps:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi warpgroups $1-
   warpgroups:
