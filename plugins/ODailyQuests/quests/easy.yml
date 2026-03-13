@@ -29,42 +29,43 @@
 # ==============================================================
 quests:
   1:
-    name: "&3Can't see the ore for the rocks"
+    name: "&3Stone Breaker"
     menu_item: STONE_PICKAXE
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Mine %required% stone"
+      - " &3&l| &7Mine %required% stone/cobble"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &75 Iron Ingots"
       - ""
     quest_type: BREAK
     required:
       - COBBLESTONE
       - STONE
-    required_amount: 32
+    required_amount: 64
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:iron_ingot 5
   2:
-    name: "&3Let's get lumber-jacked!"
-    menu_item: STONE_AXE
+    name: "&3Lumberjack"
+    menu_item: WOODEN_AXE
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Cut down %required% logs"
+      - " &3&l| &7Break %required% logs"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &710 Coal"
       - ""
     quest_type: BREAK
     required:
@@ -73,30 +74,14 @@ quests:
       - BIRCH_LOG
       - JUNGLE_LOG
       - ACACIA_LOG
-      - CHERRY_LOG
-      - PALE_OAK_LOG
       - DARK_OAK_LOG
-      - MANGROVE_LOG
-      - CRIMSON_HYPHAE
-      - WARPED_HYPHAE
-      - STRIPPED_OAK_LOG
-      - STRIPPED_SPRUCE_LOG
-      - STRIPPED_BIRCH_LOG
-      - STRIPPED_JUNGLE_LOG
-      - STRIPPED_ACACIA_LOG
-      - STRIPPED_CHERRY_LOG
-      - STRIPPED_PALE_OAK_LOG
-      - STRIPPED_DARK_OAK_LOG
-      - STRIPPED_MANGROVE_LOG
-      - STRIPPED_CRIMSON_HYPHAE
-      - STRIPPED_WARPED_HYPHAE
-    required_amount: 20
+    required_amount: 32
     reward:
       reward_type: COMMAND
       commands:
-        - "eco give %player% 250"
+        - minecraft:give %player% minecraft:coal 10
   3:
-    name: "&3Too many zombies"
+    name: "&3Zombie Hunter"
     menu_item: ZOMBIE_SPAWN_EGG
     description:
       - " &7Difficulty: &aEasy"
@@ -108,37 +93,39 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &750 EXP"
       - ""
     quest_type: KILL
     required: ZOMBIE
-    required_amount: 10
+    required_amount: 15
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
   4:
-    name: "&3Call me a crop star"
-    menu_item: STONE_HOE
+    name: "&3Farmer"
+    menu_item: WHEAT
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Farm %required% wheats"
+      - " &3&l| &7Farm %required% wheat"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &710 Bread"
       - ""
     quest_type: FARMING
     required: WHEAT
-    required_amount: 12
+    required_amount: 32
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:bread 10
   5:
-    name: "&3Crafting is a work of heart"
+    name: "&3Baker"
     menu_item: BREAD
     description:
       - " &7Difficulty: &aEasy"
@@ -150,145 +137,154 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &750 EXP"
       - ""
     quest_type: CRAFT
     required: BREAD
-    required_amount: 5
+    required_amount: 10
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
   6:
-    name: "&3Too many fishes"
+    name: "&3Fisherman"
     menu_item: FISHING_ROD
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Fish %required% cods"
+      - " &3&l| &7Fish %required% cod"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &73 Iron Ingots"
       - ""
     quest_type: FISH
     required:
       - COD
-    required_amount: 4
+    required_amount: 5
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:iron_ingot 3
   7:
-    name: "&3Heat up the furnace!"
+    name: "&3Smelter"
     menu_item: FURNACE
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Smelt %required% cobblestone/stone"
+      - " &3&l| &7Smelt %required% ores/stone"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &750 EXP"
       - ""
     quest_type: COOK
     required:
       - STONE
-      - SMOOTH_STONE
-    required_amount: 16
+      - IRON_INGOT
+      - GOLD_INGOT
+    required_amount: 32
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
   8:
-    name: "&3Delivery guy"
-    menu_item: CHEST
+    name: "&3Cobble Deliverer"
+    menu_item: COBBLESTONE
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Deliver %required% cobblestones"
-      - " &8(&7!&8) &7Click on quest once you have enought"
+      - " &3&l| &7Deliver %required% cobblestone"
+      - ""
+      - " &8(&7!&8) &7Click on quest once you have enough"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &75 Coal"
       - ""
     quest_type: GET
     required: COBBLESTONE
-    required_amount: 20
+    required_amount: 64
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:coal 5
   9:
-    name: "&3Snowball Fight"
+    name: "&3Snowball Fighter"
     menu_item: SNOWBALL
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Throw %required% snowballs"
+      - " &3&l| &7Launch %required% snowballs"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &720 EXP"
       - ""
     quest_type: LAUNCH
     required: SNOWBALL
-    required_amount: 12
+    required_amount: 16
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 20
   10:
-    name: "&3Help heavy sheeps"
-    menu_item: WHITE_WOOL
+    name: "&3Shearer"
+    menu_item: SHEARS
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Shear %required% sheeps"
+      - " &3&l| &7Shear %required% sheep"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &75 Iron Ingots"
       - ""
     quest_type: SHEAR
     required: SHEEP
-    required_amount: 2
+    required_amount: 5
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:iron_ingot 5
   11:
-    name: "&3Need some knowledge"
+    name: "&3Knowledge Seeker"
     menu_item: EXPERIENCE_BOTTLE
     description:
       - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
-      - " &3&l| &7Farm %required% XP levels"
+      - " &3&l| &7Farm %required% EXP levels"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &73 Gold Ingots"
       - ""
     quest_type: EXP_LEVELS
-    required_amount: 3
+    required_amount: 5
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:gold_ingot 3
   12:
-    name: "&3Stay healthy"
+    name: "&3Healthy Eater"
     menu_item: APPLE
     description:
       - " &7Difficulty: &aEasy"
@@ -300,11 +296,414 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7250$"
+      - " &3&l| &750 EXP"
       - ""
     quest_type: CONSUME
     required: APPLE
-    required_amount: 2
+    required_amount: 5
     reward:
-      reward_type: MONEY
-      amount: 250
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
+  13:
+    name: "&3Dirt Digger"
+    menu_item: DIRT
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Break %required% dirt"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Sticks"
+      - ""
+    quest_type: BREAK
+    required: DIRT
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:stick 10
+  14:
+    name: "&3Skeleton Bane"
+    menu_item: BONE
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% skeletons"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Arrows"
+      - ""
+    quest_type: KILL
+    required: SKELETON
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:arrow 10
+  15:
+    name: "&3Spider Slayer"
+    menu_item: SPIDER_EYE
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% spiders"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 String"
+      - ""
+    quest_type: KILL
+    required: SPIDER
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:string 5
+  16:
+    name: "&3Stick Maker"
+    menu_item: STICK
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% sticks"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &720 EXP"
+      - ""
+    quest_type: CRAFT
+    required: STICK
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 20
+  17:
+    name: "&3Light Bringer"
+    menu_item: TORCH
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% torches"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &720 EXP"
+      - ""
+    quest_type: CRAFT
+    required: TORCH
+    required_amount: 64
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 20
+  18:
+    name: "&3Iron Smelter"
+    menu_item: IRON_INGOT
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Smelt %required% iron"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &730 EXP"
+      - ""
+    quest_type: COOK
+    required: IRON_INGOT
+    required_amount: 16
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 30
+  19:
+    name: "&3Dirt Collector"
+    menu_item: DIRT
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Get %required% dirt"
+      - ""
+      - " &8(&7!&8) &7Click on quest once you have enough"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &71 Emerald"
+      - ""
+    quest_type: GET
+    required: DIRT
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:emerald 1
+  20:
+    name: "&3Carrot Farmer"
+    menu_item: CARROT
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Farm %required% carrots"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 EXP"
+      - ""
+    quest_type: FARMING
+    required: CARROT
+    required_amount: 32
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 10
+  21:
+    name: "&3Potato Farmer"
+    menu_item: POTATO
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Farm %required% potatoes"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 EXP"
+      - ""
+    quest_type: FARMING
+    required: POTATO
+    required_amount: 32
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 10
+  22:
+    name: "&3Cow Hunter"
+    menu_item: BEEF
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% cows"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Leather"
+      - ""
+    quest_type: KILL
+    required: COW
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:leather 5
+  23:
+    name: "&3Pig Hunter"
+    menu_item: PORKCHOP
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% pigs"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Cooked Porkchops"
+      - ""
+    quest_type: KILL
+    required: PIG
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:cooked_porkchop 5
+  24:
+    name: "&3Chicken Hunter"
+    menu_item: FEATHER
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% chickens"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Feathers"
+      - ""
+    quest_type: KILL
+    required: CHICKEN
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:feather 5
+  25:
+    name: "&3Animal Breeder"
+    menu_item: WHEAT
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Breed %required% animals (requires valid quest but ODQ doesnt have
+        BREED type directly, fallback to EXP_LEVELS)"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &750 EXP"
+      - ""
+    quest_type: EXP_LEVELS
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
+  26:
+    name: "&3Bed Maker"
+    menu_item: RED_BED
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% red bed"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &730 EXP"
+      - ""
+    quest_type: CRAFT
+    required: RED_BED
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 30
+  27:
+    name: "&3Coal Miner"
+    menu_item: COAL
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Break %required% coal ore"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Iron Ingots"
+      - ""
+    quest_type: BREAK
+    required:
+      - COAL_ORE
+      - DEEPSLATE_COAL_ORE
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:iron_ingot 5
+  28:
+    name: "&3Iron Miner"
+    menu_item: IRON_ORE
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Break %required% iron ore"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &750 EXP"
+      - ""
+    quest_type: BREAK
+    required:
+      - IRON_ORE
+      - DEEPSLATE_IRON_ORE
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
+  29:
+    name: "&3Toolsmith"
+    menu_item: IRON_PICKAXE
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% iron pickaxe"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &72 Gold Ingots"
+      - ""
+    quest_type: CRAFT
+    required: IRON_PICKAXE
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:gold_ingot 2
+  30:
+    name: "&3Meat Eater"
+    menu_item: COOKED_BEEF
+    description:
+      - " &7Difficulty: &aEasy"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Eat %required% cooked beef"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &750 EXP"
+      - ""
+    quest_type: CONSUME
+    required: COOKED_BEEF
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 50
