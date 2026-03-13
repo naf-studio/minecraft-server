@@ -1,0 +1,381 @@
+# if the plugin doesn't work as expected, set debug to true and send the log file to the developer.
+debug: false
+
+# check if the plugin is up to date and send a message to the console if it is not
+check_for_update: true
+
+# never touch these lines, used for the plugin auto update system
+version: 3.0.2
+database_version: 4
+
+# prefix that will be displayed before every message from messages.yml
+prefix: '&3[&bO''DailyQuests&3] '
+
+# disable the logs when player quests are loaded or saved
+disable_logs: false
+
+# storage mode for quests & progression
+# AVAILABLE MODES: YAML, MySQL, SQLite
+# RECOMMENDED: SQLite
+storage_mode: SQLite
+
+# MySQL Database Connection
+database:
+  name: MyDatabase # Database name
+  host: 127.0.0.1 # Database host
+  user: admin # Database user
+  password: '1234' # Database password
+  port: 3306 # Database port
+
+# Delay in seconds before player quest data is loaded after login.
+# Useful when using the same database across multiple servers to avoid sync issues.
+# Do not change this value unless you are sure of what you are doing.
+player_data_load_delay: 0.5
+
+# When enabled (default), the plugin will stop loading if a category does not have enough quests without permissions
+# to give every player the required amount of daily quests.
+#
+# Disable this if you want categories where all quests require permissions.
+# /!\ Players without permissions may then end up with no quests at all!
+safety_mode: true
+
+# Define the number of daily quests assigned to the player for each category.
+# Categories that are not listed here will not be loaded.
+#
+# The order in which categories are listed matters! Quests will be assigned in this order.
+#
+# The category name must exactly match the filename containing the quests (e.g., "easy" refers to "easy.yml").
+# You can create and configure as many categories as you want.
+#
+# PlaceholderAPI support: you can set a placeholder instead of a fixed value (e.g. "%var_player_quest_slots%").
+# The placeholder must resolve to a whole number. When using placeholders, ensure that the quests files contain
+# enough entries for the maximum possible value and that PlaceholderAPI is installed.
+#
+# More information here: https://ordwenplugins.gitbook.io/odailyquests/quests/create-a-category
+quests_per_category:
+  # examples: 9
+  easy: 3 # The player will receive 3 quests from the "easy.yml" file
+  medium: 3
+  hard: 3
+
+# Select the mode of timestamp.
+# ============================================================================
+# 1 : quests will be reloaded at the defined renew time for all players.
+# ============================================================================
+# 2 : player quests will be reloaded if active quests are older
+# than the duration selected temporality mode.
+# This means that each player will have new quests at a different login time.
+# ============================================================================
+# The timestamp depends on the machine on which your server is installed.
+# Set the right time zone!
+# ============================================================================
+# You need to reset progressions if you change this mode.
+timestamp_mode: 1
+
+# Select the time at which the quests will be reloaded.
+# Accepted formats are:
+# - "3AM"         → 03:00 (12-hour format with AM/PM)
+# - "3:15AM"      → 03:15 (12-hour format with minutes)
+# - "15"          → 15:00 (24-hour format without minutes)
+# - "15:30"       → 15:30 (24-hour format with minutes)
+# Default is "00:00" (midnight).
+# Remember to surround the value with double quotes, otherwise it will not work!
+renew_time: 00:00
+
+# Set the time zone for the renew_time. (e.g., "UTC", "Europe/Paris", "America/New_York")
+# You can find the list of time zones here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# If you want to use the server time zone, set it to "SystemDefault".
+renew_time_zone: SystemDefault
+
+# Select the interval at which the quests will be reloaded.
+# Accepted formats are:
+# - "1d"    → 1 day
+# - "2h"    → 2 hours
+# - "30m"   → 30 minutes
+# - "1h30m" → 1 hour and 30 minutes
+# Default is "1d" (1 day).
+# Remember to surround the value with double quotes, otherwise it will not work!
+renew_interval: 1d
+
+# Delay in seconds before the status message is displayed when a player joins the server.
+# Corresponds to quests_in_progress and all_quests_achieved_connect messages.
+join_message_delay: 1.0
+
+# Send the quests_in_progress/all_quests_achieved_connect message to online players
+# when quests are reloaded (e.g. after an integrations reload trigger).
+send_reload_message: true
+
+# Initials that will be displayed
+# between the values on the placeholders.
+# ex: 6d9h24m
+temporality_initials:
+  days: d
+  hours: h
+  minutes: m
+  few_seconds: Few seconds
+
+# Global Reward
+# Will be given when the player has completed all his daily quests.
+# The syntax is the same as for quest rewards.
+global_reward:
+  enabled: true
+  reward_type: COMMAND
+  commands:
+  - eco give %player% 2000
+  - give %player% iron_ingot 16
+
+# Categories Rewards
+# Will be given when the player has completed all his daily quests of a precise category.
+# The syntax is the same as for quest rewards, and the global reward.
+# Will be by default disabled if the quests mode is set to 1.
+# The name of the category must match the name of the category in the quests_per_category section.
+categories_rewards:
+  easy:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 750
+    - give %player% diamond 1
+  medium:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 1000
+    - give %player% diamond 2
+  hard:
+    enabled: true
+    reward_type: COMMAND
+    commands:
+    - eco give %player% 1500
+    - give %player% diamond 3
+
+# Set a title that will be displayed when a player completes a quest.
+# Reminder: 20 ticks is equal to one second.
+# Available placeholders : %player% , %questName%
+title:
+  enabled: true
+  fadeIn: 10 # The default number of ticks for the title to fade in.
+  stay: 70 # The default number of ticks for the title to stay.
+  fadeOut: 20 # The default number of ticks for the title to fade out.
+  text: '&aWell done, %player%'
+  subtitle: '&aYou have completed the quest %questName%&a!' # Leave this field blank if you do not want a subtitle
+
+# Display a toast notification when a player completes a quest.
+# Available placeholders : %player% , %questName%
+toast:
+  enabled: false
+  frame: TASK # Frame type: TASK / GOAL / CHALLENGE
+  icon: DIAMOND # Icon displayed in the toast
+  # custom_model_data: 123 # Optional: custom model data for resource-pack icons
+  text: |-
+    &b&lQuest completed!
+    %questName%
+# Supports \n for new line
+
+# Set a message that will be displayed in the actionbar when a player completes a quest.
+# Available placeholders : %player% , %questName%
+actionbar:
+  enabled: true
+  text: '&eYou have completed the quest %questName%&e!'
+
+# Set a message that will be displayed to the player when he progresses in a quest.
+# Available placeholders : %player% , %questName% , %progressBar% , %progress% , %required%
+# Available types : ACTIONBAR, BOSSBAR, CHAT
+# /!\ The CHAT type is not recommended, it can cause chat spam.
+progression_message:
+  enabled: true
+  text: '%progressBar% &7(&b%progress%&a/&b%required% &7- &e%questName%&7)'
+  type: BOSSBAR
+  bossbar: # only apply if type is set to BOSSBAR
+    color: PURPLE # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarColor.html
+    style: SEGMENTED_6 # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarStyle.html
+
+# Here you can customize the progress bar that can be used with the %progressBar% placeholder.
+# symbol: the symbol that will be used to fill the progress bar.
+# amount_of_symbols: the number of symbols that will be used.
+# completed_color: the color of the symbols for the progress made.
+# remaining_color: the color of the symbols for the progress to be achieved.
+progress_bar:
+  symbol: '|'
+  amount_of_symbols: 20
+  completed_color: '&a'
+  remaining_color: '&7'
+
+# ===========================================================
+# ANTI-GLITCH PART
+# Here you can prevent some abuse from players, by storing the items they have used.
+# ===========================================================
+
+# All blocks that have been placed by a player will not count towards the progress of a BREAK quest.
+store_placed_blocks: false
+
+# All items dropped by a player will not count towards the progress of a PICKUP quest.
+store_dropped_items: false
+
+# All blocks that have been broken by a player will not count towards the progress of a PLACE quest.
+#
+# Warning: this option adds an NBT tag to the item(s) dropped by the block.
+# This means that its signature changes, and it will no longer be possible to stack them with unaffected items of the same type.
+# However, these items are still normally usable.
+store_broken_blocks: false
+
+# ===========================================================
+# CUSTOM ITEMS SUPPORT
+# ===========================================================
+
+# Enable this if you are using IA items for quest menu or required items.
+# NEVER enable this if you are NOT using ItemsAdder. The quests will not load.
+use_itemsadder: false
+
+# Enable this if you are using Oraxen items for quest menu or required items.
+# NEVER enable this if you are NOT using Oraxen. The quests will not load.
+use_oraxen: false
+
+# Enable this if you are using Nexo items for quest menu or required items.
+# NEVER enable this if you are NOT using Nexo. The quests will not load.
+use_nexo: false
+
+# Enable this if some plugins are modifying the furnace results.
+# You should enable it if the furnace results can have a custom model data (e.g. with Oraxen).
+# Enabled by default if you are using ItemsAdder.
+use_custom_furnace_results: false
+
+# ===========================================================
+# CUSTOM QUESTS TYPES
+# Here you can add custom quests types that can be complete only with command:
+# /dqa customcomplete <player> <type> <amount>
+# This kind of quest can be used with other plugins rewards or actions.
+# More information on the Wiki.
+# ===========================================================
+custom_types:
+- COMPLETE_DUNGEON
+- KILL_BOSS
+- BUY_VIP
+
+# ===========================================================
+
+# Here you can define the name of the interfaces for each quests category.
+# You can also define which item will be displayed to fill the empty slots.
+# The name of the category must match the name of the category in the quests_per_category section.
+interfaces:
+  next_item_name: '&a&lNext Page'
+  previous_item_name: '&e&lPrevious Page'
+  examples:
+    inventory_name: Quests - Examples
+    empty_item: BLACK_STAINED_GLASS_PANE
+  easy:
+    inventory_name: Quests - Easy
+    empty_item: LIME_STAINED_GLASS_PANE
+  medium:
+    inventory_name: Quests - Medium
+    empty_item: ORANGE_STAINED_GLASS_PANE
+  hard:
+    inventory_name: Quests - Hard
+    empty_item: RED_STAINED_GLASS_PANE
+
+# You can disable quest progression in certain worlds.
+# You must put here the name of the world (in theory the name of its directory).
+# If you don't want to disable worlds, just put hooks. (disabled_worlds: []).
+# In addition, you can disable some worlds for each quest. Please refer to the Wiki.
+#
+# You can also use prefixes/suffixes to disable multiple worlds at once with the "?" character.
+# For example, "?_survival" will disable all worlds ending with "_survival".
+disabled_worlds: []
+# - "world_nether"
+# - "world_the_end"
+
+# Citizens Implementation
+# Here you can select NPCs names for each category.
+# The player have to interact with the NPC to open an interface.
+# 'player' is the name of the NPC that will open the player quests interface.
+# For categories, the name must match the name of the category in the quests_per_category section.
+npcs:
+  player: '&7Player Quests'
+  examples: '&eExample Quests'
+  easy: '&a&lEasy Quests'
+  medium: '&6&lMedium Quests'
+  hard: '&c&lHard Quests'
+
+# Here you can customize the output of some placeholders.
+placeholders:
+  status_achieved: '&a✓' # the output of the %odailyquests_status_<index>% placeholder when the quest is achieved
+  status_not_achieved: '&c✗' # the output of the %odailyquests_status_<index>% placeholder when the quest is not achieved
+
+# If a player has two quests of the same type and with the same item/entity,
+# choose if they should progress simultaneously
+# or if the first should be completed before the second progresses.
+synchronised_progression: false
+
+# Disables the progression of quests where you have to kill an entity if it comes from a Spawner.
+disable_spawners_progression: false
+
+# Determines if the player loses required items when completing a GET quest.
+take_items_for_get_quests: false
+
+# When enabled, quests that reach their required progression must be completed via the menu to grant rewards.
+complete_only_on_click: false
+
+# Determines if the quest can be rerolled even if it has already been completed, when using the reroll command.
+reroll_only_if_not_achieved: false
+
+# Determines max amount of times a player can reroll their quest in a day
+reroll_maximum: -1
+
+# If you are using MythicMobs, you can set this parameter to "true" to share the mobs between players.
+#
+# It means that if someone kill a mob, the quest progression will be updated for all players
+# that were involved in the fight and that have the quest.
+shared_mobs: false
+
+# If you use WildStacker on your server to group mobs, set this parameter to "true".
+# Otherwise, quests of type KILL may not progress.
+use_wildstacker: false
+
+# If you use RoseStacker on your server to group mobs, set this parameter to "true".
+# Otherwise, quests of type KILL/SHEAR may not progress correctly.
+use_rosestacker: false
+
+# You can define aliases for the player command (/dailyquests) here.
+#
+# Important:
+# - These aliases apply only to the player command (/dailyquests), not to the admin command.
+# - Before adding an alias, make sure it's not already used by another plugin.
+# - Also check that the alias is not already listed here:
+#   https://ordwenplugins.gitbook.io/odailyquests/commands/player-commands#aliases
+#
+# Format: a list of strings. Example:
+# command_aliases:
+#   - daily
+#   - challenges
+#
+# For pratical reasons, editing this option need a server restart to take effect.
+command_aliases: []
+
+# You can define aliases for player subcommands (/dailyquests ...) here.
+#
+# Important:
+# - These aliases apply only to the player command (/dailyquests), not to admin commands.
+# - Subcommand aliases allow players to use alternative names like:
+#     /dailyquests list   -> /dailyquests show
+#     /dailyquests refresh     -> /dailyquests reroll
+# - Before adding an alias, make sure it’s not already used by another subcommand or plugin.
+#
+# Format: map where keys are the original subcommands, and values are lists of aliases.
+# Example:
+# subcommand_aliases:
+#   show:
+#     - list
+#     - view
+#   reroll:
+#     - re
+#     - refresh
+#
+# For practical reasons, editing this option need a server restart to take effect.
+subcommand_aliases:
+  me: []
+  show: []
+  reroll: []
+
+# If you want to keep only the aliases in the tab completion of the subcommands.
+# The original command will not be displayed in the tab completion, BUT the player will still be able to use it.
+keep_only_aliases_in_completion: false
