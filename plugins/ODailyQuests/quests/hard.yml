@@ -29,8 +29,8 @@
 # ==============================================================
 quests:
   1:
-    name: "&3Can't see the ore for the rocks"
-    menu_item: DIAMOND_PICKAXE
+    name: "&3Ancient Miner"
+    menu_item: ANCIENT_DEBRIS
     description:
       - " &7Difficulty: &cHard"
       - ""
@@ -41,29 +41,29 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &71 Netherite Scrap"
       - ""
     quest_type: BREAK
-    required:
-      - ANCIENT_DEBRIS
-    required_amount: 2
+    required: ANCIENT_DEBRIS
+    required_amount: 5
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:netherite_scrap 1
   2:
-    name: "&3Let's get lumber-jacked!"
+    name: "&3Deforestation"
     menu_item: DIAMOND_AXE
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Cut down %required% logs"
+      - " &3&l| &7Break %required% logs"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &710 Diamonds"
       - ""
     quest_type: BREAK
     required:
@@ -72,31 +72,15 @@ quests:
       - BIRCH_LOG
       - JUNGLE_LOG
       - ACACIA_LOG
-      - CHERRY_LOG
-      - PALE_OAK_LOG
       - DARK_OAK_LOG
-      - MANGROVE_LOG
-      - CRIMSON_HYPHAE
-      - WARPED_HYPHAE
-      - STRIPPED_OAK_LOG
-      - STRIPPED_SPRUCE_LOG
-      - STRIPPED_BIRCH_LOG
-      - STRIPPED_JUNGLE_LOG
-      - STRIPPED_ACACIA_LOG
-      - STRIPPED_CHERRY_LOG
-      - STRIPPED_PALE_OAK_LOG
-      - STRIPPED_DARK_OAK_LOG
-      - STRIPPED_MANGROVE_LOG
-      - STRIPPED_CRIMSON_HYPHAE
-      - STRIPPED_WARPED_HYPHAE
-    required_amount: 112
+    required_amount: 256
     reward:
       reward_type: COMMAND
       commands:
-        - "eco give %player% 750"
+        - minecraft:give %player% minecraft:diamond 10
   3:
-    name: "&3Too many withers"
-    menu_item: WITHER_SKELETON_SPAWN_EGG
+    name: "&3Wither Bane"
+    menu_item: WITHER_SKELETON_SKULL
     description:
       - " &7Difficulty: &cHard"
       - ""
@@ -107,60 +91,43 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &71 Wither Skeleton Skull"
       - ""
     quest_type: KILL
     required: WITHER_SKELETON
-    required_amount: 20
+    required_amount: 30
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:wither_skeleton_skull 1
   4:
-    name: "&3Call me a crop star"
-    menu_item: DIAMOND_HOE
+    name: "&3Industrial Farmer"
+    menu_item: NETHERITE_HOE
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Farm %required% crops (any)"
+      - " &3&l| &7Farm %required% crops"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &720 Emeralds"
       - ""
     quest_type: FARMING
     required:
       - WHEAT
-      - BEETROOT
       - CARROT
       - POTATO
-      - POISONOUS_POTATO
-      - MELON_SLICE
-      - PUMPKIN
-      - TORCHFLOWER
-      - PITCHER_PLANT
-      - BAMBOO
-      - COCOA_BEANS
-      - SUGAR_CANE
-      - SWEET_BERRIES
-      - CACTUS
-      - KELP
-      - SEA_PICKLE
-      - GLOW_BERRIES
-      - NETHER_WART
-      - CHORUS_FRUIT
-      - CRIMSON_FUNGUS
-      - WARPED_FUNGUS
-      - BROWN_MUSHROOM
-      - RED_MUSHROOM
-    required_amount: 200
+      - BEETROOT
+    required_amount: 300
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:emerald 20
   5:
-    name: "&3Crafting is a work of heart"
+    name: "&3Pyrotechnic"
     menu_item: FIREWORK_ROCKET
     description:
       - " &7Difficulty: &cHard"
@@ -172,145 +139,135 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &710 Diamonds"
       - ""
     quest_type: CRAFT
     required: FIREWORK_ROCKET
-    required_amount: 32
+    required_amount: 64
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
   6:
-    name: "&3One man's trash is another man's treasure"
-    menu_item: FISHING_ROD
+    name: "&3Legendary Fisherman"
+    menu_item: ENCHANTED_BOOK
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Fish %required% items (any)"
+      - " &3&l| &7Fish %required% items"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &75 Diamonds"
       - ""
     quest_type: FISH
     required:
+      - COD
+      - SALMON
+      - PUFFERFISH
+      - TROPICAL_FISH
       - BOW
       - ENCHANTED_BOOK
-      - FISHING_ROD
-      - NAME_TAG
-      - NAUTILUS_SHELL
-      - SADDLE
-      - LILY_PAD
-      - BOWL
-      - LEATHER
-      - LEATHER_BOOTS
-      - ROTTEN_FLESH
-      - STICK
-      - STRING
-      - POTION
-      - BONE
-      - INK_SAC
-      - TRIPWIRE_HOOK
-      - BAMBOO
-      - COCOA_BEANS
-    required_amount: 30
+    required_amount: 50
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 5
   7:
-    name: "&3Heat up the furnace!"
-    menu_item: FURNACE
+    name: "&3Netherite Smelter"
+    menu_item: NETHERITE_SCRAP
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Smelt %required% ores (any)"
+      - " &3&l| &7Smelt %required% ancient debris"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &72 Netherite Scraps"
       - ""
     quest_type: COOK
-    required:
-      - IRON_INGOT
-      - GOLD_INGOT
-      - COPPER_INGOT
-      - NETHERITE_SCRAP
-    required_amount: 16
+    required: NETHERITE_SCRAP
+    required_amount: 10
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:netherite_scrap 2
   8:
-    name: "&3Delivery guy"
-    menu_item: CHEST
+    name: "&3Diamond Deliverer"
+    menu_item: DIAMOND
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Deliver %required% emeralds"
-      - " &8(&7!&8) &7Click on quest once you have enought"
+      - " &3&l| &7Deliver %required% diamonds"
+      - ""
+      - " &8(&7!&8) &7Click on quest once you have enough"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &71 Enchanted Golden Apple"
       - ""
     quest_type: GET
-    required: EMERALD
-    required_amount: 8
+    required: DIAMOND
+    required_amount: 32
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:enchanted_golden_apple 1
   9:
-    name: "&3It's a WAR!"
-    menu_item: WIND_CHARGE
+    name: "&3Fireballer"
+    menu_item: FIRE_CHARGE
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Throw %required% fire charges"
+      - " &3&l| &7Launch %required% fire charges"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &7500 EXP"
       - ""
     quest_type: LAUNCH
     required: FIRE_CHARGE
-    required_amount: 4
+    required_amount: 10
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 500
   10:
-    name: "&3Help heavy sheeps"
-    menu_item: WHITE_WOOL
+    name: "&3Legendary Shearer"
+    menu_item: SHEARS
     description:
       - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
-      - " &3&l| &7Shear %required% sheeps"
+      - " &3&l| &7Shear %required% sheep"
       - ""
       - "&3Progress:"
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &710 Emeralds"
       - ""
     quest_type: SHEAR
     required: SHEEP
-    required_amount: 12
+    required_amount: 50
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:emerald 10
   11:
-    name: "&3Use your knowledge"
+    name: "&3Master Enchanter"
     menu_item: ENCHANTING_TABLE
     description:
       - " &7Difficulty: &cHard"
@@ -322,15 +279,16 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &72000 EXP"
       - ""
     quest_type: ENCHANT
-    required_amount: 2
+    required_amount: 10
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 2000
   12:
-    name: "&3Stay healthy"
+    name: "&3Golden Feast"
     menu_item: GOLDEN_APPLE
     description:
       - " &7Difficulty: &cHard"
@@ -342,11 +300,410 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7750$"
+      - " &3&l| &72 Diamonds"
       - ""
     quest_type: CONSUME
     required: GOLDEN_APPLE
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 2
+  13:
+    name: "&3Evoker Hunter"
+    menu_item: TOTEM_OF_UNDYING
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% evokers"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &71 Totem of Undying"
+      - ""
+    quest_type: KILL
+    required: EVOKER
+    required_amount: 5
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:totem_of_undying 1
+  14:
+    name: "&3Ravager Hunter"
+    menu_item: SADDLE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% ravagers"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Diamonds"
+      - ""
+    quest_type: KILL
+    required: RAVAGER
+    required_amount: 3
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
+  15:
+    name: "&3Warden Slayer"
+    menu_item: SCULK_SENSOR
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% wardens"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Enchanted Golden Apples"
+      - ""
+    quest_type: KILL
+    required: WARDEN
     required_amount: 1
     reward:
-      reward_type: MONEY
-      amount: 750
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:enchanted_golden_apple 5
+  16:
+    name: "&3Ghast Hunter"
+    menu_item: GHAST_TEAR
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% ghasts"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Ghast Tears"
+      - ""
+    quest_type: KILL
+    required: GHAST
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:ghast_tear 10
+  17:
+    name: "&3Diamond Miner"
+    menu_item: DIAMOND_ORE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Break %required% diamond ore"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &72 Netherite Scraps"
+      - ""
+    quest_type: BREAK
+    required:
+      - DIAMOND_ORE
+      - DEEPSLATE_DIAMOND_ORE
+    required_amount: 50
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:netherite_scrap 2
+  18:
+    name: "&3Netherite Crafter"
+    menu_item: NETHERITE_INGOT
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% netherite ingot"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Diamonds"
+      - ""
+    quest_type: CRAFT
+    required: NETHERITE_INGOT
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
+  19:
+    name: "&3Beacon Crafter"
+    menu_item: BEACON
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% beacon"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Netherite Scraps"
+      - ""
+    quest_type: CRAFT
+    required: BEACON
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:netherite_scrap 5
+  20:
+    name: "&3Master Scholar"
+    menu_item: EXPERIENCE_BOTTLE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Farm %required% EXP levels"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &720 Emeralds"
+      - ""
+    quest_type: EXP_LEVELS
+    required_amount: 30
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:emerald 20
+  21:
+    name: "&3Wither Slayer"
+    menu_item: NETHER_STAR
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% withers"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Enchanted Golden Apples"
+      - ""
+    quest_type: KILL
+    required: WITHER
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:enchanted_golden_apple 5
+  22:
+    name: "&3Dragon Breath"
+    menu_item: DRAGON_BREATH
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Get %required% dragon breath"
+      - ""
+      - " &8(&7!&8) &7Click on quest once you have enough"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Diamonds"
+      - ""
+    quest_type: GET
+    required: DRAGON_BREATH
+    required_amount: 10
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
+  23:
+    name: "&3Shulker Hunter"
+    menu_item: SHULKER_SHELL
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% shulkers"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Shulker Shells"
+      - ""
+    quest_type: KILL
+    required: SHULKER
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:shulker_shell 10
+  24:
+    name: "&3Phantom Slayer"
+    menu_item: PHANTOM_MEMBRANE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% phantoms"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Phantom Membranes"
+      - ""
+    quest_type: KILL
+    required: PHANTOM
+    required_amount: 30
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:phantom_membrane 10
+  25:
+    name: "&3End Crystal Crafter"
+    menu_item: END_CRYSTAL
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Craft %required% end crystals"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Diamonds"
+      - ""
+    quest_type: CRAFT
+    required: END_CRYSTAL
+    required_amount: 4
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
+  26:
+    name: "&3Zombie Doctor"
+    menu_item: GOLDEN_APPLE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Farm %required% EXP levels (Zombie Doctor replacement)"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &710 Diamonds"
+      - ""
+    quest_type: EXP_LEVELS
+    required_amount: 40
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 10
+  27:
+    name: "&3Master Obsidian Miner"
+    menu_item: OBSIDIAN
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Break %required% obsidian"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Diamonds"
+      - ""
+    quest_type: BREAK
+    required: OBSIDIAN
+    required_amount: 128
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 5
+  28:
+    name: "&3God Apple Eater"
+    menu_item: ENCHANTED_GOLDEN_APPLE
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Consume %required% enchanted golden apple"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &73 Netherite Scraps"
+      - ""
+    quest_type: CONSUME
+    required: ENCHANTED_GOLDEN_APPLE
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:netherite_scrap 3
+  29:
+    name: "&3Potion Master"
+    menu_item: POTION
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Consume %required% potions"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &7500 EXP"
+      - ""
+    quest_type: CONSUME
+    required: POTION
+    required_amount: 20
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:xp add %player% 500
+  30:
+    name: "&3Elder Guardian Hunter"
+    menu_item: PRISMARINE_CRYSTALS
+    description:
+      - " &7Difficulty: &cHard"
+      - ""
+      - "&3Task:"
+      - " &3&l| &7Kill %required% elder guardians"
+      - ""
+      - "&3Progress:"
+      - " &3&l| %status%"
+      - ""
+      - "&3Reward:"
+      - " &3&l| &75 Diamonds"
+      - ""
+    quest_type: KILL
+    required: ELDER_GUARDIAN
+    required_amount: 1
+    reward:
+      reward_type: COMMAND
+      commands:
+        - minecraft:give %player% minecraft:diamond 5

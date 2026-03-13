@@ -28,7 +28,6 @@
 # For more affected objects or types, please make suggestion.
 # ==============================================================
 quests:
-
   # example quest that is using the TAME quest type
   1:
     name: "&3Best friend"
@@ -213,7 +212,7 @@ quests:
       - " &3&l| %status%"
       - ""
       - "&3Reward:"
-      - " &3&l| &7A \"hello\" message from the server :)"
+      - ' &3&l| &7A "hello" message from the server :)'
       - ""
     quest_type: EXP_POINTS
     required_amount: 250
@@ -398,9 +397,9 @@ quests:
       reward_type: MONEY
       amount: 250
 
-# ===========================================================
-# QUESTS RELATED TO PLUGINS
-# ===========================================================
+  # ===========================================================
+  # QUESTS RELATED TO PLUGINS
+  # ===========================================================
 
   # example quest that is using the MYTHIC_MOBS quest type with a mob from MythicMobs
   # more info here -> https://ordwenplugins.gitbook.io/odailyquests/~/changes/65/quests/available-types/other-plugin-types#mythicmobs-specificities
@@ -661,7 +660,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: BREAK
-    required: 
+    required:
       - STONE
       - COBBLESTONE
     required_amount: 32
@@ -686,7 +685,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: BREAK
-    required: 
+    required:
       - STONE
       - COBBLESTONE
     required_amount: 32
@@ -736,7 +735,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: BREAK
-    required: 
+    required:
       - STONE
       - COBBLESTONE
     required_amount: 16-64
@@ -930,7 +929,7 @@ quests:
       - ""
     quest_type: PYRO_FISH
     required:
-      - "bronze:1"  #"<category>:<id>"
+      - "bronze:1" #"<category>:<id>"
       - "silver:51"
     required_amount: 1
     reward:
