@@ -29,10 +29,10 @@
 # ==============================================================
 quests:
   1:
-    name: "&3Can’t see the ore for the rocks"
+    name: "&3Can't see the ore for the rocks"
     menu_item: DIAMOND_PICKAXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Mine %required% ancient debris"
@@ -44,17 +44,17 @@ quests:
       - " &3&l| &7750$"
       - ""
     quest_type: BREAK
-    required: 
+    required:
       - ANCIENT_DEBRIS
     required_amount: 2
     reward:
       reward_type: MONEY
       amount: 750
   2:
-    name: "&3Let’s get lumber-jacked!"
+    name: "&3Let's get lumber-jacked!"
     menu_item: DIAMOND_AXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Cut down %required% logs"
@@ -98,7 +98,7 @@ quests:
     name: "&3Too many withers"
     menu_item: WITHER_SKELETON_SPAWN_EGG
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Kill %required% wither skeletons"
@@ -119,7 +119,7 @@ quests:
     name: "&3Call me a crop star"
     menu_item: DIAMOND_HOE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Farm %required% crops (any)"
@@ -131,7 +131,7 @@ quests:
       - " &3&l| &7750$"
       - ""
     quest_type: FARMING
-    required: 
+    required:
       - WHEAT
       - BEETROOT
       - CARROT
@@ -163,7 +163,7 @@ quests:
     name: "&3Crafting is a work of heart"
     menu_item: FIREWORK_ROCKET
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Craft %required% fireworks"
@@ -184,7 +184,7 @@ quests:
     name: "&3One man's trash is another man's treasure"
     menu_item: FISHING_ROD
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Fish %required% items (any)"
@@ -196,7 +196,7 @@ quests:
       - " &3&l| &7750$"
       - ""
     quest_type: FISH
-    required: 
+    required:
       - BOW
       - ENCHANTED_BOOK
       - FISHING_ROD
@@ -224,7 +224,7 @@ quests:
     name: "&3Heat up the furnace!"
     menu_item: FURNACE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Smelt %required% ores (any)"
@@ -236,7 +236,7 @@ quests:
       - " &3&l| &7750$"
       - ""
     quest_type: COOK
-    required: 
+    required:
       - IRON_INGOT
       - GOLD_INGOT
       - COPPER_INGOT
@@ -249,7 +249,7 @@ quests:
     name: "&3Delivery guy"
     menu_item: CHEST
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Deliver %required% emeralds"
@@ -271,7 +271,7 @@ quests:
     name: "&3It's a WAR!"
     menu_item: WIND_CHARGE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Throw %required% fire charges"
@@ -292,7 +292,7 @@ quests:
     name: "&3Help heavy sheeps"
     menu_item: WHITE_WOOL
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Shear %required% sheeps"
@@ -313,7 +313,7 @@ quests:
     name: "&3Use your knowledge"
     menu_item: ENCHANTING_TABLE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Enchant %required% items"
@@ -333,7 +333,7 @@ quests:
     name: "&3Stay healthy"
     menu_item: GOLDEN_APPLE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &cʜᴀʀᴅ"
+      - " &7Difficulty: &cHard"
       - ""
       - "&3Task:"
       - " &3&l| &7Eat %required% golden apples"

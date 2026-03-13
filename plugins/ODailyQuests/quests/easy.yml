@@ -29,10 +29,10 @@
 # ==============================================================
 quests:
   1:
-    name: "&3Can’t see the ore for the rocks"
+    name: "&3Can't see the ore for the rocks"
     menu_item: STONE_PICKAXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Mine %required% stone"
@@ -44,7 +44,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: BREAK
-    required: 
+    required:
       - COBBLESTONE
       - STONE
     required_amount: 32
@@ -52,10 +52,10 @@ quests:
       reward_type: MONEY
       amount: 250
   2:
-    name: "&3Let’s get lumber-jacked!"
+    name: "&3Let's get lumber-jacked!"
     menu_item: STONE_AXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Cut down %required% logs"
@@ -99,7 +99,7 @@ quests:
     name: "&3Too many zombies"
     menu_item: ZOMBIE_SPAWN_EGG
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Kill %required% zombies"
@@ -120,7 +120,7 @@ quests:
     name: "&3Call me a crop star"
     menu_item: STONE_HOE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Farm %required% wheats"
@@ -141,7 +141,7 @@ quests:
     name: "&3Crafting is a work of heart"
     menu_item: BREAD
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Craft %required% bread"
@@ -162,7 +162,7 @@ quests:
     name: "&3Too many fishes"
     menu_item: FISHING_ROD
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Fish %required% cods"
@@ -174,7 +174,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: FISH
-    required: 
+    required:
       - COD
     required_amount: 4
     reward:
@@ -184,7 +184,7 @@ quests:
     name: "&3Heat up the furnace!"
     menu_item: FURNACE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Smelt %required% cobblestone/stone"
@@ -196,7 +196,7 @@ quests:
       - " &3&l| &7250$"
       - ""
     quest_type: COOK
-    required: 
+    required:
       - STONE
       - SMOOTH_STONE
     required_amount: 16
@@ -207,7 +207,7 @@ quests:
     name: "&3Delivery guy"
     menu_item: CHEST
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Deliver %required% cobblestones"
@@ -229,7 +229,7 @@ quests:
     name: "&3Snowball Fight"
     menu_item: SNOWBALL
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Throw %required% snowballs"
@@ -250,7 +250,7 @@ quests:
     name: "&3Help heavy sheeps"
     menu_item: WHITE_WOOL
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Shear %required% sheeps"
@@ -271,7 +271,7 @@ quests:
     name: "&3Need some knowledge"
     menu_item: EXPERIENCE_BOTTLE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Farm %required% XP levels"
@@ -291,7 +291,7 @@ quests:
     name: "&3Stay healthy"
     menu_item: APPLE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &aᴇᴀꜱʏ"
+      - " &7Difficulty: &aEasy"
       - ""
       - "&3Task:"
       - " &3&l| &7Eat %required% apples"
