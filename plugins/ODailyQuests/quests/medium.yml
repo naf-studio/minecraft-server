@@ -29,10 +29,10 @@
 # ==============================================================
 quests:
   1:
-    name: "&3Can’t see the ore for the rocks"
+    name: "&3Can't see the ore for the rocks"
     menu_item: IRON_PICKAXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Mine %required% netherrack"
@@ -50,10 +50,10 @@ quests:
       reward_type: MONEY
       amount: 500
   2:
-    name: "&3Let’s get lumber-jacked!"
+    name: "&3Let's get lumber-jacked!"
     menu_item: IRON_AXE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Cut down %required% logs"
@@ -97,7 +97,7 @@ quests:
     name: "&3Too many witches"
     menu_item: WITCH_SPAWN_EGG
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Kill %required% witches"
@@ -118,7 +118,7 @@ quests:
     name: "&3Call me a crop star"
     menu_item: IRON_HOE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Farm %required% crops (any)"
@@ -130,7 +130,7 @@ quests:
       - " &3&l| &7500$"
       - ""
     quest_type: FARMING
-    required: 
+    required:
       - WHEAT
       - BEETROOT
       - CARROT
@@ -162,7 +162,7 @@ quests:
     name: "&3Crafting is a work of heart"
     menu_item: CAKE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Craft %required% cake"
@@ -183,7 +183,7 @@ quests:
     name: "&3Too many fishes"
     menu_item: FISHING_ROD
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Fish %required% fishes (any)"
@@ -195,7 +195,7 @@ quests:
       - " &3&l| &7500$"
       - ""
     quest_type: FISH
-    required: 
+    required:
       - COD
       - SALMON
       - PUFFERFISH
@@ -208,7 +208,7 @@ quests:
     name: "&3Heat up the furnace!"
     menu_item: FURNACE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Smelt %required% iron"
@@ -220,7 +220,7 @@ quests:
       - " &3&l| &7500$"
       - ""
     quest_type: COOK
-    required: 
+    required:
       - IRON_BLOCK
       - IRON_INGOT
       - IRON_NUGGET
@@ -232,7 +232,7 @@ quests:
     name: "&3Delivery guy"
     menu_item: CHEST
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Deliver %required% ink sac"
@@ -254,7 +254,7 @@ quests:
     name: "&3It's a prank!"
     menu_item: EGG
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Throw %required% eggs at somebody"
@@ -275,7 +275,7 @@ quests:
     name: "&3Help heavy sheeps"
     menu_item: WHITE_WOOL
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Shear %required% sheeps"
@@ -296,7 +296,7 @@ quests:
     name: "&3Need some knowledge"
     menu_item: EXPERIENCE_BOTTLE
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Farm %required% XP levels"
@@ -316,7 +316,7 @@ quests:
     name: "&3Stay healthy"
     menu_item: GOLDEN_CARROT
     description:
-      - " &7ᴅɪꜰꜰɪᴄᴜʟᴛʏ: &6ᴍᴇᴅɪᴜᴍ"
+      - " &7Difficulty: &6Medium"
       - ""
       - "&3Task:"
       - " &3&l| &7Eat %required% golden carrots"
