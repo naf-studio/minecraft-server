@@ -121,8 +121,7 @@ global_reward:
   enabled: true
   reward_type: COMMAND
   commands:
-  # - eco give %player% 2000
-  - give %player% iron_ingot 16
+  - minecraft:give %player% minecraft:iron_ingot 16
 
 # Categories Rewards
 # Will be given when the player has completed all his daily quests of a precise category.
@@ -134,19 +133,16 @@ categories_rewards:
     enabled: true
     reward_type: COMMAND
     commands:
-    # - eco give %player% 750
     - minecraft:give %player% minecraft:diamond 1
   medium:
     enabled: true
     reward_type: COMMAND
     commands:
-    # - eco give %player% 1000
     - minecraft:give %player% minecraft:diamond 2
   hard:
     enabled: true
     reward_type: COMMAND
     commands:
-    # - eco give %player% 1500
     - minecraft:give %player% minecraft:diamond 3
 
 # Set a title that will be displayed when a player completes a quest.
