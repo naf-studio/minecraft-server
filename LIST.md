@@ -21,13 +21,14 @@ https://www.spigotmc.org/resources/gravesx.118271/
 https://modrinth.com/plugin/grimac
 https://github.com/Navio1430/LibreLoginProd
 https://modrinth.com/plugin/luckperms
+https://modrinth.com/plugin/odailyquests
 https://github.com/retrooper/packetevents
 https://modrinth.com/plugin/placeholderapi
 https://modrinth.com/plugin/skinsrestorer
 <!-- https://github.com/dmulloy2/ProtocolLib -->
 <!-- https://github.com/stonar96/RayTraceAntiXray -->
 https://github.com/retrooper/packetevents
-https://github.com/hyperdefined/TimeBar
+<!-- https://github.com/hyperdefined/TimeBar -->
 <!-- https://songoda.com/plugin/ultimate-claims-14 -->
 <!-- https://github.com/2008Choco/VeinMiner/ -->
 <!-- https://github.com/ViaVersion/ViaBackwards -->
