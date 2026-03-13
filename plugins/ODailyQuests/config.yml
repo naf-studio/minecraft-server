@@ -135,19 +135,19 @@ categories_rewards:
     reward_type: COMMAND
     commands:
     # - eco give %player% 750
-    - give %player% diamond 1
+    - minecraft:give %player% minecraft:diamond 1
   medium:
     enabled: true
     reward_type: COMMAND
     commands:
     # - eco give %player% 1000
-    - give %player% diamond 2
+    - minecraft:give %player% minecraft:diamond 2
   hard:
     enabled: true
     reward_type: COMMAND
     commands:
     # - eco give %player% 1500
-    - give %player% diamond 3
+    - minecraft:give %player% minecraft:diamond 3
 
 # Set a title that will be displayed when a player completes a quest.
 # Reminder: 20 ticks is equal to one second.
