@@ -17,17 +17,17 @@ global_total_rewards:
     reward_type: COMMAND
     message: "&aCongrats %player%! You have completed 50 quests and earned a reward!"
     commands:
-      - "eco give %player% 1000"
+      # - "eco give %player% 1000"
   100:
     reward_type: COMMAND
     message: "&aCongrats %player%! You have completed 100 quests and earned a reward!"
     commands:
-      - "eco give %player% 2500"
+      # - "eco give %player% 2500"
   200:
     reward_type: COMMAND
     message: "&aCongrats %player%! You have completed 200 quests and earned a reward!"
     commands:
-      - "eco give %player% 5000"
+      # - "eco give %player% 5000"
 
 # ========================================================
 # CATEGORY-SPECIFIC TOTAL QUEST REWARDS
@@ -41,33 +41,33 @@ category_total_rewards:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 10 quests in category easy and earned a reward!"
       commands:
-        - "eco give %player% 500"
+        # - "eco give %player% 500"
     50:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 50 quests in category easy and earned a reward!"
       commands:
-        - "eco give %player% 1000"
+        # - "eco give %player% 1000"
 
   medium:
     10:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 10 quests in category medium and earned a reward!"
       commands:
-        - "eco give %player% 1000"
+        # - "eco give %player% 1000"
     50:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 50 quests in category medium and earned a reward!"
       commands:
-        - "eco give %player% 2000"
+        # - "eco give %player% 2000"
 
   hard:
     10:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 10 quests in category hard and earned a reward!"
       commands:
-        - "eco give %player% 2000"
+        # - "eco give %player% 2000"
     50:
       reward_type: COMMAND
       message: "&aCongrats %player%! You have completed 50 quests in category hard and earned a reward!"
       commands:
-        - "eco give %player% 4000"
+        # - "eco give %player% 4000"

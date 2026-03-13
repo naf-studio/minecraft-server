@@ -121,7 +121,7 @@ global_reward:
   enabled: true
   reward_type: COMMAND
   commands:
-  - eco give %player% 2000
+  # - eco give %player% 2000
   - give %player% iron_ingot 16
 
 # Categories Rewards
@@ -134,19 +134,19 @@ categories_rewards:
     enabled: true
     reward_type: COMMAND
     commands:
-    - eco give %player% 750
+    # - eco give %player% 750
     - give %player% diamond 1
   medium:
     enabled: true
     reward_type: COMMAND
     commands:
-    - eco give %player% 1000
+    # - eco give %player% 1000
     - give %player% diamond 2
   hard:
     enabled: true
     reward_type: COMMAND
     commands:
-    - eco give %player% 1500
+    # - eco give %player% 1500
     - give %player% diamond 3
 
 # Set a title that will be displayed when a player completes a quest.
