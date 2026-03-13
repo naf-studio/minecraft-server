@@ -393,7 +393,7 @@ Alias:
     Tab: true
   # /cmi gamerule $1-
   gamerule:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi generateworth $1-
   generateworth:
@@ -1201,7 +1201,7 @@ Alias:
     Tab: true
   # /cmi time $1-
   time:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi time day $1-
   day:
