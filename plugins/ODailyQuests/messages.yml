@@ -33,9 +33,9 @@ player_quests_not_loaded:
   "&cThe player's quests are not loaded yet. Please try again
   in a moment."
 already_achieved: "&cThis quest is already achieved."
-quests_in_progress: "&eYou still have '/dailyquests' to complete!"
+quests_in_progress: "&eYou still have &b'/dailyquests' &eto complete!"
 all_quests_achieved_connect: "&aYou have completed all your daily quests!"
-quests_renewed: "&aYou have new '/dailyquests' to complete!"
+quests_renewed: "&eYou have new &b'/dailyquests' &eto complete!"
 quests_renewed_admin: "&eYou have reset the quests of %target%."
 quest_rerolled:
   "&aYou have rerolled your quest number %index% -- %remaining% rerolls
