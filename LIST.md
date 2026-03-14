@@ -14,6 +14,7 @@ https://github.com/Minebench/EntityDetection
 https://github.com/LukeOnuke/fast-leaf-decay
 <!-- https://modrinth.com/plugin/fairy -->
 https://modrinth.com/plugin/fastasyncworldedit
+https://github.com/naipret/cmi-firstjoinrtp
 https://geysermc.org/download?project=floodgate
 https://modrinth.com/plugin/freedomchat
 https://geysermc.org/download?project=geyser
