@@ -153,7 +153,7 @@ DiscordConsoleChannelPadding: 0
 # %error%: the reason for the error
 #           example: no permission
 #
-DiscordChatChannelConsoleCommandNotifyErrorsFormat: "[DiscordSRV] **%user%**, you tried running a command. Unfortunately, there was an error: %error%"
+DiscordChatChannelConsoleCommandNotifyErrorsFormat: "**%user%**, you tried running a command. Unfortunately, there was an error: %error%"
 
 # Discord chat channel player list command
 # Messages used for when someone runs the playerlist command in a chat channel
@@ -380,10 +380,10 @@ ChannelTopicUpdaterConsoleChannelTopicAtServerShutdownFormat: "Server is offline
 DiscordCommandFormat: "&b[Discord] &9{INVITE}"
 
 # No permission message
-NoPermissionMessage: "&c[DiscordSRV] You do not have permission to perform this command."
+NoPermissionMessage: "&cYou do not have permission to perform this command."
 
 # Unknown command message
-UnknownCommandMessage: "&b[DiscordSRV] That command doesn't exist!"
+UnknownCommandMessage: "&bThat command doesn't exist!"
 
 # Server startup/shutdown messages
 # DiscordChatChannelServerStartupMessage: message to be sent when server starts; leave blank to disable
@@ -432,17 +432,17 @@ ServerWatchdogMessage: ":fire: **Server hasn't ticked in %timeout% seconds**"
 # Discord
 UnknownCode: "I don't know of such a code, try again."
 InvalidCode: "Are you sure that's your code? Link codes are 4 numbers long."
-DiscordAccountLinked: "Your Discord account has been linked!"
-DiscordAccountAlreadyLinked: "You are already linked to %username%"
+DiscordAccountLinked: "Your Discord account has been successfully linked!"
+DiscordAccountAlreadyLinked: "You have already linked to %username%!"
 DiscordLinkedAccountRequired: "You attempted to say the following message to the game chat but this server requires that you have your Minecraft account linked to your Discord account. Link it in-game by typing `/discord link`. \n```%message%```"
 DiscordLinkedAccountCheckFailed: "Unable to check if your account is linked, please try again later"
 # Minecraft
-CodeGenerated: "[DiscordSRV] Your link code is &9%code%&r. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
+CodeGenerated: "Your link code is &9%code%&r. PM the bot on Discord (%botname%) containing just this code as the message to link your accounts."
 ClickToCopyCode: "Click to copy"
-MinecraftAccountLinked: "&b[DiscordSRV] Your UUID has been linked to Discord user %username% (%id%)"
-MinecraftAccountAlreadyLinked: "&b[DiscordSRV] Your Minecraft account is already associated with a Discord account. Should you have permission to, you can unlink your account with /discord unlink."
-LinkedCommandSuccess: "&b[DiscordSRV] Your Minecraft account is associated with %name%."
-UnlinkCommandSuccess: "&b[DiscordSRV] Your Minecraft account is no longer associated with %name%."
-MinecraftNoLinkedAccount: "&c[DiscordSRV] Your Minecraft account isn't associated with a Discord account."
-LinkingError: "&c[DiscordSRV] Currently unable to link accounts due to an internal error. Contact your server administration team."
-MinecraftNobodyFound: "&c[DiscordSRV] Nobody found with Discord ID/Discord name/Minecraft name/Minecraft UUID matching \"%target%\" to look up."
+MinecraftAccountLinked: "&bYour UUID has been linked to Discord user %username% (%id%)"
+MinecraftAccountAlreadyLinked: "&bYour Minecraft account is already associated with a Discord account. Should you have permission to, you can unlink your account with /discord unlink."
+LinkedCommandSuccess: "&bYour Minecraft account is associated with %name%."
+UnlinkCommandSuccess: "&bYour Minecraft account is no longer associated with %name%."
+MinecraftNoLinkedAccount: "&cYour Minecraft account isn't associated with a Discord account."
+LinkingError: "&cCurrently unable to link accounts due to an internal error. Contact your server administration team."
+MinecraftNobodyFound: "&cNobody found with Discord ID/Discord name/Minecraft name/Minecraft UUID matching \"%target%\" to look up."
