@@ -78,46 +78,382 @@
 #      Timestamp: false # set to true to use the time the message was sent or use a epoch timestamp for a specific time (https://www.epochconverter.com/)
 #
 Alerts:
-  # Example config to send messages to the "fish" DiscordSRV channel when a player successfully catches a fish
-  #- Trigger: PlayerFishEvent
-  #  Channel: fish
-  #  Conditions:
-  #    - state.name() == 'CAUGHT_FISH'
-  #  Embed:
-  #    Color: "#00ff00"
-  #    Author:
-  #      ImageUrl: "{embedavatarurl}"
-  #      Name: "{name} caught a ${caught.itemStack.type.name()}!"
+  ################################################################
+  #  P U N I S H M E N T S (Channel: punishments)                #
+  ################################################################
 
-  # Example config to send Matrix anti-cheat messages
-  #- Trigger: PlayerViolationEvent
-  #  Channel: matrix
-  #  Conditions:
-  #    - violations >= 5 # don't send events for players with < 5 violations
-  #  Embed:
-  #    Color: "#ff0000"
-  #    Author:
-  #      ImageUrl: "{embedavatarurl}"
-  #      Name: "{username} failed ${hackType.name().toLowerCase()} check | ${component} | vl:${violations} ping:${player.handle.ping} tps:{tps}"
+  # KICK
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.kick")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"kick\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER KICKED"
+      Description: "`${#sender.getName()}` has kicked `${#args.get(1)}`\n```/${#command}```"
 
-  # Example config to send /gamemode messages
-  #- Trigger: /gamemode
-  #  Channel: gamemode
-  #  Conditions:
-  #    - '#player.hasPermission("minecraft.command.gamemode") == true'
-  #  Embed:
-  #    Color: "#ff0000"
-  #    Author:
-  #      ImageUrl: "{embedavatarurl}"
-  #      Name: "{username} changed gamemode to ${#args.get(0)}"
+  # BAN
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.ban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"ban\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER BANNED"
+      Description: "`${#sender.getName()}` has banned `${#args.get(1)}`\n```/${#command}```"
 
-  # Example config to send /me commands
-  #- Trigger: /me
-  #  Channel: me
-  #  Conditions:
-  #    - '#player.hasPermission("minecraft.command.me") == true || #player.hasPermission("essentials.me") == true'
-  #  Embed:
-  #    Color: "#00ff00"
-  #    Author:
-  #      ImageUrl: "{embedavatarurl}"
-  #      Name: "* {username} ${#allArgs}"
+  # UNBAN
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.unban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unban\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER UN-BANNED"
+      Description: "`${#sender.getName()}` has removed the ban on `${#args.get(1)}`\n```/${#command}```"
+
+  # IPBAN (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.ipban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"ipban\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER IP-BANNED"
+      Description: "`${#sender.getName()}` has IP-banned `${#args.get(1)}`\n```/${#command}```"
+
+  # UNIPBAN (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.unipban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unipban\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#00ff00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER UN-IP-BANNED"
+      Description: "`${#sender.getName()}` has removed the IP-ban on `${#args.get(1)}`\n```/${#command}```"
+
+  # TEMPBAN (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.tempban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"tempban\"))"
+      - "(#args.size() > 2)"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER TEMP-BANNED"
+      Description: "`${#sender.getName()}` has temporarily banned `${#args.get(1)}` for `${#args.get(2)}`\n```/${#command}```"
+
+  # MUTE (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.mute")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"mute\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#ffff00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER MUTED"
+      Description: "`${#sender.getName()}` has muted `${#args.get(1)}`\n```/${#command}```"
+
+  # UNMUTE (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.unmute")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unmute\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#00ff00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER UN-MUTED"
+      Description: "`${#sender.getName()}` has unmuted `${#args.get(1)}`\n```/${#command}```"
+
+  # WARN (NEW)
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.warn")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"warn\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#ffff00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "PLAYER WARNED"
+      Description: "`${#sender.getName()}` warned `${#args.get(1)}`\n```/${#command}```"
+
+  # JAIL
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.jail")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"jail\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Text: "PLAYER JAILED"
+      Description: "**Punishment Type**: jailed \n **Player**: `${#args.get(1)}` \n **staff**:`{username}` \n **Duration**: `${#args.size() > 2 ? #args.get(2) : 'Default'}` \n **Jail-No**: `${#args.size() > 4 ? #args.get(4) : 'Default'}` \n **Reason**: `${#args.size() > 6 ? #args.get(6) : 'None'}`"
+
+  # UNJAIL
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "punishments"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.unjail")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unjail\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#00ff00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Text: "PLAYER UN-JAILED"
+      Description: "**Punishment Type**: unjailed \n **Player**: `${#args.get(1)}` \n **staff**:`{username}`"
+
+  ################################################################
+  #  S P Y   L O G S (Channel: spylog)                           #
+  ################################################################
+
+  # SIGN CHANGES
+  - Trigger: "org.bukkit.event.block.SignChangeEvent"
+    Channel: "spylog"
+    Conditions:
+      - "#event.getLine(0).isEmpty() == false || #event.getLine(1).isEmpty() == false || #event.getLine(2).isEmpty() == false || #event.getLine(3).isEmpty() == false"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "https://mineskin.eu/avatar/${#event.getPlayer().getName()}"
+        Name: "SIGN EDITED"
+      Description: "`${#event.getPlayer().getName()}` edited a sign\n```/tppos ${#event.getBlock().getLocation().getBlockX()} ${#event.getBlock().getLocation().getBlockY()} ${#event.getBlock().getLocation().getBlockZ()} {world}``````${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
+
+  # BOOK AND QUILL SIGNING TO SPYLOG
+  - Trigger: "org.bukkit.event.player.PlayerEditBookEvent"
+    Channel: "spylog"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "https://mineskin.eu/avatar/${#event.getPlayer().getName()}"
+        Name: 'BOOK ${#event.isSigning() ? "SIGNED" : "EDITED"}'
+      Description: |
+        `${#event.getPlayer().getName()}` ${#event.isSigning() ? "signed a book" : "edited a book"} with title `${#event.getNewBookMeta().getTitle() ?: "untitled (unsngned)"}`
+        ```/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}``````
+        ${T(java.lang.String).join(' ``` ```', #event.getNewBookMeta().getPages())}
+        ```
+
+  # CMI MSGS TO SPYLOG
+  - Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+    Channel: "spylog"
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"msg\"))"
+      - "(#args.size() > 1)"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "MSG LOG"
+      Description: "`{username}` messaged `${#args.get(1)}`\n```/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}``````/${#command}```"
+
+  # WHISPER AND TELL TO SPYLOG
+  - Trigger: [/w, /tell]
+    Channel: "spylog"
+    Embed:
+      Color: "#000000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "MSG LOG"
+      Description: "`{username}` whispered to `${#args.get(1)}`\n```/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}``````/${#command}```"
+
+  # CMI GAMEMODE SWITCH
+  # - Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  #   Channel: 'spylog'
+  #   Conditions:
+  #     - '#player.hasPermission("cmi.command.gm.creative") || #player.hasPermission("cmi.command.gm.survival")'
+  #     - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+  #     - "(#command.split(\"\\s+|$\")[1].equals(\"gm\"))"
+  #   Embed:
+  #     Color: "#000001"
+  #     Author:
+  #       ImageUrl: "https://crafatar.com/avatars/${player.getUniqueId()}?overlay"
+  #       Name: '${player.displayName}'
+  #     Title:
+  #       Text: "Gamemode updated to:"
+  #       Url: ""
+  #     Fields:
+  #       - "Set to:;${#player.gameMode.name().toLowerCase()};true"
+  #       - "World:;{world};true"
+
+  # CATCH PLAYER RUNNING SUSSY COMMANDS (SPYLOG)
+  - Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+    Channel: "spylog"
+    Conditions:
+      - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+    Content: |-
+      Hey staff, {username} tried to run a command with some sussy words
+      `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+
+  # CATCH PLAYER SAYING SUSSY WORDS (SPYLOG)
+  - Trigger: org.bukkit.event.player.AsyncPlayerChatEvent
+    Channel: "spylog"
+    Conditions:
+      - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+    Content: |-
+      Hey staff, {username} sent some sussy words
+      `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+
+  ################################################################
+  #  G L O B A L   A L E R T S (Channel: global)                 #
+  ################################################################
+
+  # BROADCAST
+  - Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+    Channel: "global"
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"broadcast\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "**BROADCAST**"
+      Description: "`{username} posted:`\n```md\n# ${#allArgs}\n```"
+
+  # VANISH ENTER
+  - Trigger: com.Zrips.CMI.events.CMIPlayerVanishEvent
+    Channel: "global"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} left the server"
+
+  # VANISH LEAVE
+  - Trigger: com.Zrips.CMI.events.CMIPlayerUnVanishEvent
+    Channel: "global"
+    Embed:
+      Color: "#00FF00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} joined the server"
+
+  # (COMMENTED OPTIONAL ALERTS)
+  # - Trigger: com.Zrips.CMI.events.CMIAfkEnterEvent
+  #   Channel: 'global'
+  # - Trigger: com.Zrips.CMI.events.CMIAfkLeaveEvent
+  #   Channel: 'global'
+  # - Trigger: org.bukkit.event.player.PlayerJoinEvent
+  #   Channel: 'global'
+  # - Trigger: org.bukkit.event.player.PlayerQuitEvent
+  #   Channel: 'global'
+  # - Trigger: org.bukkit.event.entity.EntityDeathEvent
+  #   Channel: 'global'
+  # - Trigger: org.bukkit.event.player.PlayerDeathEvent
+  #   Channel: 'global'
+  # - Trigger: com.Zrips.CMI.events.CMIPlayerNickNameChangeEvent
+  #   Channel: 'global'
+
+  ################################################################
+  #  A D M I N   L O G S (Channel: adminlog)                     #
+  ################################################################
+
+  # VANISH ENTER (ADMIN)
+  - Trigger: com.Zrips.CMI.events.CMIPlayerVanishEvent
+    Channel: "adminlog"
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} have vanished"
+
+  # VANISH LEAVE (ADMIN)
+  - Trigger: com.Zrips.CMI.events.CMIPlayerUnVanishEvent
+    Channel: "adminlog"
+    Embed:
+      Color: "#00FF00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} became visible"
+
+  # (COMMENTED OPTIONAL ALERTS)
+  # - Trigger: github.scarsz.discordsrv.api.events.AccountLinkedEvent
+  #   Channel: 'adminlog'
+  # - Trigger: github.scarsz.discordsrv.api.events.AccountUnlinkedEvent
+  #   Channel: 'adminlog'
+  # - Trigger: 'org.bukkit.event.player.PlayerJoinEvent' # spy log joins
+  #   Channel: 'adminlog'
+  # - Trigger: 'org.bukkit.event.player.PlayerQuitEvent' # spy log quits
+  #   Channel: 'adminlog'
+
+  ################################################################
+  #  S E R V E R   E V E N T S (Channel: watchdog)               #
+  ################################################################
+
+  # MAINTENANCE MODE
+  - Trigger:
+      - org.bukkit.event.player.PlayerCommandPreprocessEvent
+      - org.bukkit.event.server.ServerCommandEvent
+    Channel: "watchdog"
+    Conditions:
+      - '#sender.hasPermission("cmi.command.maintenance")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"maintenance\"))"
+    Content: ":tools: **Server is now in maintenance mode**"
