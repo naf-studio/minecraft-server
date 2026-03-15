@@ -1,72 +1,66 @@
-# Minecraft Server Repository
+# 🌲 NAF Minecraft Server
 
-This repository contains the configuration, plugins, and scripts for a customized Minecraft server.
+This repository contains the complete configuration, plugin suite, and optimized scripts for the **NAF Minecraft Server**. Built on **LeafMC**, this setup is designed for high performance, rich world generation, and seamless integration between platforms.
 
-## Table of Contents
+---
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Usage](#usage)
-- [Startup Flags](#startup-flags)
-- [Maintenance and Configuration](#maintenance-and-configuration)
+## 🚀 Quick Start
 
-## Introduction
+To launch the server, use the startup script corresponding to your operating system. These scripts ensure the server automatically restarts in case of a crash.
 
-This project is a Minecraft server setup that includes:
--   **Core Server**: `server.jar` (likely Purpur or a fork).
--   **Plugins**: A collection of plugins in the `plugins/` directory to enhance gameplay, administration, and performance.
--   **Optimization**: Highly tuned startup flags in `run.sh` and `run.bat` for optimal performance using the Z Garbage Collector (ZGC) and vectorization.
-
-## Prerequisites
-
--   **Java Development Kit (JDK)**: A compatible Java version is required to run `server.jar`. Based on the flags used (`--add-modules=jdk.incubator.vector`), a modern JDK (likely Java 17 or newer, possibly 21+) is expected.
--   **Operating System**: Linux (for `run.sh`) or Windows (for `run.bat`).
-
-## Usage
-
-To start the server, run the appropriate script for your operating system. The scripts are designed to automatically restart the server if it stops or crashes.
-
-### Linux
+### 🐧 Linux
 ```bash
 ./run.sh
 ```
 
-### Windows
+### 🪟 Windows
 ```cmd
 .\run.bat
 ```
 
-To stop the server loop, press `CTRL + C` during the 5-second countdown after the server shuts down.
+> **Note**: To stop the auto-restart loop, press `CTRL + C` during the 5-second countdown after the server stops.
 
-## Startup Flags
+---
 
-The `run.sh` and `run.bat` scripts utilize a comprehensive set of JVM flags optimized for:
--   **Low Latency**: Using ZGC (`-XX:+UseZGC`, `-XX:+ZGenerational`).
--   **Performance**: Vectorization modules (`jdk.incubator.vector`), aggressive memory settings, and Graal compiler optimizations.
--   **Memory**: Allocates 95% of available RAM (`-XX:MaxRAMPercentage=95.0`) with a minimum of 1GB (`-Xms1G`).
+## ⚙️ Configuration
 
-**Note**: The time zone is set to `Asia/Ho_Chi_Minh`.
+### 🧩 Initial Setup
+After the first launch, run these commands in the console:
+- **Permissions**: `lp import "luckperms-naf-default.json.gz"`
+- **Gamerule**: `gamerule playersSleepingPercentage 25`
 
-## Maintenance and Configuration
+### 🔧 Maintenance Mode
+- **Enable**: `cmi maintenance on` (Closes server to players)
+- **Disable**: `cmi maintenance off` (Opens server to players)
 
-### Important Settings
--   **LuckPerms**: Import the default configuration if needed:
-    ```
-    lp import "luckperms-naf-default.json.gz"
-    ```
--   **Gamerules**: Set sleeping percentage:
-    ```
-    gamerule playersSleepingPercentage 25
-    ```
+### 🔑 Security & Tokens
+Configure the following sensitive information in their respective YAML files:
+- **DiscordSRV**: Bot token and channel IDs in `plugins/DiscordSRV/config.yml`.
+- **GrimAC**: Webhook URLs in `plugins/GrimAC/discord.yml`.
 
-### Optional Customizations
--   **Discord Integration**:
-    -   Configure DiscordSRV in `plugins/DiscordSRV/config.yml`.
-    -   Configure Voice Chat in `plugins/voicechat-discord/config.yml`.
-    -   Configure GrimAC webhooks in `plugins/GrimAC/discord.yml`.
--   **Maintenance Mode**: Use `/maintenance on` to close the server to players.
+### 🌐 Network & Ports
+Ensure the following ports are correctly mapped/forwarded:
+- **Voice Chat**: Set port in `plugins/voicechat-discord/config.yml`.
+- **Bedrock (Geyser)**: Set port in `plugins/Geyser-Spigot/config.yml`.
 
-### References
--   [Paper Optimization Guide](https://paper-chan.moe/paper-optimization/)
--   [Leaf Server Optimization](https://www.leafmc.one/docs/how-to/optimize-leaf-server)
--   [Java Flags by Leaf](https://www.leafmc.one/docs/how-to/java-flags)
+---
+
+## 📑 Server Specifications
+
+For a comprehensive documentation of the integrated infrastructure, including the server forks, full list of plugins, datapacks, please refer to:
+- [LIST.md](LIST.md)
+
+---
+
+## 📈 Optimization & Credits
+
+The performance of this server is made possible by the following resources:
+
+- **JVM Flags**: Optimized using [meowice-flags](https://github.com/MeowIce/meowice-flags).
+- **Optimization Guides**:
+  - [Paper Optimization Guide](https://paper-chan.moe/paper-optimization/)
+  - [Leaf Server Optimization](https://www.leafmc.one/docs/how-to/optimize-leaf-server)
+  - [Java Flags by Leaf](https://www.leafmc.one/docs/how-to/java-flags)
+
+---
+*Created and maintained by the NAF Team.*
