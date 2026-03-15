@@ -78,10 +78,10 @@ Homes:
   # Can be bypassed with cmi.command.sethome.bypass
   CheckBlockBreak: false
   # Name for default home location. By default its "Home"
-  DefaultName: Home
+  DefaultName: home
   # Name for bed location. By default its "Home"
   # Different name can be used to identify home location set by interacting with a bed from home location created with command
-  DefaultBedName: Home
+  DefaultBedName: bed
   # Defines what characters you can use in your home names
   ValidNameRegex: '[^a-zA-Z0-9\-\_]'
   WorldLimits:
