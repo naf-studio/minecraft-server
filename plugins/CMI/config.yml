@@ -1503,7 +1503,7 @@ Cooldowns:
   # ATTENTION! If you have command like "/cmi home" and you want to prevent teleportation to home but allow gui opening without restrictions, use space after command, in example "cmi home :10"
   Enabled: true
   List:
-  - cmi home:120
+  # - cmi home:120
   - cmi heal:180
   - cmi feed:120
 ShulkerBoxes:
