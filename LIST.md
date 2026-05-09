@@ -1,4 +1,5 @@
 ## 🌲 Folk
+
 - [Leaf](https://github.com/Winds-Studio/Leaf)
 
 ## 🔌 Plugin Ecosystem
@@ -75,11 +76,11 @@
 - [Villages Revamped](https://modrinth.com/datapack/villages-revamped)
 - [Japanese Villages](https://modrinth.com/datapack/qraftys-japanese-villages)
 - [End Villages](https://modrinth.com/datapack/qraftys-end-villages)
-- [Halloween Villages](https://modrinth.com/datapack/qraftys-halloween-villages) *(Outdated)*
+- [Halloween Villages](https://modrinth.com/datapack/qraftys-halloween-villages) _(Outdated)_
 - [Bamboo Villages](https://modrinth.com/datapack/qraftys-bamboo-villages)
 - [Jungle Villages](https://modrinth.com/datapack/qraftys-jungle-villages)
-- [Bunkers](https://modrinth.com/datapack/qraftys-bunkers) *(Outdated)*
-- [Mushroom Villages](https://modrinth.com/datapack/qraftys-mushroom-villages) *(Outdated)*
+- [Bunkers](https://modrinth.com/datapack/qraftys-bunkers) _(Outdated)_
+- [Mushroom Villages](https://modrinth.com/datapack/qraftys-mushroom-villages) _(Outdated)_
 - [Mountain Villages](https://modrinth.com/datapack/qraftys-mountain-villages)
 
 <!-- - [Epic Structures: Villages](https://modrinth.com/datapack/epic-structures-villages) | Future -->
