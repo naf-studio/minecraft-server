@@ -73,17 +73,21 @@
 - [Revamped Shipwrecks](https://modrinth.com/datapack/revamped-shipwrecks)
 - [Unwrecked Ships](https://modrinth.com/datapack/unwrecked-ships)
 
-- [Villages Revamped](https://modrinth.com/datapack/villages-revamped)
-- [Japanese Villages](https://modrinth.com/datapack/qraftys-japanese-villages)
-- [End Villages](https://modrinth.com/datapack/qraftys-end-villages)
-- [Halloween Villages](https://modrinth.com/datapack/qraftys-halloween-villages) _(Outdated)_
-- [Bamboo Villages](https://modrinth.com/datapack/qraftys-bamboo-villages)
-- [Jungle Villages](https://modrinth.com/datapack/qraftys-jungle-villages)
-- [Bunkers](https://modrinth.com/datapack/qraftys-bunkers) _(Outdated)_
-- [Mushroom Villages](https://modrinth.com/datapack/qraftys-mushroom-villages) _(Outdated)_
-- [Mountain Villages](https://modrinth.com/datapack/qraftys-mountain-villages)
+<!-- - [Villages Revamped](https://modrinth.com/datapack/villages-revamped) -->
+<!-- - [Japanese Villages](https://modrinth.com/datapack/qraftys-japanese-villages) -->
+<!-- - [End Villages](https://modrinth.com/datapack/qraftys-end-villages) -->
+<!-- - [Halloween Villages](https://modrinth.com/datapack/qraftys-halloween-villages) -->
+<!-- - [Bamboo Villages](https://modrinth.com/datapack/qraftys-bamboo-villages) -->
+<!-- - [Jungle Villages](https://modrinth.com/datapack/qraftys-jungle-villages) -->
+<!-- - [Bunkers](https://modrinth.com/datapack/qraftys-bunkers) -->
+<!-- - [Mushroom Villages](https://modrinth.com/datapack/qraftys-mushroom-villages) -->
+<!-- - [Mountain Villages](https://modrinth.com/datapack/qraftys-mountain-villages) -->
 
-<!-- - [Epic Structures: Villages](https://modrinth.com/datapack/epic-structures-villages) | Future -->
-<!-- - [Epic Structures: Witch Huts](https://modrinth.com/datapack/epic-structures-witch-huts) | Future -->
+- [ATi Structures - Vanilla Edition](https://modrinth.com/datapack/ati-structures-vanilla-edition)
+- [Grim kingdoms: Vanilla Edition](https://modrinth.com/datapack/grim-kingdoms-lost-structures-ruins-vanilla-edition)
+- [Epic Structures: Villages](https://modrinth.com/datapack/epic-structures-villages)
+- [Epic Structures: Witch Huts](https://modrinth.com/datapack/epic-structures-witch-huts)
+- [Epic Structures: Dungeons](https://modrinth.com/datapack/epic-structures-dungeons)
+- [Epic Structures: Igloo](https://modrinth.com/datapack/epic-structures-igloo)
 
 - [True Ending](https://modrinth.com/datapack/true-ending)
