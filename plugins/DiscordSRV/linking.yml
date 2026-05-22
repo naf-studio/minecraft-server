@@ -1,7 +1,6 @@
 Require linked account to play:
   Enabled: true
 
-
   # If you don't know what these mean, don't touch them
   #
   # The priority that the join listener should be on
@@ -14,7 +13,6 @@ Require linked account to play:
   #
   # If you don't know what these mean, don't touch them
 
-
   # Minecraft IGNs to always allow whether linked or subscriber or not
   Bypass names: [god]
   # Whether players on the VANILLA whitelist will bypass the need to link their accounts/have a sub role
@@ -24,13 +22,11 @@ Require linked account to play:
   # Whether players not in the VANILLA banlist will bypass the need to link their accounts/have a sub role
   Only check banned players: false
 
-
   # Message to kick players with telling them to link their accounts
   # Use {BOT} as a placeholder for the bot's name
   # Use {CODE} as a placeholder for the code people need to DM the bot
   # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
   Not linked message: "&cYOU MUST LINK YOUR DISCORD ACCOUNT TO PLAY!\n\n&7Your code is &b{CODE}&7\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
-
 
   # If enabled, players will not only need to have their accounts linked but will also be required
   # to be a member of a Discord server that the bot is also in.
@@ -46,14 +42,13 @@ Require linked account to play:
   # This option's value is superseded when you have subscriber roles enforced below.
   Must be in Discord server: true
 
-
   # Optionally require people to not only be linked but also to have a one of or all specified roles like a Twitch sub role
   Subscriber role:
     Require subscriber role to join: false
-    Subscriber roles: ["00000000000000000", "00000000000000000", "00000000000000000"]
+    Subscriber roles:
+      ["00000000000000000", "00000000000000000", "00000000000000000"]
     Require all of the listed roles: false # when false, only one of the above roles is required
     Kick message: "&cYOU MUST BE SUBSCRIBED ON TWITCH TO BE ABLE TO PLAY."
-
 
   Messages:
     DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
