@@ -1,13 +1,24 @@
+# For help with webhooks: https://support.discord.com/hc/en-us/articles/228383668
+
 enabled: true
 webhook: ""
+# Set to true to bypass Discord's webhook URL format validation.
+# This allows any valid HTTPS URL (useful for proxies or Matrix forwarders).
+disable-webhook-validation: false
 embed-title: "**Anticheat Alert**"
-embed-color: "#E67E22"
+embed-color: "#E67E22"#00FFFF"
+include-timestamp: true
+# Replaces backticks in values (like client brands) so they don't break Discord's text formatting.
+# Set to "`" to disable this replacement.
+backtick-replacement-char: "ˋ" # Defaults to U+02CB
 violation-content:
-  - "**%player% information:**"
-  - "> Client: %version%"
-  - "> Brand: %brand%"
-  - "> Ping: %ping%"
-  - "> TPS: %tps%"
-  - "**Anticheat information:**"
-  - "> Check: %check%"
-  - "> Violations: %violations%"
+    - "**%player% information:**"
+    - "> Client: %version%"
+    - "> Brand: %brand%"
+    - "> Ping: %ping%"
+    - "> TPS: %tps%"
+    - "**Anticheat information:**"
+    - "> Check: %check%"
+    - "> Violations: %violations%"
+config-flavor: V2
+config-version: 1
