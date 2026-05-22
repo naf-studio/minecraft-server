@@ -12,7 +12,7 @@
 - [CMI-FirstJoinRTP](https://github.com/naipret/cmi-firstjoinrtp)
 
 - [DiscordSRV](https://github.com/DiscordSRV/DiscordSRV)
-- [DiscordSRVUtils](https://github.com/BlueDevelopersInc/DiscordSRVUtils)
+<!-- - [DiscordSRVUtils](https://github.com/BlueDevelopersInc/DiscordSRVUtils) -->
 
 - [GeyserMC](https://geysermc.org/download?project=geyser)
 - [Floodgate](https://geysermc.org/download?project=floodgate)
