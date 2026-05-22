@@ -477,6 +477,9 @@ Optimizations:
     List:
       # Sorts players custom groups in Ascending or descending order
       ASCOrder: true
+    Give:
+      # When enabled items in give command will be limited to same limits as it is set for enchants, same permission requirements will apply
+      LimitEnchants: false
   Multicraft:
     # When set to true, will prevent multicraft servers to spam in console.
     DisableList: false
@@ -658,10 +661,6 @@ ReSpawn:
     - homeLocation
     - worldSpawn
 Holograms:
-  # Defines in milliseconds how often to check if player entered holograms trigger area
-  # Bigger numbers can help slightly lower server load
-  # This is not essential to keep in low numbers
-  CheckInterval: 2000
   Defaults:
     # Default value for hologram view range
     # This defines from how far holograms will appear for the player or when they will disapear
@@ -670,15 +669,21 @@ Holograms:
     # This defines how close player should get for hologram to start updating its text
     # Keep it at reasoble numbers as there is no point to update hologram across map
     updateRange: 8
-    # Defines default update interval
-    # Higher values means that holograms will be updated less often
-    # When value is set to 0 or lower, holograms will not be updated
-    updateInterval: 0.0
-    # Defines default page change interval
+    Interval:
+      # Defines default update interval in ticks, 20 ticks = 1 second
+      # When value is set to 0 or lower, holograms will not be updated
+      # This only applies for holograms with dynamic contents
+      Update: 0
+    # Defines default page change interval in ticks
     # When value is set to 0 or lower, pages will not be changed
     pageChangeInterval: 0.0
-    # Defines if we should place lines up from starting position or down
-    placeUp: true
+    Interaction:
+      # Prefix to be used for lines utilizing CText
+      # This only applies for the sections that have set commands and will not have effect on basic text even with hover text
+      BasePrefix: '{#white}'
+      # Prefix to be used for lines utilizing CText when you hover over it
+      # Can be overriden with hologram editor
+      HoverPrefix: '{#gray}'
 Votifier:
   # When set to true votifier votes will be counted for player
   CountVotes: true
@@ -889,6 +894,8 @@ Spawners:
     # If enabled player will get spawner if using silktouch pickaxe and have cmi.dropspawner permission node
     # If player has cmi.dropspawner.nosilk permission node, player is not required to use silk touch pickaxe to get droped spawner
     Enabled: false
+    # When enabled item stack will receive custom name based on spawners type
+    CustomName: false
     # When enabled instead of dropping spawner on the ground, player will received this item directly into their inventory
     # In case inventory is full then item will be dropped on the ground
     IntoInventory: false
@@ -1581,6 +1588,7 @@ Player:
       receivePets: true
       deathMessages: true
       notarget: false
+      showVehicleSpeed: false
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1602,6 +1610,7 @@ Player:
       receivePets: LEAD
       deathMessages: DEAD_BUSH
       notarget: BEDROCK
+      showVehicleSpeed: MINECART
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec and will not be able to move outside current block

@@ -230,6 +230,15 @@ info:
   oneHour: '{gcs}[hours] {gcp}hour '
   min: '{gcs}[mins] {gcp}min '
   sec: '{gcs}[secs] {gcp}sec '
+  time:
+    separator: '{gcn}:'
+    short:
+      year: '{gcs}[years]{gcp}Y'
+      month: '{gcs}[months]{gcp}M'
+      day: '{gcs}[days]{gcp}d'
+      hour: '{gcs}[hours]{gcp}h'
+      min: '{gcs}[mins]{gcp}m'
+      sec: '{gcs}[secs]{gcp}s'
   nextPageConsole: '{gcn}For next page perform {gcs}[command]'
   prevPage: '{gcn}----<< {gcp}Prev '
   prevCustomPage: '{gcn}----<< {gcp}[value] '
@@ -266,6 +275,14 @@ info:
   basicVector: '{gcp}X:{gcs}[x] {gcp}Y:{gcs}[y]'
   fullVector: '{gcp}X:{gcs}[x] {gcp}Y:{gcs}[y] {gcp}Z:{gcs}[z]'
   incorrectColor: '{gcw}Color defined incorrectly!'
+  updateSpeed: '{gcp}Update speed: {gcs}[value]'
+  serializeAndShow: '{gcp}Serialize and show'
+  amount: '{gcp}Amount: {gcs}[value]'
+  speed: '{gcp}Speed: {gcs}[value]'
+  color: '{gcp}Color: [color]Example'
+  duration: '{gcp}Duration: [value]'
+  size: '{gcp}Size: [value]'
+  value: '{gcp}Value: [value]'
   Spawner: '&r[type] Spawner'
   DamageCause:
     block_explosion: Explosion
@@ -462,157 +479,157 @@ info:
     zombified_piglin: Zombified piglin
   # Avoid adding color codes to the enchant name
   EnchantNames:
-    density: Density
-    spiteful: Spiteful
-    tavern_level_checker: Tavern_Level_Checker
-    loyalty: Loyalty
-    piercing: Piercing
-    riptide: Riptide
-    respiration: Respiration
-    outreach: Outreach
-    shulker_miniboss: Shulker_Miniboss
-    looting: Looting
-    fire_protection: Fire_Protection
-    luck_of_the_sea: Luck_Of_The_Sea
-    vanishing_curse: Vanishing_Curse
-    gravity: Gravity
-    ghasted: Ghasted
-    illagers_bane: Illagers_Bane
-    aqua_affinity: Aqua_Affinity
-    fire_aspect: Fire_Aspect
-    protection: Protection
-    aerials_bane: Aerials_Bane
-    breach: Breach
-    shulker_boss: Shulker_Boss
-    sweeping_edge: Sweeping_Edge
-    traveler: Traveler
-    efficiency: Efficiency
-    librarian_level_checker: Librarian_Level_Checker
-    jockey/spawn_bogged_horseman: Jockey/spawn_Bogged_Horseman
-    impaling: Impaling
-    power: Power
-    knockback: Knockback
-    boss_nether: Boss_Nether
     flame: Flame
-    multishot: Multishot
-    punch: Punch
-    jockey/spawn_zautilus_jockey: Jockey/spawn_Zautilus_Jockey
-    smite: Smite
-    depth_strider: Depth_Strider
-    wither_coated: Wither_Coated
-    thorns: Thorns
-    jockey/spawn_chicken_jockey: Jockey/spawn_Chicken_Jockey
-    hydro_veil: Hydro_Veil
-    fortune: Fortune
-    jockey/spawn_stray_horseman: Jockey/spawn_Stray_Horseman
-    jockey/spawn_camel_husk_jockey: Jockey/spawn_Camel_Husk_Jockey
-    lure: Lure
-    jockey/make_drowned_into_jockey: Jockey/make_Drowned_Into_Jockey
-    infinity: Infinity
-    antidote: Antidote
-    channeling: Channeling
-    boss_behaviour: Boss_Behaviour
-    sharpness: Sharpness
-    blast_protection: Blast_Protection
-    projectile_protection: Projectile_Protection
-    lunge: Lunge
-    photosynthesis: Photosynthesis
-    conductivity_curse: Conductivity_Curse
-    jockey/spawn_skeleton_horseman: Jockey/spawn_Skeleton_Horseman
-    unbreaking: Unbreaking
-    frost_walker: Frost_Walker
-    mending: Mending
     swift_sneak: Swift_Sneak
-    bane_of_arthropods: Bane_Of_Arthropods
-    quick_charge: Quick_Charge
-    soul_speed: Soul_Speed
-    wax_wings: Wax_Wings
-    jockey/spawn_zombie_horseman: Jockey/spawn_Zombie_Horseman
+    piercing: Piercing
+    power: Power
+    outreach: Outreach
+    luck_of_the_sea: Luck_Of_The_Sea
+    respiration: Respiration
+    aqua_affinity: Aqua_Affinity
+    knockback: Knockback
+    aerials_bane: Aerials_Bane
+    lure: Lure
+    boss_behaviour: Boss_Behaviour
     swift_soar: Swift_Soar
-    jockey/spawn_hoglin_jockey: Jockey/spawn_Hoglin_Jockey
+    jockey/make_drowned_into_jockey: Jockey/make_Drowned_Into_Jockey
     feather_falling: Feather_Falling
-    silk_touch: Silk_Touch
+    shulker_boss: Shulker_Boss
+    conductivity_curse: Conductivity_Curse
+    jockey/spawn_zombie_horseman: Jockey/spawn_Zombie_Horseman
+    jockey/spawn_skeleton_horseman: Jockey/spawn_Skeleton_Horseman
+    jockey/spawn_hoglin_jockey: Jockey/spawn_Hoglin_Jockey
+    illagers_bane: Illagers_Bane
+    jockey/spawn_chicken_jockey: Jockey/spawn_Chicken_Jockey
+    efficiency: Efficiency
+    shulker_miniboss: Shulker_Miniboss
+    vanishing_curse: Vanishing_Curse
+    punch: Punch
+    channeling: Channeling
+    looting: Looting
+    photosynthesis: Photosynthesis
+    jockey/spawn_zautilus_jockey: Jockey/spawn_Zautilus_Jockey
+    spiteful: Spiteful
+    quick_charge: Quick_Charge
+    traveler: Traveler
+    protection: Protection
     binding_curse: Binding_Curse
+    impaling: Impaling
+    soul_speed: Soul_Speed
+    thorns: Thorns
+    loyalty: Loyalty
+    infinity: Infinity
+    sharpness: Sharpness
+    jockey/spawn_bogged_horseman: Jockey/spawn_Bogged_Horseman
+    antidote: Antidote
+    jockey/spawn_camel_husk_jockey: Jockey/spawn_Camel_Husk_Jockey
+    fire_aspect: Fire_Aspect
+    librarian_level_checker: Librarian_Level_Checker
+    blast_protection: Blast_Protection
+    bane_of_arthropods: Bane_Of_Arthropods
+    boss_nether: Boss_Nether
     wind_burst: Wind_Burst
+    wither_coated: Wither_Coated
+    wax_wings: Wax_Wings
+    jockey/spawn_stray_horseman: Jockey/spawn_Stray_Horseman
+    frost_walker: Frost_Walker
+    breach: Breach
+    gravity: Gravity
+    tavern_level_checker: Tavern_Level_Checker
+    riptide: Riptide
+    smite: Smite
+    mending: Mending
+    depth_strider: Depth_Strider
+    fire_protection: Fire_Protection
+    hydro_veil: Hydro_Veil
+    multishot: Multishot
+    fortune: Fortune
+    ghasted: Ghasted
+    silk_touch: Silk_Touch
+    projectile_protection: Projectile_Protection
+    sweeping_edge: Sweeping_Edge
+    unbreaking: Unbreaking
+    density: Density
+    lunge: Lunge
   PotionEffectAliases:
-    speed:
-    - Speed
-    levitation:
-    - Levitation
-    blindness:
-    - Blindness
-    weakness:
-    - Weakness
-    fireresistance:
-    - Fire resistance
-    nightvision:
-    - Night vision
-    poison:
-    - Poison
-    dolphinsgrace:
-    - Dolphins grace
-    regeneration:
-    - Regeneration
-    slowness:
-    - Slowness
-    strength:
-    - Strength
-    raidomen:
-    - Raid omen
-    heroofthevillage:
-    - Hero of the village
-    instantdamage:
-    - Instant damage
-    waterbreathing:
-    - Water breathing
-    infested:
-    - Infested
-    oozing:
-    - Oozing
-    hunger:
-    - Hunger
-    wither:
-    - Wither
-    glowing:
-    - Glowing
     jumpboost:
     - Jump boost
-    badomen:
-    - Bad omen
-    healthboost:
-    - Health boost
-    saturation:
-    - Saturation
-    luck:
-    - Luck
-    miningfatigue:
-    - Mining fatigue
-    instanthealth:
-    - Instant health
-    unluck:
-    - Unluck
-    windcharged:
-    - Wind charged
-    conduitpower:
-    - Conduit power
-    slowfalling:
-    - Slow falling
     darkness:
     - Darkness
-    haste:
-    - Haste
-    resistance:
-    - Resistance
-    weaving:
-    - Weaving
-    absorption:
-    - Absorption
+    dolphinsgrace:
+    - Dolphins grace
+    glowing:
+    - Glowing
+    oozing:
+    - Oozing
     trialomen:
     - Trial omen
-    nausea:
-    - Nausea
+    absorption:
+    - Absorption
+    resistance:
+    - Resistance
+    unluck:
+    - Unluck
+    haste:
+    - Haste
+    wither:
+    - Wither
+    instanthealth:
+    - Instant health
+    waterbreathing:
+    - Water breathing
+    weakness:
+    - Weakness
     invisibility:
     - Invisibility
+    fireresistance:
+    - Fire resistance
+    levitation:
+    - Levitation
+    regeneration:
+    - Regeneration
+    blindness:
+    - Blindness
+    luck:
+    - Luck
+    raidomen:
+    - Raid omen
+    badomen:
+    - Bad omen
+    slowness:
+    - Slowness
+    speed:
+    - Speed
+    conduitpower:
+    - Conduit power
+    weaving:
+    - Weaving
+    strength:
+    - Strength
+    windcharged:
+    - Wind charged
+    instantdamage:
+    - Instant damage
+    heroofthevillage:
+    - Hero of the village
+    hunger:
+    - Hunger
+    slowfalling:
+    - Slow falling
+    nausea:
+    - Nausea
+    saturation:
+    - Saturation
+    poison:
+    - Poison
+    nightvision:
+    - Night vision
+    miningfatigue:
+    - Mining fatigue
+    infested:
+    - Infested
+    healthboost:
+    - Health boost
 dialog:
   signEditor: Sign Editor
   update: Update
