@@ -9,11 +9,13 @@ This repository contains the complete configuration, plugin suite, and optimized
 To launch the server, use the startup script corresponding to your operating system. These scripts ensure the server automatically restarts in case of a crash.
 
 ### 🐧 Linux
+
 ```bash
 ./run.sh
 ```
 
 ### 🪟 Windows
+
 ```cmd
 .\run.bat
 ```
@@ -25,21 +27,28 @@ To launch the server, use the startup script corresponding to your operating sys
 ## ⚙️ Configuration
 
 ### 🧩 Initial Setup
+
 After the first launch, run these commands in the console:
+
 - **Permissions**: `lp import "luckperms-naf-default.json.gz"`
-- **Gamerule**: `gamerule playersSleepingPercentage 25`
+<!-- - **Gamerule**: `gamerule playersSleepingPercentage 25` -->
 
 ### 🔧 Maintenance Mode
+
 - **Enable**: `cmi maintenance on` (Closes server to players)
 - **Disable**: `cmi maintenance off` (Opens server to players)
 
 ### 🔑 Security & Tokens
+
 Configure the following sensitive information in their respective YAML files:
+
 - **DiscordSRV**: Bot token and channel IDs in `plugins/DiscordSRV/config.yml`.
 - **GrimAC**: Webhook URLs in `plugins/GrimAC/discord.yml`.
 
 ### 🌐 Network & Ports
+
 Ensure the following ports are correctly mapped/forwarded:
+
 - **Voice Chat**: Set port in `plugins/voicechat-discord/config.yml`.
 - **Bedrock (Geyser)**: Set port in `plugins/Geyser-Spigot/config.yml`.
 
@@ -48,6 +57,7 @@ Ensure the following ports are correctly mapped/forwarded:
 ## 📑 Server Specifications
 
 For a comprehensive documentation of the integrated infrastructure, including the server forks, full list of plugins, datapacks, please refer to:
+
 - [LIST.md](LIST.md)
 
 ---
@@ -63,4 +73,5 @@ The performance of this server is made possible by the following resources:
   - [Java Flags by Leaf](https://www.leafmc.one/docs/how-to/java-flags)
 
 ---
-*Created and maintained by the NAF Team.*
+
+_Created and maintained by the NAF Team._
