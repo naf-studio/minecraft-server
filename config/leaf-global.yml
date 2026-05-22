@@ -127,6 +127,7 @@ performance:
   optimize-mob-despawn: true
   # Whether to only tick / update items in main hand and offhand instead of the entire inventory.
   only-tick-items-in-hand: true
+  optimize-mob-spawning: false
   optimize-no-action-time:
     disable-light-check: false
   # Whether to optimize player movement processing by skipping unnecessary edge checks and avoiding redundant view distance updates.
@@ -138,17 +139,15 @@ performance:
   optimized-powered-rails: true
   reduce-packets:
     reduce-entity-move-packets: false
+    reduce-entity-motion-packets: false
+    disable-useless-particles: false
   skip-ai-for-non-aware-mob: true
   datapack:
     # Skip selecting inactive entities when using execute command.
     # Will improve performance on servers with massive datapack functions.
     skip-inactive-entity-for-execute-command: false
   skip-map-item-data-updates-if-map-does-not-have-craftmaprenderer: true
-  throttle-hopper-when-full:
-    # Throttles the hopper if target container is full.
-    enabled: true
-    # How many ticks to throttle when the Hopper is throttled.
-    skip-ticks: 8
+  sleeping-block-entity: false
   # Skip mob spawning for chunks with repeated failures exceeding `min-failed`.
   # Randomly skip 1-`spawn-chance`% of these chunks from spawning attempts.
   # Failure counter does not increment when spawn limits are reached.
@@ -176,14 +175,19 @@ performance:
       min-failed: 10
       spawn-chance: 20.0
   create-snapshot-on-retrieving-blockstate: false
-  # Use the new Virtual Thread introduced in JDK 21 for CraftAsyncScheduler.
-  use-virtual-thread-for-async-scheduler: true
-  # Use the new Virtual Thread introduced in JDK 21 for Async Chat Executor.
-  use-virtual-thread-for-async-chat-executor: true
-  # Use the new Virtual Thread introduced in JDK 21 for profile lookup executor.
-  use-virtual-thread-for-profile-executor: true
-  # Use the new Virtual Thread introduced in JDK 21 for User Authenticator.
-  use-virtual-thread-for-user-authenticator: true
+  use-virtual-thread:
+    # Use the new Virtual Thread introduced in JDK 21 for CraftAsyncScheduler.
+    bukkit-async-scheduler: false
+    # Use the new Virtual Thread introduced in JDK 21 for FoliaAsyncScheduler.
+    folia-async-scheduler: false
+    # Use the new Virtual Thread introduced in JDK 21 for Async Chat Executor.
+    async-chat-executor: true
+    # Use the new Virtual Thread introduced in JDK 21 for profile fetching executor.
+    download-pool: false
+    # Use the new Virtual Thread introduced in JDK 21 for user authentication.
+    auth-pool: true
+    # Use the new Virtual Thread introduced in JDK 21 for Paper task pool in configuration phase.
+    paper-configuration-pool: true
 
 ###########
 #  FIXES  #
@@ -194,6 +198,11 @@ fixes:
     # Whether to fix incorrect granting of 'Who needs rockets?' advancement.
     # Mojira link: https://mojira.dev/MC-270656
     mc-270656: false
+    # Whether to fix the memory leak in the combat tracker caused by the mob constantly being damaged.
+    # Mojira link: https://mojira.dev/MC-301114
+    mc-301114: false
+    # Max allowed entries in mob's combat tracker.
+    mc-301114-max-entries: 10240
   # Prevents entities from moving into weak loaded chunks.
   prevent-moving-into-weak-loaded-chunks:
     # Set to true to enable features below.
@@ -232,16 +241,7 @@ gameplay-mechanisms:
     horizontal-force: 0.5
     # Upward motion for randomly dropped items.
     vertical-force: 0.2
-  # Controls whether specified component information would be sent to clients.
-  # It may break resource packs and mods that rely on the information.
-  # Also, it can avoid some frequent client animations.
-  # Attention: This is not same as Paper's item-obfuscation, we only hide specified component information from player's inventory.
-  hide-item-component:
-    # Which type of components will be hidden from clients.
-    # It needs a component type list, incorrect things will not work.
-    hidden-types: []
-    # If enabled, specified item component information from player's inventory will be hided.
-    enabled: false
+  ice-and-snow-chance: 48
   knockback:
     # Make snowball can knockback players.
     snowball-knockback-players: false
@@ -249,6 +249,7 @@ gameplay-mechanisms:
     egg-knockback-players: false
     # Make players can knockback zombie.
     can-player-knockback-zombie: true
+    # Synchronize player immediately when knocked back.
     flush-location-while-knockback-player: false
     old-blast-protection-explosion-knockback: false
   # Enable to make only player pushable
@@ -276,6 +277,7 @@ gameplay-mechanisms:
     # Maximum delay (in ticks) between spawner spawns. Higher values slow down spawners.
     max-spawn-delay: 800
   use-spigot-item-merging-mechanism: true
+  use-vanilla-hopper: false
 
 #############
 #  NETWORK  #
@@ -297,6 +299,7 @@ network:
   # Requires server restart to take effect.
   OptimizeNonFlushPacketSending: true
   protocol-support:
+    strict-mode: false
     jade-protocol: false
     appleskin-protocol: false
     appleskin-protocol-sync-tick-interval: 20
@@ -330,6 +333,10 @@ misc:
       enabled: true
       # Quit message of player
       message: default
+  disable-world-data-saving:
+    # Worlds listed here will skip world data persistence.
+    # Changes in chunks/entities remain in memory until unload/restart and are not written to disk.
+    worlds: []
   including-5s-in-get-tps: true
   # This section contains lag compensation features,
   # which could ensure basic playing experience during a lag.
