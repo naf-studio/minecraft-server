@@ -482,10 +482,6 @@ Alias:
   hologram:
     Enabled: true
     Tab: true
-  # /cmi hologram2 $1-
-  hologram2:
-    Enabled: true
-    Tab: true
   # /cmi hologrampages $1-
   hologrampages:
     Enabled: true
@@ -797,6 +793,10 @@ Alias:
     Tab: true
   # /cmi panimation $1-
   panimation:
+    Enabled: true
+    Tab: true
+  # /cmi particlepicker $1-
+  particlepicker:
     Enabled: true
     Tab: true
   # /cmi patrol $1-
