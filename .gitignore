@@ -1,5 +1,7 @@
 *
 
+!.editorconfig
+!.gitattributes
 !.gitignore
 
 !config
