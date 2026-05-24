@@ -22,7 +22,7 @@ spawnpoint-command-enabled: true
 #
 # Default (Vanilla): "spawnpoint %player% %x% %y% %z%"
 # CMI Recommendation: "cmi sethome firstspawn %player% -p -l:%world%;%x%;%y%;%z% -overwrite"
-spawnpoint-command: "spawnpoint %player% %x% %y% %z%"
+spawnpoint-command: "cmi sethome firstspawn %player% -p -l:%world%;%x%;%y%;%z% -overwrite"
 
 # The amount of ticks to wait after the RTP teleport finishes before unhiding the player.
 # 20 ticks = 1 second.
