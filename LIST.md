@@ -50,7 +50,7 @@
 - [Biome Saplings](https://modrinth.com/datapack/terralith-biome-saplings)
 - [Incendium](https://modrinth.com/datapack/incendium)
 - [IBO](https://modrinth.com/datapack/ibo)
-<!-- - [Nullscape](https://modrinth.com/datapack/nullscape) -->
+- [Nullscape](https://modrinth.com/datapack/nullscape)
 - [Structory](https://modrinth.com/datapack/structory)
 - [Towers](https://modrinth.com/datapack/structory-towers)
 
@@ -90,5 +90,4 @@
 - [Epic Structures: Dungeons](https://modrinth.com/datapack/epic-structures-dungeons)
 - [Epic Structures: Igloo](https://modrinth.com/datapack/epic-structures-igloo)
 
-- [Stellarity ~ Lite](https://modrinth.com/datapack/stellarity-lite)
 - [True Ending](https://modrinth.com/datapack/true-ending)
