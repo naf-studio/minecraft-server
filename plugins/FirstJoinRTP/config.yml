@@ -1,17 +1,28 @@
 # Target world to check for first join RTP
 target-world: "world"
 
+# Whether to enable the custom Random Teleport command execution
+rtp-command-enabled: true
+
 # Command to execute for Random Teleport
-# Used when the player enters the target world for the first time
+# Used when the player enters the target world for the first time.
+#
+# Placeholders: %player%, %world%
+#
+# Default (Vanilla): "spreadplayers 0 0 150 10000 false %player%"
+# CMI Recommendation: "cmi rt %player% %world%"
 rtp-command: "cmi rt %player% %world%"
 
-# The name of the home to save for the player
-home-name: "firstjoin"
+# Whether to enable the custom spawnpoint command execution
+spawnpoint-command-enabled: true
 
-# Command to execute to save the home (uses CMI sethome silent mode if possible)
-# Available placeholders: %homename%, %player%, %world%, %x%, %y%, %z%
-# The logic will replace these placeholders with the actual teleport destination.
-sethome-command: "cmi sethome %homename% %player% -p -l:%world%;%x%;%y%;%z% -overwrite"
+# Command to set the player's spawnpoint or home after successful RTP.
+#
+# Placeholders: %player%, %world%, %x%, %y%, %z%
+#
+# Default (Vanilla): "spawnpoint %player% %x% %y% %z%"
+# CMI Recommendation: "cmi sethome firstspawn %player% -p -l:%world%;%x%;%y%;%z% -overwrite"
+spawnpoint-command: "spawnpoint %player% %x% %y% %z%"
 
 # The amount of ticks to wait after the RTP teleport finishes before unhiding the player.
 # 20 ticks = 1 second.
