@@ -31,7 +31,7 @@ To launch the server, use the startup script corresponding to your operating sys
 After the first launch, run these commands in the console:
 
 - **Permissions**: `lp import "luckperms-naf-default.json.gz"`
-<!-- - **Gamerule**: `gamerule playersSleepingPercentage 25` -->
+- **Gamerule**: `gamerule players_sleeping_percentage 25`, `gamerule locator_bar false`
 
 ### 🔧 Maintenance Mode
 
