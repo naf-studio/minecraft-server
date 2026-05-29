@@ -65,7 +65,7 @@ advancements:
 world-settings:
   default:
     below-zero-generation-in-existing-chunks: true
-    arrow-despawn-rate: 1200
+    arrow-despawn-rate: 600
     trident-despawn-rate: 1200
     item-despawn-rate: 6000
     nerf-spawner-mobs: false
@@ -154,7 +154,7 @@ world-settings:
       display: 96
       other: 64
     merge-radius:
-      exp: 4.0
+      exp: 6.0
       item: 3.5
     hunger:
       jump-walk-exhaustion: 0.05
