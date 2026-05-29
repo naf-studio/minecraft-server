@@ -9,7 +9,7 @@ _version: 31
 anticheat:
   anti-xray:
     enabled: true
-    engine-mode: 2
+    engine-mode: 1
     hidden-blocks:
     - air
     - ancient_debris
