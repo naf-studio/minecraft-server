@@ -493,7 +493,7 @@ world-settings:
         always-drop-exp: false
         minimum-demand: 0
         lobotomize:
-          enabled: false
+          enabled: true
           check-interval: 100
           wait-until-trade-locked: false
         display-trade-item: true
