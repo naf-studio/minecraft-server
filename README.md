@@ -52,6 +52,25 @@ Ensure the following ports are correctly mapped/forwarded:
 - **Voice Chat**: Set port in `plugins/voicechat-discord/config.yml`.
 - **Bedrock (Geyser)**: Set port in `plugins/Geyser-Spigot/config.yml`.
 
+### 💻 Hardware-Specific Adjustments
+
+Based on your server's host specs (vCores, RAM, SSD), you should adjust the following values for optimal performance:
+
+1. **Parallel World Ticking (CPU Threads)**
+   - **File**: `config/leaf-global.yml` -> `async.parallel-world-ticking.threads`
+   - **Rule of Thumb**: Set to `(Total vCores) - 1`.
+   - *Example*: If your Pterodactyl host gives you 400% CPU (4 vCores), set this to `3` (dedicating 3 cores for the 3 main worlds, and 1 for the system/network). If 600% CPU, set to `4` or `5`.
+
+2. **DAB (Distant Activation Behavior) & AI Optimization**
+   - **File**: `config/leaf-global.yml` -> `performance.dab.start-distance`
+   - **Rule of Thumb**: This value **must** be slightly less than your `simulation-distance` in `server.properties`.
+   - *Example*: With a `simulation-distance` of 6, set `start-distance` to `4` or `5` so AI begins slowing down *before* they completely stop ticking at chunk 6.
+
+3. **Disk I/O / Chunk Saving**
+   - **File**: `config/paper-world-defaults.yml` -> `chunks.max-auto-save-chunks-per-tick`
+   - **Rule of Thumb**: Increase for NVMe/SSDs, decrease for HDDs.
+   - *Example*: We use `8` to utilize fast SSD I/O, preventing lag spikes when the server auto-saves massive worlds.
+
 ---
 
 ## 📑 Server Specifications
@@ -74,4 +93,4 @@ The performance of this server is made possible by the following resources:
 
 ---
 
-_Created and maintained by the NAF Team._
+*Created and maintained by the NAF Team.*
