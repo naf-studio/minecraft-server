@@ -213,7 +213,7 @@ entities:
         soft: 32
       monster:
         hard: 96
-        soft: 24
+        soft: 32
       underground_water_creature:
         hard: 128
         soft: 32
