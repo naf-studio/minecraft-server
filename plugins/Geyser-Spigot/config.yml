@@ -1,12 +1,12 @@
 # --------------------------------
 # Geyser Configuration File
-# 
+#
 # A bridge between Minecraft: Bedrock Edition and Minecraft: Java Edition.
-# 
+#
 # GitHub: https://github.com/GeyserMC/Geyser
 # Discord: https://discord.gg/geysermc
 # Wiki: https://geysermc.org/wiki
-# 
+#
 # NOTICE: See https://geysermc.org/wiki/geyser/setup/ for the setup guide. Many video tutorials are outdated.
 # In most cases, especially with server hosting providers, further hosting-specific configuration is required.
 # --------------------------------
@@ -23,7 +23,7 @@ bedrock:
 
   # Some hosting services change your Java port everytime you start the server and require the same port to be used for Bedrock.
   # This option makes the Bedrock port the same as the Java port every time you start the server.
-  clone-remote-port: false
+  clone-remote-port: true
 
 # Network settings for the Java server connection
 java:
