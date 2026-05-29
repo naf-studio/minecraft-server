@@ -97,7 +97,7 @@ performance:
       enderman-look-for-player: -1
   fast-biome-manager-seed-obfuscation:
     # Replace vanilla SHA-256 seed obfuscation in BiomeManager with XXHash.
-    enabled: false
+    enabled: true
     # Seed obfuscation key for XXHash.
     seed-obfuscation-key: 7544867116911564421
   # Use faster random generator?
@@ -138,9 +138,9 @@ performance:
   # The implementation is based on RailOptimization made by GitHub@FxMorin
   optimized-powered-rails: true
   reduce-packets:
-    reduce-entity-move-packets: false
-    reduce-entity-motion-packets: false
-    disable-useless-particles: false
+    reduce-entity-move-packets: true
+    reduce-entity-motion-packets: true
+    disable-useless-particles: true
   skip-ai-for-non-aware-mob: true
   datapack:
     # Skip selecting inactive entities when using execute command.
@@ -177,7 +177,7 @@ performance:
   create-snapshot-on-retrieving-blockstate: false
   use-virtual-thread:
     # Use the new Virtual Thread introduced in JDK 21 for CraftAsyncScheduler.
-    bukkit-async-scheduler: false
+    bukkit-async-scheduler: true
     # Use the new Virtual Thread introduced in JDK 21 for FoliaAsyncScheduler.
     folia-async-scheduler: false
     # Use the new Virtual Thread introduced in JDK 21 for Async Chat Executor.
@@ -297,7 +297,7 @@ network:
   # expensive thread wakeup calls when scheduling packet operations.
   # 
   # Requires server restart to take effect.
-  OptimizeNonFlushPacketSending: true
+  OptimizeNonFlushPacketSending: false
   protocol-support:
     strict-mode: false
     jade-protocol: false
