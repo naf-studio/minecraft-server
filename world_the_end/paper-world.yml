@@ -6,3 +6,10 @@
 # World: world_the_end (minecraft:the_end)
 
 _version: 31
+spawning:
+  alt-item-despawn-rate:
+    enabled: true
+    items:
+      chorus_fruit: 300
+      end_stone: 300
+      ender_pearl: 300
