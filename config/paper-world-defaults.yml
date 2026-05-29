@@ -1,13 +1,13 @@
 # This is the world defaults configuration file for Paper.
 # As you can see, there's a lot to configure. Some options may impact gameplay, so use
 # with caution, and make sure you know what each option does before configuring.
-# 
+#
 # If you need help with the configuration or have any questions related to Paper,
 # join us in our Discord or check the docs page.
-# 
+#
 # Configuration options here apply to all worlds, unless you specify overrides inside
 # the world-specific config file inside each world folder.
-# 
+#
 # File Reference: https://docs.papermc.io/paper/reference/world-configuration/
 # Docs: https://docs.papermc.io/
 # Discord: https://discord.gg/papermc
@@ -75,7 +75,7 @@ chunks:
     wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 12
+  max-auto-save-chunks-per-tick: 8
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
@@ -153,7 +153,7 @@ entities:
       enabled: true
       items:
         acacia_leaves: 600
-        andesite: 600
+        andesite: 300
         arrow: 900
         bamboo: 1200
         birch_leaves: 600
@@ -162,15 +162,15 @@ entities:
         bone_meal: 1200
         cactus: 1200
         cobbled_deepslate: 600
-        cobblestone: 600
+        cobblestone: 300
         cod: 1200
         dark_oak_leaves: 600
-        diorite: 600
-        dirt: 600
+        diorite: 300
+        dirt: 300
         egg: 900
         ender_pearl: 900
         feather: 900
-        granite: 600
+        granite: 300
         gravel: 600
         gunpowder: 1200
         ink_sac: 900
@@ -184,7 +184,7 @@ entities:
         phantom_membrane: 900
         pumpkin: 1200
         red_sand: 600
-        rotten_flesh: 900
+        rotten_flesh: 300
         salmon: 1200
         sand: 600
         scaffolding: 1200
