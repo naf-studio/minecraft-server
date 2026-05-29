@@ -81,7 +81,7 @@ collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: false
-  max-entity-collisions: 8
+  max-entity-collisions: 4
   only-players-collide: false
 command-blocks:
   force-follow-perm-level: true
