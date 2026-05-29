@@ -31,3 +31,11 @@ anticheat:
     - soul_soil
     update-radius: 2
     use-permission: false
+spawning:
+  alt-item-despawn-rate:
+    enabled: true
+    items:
+      basalt: 300
+      blackstone: 300
+      netherrack: 300
+      rotten_flesh: 300
