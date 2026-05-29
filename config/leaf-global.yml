@@ -44,7 +44,7 @@ async:
   # Enables parallel world ticking to improve performance on multi-core systems.
   parallel-world-ticking:
     enabled: true
-    threads: 8
+    threads: 3
     log-container-creation-stacktraces: false
     disable-hard-throw: false
     async-unsafe-read-handling: BUFFERED
@@ -64,8 +64,8 @@ performance:
     # Disable save primed tnt on chunk unloads.
     # Useful for redstone/technical servers, can prevent machines from being exploded by TNT,
     # when player disconnected caused by Internet issue.
-    dont-save-primed-tnt: false
-    dont-save-falling-block: false
+    dont-save-primed-tnt: true
+    dont-save-falling-block: true
   # Optimizes entity brains when
   # they're far away from the player
   dab:
@@ -75,7 +75,7 @@ performance:
     dont-enable-if-in-water: false
     # This value determines how far away an entity has to be
     # from the player to start being effected by DEAR.
-    start-distance: 12
+    start-distance: 5
     # This value defines how often in ticks, the furthest entity
     # will get their pathfinders and behaviors ticked. 20 = 1s
     max-tick-freq: 20
@@ -83,7 +83,7 @@ performance:
     # tick frequency. freq = (distanceToPlayer^2) / (2^value)",
     # If you want further away entities to tick less often, use 7.
     # If you want further away entities to tick more often, try 9.
-    activation-dist-mod: 8
+    activation-dist-mod: 7
     # A list of entities to ignore for activation
     blacklisted-entities: []
   # Whether to cache expensive CraftEntityType#minecraftToBukkit call.
@@ -197,18 +197,18 @@ fixes:
   vanilla-bug-fix:
     # Whether to fix incorrect granting of 'Who needs rockets?' advancement.
     # Mojira link: https://mojira.dev/MC-270656
-    mc-270656: false
+    mc-270656: true
     # Whether to fix the memory leak in the combat tracker caused by the mob constantly being damaged.
     # Mojira link: https://mojira.dev/MC-301114
-    mc-301114: false
+    mc-301114: true
     # Max allowed entries in mob's combat tracker.
     mc-301114-max-entries: 10240
   # Prevents entities from moving into weak loaded chunks.
   prevent-moving-into-weak-loaded-chunks:
     # Set to true to enable features below.
-    enabled: false
+    enabled: true
     # Prevents projectiles from moving into weak loaded chunks.
-    projectiles: false
+    projectiles: true
 
 ##############
 #  GAMEPLAY  #
