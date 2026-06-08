@@ -205,7 +205,7 @@ fixes:
     mc-301114-max-entries: 10240
     # Whether to fix the bug End City ship generation gets cut at chunk borders.
     # Mojira link: https://mojira.dev/MC-152094
-    mc-152094: false
+    mc-152094: true
   # Prevents entities from moving into weak loaded chunks.
   prevent-moving-into-weak-loaded-chunks:
     # Set to true to enable features below.
