@@ -1,0 +1,45 @@
+# The hour and minute when the server should restart (24 hour format)
+# Format: Day;Hour:Minute
+# Day can be: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or Daily
+# Example: "Daily;03:00" for every day at 3 AM
+restartTime:
+  - "Daily;00:00"
+
+# Add multiple times by adding a new line like: - '12:00'
+
+
+#
+# Messages
+#
+
+# Messages can either use legacy or MiniMessage (preferred) color codes.
+# https://webui.advntr.dev/
+
+# Configure message and the corresponding pre-warning time in seconds
+messages:
+  "0": "Restarting now"
+  "1": "Restarting in 1 second"
+  "2": "Restarting in 2 seconds"
+  "3": "Restarting in 3 seconds"
+  "10": "Restarting in 10 seconds"
+  "60": "Restarting in 1 minute"
+  "180": "Restarting in 3 minutes"
+  "300": "Restarting in 5 minutes"
+
+titles:
+  "300": "<bold><dark_red>Warning"
+  "180": "<bold><dark_red>Warning"
+  "60": "<bold><dark_red>Warning"
+  "10": "<bold><dark_red>Warning"
+  "3": "<bold><dark_red>Warning"
+
+subtitles:
+  "300": "<gold>Restarting in 5 minutes"
+  "180": "<gold>Restarting in 3 minutes"
+  "60": "<gold>Restarting in 1 minute"
+  "10": "<gold>Restarting in 10 seconds"
+  "3": "<gold>Restarting now..."
+
+# The commands that will be executed at restart time
+commands:
+  - "restart"
