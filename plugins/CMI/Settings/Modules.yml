@@ -23,7 +23,7 @@ worldLimitsElytra: true
 #  
 # Login, logout and death messages
 # Applies for servers from 1.7.x and up
-customMessages: true
+customMessages: false
 #  
 # First join messages
 # Applies for servers from 1.7.x and up
@@ -95,15 +95,15 @@ armorEffects: true
 #  
 # Handling of player tagging in chat and tabcomplete with @
 # Applies for servers from 1.7.x and up
-playerChatTag: true
+playerChatTag: false
 #  
 # Handling of chat bubbles
 # Applies for servers from 1.20.x and up
-chatBubble: true
+chatBubble: false
 #  
 # Handling of tablist
 # Applies for servers from 1.7.x and up
-tablist: true
+tablist: false
 #  
 # Handling of painting editing with shift+right click
 # Applies for servers from 1.7.x and up
@@ -159,7 +159,7 @@ ranks: true
 #  
 # Handles votifier system
 # Applies for servers from 1.7.x and up
-votifier: true
+votifier: false
 #  
 # Handles player combat system
 # Applies for servers from 1.7.x and up
@@ -207,7 +207,7 @@ selection: true
 #  
 # Handles mob and player hp bars as boss bar
 # Applies for servers from 1.9.x and up
-hpBossBar: true
+hpBossBar: false
 #  
 # Handling of afk feature. This will disable any checks related to afk and players will never get into afk mode
 # Applies for servers from 1.9.x and up
@@ -267,7 +267,7 @@ launchPad: true
 #  
 # Handling of custom death messages
 # Applies for servers from 1.7.x and up
-deathMessages: true
+deathMessages: false
 #  
 # Handling of server links
 # Applies for servers from 1.7.x and up
