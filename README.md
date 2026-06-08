@@ -30,8 +30,57 @@ To launch the server, use the startup script corresponding to your operating sys
 
 After the first launch, run these commands in the console:
 
-- **Permissions**: `lp import "luckperms-naf-default.json.gz"`
-- **Gamerule**: `gamerule players_sleeping_percentage 25`, `gamerule locator_bar false`
+- **Permissions**:
+
+```bash
+lp import "luckperms-naf-default.json.gz"
+```
+
+- **Gamerule**:
+
+```bash
+gamerule players_sleeping_percentage 25
+gamerule locator_bar false
+```
+
+### 🗺️ World Borders & Pre-generation (Chunky)
+
+To configure the world borders and set up pre-generation safely from the console (using `execute in` to guarantee correct targeting regardless of the console context or player position), execute the following commands:
+
+#### 1. Overworld
+
+```bash
+execute in minecraft:overworld run worldborder center 0 0
+execute in minecraft:overworld run worldborder set 20000
+chunky world world
+chunky center 0 0
+chunky radius 10000
+chunky border add
+```
+
+#### 2. Nether
+
+```bash
+execute in minecraft:the_nether run worldborder center 0 0
+execute in minecraft:the_nether run worldborder set 20000
+chunky world world_nether
+chunky center 0 0
+chunky radius 10000
+chunky border add
+```
+
+#### 3. The End
+
+```bash
+execute in minecraft:the_end run worldborder center 0 0
+execute in minecraft:the_end run worldborder set 20000
+chunky world world_the_end
+chunky center 0 0
+chunky radius 10000
+chunky border add
+```
+
+> **Tip**: Verify the configured borders at any time by running `chunky border list`.
 
 ### 🔧 Maintenance Mode
 
