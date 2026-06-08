@@ -1051,13 +1051,16 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 4
-# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom, custom
+# All possible damage causes: kill, world_border, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, fly_into_wall, campfire, cramming, dryout, freeze, sonic_boom, custom
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
 # If player have more than one permission node for same damage cause, then last one in list will be used to determine final damage
 DamageControl:
-- nowalldamage:fly_into_wall:1
+  # When enabled some of the damage values can be adjusted
+  Enabled: false
+  List:
+  - nowalldamage:fly_into_wall:1
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
   RemoveFromInventory: false
@@ -1296,6 +1299,8 @@ Kits:
   FillEmptyFields: true
   # When enabled players can preview kits they have access to or have cmi.kit.[kitName].preview or cmi.kit.[kitName].* permission node
   KitPreview: true
+  # Defines how {DATE} value will be formatted
+  DateFormat: yyyy-MM-dd HH:mm:ss
   Buttons:
     # Icons for kit preview gui
     # Setting icon to invalid item will hide button
@@ -1901,6 +1906,9 @@ Sounds:
   MailNotification: entity_creeper_hurt:1:0.5
   TeleportUp: entity_enderman_teleport:2:1
   TeleportDown: entity_enderman_teleport:0.2:1
+  CommandWarmup: blockrespawnanchorcharge:1:1
+  CommandWarmupRunning: blockrespawnanchorcharge:1:1
+  CommandCooldown: blocknoteblockpling:0.5:0.5
 PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state

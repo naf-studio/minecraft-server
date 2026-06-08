@@ -232,3 +232,26 @@ ChatBubble:
     Opacity: 0.5
   # Do you want to add text shadow
   Shadow: true
+  # Higher group will be prioritized if player has access to more than one permission node
+  # Colors are defined in hex format with optional alpha channel in RGBA format
+  Groups:
+    '0':
+      BackgroundColor: '#000000DC'
+      Shadow: true
+      LineWidth: 255
+      Scale: 0.5
+    '1':
+      BackgroundColor: '#AEC6FFDC'
+      Shadow: true
+      LineWidth: 255
+      Scale: 0.5
+    '2':
+      BackgroundColor: '#BAFFC9DC'
+      Shadow: true
+      LineWidth: 255
+      Scale: 0.5
+    '3':
+      BackgroundColor: '#FFFFBADC'
+      Shadow: true
+      LineWidth: 255
+      Scale: 0.5

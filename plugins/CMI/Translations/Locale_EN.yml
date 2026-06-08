@@ -261,7 +261,9 @@ afk:
     through discord'
 BossBar:
   hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
-  playerhpBar: '&f%cmi_user_display_name% &7[current]&f/&7[max] &f(&c-[damage]&f)'
+  playerHpBar: '{gcs}%cmi_user_display_name% {gcs}[current]{gcs}[currentAbsorption]/{gcs}[max][maxAbsorption]
+    {gcs}({gcw}-[damage]{gcs})'
+  absorption: '{gcs}({gcn}[value]{gcs})'
 Potion:
   Effects: '&8Potion effects'
   List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
@@ -3348,6 +3350,9 @@ command:
     help:
       info: '&eTrigger schedule'
       args: '[scheduleName] (-updatetimer)'
+    info:
+      list: '{gcs}[name] {gcp}in {gcs}[time]'
+      hover: '{gcp}Trigger at {gcs}[time]'
   se:
     help:
       info: '&eChanges sign text line.'
