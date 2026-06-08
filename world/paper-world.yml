@@ -8,44 +8,39 @@
 _version: 31
 anticheat:
   anti-xray:
+    chunk-edge-mode: 2
     enabled: true
     engine-mode: 1
     hidden-blocks:
-    - air
     - copper_ore
     - deepslate_copper_ore
     - raw_copper_block
-    - diamond_ore
-    - deepslate_diamond_ore
     - gold_ore
     - deepslate_gold_ore
     - iron_ore
     - deepslate_iron_ore
     - raw_iron_block
-    - lapis_ore
-    - deepslate_lapis_ore
-    - redstone_ore
-    - deepslate_redstone_ore
-    lava-obscures: false
-    max-block-height: 64
-    replacement-blocks:
-    - chest
-    - amethyst_block
-    - andesite
-    - budding_amethyst
-    - calcite
     - coal_ore
     - deepslate_coal_ore
-    - deepslate
-    - diorite
-    - dirt
+    - lapis_ore
+    - deepslate_lapis_ore
+    - mossy_cobblestone
+    - obsidian
+    - chest
+    - diamond_ore
+    - deepslate_diamond_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - clay
     - emerald_ore
     - deepslate_emerald_ore
-    - granite
-    - gravel
-    - oak_planks
-    - smooth_basalt
+    - ender_chest
+    lava-obscures: false
+    max-block-height: 64
+    max-chunk-section-index: 3
+    replacement-blocks:
     - stone
-    - tuff
+    - oak_planks
+    - deepslate
     update-radius: 2
     use-permission: false
