@@ -148,9 +148,9 @@ performance:
     skip-inactive-entity-for-execute-command: false
   skip-map-item-data-updates-if-map-does-not-have-craftmaprenderer: true
   sleeping-block-entity: false
-  # Skip mob spawning for chunks with repeated failures exceeding `min-failed`.
-  # Randomly skip 1-`spawn-chance`% of these chunks from spawning attempts.
-  # Failure counter does not increment when spawn limits are reached.
+  # Skip mob spawning for chunks with repeated failures at least `min-failed`.
+  # Valid range for `spawn-chance` is 0.0 to 100.0.
+  # Failure counter does not increment when reach spawn limits.
   throttle-mob-spawning:
     enabled: true
     monster:
@@ -203,6 +203,9 @@ fixes:
     mc-301114: true
     # Max allowed entries in mob's combat tracker.
     mc-301114-max-entries: 10240
+    # Whether to fix the bug End City ship generation gets cut at chunk borders.
+    # Mojira link: https://mojira.dev/MC-152094
+    mc-152094: false
   # Prevents entities from moving into weak loaded chunks.
   prevent-moving-into-weak-loaded-chunks:
     # Set to true to enable features below.
@@ -344,6 +347,16 @@ misc:
     enabled: false
     enable-for-water: false
     enable-for-lava: false
+  # Linear is a region format that uses zstd compression instead of zlib.
+  # This format saves about 50% of disk space.
+  # Read Leaf docs before using!
+  region-format:
+    # Available region format names: MCA, B_LINEAR, LINEAR_V2
+    format-name: MCA
+    compress-level: 1
+    io-thread-count: 6
+    io-flush-delay: -1
+    linear-use-virtual-thread: true
   # Enable to prevent console spam.
   remove-change-non-editable-sign-warning: false
   # Enable player enter backend server through proxy
