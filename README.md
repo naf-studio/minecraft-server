@@ -30,22 +30,22 @@ To launch the server, use the startup script corresponding to your operating sys
 
 After the first launch, run these commands in the console:
 
-- **Permissions**:
+#### 1. Permissions
 
 ```bash
 lp import "luckperms-naf-default.json.gz"
 ```
 
-- **Gamerule**:
+#### 2. Gamerule
 
 ```bash
 gamerule players_sleeping_percentage 25
 gamerule locator_bar false
 ```
 
-### 🗺️ World Borders & Pre-generation (Chunky)
+### 🗺️ World Borders & Pre-generation
 
-To configure the world borders and set up pre-generation safely from the console (using `execute in` to guarantee correct targeting regardless of the console context or player position), execute the following commands:
+To configure the world borders, set up selections, and start pre-generation safely from the console, execute the following commands:
 
 #### 1. Overworld
 
@@ -56,6 +56,7 @@ chunky world world
 chunky center 0 0
 chunky radius 10000
 chunky border add
+chunky start
 ```
 
 #### 2. Nether
@@ -67,6 +68,7 @@ chunky world world_nether
 chunky center 0 0
 chunky radius 10000
 chunky border add
+chunky start
 ```
 
 #### 3. The End
@@ -78,9 +80,8 @@ chunky world world_the_end
 chunky center 0 0
 chunky radius 10000
 chunky border add
+chunky start
 ```
-
-> **Tip**: Verify the configured borders at any time by running `chunky border list`.
 
 ### 🔧 Maintenance Mode
 
