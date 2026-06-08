@@ -38,6 +38,8 @@
 
 - [ODailyQuests](https://modrinth.com/plugin/odailyquests)
 
+- [Simple Auto Restart](https://modrinth.com/plugin/simpleautorestart)
+
 - [SkinsRestorer](https://modrinth.com/plugin/skinsrestorer)
 
 - [ViaVersion](https://github.com/ViaVersion/ViaVersion)
