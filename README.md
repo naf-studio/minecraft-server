@@ -66,11 +66,6 @@ Based on your server's host specs (vCores, RAM, SSD), you should adjust the foll
    - **Rule of Thumb**: This value **must** be slightly less than your `simulation-distance` in `server.properties`.
    - *Example*: With a `simulation-distance` of 6, set `start-distance` to `4` or `5` so AI begins slowing down *before* they completely stop ticking at chunk 6.
 
-3. **Disk I/O / Chunk Saving**
-   - **File**: `config/paper-world-defaults.yml` -> `chunks.max-auto-save-chunks-per-tick`
-   - **Rule of Thumb**: Increase for NVMe/SSDs, decrease for HDDs.
-   - *Example*: We use `8` to utilize fast SSD I/O, preventing lag spikes when the server auto-saves massive worlds.
-
 ---
 
 ## 📑 Server Specifications

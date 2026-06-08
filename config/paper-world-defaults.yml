@@ -75,7 +75,7 @@ chunks:
     wither_skull: 4
   fixed-chunk-inhabited-time: -1
   flush-regions-on-save: false
-  max-auto-save-chunks-per-tick: 8
+  max-auto-save-chunks-per-tick: 12
   prevent-moving-into-unloaded-chunks: true
 collisions:
   allow-player-cramming-damage: false
