@@ -52,6 +52,7 @@
 - [Biome Saplings](https://modrinth.com/datapack/terralith-biome-saplings)
 - [Incendium](https://modrinth.com/datapack/incendium)
 - [IBO](https://modrinth.com/datapack/ibo)
+- [incendium121](https://github.com/naipret/naf-incendium121-plugin)
 - [Nullscape](https://modrinth.com/datapack/nullscape)
 - [Structory](https://modrinth.com/datapack/structory)
 - [Towers](https://modrinth.com/datapack/structory-towers)
