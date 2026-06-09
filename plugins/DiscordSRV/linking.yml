@@ -26,7 +26,7 @@ Require linked account to play:
   # Use {BOT} as a placeholder for the bot's name
   # Use {CODE} as a placeholder for the code people need to DM the bot
   # Use {INVITE} as a placeholder for the invite link people need to join the Discord server, uses DiscordInviteLink configured in config.yml
-  Not linked message: "&cYOU MUST LINK YOUR DISCORD ACCOUNT TO PLAY!\n\n&7Your code is &b{CODE}&7\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+  Not linked message: "&cYOU MUST LINK YOUR DISCORD ACCOUNT TO PLAY!\n\n&7Your code is &b{CODE}&7\n\n&7Please join our Discord &9discord.nafmc.xyz&7 for more information!"
 
   # If enabled, players will not only need to have their accounts linked but will also be required
   # to be a member of a Discord server that the bot is also in.
@@ -51,8 +51,8 @@ Require linked account to play:
     Kick message: "&cYOU MUST BE SUBSCRIBED ON TWITCH TO BE ABLE TO PLAY."
 
   Messages:
-    DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+    DiscordSRV still starting: "&cCurrently unavailable to check link status because the server is still connecting to Discord.\n\n&7Please join our Discord &9discord.nafmc.xyz&7 for more information!"
     Not in server: "&cYOU ARE CURRENTLY NOT A PART OF OUR DISCORD SERVER!\n\n&7Please join our Discord to play &b{INVITE}!"
-    Failed to find subscriber role: "&cFAILED TO FIND ANY SUBSCRIBER ROLE ON DISCORD.\nContact your server admins about this issue.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
-    Failed for unknown reason: "&cAN ERROR OCCURRED WHILE TRYING TO VERIFY YOUR ACCOUNT.\nContact your server admin about this issue.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
-    Kicked for unlinking: "&cYOU HAVE BEEN UNLINKED YOUR ACCOUNTS.\n&7Please rejoin the server to link your accounts again.\n\n&7Please join our Discord &9dsc.gg/nafd&7 for more information!"
+    Failed to find subscriber role: "&cFAILED TO FIND ANY SUBSCRIBER ROLE ON DISCORD.\nContact your server admins about this issue.\n\n&7Please join our Discord &9discord.nafmc.xyz&7 for more information!"
+    Failed for unknown reason: "&cAN ERROR OCCURRED WHILE TRYING TO VERIFY YOUR ACCOUNT.\nContact your server admin about this issue.\n\n&7Please join our Discord &9discord.nafmc.xyz&7 for more information!"
+    Kicked for unlinking: "&cYOU HAVE BEEN UNLINKED YOUR ACCOUNTS.\n&7Please rejoin the server to link your accounts again.\n\n&7Please join our Discord &9discord.nafmc.xyz&7 for more information!"
