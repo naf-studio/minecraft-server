@@ -39,25 +39,25 @@ messages:
     &cOUTDATED CLIENT!
     &rPlease use version &41.21.11
 
-    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+    &rPlease join our Discord &9discord.nafmc.xyz&r for more information!
   outdated-server: |-
     &cOUTDATED SERVER!
     &rServer still on version &41.21.11
 
-    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+    &rPlease join our Discord &9discord.nafmc.xyz&r for more information!
   restart: |-
     &cSERVER IS RESTARTING!
 
-    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+    &rPlease join our Discord &9discord.nafmc.xyz&r for more information!
   server-full: |-
     &cSERVER IS FULL!
 
-    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+    &rPlease join our Discord &9discord.nafmc.xyz&r for more information!
   unknown-command: '&4[System] Unknown command. Type "/help" for help.'
   whitelist: |-
     &cYOU ARE NOT WHITELISTED!
 
-    &rPlease join our Discord &9dsc.gg/nafd&r for more information!
+    &rPlease join our Discord &9discord.nafmc.xyz&r for more information!
 advancements:
   disable-saving: false
   disabled:

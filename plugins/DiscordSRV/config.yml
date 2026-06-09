@@ -33,7 +33,7 @@ Channels: {"global": "1129081325442310315", "link": "1332181653094797342", "watc
 DiscordConsoleChannelId: "000000000000000000"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
-DiscordInviteLink: "https://dsc.gg/nafd"
+DiscordInviteLink: "https://discord.nafmc.xyz"
 
 # Experiments
 # These features are not fully optimized; use at your own risk
