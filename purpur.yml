@@ -51,7 +51,7 @@ settings:
       short-height: false
   network:
     upnp-port-forwarding: false
-    max-joins-per-second: false
+    max-joins-per-second: 3
   command:
     rambar:
       title: <gray>Ram<yellow>:</yellow> <used>/<xmx> (<percent>)
