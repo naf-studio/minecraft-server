@@ -99,11 +99,11 @@ playerChatTag: false
 #  
 # Handling of chat bubbles
 # Applies for servers from 1.20.x and up
-chatBubble: false
+chatBubble: true
 #  
 # Handling of tablist
 # Applies for servers from 1.7.x and up
-tablist: false
+tablist: true
 #  
 # Handling of painting editing with shift+right click
 # Applies for servers from 1.7.x and up
