@@ -412,36 +412,20 @@ Alerts:
   #   Channel: 'global'
 
   ################################################################
-  #  A D M I N   L O G S (Channel: adminlog)                     #
+  #  C O M B A T   L O G S (Channel: combatlog)                  #
   ################################################################
 
-  # VANISH ENTER (ADMIN)
-  - Trigger: com.Zrips.CMI.events.CMIPlayerVanishEvent
-    Channel: "adminlog"
+  # PVP KILL AND COMBAT LOGGING DEATHS
+  - Trigger: org.bukkit.event.entity.PlayerDeathEvent
+    Channel: "combatlog"
+    Conditions:
+      - "#event.getEntity().getKiller() != null || (#event.getDeathMessage() != null && #event.getDeathMessage().toLowerCase().matches('.*(combat|pvp|log|thoát|trốn).*'))"
     Embed:
       Color: "#ff0000"
       Author:
-        ImageUrl: "{embedavatarurl}"
-        Name: "%cmi_user_nameplate_prefix%{displayname} have vanished"
-
-  # VANISH LEAVE (ADMIN)
-  - Trigger: com.Zrips.CMI.events.CMIPlayerUnVanishEvent
-    Channel: "adminlog"
-    Embed:
-      Color: "#00FF00"
-      Author:
-        ImageUrl: "{embedavatarurl}"
-        Name: "%cmi_user_nameplate_prefix%{displayname} became visible"
-
-  # (COMMENTED OPTIONAL ALERTS)
-  # - Trigger: github.scarsz.discordsrv.api.events.AccountLinkedEvent
-  #   Channel: 'adminlog'
-  # - Trigger: github.scarsz.discordsrv.api.events.AccountUnlinkedEvent
-  #   Channel: 'adminlog'
-  # - Trigger: 'org.bukkit.event.player.PlayerJoinEvent' # spy log joins
-  #   Channel: 'adminlog'
-  # - Trigger: 'org.bukkit.event.player.PlayerQuitEvent' # spy log quits
-  #   Channel: 'adminlog'
+        ImageUrl: "https://mineskin.eu/avatar/${#event.getEntity().getName()}"
+        Name: "PVP DEATH ALERT"
+      Description: "**Victim**: `{displayname}`\n**Killer**: `${#event.getEntity().getKiller() != null ? #event.getEntity().getKiller().getName() : 'None / Combat Log'}`\n**Message**: `${#event.getDeathMessage()}`\n**Location**: `[${#event.getEntity().getLocation().getBlockX() + ' ' + #event.getEntity().getLocation().getBlockY() + ' ' + #event.getEntity().getLocation().getBlockZ()}]` {world}"
 
   ################################################################
   #  S E R V E R   E V E N T S (Channel: watchdog)               #
