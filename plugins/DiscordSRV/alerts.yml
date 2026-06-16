@@ -424,7 +424,7 @@ Alerts:
       Color: "#ff0000"
       Author:
         ImageUrl: "https://mineskin.eu/avatar/${#event.getEntity().getName()}"
-        Name: "PVP DEATH ALERT"
+        Name: "COMBAT LOG"
       Description: "**Victim**: `{displayname}`\n**Killer**: `${#event.getEntity().getKiller() != null ? #event.getEntity().getKiller().getName() : 'None / Combat Log'}`\n**Message**: `${#event.getDeathMessage()}`\n**Location**: `[${#event.getEntity().getLocation().getBlockX() + ' ' + #event.getEntity().getLocation().getBlockY() + ' ' + #event.getEntity().getLocation().getBlockZ()}]` {world}"
 
   ################################################################
