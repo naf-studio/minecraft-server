@@ -347,18 +347,24 @@ Alerts:
     Channel: "spylog"
     Conditions:
       - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
-    Content: |-
-      Hey staff, {username} tried to run a command with some sussy words
-      `[${#event.getPlayer().getLocation().getBlockX() + ' ' + #event.getPlayer().getLocation().getBlockY() + ' ' + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "SUSSY COMMAND"
+      Description: "`{username}` tried to run a command with some sussy words\n```/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} {world}``````${#event.getMessage()}```
 
   # CATCH PLAYER SAYING SUSSY WORDS (SPYLOG)
   - Trigger: org.bukkit.event.player.AsyncPlayerChatEvent
     Channel: "spylog"
     Conditions:
       - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
-    Content: |-
-      Hey staff, {username} sent some sussy words
-      `[${#event.getPlayer().getLocation().getBlockX() + ' ' + #event.getPlayer().getLocation().getBlockY() + ' ' + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "SUSSY WORD"
+      Description: "`{username}` sent some sussy words\n```/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} {world}``````${#event.getMessage()}```
 
   ################################################################
   #  G L O B A L   A L E R T S (Channel: global)                 #
@@ -425,7 +431,7 @@ Alerts:
       Author:
         ImageUrl: "{embedavatarurl}"
         Name: "COMBAT LOG"
-      Description: "**Victim**: `{displayname}`\n**Killer**: `${#event.getEntity().getKiller() != null ? #event.getEntity().getKiller().getName() : 'None / Combat Log'}`\n**Message**: `${#event.getDeathMessage()}`\n**Location**: `[${#event.getEntity().getLocation().getBlockX() + ' ' + #event.getEntity().getLocation().getBlockY() + ' ' + #event.getEntity().getLocation().getBlockZ()}]` {world}"
+      Description: "**Victim**: `{displayname}`\n**Killer**: `${#event.getEntity().getKiller() != null ? #event.getEntity().getKiller().getName() : 'None / Combat Log'}`\n**Message**: `${#event.getDeathMessage()}`\n```/tppos ${#event.getEntity().getLocation().getBlockX()} ${#event.getEntity().getLocation().getBlockY()} ${#event.getEntity().getLocation().getBlockZ()} {world}```
 
   ################################################################
   #  S E R V E R   E V E N T S (Channel: watchdog)               #
