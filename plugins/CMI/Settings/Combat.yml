@@ -31,6 +31,11 @@ Combat:
     AllowedCommands:
     - cmi msg
     - cmi reply
+    - msg
+    - r
+    - reply
+    - tell
+    - w
     # When set to true AllowedCommands become black list which will define which commands player cant use
     MakeBlackList: false
   Mob:
