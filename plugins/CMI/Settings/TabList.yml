@@ -39,8 +39,7 @@ TabList:
     Footer:
       '1':
       - '&8------------------------------------'
-      - '&7Online: &f%server_online%&7/&f%server_max_players% &7| &7Ping: &f%cmi_user_ping%ms
-        &7| &7Time: &f%server_time_HH:MM%'
+      - '&7Online: &f%server_online%&7/&f%server_max_players% &7| &7Ping: &f%cmi_user_ping%ms'
       - '&8------------------------------------'
   useGeneralName: false
   # When this set to true, in case you dint defined PlayerName, Header or Footer in GroupFormat, then default one from GeneralFormat will be used
