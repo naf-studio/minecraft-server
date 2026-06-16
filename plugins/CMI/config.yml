@@ -792,7 +792,7 @@ Command:
   CommandFilter:
     Duplicate:
       # When set to true, plugin will prevent spaming of same or similar command in short time range. Can be bypased with cmi.commandfilter.bypass permission
-      Use: false
+      Use: true
       # How much in percentage command is counted as same
       Percentage: 80
       # Defines how often in seconds you can send same/similar commands
@@ -803,8 +803,12 @@ Command:
       WhiteList:
       - msg
       - tell
+      - r
+      - w
       - login
+      - log
       - register
+      - reg
     # Priority of command spam listener
     # Changed priority will only take effect on full server restart
     # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
