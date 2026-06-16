@@ -1,6 +1,6 @@
 Combat:
   # Defines combat timer to be used in particular features
-  Timer: 10
+  Timer: 15
   # When enabled we will allow for players to be damaged in safe zone if they are tagged for pvp
   safeZoneDamage: false
   Player:
