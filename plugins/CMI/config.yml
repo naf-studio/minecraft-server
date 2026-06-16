@@ -751,7 +751,7 @@ Signs:
   # Defines in milliseconds how often to check if player entered Dynamic Sign trigger area
   # Bigger numbers can help slightly lower server load
   # This is not essential to keep in low numbers
-  CheckInterval: 3000
+  CheckInterval: 5000
   # Defines list sign top lines which cant be edited with shift right click
   # Usually used for preventing shop sign modifications
   editBlackList:
@@ -1029,9 +1029,9 @@ NetherPortal:
 Portals:
   # Defines in milliseconds how often to check if player entered portal or not
   # Bigger numbers can help slightly lower server load but small portals, 1 block depth without back wall can be passed through without teleportations if player moves fast enought
-  CheckInterval: 300
+  CheckInterval: 1000
   # Defines in milliseconds how often to check if player entered portal range for particles to apear
-  CheckParticleInterval: 500
+  CheckParticleInterval: 1000
   Defaults:
     # Should we perform commands without set destination location by default
     # This only effects newly created portal areas
