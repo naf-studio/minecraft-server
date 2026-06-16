@@ -281,7 +281,7 @@ Alerts:
     Embed:
       Color: "#000000"
       Author:
-        ImageUrl: "https://mineskin.eu/avatar/${#event.getPlayer().getName()}"
+        ImageUrl: "{embedavatarurl}"
         Name: "SIGN EDITED"
       Description: "`${#event.getPlayer().getName()}` edited a sign\n```/tppos ${#event.getBlock().getLocation().getBlockX()} ${#event.getBlock().getLocation().getBlockY()} ${#event.getBlock().getLocation().getBlockZ()} {world}``````${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
 
@@ -291,7 +291,7 @@ Alerts:
     Embed:
       Color: "#000000"
       Author:
-        ImageUrl: "https://mineskin.eu/avatar/${#event.getPlayer().getName()}"
+        ImageUrl: "{embedavatarurl}"
         Name: 'BOOK ${#event.isSigning() ? "SIGNED" : "EDITED"}'
       Description: |
         `${#event.getPlayer().getName()}` ${#event.isSigning() ? "signed a book" : "edited a book"} with title `${#event.getNewBookMeta().getTitle() ?: "untitled (unsngned)"}`
@@ -333,7 +333,7 @@ Alerts:
   #   Embed:
   #     Color: "#000001"
   #     Author:
-  #       ImageUrl: "https://crafatar.com/avatars/${player.getUniqueId()}?overlay"
+  #       ImageUrl: "{embedavatarurl}"
   #       Name: '${player.displayName}'
   #     Title:
   #       Text: "Gamemode updated to:"
@@ -423,7 +423,7 @@ Alerts:
     Embed:
       Color: "#ff0000"
       Author:
-        ImageUrl: "https://mineskin.eu/avatar/${#event.getEntity().getName()}"
+        ImageUrl: "{embedavatarurl}"
         Name: "COMBAT LOG"
       Description: "**Victim**: `{displayname}`\n**Killer**: `${#event.getEntity().getKiller() != null ? #event.getEntity().getKiller().getName() : 'None / Combat Log'}`\n**Message**: `${#event.getDeathMessage()}`\n**Location**: `[${#event.getEntity().getLocation().getBlockX() + ' ' + #event.getEntity().getLocation().getBlockY() + ' ' + #event.getEntity().getLocation().getBlockZ()}]` {world}"
 
