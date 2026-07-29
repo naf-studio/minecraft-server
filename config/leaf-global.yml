@@ -145,7 +145,7 @@ performance:
   datapack:
     # Skip selecting inactive entities when using execute command.
     # Will improve performance on servers with massive datapack functions.
-    skip-inactive-entity-for-execute-command: false
+    skip-inactive-entity-for-execute-command: true
   skip-map-item-data-updates-if-map-does-not-have-craftmaprenderer: true
   sleeping-block-entity: false
   # Skip mob spawning for chunks with repeated failures at least `min-failed`.
