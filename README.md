@@ -40,7 +40,6 @@ lp import "luckperms-naf-default.json.gz"
 
 ```bash
 gamerule players_sleeping_percentage 25
-gamerule locator_bar false
 ```
 
 ### 🗺️ World Borders & Pre-generation
@@ -50,6 +49,7 @@ To configure the world borders, set up selections, and start pre-generation safe
 #### 1. Overworld
 
 ```bash
+execute in minecraft:overworld run gamerule locator_bar false
 execute in minecraft:overworld run worldborder center 0 0
 execute in minecraft:overworld run worldborder set 20000
 chunky world world
@@ -62,6 +62,7 @@ chunky start
 #### 2. Nether
 
 ```bash
+execute in minecraft:the_nether run gamerule locator_bar false
 execute in minecraft:the_nether run worldborder center 0 0
 execute in minecraft:the_nether run worldborder set 20000
 chunky world world_nether
@@ -74,6 +75,7 @@ chunky start
 #### 3. The End
 
 ```bash
+execute in minecraft:the_end run gamerule locator_bar false
 execute in minecraft:the_end run worldborder center 0 0
 execute in minecraft:the_end run worldborder set 20000
 chunky world world_the_end
@@ -81,6 +83,12 @@ chunky center 0 0
 chunky radius 10000
 chunky border add
 chunky start
+```
+
+#### 4. Limbo
+
+```bash
+execute in minecraft:limbo run gamerule locator_bar false
 ```
 
 ### 🔧 Maintenance Mode
