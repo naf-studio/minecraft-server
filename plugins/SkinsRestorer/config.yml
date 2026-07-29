@@ -95,7 +95,7 @@ commands:
     # [?] this is useful if you host your own image server.
     restrictSkinUrls:
         enabled: false
-        list:
+        list: 
         - https://i.imgur.com
         - http://i.imgur.com
         - https://storage.googleapis.com
@@ -108,7 +108,7 @@ commands:
     # Can be bypassed with 'skinsrestorer.bypassdisabled'.
     disabledSkins:
         enabled: false
-        list:
+        list: 
         - steve
         - owner
     # To enable per skin permissions you must agree to these rules:
@@ -137,7 +137,7 @@ commands:
         # This only affects the base help message when running /skin with no parameters, not the error/subcommand help messages.
         enabled: false
         # The custom help message to send to the player when running /skin with no parameters.
-        message:
+        message: 
         - <yellow>Skin plugin Help
         - <gray>---------------------
         - <gray>/skin set <skin> - <yellow>Set your skin
@@ -172,7 +172,7 @@ gui:
         # Whether only specific custom skins are allowed in the /skins GUI
         onlyShowList: false
         # Specific custom skins to show in the /skins GUI
-        list:
+        list: 
         - xknat
         - pistonmaster
     # Control player skins in the /skins GUI
@@ -184,7 +184,7 @@ gui:
         # Whether only specific player skins are allowed in the /skins GUI
         onlyShowList: false
         # Specific player skins to show in the /skins GUI
-        list:
+        list: 
         - 7dcfc130-344a-4719-9fbe-3176bc2075c6
         - b1ae0778-4817-436c-96a3-a72c67cda060
     # Control recommended skins in the /skins GUI
@@ -196,7 +196,7 @@ gui:
         # Whether only specific recommended skins are allowed in the /skins GUI
         onlyShowList: false
         # Specific recommended skins to show in the /skins GUI
-        list:
+        list: 
         - vampire
         - space-suit
 
@@ -215,7 +215,7 @@ storage:
     defaultSkins:
         enabled: false
         applyForPremium: false
-        list:
+        list: 
         - xknat
         - pistonmaster
         - <random>
@@ -247,7 +247,7 @@ proxy:
         # When false means servers in the list are NOT allowed to execute SkinsRestorer commands, true means ONLY servers in the list are allowed to execute SkinsRestorer commands.
         allowList: false
         # List of servers where SkinsRestorer commands are allowed/disallowed depending on the 'allowList' setting.
-        list:
+        list: 
         - auth
 
 ##########
@@ -285,6 +285,10 @@ login:
     noSkinIfLoginCanceled: true
     # This will make SkinsRestorer always apply the skin even if the player joins as premium on an online mode server.
     alwaysApplyPremium: true
+    offlineModeWarning:
+        # Sends a one-time warning to offline-mode players that some third-party launchers can override SkinsRestorer skins.
+        # SkinsRestorer cannot detect the exact launcher. Players can dismiss the warning with /skin notification ignore-cracked-client.
+        enabled: true
 api:
     # Here you can fill in your APIKey for lower MineSkin request times.
     # Key can be requested from https://mineskin.org/apikey
@@ -364,15 +368,15 @@ dev:
 # End #
 
 # Useful tools:
-#
+# 
 # SkinFile Generator:
 # With SkinFile Generator, you can upload your own custom skin to get a unique .skin file that you can put in your skins folder, to use with SkinsRestorer.
 # Check it out here: https://generator.skinsrestorer.net
-#
+# 
 # SkinSystem:
 # With SkinSystem, you, as a server owner, can connect AuthMe with the SkinSystem website that you can host, to give your players the ability to upload custom skins.
 # Check it out here: https://github.com/SkinsRestorer/SkinSystem
-#
+# 
 # Useful Links #
 # Website: https://skinsrestorer.net
 # Docs: https://skinsrestorer.net/docs
