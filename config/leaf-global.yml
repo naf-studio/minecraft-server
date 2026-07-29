@@ -75,7 +75,7 @@ performance:
     dont-enable-if-in-water: false
     # This value determines how far away an entity has to be
     # from the player to start being effected by DEAR.
-    start-distance: 5
+    start-distance: 4
     # This value defines how often in ticks, the furthest entity
     # will get their pathfinders and behaviors ticked. 20 = 1s
     max-tick-freq: 20
