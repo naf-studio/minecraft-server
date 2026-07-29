@@ -29,9 +29,9 @@ RandomTeleportation:
       Range:
         # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
         # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
-        Max: 3000
+        Max: 5000
         # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-        Min: 1000
+        Min: 3000
       Center:
         X: 0
         Z: 0
