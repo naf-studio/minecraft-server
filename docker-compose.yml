@@ -1,0 +1,22 @@
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    environment:
+      - MEMORY=12G
+      - TZ=Asia/Ho_Chi_Minh
+      - AUTO_SETUP=true
+    ports:
+      - "25565:25565/tcp"
+      - "19132:19132/udp"
+      - "24454:24454/udp"
+    volumes:
+      - ./config:/server/config
+      - ./plugins:/server/plugins
+      - ./world:/server/world
+      - ./world_nether:/server/world_nether
+      - ./world_the_end:/server/world_the_end
+      - ./server.properties:/server/server.properties

@@ -46,21 +46,42 @@ download_file() {
 
 echo "Reading server manifest..."
 
-# Use python3 to parse manifest and output download tasks
+# Use python3 to parse manifest and download assets
 python3 -c "
-import json, os, subprocess
+import json, os, sys, urllib.request
 
-with open('${MANIFEST_FILE}', 'r', encoding='utf-8') as f:
+manifest_path = '${MANIFEST_FILE}'
+script_dir = '${SCRIPT_DIR}'
+plugins_dir = '${PLUGINS_DIR}'
+
+with open(manifest_path, 'r', encoding='utf-8') as f:
     manifest = json.load(f)
+
+def download(name, url, dest):
+    if os.path.isfile(dest):
+        print(f'  [OK] {name} already exists. Skipping.')
+        return
+    print(f'  -> Downloading {name}...')
+    tmp = dest + '.tmp'
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'NAF-Server-Setup/1.0'})
+        with urllib.request.urlopen(req) as resp, open(tmp, 'wb') as out_f:
+            while chunk := resp.read(65536):
+                out_f.write(chunk)
+        os.replace(tmp, dest)
+        print(f'  [+] {name} downloaded successfully.')
+    except Exception as e:
+        print(f'  [ERROR] Failed to download {name} from {url}: {e}', file=sys.stderr)
+        if os.path.isfile(tmp):
+            os.remove(tmp)
 
 print('\n=== 1. Server Core ===')
 server = manifest.get('server', {})
 s_name = server.get('name', 'server')
 s_url = server.get('url', '')
-s_file = os.path.join('${SCRIPT_DIR}', server.get('filename', 'server.jar'))
-
+s_file = os.path.join(script_dir, server.get('filename', 'server.jar'))
 if s_url:
-    subprocess.run(['bash', '-c', f'download_file \"{s_name}\" \"{s_url}\" \"{s_file}\"'], env=os.environ)
+    download(s_name, s_url, s_file)
 
 print('\n=== 2. Plugins Ecosystem ===')
 for p in manifest.get('plugins', []):
@@ -69,7 +90,7 @@ for p in manifest.get('plugins', []):
     url = p.get('url')
     commercial = p.get('commercial', False)
     homepage = p.get('homepage')
-    dest = os.path.join('${PLUGINS_DIR}', fname)
+    dest = os.path.join(plugins_dir, fname)
 
     if commercial:
         if os.path.isfile(dest):
@@ -79,7 +100,7 @@ for p in manifest.get('plugins', []):
         continue
 
     if url:
-        subprocess.run(['bash', '-c', f'download_file \"{name}\" \"{url}\" \"{dest}\"'], env=os.environ)
+        download(name, url, dest)
     elif homepage:
         if not os.path.isfile(dest):
             print(f'  [!] {name} requires manual download from: {homepage}')
