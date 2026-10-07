@@ -1,52 +1,112 @@
-# 🌲 NAF Minecraft Server
+# NAF Studio - Minecraft Server
 
-This repository contains the complete configuration, plugin suite, and optimized scripts for the **NAF Minecraft Server**. Built on **LeafMC**, this setup is designed for high performance, rich world generation, and seamless integration between platforms.
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-brightgreen.svg)](https://papermc.io/)
+[![Server Core](https://img.shields.io/badge/Core-LeafMC-00AF5C.svg)](https://github.com/Winds-Studio/Leaf)
+[![Java](https://img.shields.io/badge/Java-21_--_25-orange.svg)](https://adoptium.net/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+Production server configurations, LeafMC environment setup, and deployment scripts for the NAF Minecraft Server (Season 8, Minecraft 1.21.11). Built on LeafMC for high performance, rich world generation, and cross-platform Bedrock support.
 
 ---
 
-## 🚀 Quick Start
+## 1. Architectural Overview & System Design
 
-To launch the server, use the startup script corresponding to your operating system. These scripts ensure the server automatically restarts in case of a crash.
+```text
+minecraft-server/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── pull_request_template.md
+├── config/
+├── plugins/
+├── world/
+│   └── datapacks/
+├── world_nether/
+├── world_the_end/
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── run.ps1
+├── run.sh
+├── server-manifest.json
+├── setup.ps1
+├── setup.sh
+└── README.md
+```
 
-### 🐧 Linux
+### Engineering Decisions & Standards
+
+- Decouples binary JAR files from version control, maintaining repository history under lightweight text configurations.
+- Declares server core and plugin dependencies in `server-manifest.json`, providing a machine-readable single source of truth.
+- Provides cross-platform automated setup scripts (`setup.ps1` for Windows, `setup.sh` for Linux) that download and verify all dependencies.
+- Standardizes production startup scripts on modern PowerShell (`run.ps1`) and Bash (`run.sh`) with synchronized meowice-flags and crash restart loops.
+- Enforces strict `.gitignore` rules that prevent runtime churn (world chunks, player data, logs, databases) from polluting Git history.
+
+---
+
+## 2. Quick Start
+
+### 1. Download Dependencies
+
+Run the setup script for your operating system to download the Leaf server core and plugins:
+
+On Linux:
 
 ```bash
+chmod +x setup.sh run.sh
+./setup.sh
+```
+
+On Windows (PowerShell):
+
+```powershell
+.\setup.ps1
+```
+
+> [!NOTE]
+> CMI is a commercial plugin. If utilizing CMI, place your licensed JAR file into `plugins/` prior to launch.
+
+### 2. Launch Server
+
+On Linux:
+
+```bash
+chmod +x run.sh
 ./run.sh
 ```
 
-### 🪟 Windows
+On Windows (PowerShell):
 
-```cmd
-.\run.bat
+```powershell
+.\run.ps1
 ```
 
-> **Note**: To stop the auto-restart loop, press `CTRL + C` during the 5-second countdown after the server stops.
+To stop the auto-restart loop, press `Ctrl + C` during the 5-second countdown after the server stops.
 
 ---
 
-## ⚙️ Configuration
+## 3. Initial Configuration & Administration
 
-### 🧩 Initial Setup
+### Permissions Setup
 
-After the first launch, run these commands in the console:
-
-#### 1. Permissions
+Import the bundled default LuckPerms configuration from the console:
 
 ```bash
-lp import "luckperms-naf-default.json.gz"
+lp import luckperms-naf-default.json.gz
 ```
 
-#### 2. Gamerule
+### Gamerules
 
 ```bash
 gamerule players_sleeping_percentage 25
 ```
 
-### 🗺️ World Borders & Pre-generation
+### World Borders & Chunk Pre-generation
 
-To configure the world borders, set up selections, and start pre-generation safely from the console, execute the following commands:
+Execute the following commands from the console to establish world boundaries and pre-generate chunks safely:
 
-#### 1. Overworld
+#### Overworld
 
 ```bash
 execute in minecraft:overworld run gamerule locator_bar false
@@ -59,7 +119,7 @@ chunky border add
 chunky start
 ```
 
-#### 2. Nether
+#### The Nether
 
 ```bash
 execute in minecraft:the_nether run gamerule locator_bar false
@@ -72,7 +132,7 @@ chunky border add
 chunky start
 ```
 
-#### 3. The End
+#### The End
 
 ```bash
 execute in minecraft:the_end run gamerule locator_bar false
@@ -85,49 +145,55 @@ chunky border add
 chunky start
 ```
 
-#### 4. Limbo
+#### Limbo
 
 ```bash
 execute in minecraft:limbo run gamerule locator_bar false
 ```
 
-### 🔧 Maintenance Mode
+### Maintenance Mode
 
-- **Enable**: `cmi maintenance on` (Closes server to players)
-- **Disable**: `cmi maintenance off` (Opens server to players)
-
-### 🔑 Security & Tokens
-
-Configure the following sensitive information in their respective YAML files:
-
-- **DiscordSRV**: Bot token and channel IDs in `plugins/DiscordSRV/config.yml`.
-- **GrimAC**: Webhook URLs in `plugins/GrimAC/discord.yml`.
-
-### 🌐 Network & Ports
-
-Ensure the following ports are correctly mapped/forwarded:
-
-- **Voice Chat**: Set port in `plugins/voicechat-discord/config.yml`.
-- **Bedrock (Geyser)**: Set port in `plugins/Geyser-Spigot/config.yml`.
-
-## 📑 Server Specifications
-
-For a comprehensive documentation of the integrated infrastructure, including the server forks, full list of plugins, datapacks, please refer to:
-
-- [LIST.md](LIST.md)
+- Enable: `cmi maintenance on`
+- Disable: `cmi maintenance off`
 
 ---
 
-## 📈 Optimization & Credits
+## 4. Security & Sensitive Tokens
 
-The performance of this server is made possible by the following resources:
+Ensure the following configuration files are updated with your server credentials:
 
-- **JVM Flags**: Optimized using [meowice-flags](https://github.com/MeowIce/meowice-flags).
-- **Optimization Guides**:
-  - [Paper Optimization Guide](https://paper-chan.moe/paper-optimization/)
-  - [Leaf Server Optimization](https://www.leafmc.one/docs/how-to/optimize-leaf-server)
-  - [Java Flags by Leaf](https://www.leafmc.one/docs/how-to/java-flags)
+- DiscordSRV: Bot token and channel IDs in `plugins/DiscordSRV/config.yml`.
+- GrimAC: Webhook URLs in `plugins/GrimAC/discord.yml`.
 
 ---
 
-*Created and maintained by the NAF Team.*
+## 5. Network & Port Mapping
+
+Ensure the following ports are open or mapped in your firewall:
+
+- Minecraft Java: `25565/tcp`
+- Bedrock (Geyser): `19132/udp` (configured in `plugins/Geyser-Spigot/config.yml`)
+- Simple Voice Chat: UDP port configured in `plugins/voicechat/config.yml`
+
+---
+
+## 6. Optimization & Credits
+
+Server performance tuning and JVM optimization are powered by:
+
+- [Leaf](https://github.com/Winds-Studio/Leaf)
+- [meowice-flags](https://github.com/MeowIce/meowice-flags)
+- [Paper Optimization Guide](https://paper-chan.moe/paper-optimization/)
+- [Leaf Server Optimization](https://www.leafmc.one/docs/how-to/optimize-leaf-server)
+
+---
+
+## 7. Contributing
+
+Contributions must follow the standards outlined in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## 8. License
+
+This project is licensed under the [MIT License](LICENSE). Copyright &copy; 2022 [naipret](https://github.com/naipret).
