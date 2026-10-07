@@ -17,13 +17,15 @@ if (-not (Test-Path $serverJar)) {
     exit 1
 }
 
+$Memory = $env:MEMORY
+if (-not $Memory) {
+    $Memory = "8G"
+}
+
 $jvmArgs = @(
     "--add-modules=jdk.incubator.vector",
-    # "-Xms16G",
-    # "-Xmx16",
-    # "-Dterminal.jline=false",
-    # "-Dterminal.ansi=true",
-    # "-XX:+UseTransparentHugePages",
+    "-Xms$Memory",
+    "-Xmx$Memory",
     "-XX:+UseG1GC",
     "-XX:MaxGCPauseMillis=200",
     "-XX:+UnlockExperimentalVMOptions",

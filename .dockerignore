@@ -1,0 +1,12 @@
+.git
+.github
+*.tmp
+logs/
+crash-reports/
+cache/
+.cache/
+libraries/
+versions/
+.paper-remapped/
+*.log
+*.log.gz
