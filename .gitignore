@@ -1,19 +1,44 @@
+# Default ignore all
 *
 
+# Version control & repository configs
 !.editorconfig
 !.gitattributes
 !.gitignore
+!.github
+!.github/**
+!LICENSE
+!README.md
+!CONTRIBUTING.md
+!server-manifest.json
 
+# Server automation scripts
+!setup.ps1
+!setup.sh
+!run.ps1
+!run.sh
+
+# Core server configuration files
+!bukkit.yml
+!commands.yml
+!eula.txt
+!pufferfish.yml
+!purpur.yml
+!server.properties
+!spigot.yml
+!server-icon.png
+
+# Configuration directories
 !config
-!config/*.yml
+!config/**
 
+# Plugins configuration
 !plugins
-!plugins/*
+!plugins/**
 !plugins/__disabled
-!plugins/__disabled/*
-plugins/.paper-remapped
-plugins/.paper-remapped/*
+!plugins/__disabled/**
 
+# Datapacks & world configs
 !world
 !world/paper-world.yml
 !world/gale-world.yml
@@ -28,17 +53,104 @@ plugins/.paper-remapped/*
 !world_the_end/gale-world.yml
 !world_the_end/paper-world.yml
 
-!bukkit.yml
-!commands.yml
-!eula.txt
-!LICENSE
-!LIST.md
-!pufferfish.yml
-!purpur.yml
-!README.md
-!run.bat
-!run.sh
-!server-icon.png
-!server.jar
-!server.properties
-!spigot.yml
+# ==============================================================================
+# Strict runtime & binary ignores (DO NOT COMMIT)
+# ==============================================================================
+
+# Executables & JAR binaries
+*.jar
+plugins/**/*.jar
+server.jar
+*.tmp
+
+# Runtime logs and crash reports
+logs/
+logs/**
+crash-reports/
+crash-reports/**
+*.log
+*.log.gz
+
+# Cache, libraries and remap data
+cache/
+cache/**
+.cache/
+.cache/**
+libraries/
+libraries/**
+versions/
+versions/**
+.paper-remapped/
+.paper-remapped/**
+plugins/.paper-remapped/
+plugins/.paper-remapped/**
+
+# Server player cache and lists
+usercache.json
+whitelist.json
+ops.json
+banned-players.json
+banned-ips.json
+
+# Plugin runtime databases and backups
+plugins/*/*.db
+plugins/*/*.sqlite
+plugins/*/*.log
+plugins/*/logs/
+plugins/*/logs/**
+plugins/*/backups/
+plugins/*/backups/**
+plugins/*/session.lock
+
+# World chunks, regions and player data
+world/region/
+world/region/**
+world/entities/
+world/entities/**
+world/poi/
+world/poi/**
+world/data/
+world/data/**
+world/playerdata/
+world/playerdata/**
+world/stats/
+world/stats/**
+world/advancements/
+world/advancements/**
+world/level.dat*
+world/session.lock
+
+world_nether/region/
+world_nether/region/**
+world_nether/entities/
+world_nether/entities/**
+world_nether/poi/
+world_nether/poi/**
+world_nether/data/
+world_nether/data/**
+world_nether/playerdata/
+world_nether/playerdata/**
+world_nether/stats/
+world_nether/stats/**
+world_nether/level.dat*
+world_nether/session.lock
+
+world_the_end/region/
+world_the_end/region/**
+world_the_end/entities/
+world_the_end/entities/**
+world_the_end/poi/
+world_the_end/poi/**
+world_the_end/data/
+world_the_end/data/**
+world_the_end/playerdata/
+world_the_end/playerdata/**
+world_the_end/stats/
+world_the_end/stats/**
+world_the_end/level.dat*
+world_the_end/session.lock
+
+# OS metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db

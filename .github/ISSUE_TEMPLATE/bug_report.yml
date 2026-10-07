@@ -1,0 +1,32 @@
+name: "Bug Report"
+description: "Report a configuration error, server crash, or unintended plugin behavior"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please provide the details requested below.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the issue encountered.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: Steps or in-game actions that trigger the issue.
+      placeholder: |
+        1. Join server
+        2. Execute '/...'
+        3. Observe unexpected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server Console Logs
+      description: Paste relevant crash reports or server console stacktraces.
+      render: shell
