@@ -22,10 +22,13 @@ minecraft-server/
 │   └── datapacks/
 ├── world_nether/
 ├── world_the_end/
+├── .dockerignore
 ├── .editorconfig
 ├── .gitattributes
 ├── .gitignore
 ├── CONTRIBUTING.md
+├── Dockerfile
+├── docker-compose.yml
 ├── LICENSE
 ├── run.ps1
 ├── run.sh
@@ -41,15 +44,40 @@ minecraft-server/
 - Declares server core and plugin dependencies in `server-manifest.json`, providing a machine-readable single source of truth.
 - Provides cross-platform automated setup scripts (`setup.ps1` for Windows, `setup.sh` for Linux) that download and verify all dependencies.
 - Standardizes production startup scripts on modern PowerShell (`run.ps1`) and Bash (`run.sh`) with synchronized meowice-flags and crash restart loops.
+- Provides production containerization via `Dockerfile` and `docker-compose.yml` on Eclipse Temurin 21 JRE with automatic setup resolution.
 - Enforces strict `.gitignore` rules that prevent runtime churn (world chunks, player data, logs, databases) from polluting Git history.
 
 ---
 
 ## 2. Quick Start
 
-### 1. Download Dependencies
+### Option A: Containerized Deployment (Docker Compose)
 
-Run the setup script for your operating system to download the Leaf server core and plugins:
+Launch the containerized server with automatic dependency resolution and JVM tuning:
+
+```bash
+docker compose up -d
+```
+
+View live server logs:
+
+```bash
+docker compose logs -f
+```
+
+Attach to the server console:
+
+```bash
+docker attach naf-minecraft-server
+```
+
+> [!NOTE]
+> To detach from the container console without stopping the server, press `Ctrl + P` followed by `Ctrl + Q`.
+> CMI is a commercial plugin. Place licensed JAR files into `plugins/` before launching.
+
+### Option B: Local Execution
+
+#### 1. Download Dependencies
 
 On Linux:
 
@@ -67,7 +95,7 @@ On Windows (PowerShell):
 > [!NOTE]
 > CMI is a commercial plugin. If utilizing CMI, place your licensed JAR file into `plugins/` prior to launch.
 
-### 2. Launch Server
+#### 2. Launch Server
 
 On Linux:
 

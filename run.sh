@@ -18,13 +18,12 @@ if [ ! -f "${SCRIPT_DIR}/server.jar" ]; then
     exit 1
 fi
 
+MEMORY="${MEMORY:-8G}"
+
 JVM_ARGS=(
     --add-modules=jdk.incubator.vector
-    # -Xms16G
-    # -Xmx16
-    # -Dterminal.jline=false
-    # -Dterminal.ansi=true
-    # -XX:+UseTransparentHugePages
+    -Xms"${MEMORY}"
+    -Xmx"${MEMORY}"
     -XX:+UseG1GC
     -XX:MaxGCPauseMillis=200
     -XX:+UnlockExperimentalVMOptions
