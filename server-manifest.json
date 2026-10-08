@@ -57,7 +57,7 @@
       "name": "FastAsyncWorldEdit",
       "version": "2.16.0",
       "filename": "FastAsyncWorldEdit-Paper-2.16.0.jar",
-      "url": "https://cdn.modrinth.com/data/z4HZZnLr/versions/MOe9fY3h/FastAsyncWorldEdit-Bukkit-2.16.0.jar"
+      "url": "https://cdn.modrinth.com/data/z4HZZnLr/versions/U2dcKa9T/FastAsyncWorldEdit-Paper-2.16.0.jar"
     },
     {
       "name": "FirstJoinRTP",
@@ -142,6 +142,194 @@
       "version": "2.6.17",
       "filename": "voicechat-bukkit-2.6.17.jar",
       "url": "https://cdn.modrinth.com/data/9eGKb6K1/versions/Qnk9puxN/voicechat-bukkit-2.6.17.jar"
+    }
+  ],
+  "datapacks": [
+    {
+      "name": "Terralith",
+      "version": "2.6.0",
+      "filename": "1_1_Terralith_1.21.11_v2.6.0.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_1_Terralith_1.21.11_v2.6.0.zip"
+    },
+    {
+      "name": "Biome Saplings",
+      "version": "1.1.6",
+      "filename": "1_2_biomesaplings-v1.1.6.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_2_biomesaplings-v1.1.6.zip"
+    },
+    {
+      "name": "Incendium",
+      "version": "5.4.11",
+      "filename": "1_3_Incendium_1.21.11_v5.4.11_UNSUPPORTED.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_3_Incendium_1.21.11_v5.4.11_UNSUPPORTED.zip"
+    },
+    {
+      "name": "Improved Bosses & Overworld",
+      "version": "3.1.0",
+      "filename": "1_4_ibo-3.1.0-datapack.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_4_ibo-3.1.0-datapack.zip"
+    },
+    {
+      "name": "Incendium 1.21 Compatibility Fix",
+      "version": "1.0.0",
+      "filename": "1_5_incendium121.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_5_incendium121.zip"
+    },
+    {
+      "name": "Nullscape",
+      "version": "1.2.17",
+      "filename": "1_6_Nullscape_1.21.11_v1.2.17.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_6_Nullscape_1.21.11_v1.2.17.zip"
+    },
+    {
+      "name": "Structory",
+      "version": "1.3.15",
+      "filename": "1_8_Structory_v1.3.15.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_8_Structory_v1.3.15.zip"
+    },
+    {
+      "name": "Structory: Towers",
+      "version": "1.0.16",
+      "filename": "1_9_Structory_Towers_v1.0.16.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/1_9_Structory_Towers_v1.0.16.zip"
+    },
+    {
+      "name": "Dungeons and Taverns",
+      "version": "5.1.0",
+      "filename": "2_0_Dungeons and Taverns v5.1.0.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_0_Dungeons.and.Taverns.v5.1.0.zip"
+    },
+    {
+      "name": "DnT: Ancient City Overhaul",
+      "version": "3.2.3",
+      "filename": "2_1_DnT Ancient City Overhaul v3.2.3.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_1_DnT.Ancient.City.Overhaul.v3.2.3.zip"
+    },
+    {
+      "name": "DnT: Stronghold Overhaul",
+      "version": "2.4.0",
+      "filename": "2_2_DnT Stronghold Overhaul v2.4.0.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_2_DnT.Stronghold.Overhaul.v2.4.0.zip"
+    },
+    {
+      "name": "DnT: Pillager Outpost Overhaul",
+      "version": "3.3.0",
+      "filename": "2_3_DnT Pillager Outpost Overhaul v3.3.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_3_DnT.Pillager.Outpost.Overhaul.v3.3.zip"
+    },
+    {
+      "name": "DnT: Swamp Hut Overhaul",
+      "version": "2.3.0",
+      "filename": "2_4_DnT Swamp Hut Overhaul v2.3.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_4_DnT.Swamp.Hut.Overhaul.v2.3.zip"
+    },
+    {
+      "name": "DnT: Woodland Mansion Overhaul",
+      "version": "2.1.0",
+      "filename": "2_5_DnT Woodland Mansion Overhual v2.1.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_5_DnT.Woodland.Mansion.Overhual.v2.1.zip"
+    },
+    {
+      "name": "DnT: Ocean Monument Overhaul",
+      "version": "2.2.0",
+      "filename": "2_6_DnT Ocean Monument Overhaul v2.2.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_6_DnT.Ocean.Monument.Overhaul.v2.2.zip"
+    },
+    {
+      "name": "DnT: Jungle Temple Overhaul",
+      "version": "2.1.0",
+      "filename": "2_7_DnT Jungle Temple Overhaul v2.1.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_7_DnT.Jungle.Temple.Overhaul.v2.1.zip"
+    },
+    {
+      "name": "DnT: Desert Temple Overhaul",
+      "version": "2.1.0",
+      "filename": "2_8_DnT Desert Temple Overhaul v2.1.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_8_DnT.Desert.Temple.Overhaul.v2.1.zip"
+    },
+    {
+      "name": "DnT: Nether Fortress Overhaul",
+      "version": "3.1.0",
+      "filename": "2_9_DnT Nether Fortress Overhaul v3.1.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/2_9_DnT.Nether.Fortress.Overhaul.v3.1.zip"
+    },
+    {
+      "name": "NoFun DnT",
+      "version": "1.1",
+      "filename": "3_1_NoFun DnT v1.1.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/3_1_NoFun.DnT.v1.1.zip"
+    },
+    {
+      "name": "DnT 5.1 Enchant Disabler",
+      "version": "5.1",
+      "filename": "3_2_DnT 5.1 Enchant Disabler.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/3_2_DnT.5.1.Enchant.Disabler.zip"
+    },
+    {
+      "name": "Wabi-Sabi Structures",
+      "version": "3.0.5",
+      "filename": "4_1_Wabi-Sabi Structures-3.0.5-1.21.11 Datapack.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/4_1_Wabi-Sabi.Structures-3.0.5-1.21.11.Datapack.zip"
+    },
+    {
+      "name": "Pale Formations",
+      "version": "1.0.10",
+      "filename": "4_2_Pale Formations 1.0.10-26.1 Datapack.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/4_2_Pale.Formations.1.0.10-26.1.Datapack.zip"
+    },
+    {
+      "name": "Revamped Shipwrecks",
+      "version": "1.1.0",
+      "filename": "4_3_Revamped Shipwrecks 1.1.0 Datapack.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/4_3_Revamped.Shipwrecks.1.1.0.Datapack.zip"
+    },
+    {
+      "name": "Unwrecked Ships Plus",
+      "version": "2.0.6",
+      "filename": "4_4_Unwrecked Ships Plus 2.0.6 Datapack.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/4_4_Unwrecked.Ships.Plus.2.0.6.Datapack.zip"
+    },
+    {
+      "name": "ATi Structures Vanilla",
+      "version": "1.4.4",
+      "filename": "5_1_ATi Structures Vanilla V1.4.4 (1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_1_ATi.Structures.Vanilla.V1.4.4.1.21%2B.zip"
+    },
+    {
+      "name": "Grim Kingdoms Vanilla",
+      "version": "1.21+",
+      "filename": "5_2_Grim kingdoms vanilla(1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_2_Grim.kingdoms.vanilla.1.21%2B.zip"
+    },
+    {
+      "name": "Epic Villages",
+      "version": "1.3.0",
+      "filename": "5_3_Epic Villages 1.3.0 (1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_3_Epic.Villages.1.3.0.1.21%2B.zip"
+    },
+    {
+      "name": "Epic Witch Huts",
+      "version": "1.3.0",
+      "filename": "5_4_Epic Witch Huts v1.3.0 (1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_4_Epic.Witch.Huts.v1.3.0.1.21%2B.zip"
+    },
+    {
+      "name": "Epic Dungeons",
+      "version": "1.2.0",
+      "filename": "5_5_Epic Dungeons 1.2.0 (1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_5_Epic.Dungeons.1.2.0.1.21%2B.zip"
+    },
+    {
+      "name": "Epic Igloo",
+      "version": "1.0.3",
+      "filename": "5_6_Epic Igloo 1.0.3 (1.21+).zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/5_6_Epic.Igloo.1.0.3.1.21%2B.zip"
+    },
+    {
+      "name": "True Ending",
+      "version": "1.1.4d",
+      "filename": "9_1_true-ending-1.1.4d.zip",
+      "url": "https://github.com/naf-studio/minecraft-server/releases/download/season-8/9_1_true-ending-1.1.4d.zip"
     }
   ]
 }

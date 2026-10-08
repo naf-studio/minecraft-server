@@ -16,6 +16,7 @@ $ErrorActionPreference = "Stop"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $manifestPath = Join-Path $scriptDir "server-manifest.json"
 $pluginsDir = Join-Path $scriptDir "plugins"
+$datapacksDir = Join-Path $scriptDir "world/datapacks"
 
 if (-not (Test-Path $manifestPath)) {
     Write-Error "server-manifest.json not found in $scriptDir"
@@ -89,6 +90,21 @@ foreach ($plugin in $manifest.plugins) {
         }
         else {
             Write-Host "  [OK] $($plugin.name) already exists." -ForegroundColor DarkGray
+        }
+    }
+}
+
+# 3. Download Datapacks
+Write-Host "`n=== 3. Datapacks Ecosystem ===" -ForegroundColor Cyan
+if ($manifest.datapacks) {
+    if (-not (Test-Path $datapacksDir)) {
+        New-Item -ItemType Directory -Path $datapacksDir | Out-Null
+    }
+
+    foreach ($dp in $manifest.datapacks) {
+        $dpDest = Join-Path $datapacksDir $dp.filename
+        if ($dp.url) {
+            Download-Asset -Name $dp.name -Url $dp.url -DestinationPath $dpDest
         }
     }
 }

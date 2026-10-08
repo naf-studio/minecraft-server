@@ -38,8 +38,6 @@
 !world
 !world/paper-world.yml
 !world/gale-world.yml
-!world/datapacks
-!world/datapacks/*.zip
 
 !world_nether
 !world_nether/gale-world.yml
@@ -90,6 +88,8 @@ plugins/*/backups/
 plugins/*/backups/**
 plugins/*/session.lock
 
+world/datapacks/
+world/datapacks/**
 world/region/
 world/region/**
 world/entities/

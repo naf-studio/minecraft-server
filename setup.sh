@@ -12,13 +12,14 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MANIFEST_FILE="${SCRIPT_DIR}/server-manifest.json"
 PLUGINS_DIR="${SCRIPT_DIR}/plugins"
+DATAPACKS_DIR="${SCRIPT_DIR}/world/datapacks"
 
 if [ ! -f "${MANIFEST_FILE}" ]; then
     echo "ERROR: server-manifest.json not found in ${SCRIPT_DIR}" >&2
     exit 1
 fi
 
-mkdir -p "${PLUGINS_DIR}"
+mkdir -p "${PLUGINS_DIR}" "${DATAPACKS_DIR}"
 
 download_file() {
     local name="$1"
@@ -53,6 +54,7 @@ import json, os, sys, urllib.request
 manifest_path = '${MANIFEST_FILE}'
 script_dir = '${SCRIPT_DIR}'
 plugins_dir = '${PLUGINS_DIR}'
+datapacks_dir = '${DATAPACKS_DIR}'
 
 with open(manifest_path, 'r', encoding='utf-8') as f:
     manifest = json.load(f)
@@ -106,6 +108,15 @@ for p in manifest.get('plugins', []):
             print(f'  [!] {name} requires manual download from: {homepage}')
         else:
             print(f'  [OK] {name} already exists.')
+
+print('\n=== 3. Datapacks Ecosystem ===')
+for dp in manifest.get('datapacks', []):
+    name = dp.get('name')
+    fname = dp.get('filename')
+    url = dp.get('url')
+    if url:
+        dest = os.path.join(datapacks_dir, fname)
+        download(name, url, dest)
 "
 
 echo -e "\nSetup complete! You can now launch the server using ./run.sh"
