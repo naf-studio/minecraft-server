@@ -29,6 +29,8 @@ if (-not (Test-Path $pluginsDir)) {
     New-Item -ItemType Directory -Path $pluginsDir | Out-Null
 }
 
+$failedDownloads = [System.Collections.Generic.List[string]]::new()
+
 function Download-Asset {
     param(
         [string]$Name,
@@ -49,7 +51,8 @@ function Download-Asset {
         Write-Host "  [+] $Name downloaded successfully." -ForegroundColor Green
     }
     catch {
-        Write-Warning "Failed to download $Name from $Url: $_"
+        Write-Warning "Failed to download $Name from ${Url}: $($_.Exception.Message)"
+        $failedDownloads.Add($Name)
         if (Test-Path $tempPath) {
             Remove-Item $tempPath -Force -ErrorAction SilentlyContinue
         }
@@ -90,4 +93,13 @@ foreach ($plugin in $manifest.plugins) {
     }
 }
 
-Write-Host "`nSetup complete! You can now launch the server using .\run.ps1" -ForegroundColor Green
+if ($failedDownloads.Count -gt 0) {
+    Write-Warning "`nSetup completed with errors! The following $($failedDownloads.Count) item(s) failed to download:"
+    foreach ($item in $failedDownloads) {
+        Write-Warning "  - $item"
+    }
+    exit 1
+}
+else {
+    Write-Host "`nSetup complete! You can now launch the server using .\run.ps1" -ForegroundColor Green
+}
