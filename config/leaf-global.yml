@@ -252,9 +252,8 @@ gameplay-mechanisms:
     egg-knockback-players: false
     # Make players can knockback zombie.
     can-player-knockback-zombie: true
-    # Synchronize player immediately when knocked back.
-    flush-location-while-knockback-player: false
     old-blast-protection-explosion-knockback: false
+    use-legacy-tracker-ticking: false
   # Enable to make only player pushable
   only-player-pushable: false
   # This section contains settings for mob spawner blocks.
