@@ -80,6 +80,7 @@ ops.json
 banned-players.json
 banned-ips.json
 
+plugins/*
 plugins/*/*.db
 plugins/*/*.sqlite
 plugins/*/*.log
