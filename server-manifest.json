@@ -43,21 +43,21 @@
     },
     {
       "name": "EntityDetection",
-      "version": "1.3.1",
+      "version": "1.3.0",
       "filename": "EntityDetection.jar",
-      "url": "https://github.com/Minebench/EntityDetection/releases/download/v1.3.1/EntityDetection.jar"
+      "url": "https://github.com/Minebench/EntityDetection/releases/download/1.3.0/EntityDetection.jar"
     },
     {
       "name": "FastLeafDecay",
       "version": "2.0.0",
       "filename": "fast-leaf-decay-2.0.0.jar",
-      "url": "https://github.com/LukeOnuke/fast-leaf-decay/releases/download/v2.0.0/fast-leaf-decay-2.0.0.jar"
+      "url": "https://github.com/LukeOnuke/fast-leaf-decay/releases/download/2.0.0/fast-leaf-decay-2.0.0.jar"
     },
     {
       "name": "FastAsyncWorldEdit",
-      "version": "2.15.0",
-      "filename": "FastAsyncWorldEdit-Paper-2.15.0.jar",
-      "url": "https://cdn.modrinth.com/data/z4HZZnLr/versions/MOe9fY3h/FastAsyncWorldEdit-Bukkit-2.15.0.jar"
+      "version": "2.16.0",
+      "filename": "FastAsyncWorldEdit-Paper-2.16.0.jar",
+      "url": "https://cdn.modrinth.com/data/z4HZZnLr/versions/MOe9fY3h/FastAsyncWorldEdit-Bukkit-2.16.0.jar"
     },
     {
       "name": "FirstJoinRTP",
@@ -93,13 +93,13 @@
       "name": "LibreLogin",
       "version": "0.25.9",
       "filename": "LibreLoginProd-0.25.9.jar",
-      "url": "https://github.com/Navio1430/LibreLoginProd/releases/download/v0.25.9/LibreLoginProd-0.25.9.jar"
+      "url": "https://github.com/Navio1430/LibreLoginProd/releases/download/0.25.9/LibreLoginProd-0.25.9.jar"
     },
     {
       "name": "LuckPerms",
-      "version": "5.5.17",
-      "filename": "LuckPerms-Bukkit-5.5.17.jar",
-      "url": "https://download.luckperms.net/1557/bukkit/loader/LuckPerms-Bukkit-5.5.17.jar"
+      "version": "5.5.87",
+      "filename": "LuckPerms-Bukkit-5.5.87.jar",
+      "url": "https://download.luckperms.net/1674/bukkit/loader/LuckPerms-Bukkit-5.5.87.jar"
     },
     {
       "name": "ODailyQuests",
